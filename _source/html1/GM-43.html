@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૪૩ - બ્રહ્મસ્વરૂપ પ્રીતિનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૮૦ના પોષ સુદિ ૪ ચોથને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાંથી અયોધ્યાવાસીને ઘેર ગાદીતકિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી અને પ્રેમાનંદ સ્વામી સરોદા લઈને કીર્તન ગાવતા હતા.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, પ્રશ્ન-ઉત્તર કરીએ.” એમ કહીને શ્રીજીમહારાજે પૂછ્યું જે, “જે ભગવાનનો ભક્ત ગુણાતીત હોય ને કેવળ સત્તારૂપે વર્તતો હોય, અને તેને વિષે વૈરાગ્યરૂપ જે સત્ત્વગુણ અને વિષયમાં પ્રીતિરૂપ જે રજોગુણ અને મૂઢપણારૂપ જે તમોગુણ એ ત્રણે ગુણના ભાવ તો ન હોય અને તે તો કેવળ ઉત્થાને રહિત શૂન્યસમતા ધરી રહે ને સુષુપ્તિ જેવી અવસ્થા વર્તે, એવી રીતે સત્તારૂપે રહ્યો જે નિર્ગુણ ભક્ત તેને ભગવાનને વિષે પ્રીતિ હોય કે ન હોય ? એ પ્રશ્ન છે.” પછી મુક્તાનંદ સ્વામીએ કહ્યું જે, “જે સત્તારૂપે વર્તે તેને ભગવાનને વિષે પ્રીતિ તો હોય.” ત્યારે શ્રીજીમહારાજે પૂછ્યું જે, “સત્તારૂપે રહ્યો એવો જે એ ભક્ત તેને ભગવાનને વિષે પ્રીતિ છે તે આત્માને સજાતિ છે કે વિજાતિ છે?” પછી મુક્તાનંદ સ્વામીએ કહ્યું જે, “એ પ્રીતિ તો આત્માને સજાતિ છે.” પછી શ્રીજીમહારાજ બોલ્યા જે, “મધ્વાચાર્ય, નિંબાર્ક ને વલ્લભાચાર્ય એમણે આત્મારૂપે રહીને જે ભગવાનને વિષે પ્રીતિ કરવી એ પ્રીતિને બ્રહ્મસ્વરૂપ કહી છે. માટે ગુણાતીત થઈને જે ભગવાનને વિષે પ્રીતિ કરે છે એ જ બ્રહ્મસ્વરૂપ છે, એમ મોટા મોટા આચાર્યનો સિદ્ધાંત છે.”
+</p> 
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

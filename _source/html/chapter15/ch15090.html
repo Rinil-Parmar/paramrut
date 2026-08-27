@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (90) જ્યાં વિષયની વેંચાણ આવે ત્યાં માળા ફરે નહિ ને કથા કે વારતા થાય નહિ ને માળા, માનસી <a href="#ex1" class="wordMeaning">ઉંહરડીને કરે</a>; માટે વિષય છે તે ઉપાડીને ક્યાંઈના ક્યાંઈ લઈ જાય એવા છે. તે ઉપર વાત કરી જે, એક બ્રાહ્મણ પટેલ હતો. તે માળા ફેરવતો હતો ત્યારે એક જણે આવીને પૂછ્યું જે, પટેલ ઘેર છે? તો કહે, પટેલ ચમારવાડે ગયા છે. એમ વહુએ કહ્યું ત્યારે પટેલ આવ્યા જે, આંહીં બેઠો છું ને એમ કેમ કહો છો ? ત્યારે ક્હ્યું જે, તમે માળા ફેરવતાં શું સંકલ્પ કરતા હતા ? તો કહે જે, કોસ સંધાવવા જાવું છે, એવો સંકલ્પ કરતો હતો. તો કહે, ચમારવાડે ગયા તેમાં શું ખોટું કીધું ? તેમ આંહીં બેઠા હોય ને મન તો ક્યાંય ભમતું હોય ! પછી શ્ર્લોક બોલ્યા જે,  <br/><br/>
+ 
+ આકુતિચિતિચાપલ્યરહિતા નિષ્પરિગ્રહાઃ ।  <br/>
+ 
+ બોધને નિપુણા આત્મનિષ્ઠા: સર્વોપકારિણ: ॥  <br/>
+ 
+ (સત્સંગિજીવન : 1/32/28) <br/>
+ 
+ અર્થ :- બધા ઉપર ઉપકારની આકૃતિ ચિત્તમાં ચંચળતા વગરની હોય છે, એ કોઈ પાસે કશું લેતી નથી, (બીજાને) બોધ કરવામાં કુશળ હોય છે અને એમાં આત્મનિષ્ઠા (પોતાનામાં વિશ્ર્વાસ) હોય છે. <br/><br/>
+ 
+  કર્મઈન્દ્રિયોની ને જ્ઞાનઈન્દ્રિયોની ચપળતાએ રહિત રહેવું એ સાધુનો ધર્મ છે પણ જો અહીં જનાવર આવે કે શેરડીનું કે તુંબડાનું ગાડું આવે તો સહુ દોડે ને આવી વાતુંં તો જ્યાં એકાંતિક હશે ત્યાં થાતી હશે પણ બીજે તો આવી વાતો થાય જ નહિ ને દેશકાળમાં આવ્યા નથી તેને ખબર ન પડે. માટે સો જન્મ ધરીને પણ જ્ઞાની ભક્ત થાવું, સાધુ થાવું તેને અર્થે બધી વાતો છે. <br/><br/>
+ 
+ નાયમાત્મા બલહીનેન લભ્ય: । <br/>
+ 
+  (મુન્ડક ઉપનિષદ : 3/2/4) <br/>
+ 
+ અર્થ :- બળ વિહોણા દ્વારા આ આત્મા પ્રાપ્ત થઈ શકે તેમ નથી. <br/><br/>
+ 
+ પછી બળ ને આગ્રહ ઉપર બ્રાહ્મણે સોનાની મૂર્તિ લીધી તેની વાત કરી. માટે જેને મૂર્તિ રાખવી હોય તે આટલો દાખડો કરે ત્યારે મૂર્તિ રહે. પછી બળ પામવાનું વચનામૃત (<a href="GM-63.html">વચ.ગ.મ.63</a>) વંચાવીને વાત કરી જે, રાજા બળવાન હોય તેની આગળ ઉમરાવ કે કામદારનું ચાલતું નથી. તેમ જીવ આગળ ઈન્દ્રિયોનું ન ચાલે તો જીવ બળને પામ્યો કહેવાય. તે ઉપર કૃપાનંદસ્વામીની વાત કરી જે, ઉપવાસ પડે તો દેહ પડી જાય. તેમ એવી રીતના હોય તે બળને પામ્યા કહેવાય.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઉંહરડીને કરે= દુ:ખ કે તુચ્છકારનો ઉદ્ગાર કરીને કરે.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (204)	ગુરુ વિના તો નાળ કાપતાં ગળું કાપે એવું થાય છે. <br/><br/>
+ 
+ સંત ધન્વંતરી  વૈદશમ, જેસો રોગી જેહુ; <br/>
+ 
+ મુક્ત બતાવત તાહીકું, તેસો ઔષધ તેહુ. <br/>
+ 
+ (મુક્તાનંદ કાવ્ય : વિ.ચિ.-સાધુ કો સંગ-10) <br/>
+ 
+ દોષ હરન શીતલ કરન, ઘનસમ સંત સુધીર; <br/>
+ 
+ મુક્ત જ્ઞાન જળ વર્ષકે, હરત સબકી પીર. <br/>
+ 
+ (મુક્તાનંદ કાવ્ય : વિ.ચિ.-સાધુ કો સંગ-4) <br/><br/>
+ 
+ સાધુ ચંદન બાવના, શીતલ છાય વિશાલ; <br/>
+ 
+ મુક્ત  કહે તેહી પરસસે, નિર્વિષ હોત વિષ વ્યાલ. <br/>
+ 
+ (મુક્તાનંદ કાવ્ય : વિ.ચિ.-સાધુકો સંગ-2) <br/><br/>
+ 
+ પાપી હોય તેનું પણ આ દર્શને કલ્યાણ થઈ જાય, એવું આ સાધુને આવડે છે ને જીવનો સ્વભાવ તો કેવો છે જે દેહનો <a href="#ex1" class="wordMeaning">ખરેરો</a> કરે ત્યાં જ સારું લાગે, પણ ટોકે ત્યાં સારું ન લાગે ને સ્વભાવ તો ટોક્યે જાશે; માટે સાધુ છે તે જીવના દોષ હળવે હળવે કાઢી નાખે છે. ‘બ્રહ્મવિલાસ’નું શૂરવીરનું અંગ વંચાવીને કહ્યું જે, શૂરવીરનો મારગ, પ્રેમનો મારગ, નિયમનો મારગ ને ધર્મનો મારગ એ સર્વે મારગે ચાલવા માંડે તો અવિદ્યા ક્યાં રહે ? જેમ કાળીનાગને માથું જ ઉપાડવા દીધું નહિ તેમ અવિદ્યા ઊંચું માથું કરી શકતી નથી, ને એવા ભાવના શ્ર્લોક શીખી રાખે તો હૈયું એવા ભાવથી વસાઈ જાય ને આવી વાતું સમજાણી હશે ત્યારે પાદશાહી મુકાણી હશે, ને આ તો વિષયનો <a href="#ex1" class="wordMeaning">ઓશલો</a> જ કુટાય છે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ખરેરો= જાળવણી, સાચવવો. <br/>
+2 ઓશલો= માયાનાં બંધનનાં જ કાર્યો થાય, પછી પસ્તાઈ છાતી કૂટવાની.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

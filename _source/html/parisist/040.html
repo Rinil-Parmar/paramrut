@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li> 
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu"> પરાશર   </h1>
+  પરાશર ઋષિ, શક્તિ ઋષિ અને અદૃશ્યન્તીના પુત્ર, તેમને પંદરહજાર શિષ્ય હતા. આ મહર્ષિ જ્યોતિષ, ગણિત, બીજગણિત અને નૌકાશાસ્ત્રમાં ઘણા પ્રવીણ ને શોધક હતા. એકવાર ચાંદની રાતે નદી પાર કરવા તટ પર બેઠા હતા. હોડીઓની આવન-જાવન બંધ થઈ ગઈ હતી. એક સત્યવતી નામની માછી ક્ધયા ઋષિને સામે પાર લઈ જવા તૈયાર થઈ. રાત્રિના માદક વાતાવરણમાં ઋષિએ સત્યવતી સાથે ગંધર્વ વિવાહ કર્યો ને તેનાથી ભગવાન કૃષ્ણદ્વૈપાયન વ્યાસની ઉત્પત્તિ થઈ. <a href="ch1038.html">(૧/૩૮)</a> 
+ 
+  <br/><br/>
+<a href="8_Parasar.html">વધુ માહિતી</a> 
+
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

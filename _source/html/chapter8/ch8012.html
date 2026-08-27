@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (12) એક સમે મહારાજ કચ્છ દેશમાં કાળુતળાવ, માંડવી, તેરા વગેરેમાં બહુ જ ફર્યા ને સંતમંડળ પણ સંગાથે હતાં અને વાતું પણ પોતે અખંડ કર્યા કરે ને તેમાં સર્વોપરી પ્રગટપણાની વાતું બહુ જ લાવે. એમ કરતાં કરતાં પોતે એક દિવસ બહુ ઉદાસ થઈ ગયા અને મુક્તાનંદસ્વામીને કહ્યું જે, ‘અમે કહીએ તો બધા ત્યાગી પણ થઈ જાય અને પરોક્ષ અવતાર અને તેમના ભક્તની વાતું કહીએ છીએ, ત્યારે સૌ સાંભળવામાં ખબરદાર થઈ જાય છે પણ અમારા સર્વોપરી અને પ્રગટપણાની અને અમારા અનાદિ મુક્ત ને અક્ષરબ્રહ્મ નામે ધામની જો કોઈ એવી વાત કહીએ તો સૌ અકળાય છે ને ઊઠી નીકળે છે માટે હવે તો જાણે દેહ મૂકી દઈએ, એમ થાય છે.’ એવી રીતે મુક્તાનંદસ્વામીને વાત કરી.
+ <br/><br/>
+ પછી ત્યાંથી પંચાળે આવીને મંદવાડ ગ્રહણ કર્યો ને અંતરવૃત્તિ કરી ગયા ને બોલે નહિ ને શરીરમાં તાવ ને માથું બહુ જ ગરમ જણાય, પછી મુક્તાનંદસ્વામીએ નાડી જોઈને માથે હાથ મૂક્યો ત્યાં તો લોઢી જેવું માથું ધગે. પછી પોતે દાબવા મંડ્યા ને પોતાને કચ્છ દેશમાં મહારાજે વાત કરી હતી તે સાંભરી આવી ને પોતાનું હૈયું ભરાઈ આવ્યું અને હીબકાં (ડૂસકાં) ભરવા મંડ્યા ને આંખોમાંથી પાણીની ધાર મહારાજના મસ્તક પર પડી, તેથી મહારાજે અંતરવૃત્તિમાંથી બહાર આવીને નેત્રકમળ ઉઘાડીને જોયું, ત્યાં તો મુક્તાનંદસ્વામીને દિલગીર થતા જોયા; પછી મહારાજ કહે, ‘સ્વામી, આમ કાં કરો ?’ ત્યારે મુક્તાનંદસ્વામી નેત્રમાંથી જળ લૂછીને બોલ્યા જે, ‘મહારાજ ! તમે કચ્છ દેશમાં વાત કરી હતી તે સાંભરી આવી ને મનમાં એમ ઘાટ થયો જે, આગળ ભગવાનના જે જે અવતાર થયા તેની પરંપરાનું કાંઈક ચિહ્ન ને કોઈક શાસ્ત્ર, સાખી કે શબ્દ પાછળ હોય છે તથા શિષ્ય પરંપરા હોય છે ને તમે <a href="#ex1" class="wordMeaning">ઠામુકા</a> ઉદાસ થઈ ગયા, તે પાછળ કોણ જાણશે ?’ ત્યારે મહારાજે મુક્તાનંદસ્વામીને કહ્યું જે, ‘સ્વામી, ચિંતા કરશો મા; હવે અમે સાજા થઈએ છીએ અને ચાર ગૂઢ સંકલ્પ કરીએ છીએ જે,
+ <br/><br/>
+ પ્રથમ તો સર્વેના કારણ ને સર્વેના નિયંતા ને સર્વે થકી પર એવા જે સ્વયં પુરુષોત્તમ અમે તે અક્ષરધામ તથા મુક્ત સહિત આ પૃથ્વી ઉપર પધાર્યા તે અમારી ઉપાસના રહે તે સારુ સર્વોપરી શિખરબંધ મંદિર કરાવીને અવતારની મૂર્તિએ સહિત અમારી મૂર્તિનું શ્રેષ્ઠપણે સ્થાપન કરીશું અને એ રીતે ઉપાસના પ્રવર્તાવવી એ પ્રથમ સંકલ્પ કર્યો. 
+ <br/><br/>
+ તથા અમારું સ્વરૂપ જે અક્ષરબ્રહ્મ તે દ્વારે માયાનું કપટ દૂર કરીને, આ પૃથ્વીનું તળ રહે ત્યાં સુધી અનંત જીવોનું આત્યંતિક કલ્યાણ કરવા સારુ, પરંપરાએ આત્યંતિક જ્ઞાનના દાતા ને અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામેલા એવા પરમ એકાંતિક સત્પુરુષ કરવા એ બીજો સંકલ્પ કર્યો. 
+ <br/><br/>
+ ને પુરુષોત્તમનારાયણ, અક્ષરબ્રહ્મ અને મુક્તોનાં સ્વરૂપને પ્રતિપાદન કરનારાં તથા અમારાં લીલાચરિત્ર તથા ઐશ્ર્વર્યપ્રતાપને યથાર્થ કહેનારાં તથા ધર્મ, જ્ઞાન, વૈરાગ્ય ને માહાત્મ્ય જ્ઞાને સહિત એવી જે પ્રત્યક્ષ ભગવાનના સ્વરૂપને વિશે અનન્ય ભક્તિ, એ ચારેય ગુણેયુક્ત એવો જે પરમ એકાંતિક ધર્મ તેને યથાર્થ કહેનારાં તથા જીવ, ઈશ્ર્વર, માયા, બ્રહ્મ, પરબ્રહ્મના શુદ્ધ સ્વરૂપને યથાર્થ પ્રતિપાદન કરનારાં તથા પોતે પુરુષોત્તમ ભગવાન તથા તેનું ધામ તથા તેના દૃઢ ઉપાસક એવા મુક્ત તેના મહિમાને યથાર્થ કહેનારાં ને પ્રગટના સંબંધને પામેલાં એવાં જે તીર્થ તથા સ્થાવર જંગમ સર્વે પદાર્થના મહિમાને કહેનારાં તથા વ્રત, ઉત્સવના નિર્ણયને કહેનારાં તથા સ્વરૂપને જણાવનારાં એવાં શાસ્ત્ર કરવાં; તે ત્રીજો સંકલ્પ કર્યો. 
+ <br/><br/>
+ તથા મંદિર, સાધુ, શાસ્ત્ર અને હરિજન એ સૌની રક્ષા કરવા સારુ ધર્મકુળના બે આચાર્ય કરવા, એ ચોથો સંકલ્પ કર્યો.’ 
+ <br/><br/>
+ એવી રીતે ગૂઢ સંકલ્પ કરીને પોઢી ગયા, પછી જાગીને ઝીણાભાઈને બોલાવીને કહ્યું જે, ‘ઝીણાભાઈ, તમે થાળ કરાવો તો અમે જમીને સાજા થઈએ.’ ત્યારે ઝીણાભાઈ બોલ્યા જે, ‘મહારાજ ! તમે સાજા થાઓ તો હજાર થાળ કરાવું.’ એમ કહીને થાળ કરાવ્યો તે જમ્યા ને મંદવાડ ગ્રહણ કર્યો હતો તે સાજા થયા અને ગઢપુર (ગઢડા) પધાર્યા.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઠામુકા= નકામા, નિરર્થક. 
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

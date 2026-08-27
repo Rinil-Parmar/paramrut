@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (212) ભગા શેઠને રસોઈ આપવી હતી તે મહારાજે ભગા શેઠને કહ્યું જે, ‘કડિયાને પગાર દેવા છે માટે રસોઈના રૂપિયા રોકડા આપો તો સારું.’ તો કહે, ‘ા’. પછી મહારાજે મુક્તાનંદસ્વામીને કહ્યું જે, ‘શેઠને સમજાવો.’ પછી સમજાવ્યા; તોય કહે, ‘મારે તો સાધુને જમાડવા છે.’ ત્યારે મહારાજ કહે, ‘સાધુને જમાડવા હોય તો સાધુ હમણાં ખોરી જાર ખાય છે, તો બસેં રૂપિયાના ઘઉં અપાવો; એટલે ઘઉં-જારના ભેળા રોટલા કરશે ને હંમેશાં તમારી રસોઈ કહેવાશે.’ તોય ભગા શેઠ માન્યા નહીં. પછી રસોઈ કરવાનો આદર કર્યો ત્યારે મહારાજ કહે, ‘અમે પીરસવા નહિ આવીએ.’ એટલે મુક્તાનંદસ્વામી કહે, ‘રજોગુણી મનુષ્યનું રાખવું પડે; પીરસવા ન પધારો તો તેને સારું ન લાગે.’ પછી મહારાજ કહે, ‘હું પીરસીશ તો તે લોભિયાનું ખૂટશે તે ઠીક નહિ દેખાય.’ તે સાંભળી ભગા શેઠે ત્રણ ગણી રસોઈ કરાવી ને મહારાજ પાસે પીરસાવ્યું તોય ખૂટ્યું, માટે મનધાર્યું મૂકવું ને ભગવાન કહે તેમ કરવું એ જ શ્રેષ્ઠ છે.
+ <br/><br/>
+ તે જ દિવસ મહારાજ પાસે સામત પટેલ આવ્યા. તેને મહારાજે કહ્યું જે, ‘થોડા રૂપિયા જોઈએ છીએ તે દેશો ?’ એટલે કહે, ‘હા મહારાજ !’ પછી ઘેર ગયા. જમીન વેચી, ગાડું વેચ્યું, બળદ વેચ્યા ને ભેંશો વેચી, રૂપિયા સાડા ચાર હજારનો મહારાજ પાસે લાવી ઢગલો કર્યો. એટલે મહારાજે પૂછ્યું, ‘ક્યાંથી લાવ્યા?’ તો કહે, ‘મહારાજ ! મારે હતા.’ મહારાજ કહે, ‘સાચું બોલો.’ એટલે જેમ હતું તેમ કહ્યું. મહારાજ કહે, ‘હજાર રાખશું, બીજા લઈ જાઓ, દાણા વિના છોકરાં મરી જાય.’ ત્યારે સામત પટેલ કહે, ‘ના મહારાજ! કૂકડાં ને ખેડુ મરે નહીં.’ ત્યારે મહારાજ કહે, ‘શું કરશો ?’ તો કહે, ‘બીજે ગામ જઈશું, ત્યાંથી <a href="#ex1" class="wordMeaning">કઢારે</a> દાણા લેશું ને બીજે વરસ ભરી દેશું.’ તે સાંભળી મહારાજ રાજી થયા. 
+ <br/><br/>
+ એક વખત સામત પટેલ તેના દીકરાની વહુને તેડવા ગયા ત્યારે વેવાઈ કહે, ‘તારા દીકરાને તો જોતી નથી, તારે જોતી હોય તો તેડી જા.’ તે સાંભળી સામત પટેલે, સત્સંગી તરીકે આળ સહન કરી ન શક્યા, ને ત્યાં જ <a href="#ex1" class="wordMeaning">ભીષ્મ કરી નાખ્યું</a>.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 કઢારે= લીધા તેના કરતાં વધારે પાછા આપવાની શરતે અનાજ વગેરેની લેવડદેવડનો કરાર. <br/>
+2 ભીષ્મ કરી નાખ્યું= ભીષ્મની પ્રતિજ્ઞા જેમ જ ગુપ્તાંગ કાપી નાખ્યું. 
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

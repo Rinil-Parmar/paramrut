@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">સારંગપુર ૫: અન્વય-વ્યતિરેકનું</h1>
+			
+<p class="text_gu">
+
+સંવત ૧૮૭૭ના શ્રાવણ વદિ ૯ નવમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીસારંગપુર મધ્યે જીવાખાચરના દરબારમાં ઉત્તરાદે દ્વાર ઓરડાની ઓસરીયે ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વે શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+પછી મુક્તાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “વાસનાની નિવૃત્તિ થયાનો એવો શો જબરો ઉપાય છે જે એક ઉપાયને વિષે સર્વે સાધન આવી જાય?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જેને શ્રદ્ધા તથા હરિ અને હરિજનનાં વચનને વિષે વિશ્વાસ તથા ભગવાનને વિષે પ્રીતિ તથા ભગવાનના સ્વરૂપનું માહાત્મ્ય એ ચાર વાનાં જેના હૃદયમાં હોય તેની વાસના નિવૃત્ત થઈ જાય છે. તેમાં પણ જો એક માહાત્મ્ય અતિશય દ્રઢ હોય, તો શ્રદ્ધા તથા વિશ્વાસ તથા પ્રીતિ એ ત્રણ દૂબળાં હોય તો પણ મહાબળવાન થાય છે; અને માહાત્મ્ય વિનાની ભક્તિ જો ઝાઝી જણાતી હોય તો પણ અંતે નાશ થઈ જાય છે. જેમ દસ-બાર વર્ષની કન્યા હોય ને તેને ક્ષયરોગ થાય, પછી તે કન્યા યુવાન થયા મોર જ મરી જાય પણ યુવાન થાય નહીં; તેમ જેને માહાત્મ્ય વિનાની ભક્તિ હોય તે પણ પરિપક્વ થતી થતી નાશ થઈ જાય છે. અને જેના હૃદયમાં માહાત્મ્યે સહિત ભગવાનની ભક્તિ હોય તો બીજા કલ્યાણકારી ગુણ ન હોય તો પણ તેના હૃદયમાં સર્વે આવે છે. અને જો માહાત્મ્યે સહિત ભક્તિ જેના હૃદયમાં નથી, તો શમ-દમાદિક જે કલ્યાણકારી રૂડા ગુણ તે તેના હૃદયમાં છે તોય પણ નહીં જેવા જ છે; કેમ જે, અંતે નાશ પામી જશે. માટે એક માહાત્મ્યે સહિત ભક્તિ હોય તો તેની વાસના પણ નિવૃત્ત થઈ જાય અને કલ્યાણકારી જે ગુણ તે સર્વે આવીને હૃદયને વિષે નિવાસ કરીને રહે. તે માટે <b>માહાત્મ્યે સહિત ભગવાનની ભક્તિ એ જ વાસના ટાળ્યાનું મહામોટું અચળ સાધન છે.</b>”
+</p>
+<p class="text_gu">
+
+પછી સ્વયંપ્રકાશાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “જીવ અન્વયપણે કેમ છે ને વ્યતિરેકપણે કેમ છે? અને ઈશ્વર અન્વયપણે કેમ છે ને વ્યતિરેકપણે કેમ છે? અક્ષરબ્રહ્મ અન્વયપણે કેમ છે ને વ્યતિરેકપણે કેમ છે? અને પુરુષોત્તમ ભગવાનને અન્વયપણે કેમ જાણવા ને વ્યતિરેકપણે કેમ જાણવા?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જન્મ-મરણનું ભોક્તા એવું જે જીવનું સ્વરૂપ તે અન્વય જાણવું; અને અછેદ્ય, અભેદ્ય, અવિનાશી એવું જે જીવનું સ્વરૂપ તે વ્યતિરેક જાણવું. અને વિરાટ, સૂત્રાત્મા અને અવ્યાકૃત એ ત્રણ શરીરમાં એકરસપણે વર્તે એ ઈશ્વરનું અન્વય સ્વરૂપ જાણવું; અને પિંડ-બ્રહ્માંડથી પર સચ્ચિદાનંદપણે કરીને જે નિરૂપણ કર્યું છે તે ઈશ્વરનું વ્યતિરેક સ્વરૂપ જાણવું. અને પ્રકૃતિપુરુષ તથા સૂર્ય-ચંદ્રાદિક સર્વે દેવતા તેનું જે પ્રેરક તે અક્ષરનું અન્વય સ્વરૂપ જાણવું; અને જે સ્વરૂપને વિષે પુરુષપ્રકૃતિ આદ્યે કાંઈ ઉપાધિ રહેતી નથી, એક પુરુષોત્તમ ભગવાન જ રહે છે, એ અક્ષરનું વ્યતિરેક સ્વરૂપ છે. અને બદ્ધ જીવ તથા મુક્ત જીવ એ બેના હૃદયમાં સાક્ષીરૂપ થકા રહ્યા છે અને બદ્ધપણું ને મુક્તપણું જેને અડતું નથી, તેમ જ ઈશ્વરના ને અક્ષરના હૃદયમાં સાક્ષીરૂપે રહ્યા છે અને તે તે ઉપાધિ થકી રહિત છે, એ પુરુષોત્તમનું અન્વય સ્વરૂપ છે; અને જીવ, ઈશ્વર ને અક્ષર તે થકી પર જે અક્ષરાતીત સ્વરૂપ એ પુરુષોત્તમનું વ્યતિરેક સ્વરૂપ જાણવું. એવી રીતે અન્વય-વ્યતિરેકપણું છે.”
+</p>
+<p class="text_gu">
+
+પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “ભગવાનનાં દર્શનનો જે મહિમા તથા ભગવાનના નામ-સ્મરણનો જે મહિમા તથા ભગવાનના સ્પર્શનો જે મહિમા તે ભગવાનના ભક્તને અર્થે છે કે સર્વે જીવને સારુ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “દર્શનાદિકનો તો ભેદ જુદો જ છે. તે કહીએ તે સાંભળો જે, જ્યારે એ દર્શનનો કરનારો ભગવાનનાં દર્શન કરે છે ત્યારે એનું મન છે તે દ્રષ્ટિ દ્વારે આવીને તે સહિત દ્રષ્ટિ જો દર્શન કરે તો તે દર્શન એવું થાય છે જે, વિસારે તોય પણ વીસરે નહીં. એવી રીતે મને સહવર્તમાન ત્વચા સ્પર્શ કરે તો તે સ્પર્શ પણ વીસરે નહીં. જેમ ગોપાંગનાઓનાં ભગવાન પ્રત્યે ભાગવતમાં વચન છે જે, ‘હે ભગવન્! જે દિવસથી તમારાં ચરણનો સ્પર્શ થયો છે તે દિવસ થકી તમ વિના જે જે સંસારનાં સુખ છે તે અમને વિષ જેવાં લાગે છે.’ એવી રીતે સર્વે જ્ઞાન-ઇન્દ્રિયે કરીને મને સહવર્તમાન જે દર્શન-સ્પર્શ-શ્રવણાદિક થાય છે તે કોઈ કાળે વિસરી જતાં નથી. જેમ અજ્ઞાની જીવ હોય તેણે મને સહવર્તમાન જે પંચ જ્ઞાન-ઇન્દ્રિયો તેણે કરીને જે જે વિષય ભોગવ્યા હોય, તે વિસારે તો પણ વીસરે નહીં; એવી રીતે ભગવાનનું પણ મને સહવર્તમાન જે દર્શનાદિક કરે છે તેને જ દર્શનાદિક જાણવું. અને બીજાને તો દર્શન થયું છે તોય પણ ન થયા જેવું છે; કાં જે, જે સમે એણે દર્શન કર્યાં તે સમે તેનું મન તો ક્યાંઈયે ફરતું હતું. માટે એ દર્શન એને કાં તો એક દિવસમાં વીસરી જશે અથવા પાંચ દિવસમાં અથવા પચાસ દિવસમાં અથવા છ મહિનામાં અથવા વર્ષમાં અથવા પાંચ વર્ષમાં જરૂર વીસરી જશે, પણ અંતે રહેશે નહીં. માટે જે માહાત્મ્ય જાણીને, અતિશય પ્રીતિએ કરીને, મને સહિત દ્રષ્ટિ આદિક જ્ઞાન-ઇન્દ્રિયે કરીને દર્શન-સ્પર્શાદિક કરે છે, તેને જ તેમનું ફળ છે. અને બીજાને તો જે પરમેશ્વરનાં દર્શનાદિક થાય છે તેનું બીજબળ થાય છે અને યથાર્થ મહિમા તો જે મને સહવર્તમાન દર્શનાદિક કરે છે તેને અર્થે છે.”
+</p>
+
+
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

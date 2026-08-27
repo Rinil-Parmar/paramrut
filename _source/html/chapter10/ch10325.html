@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (325) પ્રભુ ભજવા ભેળા થયા છીએ, પણ ભગવાન મળ્યા વિના મોક્ષ ન થાય.
+  <br/><br/>
+તપન્તુ તાપૈ: પ્રપતન્તુ પર્વતાદટન્તુ તીર્થાનિ પઠન્તુ ચાગમાન્‌ । <br/>
+યજન્તુ યાગૈર્વિવિધં તુ યોગૈર્હરિં વિના નૈવ મૃત્યું તરન્તિ ।।
+
+  <br/>
+ (સુભાષિત)
+  <br/>
+ અર્થ :- ત્રિવિધ તાપ સહન કરો, પર્વતો પર તીર્થોમાં ફરો અને વેદોનો પાઠ કરો. અનેક પ્રકારે યાગો અને યોગો વડે યજન કરો પણ હરિ વગર મૃત્યને તરી શકતા નથી.
+  <br/><br/>
+ <a href="#ex1" class="wordMeaning">પંચાગ્નિ</a> તાપે, પર્વત ઉપરથી પડે, બધાં તીર્થમાં અડવાણે પગે ફરે, વેદ ભણે, યોગ સાધે, યજ્ઞ કરે, પણ પ્રગટ ભગવાન મળ્યા વિના મોક્ષ ન થાય.
+  <br/><br/>
+ન હ્યમ્મયાનિ તીર્થાનિ ન દેવા  મૃચ્છિલામયા: । <br/>
+તે પુનન્ત્યુરુકાલેન દર્શનાદેવ સાધવ: ।।
+
+	 <br/>
+
+
+ (શ્રીમદ્ભાગવત : 10/84/11)
+ 	 <br/>
+ અર્થ :- જળમય તીર્થો અને માટી અથવા પથ્થરના ભગવાન ઘણા દિવસો સુધી સેવા કરવાથી પવિત્ર કરે છે. પરંતુ સજ્જન (સાધુજન)નાં દર્શનમાત્રથી કૃતાર્થ થઈ જઈએ છીએ.
+ 	 <br/><br/>
+ તીર્થ અને પ્રતિમાથી ઉરુકાળે કલ્યાણ થાય ને સાધુ પુરુષનાં દર્શનથી તુરત જ મોક્ષ થાય છે.
+ 	 <br/><br/>
+ષડઙ્ગાદિવેદો મુખે  શાસ્ત્રવિદ્યા કવિત્વાદિ ગદ્યં સુપદ્યં કરોતિ ।
+ગુરોરઙ્ધ્રિપદ્મે માનશ્ચેન્ન દત્તં તત: કિં તત: કિં તત: કિં તત: કિમ્‌  ।।
+
+	 <br/>
+
+ (શ્રીશંકરાચાર્ય)(કીર્તન મુક્તાવલિ : 33/ગુરુસ્તોત્ર-4-2)
+  <br/>
+ અર્થ :- છ અંગો સાથે વેદ અને બધા શાસ્ત્રોની વિદ્યા મોઢે છે. કવિત્વશક્તિ જેનામાં છે અને ઉત્તમ ગદ્ય અને પદ્ય કરી શકે છે. પણ જો ગુરુના ચરણકમળમાં મન ન લાગ્યું હોય તેથી શું ઉપયોગ ? શું ઉપયોગ ? શું ઉપયોગ? શું ઉપયોગ ?
+  <br/><br/>
+ છ અંગે વેદ ભણી જાય, શાસ્ત્ર બધાં કંઠે હોય, કવિતા, ગદ્ય ને પદ્ય કરી જાણે એવો બુદ્ધિવાળો હોય; પણ ગુરુના ચરણમાં પ્રીતિ નથી કરી, તો શું કર્યું ? કાંઈ કર્યું નથી ! કાંઈ કર્યું નથી !
+  <br/><br/>
+રહૂગણૈતત્તપસા ન યાતિ ન ચેજ્યયા નિર્વપણાદ્‌ ગૃહાદ્વા । <br/>
+ન ચ્છન્દસા નૈવ જલાગ્નિસૂર્યેર્વિના મહત્પાદરજોડભિષેકમ્‌ ।।
+
+  <br/>
+ (શ્રીમદ્ભાગવત : 5/12/12)
+  <br/>
+ અર્થ :- હે રહૂગણ ! આ પ્રકારના જ્ઞાની મહાપુરુષોની ચરણરજને શિર પર (માથા ઉપર) ધારણ કરવા સિવાય તપ, યજ્ઞ, અન્નાદિનું  દાન, ગૃહસ્થોને ઉચિત ધર્મનું પાલન, વેદનું અધ્યયન અથવા જળ, અગ્નિ અથવા સૂર્યની ઉપાસના વગેરે કોઈ પણ સાધનથી પ્રાપ્ત થઈ શકતા નથી.
+  <br/><br/>
+ રહૂગણ રાજા કપિલ મુનિના આશ્રમે પાલખીમાં બેસી કથા સાંભળવા જતા હતા. રસ્તામાં જડભરતને પાલખીએ જોડી દીધા. કીડી-મંકોડી પગ તળે ન દબાય તેથી પગ ઊંચો-નીચો પડે એટલે પાલખી હલી જાય. ત્યારે રહૂગણ કહે, ‘સરખો ચાલ, નીકર મારીશ.’ જડભરત કહે, ‘પાર્થિવ ! પાર્થિવ ! પાલખી ધૂડની, ઉપાડનાર ધૂડના ને માંહી બેસનાર પણ ધૂડનો, તેમાં કોણ કોને મારશે?’ ત્યારે રહૂગણ જાણે રખેને કપિલ મુનિને મારી પાલખીએ જોડી દીધા ન હોય ! એમ ધારી નીચે ઊતર્યા, ને બે હાથ જોડી પગે લાગ્યા.
+  <br/><br/>
+ ત્યારે જડભરત કહે, ‘હે રહૂગણ રાજા ! તપશ્ર્ચર્યાએ કરીને શું થાવાનું છે ? યજ્ઞાદિકે કરીને પણ શું થાય ? અરે, વેદ ભણે તો ય શું ? જળ, અગ્નિ ને સૂર્યરૂપી ત્રિવિધ તાપમાં તપે તો ય શું ? માટે મહત્પુરુષના ચરણારવિંદના સેવન વિના કાંઈ જ નથી.’
+  <br/><br/>
+અન્તનાર્ન ન દ્રષ્ટ ઇહ યેન હરિર્હિ સાક્ષાત્‌ કિં તર્હિ તીવ્ર તપસાપિ કૃતેન તસ્ય । <br/>
+યોગાન્તરે હરિર્દિદ્રક્ષે ચ સાક્ષાત કિં તર્હિ તીવ્રતપસાપ્યતિદુષ્કરેણ ॥
+
+  <br/>
+ અર્થ :- જેણે અહીં પોતાના અંદર સાક્ષાત્ હરિને જોયો નથી, તેણે ખૂબ તપ કરવાથી પણ શું ફાયદો ? બીજા જન્મમાં જો હરિને સાક્ષાત્ જોવાની ઇચ્છા હોય તો પછી ખૂબ, કઠણ તપ કરવાથી શો ફાયદો ?
+ <br/><br/>
+  જે પુરુષ પ્રગટ ગુરુરૂપ હરિને પોતાના આત્માને વિશે નથી જોતો ને તીવ્ર તપ કરે છે, તો તે તપથી શું થાવાનું છે ? ચ્યવન ઋષિ રાફડો થઈ ગયા પણ ક્લ્યાણ ન થયું. માટે સાધને કલ્યાણ થાવું તે તો કીડીને કાશીએ જવું તેવું છે. ને વર્તમાન ધારીને પ્રગટ ભગવાનને શરણે જાય તો અક્ષરધામમાં જાય.
+  <br/><br/>
+ ભયો વચનમાં વાસ તેહિ વિહદ વાસા,
+  <br/><br/>
+ એવા ભક્તને ધન્ય ધન્ય માનવું. આ દેહ તો ખાસડા જેવો છે ને હાડકાંનો છે, તે હમણાં પડી જાશે; પણ પતંગિયા જેવા જીવ છે તે વિષયમાં અંજાઈ પડ્યા છે, તે મોક્ષને ભૂલી જાય છે. 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+    1 પંચાગ્નિ= ચારબાજુ ચાર ધૂણીનો ને પાંચમો માથે સૂર્યનો તાપ.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૮૦) દેશ કાંઈ કોઈના બાપના નથી; એ તો
+ <br/><br/>
+શ્રુતિર્વિભિન્ના સ્મૃતયશ્ર્ચ ભિન્ના નૈકો મુનિર્યસ્ય વચ: પ્રમાણમ્ । <br/>
+ધર્મસ્ય તત્ત્વં નિહિતં ગૃહાયાં મહાજનો યેન ગત: સ પન્થા: ॥
+<br/>
+
+ (સુભાષિતરત્નભાણ્ડાગાર : સામાન્યનીતિ, શ્ર્લોક ૮૫૦)
+<br/> 
+ અર્થ : વેદોની શ્રુતિઓ વિભિન્ન છે. સ્મૃતિઓ (ધર્મશાસ્ત્રો) પણ ભિન્ન ભિન્ન છે. વળી એક પણ મુનિ એવો નથી કે જેનું વચન પ્રમાણભૂત ગણી શકાય અને વેદનું સારભૂત તત્ત્વ તો ઊંડી ગુફામાં છૂપાયેલું છે; માટે મુમુક્ષુએ તો મોટાપુરુષ જે માર્ગે ચાલ્યા છે એ જ માર્ગને સાચો ગણી તેને અનુસરવું.
+ <br/><br/>
+ મહારાજે જે લેખ કરી આપ્યા છે, તેમાં જોઈને તે પ્રમાણે વરતવું ને તેથી અધિક લેવા સારુ અરજીઓ પડે તો ક્લેશ વધુ વધે ને લાજ જાય ને ત્રીજો ફાવે. માટે ધર્મવરો, નામવરો લાવીને ભજન કરવું; પણ હજારો રૂપિયા આડી રીતે ન મેળવવા. તે ‘<a href="#ex1" class="wordMeaning">કવલી</a>ને દોહીને કૂતરીને પાવું.’ એમાં શું માલ છે ? ને એમ કરતાં જો રહેવાય નહિ તો <a href="#ex1" class="wordMeaning">પંચાતિયા</a> કરવા, તે લેખ જોઈને તે પ્રમાણે કરે. ત્યારે કોઈકે પૂછ્યું જે, ‘તે પંચાતિયા વધુ-ઘટુ કરે તો ?’ ત્યારે સ્વામી કહે, ‘તેને પાપ લાગે. તે જો આણી કોર વધુ કરે તો પણ પાપ લાગે ને ઓલી કોર વધુ કરે તો પણ પાપ લાગે. તે ‘કર્મવિપાક’ ગ્રંથમાં કહ્યું છે જે, પંચ કરે જો અવળી પંચાત તો તેને ક્ષય રોગ થાય. માટે એમ વિચારવું જે, કોઈક ગામ આમ રહ્યું, કે આમ ગયું તો શું ! ઝાઝા રૂપિયા હશે તો ક્યાં રહે એવા છે ! તે કોઈ ક્યાંય ને કોઈ ક્યાંય એ તો જનારા જ, એ તો ચપળ માયા; તે રહે જ નહીં. તે ઝાઝા ભેળા કરે સુખ રહે નહિ અને આ લોક કજિયારૂપ છે, તે કજિયો થયા વગર રહે કેમ ? તે કોઈકને ઘરમાં બાપ-દીકરાને, સ્ત્રી-પુરુષને, તેમ આપણે પણ વહેવાર છે ને ? તે થાય. ને વહેવારવાળાને પણ જાણવું જે, સ્ત્રી સાથે વિવાદ પણ ન કરવો, નીકર ઝેર દેશે; તેમ કોઈ રાજા સાથે કે બીજા કોઈ સાથે વિવાદ પણ ન કરવો. તે ‘શિક્ષાપત્રી’માં જોજો;
+<br/><br/>
+જ્ઞાનવાર્તાશ્રુતિર્નાર્યા મુખાત્કાર્યા ન પૂરુષૈ: । <br/>
+ન વિવાદ: સ્ત્રિયા કાર્યો ન રાજ્ઞા ન ચ તજ્જનૈ: ॥
+ <br/>
+(શિક્ષાપત્રી : શ્ર્લોક ૩૪)
+<br/> 
+ અર્થ : સ્ત્રીની જોડે વાદવિવાદ ન કરવો. તેમને સમજાવવાં ઘણાં મુશ્કેલ છે માટે યુક્તિથી કામ લેવું. તેમને મોટાં બનાવીને કામ લેવું.
+ <br/><br/>
+ એમ લખ્યું છે. માટે તે પણ જાણ્યું જોઈએ, નીકર પછી દુ:ખ આવે; માટે તેમ ન કરવું. એ આદિક ઘણી વાતું અમદાવાદના સાધુ આગળ કરી.
+
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કવલી= ગાય. <br/>
+2 પંચાતિયા= પંચના માણસો-પંચાત કરનારા.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

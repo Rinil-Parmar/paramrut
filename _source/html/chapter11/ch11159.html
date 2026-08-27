@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (159) જ્યારે પોતાને જ્ઞાન થાશે ત્યારે જ વિષય ખોટા થાશે. તે ઉપર હીરા પારખ્યાની મામા-ભાણેજની વાત કરીને કહ્યું જે, જ્યારે પોતાને એનો અનુભવ થાશે ત્યારે ખોટાને વિશે કાંઈ સત્યતા રહેશે નહિ. વળી વાત કરી જે, રામાનંદસ્વામીએ મયારામ ભટ્ટને પરણવાની ના પાડી ને પરણ્યા. ને ગણોદના ખત્રી જમાભાઈ જતા હતા, તે <a href="#ex1" class="wordMeaning">જાન બાસેટી</a> ત્યારે ભાદરને કાંઠે ફૂલવાડીમાં મહારાજ ને સંત હોવાથી, ‘જાણે દર્શન કરતો જાઉં.’ તે ગયા, પગે લાગી ઊભા રહ્યા, ને જાણે જે મહારાજ રજા આપે કે જાઓ, ત્યારે જાઉં. પણ મહારાજે તો જાઓ એમ ન કહ્યું. પછી મુક્તાનંદસ્વામીએ મહારાજને કહ્યું જે, ‘આ જમાભાઈને રજા આપો, જાન ઊભી છે.’ પછી મહારાજ કહે, ‘જાઓ, ભાઈ, જાઓ, પરમેશ્ર્વર શું ભજશો ! પરણેતર કેડે પડ્યું !’ એ સાંભળીને જમાભાઈ ખત્રીને એમ થયું જે મહારાજને ન ગમ્યું. પછી એક દીકરો થયો. ને દીકરાને છાપનું કામ આવડ્યું એટલે કહ્યું કે, ‘હવે હું છાપનું કામ નહિ કરું, મંદિરમાં બેસી માળા ફેરવીશ.’ તે દીકરો નાનો પણ ડાહ્યો તેથી કહે કે, ‘બાપા ! આજ સુધી તમે પોષણ કરી મોટો કર્યો ને હવે હું રળીને ખવરાવીશ, સુખેથી મંદિરમાં કથાવાર્તા કરી માળા ફેરવી સુખિયા રહો.’ પછી ઝુણોભાઈ ને જમાભાઈ ખત્રી ‘વચનામૃત’ લઈ ને એવી જ્ઞાનવાર્તા કરે કે, તેમાં સર્વોપરીપણું ને પ્રગટ પ્રમાણ ભગવાન ને પ્રગટ અક્ષરનું નિરૂપણ કરે, ને મહારાજનાં બધાં વચન બરાબર જેમ નિશાન પર છે તેમ જ સમજે. એમ લઈ મંડે તો જ આ અક્ષર-પુરુષોત્તમનું ખરેખરું જ્ઞાન થાશે અને બીજે ક્યાંય સુખ નહિ મનાય. બાયડી ધૂડની, છોકરાં ધૂડનાં, દેહ ધૂડનો એમ સર્વે એવું જણાશે. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 જાન બાસેટી= જાને માર્ગમાં વિસામો કર્યો.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (70) સો કલ્પ સુધી ભક્તિ કરો પણ દોષ ન ટળે. ત્યારે પૂછ્યું જે, ‘દોષ ન ટળે ત્યારે ભક્તિનું ફળ શું ?’ ત્યારે કહ્યું જે, ‘દુર્વાસા સો થાળ જમી ગયા ને સ્વભાવ આવ્યો ત્યારે ઠેકાણું ન રહ્યું, માટે સ્વભાવ ટાળ્યા વિના તો ટળે જ નહીં.’ ને પૃથુ રાજાના જેવી ને ગોપીઓના જેવી ભક્તિ થાય તો તો દોષ ટળે ખરા. તે પૃથુ રાજાએ હજાર કાન માગ્યા, ને આપણે ઘડીક કથામાં બેસવું તેમાં ઊંઘ આવે છે. ને ભગવાનનો મહિમા તો એવો છે જે, <br/><br/>
+ 
+
+
+ ત્રિભુવનવિભવહેતવેઽપ્યકુણ્ઠ સ્મૃતિરજિતાત્મસુરાદિભિર્વિમૃગ્યાત્ । <br/>
+ન ચલતિ ભગવત્પદારવિન્દાલ્ લવનિમિષાર્ધમપિ યઃ સ વૈષ્ણવાગ્ર્યઃ ॥
+
+ <br/>
+ 
+ (શ્રીમદ્ ભાગવત : 11/2/53)
+ 
+ <br/>
+ 
+ અર્થ :- ત્રણે ભુવનના વૈભવો આવીને ઊભા હોય તો પણ જેની ભગવાનમાં અખંડ બુદ્ધિ છે એવો તથા જેનો આત્મા શ્રી વિષ્ણુમાં છે એવો વૈષ્ણવજન, દેવોને પણ જેમની શોધ કરવી પડે છે એવા ભગવાનના ચરણકમળમાંથી એક લવમાત્ર પણ અથવા આંખના અર્ધા પલકારા જેટલો સમય માટે પણ ચલિત થતો નથી તેવો વૈષ્ણવજન પ્રધાન વૈષ્ણવ ગણાય છે, વૈષ્ણવોમાં અગ્રેસર ગણાય છે.
+ 
+ <br/><br/>
+ 
+ એમ કહ્યું છે, તે આપણને તો આળસ આવે છે ને<br/><br/>
+ 
+
+આકુતિચિતિચાપલ્યરહિતા નિષ્પરિગ્રહાઃ ।  <br/>
+બોધને નિપુણા આત્મનિષ્ઠા: સર્વોપકારિણ: ॥  
+
+ 
+ <br/>
+ 
+ (સત્સંગિજીવન : 1/32/28)
+ 
+ <br/>
+ 
+ અર્થ :- શ્રીહરિ ભક્તિમાતાને કહે છે :‘હે સતિ ! મુમુક્ષુઓએ કેવા સંતને સેવવા જોઈએ ? તે જેઓ કર્મેન્દ્રિયો અને જ્ઞાનેન્દ્રિયોની ચપળતાએ રહિત અર્થાત્ વિષય વાસનાઓ વિરહિત આત્મહિતમાં વિરોધી પરિગ્રહ રહિત, તત્ત્વબોધ આપવામાં પ્રવીણ, આત્મામાં જ એક નિષ્ઠાવાળા (આત્મારામ), સર્વ જનોનો આ લોક પરલોકમાં ઉપકાર કરવાના સ્વભાવવાળા હોય.’ <br/><br/>
+ 
+ એટલામાં મહારાજે બધું કહી દીધું છે, તે ગુણ અભેસિંહમાં છે; માટે ભગવાનની વાતું સમજાય ત્યારે ઊંઘ કેમ આવે ને આળસ કેમ થાય ? <br/><br/>
+ 
+<a href="refch6212.html" class="wordMeaning">પ્રકરણ 6 ની વાત 212 </a>
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

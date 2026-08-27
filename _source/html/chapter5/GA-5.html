@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect"><li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૫: માહાત્મ્યે યુક્ત ભક્તિનું</h1>
+		
+		<p style="" class="text_gu">સંવત ૧૮૮૩ના ભાદરવા સુદિ ૧૧ એકાદશીને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ ગાદીતકિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને કંઠને વિષે મોગરાનાં પુષ્પના હાર પહેર્યા હતા અને પાઘને વિષે મોગરાનાં પુષ્પના તોરા વિરાજમાન હતા ને હાથને વિષે મોગરાનાં પુષ્પના ગજરા વિરાજમાન હતા ને પોતાના મુખારવિંદની આગળ મુનિમંડળ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+		<p style="" class="text_gu">તે સમયમાં શ્રીજીમહારાજે કહ્યું જે, “કોઈક પ્રશ્ન પૂછો.” પછી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! ભગવાનની જે ભક્તિ છે તેમાં કોઈ રીતનું વિઘ્ન ન થાય એવી કઈ ભક્તિ છે? અને જે ભક્તિમાં કાંઈક વિઘ્ન થાય છે તે કઈ જાતની ભક્તિ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “તૃતીય સ્કંધમાં કપિલગીતાને વિષે માતા દેવહૂતિએ કપિલજી પ્રત્યે કહ્યું છે જે,</p>
+		
+		<cite class="text_gu">
+		‘યન્નામધેયશ્રવણાનુકીર્તનાદ્યત્પ્રહ્‌વણાદ્યત્સ્મરણાદપિ ક્વચિત્ ।<br>
+શ્વાદોઽપિ સદ્યઃ સવનાય કલ્પતે કથં પુનસ્તે ભગવન્નુ દર્શનાત્ ॥<br>
+અહો બત શ્વપચોઽતો ગરીયાન્ યજ્જિહ્‌વાગ્રે વર્તતે નામ તુભ્યમ્ ।<br>
+તેપુસ્તપસ્તે જુહુવુઃ સસ્નુરાર્યા બ્રહ્માનૂચુર્નામ ગૃણન્તિ યે તે ॥’
+
+</cite>
+<p style="" class="text_gu">એ બે શ્લોકે કરીને જેવું ભગવાનનું માહાત્મ્ય કહ્યું છે તથા કપિલજીએ માતા દેવહૂતિ પ્રત્યે પોતાનું માહાત્મ્ય કહ્યું છે જે,</p>
+
+<cite class="text_gu">
+
+‘મદ્‌ભયાદ્વાતિ વાતોઽયં સૂર્યસ્તપતિ મદ્‌ભયાત્ ।<br>
+ વર્ષતીન્દ્રો દહત્યગ્નિર્મૃત્યુરશ્ચરતિ મદ્‌ભયાત્ ॥’
+ </cite>
+
+
+<p style="" class="text_gu">એવી રીતે માહાત્મ્ય સહિત ભગવાનની ભક્તિ હોય તેમાં તો કોઈ જાતનું વિઘ્ન આવે નહીં અને માહાત્મ્ય જાણ્યા વિના પ્રાકૃત બુદ્ધિએ કરીને જો ભક્તિ કરે તો તેમાં વિઘ્ન આવે છે.”</p>
+
+
+<p style="" class="text_gu">પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “એ માહાત્મ્યયુક્ત ભક્તિ આવ્યાનું શું સાધન છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “<b>શુક-સનકાદિક જેવા જે મોટાપુરુષ તેની જે સેવા ને પ્રસંગ તેમાંથી માહાત્મ્યે સહવર્તમાન એવી જે ભક્તિ તે જીવના હૃદયમાં ઉદય થાય છે.</b>”</p>
+
+
+<p style="" class="text_gu">પછી શુકમુનિએ પૂછ્યું જે, “એક તો ભગવાનનો ભક્ત એવો હોય જે, તેને ભગવાનનો નિશ્ચય પણ પરિપક્વ હોય ને કામ, ક્રોધ, લોભ, મોહાદિક જે વિકાર તે એકે તેના હૃદયમાં આવે નહીં; અને બીજો ભક્ત હોય તેને તો ભગવાનનો નિશ્ચય પરિપક્વ હોય પણ કામ, ક્રોધ, લોભ, મોહાદિક વિકારે કરીને અંતરમાં વિક્ષેપ થતો હોય; એ બે પ્રકારના ભક્ત જ્યારે દેહને મૂકે ત્યારે એ બે ભક્તને ભગવાનના ધામમાં સરખા સુખની પ્રાપ્તિ થાય છે કે અધિક-ન્યૂન સુખની પ્રાપ્તિ થાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જે ભગવાનના ભક્તને ભગવાનનો નિશ્ચય પણ પરિપૂર્ણ હોય ને કામ, ક્રોધ, લોભાદિકે કરીને વિક્ષેપને ન પામતો હોય ને અતિશય ત્યાગી ને અતિ વૈરાગ્યવાન ને અતિ આત્મનિષ્ઠાવાળો હોય અને જો તે પ્રત્યક્ષ શ્રીકૃષ્ણ ભગવાનની મૂર્તિ વિના કાંઈક બીજું ઇચ્છે તો તેને ન્યૂન સુખની પ્રાપ્તિ થાય છે. અને બીજો જે ભક્ત છે તેને પણ ભગવાનનો નિશ્ચય તો પરિપૂર્ણ છે તો પણ હૃદયમાં કામ, ક્રોધ, લોભ, મોહાદિકનો વિક્ષેપ આવે ત્યારે પોતાના હૃદયમાં દાઝ્ય થાય ને ભગવાન જે પ્રત્યક્ષ શ્રીકૃષ્ણ તેની મૂર્તિ વિના બીજા કોઈ પદાર્થને ઇચ્છે નહીં, તેને આત્મનિષ્ઠા, વૈરાગ્ય જો થોડાં હોય તો પણ એ દેહ મૂકીને ભગવાનના ધામમાં બહુ મોટા સુખને પામે છે. શા માટે જે, પ્રથમ કહ્યો જે ભક્ત તે ઉપરથી તો ત્યાગી ને નિષ્કામી જણાય છે, પણ ભગવાનની મૂર્તિ વિના બીજી આત્મદર્શનાદિક પ્રાપ્તિની હૃદયમાં ઇચ્છા છે માટે એ સકામ ભક્ત કહેવાય અને એને પરલોકને વિષે જરૂર ન્યૂન સુખની પ્રાપ્તિ થાય છે; અને જે બીજો ભક્ત કહ્યો તે ઉપરથી તો સકામ જેવો જણાય પણ એ ભક્ત ભગવાનની મૂર્તિ વિના અંતરમાં બીજું કાંઈ ઇચ્છતો નથી અને ભગવાનની મૂર્તિ વિના બીજા સુખની ઇચ્છાનો જો ઘાટ થઈ જાય તો અતિશય મનમાં દાઝે છે, માટે એ નિષ્કામ ભક્ત કહેવાય. તે જ્યારે દેહને મૂકે ત્યારે બહુ મોટા સુખને પામે છે ને ભગવાનનો પાર્ષદ થાય છે અને શ્રીકૃષ્ણ ભગવાનની મૂર્તિને વિષે અતિશય પ્રીતિએ યુક્ત થાય છે.”</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૩ - લીલાચરિત્ર સંભારી રાખવાનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના માગશર સુદિ ૬ છઠને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં રાત્રિને સમે વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “જેને ભગવાનની મૂર્તિ અંતરમાં અખંડ દેખાતી હોય તેણે પણ ભગવાને જે જે અવતારે કરીને જે જે સ્થાનકને વિષે જે જે લીલા કરી હોય તે સંભારી રાખવી. અને બ્રહ્મચારી, સાધુ તથા સત્સંગી તેની સાથે હેત રાખવું અને એ સર્વને સંભારી રાખવા. તે શા સારુ જે, કદાપિ દેહ મૂક્યા સમે ભગવાનની મૂર્તિ ભૂલી જવાય તો પણ ભગવાને જે સ્થાનકને વિષે લીલા કરી હોય તે જો સાંભરી આવે અથવા સત્સંગી સાંભરી આવે અથવા બ્રહ્મચારી ને સાધુ સાંભરી આવે તો તેને યોગે કરીને ભગવાનની મૂર્તિ પણ સાંભરી આવે અને તે જીવ મોટી પદવીને પામે અને તેનું ઘણું રૂડું થાય. તે માટે અમે મોટા મોટા વિષ્ણુયાગ કરીએ છીએ તથા જન્માષ્ટમી અને એકાદશી આદિક વ્રતના વર્ષોવર્ષ ઉત્સવ કરીએ છીએ અને તેમાં બ્રહ્મચારી, સાધુ, સત્સંગીને ભેળા કરીએ છીએ. અને જો કોઈક પાપી જીવ હોય અને તેને પણ જો એમની અંતકાળે સ્મૃતિ થઈ આવે તો તેને ભગવાનના ધામની પ્રાપ્તિ થાય.”
+</p>
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

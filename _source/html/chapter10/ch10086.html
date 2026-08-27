@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (86) સત્સંગ વિના શું લઈ જઈએ એવું છે ? દેહમાંથી તો જરૂર નીકળવું પડશે, માટે જીવમાં ભગવાન રાખવા, પણ જેટલી આસક્તિ તેટલી સ્વપ્નામાં આવે ને દેહ તો અંગરખા જેવું છે. <a href="#ex1" class="wordMeaning"> ધૂડનાં ઘોલકાં</a> કરે, ગારાની ગાય કરીને દોવે ને ધૂડમાં લઘુ નાખી લાડવા કરે ને જેવો આનંદ માને; તેવો એકાંતિકની દૃષ્ટિએ આ લોકનો આનંદ છે.
+ <br/><br/>
+ વિદ્યુચ્ચલં કિં ધનયૌવનાયુર્દાનં પરં કિં ચ સુપાત્રદત્તમ્‌ । <br/>
+કણ્ઠંગતૈરપ્યસુભિર્ન કાર્યં કિં કિં વિધેયં મલિનં શિવાર્ચા  ।।
+
+ <br/>
+ (મણિરત્નમાલા : 30)
+ <br/>
+ અર્થ :- વીજળીના સમાન ચલિત શું છે ? ધન, યૌવન અને આયુષ્ય. ઉત્તમ પ્રકારનું દાન કયું છે ? સુપાત્રને આપવામાં આવ્યું હોય તે. પ્રાણાન્તે પણ સજ્જનોએ શું ન કરવું જોઈએ ? અધોગતિમાં નાખનારું અશુભ કર્મરૂપ પાપ. અને કરવા યોગ્ય શું છે ? કલ્યાણરૂપ પરમાત્માનું પૂજન. 
+ <br/><br/>
+ ભગવદી હોય તેણે એમ વિચાર કરવો જે ધન, જોબન ને આયુષ તે વીજળીના ઝબકારા જેવું છે તે ન સૂઝે, પણ કાળ મેલે એમ નથી; ઉંદરને બિલાડી ઝાલી જાય છે, તેમ કાળ પકડી જાશે.
+ <br/><br/>
+ કડાં, વેઢ,  વીંટી મોતી, પહેર  કાને, મહા જોર સે  મૂછ  મરોડતા હૈ;
+ <br/>
+ ચલે દેખતા આપની છાંયડી કું, ટેઢી પાઘ બાંધી તાન તોડતા હૈ;
+ <br/>
+ તન  અત્તર,  તેલ,  ફૂલેલ  લગાવત,  નેહ  ત્રિયા સંગ  જોડતા  હૈ;
+ <br/>
+ બ્રહ્માનંદ  કહે ખબરદાર બંદે, દેખ  કાલ  કિસેં  નહિ  છોડતા  હૈ.
+ <br/>
+ (કીર્તન મુક્તાવલિ : ઉપદેશ કો અંગ)
+ <br/><br/>
+ ચહુ  દેશ મેં આણ ચલાવતા હે,  ઘરૂ દાણ આવે વાટ ઘાટ કા હે,
+ <br/>
+ અરૂ બાગ, કિલા, મહલાત બનાવત,  ખેલ ત્રિયા સંગ ખાટ કા હે;
+ <br/>
+ ભાત ભાત કે ભોજન થાલહુ મેં,  તામેં બીશ, પચીશક  વાટ કા હે,
+ <br/>
+ બ્રહ્માનન્દ કહે દેખ બિચાર પ્યારે, સબે કાલકિ એક થપાટ કા હે.
+ <br/>
+ (બ્રહ્માનંદ કાવ્ય : ઉપદેશકો અંગ)
+ <br/><br/>
+ માટે એટલા સારુ નિયમ પાળવા, માનસી કરવી, નિષ્કામી થાવું, નિર્લોભી થાવું ને કોઈમાં જીવ બંધાવા દેવો નહિ. શંકરાચાર્ય ભિક્ષા માગવા ગયા, ત્યાં એક બાઈ રેંટિયો ફેરવતી હતી ને રેંટિયો ‘ભું, ભું’ અવાજ કરતો હતો. ત્યારે શંકરાચાર્ય બોલ્યા,
+ <br/><br/>
+રે રે યંત્ર મા રોદી: કં કં ન ભ્રમયન્ત્યમૂ: । <br/>
+ભ્રૂચાપોત્ક્ષેપમાત્રેણ કરાકૃષ્ટસ્ય કા કથા ।।
+
+ <br/>
+ અર્થ :- હે યંત્ર તું રડીશ નહિ. કેવળ પોતાની ભૂરૂપી ધનુષના ફેંકવાથી કોને કોને ફેરવતા નથી ? (તો પછી) હાથથી જેને ખેંચે છે, તેની તો શું વાત?
+ <br/><br/>
+ હે રેંટિયા, રો મા, સ્ત્રીએ આંખના કટાક્ષ વડે કરીને આખા બ્રહ્માંડના જીવને ભમાવ્યા છે અને તું તો તેના હાથમાં જ આવી ગયો છે, એટલે તારે રોવું, એમાં શું કહેવું ?
+
+
+ માટે એથી છેટે રહેવું.
+ <br/><br/>
+યોષિદ્ધિરણ્યાભરણામ્બરાદિદ્રવ્યેષુ માયારચિતેષુ મૂઢ: । <br/>
+પ્રલોભિતાત્મા હ્યુપભોગબુદ્ધયા પતડ્ગવન્નશ્યતિ  નષ્ટદૃષ્ટિ:  ।।
+ <br/>
+
+ (શ્રીમદ્ ભાગવત : 11/8/8)
+  <br/>
+ અર્થ :- સ્ત્રી, સુવર્ણ, ભૂષણ અને વસ્ત્રાદિ માયારૂપી પદાર્થોમાં જે મૂઢ ભોગબુદ્ધિથી ફસાયો છે, તે વિવેકબુદ્ધિને ખોઈને પતંગિયાની માફક નષ્ટ થઈ જાય છે.
+  <br/><br/>
+ ભગવાનની માયાએ રચેલાં એવાં જે, સ્ત્રી, દ્રવ્ય, ઘરેણાં ને લૂગડાં તેમાં મૂઢપુરુષ ભોગબુદ્ધિએ કરીને મોહ પામે છે ને તેનો લોભ રાખે છે; એટલે પતંગિયો જેમ દીવામાં પડીને મરે છે; તેમ જીવ પણ તે સારુ મરી જાય છે. માટે શાસ્ત્ર પણ એમ કહે છે જે, કામમાં, લોભમાં ક્યાંય લેવાશો નહિ. તાવ આવે ત્યારે દેહ બળે; પણ આજ્ઞા લોપાય ત્યારે તો દેહ ને જીવ બેય બળે ! આ વાતું તો ભગવદીની છે. દેહ પડવાનું કહીએ, ત્યારે મનુષ્યને વસમું લાગે; પણ એ રહે નહિ ને લોકની ઘાંટી જે, બીજે જન્મે સ્ત્રી તે સ્ત્રી, ને પુરુષ તે પુરુષ જ થાય છે; એ લોકનાં <a href="#ex1" class="wordMeaning">ડિંગળ</a> છે. 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 ધૂડ્યનાં ધોલકાં= ધૂળનાં નાનાં ઘર. <br/>
+	2 ડિંગળ= બનાવટી વાત, જૂઠું, બનાવટ, ગપ્પાં.
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

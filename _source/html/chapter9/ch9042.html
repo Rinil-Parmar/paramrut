@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1918ના અષાઢ સુદિ પૂનમને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (42) ઉપાસનાનો કજિયો છે તે તો કોઈ મોટા સંતનો વિશ્ર્વાસ હોય તો તેની સમજણે વાતની <a href="#ex1" class="wordMeaning">ઘડ</a> બેસે. મહારાજે મહા મહા અલૌકિક પ્રતાપ જણાવ્યો ને પોતાના સેવકોનાં નામ પણ વિજાતીય પાડ્યાં; એ આદિક પ્રભાવ ઉપર જેની સુરત હોય તેને ઘડ બેસે. અમદાવાદમાં કપડવંજવાળા ભૂદરભાઈએ અમને સભામાં વાતું કરવા કહ્યું, એટલે અમે મહારાજના સર્વોપરીપણાની વાતું કરી, એટલે ત્યાંના સાધુ કહે, ‘શાસ્ત્રમાં નરનારાયણનું લખ્યું છે, તેનું કેમ સમજવું ?’ ત્યારે અમે કહ્યું જે, ‘રનારાયણનો ભરતખંડ છે, તેથી મહારાજે તેમને ભોમિયા લીધા છે ને મહારાજ તો સર્વોપરી પુરુષોત્તમ છે.’ પછી અમે અયોધ્યાપ્રસાદજી મહારાજને પૂછ્યું જે, ‘તમારે અમારે વિશે કેવું હેત ?’ તો કહે, ‘બહુ જ હેત.’ પછી અમે પૂછ્યું જે, ‘ખજીનો કેને દેખાડ્યો છે ? કેશવપ્રસાદજીને કે અમને ?’ ત્યારે કહે, ‘કેશવપ્રસાદજીને.’ પછી અમે કહ્યું જે, ‘જેવા તમને અમે વ્હાલા તેવા તમે મહારાજને વ્હાલા છો, તેથી તમને ગાદી આપી છે તે સત્સંગમાં પૂજાઓ એટલું જ ને જેવા તમને કેશવપ્રસાદજી વ્હાલા એવા મહારાજને વ્હાલા અમે છીએ, તેથી મહારાજે અમને પુરુષોત્તમપણાનો ખજીનો સોંપ્યો છે એની તમને ખબર નથી.’
+ <br/><br/>
+ પછી અમે આનંદસ્વામીને પૂછ્યું જે, ‘રસ્તે ચાલતાં લોકે તમને તથા તમારી સાથે હતા તેને રામ-લક્ષ્મણરૂપે દીઠા, એટલે તમને રામ-લક્ષ્મણ કહ્યા તે વાત યાદ છે ?’ તો કહે, ‘હા.’ વળી એક વખત મહારાજે ચોરણો પહેર્યો, ચાર તસુની કોરનું ચીણવાળું <a href="#ex1" class="wordMeaning">કેડિયું</a> પહેર્યું, માથે બ્રાહ્મણની પાઘડી ને ટીપણું ઘાલ્યું, કપાળમાં આડું તિલક કર્યું, ડોકમાં માળાઓ ને ફકીરની તસબી પહેરી ને ખભે બંદૂક લીધી. પછી સભામાં આવ્યા ને પૂછ્યું જે, ‘અમે કેના જેવા છીએ ?’ ત્યારે સૌ વિચારી રહ્યા ને કેના જેવા કહેવા તે કાંઈ સૂઝ્યું નહીં. પછી મહારાજ કહે, ‘અમે કોઈ અવતાર જેવા નથી, અમ જેવા તો અમે એક જ છીએ !’ તે વાત તમે જાણો છો કે ? ત્યારે આનંદસ્વામી કહે, ‘હા, એ વાત ખરી છે.’
+ <br/><br/>
+ 
+ કોટિ કૃષ્ણ તહાં જોડે હાથ, કોટિ વિષ્ણુ તહાં નમે હૈ માથ;
+ <br/>
+ કોટિ બ્રહ્મા તહાં કથે જ્ઞાન, કોટિ શિવ જહાં ધરે હૈ ધ્યાન;
+ <br/>
+ જહાં સદ્ગુરુ ખેલે વસંત, પરમ જ્યોતિ જહાં સાધુ સંત.
+ <br/>
+ (કીર્તન મુક્તાવલિ : 735)
+ <br/><br/>
+ તેમાં, ‘કોટિ કૃષ્ણ ત્યાં જોડે હાથ,’ એ શબ્દ વારેવારે બોલે ને પોતાનું સ્વરૂપ સમજાવે. ત્યારે આનંદસ્વામી કહે, ‘હા, એ વાત સાચી છે; મહારાજ સર્વોપરી ભગવાન છે !’ એમ અમદાવાદની સભામાં આનંદસ્વામીને મોઢે જ સર્વોપરીપણાની હા પડાવી. માટે જ્ઞાન સમજવું હોય તો વારંવાર કહેવું ને સાંભળવું, તો જ્ઞાન વૃદ્ધિ પામે છે; પણ બે વચનામૃત વાંચીને <a href="#ex1" class="wordMeaning">શ્રીપતિમ્</a> કરે તેને એ વાતની ઘડ બેસે નહીં. તે માટે એ વાતની ઘડ બેસારવી ને જ્યારે ઘડ બેસે, ત્યારે તેની નિશાની જે બીજાને સમજાવતાં આવડે. 
+ <br/><br/>
+ ઐશ્ર્વર્યાર્થી ન થાવું ને કૈવલ્યાર્થી ય ન થાવું, પણ ભગવદ્નિષ્ઠ થાવું અને સર્વોપરી ઉપાસના સમજવી ને એવી સમજણવાળા સાધુનો પ્રસંગ રાખવો, પણ આવી મોટી વાત જીવના હૈયામાં સમાય નહીં. તે ઉપર <a href="#ex1" class="wordMeaning">તરકડીના</a> છોકરાનાં <a href="#ex1" class="wordMeaning">સોણાંની</a> વાત કરી ને જો સમાય તો કોઈ વર્તમાન પાળે નહિ કેમ કે, પૂરો મહિમા નથી. આ વાત કાંઈ જેવી તેવી નથી અને આ પ્રાપ્તિ થાવી તે કાંઈ દાન, પુણ્ય, વ્રતે કરીને થાતી નથી. રામાનંદસ્વામીનું દર્શન કણબીના છોકરાને થયું એટલે તે છોકરે સ્વામીને રોટલો જમાડ્યો તેથી તે ગોલોકને પામ્યો એટલો તો એમનો પ્રતાપ છે ત્યારે મહારાજ ને આ સાધુની વાત શી કહેવી ! ને આજ તો સંપૂર્ણ ચમકનો પર્વત આવ્યો છે ને આ વાત કોઈને મળી નથી ને મળશે પણ નહીં. પછી અવતાર-અવતારીનો ભેદ વિસ્તારીને કહી દેખાડ્યો જે, તીર ને તીરનો નાખનારો તથા પૂનામાં જ્યારે ઉમરાવ આવે, ત્યારે સો સલામ ભરીને ઊભો રહે ને હુકમ થાય ત્યારે તેની જાયગાએ બેસે; ને જ્યારે જાવાનો હુકમ થાય ત્યારે સો સલામ ભરીને ઊભો રહે; પછી સરકાર કહે જે, ‘જાઓ.’ ત્યારે જાવાય; તેમ મહારાજની આગળ સર્વે અવતારમાત્ર ઉમરાવની પેઠે છે.
+ <br/><br/>
+ પછી બીજી વાત કરી જે, ચક્રવર્તી રાજા ગરાસિયા કહેવાય ને પાંચ ગામનો ધણી તથા એક ગામનો ધણી હોય તે પણ ગરાસિયો કહેવાય ને <a href="#ex1" class="wordMeaning">વહવાયા</a> પણ ગરાસિયા કહેવાયા છે, તેમ ચક્રવર્તીને ઠેકાણે મહારાજ છે, બીજા અવતારાદિક સર્વે વહવાયાને ઠેકાણે છે; એટલે પુરુષોત્તમ તો એક સહજાનંદસ્વામી છે, એમ અવતાર-અવતારીનો ભેદ સમજવો. ને આ જે વાત તે તો મહા અલૌકિક છે; કેમ કે, કેળમાં તો કેળાં જ લાગે પણ થોરમાં કેળાં લાગે એ વાત અચરજ કહેવાય ! તે આહીર, રબારી, ભરવાડ, કોળી ને વાળંદ તે પણ બાયડીઓ મૂકી મૂકીને આવતા રહ્યા ! તે એવો પ્રતાપ તો સ્વામિનારાયણનો જ હોય ! પણ બીજામાં એવો દેખાયો જ નથી.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઘડ= ઘેડ, સમજ. <br/>
+		2 કેડિયું= કેડ સુધી પહોંચતું ગ્રામીણ કસવાળું કપડું. <br/>
+		3 શ્રીપતિમ્....= કથા-ચેષ્ટા વિસર્જન વખતે સાંપ્રદાયિક પ્રથા મુજબ બોલતો શ્ર્લોક. <br/>
+		4 તરકડી= મુસ્લિમ સ્ત્રી. <br/>
+		5 સોણાની= સ્વપ્નની. <br/>
+		6 વહવાયા= ચાકરી કરનારા નીચલી જાતિના લોકો.
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

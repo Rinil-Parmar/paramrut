@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (29) શ્રીજીમહારાજે વેદરસમાં કહ્યું છે કે, ‘બીજા જે અવતારાદિક છે, તે તો ઉત્પત્તિ સર્ગમાં સ્ત્રી-પુરુષનાં બેલડાંરૂપ અવતારો આ ભૂમિને વિશે ઘણાક થઈ ગયા છે અને હજુ થાશે.’ <a href="GP-41.html">પ્રથમનાં 41</a>માં વચનામૃતમાં કહ્યું જે, ‘સૃષ્ટિકાળે અક્ષરાતીત પુરુષોત્તમ ભગવાને મૂળઅક્ષર સામી દૃષ્ટિ કરી અને મૂળઅક્ષરે મુક્ત સામી દૃષ્ટિ કરી ત્યારે તેમાંથી મુક્ત ઊભો થયો અને મૂળમાયા જે મૂળપ્રકૃતિ તે સાથે જોડાયો. તેમાંથી અનંતકોટિ પ્રધાનપુરુષ, મહત્તત્ત્વ અને વૈરાટાદિક ઉત્પન્ન થાય છે.’ આવી રીતે પ્રકૃતિપુરુષ સુધી સ્ત્રી-પુરુષનો ભાવ ઊભો છે. એ ભાવ તો એક અક્ષરધામમાં જ નથી. અક્ષરધામમાં તો સર્વ મુક્તાત્માઓ ચૈતન્યમૂર્તિ સચ્ચિદાનંદ સ્વરૂપ જ છે. પરબ્રહ્મ પુરુષોત્તમનારાયણ જેવા તો પરબ્રહ્મ એક જ અને પરમ અદ્વિતીય છે અને સાકરના રસની મૂર્તિની પેઠે જેમાં ભાગ-ત્યાગ કર્યાનો માગ જ નથી, એવા દિવ્ય, પરમ ચૈતન્ય, સત્, ચિદ્, આનંદઘન મૂર્તિ છે અને તે પરબ્રહ્મ જેવો થાવાને અક્ષરબ્રહ્મ પર્યંત કોઈ સમર્થ નથી; પરંતુ તે પરબ્રહ્મની સાથે બ્રહ્મરૂપ થઈને તાદાત્મ્યકપણાને પામી શકાય છે અને જેમ પરબ્રહ્મ એક જ છે, તેમ જ અક્ષરબ્રહ્મ કે મૂળઅક્ષર પણ એક જ છે. અનંતકોટિ અક્ષરમુક્તો અક્ષરરૂપે રહ્યા થકા પુરુષોત્તમનારાયણની ઉપાસના કરે છે; એવી રીતે પુરુષોત્તમનારાયણની ઉપાસના માટે અધિકારી થાવા તથા તેમને પામવા માટે અનાદિ અક્ષરબ્રહ્મ એ સર્વે મુમુક્ષુનું લક્ષ્ય હોવું જોઈએ. 
+ <br/><br/>
+ શ્રીજીમહારાજે આ વાત ગૌરવતાએ <a href="GM-30.html">મધ્યનાં 30</a>માં વચનામૃતમાં કહી છે જે, ‘પ્રકૃતિપુરુષ થકી પર એવું જે, શુદ્ધ ચૈતન્યબ્રહ્મ તેને જ પોતાનું સ્વરૂપ માને અને બ્રહ્મરૂપ થઈને પરબ્રહ્મનું ભજન કરે અને એ બ્રહ્મ થકી ઓરું જે, પ્રકૃતિ ને પ્રકૃતિનું કાર્યમાત્ર તેને અસત્ય જાણે ને તુચ્છ સમજે ને માયિક જે નામરૂપ તેને વિશે અતિશે દોષ દૃષ્ટિ રાખે ને તે સર્વ નામરૂપને વિશે અતિશે વૈરાગ્ય પામે, ત્યારે તેને સોનું ને સ્ત્રી બંધન ન કરે; બીજાને તો જરૂર બંધન કરે.’ 
+ <br/><br/>
+ વળી મધ્યનાં ત્રીજા વચનામૃતમાં કહ્યું જે, ‘એ બ્રહ્મ થકી પરબ્રહ્મ જે પુરુષોત્તમનારાયણ તે નોખા છે અને એ બ્રહ્મના પણ કારણ છે ને આધાર છે ને પ્રેરક છે. એમ સમજીને પોતાના જીવાત્માને એ બ્રહ્મ સંગાથે એકતા કરીને પરબ્રહ્મની સ્વામી-સેવકભાવે ઉપાસના કરવી.’ 
+ <br/><br/>
+ વળી <a href="L-12.html">લોયાનાં 12</a>માં વચનામૃતમાં કહ્યું જે, ‘જે અક્ષરધામના એક એક રોમમાં અસંખ્યાત બ્રહ્માંડ અણુની પેઠે જણાય છે, તેવું ધામરૂપ અક્ષર તે રૂપે પોતે રહ્યો થકો પુરુષોત્તમની ઉપાસના કરે તેને ઉત્તમ નિર્વિકલ્પ નિશ્ર્ચયવાળો કહીએ.’ આવી રીતે ત્રણ દેહથી પૃથક, જીવસત્તામાત્ર થઈને એ જીવને અનાદિ મૂળ અક્ષરબ્રહ્મની સાથે એકતા કરવા માટે શ્રીજીમહારાજનો ઉપદેશ છે. આવી રીતે નિર્દેશ કરેલ અક્ષરબ્રહ્મ કે બ્રહ્મ તેને જ મૂળઅક્ષર કે અક્ષરધામ કહે છે અને તે અક્ષરધામનાં મૂર્ત અને અમૂર્ત એવાં બે સ્વરૂપ <a href="GP-21.html">પ્રથમનાં 21</a>માં વચનામૃતમાં કહ્યાં છે એવું જે, પોતાનું અક્ષરધામ ને ચૈતન્યમૂર્તિ પાર્ષદ અને સર્વ ઐશ્ર્વર્યએ સહિત જ શ્રીજીમહારાજ આંહીં પધાર્યા છે, એમ <a href="GP-71.html">પ્રથમનાં 71</a>માં વચનામૃતમાં કહ્યું છે. 
+ <br/><br/>
+ માટે અક્ષરબ્રહ્મ તે શ્રી પુરુષોત્તમનારાયણને અખંડ રહેવાનું ધામ છે, તેથી શ્રીજીમહારાજ કે અક્ષરબ્રહ્મ કે અક્ષરરૂપ સંતની સાક્ષાત્ પ્રાપ્તિ વગર કોઈ <a href="#ex1" class="wordMeaning">બારોબાર</a> પરોક્ષભાવે બ્રહ્મરૂપ થઈ શકતો નથી. જેમ લોઢાને સોનું થાવા માટે પારસમણિના સ્પર્શ વગર કોટિ પ્રયાસ કરે, તો તે વડે તેનો લોહભાવ જતો નથી, વળી જેમ કોઈ એમ માને જે, ‘હું તો રાજા છું.’ અને એમ નિરંતર રટણ કરે, તો પણ તે રાજા થાતો નથી કે, રાજ સંબંધી અણું જેટલું પણ સુખ આવતું નથી. તેવી જ રીતે 
+ <br/><br/>
+અહં બ્રહ્માસ્મિ ।  
+ <br/>
+ (બૃહદારણ્યક ઉપનિષદ : 1/4/10)
+ <br/>
+ અર્થ :- હું બ્રહ્મ છું.
+ <br/><br/>
+ પરોક્ષભાવે રટ્યા કરવાથી કે, માનવાથી બ્રહ્મ થાવાતું નથી. પણ રાજાના પુત્રપણાને પામે તો તે જીવ કાંઈ પણ પ્રયાસ વગર રાજ્યનો ધણી થઈને જ રહે છે, તેમ સાક્ષાત્ બ્રહ્મસ્વરૂપ સંતનાં પ્રગટ સેવન, મનન અને <a href="#ex1" class="wordMeaning">નિદિધ્યાસ</a>થી જ્યારે એ જીવ પોતાને બ્રહ્મરૂપ માને છે ત્યારે જ તે સાક્ષાત્ બ્રહ્મભાવને પામે છે અને પુરુષોત્તમનારાયણને વરણીય થાય છે. શ્રુતિમાં પણ કહ્યું છે જે, આવી રીતે પ્રગટ બ્રહ્મને ઓળખનારો જ બ્રહ્મ થાય છે.
+ <br/><br/>
+ બ્રહ્મવિદ્‌ બ્રહ્મૈવ ભવતિ । 
+ <br/>
+ (મુણ્ડક ઉપનિષદ : 3/2/9)
+ <br/>
+ અર્થ :- બ્રહ્મને જાણકાર બ્રહ્મ જ બને છે.
+ <br/><br/>
+ આવા બ્રહ્મરૂપ ભક્તને જ પુરુષોત્તમનારાયણની ભક્તિનો ખરો અધિકારી કહ્યો છે. આવી રીતે અક્ષર પુરુષોત્તમના કે, બ્રહ્મ પરબ્રહ્મના સ્વરૂપ જ્ઞાનને યથાર્થ સમજ્યા વગર જ્ઞાન ભાગ બહુ જ દોષયુક્ત બને છે; કેમ કે, અક્ષરબ્રહ્મનું અનાદિત્વ અને એક વચન તેમ જ, પરબ્રહ્મનું અનાદિત્વ અને એક વચન, આવી જ્ઞાનદૃષ્ટિ વગર સાર્થક બનતું નથી.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 બારોબાર= પરબારું, સીધેસીધુ.  <br/>
+	2 નિદિધ્યાસ= ઇષ્ટદેવ કે પરમતત્ત્વનું નિત્ય ચિંતન. 
+
+
+	</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

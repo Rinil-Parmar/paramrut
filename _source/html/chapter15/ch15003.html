@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (3) કથા, કીર્તન, ધ્યાન ને ભજન સદા કર્યા કરવું. તેમાં વચ્ચે કોઈક વ્યાવહારિક કામ આવે તો તેમાં પણ અનુસંધાન રાખવું જે, કામ કર્યા પછી પણ આપણે તેમનું તેમ કરવું છે, તો તે ક્રિયા પણ ધ્યાનરૂપ થાય છે. દેહાભિમાન વધવા ન દેવું, મનધારી ક્રિયા કરવી નહિ. અને જે જે કરવું તે મોટાને પૂછીને કરવું કેમ જે પ્રકૃતિ પડ્યા પછી ટાળવી ઘણી કઠણ છે. જીવમાં ભગવાન રહ્યા છે તે જોવા છે, પણ જેમ ડોળાયેલ પાણીમાં ચિંતામણિ હાથમાં આવતી નથી તેમ જીવનું અંત:કરણ પંચવિષયે કરીને ડોળાઈ ગયેલું છે એટલે ભગવાનની મૂર્તિ દેખાતી નથી તે ક્યારે દેખાય ? તો જ્યારે અંત:કરણ શુદ્ધ થાય ત્યારે દેખાય. તે અંત:કરણ ક્યારે શુદ્ધ થાય ? તો જ્યારે ખાવાનો, જોવાનો, બોલવાનો વગેરેનો સર્વ પ્રકારે નિયમ રાખે તો અંત:કરણ શુદ્ધ થાય ને ભગવાનની મૂર્તિ દેખાય; પણ વૈરાગ્યનું તો કરોડ ગાઉનું છેટું છે. કેમ જે જીવ દેહમાં જડાઈ ગયો છે ને ઉપાસનાનું તો ઠેકાણું નથી, કેમ જે સ્વામિનારાયણને ભગવાન જાણે છે પણ ધ્યાન, ભજન બીજાનું થાય છે; માટે એક તો ઉપાસના, બીજો ધર્મ એ બે વાત રાખવી, તો ઠેઠ અક્ષરધામમાં પુગાશે ને તે વિના તો ગમે તેવો મોટો હશે, પણ : <br/><br/>
+ 
+ સુખં પાલ બેઠે ચલે જુથ સંગ; રથં સુંદરં બેલ જુતે તુરંગ; <br/>
+ 
+ તિખે સાદ આગે છડીદાર ટેરી; દિનં એક હોસી સબે ખાખ ઢેરી. 1<br/>
+ 
+ હજારૂં ફુવારકા છુટે મહિ હોજં; મિલે મંડળી છેલ માણંત મોજં; <br/>
+ 
+ જલે નિર્મલે ક્રીડતે બેર બેરી; દિનં એક હોસી સબે ખાખ ઢેરી. 2<br/>
+ 
+ કહા પાસ મંત્રી રહે જ્યું પ્રવિના; બુદ્ધિવંત સુજે સબે ચોજ જીના; <br/>
+ 
+ સદા રાજ કાજં મનમે લગેરી, દિનં એક હોસી સબે ખાખ ઢેરી. 3<br/>
+ 
+ દિનં ચારકા જીવના આ દુનીમેં; ભ્રમે મોહવંતા બુદ્ધિ આપનીમે; <br/>
+ 
+ તુછં સુખમેં લબ્ધ હોઈ વૃત્તિ તેરી; દિનં એક હોસી સબે ખાખ ઢેરી. 4<br/>
+ 
+ બ્રહ્માનંદ કે ક્યું બંદે મોહ પ્રાની; વિનાં સૂઝ તેરી બુદ્ધિ ક્યાં બેકાની; <br/>
+ 
+ લક્ષ્મી તણા નાથકી ઓટ લેરી; દિનં એક હોસી સબે ખાખ ઢેરી. 5 <br/>
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

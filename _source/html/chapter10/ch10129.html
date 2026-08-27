@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (129) ગંગારામ મલ્લમાં હાથી ઊભો રાખે એવું બળ હતું, પણ તેનાં વેશ્યાએ વખાણ કર્યાં એટલામાં લાજ ગઈ. સ્ત્રી છે તે ભારે વિષય છે, એવું બંધનકારી બીજું નથી. જો વિચારો તો <a href="#ex1" class="wordMeaning"> વહવાયાંમાત્ર</a> એને અર્થે છે.
+ <br/><br/>
+પુંસ: સ્ત્રિયા મિથુનીભાવમેતં તયોર્મિથો હ્રદયગ્રંથિમાહુ: । <br/>
+અતો ગૃહક્ષેત્રસુતાત્પવિત્તૈર્જનસ્ય મોહોડયમહં મમેતિ ।।
+
+<br/>
+ (શ્રીમદ્ ભાગવત : 5/5/8)
+ <br/>
+ અર્થ :- સ્ત્રી અને પુરુષ બંનેનો જે પરસ્પર દામ્પત્યભાવ છે તે જ તેમના હૃદયની દુર્ભેદ્ય ગ્રંથિ છે આ કારણથી પુરુષને ગૃહ, ક્ષેત્ર, પુત્ર, સ્વજન અને ધન વગેરેમાં ‘આ હું છું, મારું છે.’ એવો મોહ થઈ જાય છે.
+ <br/><br/>
+ સ્ત્રી-પુરુષને પરસ્પર મિથુનીભાવ છે, તેથી તેને ઋષભદેવે  હૃદયગ્ંરથિ કહી છે. પણ,
+ <br/><br/>
+ બ્રહ્મભૂતઃ પ્રસન્નાત્મા ન શોચતિ ન કાંક્ષતિ । <br/>
+સમઃ સર્વેષુ ભૂતેષુ મદ્‍ભક્તિં લભતે પરામ્ ॥
+
+
+ <br/>
+
+
+ (ભગવદ્ ગીતા : 18/54)
+  <br/>
+ અર્થ :- બ્રહ્મભાવને પ્રાપ્ત થયેલો તે પ્રસન્ન ચિત્ત મનુષ્ય, કશાનો શોક કરતો નથી કે કશાની આકાંક્ષા કરતો નથી અને સર્વ ભૂતોમાં સમભાવથી રહેતો થકો મારી પરમ ભક્તિને પામે છે.
+  <br/><br/>
+ એવો થાય ત્યારે એ ગ્ંરથિ ગળે. મહારાજે તો સૂતા સાપ જગાડયા છે. તે શું? જે, લોજમાં આવતાં વેંત વાળંદના કરામાં ગોખલો હતો તે બુરાવ્યો (પુરાવ્યો). વળી કથા કરતી વખતે બાઈ ભાઈની સભા ભેળી થતી તે કથા કરતા ઉઠાડયા ને બાઈ ભાઈની સભા નોખી કરી; તો પણ મુક્તાનંદસ્વામીએ ગુણ લીધો. આ તો બાંટવા પરગણામાં <a href="#ex1" class="wordMeaning"> ખેવડો</a> મૂળમાંથી ખોદી નાખે છે, તેમ મહારાજે વિષયનાં મૂળ ખોદી નાખ્યાં છે; માટે ભગવાનને મૂકીને બીજામાં માલ માનવો નહિ. આજ તો એક જ વાત છે જે વિષય ક્યાંથી ભોગવશું ? આગળ શરદઋતુ આવે છે, તે તાવ આવશે ને બધું ઝેર જેવું લાગશે. 
+  
+
+  
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 વહવાયા= ચાકરી કરનારા નીચલી જાતિના લોકો, કેવળ વિષયભોગમાં જ આસક્ત લોકો. <br/>
+		2 ખેવડો= એકજાતનું ઘાસ.
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

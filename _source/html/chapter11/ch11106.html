@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (106) સત્સંગનો મમત્વ બંધાય ત્યારે જ કોઈ ભગવદીનો અવગુણ ન આવે ને મમત્વ ન હોય તો જીવ સૂકો રહે ને મન ન મળે ત્યારે વાતે વાતે ધોખો થાય ને શંકિત પ્રકૃતિ રહ્યા કરે. સત્સંગમાં કોઈને થોડું જ્ઞાન હોય ને કોઈને વધુ હોય; કોઈને મંદિરની ક્રિયારૂપ ભક્તિ કરતાં આવડે ને કોઈને ન આવડે; કોઈ આળસુ હોય ને કોઈ પ્રમાદી હોય; પણ જો આજ્ઞા ઉપાસના ચોખ્ખી હોય ને મોટા સંતનો અભાવ ન હોય ને તે જેવા તેવા હોય તો પણ અવગુણ ન લેવો. સમજણ વિના સત્સંગનું સુખ ક્યાંથી આવે ? માટે જ્ઞાન હોય તો સત્સંગમાં આવવું ગોઠે. ને જે કામ આદર્યું તેમાં બળ ન કરીએ તો એ કામ કેમ થાય ? ને સંસાર મૂક્યો છતાં મનને વશ, ઇન્દ્રિયુંને વશ, સ્વભાવને વશ ને જાવું અક્ષરધામમાં ! તે ક્યાંથી જવાશે ? માટે વિચાર કરવો. ને  બીજું તો જેમ ‘ખોદવો ડુંગર ને મારવો ઉંદર.’ તેમ વહેવાર ઝાઝો કરે ને ખાવો એક રોટલો ને ક્યારે મરી જવાનું છે તેની ખબર નથી, તેમ ધારી અહંમમત્વ કરી સંસારમાં કૂટ્યા જ કરે છે ને એક ઘડી પણ ભગવાન નથી ભજતો પણ આ ક્ષણે મરી જવાશે, કાળ તો આંટા જ ખાય છે. માટે ભગવાન અને સારા સાધુનો આશરો કરી સત્સંગની સમજણ ચોખ્ખી કરવી ને પ્રગટ મહારાજની આજ્ઞા ઉપાસના કરી લેવી એ જ જીવ્યાનું ફળ છે. <br/><br/>
+ 
+ પછી <a href="GM-10.html" class="wordMeaning">મધ્યનું 10મું</a> વચનામૃત વંચાણું તેમાં વાત કરી જે, વેદ, શાસ્ત્ર, ઇતિહાસ ને પુરાણમાં સાકાર બ્રહ્મનું જ નિરૂપણ કર્યું છે, ને ‘ભાગવત’માં તે બ્રહ્મ સાકાર મૂર્તિમાન છે એમ ઉપાસનાવાળાએ પ્રતિપાદન કરેલ છે પણ તે જ બ્રહ્મને ભક્તિહીન હોય તે નિરાકાર સમજે છે, અને તેવાને જેવું સદા દિવ્ય સાકાર પ્રગટ પ્રમાણ આ બોલે છે, તેવું બ્રહ્મનું સાકાર સ્વરૂપ સમજાતું નથી. શાસ્ત્રોથી જે બ્રહ્મને નિરાકાર સમજે છે તે તો તેજ જે સચ્ચિદાનંદ બ્રહ્મ તે છે અને તે મૂર્તિમાન બ્રહ્મનો પ્રકાશ છે અને પ્રકાશી જે મૂર્તિમાન બ્રહ્મ છે, તેમને જ મહારાજે ભગવાન જેવા કહ્યા છે ને તેમને જે નિરાકાર સમજે છે, કહેતાં પ્રગટ અક્ષરબ્રહ્મનું સ્વરૂપ મૂર્તિમાન છે, તેને વિશે માહાત્મ્યજ્ઞાને યુક્ત સ્નેહ નથી, તે ભક્તિ ને નિષ્ઠાહીન છે. ને,  <br/><br/>
+ 
+ ભક્તિ હીન ભવસિંધુ ન તરહિ. <br/><br/>
+ 
+ માટે આ બોલે છે તે ઉપર તાન રાખો. અને તે જ બ્રહ્મ આ મૂર્તિમાન દર્શન દે છે; પણ મહારાજનો સિદ્ધાંત સમજાતો નથી તેથી મતિ ભ્રમી જાય છે. અને <a href="L-13.html" class="wordMeaning">લોયાનાં 13માં</a> વચનામૃતમાં પણ મહારાજે મર્મમાં કહ્યું છે જે, ‘ જેમ નારાયણ સર્વોપરી વરતે છે તેમ જ ધામરૂપ મૂળઅક્ષર પણ સર્વે અક્ષરમુક્તોથી સર્વોપરીપણે વરતે છે.’ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

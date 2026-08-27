@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">શુકદેવજી</h1>
+ 
+મહાત્મા શુકદેવજી ભગવાન વ્યાસજીના પુત્ર હતા. તેના જન્મ સંબંધમાં અનેક કથાઓ છે. કોઈક તેને વ્યાસની પત્ની વટિકાના તપનું પરિણામ અને કોઈક વ્યાસજીની તપસ્યાના ફળરૂપ ભગવાન શંકરજીએ આપેલું પુત્રરૂપ વરદાન કહે છે. એક કથા એવી છે કે, જ્યારે આ ધરતી ઉપર શ્રીકૃષ્ણ અને રાધિકાજીનું અવતરણ થયું ત્યારે રાધિકાજીનો ક્રીડા શુક એટલે કે મિત્ર સમાન પોપટ પણ ધરતી ઉપર આવ્યો હતો.
+<br/><br/>
+
+એક સમયે શિવજી પાર્વતીજીને બ્રહ્મકથા સંભળાવી રહ્યા હતા. જે કથાના શ્રવણથી માણસ અમર બની જાય. તે સમયે પાર્વતીજી સાંભળતા સાંભળતા નિદ્રાવશ થતાં પાર્વતીજીને બદલે પોપટે હોંકારો દેવાનું શરૂ કર્યું. જ્યારે શિવને આ વાતની જાણ થઈ ત્યારે તેઓ પોપટ ઉપર ગુસ્સે ભરાયા કે તેં મારી કથા મને છેતરીને કેમ સાંભળી ? આથી તેને મારવા માટે તેની પાછળ દોડ્યા. પોપટ દોડીને વ્યાસજીના આશ્રમમાં આવીને પોતાનું સૂક્ષ્મરૂપ ધરીને વ્યાસજીની પત્નીના મુખ વાટે ઉદરમાં જતા રહ્યા. ત્યારે શંકર પાછા ફરી ગયા. આમ શુકજી પુત્રના રૂપમાં પ્રગટ થયા. ગર્ભમાં જ તેમને વેદ-વેદાંત સર્વે શાસ્ત્રોનું જ્ઞાન મળી ગયું અને સોળ વર્ષ સુધી પોતાની યોગ શક્તિ વડે પોતાનું સૂક્ષ્મરૂપ બનાવીને માતાના ગર્ભમાં જ રહ્યા. બહાર આવે તો સંસારની માયા સ્પર્શી જાય તેથી તેઓ માતાના ગર્ભમાંથી બહાર આવતા ન હતા. આથી શ્રીકૃષ્ણે સ્વયં આવીને તેમને આશ્વાસન આપ્યું કે, તમને માયા સ્પર્શી નહીં શકે. પછી તેઓ બહાર આવ્યા. પરંતુ જન્મતા જ તેઓ માતા-પિતાને પ્રણામ કરી તપસ્યા કરવા વનમાં જતા રહ્યા. વ્યાસજી પુત્ર પ્રેમને વશ થઈ તેમની પાછળ દોડ્યા પણ શુકજીએ તેના પર ધ્યાન ન આપ્યું. તેમનું જીવન પરમ વૈરાગ્યમય હતું. જંગલમાંથી તેઓ માત્ર ગૌદોહન માટે જ ગામમાં આવતા. વ્યાસજીને એવી ઇચ્છા હતી કે, પુત્ર ભાગવતનું અધ્યયન કરે. પણ પુત્ર મળે કેવી રીતે ? આથી તેમણે એક શ્લોક બનાવી તેનો અર્ધો ભાગ પોતાના શિષ્યોને આપ્યો : શ્રીમદ્‌ ભાગવતનો શ્લોક :
+<br/><br/>
+
+‘बर्हापीडं नटवरवपुः कर्णयोः कर्णिकारं ।। <br/>
+
+बिभ्रद्‌ वासः कनककपिशं वैजयन्तीं च मालाम्‌ ।। <br/>
+
+रन्ध्रान्‌ वेणोरधरसुधया पूरयन्‌ गोपवृन्दैः ।। <br/>
+
+वृन्दारण्यं स्वपदरमणं प्राविशद्‌ गीतकीर्तिः ।। <br/>
+
+(૧૦-૨૧-૫)
+
+<br/><br/>
+
+શિષ્યો સમિધ વીણતા વીણતા આ શ્લોક ગાતા હતા. શુકદેવજી તો સચરાચરમાં વ્યાપ્ત હતા તેથી તેમણે આ શ્લોક સાંભળ્યો. આવો મધુર શ્લોક સાંભળતા જ તેમને અન્ય શ્લોક સાંભળવાની ઇચ્છા થઈ અને તેઓ પિતા વ્યાસજી પાસે આવ્યા. પછી તેમણે ભાગવતના અઢાર હજાર શ્લોકની કથા પિતા પાસેથી સાંભળી અને તેનું વિધિવત્‌ અધ્યયન કર્યું અને આ કથા તેમણે રાજા પરીક્ષિતને સાત દિવસમાં સંભળાવી રાજાનું કલ્યાણ કર્યું.
+ 
+
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

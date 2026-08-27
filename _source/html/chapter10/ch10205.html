@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (205) ત્યાગ, તપની વાત આવે ત્યારે ગૃહસ્થ સર્વે એમ સમજે છે આ તો ત્યાગીની વાત છે ને ભોગ ભોગવવાનું આવે ત્યારે જાણે જે આ આપણી વાત છે. પણ,
+  <br/><br/>
+ પુનરપિ જનનં પુનરપિ મરણં પુનરપિ જનનીજઠરે શયનમ્‌ । <br/>
+ઇહ સંસારે ખલુ દુસ્તારે કૃપયાપારે પાહિ મુરારે । <br/>
+ભજ ગોવિંદં ભજ ગોવિંદં ગોવિંદં ભજ મૂઢમતે ।।
+
+  <br/>
+ (ચર્પટમંજરી : 6-કી.મુ.35/7/06)
+  <br/>
+ અર્થ :- ફરી ફરી જન્મ લેવો, ફરીથી મરણ થવું, ફરીથી માતાના કૂખમાં શયન કરવું, અહીં આ સંસાર પાર કરવો ખરેખર બહુ જ કઠણ છે. હે મુરારે, તું ખૂબ કૃપા કરી મને રક્ષણ કર. હે મુરખ, તું ગોવિંદનું ભજન કર, ગોવિંદનું ભજન કર અને ગોવિંદનું ભજન કર.
+  <br/><br/>
+ એ ક્યાં સમજાય છે ? જીવમાત્ર આ લોકના ઠરાવમાં સુખ માને છે, પણ એ ક્યાં સુધી રહેશે ! માટે આ મોટાનો સંબંધ કરવો.
+  <br/><br/>
+ ન હ્યમ્મયાનિ તીર્થાનિ ન દેવા  મૃચ્છિલામયા: । <br/>
+તે પુનન્ત્યુરુકાલેન દર્શનાદેવ સાધવ: ।।
+
+ <br/>
+ (શ્રીમદ્ ભાગવત : 10/84/11)
+  <br/>
+ અર્થ :- જળમય તીર્થો અને માટી અથવા પથ્થરના ભગવાન ઘણા દિવસો સુધી સેવા કરવાથી પવિત્ર કરે છે. પરંતુ સજ્જન (સાધુજન)ના દર્શનમાત્રથી કૃતાર્થ થઈ જઈએ છીએ. એવું મોટાનાં દર્શનનું ફળ છે. 
+  <br/><br/>
+સાધવો ન્યાસિન: શાંતા બ્રહ્મિષ્ઠ લોકપાવના: । <br/>
+હરન્ત્યઘં તેઙ્ઙ્ગસઙ્ગાત્‌ તેશ્વાસ્તે હ્યધભિદ્વરિ:  ।।
+
+<br/>
+(શ્રીમદ્ ભાગવત : 9/9/6)
+ <br/>
+ અર્થ :- એષણાત્રયને ત્યાગવાળા, શાંત, બ્રહ્મનિષ્ઠ અને લોકોને પવિત્ર કરવાવાળા (સાધુજન) પોતાના અંગસંગથી તમારા પાપને દૂર કરી દેશે, કારણ કે એમનામાં પાપહારી શ્રીહરિ બિરાજે છે.
+ <br/><br/>
+ એવા સાધુના સમાગમને તો ગંગા ય ઇચ્છે છે. ત્યારે એક પાળાએ સ્વામીને પગે લાગીને કહ્યું જે, ‘અમે તમારો સમાગમ કરીએ છીએ તે સારુ અમને હેરાન કરીને મંદિરમાંથી કાઢવાનું કરે છે, તેનું શું કરવું ?’ સ્વામી કહે, ‘અહીં તો હું નહિ બોલું, પણ તને ધામમાં હું તેડી જાઈશ.’ એમ કહી કોલ આપ્યો. ત્યારે રવાજી કહે, ‘મને કોલ દ્યો.’ તો કહે, ‘તને તો છે જ ને.’ પછી કોલ દીધો. એટલે પૂછ્યું જે, ‘તમે ધામમાં કેમ તેડી જાશો ?’ ત્યારે કહે, ‘તું તારે ઘેર જેમ તેડી જાય છે, તેમ અમે ય અમારે ઘેર તેડી જઈએ ! એમાં શું ?’ 
+
+  
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

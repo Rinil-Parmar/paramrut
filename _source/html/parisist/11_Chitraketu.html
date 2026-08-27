@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">ચિત્રકેતુ રાજા</h1>
+ 
+શૂરસેન દેશમાં પ્રાચીન સમયમાં ચિત્રકેતુ નામના રાજા હતા. તે સર્વગુણ સંપન્ન, દયા, ક્ષમા, પ્રજાવત્સલ ગુણોથી સભર હતા. તેમને કોઈ શત્રુ ન હતા. તેમને કરોડ સ્ત્રીઓ હતી છતાં તેમને કોઈ સંતાન ન હતું તેથી તે સદાય દુઃખી રહેતા હતા. પોતાનો વંશ નષ્ટ થઈ જશે તેવી તેમને ચિંતા હતી. એકવાર અંગિરા ૠષિ તેમની પાસે આવ્યા. તેમણે જાણ્યું કે, રાજા મોહવશ થઈને દુઃખી છે. પુત્રની ઇચ્છાથી દુઃખી રહે છે. તેથી રાજાનું દુઃખ ટાળવા માટે તેમણે ત્વષ્ટા દેવતાનો યજ્ઞ કર્યો. અને યજ્ઞની ફલશ્રુતિ રૂપ પ્રસાદ રાજાને આપીને કહ્યું કે, તમે તમારી કોઈ એક રાણીને પ્રસાદ આપશો જેથી તેને પુત્ર થશે. પરંતુ તે પુત્ર તમને હર્ષ અને શોક બંને આપશે. આમ એક રાણી પ્રસાદથી ગર્ભવતી થઈ અને પુત્ર જન્મ્યો. રાજાની ઉદાસી દૂર થઈ. રાજા નિરંતર તે રાણી પાસે જ રહેવા લાગ્યો. આથી બીજી રાણીઓને તેની ઈર્ષા થઈ. તેથી બીજી રાણીઓએ તે પુત્રને ઝેર આપી મારી નાખ્યો. રાજા આથી ખૂબ ઉદાસ થઈ ગયો. તે દરમ્યાન નારદજી અને અંગિરા ૠષિ ત્યાં પધાર્યા. તેણે રાજાનો શોક અને પુત્ર મોહ દૂર કરવા ઉપદેશ આપ્યો, છતાં રાજાનો શોક દૂર ન થતાં ૠષિએ પોતાના યોગબળથી મૃતપુત્રને જીવતો કર્યો. પુત્રે જીવિત થઈને પિતાને ઉપદેશ આપ્યો કે, હું તો કેટલાક જન્મથી આ રીતે જન્મ ધારણ કરી કોઈનો પુત્ર, કોઈનો પિતા બનું છું. હું પહેલાં ક્યાં તમારો પુત્ર હતો? આવો ઉપદેશ સાંભળતા રાજાનો પુત્ર મોહ દૂર થયો અને ૠષિ પાસેથી જ્ઞાન ગ્રહણ કરી પ્રભુ સ્તુતિ કરવા લાગ્યા. આથી તેઓ વિદ્યાધરોના સ્વામી બની ગયા અને પ્રભુ દર્શનના અધિકારી બન્યા. તેઓ પોતાના તપોબળથી ચૌદ લોકમાં વિચરણ કરી શકતા હતા.
+<br/><br/>
+
+એક વખત ફરતા ફરતા કૈલાસ પર્વત ઉપર જઈ ચડ્યા ત્યાં મહાદેવ અને પાર્વતીનાં દર્શન કર્યાં. તે સમયે શિવની ગોદમાં પાર્વતીજી બેઠાં હતાં. આથી રાજાના મનમાં એમ થયું કે, મેં કરોડ સ્ત્રીનો ત્યાગ કર્યો પણ શિવ એક સ્ત્રીનો ત્યાગ નથી કરી શકતા. આવું તેમના મનમાં અભિમાન આવ્યું. આ જાણી શિવે તો વાતને હસી કાઢી પણ પાર્વતીજી રાજા ઉપર ગુસ્સે થયાં અને શાપ આપ્યો કે, તુ અસુર થઈ જા. આ સાંભળી રાજાએ પાર્વતીજીની ક્ષમા માંગી અને શાપનો સહર્ષ સ્વીકાર કર્યો. રાજા બીજા જન્મે વૃત્રાસુર નામે અસુર થયા. પરંતુ પૂર્વકર્મના શુભ સંસ્કારોથી તેની બુદ્ધિ ઈશ્વરમાં જ રહેતી. કેટલોક કાળ પૃથ્વી પર રહી તે પરમ ગતિને પામ્યા. 
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

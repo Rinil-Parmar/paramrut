@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			27. Doṣha, svabhāv ke prakṛuti pajave te vakhate em nahi mānavānun ke mārā kalyāṇanun shun thashe? Kalyāṇ thashe ke nahi thāya? Ekāntik thavāshe Ke nahi thavāya? Evo vichār āpaṇe karavo j nahīn paṇ 100% sampūrṇa ‘tun rājī thā.’ ne ‘tun hī.. tun hī’ no pokār rūnvāḍe rūnvāḍe hoya to kāma-krodhādik vikārathī bharapūr hoīe to paṇ āpaṇane adhik sukhanī prāpti thāya ja.
+ 
+  
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

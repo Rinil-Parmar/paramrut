@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect"><li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૨૪: જ્ઞાનની સ્થિતિનું, માહાત્મ્યરૂપી ખટાઈનું</h1>
+			<p class="text_gu">સંવત ૧૮૭૬ના પોષ સુદિ ૬ છઠને દિવસ સંધ્યા સમે શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને માથે ધોળો ફેંટો બાંધ્યો હતો ને ધોળો ખેસ પહેર્યો હતો તથા ગરમ પોસની રાતી ડગલી પહેરી હતી ને ધોળો ચોફાળ ઓઢ્યો હતો ને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+			<p class="text_gu">પછી શ્રીજીમહારાજ પરમહંસ પ્રત્યે બોલ્યા જે, “જે રીતે જ્ઞાને કરીને સ્થિતિ થાય છે તે કહીએ છીએ. તે <b>જ્ઞાન કેવું છે? તો પ્રકૃતિપુરુષથી પર છે. અને જ્ઞાનને વિષે સ્થિતિ થાય છે ત્યારે પ્રકૃતિપુરુષ ને પ્રકૃતિપુરુષનું જે કાર્ય તે કાંઈ નજરમાં આવતું નથી</b>. અને એનું નામ જ્ઞાનપ્રલય કહેવાય છે. અને એવી સ્થિતિ થાય છે તેને એકરસ ચૈતન્ય ભાસે છે ને તેને વિષે એક ભગવાનની મૂર્તિ જ રહે છે, પણ બીજો કોઈ આકાર રહેતો નથી. અને ક્યારેક તો એ પ્રકાશમાં ભગવાનની મૂર્તિ પણ દેખાય નહીં એકલો પ્રકાશ જ દેખાય છે, ને ક્યારેક તો પ્રકાશ પણ દેખાય ને ભગવાનની મૂર્તિ પણ દેખાય; એને જ્ઞાને કરીને સ્થિતિ જાણવી. અને જેવી ભગવાનની મૂર્તિ પ્રગટ દેખાય છે, તે મૂર્તિને વિષે અખંડ વૃત્તિ રહે તેણે કરીને એવી સ્થિતિ થાય છે. અને જેને જેવો ભગવાનનો મહિમા સમજાણો હોય તેના હૃદયમાં તેટલો જ પ્રકાશ થાય છે અને તેટલો જ તેને પ્રણવ ને નાદ સંભળાય છે. અને જેટલો જેને ભગવાનનો નિશ્ચય ને મહિમા સમજાય છે તેને તેટલા ભૂંડા ઘાટ બંધ થઈ જાય છે. અને જ્યારે ભગવાનનો નિશ્ચય યથાર્થ થાય છે ને યથાર્થ મહિમા સમજાય છે ત્યારે તેને ભૂંડા ઘાટમાત્ર ટળી જાય છે. જેમ લીંબુની એક ચિર્ય ચૂસી હોય તો થોડા થોડા દાંત અંબાય, પણ હળવા હળવા ચણા ચવાય ખરા; ને જો આખું લીંબુ ચૂસ્યું હોય તો ચણા ચવાય નહીં ને મગનો દાણો પરાણે પરાણે ચવાય; અને જો ઘણાં લીંબુ ચૂસ્યાં હોય તો રાંધેલો ભાત પણ ચવાય નહીં. તેમ ભગવાનનો નિશ્ચય અને માહાત્મ્યરૂપી જેને ખટાઈ ચડી હોય તેની ચાર અંતઃકરણ ને દસ ઇન્દ્રિયોરૂપ જે ડાઢ્યો તે સર્વે અંબાઈ જાય છે; ત્યારે એ જીવ મનરૂપ પોતાની ડાઢ્યે કરીને વિષયના સંકલ્પરૂપી ચણાને ચાવવાને સમર્થ થતો નથી, તેમ જ ચિત્તરૂપ પોતાની ડાઢ્યે કરીને વિષયનું ચિંતવન કરવા સમર્થ થતો નથી, તેમ જ બુદ્ધિરૂપ પોતાની ડાઢ્યે કરીને નિશ્ચય કરવા સમર્થ થતો નથી, તેમ જ અહંકારરૂપ પોતાની ડાઢ્યે કરીને વિષય સંબંધી અભિમાન કરવા સમર્થ થતો નથી, તેમ જ પંચ જ્ઞાનઇન્દ્રિયો ને પંચ કર્મઇન્દ્રિયોરૂપ જે ડાઢ્યો છે તે ડાઢ્યે કરીને તે તે ઇન્દ્રિયોના વિષયરૂપ જે ચણા તેને ચાવવાને સમર્થ થતો નથી. અને જેને યથાર્થ ભગવાનનો નિશ્ચય ન હોય ને યથાર્થ ભગવાનનો મહિમા જણાણો ન હોય તેનાં ઇન્દ્રિયો તથા અંતઃકરણ તે પોતપોતાના વિષય થકી યથાર્થપણે નિવૃત્તિ પામતાં નથી. અને જે ભગવાનનું સ્વરૂપ છે તે તો માયા ને માયાના જે ગુણ તે થકી પર છે અને સર્વ વિકારે રહિત છે, પણ જીવના કલ્યાણને અર્થે મનુષ્ય જેવા ભાસે છે. તે ભગવાનને વિષે જે અલ્પમતિવાળા છે તે જેવા જેવા દોષ કલ્પે છે તે ભગવાનને વિષે તો એકે દોષ નથી, પણ કલ્પનારાની બુદ્ધિમાંથી એ દોષ કોઈ કાળે ટળવાના નહીં. તેમાં જે ભગવાનને કામી સમજે છે તે પોતે અત્યંત કામી થઈ જાય છે, અને જે ભગવાનને ક્રોધી સમજે છે તે પોતે અત્યંત ક્રોધી થઈ જાય છે, ને જે ભગવાનને લોભી સમજે છે તે પોતે અત્યંત લોભી થઈ જાય છે, ને જે ભગવાનને ઈર્ષ્યાવાન સમજે છે તે પોતે અત્યંત ઈર્ષ્યાવાન થઈ જાય છે, એ આદિક જે જે દોષ ભગવાનને વિષે કલ્પે છે તે તો જેમ ‘સૂર્ય સામી ધૂડની ફાંટ ભરીને નાંખીએ તે પોતાની આંખમાં પડે છે,’ તેમ ભગવાનને વિષે જે જાતનો દોષ કલ્પે છે તે દોષ પોતાને દુઃખ દે છે. અને <b>પોતામાં ગમે તેવા ભૂંડા સ્વભાવ હોય ને જો ભગવાનને અતિશય નિર્દોષ સમજે તો પોતે પણ અતિશય નિર્દોષ થઈ જાય છે</b>.”</p>
+			<p class="text_gu">પછી બ્રહ્માનંદ સ્વામીએ પૂછ્યું જે, “કોઈ વિષયમાં પણ પોતાનાં ઇન્દ્રિયો તણાતાં ન હોય ને અંતઃકરણમાં પણ ખોટા ઘાટ થતા ન હોય ને ભગવાનનો નિશ્ચય પણ યથાર્થ છે, તો પણ અપૂર્ણપણું રહે છે અને અંતર સૂનું રહે છે તેનું શું કારણ છે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એ પણ હરિભક્તમાં મોટી ખોટ્ય છે જે, પોતાનું મન સ્થિર થયું છે ને ભગવાનનો નિશ્ચય પણ અતિશય દ્રઢ છે, તોય પણ હૈયામાં અતિશય આનંદ આવતો નથી જે, ‘હું ધન્ય છું ને હું કૃતાર્થ થયો છું અને આ સંસારમાં જે જીવ છે તે કામ, ક્રોધ, લોભ, મોહ, મદ, મત્સર, આશા, તૃષ્ણા તેને વિષે હેરાન થતા ફરે છે અને ત્રિવિધ તાપમાં રાત-દિવસ બળે છે. અને મને તો પ્રગટ પુરુષોત્તમે કરુણા કરીને પોતાનું સ્વરૂપ ઓળખાવ્યું છે ને કામ-ક્રોધાદિક સર્વ વિકારથી રહિત કર્યો છે અને નારદ-સનકાદિક જેવા સંત તેના સમાગમમાં રાખ્યો છે, માટે મારું મોટું ભાગ્ય છે.’ એવો વિચાર નથી કરતો ને આઠોપહોર અતિશય આનંદમાં નથી વર્તતો એ મોટી ખોટ્ય છે. જેમ ‘બાળકના હાથમાં ચિંતામણિ દીધો હોય તેનું તેને માહાત્મ્ય નથી એટલે તેનો તેને આનંદ નથી;’ તેમ ભગવાન પુરુષોત્તમ મળ્યા છે અને તેનો અંતરમાં આઠોપહોર કેફ રહેતો નથી જે, ‘મારું પૂર્ણકામપણું થયું છે’ એવું નથી સમજતો, એ હરિના ભક્તને મોટી ખોટ્ય છે. અને <b>જ્યારે કોઈ હરિભક્તનો દોષ નજરમાં આવે ત્યારે એમ સમજવું જે, ‘આનો સ્વભાવ તો સત્સંગમાં ન ઘટે તેવો છે તોય પણ એને જો સત્સંગ મળ્યો છે અને એ જો જેવો-તેવો છે તોય પણ સત્સંગમાં પડ્યો છે, તો એનો પૂર્વજન્મનો અથવા આ જન્મનો સંસ્કાર ભારે છે તો આવો સત્સંગ મળ્યો છે,’ એમ સમજીને તેનો પણ અતિશય ગુણ લેવો.</b>” એમ વાર્તા કરીને શ્રીજીમહારાજ ‘જય સચ્ચિદાનંદ’ કહીને પોતાને ઉતારે પધાર્યા.</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (415) પ્રભુ ભજવાની તો સૌ ના પાડે છે. કેટલાક વહાલા ભાઈ છે તે ના પાડે, પિતરાઈ ના પાડે, છોકરાં, બાયડી પણ ના પાડે છે ને આંહીં આવ્યા ત્યારે એ કજિયો તો બધો આળસી ગયો. પણ ઈન્દ્રિયો-અંત:કરણ તો ભેળાં છે. તેનો કજિયો તો આહીં પણ છે. માટે ઈન્દ્રિયો-અંત:કરણનો અંતરાય બહુ ભારે છે. એ તો એમ ઠરાવ કરે જે એવો શબ્દ સાંભળવો જ નહિ, તેમજ વિષયનું જાણવું જે, ઇન્દ્રિયોનો ગોટો ભેળો છે તે જીત્યા વિના સુખ આવે નહિ. પછી વૃંદ્રાવનદાસે (વૃંદાવનદાસે) પ્રશ્ર્ન પૂછ્યો જે, અંત:કરણરૂપ જે મામલો તે કેમ જીતાય ? ત્યારે ઉત્તર કર્યો જે, ધર્મ, જ્ઞાનાદિક ચાર ને શૂરવીરપણું હોય તો જીતાય. <br/><br/>
+ 
+  ‘ધીર ધૂરંધરા, શૂર સાચા ખરા, મરણનો ભય તે મનમાં ન આણે.’ <br/>
+ 
+ (કીર્તન મુક્તાવલી-પ્રભાતિયાં-પદ 1-નં.119-પાન નં.62) <br/><br/>
+ 
+ એ બોલ્યા ને કહ્યું જે, સદ્ગુરુ વિના અંત:કરણનો કજિયો જીતાય એવો નથી. સદ્ગુરુ વિના માયા લોપી નાખે, પછી લોયાનું દશમું વચનામૃત વંચાવીને વાત કરી જે, ભગવાન સામા ચાલે ત્યારે એ જોઈ ઈન્દ્રિયું-અંત:કરણ જે વેરી હતાં તે જ વહાલાં થયાં છે ને તે વિના તો જ્યાંથી વાર આવે ત્યાંથી ધાડ આવે. તે શું ? જે, દેહ વડે, ઈન્દ્રિયું વડે, ભગવાન ભજાય તે જ દેહ વડે નર્કમાં જવાય. તે સ્ત્રી જાતિમાં એકાંતિકભાવ આવે જ નહિ ને તે તો કોઈને મેલે જ નહિ, <br/><br/>
+ 
+ ‘ખાઈ જાય હે મન હરના, સ્ત્રીય બનમેં નહિ ચરના’<br/>
+ 
+ (બ્રહ્માનંદસ્વામી-બ્રહ્માનંદ કાવ્ય-જ્ઞાન વિલાસ-પદ 2379- પાન નં. 661) <br/><br/>
+ 
+ એ બ્રહ્માનંદસ્વામીનું પદ બોલ્યા, ત્યારે નિર્ગુણદાસે પ્રશ્ર્ન પૂછ્યો જે, એ તો ત્યાગી ને ગૃહસ્થ સર્વને કહ્યું ત્યારે કેમ સમજવું ? તેનો ઉત્તર કર્યો જે, બે મારગ કહ્યાં તે કાંઈ ખોટા પડે નહિ. માટે એ તો સહુ સહુનાં નિયમ કહ્યાં છે તેમાં રહેવું ને જ્યાં સુધી ગૃહસ્થાશ્રમમાં ત્યાં લગી તો એમનું એમ હાંક્યા જવું ને પ્રિયવ્રતની પેઠે ધિક્‌મામ્‌  ધિક્‌મામ્‌  (મને ધિક્કાર છે, મને ધિક્કાર છે) કરે ત્યારે ખરું છે. તે વિના તો લક્ષાવધિ છે તે પાર પડે એવું જણાતું નથી, ને એ માયાને તો કોઈ જીતી શકે જ નહિ. એ તો કારણ શરીરરૂપ ફોતરું ઊખડશે ત્યારે થાશે. ને મહારાજનો સિદ્ધાંત પણ એ જ છે જે બ્રહ્મરૂપ કરીને પોતાની સમીપમાં રાખવા છે ને મહારાજનો અવતાર પણ એટલા સારુ જ છે. જેટલા અવતાર ને તેના ભક્ત તે સર્વને અંતે અક્ષરધામમાં લઈ જવા છે ને સાંખ્ય ને યોગે કરીને સર્વનો નિષેધ કરીને પોતાની સેવામાં રાખવા છે. સૌભરી, ચ્યવનનું તપ તો બહુ ભારે પણ હૈયામાંથી દુર્વાસના ટળી નહિ. એેવું એ વાસનાનું પાપ છે માટે આ જ્ઞાન મહારાજે કહ્યું છે. એ અંત:કરણરૂપ માયાનો ખટકો અતિશે રાખવો. <br/><br/>
+ 
+ ધર્મસ્ત્યાજ્યો ન કૈશ્ચિત્ સ્વનિગમવિહિતો વાસુદેવે ચ ભક્તિ  <br/>
+ ર્દિવ્યાકારે વિધેયા સિતઘનમહસિ બ્રહ્મણૈક્યં નિજસ્ય । <br/>નિશ્ચિત્યૈવાન્યવસ્તુન્યણુમપિ ચ રતિં સમ્પરિત્યજ્ય સન્ત <br/>
+ સ્તનમાહાત્મ્યાય સેવ્યા ઇતિ વદતિ નિજાન્ ધાર્મિકો નીલકંઠઃ ॥ <br/>
+ 
+  (સત્સંગિજીવન : શ્રી ધર્મનન્દનાષ્ટકમ્ ) <br/>
+ 
+ અર્થ :- ‘કોઈએ પણ પોતાના ધર્મગ્રંથોમાં કહેલા ધર્મનો ત્યાગ ન કરવો જોઈએ, ભગવાન શ્રી વાસુદેવ કૃષ્ણના દિવ્ય સ્વરૂપની ભક્તિ કરવી જોઈએ. શ્ર્વેત વાદળના તેજસમાન ઘનશ્યામ શ્રી કૃષ્ણરૂપ બ્રહ્મમાં પોતાની એકતાનો (અભેદનો) નિશ્ર્ચય કરવો અને અન્ય વસ્તુ પર સહેજ પણ પ્રેમ હોય તો તેને ત્યજી દેવો. સંતનો મહિમા આપણને પણ પ્રાપ્ત થાય તે માટે સંતોની સેવા કરવી.’ આ પ્રમાણે ધર્મપરાયણ નીલકંઠ મુનિ પોતાના ભક્તોને ઉપદેશ આપે છે. <br/><br/>
+ 
+ એ પોતાનો સિદ્ધાંત કહ્યો ને આ વાતું છે, તે વિચારવી ને અંત:કરણરૂપ માયાનો ખટકો ભૂલવો નહિ, તે મહારાજને ગમે છે ને કરવાનું પણ એ જ છે. પછી વાત કરી જે, કુંડળના રાઈબાઈએ મહારાજની ઘોડી પાછી વાળી એટલું હેત હતું પણ હજુ કસર જણાય છે. તે અમે કુંડળ ગયા ત્યારે શિવલાલ પાસે પુછાવ્યું જે, હવે સમાધિ થાય છે ? ત્યારે કહે, ‘ વરાશ નથી ને કરું તો થાય.’ તેમાં શું કહ્યું જે, હેતમાં ફેર છે, તે એવી ને એવી લગની ન રહી. માટે બ્રહ્મરૂપ થઈને સેવામાં રહે ત્યારે તે વિઘ્ન જાય ને પ્રાંતીજમાં અમે કેટલાકને સમાધિ કરાવી હતી પણ હવે નિશ્ર્ચયમાત્ર રહ્યો છે ને આ સોરઠ દેશમાં હજારો માણસને સમાધિ હતી પણ હવે ચાર જણને રહી છે, માટે આ જ્ઞાન હોય તો સમાધિ હોય કે ન હોય પણ તેનું ટળે નહિ ને ગમે તો બ્રાહ્મણ હોય, ક્ષત્રિય હોય, વૈશ્ય હોય, પણ જેમ સરાણિયો જુએ છે તેમ પોતાનું જોયા કરવું જે, હવે મારે કેમ છે ? તે એમ ને એમ જોતાં જોતાં દર્પણમાં મોઢું દેખાય છે તેમ પોતાના દોષ જણાવા માંડે, જે આટલી મારે વિષયમાં આસક્તિ છે ને આટલું મારે અભિમાન છે. <br/><br/>
+ 
+ પછી એક હરિજને પ્રશ્ર્ન પૂછ્યો જે, જણાય છે તો ખરું પણ ટાળ્યાનો શો ઉપાય કરવો ? ત્યારે તેનો ઉત્તર કર્યો જે, દુ:ખ, દોષ ને નાશવંતપણું ને<br/><br/>
+ 
+ હંસે ગુરૌ મયિ ભક્ત્યાનુવૃત્યા વિતૃષ્ણાયા દ્વન્દ્વતિતિક્ષયા ચ । <br/>
+ સર્વત્ર જંતોર્વ્યસનાવગત્યા જિજ્ઞાસયા તપસેહાનિવૃત્યા ।। <br/>
+ 
+ (શ્રીમદ્ ભાગવત : 5/5/10) <br/>
+ 
+ અર્થ :- ઋષભદેવ ભગવાન પુત્રોને કહે છે, ‘ હે પુત્રો! હંસ સમાન વિવેકવાળા ગુરુ વિશે તથા પરમાત્મા વિશે તેમની અનુવૃત્તિ પાળવારૂપ ભક્તિ વડે, તૃષ્ણાનો ત્યાગ કરી, સુખ-દુ:ખાદિ દ્વન્દ્વોને સહન કરવાથી, ‘આ લોક-સ્વર્ગલોક બધે જ જીવને દુ:ખ છે.’ એવું જાણવાથી તત્ત્વની જિજ્ઞાસાથી, તપથી, કામ્યકર્મ ત્યજવાથી, સર્વ બંધનના કારણરૂપ અહંકારથી મુક્ત થઈ પરમપદને પામવું.” <br/><br/>
+ 
+ સર્વત્ર જંતોર્વ્યસનાવગત્યા એમ જુએ ત્યારે ટળી જાય ને પૂર્વે જેને જેને પંચદોષે કરીને પરાભવ થયો છે તેને ઈદ્મ કરી રાખે ને સર્વેના રૂપ જાણી લે ને તેમાં દુ:ખ જ જુએ ત્યારે તે ટળે. તે ઉપર વાત કરી જે, રામાજી ગરાસિયાને પાછી વૃત્તિ કરાવી ને દેહનું રૂપ દેખાડ્યું એટલે ઊલટી થઈ. તેમ આ દેહમાં જે વસ્તુ ભરી છે તેનો વિચાર કરે તો કાળે કરીને તેમાં દોષ જણાઈ જાય. પછી તે મારગે ન ચલાય.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

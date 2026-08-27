@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (68) હજાર વરસનો <a href="#ex1" class="wordMeaning">ખીજડો</a> હોય, તેને <a href="#ex1" class="wordMeaning">સાંગરીયું</a> થાય છે ને પાંચ વરસનો આંબો હોય તેને કેરી થાય છે. તે તો દૃષ્ટાંત ને એનું સિદ્ધાંત તો એ છે જે, ગમે તેવો શાસ્ત્રી હોય કે ગમે તેવો પુરાણી હોય, પણ આ પ્રત્યક્ષ ભગવાન ને આ પ્રત્યક્ષ સંત, તેની ઓળખાણ જો ન હોય તો તે ખીજડા જેવો છે ને તેને સંગે ટાઢું કે સુખ થાય જ નહિ અને વિદ્યા પણ બહુ ન ભણ્યો હોય ને અવસ્થા પણ થોડી હોય ને કુળ ઊંચું ન હોય, પણ જો આ પ્રત્યક્ષ ભગવાનને વિશે નિષ્ઠા થઈ ને આ સાધુની ઓળખાણ થઈ, તો તે આંબા જેવો છે ને તેને સંગે તો ટાઢું થઈને સુખિયો થઈ જાય છે, માટે જે ખીજડા જેવો હોય તેનો સંગ ન કરવો ને જે આંબા જેવો હોય તેનો સંગ કરવો. તે ઉપર શ્ર્લોક
+ <br/><br/>
+વિપ્રાદ્ દ્વિષડ્ગુણયુતાદરવિન્દનાભ-પાદારવિન્દવિમુખાચ્છ્‍વપચં વરિષ્ઠમ્ । <br/>
+મન્યે તદર્પિતમનોવચનેહિતાર્થપ્રાણં પુનાતિ સ કુલં ન તુ ભૂરિમાનઃ ॥<br/>
+
+
+ 		 (શ્રીમદ્ ભાગવત : 7/9/10)
+ <br/>
+ અર્થ : કોઈ પુરુષ બ્રાહ્મણ જાતિનો અને બાર ગુણોથી યુક્ત હોય પણ વિષ્ણુના ચરણકમળથી વિમુખ હોય, તો તેના કરતાં (ભગવાનના ભક્ત) ચાંડાલને હું ઘણો ઉત્તમ માનું છું; કારણ કે તે ચાંડાલે ભગવાનને વિશે જ મન, વચન, કર્મ, ધન તથા પ્રાણ અર્પણ કરેલાં હોય છે, તેથી તે પોતાના કુળને પણ પવિત્ર કરે છે, પરંતુ અત્યંત અભિમાની પેલો બ્રાહ્મણ પોતાને પણ પવિત્ર કરી શકતો નથી.
+ <br/><br/>
+ બોલાવીને કહ્યું જે, ‘બાર ગુણે જુક્ત બ્રાહ્મણ હોય ને જો પ્રત્યક્ષ ભગવાન સાથે ઓળખાણ ન હોય, તો તે કરતાં ભગવાનનો ભક્ત શ્ર્વપચ હોય તે શ્રેષ્ઠ છે; એમ કહ્યું છે તે માટે ભગવાનના ભક્તને ઓળખીને સંગ કરવો, જેથી છેલ્લો જન્મ થઈ જાય ને એવા ન મળે, તો બીજા તો અનંત જન્મ ઉત્પન્ન કરે એવા છે.’
+ <br/>
+ <br/>
+ 
+<a href="L-6.html">વચ. લો. 6</a> <br/>
+ 
+ 
+ 
+
+
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ખીજડો= સમડાનું વૃક્ષ.  <br/>
+2 સાંગરીઉં= સીંગો. (બ.વ.)
+
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

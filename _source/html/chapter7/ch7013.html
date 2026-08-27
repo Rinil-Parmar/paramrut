@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૩) ગામ વાંઢિયામાં પરોક્ષ અવતારના ઉપાસક દેવજી ભક્ત હતા. તેને ઘેર શ્રીજીમહારાજ પધાર્યા. ત્યારે તે ભક્તે પૂછ્યું જે, ‘હે મહારાજ! તમે કેના (કોના) સંત છો ?’ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, ‘અમે તો સ્વામિનારાયણના પરમહંસ છીએ. પછી તે ભક્ત શ્રીજીમહારાજને પગે લાગીને બેઠા. પછી તેને પોતાની દૃષ્ટિમાત્રે કરીને સમાધિ કરાવીને અક્ષરધામને વિશે અનંત મુક્ત, અનંત અવતાર ને અનંત ઐશ્ર્વર્ય તેણે સહિત પોતાની મૂર્તિનું દર્શન કરાવતા હવા. ને પોતાની મૂર્તિને વિશે લીન કરાવીને પોતાનો સર્વોપરી નિશ્ર્ચય કરાવતા હવા. પછી મૂળજી બ્રહ્મચારીએ પૂછ્યું જે, ‘હે મહારાજ ! આ ભક્તે શું પુણ્ય કર્યાં હશે જે અનંતકોટિ બ્રહ્માંડના પતિ એવા જે તમે તે સાક્ષાત્ દયા કરીને તેને ઘેર પધાર્યા ને મોટા મોટા યોગીને પણ દુર્લભ એવી જે અક્ષરધામની સમાધિ તે તમે દયા કરીને આ ભક્તને કરાવી ?’
+ <br/><br/>
+ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “આ ભક્ત તો સો જન્મથી નિષ્કામી વર્તમાન દૃઢ રાખીને ભગવાનને પામવાને અર્થે દાખડો કરતો હતો, ત્યારે અમે એને ઘેર પધાર્યા છીએ.” પછી તે ભક્તને શ્રીજીમહારાજ પોતાની દૃષ્ટિમાત્રે કરીને જગાડતા હવા. પછી તે ભક્તે કહ્યું જે, ‘હે મહારાજ ! તમે તો અનંતકોટિ બ્રહ્માંડના આધાર જે અક્ષર તેના પતિ છો ને સર્વ અવતારના અવતારી ને સર્વ કારણના કારણ સાક્ષાત્ પુરુષોત્તમનારાયણ છો. તે દયા કરીને મારે ઘેર પધાર્યા છો.માટે હે મહારાજ ! તમારા સ્વરૂપના નિશ્ર્ચયમાં ખામી રહે નહિ, એવું કૃપા કરીને કહો.’ પછી શ્રીજીમહારાજ બોલ્યા જે, “અમે તો આ બ્રહ્માંડને વિશે આવ્યા નથી ને આવશું પણ નહિ; માટે આ જે તમને નિશ્ર્ચય થયો છે તે ફરવા દેવો નહીં.”
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (11) એક વખતે ગામ જાળિયામાં મહારાજ બહુ વાર પોઢીને જાગ્યા. પછી સર્વે સંતે પૂછ્યું જે, ‘હે મહારાજ ! આજ તો તમે બહુ પોઢી રહ્યા !’ ત્યારે મહારાજ બોલ્યા જે, ‘તમે બહુ તપ કર્યું તે અમે રાજી થયા. માટે આજ તો તમારા સારુ અમે ધામ જોવા ગયા હતા. તે પ્રથમ તો અમે બદરિકાશ્રમમાં ગયા; તે બદરિકાશ્રમવાસીએ અમારી પૂજા, આરતી, સ્તુતિ કરીને બેઠા. પછી તેમને અમે કહ્યું જે, ‘અમારા સાધુ સારુ જાયગા જોવા આવ્યા છીએ.’ ત્યારે તેમણે કહ્યું જે, ‘હે મહારાજ ! આ ધામ જ તમારું છે, માટે આંહીં સાધુને રાખો.’ પછી અમને એમ જણાણું જે, આવો તો ચરોતરેય છે; કેમ જે, કોઠાં-બોરાં ત્યાં પણ મળે છે.
+ <br/>
+ પછી અમે ત્યાંથી શ્ર્વેતદ્વીપમાં ગયા, તે ત્યાંના વાસીએ અમને પધરાવીને પૂજા, આરતી, સ્તુતિ કરીને બેઠા. પછી અમને કહ્યું જે, ‘હે મહારાજ ! બહુ દયા કરીને દર્શન દીધાં.’ પછી તેમને અમે કહ્યું જે, ‘અમારા સાધુ સારુ જાયગા જોવા આવ્યા છીએ.’ ત્યારે તેમણે કહ્યું જે, ‘હે મહારાજ ! આ ધામ જ તમારું છે માટે આંહીં સાધુને રાખો.’ પછી અમને એમ જણાણું જે, સ્થાન તો બહુ સારું, પણ પ્રભુ ભજવાનું સુખ જણાણું નહિ, શા માટે જે, <a href="#ex1" class="wordMeaning">ક્ષીર સમુદ્ર એક કોરે હડૂડ્યા જ કરે,</a> તેને જોઈને અમે ચાલી નીસર્યા, તે વૈકુંઠલોકમાં ગયા. પછી વૈકુંઠવાસી જે રામચંદ્રજી તેમણે અમારી પૂજા, આરતી, સ્તુતિ કરીને બેઠા. પછી તેમને અમે કહ્યું જે, ‘અમારા સાધુ સારુ જાયગા જોવા આવ્યા છીએ.’ ત્યારે તેમણે કહ્યું જે, ‘હે મહારાજ ! આ ધામ તમારું જ છે માટે આંહીં સાધુને રાખો.’ પછી અમને એમાં કાંઈ સારું જણાણું નહિ; કેમ જે, ચાર ભુજા ને સ્ત્રીઓનો પ્રસંગ તે ઠીક નહીં.
+ <br/>
+ પછી તેને જોઈને અમે ચાલી નીસર્યા, તે ગોલોકમાં ગયા. પછી ત્યાંના વાસી જે શ્રીકૃષ્ણ તેમણે અમારી પૂજા, આરતી, સ્તુતિ કરીને બેઠા. પછી તેમને કહ્યું જે, ‘અમારા સાધુ સારુ જાયગા જોવા આવ્યા છીએ.’ ત્યારે તેમણે કહ્યું જે, ‘હે મહારાજ ! આ ધામ જ તમારું છે માટે આંહીં સાધુને રાખો.’ પછી અમને એમાં કાંઈ સારું જણાણું નહિ; કેમ જે, ગોપ-ગોપીયું ને ગાયું તેને જોઈને પ્રભુ ભજાય નહિ અને કેટલીક જાતનો ગડબડાટ તેને જોઈને અમે ચાલી નીસર્યા, તે પ્રકૃતિપુરુષના લોકમાં ગયા. તે લોક જોઈને બહુ રાજી થયા જે આંહીં સાધુને રાખીએ. ત્યાં તો પુરુષ ને પ્રકૃતિ દેખાણાં તેને જોઈને અમે પૂછ્યું જે, ‘તું ધોળી કેમ છો ને આ પુરુષ કાળો કેમ છે ?’ ત્યારે તેણે કહ્યું જે, ‘એ પુરુષ મારી સાથે જોડાણો તેણે કરીને મારામાં શામતાઈ (કાળાશ) હતી તે પુરુષમાં ગઈ ને પુરુષમાં રૂપ હતું તે મારામાં આવ્યું છે.’ પછી અમને એમ વિચાર થયો જે, આંહીં સાધુને રાખવા નહિ; કેમ જે, માયા કાળા કરી નાખે.
+ <br/>
+ પછી તેને જોઈને અમે ચાલી નીસર્યા ને અક્ષરધામમાં ગયા. તે અક્ષરધામના મુક્તે દિવ્ય સિંહાસન ઉપર પધરાવીને અમારી પૂજા, આરતી, સ્તુતિ કરીને બેઠા. પછી અમે કહ્યું જે, ‘અમારા સાધુ સારુ ધામ જોવા આવ્યા છીએ.’ ત્યારે તે મુક્તે કહ્યું જે, ‘હે મહારાજ ! આ ધામ જ તમારું છે અને અમે પણ તમારા જ છીએ, માટે સાધુને આંહીં રાખીને તમારી મૂર્તિનું સુખ આપો.’ પછી અમને એમ જણાણું જે, આ ધામ જેવું કોઈ ધામ નથી ને આ ધામ જ અમારું છે, માટે આંહીં સાધુને રાખવા એ જ ઠીક છે.”
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ક્ષીરસમુદ્ર એક કોર્યે હડુડયા કરે = દૂધનો સાગર એક બાજુ ઘુઘવતો હોય-ગર્જતો 
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

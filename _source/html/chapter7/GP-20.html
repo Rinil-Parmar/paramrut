@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૨૦: અજ્ઞાનીનું, પોતાના સ્વરૂપને જોવાનું</h1>
+
+			<p class="text_gu">
+સંવત ૧૮૭૬ના પોષ સુદિ ૨ બીજને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓશરીએ ગાદીતકિયા નંખાવીને વિરાજમાન હતા અને ધોળી પાઘ માથે બાંધી હતી ને તે પાઘને વિષે પીળાં ફૂલનો તોરો વિરાજમાન હતો અને કંઠને વિષે પીળાં પુષ્પનો હાર વિરાજમાન હતો અને બે કાનને વિષે ધોળાં ને પીળાં પુષ્પના ગુચ્છ વિરાજમાન હતા  અને ધોળો ચોફાળ ઓઢ્યો હતો ને કાળા છેડાનો ખેસ પહેર્યો હતો અને કથા વંચાવતા હતા અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+
+<p class="text_gu">
+પછી સ્વામી શ્રીસહજાનંદજી મહારાજ બોલ્યા જે, “સાંભળો, સર્વને એક પ્રશ્ન પૂછીએ છીએ.” ત્યારે સર્વ હરિભક્તે હાથ જોડીને કહ્યું જે, “પૂછો.” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “અજ્ઞાનીમાં અતિશય અજ્ઞાની તે કોણ છે?” પછી તો સર્વે વિચારી રહ્યા પણ ઉત્તર કરી શક્યા નહીં. પછી શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, અમે જ ઉત્તર કરીએ.” ત્યારે સર્વેએ રાજી થઈને કહ્યું જે, “હે મહારાજ! તમથી જ યથાર્થ ઉત્તર થશે, માટે કહો.” પછી શ્રીજીમહારાજ બોલ્યા જે, “આ દેહમાં રહેનારો જે જીવ છે તે રૂપને જુએ છે અને કુરૂપને જુએ છે તથા બાળ, યૌવન અને વૃદ્ધપણાને જુએ છે, એવા અનંત પદાર્થને જુએ છે, પણ જોનારો પોતે પોતાને જોતો નથી અને કેવળ બાહ્યદ્રષ્ટિએ કરીને પદાર્થને જોયા કરે છે પણ પોતે પોતાને નથી જોતો તે જ અજ્ઞાનીમાં અતિશય અજ્ઞાની છે. અને જેમ નેત્રે કરીને અનંત પ્રકારના રૂપના સ્વાદને લે છે તેમ જ શ્રોત્ર, ત્વક, રસના, ઘ્રાણ ઇત્યાદિક સર્વ ઇન્દ્રિયોએ કરીને વિષયસુખને ભોગવે છે ને જાણે છે, પણ પોતે પોતાના સુખને ભોગવતો નથી ને પોતે પોતાના રૂપને જાણતો નથી, એ જ સર્વ અજ્ઞાનીમાં અતિશય અજ્ઞાની છે અને એ જ ઘેલામાં અતિશય ઘેલો છે અને એ જ મૂર્ખમાં અતિશય મૂર્ખ છે અને એ જ સર્વ નીચમાં અતિશય નીચ છે.”
+</p>
+
+<p class="text_gu">
+ત્યારે શુકમુનિએ આશંકા કરી જે, “પોતાનું સ્વરૂપ જોવું તે શું પોતાના હાથમાં છે? અને જો પોતાના હાથમાં હોય તો જીવ શીદ અતિશય અજ્ઞાની રહે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “<b>જેને સત્સંગ થયો છે તેને તો પોતાના જીવાત્માનું દર્શન પોતાના હાથમાં જ છે</b> અને કે દહાડે એણે પોતાના સ્વરૂપને જોયાનો આદર કર્યો ને ન દીઠું? અને એ જીવ માયાને આધીન થકો પરવશ થઈને તો સ્વપ્ન અને સુષુપ્તિ અવસ્થામાં અંતર્દ્રષ્ટિ કરીને જાય છે, પણ પોતે પોતાને જાણે કોઈ દિવસ પોતાના સ્વરૂપને જોવાને અંતર્દ્રષ્ટિ કરતો નથી. અને જે ભગવાનના પ્રતાપને વિચારીને અંતર્દ્રષ્ટિ કરે છે, તે તો પોતાના સ્વરૂપને અતિશય ઉજ્જ્વલ પ્રકાશમાન જુએ છે અને તે પ્રકાશને મધ્યે પ્રત્યક્ષ એવા જે પુરુષોત્તમ ભગવાન તેની મૂર્તિને જુએ છે અને નારદ-સનકાદિક જેવો સુખિયો પણ થાય છે. માટે હરિભક્તને તો જેટલી કસર રહે છે તેટલી પોતાની આળસે કરીને રહે છે.”
+</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

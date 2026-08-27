@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (3) એક તો સંસ્કાર, બીજો આશીર્વાદ અને ત્રીજી મુમુક્ષુતા, એ ત્રણ વાનાં સંપૂર્ણ હોય તેને મોક્ષને મારગે ચાલવામાં કોઈ પ્રકારનો અંતરાય આડો આવે નહીં. 
+ <br/><br/>
+ એમાં સંસ્કાર તો અજ્ઞાન અવસ્થામાં થાય છે તે શું ? તો જ્યારે પ્રગટ ભગવાન કે પ્રગટ સંત આ પૃથ્વી ઉપર વિચરતા હોય, તેના ઉપયોગમાં જે જે મનુષ્યની જે જે ક્રિયા આવી હોય તથા પશુના દેહે કરીને દહીં, દૂધ, વાહન આદિકનો ઉપયોગ થયો હોય; તે સર્વે સંસ્કાર કહેવાય ને એવા ઘણાક સંસ્કારે કરીને પ્રગટ ભગવાન અને પ્રગટ સાધુનો જોગ થાય છે અને તેમની સેવાએ કરીને તેમનો આશીર્વાદ થાય છે અને જ્યારે એવા મોટા સત્પુરુષનો આશીર્વાદ થાય છે, ત્યારે શુદ્ધભાવ થાય છે અને તેણે કરીને મુમુક્ષુતા ઉદય થાય છે. હવે જે, શુદ્ધ મુમુક્ષુ હોય તે સત્પુરુષને ઓળખે, ને તે સર્વ પ્રકારે ભીંસણ ખમે અને તે મુમુક્ષુ પણ ત્રણ પ્રકારના છે.
+ <br/><br/>
+ તેમાં જે, ઉત્તમ મુમુક્ષુ હોય તે તો સર્વોપરી અને સદા દિવ્ય સાકારમૂર્તિ અને સર્વેના કારણ એવા ભક્તિ-ધર્મના પુત્ર શ્રીજીમહારાજ જેવા છે તેવા સર્વોપરી સમજે તથા તે પુરુષોત્તમ ભગવાન જે અક્ષરધામને વિશે સ્વયં સ્વરૂપે સદા વિરાજમાન છે ને અક્ષરબ્રહ્મ તે પણ મહારાજ ભેળા આંહીં દેહ ધરીને આવ્યા હોય તેને પણ જાણે ને અક્ષરબ્રહ્મ તથા પુરુષોત્તમ ભગવાનના સાક્ષાત્ સંબંધને પામ્યા અને બ્રહ્મ ને પરબ્રહ્મના શુદ્ધ સ્વરૂપને પ્રતિપાદન કરનારા એવા પરમ એકાંતિક સત્પુરુષને પણ તત્કાળ ઓળખે અને તેને અર્થે મન, કર્મ, વચને સર્વ પ્રકારે કારસો ખમે તથા સુખ-દુ:ખ, માન-અપમાને કરીને કોઈ પ્રકારે ધીરજ ડગે નહિ; એવો જે ઉત્તમ મુમુક્ષુ તે આત્યંતિક જ્ઞાન પામી પરમ એવી જે શ્રેષ્ઠ પ્રાપ્તિ તેને તત્કાળ પામે છે. ને જે, મધ્યમ મુમુક્ષુ છે તે જાણે છે તો ખરો, પણ જેમ છે તેમ જાણી શકે નહિ; કાંઈક ફેર રહે ખરો અને અનુવૃત્તિમાં પણ મનના ધાર્યા પ્રમાણે રહે અને જે, કનિષ્ઠ મુમુક્ષુ છે તે તો અવતારને અવતારી જેવા જાણે ને અવતારીને અવતાર જેવા જાણે તથા અક્ષરબ્રહ્મને બીજા સાધુ જેવા જાણે ને બીજાને અક્ષર સમજે અને એકાંતિક હોય તેને સાધારણ સમજે અને સાધારણ હોય તેને એકાંતિક સમજે અને લોક વહેવારની મોટપ તેની નજરમાં આવે, પણ જ્ઞાનની દૃષ્ટિ તેની હોય નહિ તે તો જન્માંતરે મોક્ષને પામે.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

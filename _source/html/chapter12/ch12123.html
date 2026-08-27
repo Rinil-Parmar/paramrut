@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (123) આ જીવનો સ્વભાવ એવો છે જે, હું જેવો કોઈ ડાહ્યો નથી. તે પોતાની બુદ્ધિ સવા શેર ને બીજાની પોણો શેર. પણ ચાર ઘાંટી ઊતર્યા તો તેથી પર વાત કોઈ નથી ને પોતામાં એકે ગુણ ન હોય ને સરસ માની બેસે ને પોતાથી સોગણા શ્રેષ્ઠ હોય તેને પણ ગણે નહિ ને સમજ્યા વિના બોલે ને હળદરનો ગાંઠિયો હાથ આવ્યો તે ગાંધી થઈ બેઠો; માટે પ્રભુ ભજવા હોય તેને જ્ઞાન ને વૈરાગ્ય બેય જોઈએ. તેવી સાધુતા તો સમાગમમાંથી આવે છે, પણ બીજા કોટિ ઉપાયે જ્ઞાન ન થાય ને દોષ ન ટળે. ને સાધુમાં જીવ બાંધ્યો હોય તેને સાધન કરવાં કઠણ પડે નહિ, તે <a href="GP-54.html" class="wordMeaning">પ્રથમનાં 54માં</a> વચનામૃતમાં સાધુના સંગમાં જ સર્વે સાધન બતાવ્યાં છે ને તેમાંથી જ મોટા મોટા ગુણ આવે છે. તે ઉપર શ્ર્લોક બોલ્યા જે, <br/><br/>
+ 
+ 
+ 
+ ન હ્યમ્મયાનિ તીર્થાનિ ન દેવા  મૃચ્છિલામયા: । <br/>
+ 
+ તે પુનન્ત્યુરુકાલેન દર્શનાદેવ સાધવ: ।।
+ 
+ 
+ 
+ <br/>
+ 
+ (શ્રીમદ્ ભાગવત : 10/84/11)
+ 
+ <br/>
+ 
+ અર્થ :- જળમય તીર્થો અને માટી અથવા પથ્થરના ભગવાન ઘણા દિવસો સુધી સેવા કરવાથી પવિત્ર કરે છે. પરંતુ સજ્જન (સાધુજન)ના દર્શનમાત્રથી કૃતાર્થ થઈ જઈએ છીએ. <br/><br/>
+ 
+ એવું જ્ઞાન સાધુના સમાગમમાંથી આવે છે. માટે પ્રમાદે કરીને કરવાનું હોય તે રહી જાય, ને આવી વાતું વિચાર્યા વિના, ધાર્યા વિના બહુ ફેર રહી જાય છે. તે કેવો ? તો ઊગમણી દિશાએ જણસ ખોવાણી, ને આથમણા ગોતવા ચાલ્યા. માટે સત્સંગમાં રહેતે રહેતે કુસંગી થઈ જવાય ને ઉપરનો ડોળ તો કરે, પણ માંહી તો કાંઈ ન રહ્યું હોય.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

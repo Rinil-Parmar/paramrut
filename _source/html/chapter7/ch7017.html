@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૭) જાળિયામાં શ્રીજીમહારાજે સર્વ સંતને કહ્યું જે, “પરમહંસ તથા સત્સંગી એ સર્વેને તો એમ નિશ્ર્ચય કરવો જે, આપણે તો અક્ષરરૂપ મુક્તની પંક્તિમાં ભળવું છે ને અક્ષરધામમાં જઈને અખંડ ભગવાનની સેવામાં હજૂર રહેવું છે, પણ નાશવંત ને તુચ્છ એવું જે, માયિક સુખ તેને ઇચ્છવું નથી ને એમાં કોઈ ઠેકાણે લોભાવું નથી. એવો દૃઢ નિશ્ર્ચય રાખીને સર્વ અવતારના અવતારી ને અક્ષરધામના પતિ શ્રીપુરુષોત્તમ ભગવાન પ્રત્યક્ષ મળ્યા છે તે પુરુષોત્તમ ભગવાનની એકાંતિક ભક્તિ નિરંતર કરવી.”
+ <br/><br/>
+ પછી મુક્તાનંદસ્વામીએ પૂછ્યું જે, ‘હે મહારાજ ! ભગવાનનું અક્ષરધામ કેવું છે ?’ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “તે ભગવાનનું ધામ તો સનાતન છે, નિત્ય છે, અપ્રાકૃત ને સચ્ચિદાનંદરૂપ છે અને એ ભગવાનનું જેવું ધામ છે, તેવું સ્થાનક અનંતકોટિ બ્રહ્માંડમાં કોઈ નથી જે, જેની ઉપમા એને દઈએ તથા ઇન્દ્ર, વરુણ, કુબેર તથા શિવ, બ્રહ્મા, વૈરાટ તથા પ્રધાનપુરુષ, પ્રકૃતિપુરુષાદિક તેમનાં જે સ્થાનક તથા બીજાં ઘણાંક ભગવાનનાં સ્થાનક છે; પણ એ માંહીલું એકે એવું સ્થાનક નથી જે, જેને ભગવાનના અક્ષરધામની ઉપમા દઈએ. અને એ ભગવાનના અક્ષરધામને વિશે રહ્યા એવા જે ભગવાનના મુક્ત તેને જેવું સુખ છે, તેવું અનંતકોટિ બ્રહ્માંડમાં કોઈને સુખ છે જ નહિ જે, જેની એને ઉપમા દઈએ. ને એ ભગવાનનો જેવો આકાર છે તેવો અનંતકોટિ બ્રહ્માંડમાં કોઈનો આકાર છે નહિ જે, જેની ઉપમા દઈએ; કેમ જે, પુરુષ પ્રકૃતિ થકી ઉત્પન્ન થયા જે આકાર, તે સર્વે માયિક છે ને એ ભગવાન તો અમાયિક છે ને દિવ્ય એવું જે પોતાનું અક્ષરધામ તેને વિશે સદાય સ્વરાટ્ થકા વિરાજમાન છે. તે મૂર્તિનું જ્યારે સમાધિને વિશે ભક્તને દર્શન થાય છે ત્યારે તે દર્શને કરીને એવું સુખ જણાય છે જે મેં હજાર વરસ પર્યંત સમાધિને વિશે સુખ ભોગવ્યું ! એવી રીતે ભગવાનના સ્વરૂપ સંબંધી સુખ તે સમાધિને વિશે અપાર જણાય છે.
+ <br/><br/>
+ ને વળી તે ભગવાનની મૂર્તિનું જે એક નિમિષમાત્રનું દર્શન તે ઉપર અનંતકોટિ બ્રહ્માંડનાં જે વિષયસુખ છે, તે સર્વેને વારીફેરીને નાખી દઈએ. ને ભગવાનના એક રોમમાં જેટલું સુખ રહ્યું છે, તેટલું સુખ તો અનંતકોટિ બ્રહ્માંડનાં વિષયસુખ ભેળાં કરીએ તો પણ તેના કોટિમા ભાગની બરોબર પણ થાય નહિ, એવું અક્ષરધામને વિશે ભગવાનની મૂર્તિનું ભગવાનના ભક્તને અખંડ સુખ આવે છે. ને એ જે પુરુષોત્તમનારાયણ તેની હે પરમહંસો ! આજ તમને સર્વેને સાક્ષાત્કાર પ્રાપ્તિ થઈ છે ને તમોને એ ધામને હું મારા બળે કરીને સર્વેને પમાડીશ, પણ સાધને કરીને એ ધામ પમાતું નથી.
+ <br/><br/>
+ ને બીજું એ ધામને વિશે જે મુક્ત રહ્યા છે, તેના દેહનો આકાર કેવો છે? તો આ બ્રહ્માંડને વિશે જે સ્ત્રી ને પુરુષ તેનો જે આકાર છે તેના બે લિંગથી વિજાતીય તે મુક્તનો આકાર છે, પણ સ્ત્રીના જેવો કે પુરુષના જેવો આકાર નથી. એ બેય આકારે વર્જિત બ્રહ્મમય તનુ છે ને તે મુક્તને એક પુરુષોત્તમનાં બે ચરણારવિંદની ઉપાસના છે ને તે સાથે જ રમણ છે. ને બીજા ધામોને વિશે તો ચાર ચરણારવિંદની ઉપાસના છે ને તે સાથે રમણ છે; ને સ્ત્રી છે તે પોતાના પુરુષ સાથે પણ રમણ કરે છે ને પુરુષોત્તમની જે મૂર્તિ છે તે સાથે પણ રમણ કરે છે ને જે પુરુષ છે તે પણ પોતાની સ્ત્રીના ચરણારવિંદની સેવા તત્પર થઈને કરે છે ને નવધા ભક્તિએ કરીને પુરુષોત્તમની સેવા પણ કરે છે. એવી જાતની જે ઉપાસના ને ભક્તિ, તે અમારા અક્ષરધામને વિશે નથી; બીજાં ધામોને વિશે છે અને જેને જ્યાં લગી સ્ત્રીને સુખે કરીને સુખ વરતે છે, ત્યાં લગી તે ભક્તને પણ અક્ષરધામને વિશે રાખતા નથી ને તેનાથી પણ અક્ષરધામને વિશે રહેવાતું નથી.”
+ <br/><br/>
+ પછી પરમહંસે પૂછ્યું જે, ‘હે મહારાજ ! કેવા ભક્ત હોય તે કેવા ધામને પામે?’ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “પોતાના આત્માને અક્ષરરૂપ માનીને પુરુષોત્તમ ભગવાનની મૂર્તિને અખંડ તેલધારાની પેઠે સંભારતા હોય, એવા જે એકાંતિક ભક્ત તે તો અક્ષરરૂપ થઈને પુરુષોત્તમનારાયણની સેવામાં હજૂર રહે છે. ને તે ભક્તને ભગવાન કેવું સુખ આપે છે ? તો જેવું ભગવાનને પોતાની મૂર્તિનું સુખ છે, તેવું તે ભક્તને પણ ભગવાન સુખ આપે છે અને સાચી ઉપાસના ને એકાંતિકધર્મ એ બે સંપૂર્ણ હોય તો જ તે અક્ષરધામને પામે છે ને જો એકાંતિક ધર્મને વિશે કસર હોય તો મૂળપુરુષને પામે છે; ને ઉપાસનામાં તથા નિર્વાસનિકપણામાં કસર હોય તો ભગવાનના ગોલોકાદિક ધામને પામે છે ને બહુ સવાસનિક હોય તો પ્રધાનપુરુષ તથા વૈરાટાદિકને પામે છે ને ઉપાસના ને એકાંતિક ધર્મ એ બેમાં કસર હોય તો બ્રહ્માદિક જેવા થાય છે ને ગુણબુદ્ધિવાળા હોય ને સાધુની સેવા-ચાકરી કરતા હોય તો ઇન્દ્ર જેવા થાય છે ને થોડી સેવા-ચાકરી કરતા હોય તો દેવતા થાય છે ને સંતનો ગુણ જ લે તો તેને <a href="#ex1" class="wordMeaning">જમપુરી આળસે</a>. એવી રીતે સમજણમાં ભેદે કરીને પ્રાપ્તિમાં બહુ જ ફેર રહે છે.”
+<br/><br/>
+<a href="GP-14.html">વચ. ગ.પ્ર. ૧૪</a> <br/>
+ 
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 જમપુરી આળસે= જમપુરી ટળી જાય.  
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

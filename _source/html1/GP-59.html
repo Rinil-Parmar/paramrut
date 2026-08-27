@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૫૯ - અસાધારણ સ્નેહનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના ફાગણ સુદિ ૧૪ ચતુર્દશીને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિરની આગળ આથમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા ને ધોળો ખેસ પહેર્યો હતો ને ધોળી ચાદર ઓઢી હતી ને માથે હીરકોરનું ધોળું ધોતીયું બાંધ્યું હતું ને લલાટને વિષે ચંદનની અર્ચા વિરાજમાન હતી અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રશ્ન-ઉત્તર કરો.” પછી મુક્તાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! ભગવાનને વિષે અસાધારણ પ્રેમ થાય તેનું શું કારણ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “એક તો ભગવાનનો વિશ્વાસ હોય જે, ‘આ મને મળ્યા છે તે નિશ્ચય જ ભગવાન છે,’ તથા આસ્તિકપણું હોય, તથા ભગવાનનાં જે ઐશ્વર્ય તેને જાણે જે, ‘આ ભગવાન છે તે બ્રહ્મમહોલ, ગોલોક, શ્વેતદ્વીપ એ આદિક સર્વે ધામના પતિ છે તથા અનંત કોટિ બ્રહ્માંડના પતિ છે તથા સર્વના કર્તા છે,’ અને પુરુષ, કાળ, કર્મ, માયા, ત્રણ ગુણ, ચોવીસ તત્ત્વ, બ્રહ્માદિક દેવ એ કોઈને આ બ્રહ્માંડના કર્તા જાણે નહીં, એક ભગવાન પુરુષોત્તમને જ કર્તા જાણે અને સર્વના અંતર્યામી જાણે. એવી રીતની સમજણે સહિત જે પ્રત્યક્ષ ભગવાનના સ્વરૂપને વિષે નિશ્ચય તે જ પરમેશ્વરને વિષે અસાધારણ સ્નેહનું કારણ છે.”
+</p>
+<p class="text_gu">
+પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “એવો ભગવાનનો મહિમા પણ જાણતો હોય અને અસાધારણ હેત ન થાય તેનું શું કારણ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જો એ ભગવાનનો આવો મહિમા જાણે છે તો એને ભગવાનને વિષે અસાધારણ હેત છે પણ એ જાણતો નથી. જેમ હનુમાનજીમાં અપાર બળ હતું પણ કોઈકના જણાવ્યા વિના જણાણું નહીં. અને જેમ પ્રલંબાસુર બળદેવજીને લઈ ચાલ્યો ત્યારે પોતામાં બળ તો અપાર હતું પણ પોતે જાણતા ન હતા. પછી જ્યારે આકાશવાણીએ કહ્યું ત્યારે જાણ્યું. તેવી રીતે એ ભક્તને ભગવાનને વિષે અસાધારણ પ્રીતિ તો છે પણ જણાતી નથી.”
+</p>
+<p class="text_gu">
+પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “એ પ્રીતિના બળને જણાયાનું શું કારણ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “સત્સંગ અને સત્શાસ્ત્રનું શ્રવણ કરતે સતે એને ભગવાનને વિષે અસાધારણ પ્રીતિ છે તે જણાઈ આવે છે.”
+</p>
+<p class="text_gu">
+પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “દેશ, કાળ અને ક્રિયા તે ભૂંડાં થાય અથવા ભલાં થાય તેનું કારણ તે સંગ છે કે કોઈ બીજો છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “દેશ તો પૃથ્વી કહેવાય તે સર્વ ઠેકાણે સરખો છે અને કાળ પણ સરખો છે, પણ અતિશય જે મોટા સમર્થ પુરુષ હોય તે જે દેશમાં રહેતા હોય તેને પ્રતાપે કરીને ભૂંડો દેશ હોય, ભૂંડો કાળ હોય, ભૂંડી ક્રિયા હોય તે સર્વે સારાં થઈ જાય છે; અને અતિશય ભૂંડા પાપી પુરુષ જે દેશમાં રહેતા હોય તેને યોગે કરીને સારો દેશ ને સારી ક્રિયા ને સારો કાળ હોય તે પણ ભૂંડાં થઈ જાય છે. માટે શુભ અને અશુભ એવાં જે દેશ, કાળ ને ક્રિયા તેના હેતુ તો પુરુષ છે. તે પુરુષ જો અતિશય સમર્થ હોય તો સર્વ પૃથ્વીમાં દેશ, કાળ ને ક્રિયા તે પોતાના સ્વભાવ પ્રમાણે પ્રવર્તાવે ને તેથી ઊતરતો હોય તો એક દેશમાં પ્રવર્તાવે ને તેથી ઊતરતો હોય તો એક ગામમાં પ્રવર્તાવે ને તેથી ઊતરતો હોય તો એક ફળી તથા એક પોતાનું ઘર તેમાં પ્રવર્તાવે. એવી રીતે એ શુભ-અશુભ જે દેશ, કાળ ને ક્રિયા તેના હેતુ તો શુભ ને અશુભ એ બે પ્રકારના પુરુષ છે.”
+</p>
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

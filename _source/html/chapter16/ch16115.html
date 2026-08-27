@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (115) સાધુ થયા વિના છૂટકો નથી ને જે વાત કરવાની છે તે કરશું ત્યારે જ સુખ થાશે. તે એક અસ્વાર બે ઘોડે ન ચઢે ને એક ક્ધયા બે સાસરે જાય જ નહિ. ને નિષેધ કર્યા વિના તો કરોડ જન્મે એ ટળનારું નહિ; માટે દુ:ખ, દોષ ને નાશવંતપણું એમનું એમ જોયા જ કરવું. કોઈના દોષ કહેવા, સાંભળવાને મારગે ચાલે ત્યારે અંતર ગોબરું થઈ જાય ને પછી આજ્ઞા લોપવા માંડે ત્યારે અંતરે સુખ પણ રહે નહિ ને જીવ બળવા લાગે ને ઉપરથી તો સારું જણાય પણ જેમ ઘઉં સારા હોય ને માંહી હીમ પડે ને બીજ બળી જાય, તેમ તેના અંતરમાંથી સુખ જતું રહે છે તે બીજ બળી ગયું કહેવાય. પછી મોટાની મરજી પણ તેને માથેથી ઊતરી જાય છે ને ત્યાર કેડે અંતર ભ્રષ્ટ થઈ જાય છે. <br/><br/>
+ 
+ ને જો મોટાને મન સોંપે તો કોઇ જાતનો દોષ રહે નહિ પણ એમ ક્યાં નિષ્કપટ થઇને મોટાને પોતાના દોષ કહેવાય છે જે ‘આટલો મારે કામ છે કે લોભ છે કે સ્વાદ છે કે સ્નેહ છે કે માન છે ને આટલું દેહાભિમાન છે,’ એમ ચોખું નિષ્કપટ થઈને કે’દી કહેવાય છે ? ને જેમ છે તેમ કહેવા માંડે તો કોઈ સ્વભાવ રહે જ નહિ ને ઘરમાં હથિયાર હોય ને સમે (સમયે) કામ ન આવે તે કામ ન આવ્યું; માટે શ્રવણ, મનન, નિદિધ્યાસ કરીને એ વાતને સાક્ષાત્કાર કરવા શીખવું ને જ્ઞાન વિના તો <a href="#ex1" class="wordMeaning"> ઓસાણ</a> પણ આવે નહિ ને જ્ઞાન ન હોય તો મરને દેહનો અનાદર હોય પણ માંદાની ચાકરી કરતાં ન આવડે ને કરે તો ‘ધત્ત તેરા કલ્યાણ’ એવું કરે ને પોતાના દેહની વિષ્ટા ધુએ પણ માંદાની ચાકરી કરતાં સૂગ ચડે; માટે એ પણ શીખ્યા વિના ન આવડે ને મનુષ્યભાવ ને દિવ્યભાવ તે સમાગમ વિના ખબર પડે નહિ ને પોતામાં દોષ હોય તે કામ, લોભ, સ્વાદ, કેટલા છે તે પણ જણાય નહિ. <br/><br/>
+ 
+ ને કેટલાક છે તે અમથા જાગે ને કથામાં ઊંઘે, તેને જો કહીએ તો દુ:ખ લાગે તે કહેવાય નહિ ને શ્રવણ ભક્તિ વિના ગમે તેટલાં શાસ્ત્ર, પોતાની મેળે વાંચે પણ જ્ઞાન થાય નહિ; માટે ગુરુ કર્યા જોઈએ. તે ગુરુ કર્યા વિના તો કોઇ વાત આવડનારી જ નહિ ને કેટલાક છે તે કરે છે આત્માની વાતું ને વરતે છે દેહમાં. એ તે શું ? માટે કાંઈક વરતવા માંડે તો વાતું પ્રમાણ થાય. માટે જ્યાં સુધી મંદવાડ આવ્યો નથી ને આવરદા નથી આવી રહી, એટલાકમાં વચનામૃતનો અભ્યાસ કરી લેવો ને સારા ભગવદીનો સમાગમ કરી લેવો ને જે વાત થાય તે સમે થાય.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+1 ઓસાણ= યાદ, સ્મરણ
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

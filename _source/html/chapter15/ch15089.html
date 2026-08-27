@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (89) મૂર્ખ ભેળા થાય તે ખાસડે દાળ વેચીને જુદા થઈ જાય, તે આખામાં ખાખી જમતાં જમતાં વઢ્યા જે, ‘એસા કીયા ?’ ત્યારે બીજો કહે, ‘એસા કીયા ?’ એમ કરતાં કરતાં વઢ્યા તે કૂતરા શીરા-પૂરી ખાઈ ગયા. માટે ખાધા ટાણે કજિયો કરે કે રીસાય તે મૂરખ કહેવાય. પછી વાત કરી જે, બે બાવા ચોરે ઊતર્યા તેમાંથી એક નાવા (નાહવા) ગયો ત્યારે વાંસે ગયો તેને કોઈએ પૂછ્યું જે, ઓેલ્યા સાધુ કેવા છે ? તો કહે જે, સાલા બેલ જેસા હે ! તે નાહીને આવ્યો ત્યારે બીજો નાવા ગયો ત્યારે એમને પૂછ્યું જે ઓલ્યા સાધુ કેવા છે ? તો કહે જે, ગધા જેસા હે! પછી તેણે બેયને જમવાનું કહીને રસોઈ કરાવી ને તેડાવ્યા પછી ઘર વાસીને (બંધ કરીને) એકની આગળ <a href="#ex1" class="wordMeaning">ઠાલીયાં</a> ને બીજાની આગળ <a href="#ex1" class="wordMeaning">રાડાં</a> મૂક્યાં ને કહે, ‘પાઓ મહારાજ.’ તો કહે, ‘ઈસમે ક્યા પાવે ?’ પછી ડાંગ લઈને ઉઠ્યો ને કહે જે, પાઓ નીકર મારું છું. તમે કહેતા તે પ્રમાણે ગધા જેસા હોય તે ઠાલીયાં ખાય ને બેલ જેસા હોય તે રાડાં ખાય. પછી કહે, ‘મહારાજ ! ભેખ લઈને નીસર્યા ને સંપ રાખતા નથી તે ઠીક નહીં.’ પછી જમાડ્યા. માટે અધર્મ સર્ગ આવે ત્યારે કોઈને સુખ રહેવા દે નહિ ને પૂર્વે મોટા મોટામાં આવ્યો છે, તેમાં પણ કોઈને સુખ રહેવા દીધું નથી ને હમણાં આપણામાં આવે તો આપણને પણ સુખ રહેવા દે નહીં. 
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઠાલીયાં= કપાસ કાઢી લીધેલું કાલુ.  <br/>
+2 રાડાં= ઢોરને ખાતા વધેલા સાંઠા અને મૂળિયાં. 
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

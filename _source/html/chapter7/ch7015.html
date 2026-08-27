@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૫) ગઢડામાં શ્રીજીમહારાજે એક ભક્તને કહ્યું જે, “તમે અક્ષરધામમાં જઈ આવો.” ત્યારે તે ભક્ત સમાધિ કરીને પ્રથમ બદરિકાશ્રમમાં ગયા, ત્યાં આપણા સાધુ, પાળા, બ્રહ્મચારી, હરિભક્ત તેને દીઠા. ત્યારે તેમને પૂછ્યું જે, ‘શ્રીજીમહારાજ ક્યાં છે ?’ ત્યારે એ સર્વે બોલ્યા જે, ‘આ નરનારાયણ છે તે જ મહારાજ છે.’ ત્યારે હરિભક્તે કહ્યું જે, ‘હું મહારાજને ઓળખું છું.’ પછી ત્યાંથી શ્ર્વેતદ્વીપમાં ગયા ત્યાં પણ આપણા સાધુ, બ્રહ્મચારી હતા, તેમને કહ્યું જે, ‘શ્રીજીમહારાજ ક્યાં છે ?’ ત્યારે તે બોલ્યા જે, ‘આ વાસુદેવ છે તે જ મહારાજ છે.’ ત્યારે તે બોલ્યા જે, ‘હું મહારાજને ઓળખું છું.’ પછી ત્યાંથી વૈકુંઠમાં ગયા, ત્યારે ત્યાં પણ આપણા સાધુ આદિક દીઠા. ત્યારે તેમને કહ્યું જે, ‘શ્રીજીમહારાજ ક્યાં છે ?’ ત્યારે તેમણે કહ્યું જે, ‘આ લક્ષ્મીનારાયણ છે તે જ મહારાજ છે.’ ત્યારે તેણે કહ્યું જે, ‘હું મહારાજને ઓળખું છું.’ પછી ત્યાંથી તે ભક્ત ગોલોકમાં ગયા ત્યારે ત્યાં પણ આપણા સાધુ આદિકને દીઠા. ત્યારે તેમને પૂછ્યું જે, શ્રીજીમહારાજ ક્યાં છે ?’ ત્યારે તે બોલ્યા જે, ‘આ શ્રીકૃષ્ણ છે તે જ મહારાજ છે.’ ત્યારે તેણે કહ્યું જે, ‘મહારાજને હું ઓળખું છું, માટે આ શ્રીજીમહારાજ નહીં.’
+ <br/><br/>
+ ત્યાર પછી તે ભક્ત અક્ષરધામમાં ગયા ને ત્યાં અનંતકોટિ મુક્ત તેમણે સેવ્યા હતા, એવા જે શ્રીજીમહારાજ તેમને દીઠા ને ત્યાં આપણા સાધુ, બ્રહ્મચારી, પાળા, સત્સંગી તે સર્વેને શ્રીજીમહારાજની સેવામાં દીઠા. પછી તે ભક્તને શ્રીજીમહારાજે પૂછ્યું જે, “કિયા કિયા (કયા કયા) ધામ જોતા આવ્યા?” ત્યારે ભક્તે કહ્યું જે, ‘હે મહારાજ ! આપણા બ્રહ્મચારી, સાધુ, પાળા, સત્સંગી તે બદરિકાશ્રમમાં, શ્ર્વેતદ્વીપમાં, વૈકુંઠમાં તથા ગોલોકમાં ઘણા દીઠા, તે પણ આંહીં કેમ ન આવ્યા ?’ ત્યારે શ્રીજીમહારાજે કહ્યું જે, “અમને તે તે ધામના પતિ જાણ્યા, તે માટે ત્યાં જઈને રહ્યા છે. ને આ સર્વેએ અમને સર્વ અવતારના અવતારી જાણ્યા ને સર્વ ધામ થકી પર જે બ્રહ્મમહોલ તેના પતિ અમને જાણ્યા, તે માટે એમને અમે અક્ષરમુક્ત કર્યા છે. અને પૂર્વના અવતાર જેવા અમને જાણ્યા તે માટે એમને તે તે અવતાર જેટલું ઐશ્ર્વર્ય આપ્યું છે. ને તે તે ધામના પતિ અમને જાણીને તે તે ધામમાં રહ્યા છે. ને તે જો અમે પંડે જઈને કહીએ તો પણ ન માને, એવો એમનો નિશ્ર્ચય છે.”
+ <br/><br/>
+ પછી તે ભક્તને સમાધિમાંથી શ્રીજીમહારાજ જગાડતા હવા. પછી શ્રીજીમહારાજે તે ભક્તને કહ્યું જે, “તમે જે દીઠું તે સર્વ આ સંતમંડળની આગળ કહો.” ત્યારે તે ભક્તે જેમ દીઠું તેમ સંતમંડળ આગળ કહ્યું, પછી પરમહંસે કહ્યું જે, ‘હે મહારાજ ! તમે કૃપા કરીને તમારા સ્વરૂપનો જેમ અમને સર્વોપરી નિશ્ર્ચય થાય તેમ કહો !’ પછી શ્રીજીમહારાજ બોલ્યા જે, “અક્ષરાતીત એવા જે પ્રગટ પુરુષોત્તમ ભગવાન તે મૂળઅક્ષર અને અનંત અક્ષરમુક્તે સેવ્યા થકા પોતાના અક્ષરધામને વિશે સદાય વિરાજમાન છે. તેમણે સૃષ્ટિ સમે મૂળઅક્ષર સામું જોયું ત્યારે તે મૂળઅક્ષરે અનંતકોટિ મુક્તો સામું જોયું ત્યારે તે મુક્તોમાંથી એક પુરુષ ઊભો થયો, પછી તે પુરુષે માયા સામું જોયું, પછી માયામાંથી અનંત પુરુષાદિક થયા. તે અક્ષરપુરુષ અનેક રૂપે કરીને તેમાં પ્રવેશ કરે છે, અનેક રૂપે કરીને સર્વેની રક્ષા કરે છે અને અનંત પાર્ષદ, શક્તિઓ, ઐશ્ર્વર્યે સેવ્યા થકા પોતાના ધામને વિશે રહે છે. એ પ્રકારે એને વિશે અનેક કળા રહી છે. એવા જે મહાપુરુષ તેનો મોટા કવિ પણ પાર પામતા નથી ને તે આધુનિક સમજણવાળાની તો એટલે સુધી જ ગતિ છે. ને એવા અનંત અક્ષરમુક્તે સેવ્યા એવા જે પ્રગટ પુરુષોત્તમ તેની તમારે સાક્ષાત્ પ્રાપ્તિ છે. ને એવા જે પ્રગટ પુરુષોત્તમ શ્રીસ્વામિનારાયણ તે બીજા ધામમાં રહી જે મૂર્તિઓ તથા સર્વે અવતાર તેના કારણ છે ને અનંત અક્ષરમુક્તના સ્વામી છે. ને <a href="#ex1" class="wordMeaning">અપરિમિત</a>, સર્વોપરી, નિરંકુશ, ઐશ્ર્વર્યાદિકે કરીને સંપૂર્ણ છે.
+ <br/><br/>
+ એવા જે પ્રગટ પુરુષોત્તમ તેમની જેમ તમને ઉપાસના છે તેમ જેને ઉપાસના થાય તે જ પુરુષોત્તમને પામે છે, પણ બીજા તો કોટિ સાધન કરે તો પણ ન પામે. ને અક્ષરાદિક સર્વ થકી પર અને પરમ અદ્વૈતમૂર્તિ એવા જે પ્રગટ પુરુષોત્તમ તેને વિશે ને બીજા વિભૂતિ અવતારને વિશે કેમ ભેદ છે ? તો જેમ તીર ને તીરનો નાખનારો તથા ચક્રવર્તી રાજા અને ખંડિયા રાજામાં ભેદ છે ને જેમ સૂર્ય ને સૂર્યના મંડળમાં ભેદ છે ને જેમ ચંદ્રમા ને તારામાં ભેદ છે, તેમ આ પ્રગટ પુરુષોત્તમમાં ને બીજા રામકૃષ્ણાદિક અવતારમાં ભેદ છે. એવી રીતે આ પ્રગટ પુરુષોત્તમને સર્વોપરી જાણવા એ સર્વે સત્પુરુષ ને સર્વે શાસ્ત્રનો પરમ રહસ્ય અભિપ્રાય છે. એવા જે પ્રગટ હરિકૃષ્ણ પુરુષોત્તમ તેની દૃઢ ઉપાસના કરવી એ અવશ્ય કરવાનું છે. ને અનંત એવું જે અક્ષરધામ ને અનંતકોટિ અક્ષરમુક્ત ને અક્ષરધામની અનંત દિવ્ય સમૃદ્ધિ ને અનંત વિભૂતિઓ ને અક્ષરધામથી હેઠા બ્રહ્માંડોના અનંત <a href="#ex1" class="wordMeaning">માયાશબલિત બ્રહ્મ</a>, એ સર્વે પુરુષોત્તમનું શરીર છે. તેના મહિમાનો પાર ન આવે, તો એ સર્વના શરીરી અને કારણ ને એ સર્વેને વિશે અન્વય થકા વ્યતિરેક ને સર્વથી નિર્લેપ, નિર્વિકારી એવા જે આ પરબ્રહ્મ, હરિકૃષ્ણ, પ્રગટ પુરુષોત્તમ તેના મહિમાનો તો પાર આવે જ કેમ? એ તો અનંત અપાર છે ને જેવા આ પ્રગટ મૂર્તિ અમે બેઠા છીએ તેવા ને તેવા જ અક્ષરધામને વિશે સ્વયં સ્વરાટ્પણે રહ્યા છીએ અને તમે પણ સર્વે ત્યાં બેઠા છો, એમ હું દેખું છું. ને આ સત્સંગમાં જે યોગસમાધિવાળા છે તે પણ દેખે છે, પણ આ વાત તમારા સમજવામાં પરિપૂર્ણ આવતી નથી.
+ <br/><br/>
+ ને જ્યારે એ વાત પરિપૂર્ણ સમજ્યામાં આવશે ત્યારે પંચવિષય કે કામ, ક્રોધાદિક જીત્યામાં પ્રયાસ થાશે નહિ, સહેજે જિતાઈ જાશે. ને બ્રહ્માદિકને પણ દુર્લભ એવી આ સભા છે. ને ગૌલોક, વૈકુંઠ, શ્ર્વેતદ્વીપ ને બદરિકાશ્રમ તેને વિશે સભા છે, તેથી પણ આ સત્સંગીની સભાને હું અધિક જાણું છું ને સર્વે હરિભક્તને અતિશે પ્રકાશે યુક્ત દેખું છું, એમાં જો લગારે મિથ્યા કહેતા હોઈએ તો આ સર્વ સંત સભાના સમ છે.”
+<br/><br/>
+<a href="GP-62.html">વચ. ગ.પ્ર. ૬૨</a> <br/>
+<a href="GP-67.html">વચ. ગ.પ્ર. ૬૭</a> <br/>
+ <a href="GM-13.html">વચ. ગ.મ. ૧૩</a> <br/>
+ <a href="GM-37.html">વચ. ગ.મ. ૩૭</a> <br/>
+
+ 
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 અપરિમિત= અમાપ.  <br/>
+2 માયા શબલિત બ્રહ્મ= મહાકારણથી અથવા મૂળપ્રકૃતિથી મુક્ત ન થયેલ આત્મસ્વરૂપ પુરુષ-પ્રકૃતિપુરુષ.  
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (212) નવ પ્રકારની ભક્તિએ કરીને ભગવાનમાં જોડાવાય, તે સર્વનાં નોખાં સાધન છે. તે વૈરાગ્ય ને આત્મનિષ્ઠા વિના તો ઘોડી પાછી વાળી એટલો પ્રેમ હતો, પણ કસર રહી ગઈ. તે કુંડળવાળાં રાઈબાઈએ ધ્યાનમાં વૃત્તિએ કરીને મહારાજની ઘોડી પાછી વાળી હતી; પછી વિજોગ થયો એટલે એવી વૃત્તિ આળસી ગઈ. તે અમે એક વખત શિવલાલભાઈ મારફત પુછાવ્યું જે, ‘હવે સમાધિ થાય છે?’ તો તે બાઈ કહે, ‘કરું તો થાય પણ નવરી નથી,’ તે શું ? જે, જોગ વિના <a href="#ex1" class="wordMeaning">ઘાસી જાય</a>. ને દશ દિવસ સમાધિમાં રહે ને દેહમાં આવે ત્યારે એવા ને એવા ! ભક્તિ કરાવીને થાળ આપ્યો કે ઝીણા ચોખા દીધા કે કોઈ પદાર્થ આપ્યું, તેમાં શું થયું ? 
+ 
+ <br/><br/>
+ 
+ મરને બાર મેઘ આવી ઝુમે રે, તોય નવ ભીંજે મેરો રોમે રે. <br/>
+ 
+ મરને આતસ કા વરસે મેહા રે, તોય નવ દાઝે મેરા દેહા રે ! <br/><br/>
+ 
+ એમ ‘દેહનાં દુ:ખે હું દુ:ખિયો થાઉં એવો નથી ને સુખના ઢગલા હોય તો ય સુખી થાતો નથી.’ એવો વિચાર કરવો. આત્મનિષ્ઠાવાળા રાજ્યમાં છે તો પણ વનમાં છે. ધર્મ, જ્ઞાન, વૈરાગ્ય પામ્યા; પણ ભગવાનમાં ન જોડાય તો સર્વે વ્યર્થ છે ને તે વિનાનો તો, <br/><br/>
+ 
+ ષડઙ્ગાદિવેદો મુખે  શાસ્ત્રવિદ્યા કવિત્વાદિ ગદ્યં સુપદ્યં કરોતિ । <br/>
+ 
+ ગુરોરઙ્ધ્રિપદ્મે માનશ્ચેન્ન દત્તં તત: કિં તત: કિં તત: કિં તત: કિમ્‌  ।।
+ 
+ 
+ 
+ <br/>
+ 
+ (શ્રીશંકરાચાર્ય)(કીર્તન મુક્તાવલિ : 33/ગુરુસ્તોત્ર-4-2)
+ 
+ <br/>
+ 
+ અર્થ :- છ અંગો સાથે વેદ અને બધા શાસ્ત્રોની વિદ્યા મોઢે છે. કવિત્વ શક્તિ જેનામાં છે અને ઉત્તમ ગદ્ય અને પદ્ય કરી શકે છે. પણ જો ગુરુના ચરણકમળમાં મન ન લાગ્યું હોય તેથી શું ઉપયોગ ? શું ઉપયોગ ? શું ઉપયોગ? શું ઉપયોગ ?
+ 
+ <br/><br/>
+ 
+ માટે, <br/><br/>
+ 
+ ભક્તિહીન ભવસિંધુ ન તરહિં.
+ 
+ <br/><br/>
+ 
+ જડભરતને મૃગલી આડી આવી; માટે નિષેધ કરીએ ત્યારે ધર્મ, જ્ઞાન, વૈરાગ્યને પામીને ભગવાનમાં જોડાવાય. ને જ્ઞાન વિના તો અંધારું કહેવાય.
+ 
+ <br/><br/>
+ 
+ ક્ષણે રૂષ્ટા:  ક્ષણે તુષ્ટા:  રૂષ્ટા: તુષ્ટા:  ક્ષણે ક્ષણે  ।  <br/>
+અવ્યવસ્થિતચિત્તાનાં પ્રસદોપિ ભયંકર: ॥ 
+
+ 
+ <br/>
+ 
+ (સુભાષિત રત્નમાળા : 45)
+ 
+ <br/>
+ 
+ અર્થ :- એક ક્ષણે કોધ કરે, બીજી ક્ષણે પ્રસન્ન થાય એમ ક્ષણે ક્ષણે ક્રોધ કરે અને પ્રીતિ કરે એવા અવ્યવસ્થિત (ઠેકાણા વિનાના) ચિત્તવાળા અધિપતિઓની મહેરબાની પણ ભયંકર હોય છે. <br/><br/>
+ 
+ ને એવા સમાસ ન કરે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઘાસી જાય= ઘસારો લાગી જાય.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

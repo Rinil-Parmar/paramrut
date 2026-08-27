@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૦) એક સમે શ્રીજીમહારાજે વ્યાપકાનંદસ્વામીને ગઢડામાં અક્ષર ઓરડીમાં કહ્યું જે, “ઇન્દ્રલોકમાં જઈ આવો.” ત્યારે કહે, ‘જઈ આવ્યો.’ પછી કહ્યું જે, “ગોલોક તથા બ્રહ્મધામને વિશે જઈ આવો.” ત્યારે કહ્યું જે, ‘જઈ આવ્યો.’ પછી ફરી આજ્ઞા કરી જે, “<a href="#ex1" class="wordMeaning">ભૂમાપુરુષ</a> પાસે જઈ આવો.” ત્યારે તે વ્યાપકાનંદસ્વામી કહે જે, ‘હજાર માથાનો દૈત્ય મારગ રોકીને રહ્યો છે.’ ત્યારે મહારાજે કહ્યું જે, “તમે પણ તેવું રૂપ ધારીને તેને જીતીને જાઓ.” પછી તેમ કર્યું. પછી ફરીને કહ્યું જે, ‘બીજો દશ હજાર માથાનો દૈત્ય આગળ છે.’ ત્યારે શ્રીજીમહારાજે કહ્યું જે, “તમે પણ તેથી મોટું રૂપ ધરીને તેને જીતીને જાઓ.” પછી તે તેમ કરીને ભૂમાપુરુષ પાસે ગયા, ત્યારે તે ભૂમાપુરુષે વ્યાપકાનંદસ્વામીને પૂછ્યું જે, ‘પુરુષોત્તમનું પ્રગટપણું પૃથ્વીને વિશે થયું ?’ ત્યારે તે કહે જે, ‘થયું.’ એ વાત સાંભળીને ભૂમાપુરુષ અતિશે ગદ્ગદ્ કંઠે થઈને રાજી થઈ જતા હવા ને સંતને પોતાના સિંહાસન ઉપર બેસાડીને અતિશે સુગંધીમાન પુષ્પ-ચંદનાદિકે કરીને તેની આરતી-પૂજા કરતા હવા ને અતિશે આનંદથી શ્રીજીમહારાજના સમાચાર પૂછીને બોલ્યા જે, ‘મને પ્રથમ શ્રીજીમહારાજે કહ્યું હતું જે, અમો જ્યારે બ્રહ્માંડમાં પધારશું, ત્યારે તમારી પાસે સંત મોકલશું. તે આજ સત્ય કર્યું.’ એવી રીતે પરસ્પર બે જણે શ્રીજીમહારાજના મહિમાની વાતું સારી પેઠે કરી.
+ <br/><br/>
+ તે પછી તે લોકમાં ચાર ભુજાવાળાં મનુષ્ય હતાં તેમને વ્યાપકાનંદ-સ્વામીએ શ્રીજીમહારાજના મહિમાની વાતું કરીને નિશ્ર્ચય કરાવીને તે સર્વે મુક્તને બ્રહ્મપુરને વિશે મોકલી દીધા. પછી સમાધિમાંથી પાછા આવીને શ્રીજીમહારાજને જેમ થયું તેમ વાત કરી દેખાડી. તે વાતને સાંભળી શ્રીજીમહારાજે વિચાર કર્યો જે, “જ્યારે બાદશાહ ગાદીએ બેસે ત્યારે બંદીવાનમાત્રને છોડી મૂકે છે, તેમ અમારે પણ અગણિત જીવોનાં કલ્યાણ કરવાં છે.” એમ વિચારીને સ્વરૂપાનંદસ્વામીને આજ્ઞા કરી જે, "તમે જાઓ ને સર્વે નરકકુંડના જીવમાત્રને ચતુર્ભુજરૂપ ધરાવીને ભૂમાપુરુષના લોકમાં મોકલો. ત્યારે તે સંતે તેમ જ કર્યું. પછી તે સંત પાછા આવ્યા ત્યારે સંતો પ્રત્યે શ્રીજીમહારાજ બોલ્યા જે, “હે સંતો ! અમો કોઈ દિવસ અક્ષરધામમાંથી આ બ્રહ્માંડમાં આવ્યા નથી ને આવશું પણ નહીં. માટે આજ તો અમારે અગણિત જીવોનાં કલ્યાણ કરવાં છે, તે માટે અમે અમારું અક્ષરધામ તથા અક્ષરમુક્તો સહિત આંહીં પધાર્યા છીએ.”
+ <br/><br/>
+  (જુઓ પ્રકરણ ૧૧ની વાત ૭૭)
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ભૂમાપુરુષ= શેષશાયીનારાયણ.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

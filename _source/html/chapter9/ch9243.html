@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (243) બધી કલમું છે, તેમ આ પણ એક કલમ છે તે જે ભણે તેને આવડે. બ્રહ્મવિદ્યા તે શું ? જે, ‘પ્રગટ બ્રહ્મ મૂર્તિમાન જે, આ બોલે છે તેને વિશે સ્થિતિ થાય તો તેને મહારાજ ને પ્રગટ બ્રહ્મ વિના બીજા કોઈ આકાર નજરમાં ન આવે તેને બ્રહ્મવિદ્યાશ્રિત યોગી જાણવા.’
+ <br/><br/>
+ બ્રાહ્મે મુહૂર્તે શયનં વિહાય નિજસ્વરુપં હૃદિ ચિન્તયિત્વા  । <br/>
+સ્નાનં વિશુદ્ધં પ્રચુરાભિરદ્રિ: શ્રીનિલકણ્થં હૃદિ ચિન્તયામિ ॥
+
+ <br/>
+ (શ્રી નીલકંઠ ચિન્તનાષ્ટકમ્)
+ <br/>
+ અર્થ : બ્રાહ્મ મુહૂર્તમાં શય્યા (નિદ્રા)નો ત્યાગ કરી પોતાના સ્વરૂપનું હૃદયમાં ચિંતન-ધ્યાન કરી, અધિક જળ વડે સ્વચ્છ સ્નાન કરી શ્રી નીલકંઠનું હું હૃદયમાં ચિંતન કરું છું.
+ <br/><br/>
+ બે વડે બ્રહ્મવિદ્યા શીખે છે ત્યારે સ્થિતિ રહે છે. તે જે સાત્ત્વિક સેવ્યા હોય અને તેના આશીર્વાદ હોય ત્યારે સ્થિતિ રહે.
+ <br/><br/>
+ હરિ કૃપા જબ હોત હે સુજત અપના દોષ.
+ <br/><br/>
+ બીજાના (દોષ) તો સૌને સૂઝે પણ પોતાના (દોષ) સૂઝે તો કૃપા સમજવી. અંતરમાં અભાવ વિના ટેક રહે નહીં.
+ <br/><br/>
+ ત્યાગ ન ટકે વૈરાગ્ય વિના, કરીએ કોટિ ઉપાયજી;
+ <br/>
+ ચમક દેખીને લોહ ચળે, ઇન્દ્રિય વિષય સંજોગજી;
+ <br/>
+ અણભેટ્યે રે અભાવ છે, ભેટ્યે ભોગવશે ભોગજી. ત્યાગ 0
+ <br/>
+ (કીર્તન મુક્તાવલિ : 480)
+ <br/><br/>
+ જ્યારે ભોગનો જોગ થાય ત્યારે રહેવાય નહીં. બોરના કીડાની પેઠે વિષયમાંથી નીકળે નહિ પણ <a href="#ex1" class="wordMeaning">કૂકડવેલનું</a> પાણી પેટમાં ગયું હોય તો પેટબેસણું થાય તેમ વૈરાગ્યરૂપી ઔષધિ જીવમાં ગળે તો બીજું નીસરે. ધર્મે કરીને સત્સંગમાં રહેવાય, મહિમાએ સહિત જ્ઞાન હોય તો કૃતાર્થપણું મનાય, આત્મજ્ઞાને કરીને એમ જાણે જે, ‘હું દેહથી નોખો આત્મા છું, તે આત્માને કાંઈ જોઈતું નથી, હું તો આત્માને સુખે સુખિયો છું.’ એમ માને, વૈરાગ્યે કરીને પ્રકૃતિપુરુષ પર્યંત જે યત્કિંચિત્ માયિક પદાર્થમાત્ર તે સર્વે ખોટું થઈ જાય; ને ભક્તિ તે શું ? જે, પ્રગટ ભગવાન અને તેના સંતને વિશે ઘણો સ્નેહ થાય ત્યારે સંપૂર્ણ થયું કહેવાય; પછી ભગવાન વરે છે.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 કૂકડવેલ= કૂકડપાડાનો વેલો-ઔષધોપયોગી કડવાં ફળોનો વેલો.
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

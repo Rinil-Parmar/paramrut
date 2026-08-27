@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			50. Lok rīzavavā bhakti karavī j nahīn. Āpaṇe to moṭāpuruṣh rājī thāya e bhakti. Āpaṇe jemane rājī karavā chhe emanī ājnyāmān vartavānun chhe paṇ jagatanī nahi. Dekhāv karavā māṭe nahi karavānun, moṭāpuruṣh rājī thāya eṭalā māṭe j karavun. Koī karatā hoya enā karatān kānī visheṣh bhajana-bhakti karī batāvavā nahi. <br/><br/>
+ 
+ Īrṣhyāthī karatā hoīe to koīnān vakhāṇ thāya tyāre antaramān baḷatarā thaī jāya. ‘ā kare chhe ne enā karatān hun vadhāre karun’ eṭalā māṭe nahi. Jagatanā sarṭifikeṭanī kānī jarūr nathī. Enī āshā kare ene bhagat n kahevāya. Jenun je thavānun hashe te thashe. Jene je kahevun hashe te kaheshe. ‘swāmī rājī thāya chhe ke nahi!’ basa. Āpaṇe eṭalun j jovānun. Bījā koīnā tarafathī kānī āshā ke apekṣhā rākhavānī j nahīn. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

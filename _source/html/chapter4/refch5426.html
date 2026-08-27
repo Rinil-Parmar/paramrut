@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (426) ગોપાળાનંદસ્વામીને ધોળાં પહેરાવવા માટે ઓલ્યા દેશના બધા ને આ દેશના ત્રીજા ભાગના વરતાલમાં ભેળા થયા. તે વાતની અમને ખબર પડી. પછી અમને એમ થયું જે, ગોપાળાનંદસ્વામી કોચવાશે ને મહારાજ તેમને તેડી જાશે, તો રાંકનાં હાંડલાં ફૂટી જાશે. પછી અમે વરતાલ ગયા ને ઉતારો કર્યા મોર (પહેલા) એમ ને એમ પાધરા રઘુવીરજી મહારાજ પાસે ગયા ને કહ્યું જે, ‘આ વાતનું કેમ છે ?’ ત્યારે રઘુવીરજી મહારાજ કહે જે, ‘એમાં મારું કાંઈ ચાલે એમ નથી, નિત્યાનંદસ્વામીને પૂછો.’ પછી અમે નિત્યાનંદસ્વામી પાસે ગયા ને કહ્યું જે, ‘મોટા સાધુનું અપમાન થાય તે ઠીક નહિ અને ઠપકો દેવો હોય તો આપણે દઈએ.’ પછી નિત્યાનંદસ્વામીએ પવિત્રાનંદસ્વામીને પૂછ્યું જે, ‘પવિત્રાનંદ, આ ગુણાતીતાનંદસ્વામી શું કહે છે?’ ત્યારે પવિત્રાનંદસ્વામી બોલ્યા જે, ‘ઠીક કહે છે; કારણ કે, ઓલ્યા દેશના સમોવડિયા તે આપણા દેશમાં આવીને આપણી મારફત ગોપાળાનંદસ્વામીનું અપમાન કરાવીને ચાલ્યા જાય તે તો આપણું હીણું કહેવાય.’
+ <br/><br/>
+  ત્યારે નિત્યાનંદસ્વામી બોલ્યા જે, ‘હું તો કાંઈ નહિ બોલું ને હું સભામાં આવીને હાથમાં માળા લઈને બેસીશ એટલે કોઈ બોલાવશે નહિ; કેમ જે, માળા ફેરવતાં હું બોલતો નથી, એમ સૌ જાણે છે. પણ ભગવદાનંદ બહુ ફડફડ્યો છે તેને સમજાવો.’ પછી અમે ભગવદાનંદસ્વામી પાસે ગયા, ત્યારે તેણે આસન નાખી આપ્યું, તે અમે ફગાવી દીધું. ત્યારે કહે, ‘સ્વામિ ! આવડો કોપ શું ?’ ત્યારે કહ્યું જે, ‘મોટાનું અપમાન કરવા આ <a href="#ex1" class="wordMeaning">ઠાઠ</a> રચીને બેઠો છું, તે આંહીં તું મોટો છો, પણ અક્ષરધામમાં હું મોટો છું. માટે જો આંહીં કાંઈ ઉન્મતાઈ કરીશ તો અક્ષરધામમાં તડકે ઊભો રાખીશ.’ ત્યારે ભગવદાનંદસ્વામી કહે, ‘સ્વામિ, અક્ષરધામમાં તડકો નથી તે ?’ ત્યારે અમે કહ્યું જે, ‘ભગવાન અન્યથાકર્તું છે, તે તારા સારુ નવીન કરીશ.’
+ <br/><br/>
+ પછી તો તે કહે જે, ‘હું નહિ બોલું.’ પછી અમે ગોપાળાનંદસ્વામી પાસે થઈ ઉતારે ગયા ને બીજે દિવસ સવારમાં સભા ભરાણી ને નિત્યાનંદસ્વામી માળા લઈને ફેરવવા મંડ્યા, ત્યારે સર્વેએ જાણ્યું જે, હવે નિત્યાનંદસ્વામી કાંઈ નહિ બોલે. એટલે મંજુકેશાનંદસ્વામીએ પ્રશ્ર્ન કર્યોં જે, ‘ધર્મદેવને પુત્ર કેટલા ?’ ત્યાં તો હું પણ ગયો ને પૂછ્યું જે, ‘શું પ્રસંગ ચાલે છે ?’ ત્યારે કહે જે, ‘ધર્મદેવના પુત્ર કેટલા ?’ ત્યારે અમે કહ્યું જે, ‘ધર્મદેવના ત્રણ પુત્ર છે એ કોણ નથી જાણતું ?’ પછી તો અમે વાતું કરવા માંડી જે, ‘ધર્મામૃતના કરનારા બેઠા છે, ત્યાં જ ‘ધર્મામૃત’ લોપાય છે ને મંડળ દીઠ પટારા થઈ ગયા છે. માટે આજ બેય આચાર્ય ભેળા થયા છો તે ‘ધર્મામૃત’ પળે તેમ કરો અને કાલ સવારે સૌના પટારા જોવા છે અને જેને ‘ધર્મામૃત’ પાળવાં હોય તે રહેજો ને બીજા ચાલવા માંડજો.’
+ <br/><br/>
+ પછી તો રાત બધી આઘુંપાછું કરવામાં કોઈ ઊંઘ્યા નહિ ને સવારમાં ભજનાનંદસ્વામીનો પટારો તપાસ્યો, તો તેમાં કાંઈ નીસર્યું નહીં. ત્યારે એક સાધુએ કહ્યું જે, ‘સ્વામિ, આ ભજનાનંદસ્વામીના પટારામાંથી તો કાંઈ નીસર્યું નહીં.’ ત્યારે અમે કહ્યું જે, ‘શું નીસરે, તારું કપાળ ? જ્યારે કાંઈ ન હોય ત્યારે બે પટારાનું શું કામ હોય ! અને સત્સંગમાંથી વૈદું કરીને <a href="#ex1" class="wordMeaning">અધમણ</a> સોનું ભેળું કર્યું હતું, તે સત્સંગના કામમાં આવ્યું નથી ને કુસંગીના ઘરમાં રહ્યું.’ પછી સભા થઈ ત્યારે ઓલ્યા દેશના સર્વેને અમે કહ્યું જે, ‘આપણે કાલ મળ્યા નથી તે લો મળીએ.’ પછી સૌ મળ્યા ને ચાલી નીકળ્યા. એમ સદ્ગુરુનો ટંટો મટાડ્યો.
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઠાઠ= જૂઠો દેખાવ, ડોળ. <br/>
+2 અધમણ= અર્ધો મણ-દસ કિલોગ્રામ.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

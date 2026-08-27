@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<ul class="reader_tools noselect">
+				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (42)  ભગવાનમાં જોડાવું કાં સાધુમાં જોડાવું. ત્યારે પૂછ્યું જે, ‘ભગવાનમાં જોડાણો હોય તે કેમ જણાય ? ને સાધુમાં જોડાણો હોય તે કેમ જણાય?’ પછી સ્વામી બોલ્યા જે, ‘ભગવાનમાં જોડાણો હોય તેને ભગવાનનાં ચિહ્ન, ચરિત્ર ને સ્વાભાવિક ચેષ્ટા, તે અહોરાત્રિ કર્યા-સાંભળ્યા વિના રહેવાય નહિ ને સાધુમાં જોડાણો હોય તેનાથી દર્શન, સેવા ને વાતું તે અહોરાત્રિ કર્યા-સાંભળ્યા વિના રહેવાય નહિ, ત્યારે જાણીએ જે, સાધુમાં જોડાણો છે.’ અને વળી એમ વાત કરી જે, ‘જેટલો સાધુમાં જીવ બંધાણો છે તેટલો સત્સંગ છે ને જેટલો જીવ બંધાણો નથી તેટલો કુસંગ છે.’ ત્યારે પૂછ્યું જે, ‘આવી રીતે સાધુમાં જીવ બંધાણો હોય તો પણ તે સત્સંગમાંથી નીકળી કેમ જાય છે ?’ પછી સ્વામી બોલ્યા જે, ‘એવી રીતે સાધુમાં જીવ બંધાણો નથી ને જો બંધાણો હોય તો જાય નહીં. જેમ <a href="#ex1" class="wordMeaning">આ લીમડો</a> છે તે જે દિવસ અમે મંદિર કરતા હતા તે દિવસ બે વેંતનો હતો ને એક મનુષ્ય ઉપાડે એટલું જ બળ હતું ને આજ તો બધા ગામના મનુષ્ય ભેળા થાય તો પણ ઉપડે નહિ, તેમ ઘણા દિવસ રહીને સત્સંગમાં જીવ બાંધ્યો હોય તો પંચવિષય કે કામાદિક દોષનો પાડ્યો સત્સંગમાંથી પડે નહીં.’ એમ કહીને બોલ્યા જે,
+ <br/><br/>
+ પ્રસંગમજરં પાશમાત્મનઃ કવયો વિદુઃ । <br/>
+સ એવ સાધુષુ કૃતો મોક્ષદ્વારમપાવૃતમ્ ॥<br/>
+ 
+ (શ્રીમદ્ ભાગવત : 3/25/20) <br/>
+ 
+ અર્થ : ‘સંગ એ આત્માનું જબરું બંધન છે’ એમ કવિઓ કહે છે. એ જ સંગ જો સાધુપુરુષો સાથે કરવામાં આવે તો મોક્ષનું દ્વાર ખુલી જાય છે.
+ <br/><br/>
+ એમ જેને રહેવાય છે તેને મોક્ષનું દ્વાર ઉઘાડું છે, ને એમ ન રહેવાય તો,
+ <br/>
+ મોક્ષ મારગે દીધાં કમાડ, કડી જડી બારણે.
+ <br/>
+ (કીર્તન મુક્તાવલિ : 1034) 
+<br/>
+<br/>
+<a href="GP-54.html">વચ. ગ.પ્ર. 54 </a> <br/>
+
+  
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 આ લીંબડો= તે લીમડો જૂનાગઢ મંદિરમાં ધર્મશાળાની બહાર દરવાજા પાસે હતો.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<ul class="reader_tools noselect">
+				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

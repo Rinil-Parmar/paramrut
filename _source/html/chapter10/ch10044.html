@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (44) વરતાલવાળા ધર્મતનયદાસજીએ પૂછયું જે, ‘આવો જોગ નિરંતર ન હોય ત્યારે કેમ કરવું ?’ સ્વામી કહે, ‘ગઢડાવાળા રૂગનાથચરણદાસ સમાગમ કરવા આવ્યા. તેની પેઠે કરે તો તો કોઈ વારનાર નથી માટે વહેવાર હોય તે કરવો, બાકી તો સમાગમ જ કરવો.’ જેને કરવું હોય તેણે નામવરો, ધર્મવરો ઉઘરાવીને પછી કરવું હોય તે કરીએ; પણ ચાંદલો કરીને કોઈ વળાવે નહિ ને સ્વામીનો સમાગમ કરવા જાઓ એમ રાજી થઈને કોઈ કહે પણ નહિ. બધાય પોતાના છોકરાને પરણાવે છે, પણ ચાંદલો કરીને કોઈ આંહીં મોકલતું નથી. રાણીએ છ દીકરાને જ્ઞાન કરીને ત્યાગી કર્યાં ત્યારે રાજાએ સાતમા દીકરાને પોતાની પાસે રાખ્યો. રાણીને મનમાં એમ થયું જે, મારો દીકરો જમપુરીએ જાય તો મને ખોટ બેસે ! પછી મોટાને તેડાવ્યો ને વાત કરી જે, ‘નાનો ત્યાગી થઈ જાય ત્યાં સુધી તારે રાજ્યમાં રહેવું; પછી તુંય વહ્યો જજે.’ એટલે તેણે રાજાને કહ્યું જે, ‘ગાદીનો ધણી હું છું, નાનાને ગાદી નહિ મળે.’ તે સાંભળી રાજા રાજી થયો ને ગાદી તેને આપી.
+ <br/><br/>
+ પછી મોટાભાઈએ નાનાભાઈને પૂછ્યું જે, ‘તું માને પગે લાગવા કેમ જાતો નથી ?’ તો કહે, ‘મને જાવા દેતા નથી.’ એટલે કહે, ‘આજે જાજે, હવે કોઈ ના નહિ પાડે.’ પછી નાનો દીકરો પગે લાગવા ગયો, ત્યારે રાણીએ તેને માથે હાથ મૂક્યો, એટલે સમાધિ થઈ ગઈ ને સ્વર્ગનું સુખ દેખાડયું. પછી જમપુરીમાં મારકૂટ થાતી હતી ને કુંભીપાકમાં કાળો <a href="#ex1" class="wordMeaning">કળેળાટ</a> થાતો હતો તે દેખાડ્યું. પછી દેહમાં આવ્યો ત્યારે માતાને હાથ જોડી પૂછ્યું જે, ‘આ શું?’ તો કહે, ‘રાજા અને રાજાના નોકરોને જમપુરીમાં લઈ જાય છે ને જે તપ કરે છે ને ધર્મ પાળે છે તેને પ્રથમ જોયું તે સ્વર્ગનું સુખ મળે છે; તે સુખ સારુ તારા છ ભાઈ ત્યાગી થઈ તપ કરવા વહ્યા ગયા છે ને તું જમપુરીએ જાતો હતો તેમાંથી છોડાવવા તારો મોટોભાઈ આવ્યો છે માટે હવે ઠીક લાગે તેમ કરો.’ પછી તે ત્યાગી થઈને ચાલી નીકળ્યો, એટલે મોટો દીકરો પણ વહ્યો ગયો. એમ કોઈથી થાય નહિ. 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 કળેળાટ= કકળાટ, દયાની માગણી કરતી ચીસો.
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (335) આપણે હેતે પેટ કૂટીએ છીએ પણ લોકને તો કેવળ સ્વાર્થની વાત છે. આપણો સંબંધી હોય ને મહેમાન થયો હોય ત્યારે જારનો રોટલો ને મીઠાનો કાંકરો મૂકો તો ખાતાં ખાતાં સો ગાળું દે ને બહાર જઈને વાંકું બોલે જે, ‘વાંસે છોકરા અકરમી થયા, તે આવ્યા-ગયાને સાચવતા નથી, ને બાપની આબરૂ ખોવે છે.’ ત્યારે આંબા ભક્તે <a href="#ex1" class="wordMeaning"> શાહેદી પૂરી</a> જે, ‘હા સ્વામી, મારે એમ થયું હતું. મેં એક વાર મહેમાનોને જારનો રોટલો આપ્યો એટલે ગાળો દીધી.’ અખો જેવાં તેવાં લૂગડાં પહેરીને હવેલીએ દર્શને ગયો, ત્યારે કોઈએ પેસવા દીધો નહીં. પછી વળતે દિવસ સારાં લૂગડાં પહેરીને ગયો ને સાકરનો પડો, નાળિયેર ને રૂપિયો ઠાકોરજી આગળ મૂક્યા; એટલે સન્માન કર્યું ને પ્રસાદ તથા ઉપરણો આપ્યો. એટલે અખો કહે જે, ‘ઈ બધું ઓલ્યા રૂપિયા પાસે ધરો ! હું તો કાલે આવ્યો હતો, તે ધક્કો મારીને કાઢી મેલ્યો હતો ને આજ તો ઓલ્યા રૂપિયાને સન્માન છે !’ એમ સારાં લૂગડાં પહેરીને આવે તેને સૌ આદર આપે એ લોકની મોટાઈમાં લેવાણા કહેવાય. લૂગડાં સારાં ન હોય, પણ ભગવદી હોય તેને કોઈ બોલાવે ય નહિ; તે શું ? જે, ભગવાનનો ખપ નથી પણ દ્રવ્ય સામી નજર છે.
+ 
+ 
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 શાહેદી પૂરી= સાક્ષી આપી.
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

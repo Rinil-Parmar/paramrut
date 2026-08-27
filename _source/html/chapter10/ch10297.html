@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (297) ભગવાનની સ્મૃતિ રાખવી એ સર્વ શાસ્ત્રનો <a href="#ex1" class="wordMeaning">ગલિતાર્થ</a> છે.
+   <br/><br/>
+બર્હાપીડં નટવરવપુઃ કર્ણયોઃ કર્ણિકારં <br/>બિભ્રદ્વાસઃ કનકકપિશં વૈજયન્તીં ચ માલામ્ । <br/>
+રન્ધ્રાન્વેણોરધરસુધયાપૂરયન્ગોપવૃન્દૈર્ <br/>
+વૃન્દારણ્યં સ્વપદરમણં પ્રાવિશદ્ગીતકીર્તિઃ ॥
+
+   <br/>
+
+   (શ્રીમદ્ભાગવત : 10/21/5)
+    <br/>
+ અર્થ :- મોરમુકુટ ધારણ કરીને, કાનમાં કરેણ ફુલ લગાવીને, સુવર્ણની જેમ પ્રકાશમાન પીતામ્બર પહેરીને અને ગળામાં વૈજન્તીમાળા ધારણ કરીને, નટવર વેશધારી શ્રીકૃષ્ણએ વાંસળી (બંસરી)નાં છિદ્રને પોતાના અધરામૃત (હોઠ)થી પૂર્ણ કરીને પોતાના ચરણચિન્હોથી સુશોભિત વૃન્દાવનમાં બાળ-ગોપાલકોની સાથે, એમના મુખથી પોતાનો સુયશ સાંભળતા સાંભળતા પ્રવેશ કર્યો હશે.
+    <br/><br/>
+ આ શ્ર્લોક સાંભળીને શુકજી ધ્યાનમાંથી બહાર નીસર્યા ને ભાગવત ભણ્યા. માટે ભગવાનની મૂર્તિમાં રહેવા માટે આ સત્સંગ કરવો એ ગલિતાર્થ છે. પંચમસ્કંધનો 26મો અધ્યાય વાંચે તો હૃદયગ્ંરથિ પણ ટળે; જેમ પેટની ગાંઠ, મધ ને ચૂનો ચોપડે ત્યારે મટે તેમ.
+    <br/> <br/>
+એકાગ્રેણૈવ મનસા પત્રીલેખઃ સહેતુકઃ । <br/>
+અવધાર્યોઽયમખિલૈઃ સર્વજીવહિતાવહઃ ॥ <br/>
+    (શિક્ષાપત્રી શ્ર્લોક : 7)
+    <br/>
+ અર્થ :- આ શિક્ષાપત્રી લખ્યાનું જે કારણ છે તે સર્વે તેમણે એકાગ્ર મને કરીને ધારવું અને આ શિક્ષાપત્રી જે અમે લખી છે તે સર્વેના જીવના હિતની કરનારી છે.
+    <br/><br/>
+ એમ હોય, ત્યારે શાસ્ત્રનો ભેદ સમજાય છે. આ તો ભેળા બેઠા છીએ તે <a href="#ex1" class="wordMeaning">સાલોક્ય મુક્તિ</a> છે; પણ મન દે તો સમજાય. ત્યારે ભોળાનાથે પૂછ્યું જે, ‘અહીં બેઠાં બેઠાં કાંઈ થાશે કે નહિ ?’ તો કહે, ‘થાશે પણ ધીરે ધીરે થાશે, જુઓને તમારે કાંઈ વ્યાકરણ એક દિવસમાં આવડ્યું હશે ?’ 
+  
+
+   
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+   1 ગલિતાર્થ= પરમ સાર, સ્પષ્ટ થતો ભાવાર્થ. <br/>
+   2 સાલોક્ય મુક્તિ= ભગવાનના ધામમાં રહેવું તે.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

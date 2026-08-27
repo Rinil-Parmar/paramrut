@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		
+	<ul class="reader_tools noselect">				
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+		<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+	</ul>
+	<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૨૬ - મન-ઇન્દ્રિયોને દાબીને વર્તે તેવા સંતનું</h1>
+			<p class="text_gu">
+સંવત ૧૮૮૫ના કાર્તિક સુદિ ૧૧ એકાદશીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીગોપીનાથજીના મંદિરને વિષે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજે એમ વાર્તા કરી જે, “<b>ભગવાનની પેઠે સેવા કરવા યોગ્ય એવા જે સંત તે કેવા હોય? તો ઇન્દ્રિયો, અંતઃકરણ આદિક જે માયાના ગુણ તેની જે ક્રિયા તેને પોતે દાબીને વર્તે પણ એની ક્રિયાએ કરીને પોતે દબાય નહીં; ને ભગવાન સંબંધી ક્રિયાને જ કરે; ને પંચ વર્તમાનમાં દ્રઢ રહેતા હોય; ને પોતાને બ્રહ્મરૂપ માને ને પુરુષોત્તમ ભગવાનની ઉપાસના કરે. એવા જે સંત તેને મનુષ્ય જેવા ન જાણવા ને દેવ જેવા પણ ન જાણવા; કેમ જે, એવી ક્રિયા દેવ-મનુષ્યને વિષે હોય નહીં. અને એવા સંત મનુષ્ય છે તો પણ ભગવાનની પેઠે સેવા કરવા યોગ્ય છે.</b> માટે જેને કલ્યાણનો ખપ હોય એવા જે પુરુષ તેને એવા સંતની સેવા કરવી. અને એવા સાધુગુણે યુક્ત જે બાઈ તેની સેવા બાઈને કરવી.” પછી શ્રીજીમહારાજને આત્માનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “આ સત્સંગમાં જે વર્તમાનનો પ્રબંધ છે તેમાં જ્યાં સુધી રહેતો હોય ત્યાં સુધી તો જેવો-તેવો હોય તેને પણ પંચવિષયે કરીને બંધન થાય નહીં; પણ કોઈક દેશકાળને યોગે કરીને સત્સંગથી બહાર નીસરી જવાય તો પણ જેને પંચવિષય બંધન ન કરી શકે, તે પુરુષ કેવો હોય? તેનાં લક્ષણ કહો.” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “જેની બુદ્ધિમાં ધર્માંશ વિશેષપણે વર્તતો હોય; ને આસ્તિકપણું હોય જે, ‘આ લોકમાં જે સારું-નરસું કર્મ કરે છે, તેનું જે સારું-નરસું ફળ તેને જરૂર પરલોકમાં ભોગવે છે,’ એવી દ્રઢ મતિ જેને હોય; તથા લાજ હોય જે, ‘ભૂંડું કરીશું તો આ લોકમાં માણસ આગળ શું મુખ દેખાડીશું?’ એવો જે હોય, તે ગમે ત્યાં જાય તો પણ એને કોઈ પદાર્થ તથા સ્ત્રીઆદિક તે બંધન કરી શકે નહીં. જેમ મયારામ ભટ્ટ છે તથા મૂળજી બ્રહ્મચારી છે તથા નિષ્કુળાનંદ સ્વામી છે, એવી જાતના જે હોય તેને સ્ત્રી-ધનાદિક પદાર્થનો યોગ થાય તો પણ એ ડગે નહીં. અને એવો હોય ને તેને જો એક આત્મનિષ્ઠાપણું હોય જે, ‘હું તો આત્મા છું, બ્રહ્મ છું, તે મારે વિષે શુભ-અશુભ ક્રિયા લાગતી નથી, હું તો અસંગ છું,’ એવું અંગ હોય; તથા બીજું એમ હોય જે, ભગવાનનો મહિમા બહુ સમજે ને તે મહિમાની બહુ વાર્તા કરે જે, ‘કાંઈક ધર્મવિરુદ્ધ વર્તાઈ જશે તેનો શો ભાર છે? ભગવાનનો મહિમા બહુ મોટો છે.’ એ બે રીતના જે હોય તેમાં એ બે રીતના જે દોષ તે ધર્મ પાળવામાં મોટા અંતરાયરૂપ છે. માટે આવી રીતે સમજે તો સારું જે, આત્મનિષ્ઠા પણ યથાર્થ હોય તથા ભગવાનનું માહાત્મ્ય પણ સારી પેઠે સમજે અને નિષ્કામપણું, નિર્લોભપણું, નિઃસ્વાદપણું, નિઃસ્નેહપણું, નિર્માનપણું એ આદિક જે ધર્મ તેને ભગવાનની પ્રસન્નતાને અર્થે સમજીને દ્રઢપણે પાળે અને એમ સમજે જે, ‘હું એ ધર્મને પાળીશ તો મારી ઉપર ભગવાન બહુ રાજી થશે અને જો મને કોઈ રીતે ધર્મમાંથી કાંઈક ભંગ પડશે તો ભગવાનનો મારી ઉપર બહુ કુરાજીપો થશે.’ એવી રીતે જેના અંતરમાં દ્રઢ ગ્રંથિ હોય તે ભક્ત જે તે ધર્મમાંથી કોઈ દિવસ પડે નહીં. અને એવો જે હોય તેને કોઈ માયિક પદાર્થ બંધન કરી શકે નહીં. અને આવી રીતની સમજણવાળો ન હોય ને બીજો ગમે તેવો જ્ઞાનવાળો હોય કે ભક્તિવાન હોય તેને પણ ધર્મમાંથી કાંઈક ભંગ થઈ જાય ખરો તથા માયિક પદાર્થ બંધન કરે ખરું, એ સિદ્ધાંતવાર્તા છે.”
+</p>
+<p class="text_gu">
+પછી વળી શ્રીજીમહારાજે કૃપા કરીને એમ વાર્તા કરી જે, “અમને અહંકાર ન ગમે. તે અહંકાર ભક્તિપણાનો હોય, ત્યાગપણાનો હોય, વૈરાગ્યપણાનો હોય, બ્રહ્મપણાનો હોય, સમજણનો હોય, વર્તમાન પાળ્યાનો હોય, એ રીતનો જે જે અહંકાર તે અમને ન ગમે. અને દંભ ન ગમે. તે દંભ શું? તો પોતાના હૃદયમાં ભગવાનનો નિશ્ચય, ભક્તિ અને ધર્મ તે થોડાં હોય ને બીજા આગળ પોતાની મોટ્યપ વધાર્યા સારુ ઉપરથી તો તેને બહુ જણાવે, તે ન ગમે. અને પોતાને ને ભગવાનને જે અભેદપણે ભજે તે ન ગમે. તથા જે નિયમ ધાર્યો હોય તે નિયમને ઘડીક મૂકી દે ને વળી ઘડીકમાં પાળે, એવી રીતે જે શિથિલ વર્તતો હોય તે ન ગમે. અને ભગવાનનો મહિમા તો ઝાઝો મોટો સમજે ને પોતાને અતિશય તુચ્છપણે સમજે, પણ દેહથી જુદો જે આત્મા તે રૂપ પોતાને ન માને, તે ન ગમે. અને હવે જે ગમે તે કહીએ છીએ જે, <b>ભગવાનનો મહિમા તો યથાર્થ સમજે, ને પોતાના દેહથી વ્યતિરિક્ત જે પોતાનો આત્મા તેને બ્રહ્મરૂપ સમજે, અને ધર્મમાં દ્રઢ રહ્યો હોય, અને ભગવાનની અચળ ભક્તિ કરતો હોય, અને આવી રીતનો પોતે હોય તો પણ સત્સંગમાં કોઈક કાંઈ ન સમજતો હોય ને ભગવાનનો નિશ્ચય તો હોય તેને મોટો જાણે ને તેની આગળ પોતાને અતિ તુચ્છ જાણે, અને વાર્તા કર્યામાં પોતાના મુખે કરીને પોતાની સમજણનો કેફ કોઈની આગળ લગાર પણ જણાવે નહીં, એવો જે હોય તે અમને બહુ ગમે.</b>” એવી રીતે શ્રીજીમહારાજ વાર્તા કરીને પોતાને ઉતારે પધાર્યા.
+</p>
+
+			
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

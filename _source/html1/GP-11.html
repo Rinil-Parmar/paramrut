@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૧૧: વાસનાનું તથા એકાંતિક ભક્તનું </h1>
+			<p class="text_gu">સંવત ૧૮૭૬ના માગશર સુદિ ૧૪ ચૌદશને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી બ્રહ્માનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! વાસનાનું શું રૂપ છે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “પૂર્વે જે વિષય ભોગવ્યા હોય ને દીઠા હોય અને સાંભળ્યા હોય તેની જે અંતઃકરણને વિષે ઇચ્છા વર્તે તેને વાસના કહીએ; અને વળી જે વિષય ભોગવ્યામાં ન આવ્યા હોય તેની જે અંતઃકરણને વિષે ઇચ્છા વર્તે તેને પણ વાસના કહીએ.”</p>
+
+			<p class="text_gu">ત્યારે મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! ભગવાનનો એકાંતિક ભક્ત કેને કહીએ?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે,<b> “જેને ભગવાન વિના બીજી કોઈ વાસના ન હોય અને પોતાને બ્રહ્મરૂપ માનીને ભગવાનની ભક્તિ કરતો હોય તે એકાંતિક ભક્ત કહેવાય.”</b></p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

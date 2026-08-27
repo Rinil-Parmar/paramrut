@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૫૫ - ભજન, સ્મરણ ને વર્તમાનના દ્રઢાવનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના મહા વદિ ૧૧ એકાદશીને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં પોતાના ઉતારાને વિષે ઉગમણે દ્વાર ઓરડાની ઓસરી ઉપર વિરાજતા હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ સંત તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રશ્ન ઉત્તર કરો.” પછી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “જીવને ભજન-સ્મરણનો તથા વર્તમાનનો એક દ્રઢાવ કેમ રહેતો નથી?” પછી શ્રીજીમહારાજ બોલ્યા જે, “એ તો અશુભ એવાં જે દેશ, કાળ, ક્રિયા અને સંગ તેને યોગે કરીને રહેતો નથી. અને તે દ્રઢાવ પણ ત્રણ પ્રકારનો છે - ઉત્તમ, મધ્યમ અને કનિષ્ઠ. તેમાં જો ઉત્તમ દ્રઢતા હોય અને દેશ, કાળ, ક્રિયા અને સંગ જો અતિ ભૂંડાં થાય તો તે ઉત્તમ દ્રઢતાને પણ ટાળી નાંખે, તો મધ્યમ અને કનિષ્ઠ દ્રઢતાની તો શી વાત કહેવી? અને દેશ, કાળ, ક્રિયા અને સંગ એ અતિ ભૂંડાં થાય ને તેમાં પણ દ્રઢતા જેમ છે એમ ને એમ જો રહે તો એને પૂર્વનું ભારે બીજબળ છે ને ભારે પુણ્ય છે. અને દેશ, કાળ, ક્રિયા અને સંગ અતિ પવિત્ર છે અને તેમાં પણ જો એની બુદ્ધિ મલિન થઈ જાય છે, તો એને પૂર્વજન્મનું તથા આ જન્મનું કોઈ મોટું પાપ છે તે નડે છે અથવા કોઈ મોટા ભગવાનના ભક્તનો દ્રોહ થઈ ગયો છે તે એને નડે છે; કેમ જે, દેશ, કાળ, ક્રિયા અને સંગ રૂડાં છે તોય પણ એનું અંતર ભૂંડું થઈ જાય છે. માટે હવે <b>જો મોટાપુરુષની સેવામાં ખબડદાર થઈને રહે તો એનાં પાપ બળીને ભષ્મ થઈ જાય</b> અને જો અતિ પાપીનો સંગ થાય તો પાપનો વધારો થાય અને કાંઈક સુકૃત હોય તે પણ નાશ પામે. અને મદિરાપાનની કરનારીઓ જે પાતર્યો તેના ગળામાં હાથ નાંખીને બેસે અને પછી પરમેશ્વરનો વાંક કાઢે જે, ‘મારું મન કેમ ઠેકાણે રાખ્યું નહીં?’ તેને તો મહામૂર્ખ જાણવો.”
+</p>
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

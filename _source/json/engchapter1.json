@@ -1,0 +1,3089 @@
+[
+    {
+      "VatId": "1",
+      "chId": "1",
+      "VatName": "Bhagavan ne sadhuna mahimani",
+      "VatNameGuj": "ભગવાન ને સાધુના મહિમાની",
+      "VatFile": "ch01001.txt",
+      "VatNo": "1",
+      "VatNameEng": "One should continuously engage "
+    },
+    {
+      "VatId": "2",
+      "chId": "1",
+      "VatName": "Sankhya vich0ar karava shikhavo",
+      "VatNameGuj": "સાંખ્ય વિચાર કરવા શીખવો",
+      "VatFile": "ch01002.txt",
+      "VatNo": "2",
+      "VatNameEng": "Without learning the teachings"
+    },
+    {
+      "VatId": "3",
+      "chId": "1",
+      "VatName": "Prahladjie narayan sathe",
+      "VatNameGuj": "પ્રહ્લાદજીએ નારાયણ સાથે",
+      "VatFile": "ch01003.txt",
+      "VatNo": "3",
+      "VatNameEng": "Prahladji fought for many days"
+    },
+    {
+      "VatId": "4",
+      "chId": "1",
+      "VatName": "Bhagavanni motai jena",
+      "VatNameGuj": "ભગવાનની મોટાઈ જેના ",
+      "VatFile": "ch01004.txt",
+      "VatNo": "4",
+      "VatNameEng": "If one has from within (essent"
+    },
+    {
+      "VatId": "5",
+      "chId": "1",
+      "VatName": "A jiv sadhan te shun karashe",
+      "VatNameGuj": "આ જીવ સાધન તે શું કરશે",
+      "VatFile": "ch01005.txt",
+      "VatNo": "5",
+      "VatNameEng": "What spiritual endeavours will"
+    },
+    {
+      "VatId": "6",
+      "chId": "1",
+      "VatName": "Motane sevya hoy ne tena gun",
+      "VatNameGuj": "મોટાને સેવ્યા હોય ને તેના ગુણ",
+      "VatFile": "ch01006.txt",
+      "VatNo": "6",
+      "VatNameEng": "If one has served the great Sa"
+    },
+    {
+      "VatId": "7",
+      "chId": "1",
+      "VatName": "Bhagavanma jodana hoya ne",
+      "VatNameGuj": "ભગવાનમાં જોડાણા હોય ને ",
+      "VatFile": "ch01007.txt",
+      "VatNo": "7",
+      "VatNameEng": "One should attach one’s jiva t"
+    },
+    {
+      "VatId": "8",
+      "chId": "1",
+      "VatName": "Indriyaram hoya te dabay ",
+      "VatNameGuj": "ઇન્દ્રિયારામ હોય તે દબાય ",
+      "VatFile": "ch01008.txt",
+      "VatNo": "8",
+      "VatNameEng": "One who is controlled by his s"
+    },
+    {
+      "VatId": "9",
+      "chId": "1",
+      "VatName": "Sansar mukine tyagi thay",
+      "VatNameGuj": "સંસાર મૂકીને ત્યાગી થાય",
+      "VatFile": "ch01009.txt",
+      "VatNo": "9",
+      "VatNameEng": "One who renounces worldly life"
+    },
+    {
+      "VatId": "10",
+      "chId": "1",
+      "VatName": "Indriyun antahkaran e sarve",
+      "VatNameGuj": "ઇન્દ્રિયું, અંત:કરણ એ સર્વે",
+      "VatFile": "ch01010.txt",
+      "VatNo": "10",
+      "VatNameEng": "The senses and inner faculties"
+    },
+    {
+      "VatId": "11",
+      "chId": "1",
+      "VatName": "Rupavan stri, jhajhun dravya ne",
+      "VatNameGuj": "રૂપવાન સ્ત્રી, ઝાઝું દ્રવ્ય ને",
+      "VatFile": "ch01011.txt",
+      "VatNo": "11",
+      "VatNameEng": "Even a satsangi who gets a bea"
+    },
+    {
+      "VatId": "12",
+      "chId": "1",
+      "VatName": "Dosh rahe ch0he ne tali jata ",
+      "VatNameGuj": "દોષ રહે છે ને ટળી જતા",
+      "VatFile": "ch01012.txt",
+      "VatNo": "12",
+      "VatNameEng": "When faults (e.g. greed, anger"
+    },
+    {
+      "VatId": "13",
+      "chId": "1",
+      "VatName": "Dehe karine kriya karato hoy",
+      "VatNameGuj": "દેહે કરીને ક્રિયા કરતો હોય",
+      "VatFile": "ch01013.txt",
+      "VatNo": "13",
+      "VatNameEng": "One who does things with his b"
+    },
+    {
+      "VatId": "14",
+      "chId": "1",
+      "VatName": "Karod kam bagadine",
+      "VatNameGuj": "કરોડ કામ બગાડીને",
+      "VatFile": "ch01014.txt",
+      "VatNo": "14",
+      "VatNameEng": "Even by spoiling ten million t"
+    },
+    {
+      "VatId": "15",
+      "chId": "1",
+      "VatName": "Navadhabhakti adik sadhane",
+      "VatNameGuj": "નવધાભક્તિ આદિક સાધને",
+      "VatFile": "ch01015.txt",
+      "VatNo": "15",
+      "VatNameEng": "The jiva is certainly purified"
+    },
+    {
+      "VatId": "16",
+      "chId": "1",
+      "VatName": "Shivaji mohini svarupama",
+      "VatNameGuj": "શિવજી મોહિની સ્વરૂપમાં",
+      "VatFile": "ch01016.txt",
+      "VatNo": "16",
+      "VatNameEng": "Shivji became infatuated with "
+    },
+    {
+      "VatId": "17",
+      "chId": "1",
+      "VatName": "Bhagavane kahyun ch0he je",
+      "VatNameGuj": "ભગવાને કહ્યું છે જે",
+      "VatFile": "ch01017.txt",
+      "VatNo": "17",
+      "VatNameEng": "God has said, “I am not as ple"
+    },
+    {
+      "VatId": "18",
+      "chId": "1",
+      "VatName": "Jiv to bahu baliyo ch0he",
+      "VatNameGuj": "જીવ તો બહુ બળિયો છે",
+      "VatFile": "ch01018.txt",
+      "VatNo": "18",
+      "VatNameEng": "The jiva is very powerful. Whe"
+    },
+    {
+      "VatId": "19",
+      "chId": "1",
+      "VatName": "Karod rupiya kharach0ta pan",
+      "VatNameGuj": "કરોડ રૂપિયા ખરચતાં પણ",
+      "VatFile": "ch01019.txt",
+      "VatNo": "19",
+      "VatNameEng": "Even by spending tens of milli"
+    },
+    {
+      "VatId": "20",
+      "chId": "1",
+      "VatName": "Mokshana data to Bhagavan",
+      "VatNameGuj": "મોક્ષના દાતા તો ભગવાન ",
+      "VatFile": "ch01020.txt",
+      "VatNo": "20",
+      "VatNameEng": "Only God and his holy Sadhu ca"
+    },
+    {
+      "VatId": "21",
+      "chId": "1",
+      "VatName": "Aa to Bhagavane saunun",
+      "VatNameGuj": "આ તો ભગવાને સૌનું",
+      "VatFile": "ch01021.txt",
+      "VatNo": "21",
+      "VatNameEng": "God has suppressed everyone’s "
+    },
+    {
+      "VatId": "22",
+      "chId": "1",
+      "VatName": "Bhagavan potana bhaktani",
+      "VatNameGuj": "ભગવાન પોતાના ભક્તની",
+      "VatFile": "ch01022.txt",
+      "VatNo": "22",
+      "VatNameEng": "God is ever ready to protect h"
+    },
+    {
+      "VatId": "23",
+      "chId": "1",
+      "VatName": "Bhagavan ketalakne samrudhi",
+      "VatNameGuj": "ભગવાન કેટલાકને સમૃદ્ધિ ",
+      "VatFile": "ch01023.txt",
+      "VatNo": "23",
+      "VatNameEng": "God gives wealth to some and n"
+    },
+    {
+      "VatId": "24",
+      "chId": "1",
+      "VatName": "Panch0 dash var Swaminarayan ",
+      "VatNameGuj": "પાંચ-દશ વાર સ્વામિનારાયણ",
+      "VatFile": "ch01024.txt",
+      "VatNo": "24",
+      "VatNameEng": "We will also have to redeem on"
+    },
+    {
+      "VatId": "25",
+      "chId": "1",
+      "VatName": "Jetalu kai mayamay sukh ch0he ",
+      "VatNameGuj": "જેટલું કાંઈ માયામય સુખ છે ",
+      "VatFile": "ch01025.txt",
+      "VatNo": "25",
+      "VatNameEng": "Whatever happiness exists in m"
+    },
+    {
+      "VatId": "26",
+      "chId": "1",
+      "VatName": "Vishayanu je sukh ch0he",
+      "VatNameGuj": "વિષયનું જે સુખ છે",
+      "VatFile": "ch01026.txt",
+      "VatNo": "26",
+      "VatNameEng": "Much greater than the enjoymen"
+    },
+    {
+      "VatId": "27",
+      "chId": "1",
+      "VatName": "Ek jane lakh rupiyani budhi",
+      "VatNameGuj": "એક જણે લાખ રૂપિયાની",
+      "VatFile": "ch01027.txt",
+      "VatNo": "27",
+      "VatNameEng": "A person bought wisdom for 10"
+    },
+    {
+      "VatId": "28",
+      "chId": "1",
+      "VatName": "Hiro ch0he te koi rite",
+      "VatNameGuj": "હીરો છે તે કોઈ રીતે ",
+      "VatFile": "ch01028.txt",
+      "VatNo": "28",
+      "VatNameEng": "It is said that a diamond cann"
+    },
+    {
+      "VatId": "29",
+      "chId": "1",
+      "VatName": "Satsang thaya pan ",
+      "VatNameGuj": "સત્સંગ થાય પણ ",
+      "VatFile": "ch01029.txt",
+      "VatNo": "29",
+      "VatNameEng": "One can attain Satsang, but wi"
+    },
+    {
+      "VatId": "30",
+      "chId": "1",
+      "VatName": "Ava sadhune manma sabharie",
+      "VatNameGuj": "આવા સાધુને મનમાં સંભારીએ",
+      "VatFile": "ch01030.txt",
+      "VatNo": "30",
+      "VatNameEng": "Remembering this Sadhu in the "
+    },
+    {
+      "VatId": "31",
+      "chId": "1",
+      "VatName": "Aathi karod ghano satsang",
+      "VatNameGuj": "આથી કરોડ ગણો સત્સંગ",
+      "VatFile": "ch01031.txt",
+      "VatNo": "31",
+      "VatNameEng": "Satsang will grow ten million-"
+    },
+    {
+      "VatId": "32",
+      "chId": "1",
+      "VatName": "Tyag, vairagya, niyam ne",
+      "VatNameGuj": "ત્યાગ, વૈરાગ્ય, નિયમ ને",
+      "VatFile": "ch01032.txt",
+      "VatNo": "32",
+      "VatNameEng": "After talking on renunciation,"
+    },
+    {
+      "VatId": "33",
+      "chId": "1",
+      "VatName": "Aa vatumathi to brahmarup",
+      "VatNameGuj": "આ વાતુંમાંથી તો બ્રહ્મરૂપ",
+      "VatFile": "ch01033.txt",
+      "VatNo": "33",
+      "VatNameEng": "One can become brahmarup throu"
+    },
+    {
+      "VatId": "34",
+      "chId": "1",
+      "VatName": "Apane tapas karavo je",
+      "VatNameGuj": "આપણે તપાસ કરવો જે",
+      "VatFile": "ch01034.txt",
+      "VatNo": "34",
+      "VatNameEng": "We should think, “What is the "
+    },
+    {
+      "VatId": "35",
+      "chId": "1",
+      "VatName": "Sarv shastro vanch0ine",
+      "VatNameGuj": "સર્વ શાસ્ત્રો વાંચીને",
+      "VatFile": "ch01035.txt",
+      "VatNo": "35",
+      "VatNameEng": "Ālodya sarva shāstrāni, vichār"
+    },
+    {
+      "VatId": "36",
+      "chId": "1",
+      "VatName": "Sarv karata lakshmijini",
+      "VatNameGuj": "સર્વ કરતાં લક્ષ્મીજીની",
+      "VatFile": "ch01036.txt",
+      "VatNo": "36",
+      "VatNameEng": "Among all, [Lakshmiji’s unders"
+    },
+    {
+      "VatId": "37",
+      "chId": "1",
+      "VatName": "Kalpa akho sudhi bhagavanni",
+      "VatNameGuj": "કલ્પ આખો સુધી ભગવાનની",
+      "VatFile": "ch01037.txt",
+      "VatNo": "37",
+      "VatNameEng": "Even if one sits in front of G"
+    },
+    {
+      "VatId": "38",
+      "chId": "1",
+      "VatName": "Antakaranrup mayano kajiyo",
+      "VatNameGuj": "અંત:કરણરૂપ માયાનો કજિયો",
+      "VatFile": "ch01038.txt",
+      "VatNo": "38",
+      "VatNameEng": "The strife due to māyā in the "
+    },
+    {
+      "VatId": "39",
+      "chId": "1",
+      "VatName": "Vach0anamrut vanch0avine teni ",
+      "VatNameGuj": "વચનામૃત વંચાવીને તેની",
+      "VatFile": "ch01039.txt",
+      "VatNo": "39",
+      "VatNameEng": "After reading the Vachanamrut,"
+    },
+    {
+      "VatId": "40",
+      "chId": "1",
+      "VatName": "Shreejimaharaje kahyu hatu",
+      "VatNameGuj": "શ્રીજીમહારાજે કહ્યું હતું",
+      "VatFile": "ch01040.txt",
+      "VatNo": "40",
+      "VatNameEng": "Maharaj had said, “Once in Ala"
+    },
+    {
+      "VatId": "41",
+      "chId": "1",
+      "VatName": "Preminu het to tankana ",
+      "VatNameGuj": "પ્રેમીનું હેત તો ટાંકાના",
+      "VatFile": "ch01041.txt",
+      "VatNo": "41",
+      "VatNameEng": "The devotion of one who is aff"
+    },
+    {
+      "VatId": "42",
+      "chId": "1",
+      "VatName": "Koik lobh muke, svad muke",
+      "VatNameGuj": "કોઈક લોભ મૂકે, સ્વાદ મૂકે",
+      "VatFile": "ch01042.txt",
+      "VatNo": "42",
+      "VatNameEng": "Some overcome greed, some tast"
+    },
+    {
+      "VatId": "43",
+      "chId": "1",
+      "VatName": "Ame tapasi joyu to",
+      "VatNameGuj": "અમે તપાસી જોયું તો ",
+      "VatFile": "ch01043.txt",
+      "VatNo": "43",
+      "VatNameEng": "I have analysed and found that"
+    },
+    {
+      "VatId": "44",
+      "chId": "1",
+      "VatName": "Aa dehma ane aa lokma",
+      "VatNameGuj": "આ દેહમાં અને આ લોકમાં",
+      "VatFile": "ch01044.txt",
+      "VatNo": "44",
+      "VatNameEng": "Even if we want to become atta"
+    },
+    {
+      "VatId": "45",
+      "chId": "1",
+      "VatName": "Dehma rogadik dukh",
+      "VatNameGuj": "દેહમાં રોગાદિક દુ:ખ",
+      "VatFile": "ch01045.txt",
+      "VatNo": "45",
+      "VatNameEng": "The body is subject to illness"
+    },
+    {
+      "VatId": "46",
+      "chId": "1",
+      "VatName": "Vishayno tiraskar to ",
+      "VatNameGuj": "વિષયનો તિરસ્કાર તો ",
+      "VatFile": "ch01046.txt",
+      "VatNo": "46",
+      "VatNameEng": "Material pleasures are condemn"
+    },
+    {
+      "VatId": "47",
+      "chId": "1",
+      "VatName": "Bhagavannu dham gunatit ",
+      "VatNameGuj": "ભગવાનનું ધામ ગુણાતીત",
+      "VatFile": "ch01047.txt",
+      "VatNo": "47",
+      "VatNameEng": "God’s abode is Gunatit, i.e. a"
+    },
+    {
+      "VatId": "48",
+      "chId": "1",
+      "VatName": "Badarikashram ne svetadvipna",
+      "VatNameGuj": "બદરિકાશ્રમ ને શ્ર્વેતદ્વીપના",
+      "VatFile": "ch01048.txt",
+      "VatNo": "48",
+      "VatNameEng": "The muktas of Badrikashram and"
+    },
+    {
+      "VatId": "49",
+      "chId": "1",
+      "VatName": "Bhagavanna bhaktne to",
+      "VatNameGuj": "ભગવાનના ભક્તને તો",
+      "VatFile": "ch01049.txt",
+      "VatNo": "49",
+      "VatNameEng": "For a devotee of God, attainin"
+    },
+    {
+      "VatId": "50",
+      "chId": "1",
+      "VatName": "Aa sarve kam mukine avine",
+      "VatNameGuj": "આ સર્વે કામ મૂકીને આવીને",
+      "VatFile": "ch01050.txt",
+      "VatNo": "50",
+      "VatNameEng": "When we set aside all work and"
+    },
+    {
+      "VatId": "51",
+      "chId": "1",
+      "VatName": "Aa to baliya ch0he te",
+      "VatNameGuj": "આ તો બળિયા છે તે ",
+      "VatFile": "ch01051.txt",
+      "VatNo": "51",
+      "VatNameEng": "The greatness of this Sadhu is"
+    },
+    {
+      "VatId": "52",
+      "chId": "1",
+      "VatName": "Mota shahernu sevan",
+      "VatNameGuj": "મોટા શહેરનું સેવન",
+      "VatFile": "ch01052.txt",
+      "VatNo": "52",
+      "VatNameEng": "One should understand that the"
+    },
+    {
+      "VatId": "53",
+      "chId": "1",
+      "VatName": "Nirantar mandirnu kam",
+      "VatNameGuj": "નિરંતર મંદિરનું કામ",
+      "VatFile": "ch01053.txt",
+      "VatNo": "53",
+      "VatNameEng": "Spiritual wisdom may not devel"
+    },
+    {
+      "VatId": "54",
+      "chId": "1",
+      "VatName": "Shastrama bharebhare",
+      "VatNameGuj": "શાસ્ત્રમાં ભારેભારે",
+      "VatFile": "ch01054.txt",
+      "VatNo": "54",
+      "VatNameEng": "Many difficult atonements for "
+    },
+    {
+      "VatId": "55",
+      "chId": "1",
+      "VatName": "Vach0haradane dudhno svad ",
+      "VatNameGuj": "વાછરડાને દૂધનો સ્વાદ",
+      "VatFile": "ch01055.txt",
+      "VatNo": "55",
+      "VatNameEng": "A calf enjoys the taste of mil"
+    },
+    {
+      "VatId": "56",
+      "chId": "1",
+      "VatName": "Bhagavanni upasananu bal ",
+      "VatNameGuj": "ભગવાનની ઉપાસનાનું બળ",
+      "VatFile": "ch01056.txt",
+      "VatNo": "56",
+      "VatNameEng": "Even if one encounters intense"
+    },
+    {
+      "VatId": "57",
+      "chId": "1",
+      "VatName": "Aava sadhu khasada mare",
+      "VatNameGuj": "આવા સાધુ ખાસડાં મારે",
+      "VatFile": "ch01057.txt",
+      "VatNo": "57",
+      "VatNameEng": "Such a Sadhu may hit devotees "
+    },
+    {
+      "VatId": "58",
+      "chId": "1",
+      "VatName": "Aapana dosh to maharaje",
+      "VatNameGuj": "આપણા દોષ તો મહારાજે",
+      "VatFile": "ch01058.txt",
+      "VatNo": "58",
+      "VatNameEng": "Maharaj has already eradicate"
+    },
+    {
+      "VatId": "59",
+      "chId": "1",
+      "VatName": "Brahmarup manine bhakti",
+      "VatNameGuj": "બ્રહ્મરૂપ માનીને ભક્તિ",
+      "VatFile": "ch01059.txt",
+      "VatNo": "59",
+      "VatNameEng": "The main principle is to worsh"
+    },
+    {
+      "VatId": "60",
+      "chId": "1",
+      "VatName": "Aa karmakshetra ch0he ",
+      "VatNameGuj": "આ કર્મક્ષેત્ર છે ",
+      "VatFile": "ch01060.txt",
+      "VatNo": "60",
+      "VatNameEng": "This world is a place for acti"
+    },
+    {
+      "VatId": "61",
+      "chId": "1",
+      "VatName": "Tamogunine man vadhare",
+      "VatNameGuj": "તમોગુણીને માન વધારે ",
+      "VatFile": "ch01061.txt",
+      "VatNo": "61",
+      "VatNameEng": "One who has tamogun possesses "
+    },
+    {
+      "VatId": "62",
+      "chId": "1",
+      "VatName": "Jyare duryodhan ne",
+      "VatNameGuj": "જ્યારે દુર્યોધન ને",
+      "VatFile": "ch01062.txt",
+      "VatNo": "62",
+      "VatNameEng": "When conflict first started be"
+    },
+    {
+      "VatId": "63",
+      "chId": "1",
+      "VatName": "Ketalik kasar tyag",
+      "VatNameGuj": "કેટલીક કસર ત્યાગ",
+      "VatFile": "ch01063.txt",
+      "VatNo": "63",
+      "VatNameEng": "Some drawbacks will be cured t"
+    },
+    {
+      "VatId": "64",
+      "chId": "1",
+      "VatName": "Dharmashala karavanu kam",
+      "VatNameGuj": "ધર્મશાળા કરવાનું કામ",
+      "VatFile": "ch01064.txt",
+      "VatNo": "64",
+      "VatNameEng": "While work on the guesthouse w"
+    },
+    {
+      "VatId": "65",
+      "chId": "1",
+      "VatName": "Shastrama ketalank vach0an",
+      "VatNameGuj": "શાસ્ત્રમાં કેટલાંક વચન",
+      "VatFile": "ch01065.txt",
+      "VatNo": "65",
+      "VatNameEng": "In the scriptures, some words "
+    },
+    {
+      "VatId": "66",
+      "chId": "1",
+      "VatName": "Sharadrutuma akash nirmal",
+      "VatNameGuj": "શરદઋતુમાં આકાશ નિર્મળ",
+      "VatFile": "ch01066.txt",
+      "VatNo": "66",
+      "VatNameEng": "Seeing the clear, peaceful sky"
+    },
+    {
+      "VatId": "67",
+      "chId": "1",
+      "VatName": "Motano mat e ch0he je",
+      "VatNameGuj": "મોટાનો મત એ છે જે",
+      "VatFile": "ch01067.txt",
+      "VatNo": "67",
+      "VatNameEng": "The great Sadhu believes that "
+    },
+    {
+      "VatId": "68",
+      "chId": "1",
+      "VatName": "Niranjananandaswami pase bese ",
+      "VatNameGuj": "નિરંજનાનંદસ્વામી પાસે બેસે",
+      "VatFile": "ch01068.txt",
+      "VatNo": "68",
+      "VatNameEng": "By sitting with Niranjananand "
+    },
+    {
+      "VatId": "69",
+      "chId": "1",
+      "VatName": "Koti kalpe aa vat hath avi",
+      "VatNameGuj": "કોટિ કલ્પે આ વાત હાથ આવી",
+      "VatFile": "ch01069.txt",
+      "VatNo": "69",
+      "VatNameEng": "This opportunity of meeting Go"
+    },
+    {
+      "VatId": "70",
+      "chId": "1",
+      "VatName": "Sadhan kari karine mari",
+      "VatNameGuj": "સાધન કરી કરીને મરી ",
+      "VatFile": "ch01070.txt",
+      "VatNo": "70",
+      "VatNameEng": "One may engage in many endeavo"
+    },
+    {
+      "VatId": "71",
+      "chId": "1",
+      "VatName": "Aapanu to darshan karashe",
+      "VatNameGuj": "આપણું તો દર્શન કરશે ",
+      "VatFile": "ch01071.txt",
+      "VatNo": "71",
+      "VatNameEng": "Whoever has our darshan will b"
+    },
+    {
+      "VatId": "72",
+      "chId": "1",
+      "VatName": "Shreejimaharajani kaheli vat ",
+      "VatNameGuj": "શ્રીજીમહારાજની કહેલી વાત",
+      "VatFile": "ch01072.txt",
+      "VatNo": "72",
+      "VatNameEng": "Maharaj said, “One huge ship i"
+    },
+    {
+      "VatId": "73",
+      "chId": "1",
+      "VatName": "Gurunu ang",
+      "VatNameGuj": "ગુરુનું અંગ ",
+      "VatFile": "ch01073.txt",
+      "VatNo": "73",
+      "VatNameEng": "When all faults are overcome,"
+    },
+    {
+      "VatId": "74",
+      "chId": "1",
+      "VatName": "Bhagavan ne sadhuna mahimani",
+      "VatNameGuj": "ભગવાન ને સાધુના મહિમાની",
+      "VatFile": "ch01074.txt",
+      "VatNo": "74",
+      "VatNameEng": "There was much talk regarding "
+    },
+    {
+      "VatId": "75",
+      "chId": "1",
+      "VatName": "Aa to anant bhagavanna",
+      "VatNameGuj": "આ તો અનંત ભગવાનના",
+      "VatFile": "ch01075.txt",
+      "VatNo": "75",
+      "VatNameEng": "This [Bhagwan Swaminarayan] is"
+    },
+    {
+      "VatId": "76",
+      "chId": "1",
+      "VatName": "Aapanne to bhagavanno khap",
+      "VatNameGuj": "આપણને તો ભગવાનનો ખપ",
+      "VatFile": "ch01076.txt",
+      "VatNo": "76",
+      "VatNameEng": "We do not have a desire for Go"
+    },
+    {
+      "VatId": "77",
+      "chId": "1",
+      "VatName": "Bhagavan jivna gunha samu",
+      "VatNameGuj": "ભગવાન જીવના ગુન્હા સામું",
+      "VatFile": "ch01077.txt",
+      "VatNo": "77",
+      "VatNameEng": "God does not look at the fault"
+    },
+    {
+      "VatId": "78",
+      "chId": "1",
+      "VatName": "Amane to ek janm",
+      "VatNameGuj": "અમને તો એક જન્મ",
+      "VatFile": "ch01078.txt",
+      "VatNo": "78",
+      "VatNameEng": "Swami said, “I know only how t"
+    },
+    {
+      "VatId": "79",
+      "chId": "1",
+      "VatName": "Sarv prakarni asakti ",
+      "VatNameGuj": "સર્વ પ્રકારની આસક્તિ ",
+      "VatFile": "ch01079.txt",
+      "VatNo": "79",
+      "VatNameEng": "When one overcomes all desire"
+    },
+    {
+      "VatId": "80",
+      "chId": "1",
+      "VatName": "Vach0anamrut vanch0avine ",
+      "VatNameGuj": "વચનામૃત વંચાવીને",
+      "VatFile": "ch01080.txt",
+      "VatNo": "80",
+      "VatNameEng": "Swami had the Vachanamrut read"
+    },
+    {
+      "VatId": "81",
+      "chId": "1",
+      "VatName": "Aa to prabandhe karine ",
+      "VatNameGuj": "આ તો પ્રબંધે કરીને ",
+      "VatFile": "ch01081.txt",
+      "VatNo": "81",
+      "VatNameEng": "We sustain everyone because of"
+    },
+    {
+      "VatId": "82",
+      "chId": "1",
+      "VatName": "Vach0anamrut ni akhi prato",
+      "VatNameGuj": "વચનામૃતની આખી પ્રતો ",
+      "VatFile": "ch01082.txt",
+      "VatNo": "82",
+      "VatNameEng": "The whole manuscript of the Va"
+    },
+    {
+      "VatId": "83",
+      "chId": "1",
+      "VatName": "Loyana 7ma Vach0anamrutma",
+      "VatNameGuj": "લોયાના 7માં વચનામૃતમાં ",
+      "VatFile": "ch01083.txt",
+      "VatNo": "83",
+      "VatNameEng": "(Maharaj) has said in Vachanam"
+    },
+    {
+      "VatId": "84",
+      "chId": "1",
+      "VatName": "Panina dhara jevun to ",
+      "VatNameGuj": "પાણીના ધરા જેવું તો",
+      "VatFile": "ch01084.txt",
+      "VatNo": "84",
+      "VatNameEng": "The peace experienced by the r"
+    },
+    {
+      "VatId": "85",
+      "chId": "1",
+      "VatName": "Nand rajae akhi pruthvinu",
+      "VatNameGuj": "નંદ રાજાએ આખી પૃથ્વીનું",
+      "VatFile": "ch01085.txt",
+      "VatNo": "85",
+      "VatNameEng": "[King Nand] hoarded all the we"
+    },
+    {
+      "VatId": "86",
+      "chId": "1",
+      "VatName": "Apanama tyagi thai jay",
+      "VatNameGuj": "આપણામાં ત્યાગી થઈ જાય",
+      "VatFile": "ch01086.txt",
+      "VatNo": "86",
+      "VatNameEng": "In our fellowship a person ren"
+    },
+    {
+      "VatId": "87",
+      "chId": "1",
+      "VatName": "ch0hintamani kai rupali",
+      "VatNameGuj": "ચિંતામણિ કાંઈ રૂપાળી",
+      "VatFile": "ch01087.txt",
+      "VatNo": "87",
+      "VatNameEng": "The chintāmani is not necessar"
+    },
+    {
+      "VatId": "88",
+      "chId": "1",
+      "VatName": "Jo mar-mar karato koi",
+      "VatNameGuj": "જો માર-માર કરતો કોઈ",
+      "VatFile": "ch01088.txt",
+      "VatNo": "88",
+      "VatNameEng": "If someone comes charging at u"
+    },
+    {
+      "VatId": "89",
+      "chId": "1",
+      "VatName": "Vandaru vaikunthma rahe",
+      "VatNameGuj": "વાંદરું વૈકુંઠમાં રહે ",
+      "VatFile": "ch01089.txt",
+      "VatNo": "89",
+      "VatNameEng": "It is said, “[Monkeys cannot s"
+    },
+    {
+      "VatId": "90",
+      "chId": "1",
+      "VatName": "Brahmand akhun",
+      "VatNameGuj": "બ્રહ્માંડ આખું",
+      "VatFile": "ch01090.txt",
+      "VatNo": "90",
+      "VatNameEng": "Satsang is said to be establis"
+    },
+    {
+      "VatId": "91",
+      "chId": "1",
+      "VatName": "Jivne ch0otavana thekana",
+      "VatNameGuj": "જીવને ચોંટવાનાં ઠેકાણાં ",
+      "VatFile": "ch01091.txt",
+      "VatNo": "91",
+      "VatNameEng": "There are only two places wher"
+    },
+    {
+      "VatId": "92",
+      "chId": "1",
+      "VatName": "Dosh kem talata nathi",
+      "VatNameGuj": "દોષ કેમ ટળતા નથી ",
+      "VatFile": "ch01092.txt",
+      "VatNo": "92",
+      "VatNameEng": "Someone asked, “Why can’t the "
+    },
+    {
+      "VatId": "93",
+      "chId": "1",
+      "VatName": "Gafalai talavanu karan ",
+      "VatNameGuj": "ગાફલાઈ ટાળવાનું કારણ ",
+      "VatFile": "ch01093.txt",
+      "VatNo": "93",
+      "VatNameEng": "Complacency can be overcome if"
+    },
+    {
+      "VatId": "94",
+      "chId": "1",
+      "VatName": "Aa to bahu moto labh",
+      "VatNameGuj": "આ તો બહુ મોટો લાભ",
+      "VatFile": "ch01094.txt",
+      "VatNo": "94",
+      "VatNameEng": "For us this is a great opportu"
+    },
+    {
+      "VatId": "95",
+      "chId": "1",
+      "VatName": "Karmvipak name granth",
+      "VatNameGuj": "કર્મવિપાક નામે ગ્ંરથ ",
+      "VatFile": "ch01095.txt",
+      "VatNo": "95",
+      "VatNameEng": "Maharaj had the scripture Karm"
+    },
+    {
+      "VatId": "96",
+      "chId": "1",
+      "VatName": "Aakhi pruthvima ek",
+      "VatNameGuj": "આખી પૃથ્વીમાં એક ",
+      "VatFile": "ch01096.txt",
+      "VatNo": "96",
+      "VatNameEng": "Does one lament after the deat"
+    },
+    {
+      "VatId": "97",
+      "chId": "1",
+      "VatName": "Sankhyani dradhata kem ",
+      "VatNameGuj": "સાંખ્યની દૃઢતા કેમ",
+      "VatFile": "ch01097.txt",
+      "VatNo": "97",
+      "VatNameEng": "How can Sānkhya (understanding"
+    },
+    {
+      "VatId": "98",
+      "chId": "1",
+      "VatName": "Jem natno, namno ne",
+      "VatNameGuj": "જેમ નાતનો, નામનો ને",
+      "VatFile": "ch01098.txt",
+      "VatNo": "98",
+      "VatNameEng": "Just as one is absolutely conv"
+    },
+    {
+      "VatId": "99",
+      "chId": "1",
+      "VatName": "Akshardhamna jevu sukh",
+      "VatNameGuj": "અક્ષરધામના જેવું સુખ",
+      "VatFile": "ch01099.txt",
+      "VatNo": "99",
+      "VatNameEng": "The bliss of Akshardham prevai"
+    },
+    {
+      "VatId": "100",
+      "chId": "1",
+      "VatName": "Prakrutipurush sudhi ",
+      "VatNameGuj": "પ્રકૃતિપુરુષ સુધી",
+      "VatFile": "ch01100.txt",
+      "VatNo": "100",
+      "VatNameEng": "Up to Prakruti-Purush there ar"
+    },
+    {
+      "VatId": "101",
+      "chId": "1",
+      "VatName": "Bhagavan ane bhagavanna",
+      "VatNameGuj": "ભગવાન અને ભગવાનના",
+      "VatFile": "ch01101.txt",
+      "VatNo": "101",
+      "VatNameEng": "Observe only God and his holy "
+    },
+    {
+      "VatId": "102",
+      "chId": "1",
+      "VatName": "Motane vishe manushybhav ",
+      "VatNameGuj": "મોટાને વિશે મનુષ્યભાવ",
+      "VatFile": "ch01102.txt",
+      "VatNo": "102",
+      "VatNameEng": "How can one check to find out "
+    },
+    {
+      "VatId": "103",
+      "chId": "1",
+      "VatName": "Bhagavanni stutee karavi",
+      "VatNameGuj": "ભગવાનની સ્તુતિ કરવી",
+      "VatFile": "ch01103.txt",
+      "VatNo": "103",
+      "VatNameEng": "Pray to God, but do not believ"
+    },
+    {
+      "VatId": "104",
+      "chId": "1",
+      "VatName": "Man manyo mohan batiyan se",
+      "VatNameGuj": " મન માન્યો મોહન બતિયાં સે",
+      "VatFile": "ch01104.txt",
+      "VatNo": "104",
+      "VatNameEng": "Mohā moh mile nij Pritam, kau"
+    },
+    {
+      "VatId": "105",
+      "chId": "1",
+      "VatName": "Shreejimaharaj kahe je",
+      "VatNameGuj": "શ્રીજીમહારાજ કહે જે",
+      "VatFile": "ch01105.txt",
+      "VatNo": "105",
+      "VatNameEng": "Today, Maharaj says, “I want t"
+    },
+    {
+      "VatId": "106",
+      "chId": "1",
+      "VatName": "Rajana kunvarne dhedhthi",
+      "VatNameGuj": "રાજાના કુંવરને ઢેઢથી",
+      "VatFile": "ch01106.txt",
+      "VatNo": "106",
+      "VatNameEng": "A person of low birth cannot h"
+    },
+    {
+      "VatId": "107",
+      "chId": "1",
+      "VatName": "Sulabha hati te",
+      "VatNameGuj": "સુલભા હતી તે ",
+      "VatFile": "ch01107.txt",
+      "VatNo": "107",
+      "VatNameEng": "Sulabhā could experience samād"
+    },
+    {
+      "VatId": "108",
+      "chId": "1",
+      "VatName": "Dharmashala hati te",
+      "VatNameGuj": "ધર્મશાળા હતી તે",
+      "VatFile": "ch01108.txt",
+      "VatNo": "108",
+      "VatNameEng": "The resthouse for pilgrims was"
+    },
+    {
+      "VatId": "109",
+      "chId": "1",
+      "VatName": "Potane jane be manasnu",
+      "VatNameGuj": "પોતાને જાણે બે માણસનું",
+      "VatFile": "ch01109.txt",
+      "VatNo": "109",
+      "VatNameEng": "Someone may single-handedly do"
+    },
+    {
+      "VatId": "110",
+      "chId": "1",
+      "VatName": "Vishay lopi nakhata hoya",
+      "VatNameGuj": "વિષય લોપી નાખતા હોય",
+      "VatFile": "ch01110.txt",
+      "VatNo": "110",
+      "VatNameEng": "How can one who is overpowered"
+    },
+    {
+      "VatId": "111",
+      "chId": "1",
+      "VatName": "Motane shu karavanu",
+      "VatNameGuj": "મોટાને શું કરવાનું",
+      "VatFile": "ch01111.txt",
+      "VatNo": "111",
+      "VatNameEng": "How can we understand what th"
+    },
+    {
+      "VatId": "112",
+      "chId": "1",
+      "VatName": "Gnani hoya tene pan",
+      "VatNameGuj": "જ્ઞાની હોય તેને પણ",
+      "VatFile": "ch01112.txt",
+      "VatNo": "112",
+      "VatNameEng": "Even a gnāni will experience t"
+    },
+    {
+      "VatId": "113",
+      "chId": "1",
+      "VatName": "Priyavratne ch0hokara thaya",
+      "VatNameGuj": "પ્રિયવ્રતને છોકરાં થયાં",
+      "VatFile": "ch01113.txt",
+      "VatNo": "113",
+      "VatNameEng": "Priyavrat had children; yet he"
+    },
+    {
+      "VatId": "114",
+      "chId": "1",
+      "VatName": "Bhagavan ane mota sadhune",
+      "VatNameGuj": "ભગવાન અને મોટા સાધુને",
+      "VatFile": "ch01114.txt",
+      "VatNo": "114",
+      "VatNameEng": "By seeking refuge in God and h"
+    },
+    {
+      "VatId": "115",
+      "chId": "1",
+      "VatName": "Haiyama gnan bharyu ch0he",
+      "VatNameGuj": "હૈયામાં જ્ઞાન ભર્યું છે ",
+      "VatFile": "ch01115.txt",
+      "VatNo": "115",
+      "VatNameEng": "The spiritual wisdom stored in"
+    },
+    {
+      "VatId": "116",
+      "chId": "1",
+      "VatName": "Indriyu antahkaranna dahukh ",
+      "VatNameGuj": "ઇન્દ્રિયું-અંત:કરણનાં દુ:ખ",
+      "VatFile": "ch01116.txt",
+      "VatNo": "116",
+      "VatNameEng": "What should one do about the "
+    },
+    {
+      "VatId": "117",
+      "chId": "1",
+      "VatName": "Mota ch0he te koikne",
+      "VatNameGuj": "મોટા છે તે કોઈકને",
+      "VatFile": "ch01117.txt",
+      "VatNo": "117",
+      "VatNameEng": "The great Sadhu gives more hap"
+    },
+    {
+      "VatId": "118",
+      "chId": "1",
+      "VatName": "Shreejimaharajna svarupma ",
+      "VatNameGuj": "શ્રીજીમહારાજના સ્વરૂપમાં",
+      "VatFile": "ch01118.txt",
+      "VatNo": "118",
+      "VatNameEng": "Attach oneself to the manifest"
+    },
+    {
+      "VatId": "119",
+      "chId": "1",
+      "VatName": "Koti janme kasar talavani",
+      "VatNameGuj": "કોટિ જન્મે કસર ટળવાની",
+      "VatFile": "ch01119.txt",
+      "VatNo": "119",
+      "VatNameEng": "If a true God-realized Sadhu i"
+    },
+    {
+      "VatId": "120",
+      "chId": "1",
+      "VatName": "Ketalek rupiye ankh",
+      "VatNameGuj": "કેટલેક રૂપિયે આંખ",
+      "VatFile": "ch01120.txt",
+      "VatNo": "120",
+      "VatNameEng": "No amount of money can buy eye"
+    },
+    {
+      "VatId": "121",
+      "chId": "1",
+      "VatName": "Koti kalpe bhagavannu dham",
+      "VatNameGuj": "કોટિ કલ્પે ભગવાનનું ધામ",
+      "VatFile": "ch01121.txt",
+      "VatNo": "121",
+      "VatNameEng": "God’s abode cannot be obtained"
+    },
+    {
+      "VatId": "122",
+      "chId": "1",
+      "VatName": "Bija doshne Maharaj",
+      "VatNameGuj": "બીજા દોષને મહારાજ ",
+      "VatFile": "ch01122.txt",
+      "VatNo": "122",
+      "VatNameEng": "God overlooks other faults, bu"
+    },
+    {
+      "VatId": "123",
+      "chId": "1",
+      "VatName": "Bhagavanna svarupni nishtha ",
+      "VatNameGuj": "ભગવાનના સ્વરૂપની નિષ્ઠા",
+      "VatFile": "ch01123.txt",
+      "VatNo": "123",
+      "VatNameEng": "One who has resolute faith in "
+    },
+    {
+      "VatId": "124",
+      "chId": "1",
+      "VatName": "Shreejimaharaje kahyu hatu je",
+      "VatNameGuj": "શ્રીજીમહારાજે કહ્યું હતું જે ",
+      "VatFile": "ch01124.txt",
+      "VatNo": "124",
+      "VatNameEng": "Maharaj once said, “When a wom"
+    },
+    {
+      "VatId": "125",
+      "chId": "1",
+      "VatName": "Aa lokma dahyo to",
+      "VatNameGuj": "આ લોકમાં ડાહ્યો તો",
+      "VatFile": "ch01125.txt",
+      "VatNo": "125",
+      "VatNameEng": "In this world, the intelligent"
+    },
+    {
+      "VatId": "126",
+      "chId": "1",
+      "VatName": "Bajaro khavo ne prabhu",
+      "VatNameGuj": "બાજરો ખાવો ને પ્રભુ ",
+      "VatFile": "ch01126.txt",
+      "VatNo": "126",
+      "VatNameEng": "Eat simple food and worship Go"
+    },
+    {
+      "VatId": "127",
+      "chId": "1",
+      "VatName": "Dharmashalana kamma",
+      "VatNameGuj": "ધર્મશાળાના કામમાં",
+      "VatFile": "ch01127.txt",
+      "VatNo": "127",
+      "VatNameEng": "Darshan of this Sadhu destroys"
+    },
+    {
+      "VatId": "128",
+      "chId": "1",
+      "VatName": "Bhagavanma ne sadhuma ",
+      "VatNameGuj": "ભગવાનમાં ને સાધુમાં",
+      "VatFile": "ch01128.txt",
+      "VatNo": "128",
+      "VatNameEng": "If one has love for God and hi"
+    },
+    {
+      "VatId": "129",
+      "chId": "1",
+      "VatName": "Dukh koi manasho nahi",
+      "VatNameGuj": "દુ:ખ કોઈ માનશો નહિ",
+      "VatFile": "ch01129.txt",
+      "VatNo": "129",
+      "VatNameEng": "Do not feel miserable, for we "
+    },
+    {
+      "VatId": "130",
+      "chId": "1",
+      "VatName": "Mahapralayna agnima pan ",
+      "VatNameGuj": "મહાપ્રલયના અગ્નિમાં પણ ",
+      "VatFile": "ch01130.txt",
+      "VatNo": "130",
+      "VatNameEng": "Innate desires (of the jiva to"
+    },
+    {
+      "VatId": "131",
+      "chId": "1",
+      "VatName": "Durlabhma durlabh satsang ",
+      "VatNameGuj": "દુર્લભમાં દુર્લભ સત્સંગ",
+      "VatFile": "ch01131.txt",
+      "VatNo": "131",
+      "VatNameEng": "To attain Satsang is extremely"
+    },
+    {
+      "VatId": "132",
+      "chId": "1",
+      "VatName": "Sukai jao, ann muki do,",
+      "VatNameGuj": "સુકાઈ જાઓ, અન્ન મૂકી દો,",
+      "VatFile": "ch01131.txt",
+      "VatNo": "132",
+      "VatNameEng": "To attain Satsang is extremely"
+    },
+    {
+      "VatId": "133",
+      "chId": "1",
+      "VatName": "Ek divase rajya devay",
+      "VatNameGuj": "એક દિવસે રાજ્ય દેવાય",
+      "VatFile": "ch01132.txt",
+      "VatNo": "133",
+      "VatNameEng": "A kingdom can be given in one "
+    },
+    {
+      "VatId": "134",
+      "chId": "1",
+      "VatName": "Jene motane jiv api ",
+      "VatNameGuj": "જેણે મોટાને જીવ આપી",
+      "VatFile": "ch01133.txt",
+      "VatNo": "134",
+      "VatNameEng": "One who has surrendered his ji"
+    },
+    {
+      "VatId": "135",
+      "chId": "1",
+      "VatName": "Vasana tale to pan ",
+      "VatNameGuj": "વાસના ટળે તો પણ",
+      "VatFile": "ch01134.txt",
+      "VatNo": "135",
+      "VatNameEng": "Even if one’s desires are dest"
+    },
+    {
+      "VatId": "136",
+      "chId": "1",
+      "VatName": "Kadapi raji thaine ",
+      "VatNameGuj": "કદાપિ રાજી થઈને",
+      "VatFile": "ch01135.txt",
+      "VatNo": "136",
+      "VatNameEng": "Even if we become pleased and "
+    },
+    {
+      "VatId": "137",
+      "chId": "1",
+      "VatName": "A vatu to jadu ch0he",
+      "VatNameGuj": "આ વાતું તો જાદુ છે",
+      "VatFile": "ch01136.txt",
+      "VatNo": "137",
+      "VatNameEng": "These talks are magic – one wh"
+    },
+    {
+      "VatId": "138",
+      "chId": "1",
+      "VatName": "Indriyu antahkaran to",
+      "VatNameGuj": "ઇન્દ્રિયું-અંત:કરણ તો",
+      "VatFile": "ch01137.txt",
+      "VatNo": "138",
+      "VatNameEng": "The senses and inner faculties"
+    },
+    {
+      "VatId": "139",
+      "chId": "1",
+      "VatName": "Sadhane karine kadapi",
+      "VatNameGuj": "સાધને કરીને કદાપિ",
+      "VatFile": "ch01138.txt",
+      "VatNo": "139",
+      "VatNameEng": "So what if one becomes free o"
+    },
+    {
+      "VatId": "140",
+      "chId": "1",
+      "VatName": "Bhagavanno asharo thayo",
+      "VatNameGuj": "ભગવાનનો આશરો થયો",
+      "VatFile": "ch01139.txt",
+      "VatNo": "140",
+      "VatNameEng": "There is nothing better for an"
+    },
+    {
+      "VatId": "141",
+      "chId": "1",
+      "VatName": "Tapasine joyu to jivane ",
+      "VatNameGuj": "તપાસીને જોયું તો જીવને",
+      "VatFile": "ch01140.txt",
+      "VatNo": "141",
+      "VatNameEng": "Having analysed, we are only a"
+    },
+    {
+      "VatId": "142",
+      "chId": "1",
+      "VatName": "Aa jiv to vishaymathi ",
+      "VatNameGuj": "આ જીવ તો વિષયમાંથી",
+      "VatFile": "ch01141.txt",
+      "VatNo": "142",
+      "VatNameEng": "This jiva does not distance i"
+    },
+    {
+      "VatId": "143",
+      "chId": "1",
+      "VatName": "More to bhagavanne ",
+      "VatNameGuj": "મોરે તો ભગવાનને ",
+      "VatFile": "ch01142.txt",
+      "VatNo": "143",
+      "VatNameEng": "Previously, spiritual aspirant"
+    },
+    {
+      "VatId": "144",
+      "chId": "1",
+      "VatName": "Bhagavan bhajie ch0hie",
+      "VatNameGuj": "ભગવાન ભજીએ છીએ",
+      "VatFile": "ch01143.txt",
+      "VatNo": "144",
+      "VatNameEng": "We will get much benefit from "
+    },
+    {
+      "VatId": "145",
+      "chId": "1",
+      "VatName": "Amari bhela rahe ch0he",
+      "VatNameGuj": "અમારી ભેળા રહે છે ",
+      "VatFile": "ch01144.txt",
+      "VatNo": "145",
+      "VatNameEng": "Those who stay with us and yet"
+    },
+    {
+      "VatId": "146",
+      "chId": "1",
+      "VatName": "Dehne laine deshne laine",
+      "VatNameGuj": "દેહને લઈને, દેશને લઈને",
+      "VatFile": "ch01145.txt",
+      "VatNo": "146",
+      "VatNameEng": "The jiva becomes dejected due "
+    },
+    {
+      "VatId": "147",
+      "chId": "1",
+      "VatName": "Aa karakhana jo ek ",
+      "VatNameGuj": "આ કારખાનાં જો એક",
+      "VatFile": "ch01146.txt",
+      "VatNo": "147",
+      "VatNameEng": "If we set up workshops to buil"
+    },
+    {
+      "VatId": "148",
+      "chId": "1",
+      "VatName": "Tris lakshane yukt",
+      "VatNameGuj": "ત્રીસ લક્ષણે યુક્ત",
+      "VatFile": "ch01147.txt",
+      "VatNo": "148",
+      "VatNameEng": "Know that God in the form of a"
+    },
+    {
+      "VatId": "149",
+      "chId": "1",
+      "VatName": "Antarma tadhu rahya kare",
+      "VatNameGuj": "અંતરમાં ટાઢું રહ્યા કરે",
+      "VatFile": "ch01148.txt",
+      "VatNo": "149",
+      "VatNameEng": "There are two means by which i"
+    },
+    {
+      "VatId": "150",
+      "chId": "1",
+      "VatName": "Bhagavane moh sha saru",
+      "VatNameGuj": "ભગવાને મોહ શા સારુ ",
+      "VatFile": "ch01149.txt",
+      "VatNo": "150",
+      "VatNameEng": "Why has God created attraction"
+    },
+    {
+      "VatId": "151",
+      "chId": "1",
+      "VatName": "Muktanandswamima het",
+      "VatNameGuj": "મુક્તાનંદસ્વામીમાં હેત",
+      "VatFile": "ch01150.txt",
+      "VatNo": "151",
+      "VatNameEng": "One does not develop affection"
+    },
+    {
+      "VatId": "152",
+      "chId": "1",
+      "VatName": "Motane vishe sadbhav",
+      "VatNameGuj": "મોટાને વિશે સદ્ભાવ ",
+      "VatFile": "ch01151.txt",
+      "VatNo": "152",
+      "VatNameEng": "Goodwill towards the great Sad"
+    },
+    {
+      "VatId": "153",
+      "chId": "1",
+      "VatName": "Mokshne arthe to",
+      "VatNameGuj": "મોક્ષને અર્થે તો",
+      "VatFile": "ch01152.txt",
+      "VatNo": "153",
+      "VatNameEng": "For attaining moksha, there is"
+    },
+    {
+      "VatId": "154",
+      "chId": "1",
+      "VatName": "Swaminarayan namna mantra",
+      "VatNameGuj": "સ્વામિનારાયણ નામના મંત્ર",
+      "VatFile": "ch01153.txt",
+      "VatNo": "154",
+      "VatNameEng": "Today, there is no mantra more"
+    },
+    {
+      "VatId": "155",
+      "chId": "1",
+      "VatName": "Lakada, pana, intala",
+      "VatNameGuj": "લાકડાં, પાણા, ઈંટાળા",
+      "VatFile": "ch01154.txt",
+      "VatNo": "155",
+      "VatNameEng": "All are drawn to the māyā of t"
+    },
+    {
+      "VatId": "156",
+      "chId": "1",
+      "VatName": "Naranarayananandswami e to",
+      "VatNameGuj": "નરનારાયણાનંદસ્વામી એ તો ",
+      "VatFile": "ch01155.txt",
+      "VatNo": "156",
+      "VatNameEng": "Narnarayanand Swami is Narnara"
+    },
+    {
+      "VatId": "157",
+      "chId": "1",
+      "VatName": "ch0ar prakarna satsangi",
+      "VatNameGuj": "ચાર પ્રકારના સત્સંગી",
+      "VatFile": "ch01156.txt",
+      "VatNo": "157",
+      "VatNameEng": "There are four types of satsan"
+    },
+    {
+      "VatId": "158",
+      "chId": "1",
+      "VatName": "Koti kalpe pan ",
+      "VatNameGuj": "કોટિ કલ્પે પણ",
+      "VatFile": "ch01157.txt",
+      "VatNo": "158",
+      "VatNameEng": "Even after countless years, th"
+    },
+    {
+      "VatId": "159",
+      "chId": "1",
+      "VatName": "Bhagavan malya hot pan",
+      "VatNameGuj": "ભગવાન મળ્યા હોત પણ",
+      "VatFile": "ch01158.txt",
+      "VatNo": "159",
+      "VatNameEng": "If one had attained God, but n"
+    },
+    {
+      "VatId": "160",
+      "chId": "1",
+      "VatName": "Katha vanch0avata vat",
+      "VatNameGuj": "કથા વંચાવતાં વાત ",
+      "VatFile": "ch01159.txt",
+      "VatNo": "160",
+      "VatNameEng": "During a reading of the script"
+    },
+    {
+      "VatId": "161",
+      "chId": "1",
+      "VatName": "Mota mota sarve sadhuno",
+      "VatNameGuj": "મોટા મોટા સર્વે સાધુનો",
+      "VatFile": "ch01160.txt",
+      "VatNo": "161",
+      "VatNameEng": "Associate with the great sadhu"
+    },
+    {
+      "VatId": "162",
+      "chId": "1",
+      "VatName": "Suryne koni upama ",
+      "VatNameGuj": "સૂર્યને કોની ઉપમા",
+      "VatFile": "ch01161.txt",
+      "VatNo": "162",
+      "VatNameEng": "Who can the Sun be compared wi"
+    },
+    {
+      "VatId": "163",
+      "chId": "1",
+      "VatName": "Aksharadhammathi mukt ",
+      "VatNameGuj": "અક્ષરધામમાંથી મુક્ત",
+      "VatFile": "ch01162.txt",
+      "VatNo": "163",
+      "VatNameEng": "Purushottam himself has descen"
+    },
+    {
+      "VatId": "164",
+      "chId": "1",
+      "VatName": "Alabhy labh malyo ch0he",
+      "VatNameGuj": "અલભ્ય લાભ મળ્યો છે",
+      "VatFile": "ch01163.txt",
+      "VatNo": "164",
+      "VatNameEng": "This is an incredible opportun"
+    },
+    {
+      "VatId": "165",
+      "chId": "1",
+      "VatName": "Kam-krodhadik dosh ch0he",
+      "VatNameGuj": "કામ-ક્રોધાદિક દોષ છે",
+      "VatFile": "ch01164.txt",
+      "VatNo": "165",
+      "VatNameEng": "Vicious natures such as lust, "
+    },
+    {
+      "VatId": "166",
+      "chId": "1",
+      "VatName": "Ek to Bhagavanni agna",
+      "VatNameGuj": "એક તો ભગવાનની આજ્ઞા",
+      "VatFile": "ch01165.txt",
+      "VatNo": "166",
+      "VatNameEng": "Three things really please God"
+    },
+    {
+      "VatId": "167",
+      "chId": "1",
+      "VatName": "Aa satsang malyo ch0he ",
+      "VatNameGuj": "આ સત્સંગ મળ્યો છે",
+      "VatFile": "ch01166.txt",
+      "VatNo": "167",
+      "VatNameEng": "This satsang we have attained "
+    },
+    {
+      "VatId": "168",
+      "chId": "1",
+      "VatName": "Asharanu rup kahyu",
+      "VatNameGuj": "આશરાનું રૂપ કહ્યું",
+      "VatFile": "ch01167.txt",
+      "VatNo": "168",
+      "VatNameEng": "Just as a mother and children "
+    },
+    {
+      "VatId": "169",
+      "chId": "1",
+      "VatName": "Sarve vat sadhu vade",
+      "VatNameGuj": "સર્વે વાત સાધુ વડે",
+      "VatFile": "ch01168.txt",
+      "VatNo": "169",
+      "VatNameEng": "Everything is gained through t"
+    },
+    {
+      "VatId": "170",
+      "chId": "1",
+      "VatName": "Mahima samajay ch0he",
+      "VatNameGuj": "મહિમા સમજાય છે ",
+      "VatFile": "ch01169.txt",
+      "VatNo": "170",
+      "VatNameEng": "The glory of God is understood"
+    },
+    {
+      "VatId": "171",
+      "chId": "1",
+      "VatName": "Mota mota sarve sadhu",
+      "VatNameGuj": "મોટા મોટા સર્વે સાધુ",
+      "VatFile": "ch01170.txt",
+      "VatNo": "171",
+      "VatNameEng": "If all the great sadhus are pr"
+    },
+    {
+      "VatId": "172",
+      "chId": "1",
+      "VatName": "Ek to yagn kare te ",
+      "VatNameGuj": "એક તો યજ્ઞ કરે તે",
+      "VatFile": "ch01171.txt",
+      "VatNo": "172",
+      "VatNameEng": "For one who performs (an Ashwa"
+    },
+    {
+      "VatId": "173",
+      "chId": "1",
+      "VatName": "Tap krine bali jay",
+      "VatNameGuj": "તપ કરીને બળી જાય",
+      "VatFile": "ch01172.txt",
+      "VatNo": "173",
+      "VatNameEng": "One may be burnt out by perfor"
+    },
+    {
+      "VatId": "174",
+      "chId": "1",
+      "VatName": "Navarash hoy tyare",
+      "VatNameGuj": "નવરાશ હોય ત્યારે",
+      "VatFile": "ch01173.txt",
+      "VatNo": "174",
+      "VatNameEng": "When free, sit with the murti "
+    },
+    {
+      "VatId": "175",
+      "chId": "1",
+      "VatName": "Apano to ch0hello janm",
+      "VatNameGuj": "આપણો તો છેલ્લો જન્મ",
+      "VatFile": "ch01174.txt",
+      "VatNo": "175",
+      "VatNameEng": "This is our last birth. What u"
+    },
+    {
+      "VatId": "176",
+      "chId": "1",
+      "VatName": "Koik manasnu koike",
+      "VatNameGuj": "કોઈક માણસનું કોઈકે",
+      "VatFile": "ch01175.txt",
+      "VatNo": "176",
+      "VatNameEng": "People do not forget even the "
+    },
+    {
+      "VatId": "177",
+      "chId": "1",
+      "VatName": "Bhagavan malya, sadhu malya",
+      "VatNameGuj": "ભગવાન મળ્યા, સાધુ મળ્યા",
+      "VatFile": "ch01176.txt",
+      "VatNo": "177",
+      "VatNameEng": "We have attained God and the S"
+    },
+    {
+      "VatId": "178",
+      "chId": "1",
+      "VatName": "Jeva shabd sanbhale",
+      "VatNameGuj": "જેવા શબ્દ સાંભળે",
+      "VatFile": "ch01177.txt",
+      "VatNo": "178",
+      "VatNameEng": "The jiva becomes like the word"
+    },
+    {
+      "VatId": "179",
+      "chId": "1",
+      "VatName": "Aa to motani najar ",
+      "VatNameGuj": "આ તો મોટાની નજર",
+      "VatFile": "ch01178.txt",
+      "VatNo": "179",
+      "VatNameEng": "The great have cast their glan"
+    },
+    {
+      "VatId": "180",
+      "chId": "1",
+      "VatName": "Avidhyanu pan bhagavan",
+      "VatNameGuj": "અવિદ્યાનું પણ ભગવાન",
+      "VatFile": "ch01179.txt",
+      "VatNo": "180",
+      "VatNameEng": "Māyā is able to influence only"
+    },
+    {
+      "VatId": "181",
+      "chId": "1",
+      "VatName": "Jan avagun prabhu manat",
+      "VatNameGuj": " જન અવગુન પ્રભુ માનત",
+      "VatFile": "ch01180.txt",
+      "VatNo": "181",
+      "VatNameEng": "Jan avaguṇ Prabhu mānat nahi"
+    },
+    {
+      "VatId": "182",
+      "chId": "1",
+      "VatName": "Sant ch0he tyan niyam ",
+      "VatNameGuj": "સંત છે ત્યાં નિયમ",
+      "VatFile": "ch01181.txt",
+      "VatNo": "182",
+      "VatNameEng": "Where there is the great Sadhu"
+    },
+    {
+      "VatId": "183",
+      "chId": "1",
+      "VatName": "Bhagavanna dhamma sukh",
+      "VatNameGuj": "ભગવાનના ધામમાં સુખ",
+      "VatFile": "ch01182.txt",
+      "VatNo": "183",
+      "VatNameEng": "The abode of God is full of bl"
+    },
+    {
+      "VatId": "184",
+      "chId": "1",
+      "VatName": "Bhaktimatae maharajne kahyu",
+      "VatNameGuj": "ભક્તિમાતાએ મહારાજને કહ્યું",
+      "VatFile": "ch01183.txt",
+      "VatNo": "184",
+      "VatNameEng": "Bhaktimata told Maharaj, “I am"
+    },
+    {
+      "VatId": "185",
+      "chId": "1",
+      "VatName": "Jene gnan na hoy tene",
+      "VatNameGuj": "જેને જ્ઞાન ન હોય તેને",
+      "VatFile": "ch01184.txt",
+      "VatNo": "185",
+      "VatNameEng": "Those who do not have spiritua"
+    },
+    {
+      "VatId": "186",
+      "chId": "1",
+      "VatName": "So janmno shuddh brahman",
+      "VatNameGuj": "સો જન્મનો શુદ્ધ બ્રાહ્મણ",
+      "VatFile": "ch01185.txt",
+      "VatNo": "186",
+      "VatNameEng": "A low caste person who is a de"
+    },
+    {
+      "VatId": "187",
+      "chId": "1",
+      "VatName": "Bhagavan jyare pruthvi",
+      "VatNameGuj": "ભગવાન જ્યારે પૃથ્વી",
+      "VatFile": "ch01186.txt",
+      "VatNo": "187",
+      "VatNameEng": "When God incarnates on earth, "
+    },
+    {
+      "VatId": "188",
+      "chId": "1",
+      "VatName": "Aa jiv to jem paradeshmathi",
+      "VatNameGuj": "આ જીવ તો જેમ પરદેશમાંથી",
+      "VatFile": "ch01187.txt",
+      "VatNo": "188",
+      "VatNameEng": "The jivas are like the immoral"
+    },
+    {
+      "VatId": "189",
+      "chId": "1",
+      "VatName": "Purushottamni upasanae karine",
+      "VatNameGuj": "પુરુષોત્તમની ઉપાસનાએ કરીને ",
+      "VatFile": "ch01188.txt",
+      "VatNo": "189",
+      "VatNameEng": "Through the upāsanā of Purusho"
+    },
+    {
+      "VatId": "190",
+      "chId": "1",
+      "VatName": "Koti kalpna pas lagya ch0he ",
+      "VatNameGuj": "કોટિ કલ્પના પાસ લાગ્યા છે",
+      "VatFile": "ch01189.txt",
+      "VatNo": "190",
+      "VatNameEng": "The impressions of tens of mil"
+    },
+    {
+      "VatId": "191",
+      "chId": "1",
+      "VatName": "Dehno bhav na janay",
+      "VatNameGuj": "દેહનો ભાવ ન જણાય",
+      "VatFile": "ch01190.txt",
+      "VatNo": "191",
+      "VatNameEng": "Swarupanand Swami is one who d"
+    },
+    {
+      "VatId": "192",
+      "chId": "1",
+      "VatName": "Ek shabde karine to",
+      "VatNameGuj": "એક શબ્દે કરીને તો",
+      "VatFile": "ch01191.txt",
+      "VatNo": "192",
+      "VatNameEng": "Swarupanand Swami attains spir"
+    },
+    {
+      "VatId": "193",
+      "chId": "1",
+      "VatName": "Purve mota mota thaya",
+      "VatNameGuj": "પૂર્વે મોટા મોટા થયા",
+      "VatFile": "ch01192.txt",
+      "VatNo": "193",
+      "VatNameEng": "Even if the great of the past "
+    },
+    {
+      "VatId": "194",
+      "chId": "1",
+      "VatName": "Aapanu kalyan to",
+      "VatNameGuj": "આપણું કલ્યાણ તો",
+      "VatFile": "ch01193.txt",
+      "VatNo": "194",
+      "VatNameEng": "Our liberation relies on the r"
+    },
+    {
+      "VatId": "195",
+      "chId": "1",
+      "VatName": "Ketalak dharma akara",
+      "VatNameGuj": "કેટલાક ધર્મમાં આકરા",
+      "VatFile": "ch01194.txt",
+      "VatNo": "195",
+      "VatNameEng": "Some are very staunch in obser"
+    },
+    {
+      "VatId": "196",
+      "chId": "1",
+      "VatName": "Brahmbhav ne mahimani ",
+      "VatNameGuj": "બ્રહ્મભાવ ને મહિમાની",
+      "VatFile": "ch01195.txt",
+      "VatNo": "196",
+      "VatNameEng": "I do not speak much about the "
+    },
+    {
+      "VatId": "197",
+      "chId": "1",
+      "VatName": "Aapane janie ch0hie je",
+      "VatNameGuj": "આપણે જાણીએ છીએ જે",
+      "VatFile": "ch01196.txt",
+      "VatNo": "197",
+      "VatNameEng": "We believe that we have love f"
+    },
+    {
+      "VatId": "198",
+      "chId": "1",
+      "VatName": "Jivamatra laghushankana ch0he",
+      "VatNameGuj": "જીવમાત્ર લઘુશંકાના છે",
+      "VatFile": "ch01197.txt",
+      "VatNo": "198",
+      "VatNameEng": "All jivas are insignificant an"
+    },
+    {
+      "VatId": "199",
+      "chId": "1",
+      "VatName": "Aa karakhanama to ",
+      "VatNameGuj": "આ કારખાનામાં તો",
+      "VatFile": "ch01198.txt",
+      "VatNo": "199",
+      "VatNameEng": "To conduct the activities of t"
+    },
+    {
+      "VatId": "200",
+      "chId": "1",
+      "VatName": "Ek ek vishay ch0he ",
+      "VatNameGuj": "એક એક વિષય છે ",
+      "VatFile": "ch01199.txt",
+      "VatNo": "200",
+      "VatNameEng": "Each sense pleasure is like th"
+    },
+    {
+      "VatId": "201",
+      "chId": "1",
+      "VatName": "Sarva karata bhajan karavu",
+      "VatNameGuj": "સર્વ કરતાં ભજન કરવું",
+      "VatFile": "ch01200.txt",
+      "VatNo": "201",
+      "VatNameEng": "Above all, to offer worship is"
+    },
+    {
+      "VatId": "202",
+      "chId": "1",
+      "VatName": "Sarvakarta to bhagavan ch0he",
+      "VatNameGuj": "સર્વકર્તા તો ભગવાન છે",
+      "VatFile": "ch01201.txt",
+      "VatNo": "202",
+      "VatNameEng": "God is the all-doer. If we wan"
+    },
+    {
+      "VatId": "203",
+      "chId": "1",
+      "VatName": "Vishyarup fansalo jivana",
+      "VatNameGuj": "વિષયરૂપ ફાંસલો જીવના",
+      "VatFile": "ch01202.txt",
+      "VatNo": "203",
+      "VatNameEng": "A powerful noose in the form o"
+    },
+    {
+      "VatId": "204",
+      "chId": "1",
+      "VatName": "ch0hellanu 13mu vach0anamrut",
+      "VatNameGuj": "છેલ્લાનું 13મું વચનામૃત",
+      "VatFile": "ch01203.txt",
+      "VatNo": "204",
+      "VatNameEng": "Vachanamrut Gadhada III-13 was"
+    },
+    {
+      "VatId": "205",
+      "chId": "1",
+      "VatName": "ch0hellana 35ma vach0anamrutma",
+      "VatNameGuj": "છેલ્લાનાં 35માં વચનામૃતમાં",
+      "VatFile": "ch01204.txt",
+      "VatNo": "205",
+      "VatNameEng": "In Vachanamrut Gadhada III-35,"
+    },
+    {
+      "VatId": "206",
+      "chId": "1",
+      "VatName": "Kharekhara bhagavadi hoy",
+      "VatNameGuj": "ખરેખરા ભગવદી હોય",
+      "VatFile": "ch01205.txt",
+      "VatNo": "206",
+      "VatNameEng": "One who is truly spiritual is "
+    },
+    {
+      "VatId": "207",
+      "chId": "1",
+      "VatName": "Shreejimaharaj kahe ",
+      "VatNameGuj": "શ્રીજીમહારાજ કહે",
+      "VatFile": "ch01206.txt",
+      "VatNo": "207",
+      "VatNameEng": "Maharaj says, “I wish to make "
+    },
+    {
+      "VatId": "208",
+      "chId": "1",
+      "VatName": "Brahmavettane mate to",
+      "VatNameGuj": "બ્રહ્મવેત્તાને મતે તો",
+      "VatFile": "ch01207.txt",
+      "VatNo": "208",
+      "VatNameEng": "Jadbharat said to King Rahuga"
+    },
+    {
+      "VatId": "209",
+      "chId": "1",
+      "VatName": "Maro deh pach0is varas",
+      "VatNameGuj": "મારો દેહ પચીસ વરસ ",
+      "VatFile": "ch01208.txt",
+      "VatNo": "209",
+      "VatNameEng": "My body has remained for 25 ye"
+    },
+    {
+      "VatId": "210",
+      "chId": "1",
+      "VatName": "Halno avelo hashe",
+      "VatNameGuj": "હાલનો આવેલો હશે",
+      "VatFile": "ch01209.txt",
+      "VatNo": "210",
+      "VatNameEng": "One who has recently joined th"
+    },
+    {
+      "VatId": "211",
+      "chId": "1",
+      "VatName": "Apanne gnan to ",
+      "VatNameGuj": "આપણને જ્ઞાન તો",
+      "VatFile": "ch01210.txt",
+      "VatNo": "211",
+      "VatNameEng": "We do not have the spiritual k"
+    },
+    {
+      "VatId": "212",
+      "chId": "1",
+      "VatName": "Jem ch0he em kahie ",
+      "VatNameGuj": "જેમ છે એમ કહીએ",
+      "VatFile": "ch01211.txt",
+      "VatNo": "212",
+      "VatNameEng": "If we tell you things as the"
+    },
+    {
+      "VatId": "213",
+      "chId": "1",
+      "VatName": "Rajane pani na payu ",
+      "VatNameGuj": "રાજાને પાણી ન પાયું",
+      "VatFile": "ch01212.txt",
+      "VatNo": "213",
+      "VatNameEng": "(A farmer) did not give the ki"
+    },
+    {
+      "VatId": "214",
+      "chId": "1",
+      "VatName": "Mani hoy tene man",
+      "VatNameGuj": "માની હોય તેને માન",
+      "VatFile": "ch01213.txt",
+      "VatNo": "214",
+      "VatNameEng": "A egotist can be won by praisi"
+    },
+    {
+      "VatId": "215",
+      "chId": "1",
+      "VatName": "Divyabhav ne manushyabhav ",
+      "VatNameGuj": "દિવ્યભાવ ને મનુષ્યભાવ",
+      "VatFile": "ch01214.txt",
+      "VatNo": "215",
+      "VatNameEng": "One who understands divine tra"
+    },
+    {
+      "VatId": "216",
+      "chId": "1",
+      "VatName": "Vanathali ma vat kari",
+      "VatNameGuj": "વણથળીમાં વાત કરી",
+      "VatFile": "ch01215.txt",
+      "VatNo": "216",
+      "VatNameEng": "In Vanthali Swami said, “If th"
+    },
+    {
+      "VatId": "217",
+      "chId": "1",
+      "VatName": "Jem grahasth potani ",
+      "VatNameGuj": "જેમ ગૃહસ્થ પોતાની",
+      "VatFile": "ch01216.txt",
+      "VatNo": "217",
+      "VatNameEng": "Just as a householder turns hi"
+    },
+    {
+      "VatId": "218",
+      "chId": "1",
+      "VatName": "Aa pruthvina sarv",
+      "VatNameGuj": "આ પૃથ્વીના સર્વ",
+      "VatFile": "ch01217.txt",
+      "VatNo": "218",
+      "VatNameEng": "On this earth the jivas are ki"
+    },
+    {
+      "VatId": "219",
+      "chId": "1",
+      "VatName": "Mota sadhuna samagamthi",
+      "VatNameGuj": "મોટા સાધુના સમાગમથી",
+      "VatFile": "ch01218.txt",
+      "VatNo": "219",
+      "VatNameEng": "By our close association with "
+    },
+    {
+      "VatId": "220",
+      "chId": "1",
+      "VatName": "Aa sadhu to bhagavanni",
+      "VatNameGuj": "આ સાધુ તો ભગવાનની",
+      "VatFile": "ch01219.txt",
+      "VatNo": "220",
+      "VatNameEng": "This Sadhu always stays in the"
+    },
+    {
+      "VatId": "221",
+      "chId": "1",
+      "VatName": "Bhagavannu ne aa",
+      "VatNameGuj": "ભગવાનનું ને આ ",
+      "VatFile": "ch01220.txt",
+      "VatNo": "221",
+      "VatNameEng": "One who has gained the knowled"
+    },
+    {
+      "VatId": "222",
+      "chId": "1",
+      "VatName": "Aaj bhagavan akshardham ",
+      "VatNameGuj": "આજ ભગવાન અક્ષરધામ",
+      "VatFile": "ch01221.txt",
+      "VatNo": "222",
+      "VatNameEng": "Today, God has come to this ea"
+    },
+    {
+      "VatId": "223",
+      "chId": "1",
+      "VatName": "Ava ne ava",
+      "VatNameGuj": "આવા ને આવા",
+      "VatFile": "ch01222.txt",
+      "VatNo": "223",
+      "VatNameEng": "The Sadhu has come here from A"
+    },
+    {
+      "VatId": "224",
+      "chId": "1",
+      "VatName": "Jivno ne dehno vhevar",
+      "VatNameGuj": "જીવનો ને દેહનો વહેવાર",
+      "VatFile": "ch01223.txt",
+      "VatNo": "224",
+      "VatNameEng": "Understand the workings of the"
+    },
+    {
+      "VatId": "225",
+      "chId": "1",
+      "VatName": "Krupanandswami adik",
+      "VatNameGuj": "કૃપાનંદસ્વામી આદિક",
+      "VatFile": "ch01224.txt",
+      "VatNo": "225",
+      "VatNameEng": "We do not have spiritual stren"
+    },
+    {
+      "VatId": "226",
+      "chId": "1",
+      "VatName": "Bhagavanni murti",
+      "VatNameGuj": "ભગવાનની મૂર્તિ",
+      "VatFile": "ch01225.txt",
+      "VatNo": "226",
+      "VatNameEng": "The murti of God, the abode of"
+    },
+    {
+      "VatId": "227",
+      "chId": "1",
+      "VatName": "Koti sadhan kare pan",
+      "VatNameGuj": "કોટિ સાધન કરે પણ ",
+      "VatFile": "ch01226.txt",
+      "VatNo": "227",
+      "VatNameEng": "Tens of millions of spiritual "
+    },
+    {
+      "VatId": "228",
+      "chId": "1",
+      "VatName": "Jivne mayathi nirleppanu",
+      "VatNameGuj": "જીવને માયાથી નિર્લેપપણું",
+      "VatFile": "ch01227.txt",
+      "VatNo": "228",
+      "VatNameEng": "This jiva remains untouched by"
+    },
+    {
+      "VatId": "229",
+      "chId": "1",
+      "VatName": "Gnane karine sthiti karavi",
+      "VatNameGuj": "જ્ઞાને કરીને સ્થિતિ કરવી",
+      "VatFile": "ch01228.txt",
+      "VatNo": "229",
+      "VatNameEng": "Developing an elevated spiritu"
+    },
+    {
+      "VatId": "230",
+      "chId": "1",
+      "VatName": "Padach0hayane pahonch0aya",
+      "VatNameGuj": "પડછાયાને પહોંચાય",
+      "VatFile": "ch01229.txt",
+      "VatNo": "230",
+      "VatNameEng": "A shadow cannot be caught, sim"
+    },
+    {
+      "VatId": "231",
+      "chId": "1",
+      "VatName": "Aapane bhagavanna ch0hie",
+      "VatNameGuj": "‘આપણે ભગવાનના છીએ",
+      "VatFile": "ch01230.txt",
+      "VatNo": "231",
+      "VatNameEng": "Believe that we belong to God "
+    },
+    {
+      "VatId": "232",
+      "chId": "1",
+      "VatName": "Aa vatu to anant",
+      "VatNameGuj": "આ વાતું તો અનંત",
+      "VatFile": "ch01231.txt",
+      "VatNo": "232",
+      "VatNameEng": "These talks of Purushottam Bha"
+    },
+    {
+      "VatId": "233",
+      "chId": "1",
+      "VatName": "Bhagavanne nirdosh ",
+      "VatNameGuj": "ભગવાનને નિર્દોષ",
+      "VatFile": "ch01232.txt",
+      "VatNo": "233",
+      "VatNameEng": "By understanding God to be fre"
+    },
+    {
+      "VatId": "234",
+      "chId": "1",
+      "VatName": "Vahevar ch0he te",
+      "VatNameGuj": "વહેવાર છે તે ",
+      "VatFile": "ch01233.txt",
+      "VatNo": "234",
+      "VatNameEng": "Perform worldly duties physica"
+    },
+    {
+      "VatId": "235",
+      "chId": "1",
+      "VatName": "Ka to ashtangyog ",
+      "VatNameGuj": "કાં તો અષ્ટાંગયોગ",
+      "VatFile": "ch01234.txt",
+      "VatNo": "235",
+      "VatNameEng": "The internal dirt can only be "
+    },
+    {
+      "VatId": "236",
+      "chId": "1",
+      "VatName": "Jagabhakte prashn puch0hyo",
+      "VatNameGuj": "જાગાભક્તે પ્રશ્ર્ન પૂછ્યો",
+      "VatFile": "ch01235.txt",
+      "VatNo": "236",
+      "VatNameEng": "A devotee asked, “If one is ab"
+    },
+    {
+      "VatId": "237",
+      "chId": "1",
+      "VatName": "Aa lokma to maharajne",
+      "VatNameGuj": "આ લોકમાં તો મહારાજને",
+      "VatFile": "ch01235.txt",
+      "VatNo": "237",
+      "VatNameEng": "A devotee asked, “If one is ab"
+    },
+    {
+      "VatId": "238",
+      "chId": "1",
+      "VatName": "Aatali vat to so janme",
+      "VatNameGuj": "આટલી વાત તો સો જન્મે",
+      "VatFile": "ch01236.txt",
+      "VatNo": "238",
+      "VatNameEng": "These talks cannot be grasped "
+    },
+    {
+      "VatId": "239",
+      "chId": "1",
+      "VatName": "Nitye lakh rupiya lave",
+      "VatNameGuj": "નિત્યે લાખ રૂપિયા લાવે ",
+      "VatFile": "ch01237.txt",
+      "VatNo": "239",
+      "VatNameEng": "If a person brings 100,000 rup"
+    },
+    {
+      "VatId": "240",
+      "chId": "1",
+      "VatName": "Jo motapurush male to",
+      "VatNameGuj": "જો મોટાપુરુષ મળે તો",
+      "VatFile": "ch01238.txt",
+      "VatNo": "240",
+      "VatNameEng": "If one can, associate with a g"
+    },
+    {
+      "VatId": "241",
+      "chId": "1",
+      "VatName": "Mayanu bahu bal ch0he",
+      "VatNameGuj": "માયાનું બહુ બળ છે",
+      "VatFile": "ch01239.txt",
+      "VatNo": "241",
+      "VatNameEng": "Māyā has the strength to devou"
+    },
+    {
+      "VatId": "242",
+      "chId": "1",
+      "VatName": "Bhagavan malya",
+      "VatNameGuj": "ભગવાન મળ્યા",
+      "VatFile": "ch01240.txt",
+      "VatNo": "242",
+      "VatNameEng": "We have attained God and his h"
+    },
+    {
+      "VatId": "243",
+      "chId": "1",
+      "VatName": "Jem kusangi ne ",
+      "VatNameGuj": "જેમ કુસંગી ને ",
+      "VatFile": "ch01241.txt",
+      "VatNo": "243",
+      "VatNameEng": "Just as there is a difference "
+    },
+    {
+      "VatId": "244",
+      "chId": "1",
+      "VatName": "Bhagavannu ane sadhunu",
+      "VatNameGuj": "ભગવાનનું અને સાધુનું ",
+      "VatFile": "ch01242.txt",
+      "VatNo": "244",
+      "VatNameEng": "The greatness of God and his s"
+    },
+    {
+      "VatId": "245",
+      "chId": "1",
+      "VatName": "Ketalakne bhagavanna ",
+      "VatNameGuj": "કેટલાકને ભગવાનના ",
+      "VatFile": "ch01243.txt",
+      "VatNo": "245",
+      "VatNameEng": "Some experience the bliss of t"
+    },
+    {
+      "VatId": "246",
+      "chId": "1",
+      "VatName": "Jem ch0he em kahevay",
+      "VatNameGuj": "જેમ છે એમ કહેવાય",
+      "VatFile": "ch01244.txt",
+      "VatNo": "246",
+      "VatNameEng": "We cannot say everything as i"
+    },
+    {
+      "VatId": "247",
+      "chId": "1",
+      "VatName": "Bhagavan jevu to koi ",
+      "VatNameGuj": "ભગવાન જેવું તો કોઈ ",
+      "VatFile": "ch01245.txt",
+      "VatNo": "247",
+      "VatNameEng": "There is no entity like God. W"
+    },
+    {
+      "VatId": "248",
+      "chId": "1",
+      "VatName": "Aa vatuna karanara",
+      "VatNameGuj": "આ વાતુંના કરનારા",
+      "VatFile": "ch01246.txt",
+      "VatNo": "248",
+      "VatNameEng": "A speaker of these talks is ra"
+    },
+    {
+      "VatId": "249",
+      "chId": "1",
+      "VatName": "Dattatreye be jivanu",
+      "VatNameGuj": "દત્તાત્રેયે બે જીવનું",
+      "VatFile": "ch01247.txt",
+      "VatNo": "249",
+      "VatNameEng": "Dattatrey redeemed two jivas, "
+    },
+    {
+      "VatId": "250",
+      "chId": "1",
+      "VatName": "Dash hajar suryanu tej",
+      "VatNameGuj": "દશ હજાર સૂર્યનું તેજ",
+      "VatFile": "ch01248.txt",
+      "VatNo": "250",
+      "VatNameEng": "The effulgence of ten thousand"
+    },
+    {
+      "VatId": "251",
+      "chId": "1",
+      "VatName": "Jenu karyu thaya ch0he ",
+      "VatNameGuj": "જેનું કર્યું થાય છે",
+      "VatFile": "ch01249.txt",
+      "VatNo": "251",
+      "VatNameEng": "No one knows the one responsib"
+    },
+    {
+      "VatId": "252",
+      "chId": "1",
+      "VatName": "Koti kalp thaya",
+      "VatNameGuj": "કોટિ કલ્પ થયાં",
+      "VatFile": "ch01250.txt",
+      "VatNo": "252",
+      "VatNameEng": "The impressions of having enjo"
+    },
+    {
+      "VatId": "253",
+      "chId": "1",
+      "VatName": "Shastrama bhagavanne ",
+      "VatNameGuj": "શાસ્ત્રમાં ભગવાનને ",
+      "VatFile": "ch01251.txt",
+      "VatNo": "253",
+      "VatNameEng": "Scriptures describe God as unb"
+    },
+    {
+      "VatId": "254",
+      "chId": "1",
+      "VatName": "Bhagavan potana bhaktma",
+      "VatNameGuj": "ભગવાન પોતાના ભક્તમાં",
+      "VatFile": "ch01252.txt",
+      "VatNo": "254",
+      "VatNameEng": "God resides in his devotees ac"
+    },
+    {
+      "VatId": "255",
+      "chId": "1",
+      "VatName": "Bhagavan shulinu dukh",
+      "VatNameGuj": "ભગવાન શૂળીનું દુ:ખ",
+      "VatFile": "ch01253.txt",
+      "VatNo": "255",
+      "VatNameEng": "God reduces the punishment of "
+    },
+    {
+      "VatId": "256",
+      "chId": "1",
+      "VatName": "Aa lokma deshakal to ",
+      "VatNameGuj": "આ લોકમાં દેશકાળ તો",
+      "VatFile": "ch01254.txt",
+      "VatNo": "256",
+      "VatNameEng": "Time and place certainly do ha"
+    },
+    {
+      "VatId": "257",
+      "chId": "1",
+      "VatName": "Aavi vatu to kyay",
+      "VatNameGuj": "આવી વાતું તો ક્યાંય ",
+      "VatFile": "ch01255.txt",
+      "VatNo": "257",
+      "VatNameEng": "These types of talks are not "
+    },
+    {
+      "VatId": "258",
+      "chId": "1",
+      "VatName": "Aapane potana svarupne",
+      "VatNameGuj": "આપણે પોતાના સ્વરૂપને",
+      "VatFile": "ch01256.txt",
+      "VatNo": "258",
+      "VatNameEng": "We should believe our true for"
+    },
+    {
+      "VatId": "259",
+      "chId": "1",
+      "VatName": "Lakadani ne lodhani bedi",
+      "VatNameGuj": "લાકડાંની ને લોઢાની બેડી",
+      "VatFile": "ch01257.txt",
+      "VatNo": "259",
+      "VatNameEng": "The fetters of women and wealt"
+    },
+    {
+      "VatId": "260",
+      "chId": "1",
+      "VatName": "Shvan shukar bilad khar",
+      "VatNameGuj": " શ્ર્વાન શૂકર બિલાડ ખર",
+      "VatFile": "ch01258.txt",
+      "VatNo": "260",
+      "VatNameEng": "Shvān shūkar bilāḍ khar, ten"
+    },
+    {
+      "VatId": "261",
+      "chId": "1",
+      "VatName": "Shreejimaharaj kaheta je",
+      "VatNameGuj": "શ્રીજીમહારાજ કહેતા જે",
+      "VatFile": "ch01259.txt",
+      "VatNo": "261",
+      "VatNameEng": "Maharaj used to say, “Whose na"
+    },
+    {
+      "VatId": "262",
+      "chId": "1",
+      "VatName": "Khatvang rajanu be",
+      "VatNameGuj": "ખટ્વાંગ રાજાનું બે",
+      "VatFile": "ch01260.txt",
+      "VatNo": "262",
+      "VatNameEng": "King Khatvang’s moksha was ac"
+    },
+    {
+      "VatId": "263",
+      "chId": "1",
+      "VatName": "Madhynu 9mu vach0anamrut",
+      "VatNameGuj": "મધ્યનું 9મું વચનામૃત",
+      "VatFile": "ch01261.txt",
+      "VatNo": "263",
+      "VatNameEng": "After reading Vachanamrut Gadh"
+    },
+    {
+      "VatId": "264",
+      "chId": "1",
+      "VatName": "Shreejimaharaj kaheta ke",
+      "VatNameGuj": "શ્રીજીમહારાજ કહેતા કે ",
+      "VatFile": "ch01262.txt",
+      "VatNo": "264",
+      "VatNameEng": "Maharaj used to say, “One who "
+    },
+    {
+      "VatId": "265",
+      "chId": "1",
+      "VatName": "Deh mukine jene pamava",
+      "VatNameGuj": "દેહ મૂકીને જેને પામવા",
+      "VatFile": "ch01263.txt",
+      "VatNo": "265",
+      "VatNameEng": "He (God) whom we want to attai"
+    },
+    {
+      "VatId": "266",
+      "chId": "1",
+      "VatName": "Vach0anamrutna arth samajay",
+      "VatNameGuj": "વચનામૃતના અર્થ સમજાય",
+      "VatFile": "ch01264.txt",
+      "VatNo": "266",
+      "VatNameEng": "It's not possible to understan"
+    },
+    {
+      "VatId": "267",
+      "chId": "1",
+      "VatName": "Prakrutipurush te kutasth",
+      "VatNameGuj": "પ્રકૃતિપુરુષ તે કૂટસ્થ",
+      "VatFile": "ch01265.txt",
+      "VatNo": "267",
+      "VatNameEng": "Prakruti-Purush can be conside"
+    },
+    {
+      "VatId": "268",
+      "chId": "1",
+      "VatName": "Aaja apanamathi ekadmal",
+      "VatNameGuj": "આજ આપણામાંથી એકડમલ",
+      "VatFile": "ch01266.txt",
+      "VatNo": "268",
+      "VatNameEng": "Today, a (sadhu) who is cast o"
+    },
+    {
+      "VatId": "269",
+      "chId": "1",
+      "VatName": "Shrikrushnane ban vagya",
+      "VatNameGuj": "શ્રીકૃષ્ણને બાણ વાગ્યાં ",
+      "VatFile": "ch01267.txt",
+      "VatNo": "269",
+      "VatNameEng": "Shri Krishna Bhagwan was shot "
+    },
+    {
+      "VatId": "270",
+      "chId": "1",
+      "VatName": "Deshakal ave to",
+      "VatNameGuj": "દેશકાળ આવે તો",
+      "VatFile": "ch01268.txt",
+      "VatNo": "270",
+      "VatNameEng": "If the time or place become ad"
+    },
+    {
+      "VatId": "271",
+      "chId": "1",
+      "VatName": "Haribhakt agal vatu",
+      "VatNameGuj": "હરિભક્ત આગળ વાતું",
+      "VatFile": "ch01269.txt",
+      "VatNo": "271",
+      "VatNameEng": "Instructions were given to tal"
+    },
+    {
+      "VatId": "272",
+      "chId": "1",
+      "VatName": "Bhagavan to tris varas ",
+      "VatNameGuj": "ભગવાન તો ત્રીસ વરસ",
+      "VatFile": "ch01270.txt",
+      "VatNo": "272",
+      "VatNameEng": "Maharaj stayed in Satsang for "
+    },
+    {
+      "VatId": "273",
+      "chId": "1",
+      "VatName": "Junagadhna jaman maharaja",
+      "VatNameGuj": "જૂનાગઢના જમાન મહારાજ",
+      "VatFile": "ch01271.txt",
+      "VatNo": "273",
+      "VatNameEng": "Maharaj acted as surety for Ju"
+    },
+    {
+      "VatId": "274",
+      "chId": "1",
+      "VatName": "Mujhavan ave to kem",
+      "VatNameGuj": "મૂંઝવણ આવે તો કેમ",
+      "VatFile": "ch01272.txt",
+      "VatNo": "274",
+      "VatNameEng": "What should one do when in dif"
+    },
+    {
+      "VatId": "275",
+      "chId": "1",
+      "VatName": "Jhinabhaie maharaj pase",
+      "VatNameGuj": "ઝીણાભાઈએ મહારાજ પાસે",
+      "VatFile": "ch01273.txt",
+      "VatNo": "275",
+      "VatNameEng": "Jhinabhai asked Maharaj to bui"
+    },
+    {
+      "VatId": "276",
+      "chId": "1",
+      "VatName": "Aa lokni sarva kriya te",
+      "VatNameGuj": "આ લોકની સર્વ ક્રિયા તે",
+      "VatFile": "ch01274.txt",
+      "VatNo": "276",
+      "VatNameEng": "All the activities of this wor"
+    },
+    {
+      "VatId": "277",
+      "chId": "1",
+      "VatName": "Shreejimaharaj kaheta je",
+      "VatNameGuj": "શ્રીજીમહારાજ કહેતા જે",
+      "VatFile": "ch01275.txt",
+      "VatNo": "277",
+      "VatNameEng": "Maharaj used to say, “Let me d"
+    },
+    {
+      "VatId": "278",
+      "chId": "1",
+      "VatName": "Koi bhagavanne sanbhare",
+      "VatNameGuj": "કોઈ ભગવાનને સંભારે",
+      "VatFile": "ch01276.txt",
+      "VatNo": "278",
+      "VatNameEng": "If someone remembers God, then"
+    },
+    {
+      "VatId": "279",
+      "chId": "1",
+      "VatName": "Kathavarta to",
+      "VatNameGuj": "કથાવાર્તા તો ",
+      "VatFile": "ch01277.txt",
+      "VatNo": "279",
+      "VatNameEng": "Spiritual discourses are condu"
+    },
+    {
+      "VatId": "280",
+      "chId": "1",
+      "VatName": "Aapane kaik kam saru",
+      "VatNameGuj": "આપણે કાંઈક કામ સારું",
+      "VatFile": "ch01278.txt",
+      "VatNo": "280",
+      "VatNameEng": "If we have done some good work"
+    },
+    {
+      "VatId": "281",
+      "chId": "1",
+      "VatName": "Sankhya vich0ar karavani",
+      "VatNameGuj": "સાંખ્ય વિચાર કરવાની",
+      "VatFile": "ch01279.txt",
+      "VatNo": "281",
+      "VatNameEng": "Swami talked at length about e"
+    },
+    {
+      "VatId": "282",
+      "chId": "1",
+      "VatName": "Jene bhagavan arthe ",
+      "VatNameGuj": "જેણે ભગવાન અર્થે ",
+      "VatFile": "ch01280.txt",
+      "VatNo": "282",
+      "VatNameEng": "Bhagwān takes whoever does som"
+    },
+    {
+      "VatId": "283",
+      "chId": "1",
+      "VatName": "Karod kam thele ",
+      "VatNameGuj": "કરોડ કામ ઠેલે",
+      "VatFile": "ch01281.txt",
+      "VatNo": "283",
+      "VatNameEng": "Only by postponing tens of mil"
+    },
+    {
+      "VatId": "284",
+      "chId": "1",
+      "VatName": "Bhagavanna bhaktne",
+      "VatNameGuj": "ભગવાનના ભક્તને ",
+      "VatFile": "ch01282.txt",
+      "VatNo": "284",
+      "VatNameEng": "A devotee is able to maintain "
+    },
+    {
+      "VatId": "285",
+      "chId": "1",
+      "VatName": "Aapanne to bhagavan",
+      "VatNameGuj": "આપણને તો ભગવાન",
+      "VatFile": "ch01283.txt",
+      "VatNo": "285",
+      "VatNameEng": "Swami said, “We have met God a"
+    },
+    {
+      "VatId": "286",
+      "chId": "1",
+      "VatName": "Sukshm dehno kajiyo",
+      "VatNameGuj": "સૂક્ષ્મ દેહનો કજિયો ",
+      "VatFile": "ch01284.txt",
+      "VatNo": "286",
+      "VatNameEng": "The dispute of the [sukshma b"
+    },
+    {
+      "VatId": "287",
+      "chId": "1",
+      "VatName": "Bhagavanne jeni kasar ",
+      "VatNameGuj": "ભગવાનને જેની કસર ",
+      "VatFile": "ch01285.txt",
+      "VatNo": "287",
+      "VatNameEng": "When God wants to eradicate so"
+    },
+    {
+      "VatId": "288",
+      "chId": "1",
+      "VatName": "Ek harijane puch0hyu",
+      "VatNameGuj": "એક હરિજને પૂછ્યું",
+      "VatFile": "ch01286.txt",
+      "VatNo": "288",
+      "VatNameEng": "A devotee asked, “What will ha"
+    },
+    {
+      "VatId": "289",
+      "chId": "1",
+      "VatName": "Varatalnu 3ju vach0anamrut",
+      "VatNameGuj": "વરતાલનું 3જું વચનામૃત",
+      "VatFile": "ch01287.txt",
+      "VatNo": "289",
+      "VatNameEng": "Vachanamrut Vartal-3 was read."
+    },
+    {
+      "VatId": "290",
+      "chId": "1",
+      "VatName": "Bhagavan bhela rahya",
+      "VatNameGuj": "ભગવાન ભેળા રહ્યા",
+      "VatFile": "ch01288.txt",
+      "VatNo": "290",
+      "VatNameEng": "Despite staying with God, what"
+    },
+    {
+      "VatId": "291",
+      "chId": "1",
+      "VatName": "Bhagavan jeva aa sadhu",
+      "VatNameGuj": "ભગવાન જેવા આ સાધુ છે",
+      "VatFile": "ch01289.txt",
+      "VatNo": "291",
+      "VatNameEng": "This Sadhu is like God, but th"
+    },
+    {
+      "VatId": "292",
+      "chId": "1",
+      "VatName": "Have to maharaj sadhu",
+      "VatNameGuj": "હવે તો મહારાજ સાધુ",
+      "VatFile": "ch01290.txt",
+      "VatNo": "292",
+      "VatNameEng": "At present Maharaj gives darsh"
+    },
+    {
+      "VatId": "293",
+      "chId": "1",
+      "VatName": "Ame to koti kalp",
+      "VatNameGuj": "અમે તો કોટિ કલ્પ",
+      "VatFile": "ch01291.txt",
+      "VatNo": "293",
+      "VatNameEng": "I have been observing for tens"
+    },
+    {
+      "VatId": "294",
+      "chId": "1",
+      "VatName": "Mota paroksh thaya",
+      "VatNameGuj": "મોટા પરોક્ષ થાય ",
+      "VatFile": "ch01292.txt",
+      "VatNo": "294",
+      "VatNameEng": "After the great Satpurush beco"
+    },
+    {
+      "VatId": "295",
+      "chId": "1",
+      "VatName": "Indre vishvarupne maryo ",
+      "VatNameGuj": "ઇન્દ્રે વિશ્ર્વરૂપને માર્યો",
+      "VatFile": "ch01293.txt",
+      "VatNo": "295",
+      "VatNameEng": "Indra killed Vishwarup and inc"
+    },
+    {
+      "VatId": "296",
+      "chId": "1",
+      "VatName": "Koti tap karine ",
+      "VatNameGuj": "કોટિ તપ કરીને",
+      "VatFile": "ch01294.txt",
+      "VatNo": "296",
+      "VatNameEng": "That God and Sadhu we wanted t"
+    },
+    {
+      "VatId": "297",
+      "chId": "1",
+      "VatName": "Satsang thaya tene to",
+      "VatNameGuj": "સત્સંગ થાય તેને તો ",
+      "VatFile": "ch01295.txt",
+      "VatNo": "297",
+      "VatNameEng": "When satsang is imbibed, no mi"
+    },
+    {
+      "VatId": "298",
+      "chId": "1",
+      "VatName": "Nirantar mala ferave",
+      "VatNameGuj": "નિરંતર માળા ફેરવે ",
+      "VatFile": "ch01296.txt",
+      "VatNo": "298",
+      "VatNameEng": "Understanding the form and gre"
+    },
+    {
+      "VatId": "299",
+      "chId": "1",
+      "VatName": "Bhagavanni murtine ch0intamani",
+      "VatNameGuj": "ભગવાનની મૂર્તિને ચિંતામણિ",
+      "VatFile": "ch01297.txt",
+      "VatNo": "299",
+      "VatNameEng": "The murti of God is described "
+    },
+    {
+      "VatId": "300",
+      "chId": "1",
+      "VatName": "Svarupnishtha ch0he ne ",
+      "VatNameGuj": "સ્વરૂપનિષ્ઠા છે ને ",
+      "VatFile": "ch01298.txt",
+      "VatNo": "300",
+      "VatNameEng": "Resolute faith in the manifest"
+    },
+    {
+      "VatId": "301",
+      "chId": "1",
+      "VatName": "Satpurushana sambandhe",
+      "VatNameGuj": "સત્પુરુષના સંબંધે ",
+      "VatFile": "ch01299.txt",
+      "VatNo": "301",
+      "VatNameEng": "The company of the Satpurush l"
+    },
+    {
+      "VatId": "302",
+      "chId": "1",
+      "VatName": "Vishayma to vairat ",
+      "VatNameGuj": "વિષયમાં તો વૈરાટ",
+      "VatFile": "ch01300.txt",
+      "VatNo": "302",
+      "VatNameEng": "Up to Vairat, Pradhan-Purush a"
+    },
+    {
+      "VatId": "303",
+      "chId": "1",
+      "VatName": "Aapane to akshardhamma",
+      "VatNameGuj": "આપણે તો અક્ષરધામમાં",
+      "VatFile": "ch01301.txt",
+      "VatNo": "303",
+      "VatNameEng": "Our sole wish should be that w"
+    },
+    {
+      "VatId": "304",
+      "chId": "1",
+      "VatName": "Aa vatu to jena ",
+      "VatNameGuj": "આ વાતું તો જેના",
+      "VatFile": "ch01302.txt",
+      "VatNo": "304",
+      "VatNameEng": "These talks are such that they"
+    },
+    {
+      "VatId": "305",
+      "chId": "1",
+      "VatName": "Aa lokma Aksharnu",
+      "VatNameGuj": "આ લોકમાં અક્ષરનું ",
+      "VatFile": "ch01303.txt",
+      "VatNo": "305",
+      "VatNameEng": "What is the bliss of Akshar in"
+    },
+    {
+      "VatId": "306",
+      "chId": "1",
+      "VatName": "Koti kalp thaya",
+      "VatNameGuj": "કોટિ કલ્પ થયાં",
+      "VatFile": "ch01304.txt",
+      "VatNo": "306",
+      "VatNameEng": "Since tens of millions of year"
+    },
+    {
+      "VatId": "307",
+      "chId": "1",
+      "VatName": "Prathamnu 63mu",
+      "VatNameGuj": "પ્રથમનું 63મું ",
+      "VatFile": "ch01305.txt",
+      "VatNo": "307",
+      "VatNameEng": "After reading Vachanamrut Gadh"
+    },
+    {
+      "VatId": "308",
+      "chId": "1",
+      "VatName": "Akshardhamnu kem ",
+      "VatNameGuj": "અક્ષરધામનું કેમ ",
+      "VatFile": "ch01344.txt",
+      "VatNo": "308",
+      "VatNameEng": "Akshardhamnu kem "
+    },
+    {
+      "VatId": "309",
+      "chId": "1",
+      "VatName": "Aapanama vishayni aruch0i",
+      "VatNameGuj": "આપણામાં વિષયની અરુચિ",
+      "VatFile": "ch01306.txt",
+      "VatNo": "309",
+      "VatNameEng": "Among us, many, such as, Nishk"
+    },
+    {
+      "VatId": "310",
+      "chId": "1",
+      "VatName": "Bhagavane je je niramyu",
+      "VatNameGuj": "ભગવાને જે જે નિરમ્યું",
+      "VatFile": "ch01307.txt",
+      "VatNo": "310",
+      "VatNameEng": "Everything happens just the wa"
+    },
+    {
+      "VatId": "311",
+      "chId": "1",
+      "VatName": "Kariyaninu 7mu",
+      "VatNameGuj": "કારિયાણીનું 7મું ",
+      "VatFile": "ch01308.txt",
+      "VatNo": "311",
+      "VatNameEng": "After reading Vachanamrut Kari"
+    },
+    {
+      "VatId": "312",
+      "chId": "1",
+      "VatName": "Koi vatni ch0inta ave ",
+      "VatNameGuj": "કોઈ વાતની ચિંતા આવે ",
+      "VatFile": "ch01309.txt",
+      "VatNo": "312",
+      "VatNameEng": "When one encounters worries re"
+    },
+    {
+      "VatId": "313",
+      "chId": "1",
+      "VatName": "Sadhuno ne sadhuna ",
+      "VatNameGuj": "સાધુનો ને સાધુના ",
+      "VatFile": "ch01310.txt",
+      "VatNo": "313",
+      "VatNameEng": "Swami talked at length about t"
+    },
+    {
+      "VatId": "314",
+      "chId": "1",
+      "VatName": "Aapane to so base ",
+      "VatNameGuj": "આપણે તો સો-બસેં",
+      "VatFile": "ch01311.txt",
+      "VatNo": "314",
+      "VatNameEng": "We (Swami referring to himself"
+    },
+    {
+      "VatId": "315",
+      "chId": "1",
+      "VatName": "Jivani avalai te shu",
+      "VatNameGuj": "જીવની અવળાઈ તે શું",
+      "VatFile": "ch01312.txt",
+      "VatNo": "315",
+      "VatNameEng": "What can be said about the cro"
+    },
+    {
+      "VatId": "316",
+      "chId": "1",
+      "VatName": "Antarama tadhu hoy",
+      "VatNameGuj": "અંતરમાં ટાઢું હોય",
+      "VatFile": "ch01313.txt",
+      "VatNo": "316",
+      "VatNameEng": "When one is at peace within an"
+    },
+    {
+      "VatId": "317",
+      "chId": "1",
+      "VatName": "Bhagavanno ne mota",
+      "VatNameGuj": "ભગવાનનો ને મોટા",
+      "VatFile": "ch01314.txt",
+      "VatNo": "317",
+      "VatNameEng": "If one has firm faith in God a"
+    },
+    {
+      "VatId": "318",
+      "chId": "1",
+      "VatName": "Pruthvinu rajya kare ",
+      "VatNameGuj": "પૃથ્વીનું રાજ્ય કરે",
+      "VatFile": "ch01315.txt",
+      "VatNo": "318",
+      "VatNameEng": "If one attains spiritual knowl"
+    },
+    {
+      "VatId": "319",
+      "chId": "1",
+      "VatName": "Nanu ch0hokaru hoy",
+      "VatNameGuj": "નાનું છોકરું હોય",
+      "VatFile": "ch01316.txt",
+      "VatNo": "319",
+      "VatNameEng": "When a young child is afraid, "
+    },
+    {
+      "VatId": "320",
+      "chId": "1",
+      "VatName": "Amaro mat to",
+      "VatNameGuj": "અમારો મત તો",
+      "VatFile": "ch01317.txt",
+      "VatNo": "320",
+      "VatNameEng": "My opinion is that I will enga"
+    },
+    {
+      "VatId": "321",
+      "chId": "1",
+      "VatName": "Pratham sadhan kalama",
+      "VatNameGuj": "પ્રથમ સાધન કાળમાં ",
+      "VatFile": "ch01318.txt",
+      "VatNo": "321",
+      "VatNameEng": "During one’s initial endeavour"
+    },
+    {
+      "VatId": "322",
+      "chId": "1",
+      "VatName": "Koikne bhagavan pradhan",
+      "VatNameGuj": "કોઈકને ભગવાન પ્રધાન",
+      "VatFile": "ch01319.txt",
+      "VatNo": "322",
+      "VatNameEng": "Some had God predominant and s"
+    },
+    {
+      "VatId": "323",
+      "chId": "1",
+      "VatName": "Aaj divas sudhi to",
+      "VatNameGuj": "આજ દિવસ સુધી તો",
+      "VatFile": "ch01320.txt",
+      "VatNo": "323",
+      "VatNameEng": "Until today we have run worksh"
+    },
+    {
+      "VatId": "324",
+      "chId": "1",
+      "VatName": "Aapana dehma jiv",
+      "VatNameGuj": "આપણા દેહમાં જીવ",
+      "VatFile": "ch01321.txt",
+      "VatNo": "324",
+      "VatNameEng": "Along with the jiva, in our bo"
+    },
+    {
+      "VatId": "325",
+      "chId": "1",
+      "VatName": "Muktanandswami jeva",
+      "VatNameGuj": "મુક્તાનંદસ્વામી જેવા",
+      "VatFile": "ch01322.txt",
+      "VatNo": "325",
+      "VatNameEng": "If a great sadhu like Muktanan"
+    },
+    {
+      "VatId": "326",
+      "chId": "1",
+      "VatName": "Shreejimaharajno mat to",
+      "VatNameGuj": "શ્રીજીમહારાજનો મત તો",
+      "VatFile": "ch01323.txt",
+      "VatNo": "326",
+      "VatNameEng": "Maharaj’s wish is to encourage"
+    },
+    {
+      "VatId": "327",
+      "chId": "1",
+      "VatName": "Aa sadhu jeva ch0he teva",
+      "VatNameGuj": "આ સાધુ જેવા છે તેવા",
+      "VatFile": "ch01324.txt",
+      "VatNo": "327",
+      "VatNameEng": "If this Sadhu is known as he r"
+    },
+    {
+      "VatId": "328",
+      "chId": "1",
+      "VatName": "Vyavahar uparathi",
+      "VatNameGuj": "વ્યવહાર ઉપરથી",
+      "VatFile": "ch01325.txt",
+      "VatNo": "328",
+      "VatNameEng": "Vyavahārena sādhuhu.’] One’s"
+    },
+    {
+      "VatId": "329",
+      "chId": "1",
+      "VatName": "Aaj to motano sambandh ",
+      "VatNameGuj": "આજ તો મોટાનો સંબંધ",
+      "VatFile": "ch01326.txt",
+      "VatNo": "329",
+      "VatNameEng": "Today we are happy because we "
+    },
+    {
+      "VatId": "330",
+      "chId": "1",
+      "VatName": "Aa jivne koi divas ",
+      "VatNameGuj": "આ જીવને કોઈ દિવસ",
+      "VatFile": "ch01327.txt",
+      "VatNo": "330",
+      "VatNameEng": "Does this jiva ever become ol"
+    },
+    {
+      "VatId": "331",
+      "chId": "1",
+      "VatName": "Bhagavanne arthe apane",
+      "VatNameGuj": "ભગવાનને અર્થે આપણે",
+      "VatFile": "ch01328.txt",
+      "VatNo": "331",
+      "VatNameEng": "Whatever we have done and are "
+    },
+    {
+      "VatId": "332",
+      "chId": "1",
+      "VatName": "Gnanine bhagavane potano",
+      "VatNameGuj": "જ્ઞાનીને ભગવાને પોતાનો",
+      "VatFile": "ch01329.txt",
+      "VatNo": "332",
+      "VatNameEng": "God has called the spiritually"
+    },
+    {
+      "VatId": "333",
+      "chId": "1",
+      "VatName": "Purushne strina jevu het",
+      "VatNameGuj": "પુરુષને સ્ત્રીના જેવું હેત",
+      "VatFile": "ch01330.txt",
+      "VatNo": "333",
+      "VatNameEng": "A man cannot develop the same "
+    },
+    {
+      "VatId": "334",
+      "chId": "1",
+      "VatName": "Jadabhrat aa lokna",
+      "VatNameGuj": "જડભરત આ લોકના",
+      "VatFile": "ch01331.txt",
+      "VatNo": "334",
+      "VatNameEng": "Jadbharat did not engage hims"
+    },
+    {
+      "VatId": "335",
+      "chId": "1",
+      "VatName": "Shikshapatrino ch0hello shlok",
+      "VatNameGuj": "શિક્ષાપત્રીનો છેલ્લો શ્ર્લોક",
+      "VatFile": "ch01333.txt",
+      "VatNo": "335",
+      "VatNameEng": "It is said in the last shloka "
+    },
+    {
+      "VatId": "336",
+      "chId": "1",
+      "VatName": "Ek ruch0ivala be j",
+      "VatNameGuj": "એક રુચિવાળા બે જ",
+      "VatFile": "ch01334.txt",
+      "VatNo": "336",
+      "VatNameEng": "Two people with the same incli"
+    },
+    {
+      "VatId": "337",
+      "chId": "1",
+      "VatName": "Bhagavanne potana bhaktne",
+      "VatNameGuj": "ભગવાનને પોતાના ભક્તને",
+      "VatFile": "ch01335.txt",
+      "VatNo": "337",
+      "VatNameEng": "God wants to make his devotees"
+    },
+    {
+      "VatId": "338",
+      "chId": "1",
+      "VatName": "Shastrma kahyu ch0he",
+      "VatNameGuj": "શાસ્ત્રમાં કહ્યું છે ",
+      "VatFile": "ch01336.txt",
+      "VatNo": "338",
+      "VatNameEng": "It is said in the scriptures, "
+    },
+    {
+      "VatId": "339",
+      "chId": "1",
+      "VatName": "Purvno sanskar evu",
+      "VatNameGuj": "પૂર્વનો સંસ્કાર એવું ",
+      "VatFile": "ch01337.txt",
+      "VatNo": "339",
+      "VatNameEng": "One should not understand the "
+    },
+    {
+      "VatId": "340",
+      "chId": "1",
+      "VatName": "Aa kirtanma kahyu ch0he",
+      "VatNameGuj": "આ કીર્તનમાં કહ્યું છે",
+      "VatFile": "ch01338.txt",
+      "VatNo": "340",
+      "VatNameEng": "Continually remember the messa"
+    },
+    {
+      "VatId": "341",
+      "chId": "1",
+      "VatName": "Gnan gnanma pan",
+      "VatNameGuj": "જ્ઞાન જ્ઞાનમાં પણ",
+      "VatFile": "ch01339.txt",
+      "VatNo": "341",
+      "VatNameEng": "Knowledge is of different type"
+    },
+    {
+      "VatId": "342",
+      "chId": "1",
+      "VatName": "Agal je bhakt thai gaya",
+      "VatNameGuj": "આગળ જે ભક્ત થઈ ગયા",
+      "VatFile": "ch01340.txt",
+      "VatNo": "342",
+      "VatNameEng": "The devotees of the past canno"
+    },
+    {
+      "VatId": "343",
+      "chId": "1",
+      "VatName": "Katha kare, kirtan kare",
+      "VatNameGuj": "કથા કરે, કીર્તન કરે",
+      "VatFile": "ch01341.txt",
+      "VatNo": "343",
+      "VatNameEng": "An aspirant engages in discour"
+    }
+  ]

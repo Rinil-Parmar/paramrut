@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1918ના ભાદરવા સુદિ ચોથને દિવસે સ્વામીએ વાત કરી જે,
+ <br/>
+ (11) કોઈના હૈયામાં શાંતિનો લેશ નથી. એક શાહુકારના પાડોશમાં ગરીબ માણસ રહેતો, તે રોજ જેટલું રળે તેટલું વાવરી નાખે ને સારું સારું ખાય. પછી તેની સ્ત્રીએ શેઠાણીને કહ્યું જે, ‘બળ્યા તમારા પૈસા, અમે તો થોડું રળીએ પણ ખાઈ-પીને મોજ કરીએ છીએ ને તમે તો છાશ-રોટલા ખાઓ છો, તે તમારા પૈસા શું કામના?’ પછી શેઠાણીએ શેઠને વાત કરી. ત્યારે શેઠ કહે, ‘ઠીક, કાલે જોજે તે ખાતાં આળસી જાશે.’ પછી નવાણું રૂપિયાની કોથળી શેઠે તેના ઘરમાં રાતે નાખી, તે ઊઠયા ત્યારે કોથળી જડી ને ગણતાં નવાણું રૂપિયા થયા. ત્યારે કહે, ‘આમાં એક રૂપિયો નાખીએ તો સો પૂરા થાય.’ પછી બેય માણસ ચારના ભારા વેચી ફક્ત જારનો લોટ લઈ, દરરોજ ચાર આના બચાવવા માંડયા તે ચાર દહાડે રૂપિયો થયો એટલે કોથળીમાં નાખી સોનો મેળ કરી કહે, ‘આમાંથી ખાવું નહિ, આ તો મરણમૂડી છે. હવે કમાવું તેમાંથી ખાવું ને રોજ ચાર આના બચાવવા, એટલે આવતે વરસે બીજી કોથળી રૂપિયા સોની થાય.’ એમ લોભ વધ્યો, તે ખાતાં-પીતાં આળસી ગયાં. તેમ જ્યારે નવાણુંનો ધક્કો વાગે ત્યારે હૈયામાં શાંતિ ન રહે ને કેવળ દ્રવ્ય ભેળું કરવું એવું અનુસંધાન રહે ત્યારે કોણ ધનવાન ને કોણ નિર્ધન ?
+ <br/><br/>
+ધની ચ કો યો પરિતોષયુક્ત: ।
+<br/>
+(સુવાક્ય) 
+ <br/>
+ અર્થ :- ધનવાન કોણ ? જે સંતોષ યુક્ત હોય.
+ <br/>
+ જેને સંતોષ છે તે જ ખરો ધનવાન છે.
+ <br/><br/>
+ કોઈને દીકરે કરીને કે ખાધે કરીને શાંતિનો લેશ નથી. રોજ અન્નકૂટ કરે તો પણ શાંતિનો લેશ નથી. તે રાજા તથા શાહુકારને તો રાંધ્યામાં જ રાત-દિવસ જાય છે. માટે પ્રભુને ભજવા તેણે કોઈને પૂછવું નહિ ને સથવારો ગોતવા રહેવું નહિ. ભગવદીને સર્વે ભય છે. મુસલમાન કોઈથી વટલાય નહિ, તેમ વિમુખને કોઈ વાતનો વિચાર નથી. લોભ છે તે ધર્મલોપ કરવાનો કુહાડો છે, માટે લોભ જ્યાં લગી છે ત્યાં લગી બધા દોષ છે. સાધુ સત્સંગીએ બધા દોષ મૂક્યા ત્યારે દોષ રોવા બેઠા એટલે લોભ બોલ્યો જે, ‘હજી મને કાઢયો નથી; હું છું તો તમને બધાયને ધીરે ધીરે પાછા તેડાવીશ, તમે ફિકર કરશો મા; હું એક છું તો તમે બધાય છો.’
+ <br/><br/>
+લોભાત્કોધ: પ્રભવતિ લોભાત્કામ: પ્રજાયતે  । <br/>
+લોભાન્મોહશ્ચ નાશશ્ચ લોભ: પાપસ્ય કારણમ્‌  ।।
+ <br/>
+ (હિતોપ્રદેશ-મિત્રલાભ : શ્ર્લોક-27)
+ <br/>
+ અર્થ :- લોભમાંથી ક્રોધ જન્મે છે, લોભથી જ કામ ઉત્પન્ન થાય છે, લોભ વડે મોહ ને નાશ જન્મે છે. આમ લોભ જ પાપનું મૂળ છે.
+ <br/><br/>
+ બ્રહ્મજ્ઞાન રત નારી નર કરહિં ન દુસરી બાત;
+ <br/>
+ કોડી ઉલાગી લોભ વશ કરહિં વિપ્ર ગુરુ ઘાત.
+ <br/>
+ એમ અધર્મ સર્ગમાત્રનું મૂળ કારણ લોભ છે, તે માટે લોભ મૂકવો.
+ <br/><br/>
+ ગોવાળ હોય તે ઢોરને વાળી વાળીને <a href="#ex1" class="wordMeaning">નોરમાં</a> રાખે છે તેમ ઇન્દ્રિયું ઢોર જેવી છે તેને વાળી વાળીને ભગવાનની આજ્ઞામાં રાખવી ને ભગવાનના સ્વરૂપમાં જોડી દેવી. જીવના મનસૂબા તો શેખચલ્લીના જેવા છે તેમાં કાંઈ નીકળવાનું નથી. વગર પ્રયોજને વિચાર વિનાનું બોલે તેમાંથી દુ:ખ થાય છે, માટે વિચારીને બોલવું. રાજાના કુંવરને પૂર્વાશ્રમમાં બોલવામાંથી દુ:ખ પડેલ ને જન્મ ધરવો પડ્યો, તે સ્મૃતિ રહેવાથી જન્મ્યો ત્યારથી કાંઈ બોલ્યો જ નહીં. પણ એક વખતે દરબારમાં મોર બોલ્યો તેને મારી નાખ્યો. ત્યારે કુંવર કહે, ‘કાં બોલ્યો ?’ તે બે શબ્દ કુંવરને બોલતાં સાંભળી <a href="#ex1" class="wordMeaning">ખવાસે</a> <a href="#ex1" class="wordMeaning">હજૂરને</a> વધામણી ખાધી જે, ‘કુંવર સાહેબ બોલ્યા.’ એટલે તેને ઇનામ આપ્યું ને સાકર વહેંચી. પછી કુંવરને બોલાવવા માંડ્યા તો કુંવર બોલ્યા નહિ, એટલે રાજાને રીસ ચડી ને કહે, ‘આપણી મશ્કરી કરી; માટે ખવાસને તોપે દ્યો.’ પછી તે ખવાસ કુંવર પાસે આવ્યો ને કહેવા લાગ્યો જે, ‘બાપુ, ભલા થઈને એક વાર બોલો, નીકર મને તોપે દેશે.’ ત્યારે કુંવર કહે, ‘કાં બોલ્યો ? મોર બોલ્યો તો મોર મૂઓ ને તું બોલ્યો તો હવે તું મરીશ ને હું બોલું તો હું ય મરું, માટે બોલતો નથી.’ પછી કુંવર બોલ્યો નહિ એટલે ખવાસને તોપે દીધો. માટે બોલવું તે વિચારીને પ્રયોજન પ્રમાણે બોલવું. આનંદ બ્રહ્મચારી તથા ત્રિવિક્રમાનંદજીએ ગરાસિયાને ઉપદેશ કર્યો, તેથી અરધી રાતે ગામમાંથી કાઢયા. સર્વે વાતે કરીને થાય છે, વાતે કરીને બ્રાહ્મણ હોય તો વટલી જાય છે. 
+<br/>
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 નોરમાં= નિયમમાં-ધારાધોરણ પ્રમાણે, મર્યાદામાં, હારમાં. <br/>
+		2 ખવાસે= ખિજમતદારે, હજૂરિયા નોકરે.<br/>
+		3 હજૂર= ‘આપ’ અર્થનો દરબારી કે મુસ્લિમોમાં વપરાતો માનવાચક ઉદ્ગાર. <br/> 
+		
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

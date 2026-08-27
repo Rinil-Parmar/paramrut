@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (135) અહીંથી જગન્નાથ જાય કે કાશી જાય પછી જગન્નાથજીમાં મરે કે કાશીમાં મરે તો પણ ભૂત અહીં થાય. સૂરતના વાણિયાની જાન જતી હતી, તે વાણિયાં વહાણમાં મરી ગયાં. પણ સૂરતમાં નવાં ઘર કરેલાં તેમાં ભૂત થઈને રહ્યાં, પછી સૂરતમાં સાધુ ગયા તે કહે, ‘જૂનું ખંડિયેર હોય તો અમે ઊતરીએ.’ ત્યારે ભૂતવાળાં ઘર બતાવ્યાં, એટલે સાધુ ત્યાં ઊતર્યા. ગોડી, આરતી, ધૂન કરી બેઠા. ત્યાં બાયડી ભાયડા આઘે ટોળું વળી બેઠેલાં તેને દીઠાં. એટલે પૂછ્યું જે, ‘તમે કોણ છો ?’ ત્યારે કહે, ‘આ અમારાં ઘર છે ને ભૂત થયાં છીએ.’ ત્યારે સાધુ કહે, ‘આ ઘર અમને આપો તો તમારો મોક્ષ કરીએ.’ એટલે ભૂત તેમના સંબંધીમાં પેઠાં ને કહે, ‘ઘર સાધુને લખી આપો, નીકર તમારા બધાયના જીવ લેશું.’ પછી ઘર સાધુને લખી આપ્યાં, એટલે સાધુએ તેમને વર્તમાન ધરાવી મોક્ષ કર્યો. 
+ <br/><br/>
+ છોડવડીના ચારણની ભેંશું ચોર લઈ ગયા પછી ચારણ ગોતતો ગોતતો ગરાસિયાને ઘેર ઊતર્યો. ત્યાં તેની જ ભેંશું વાડામાં પૂરેલ તે ચારણનો અવાજ સાંભળીને રણકી. એટલે ચારણે જાણ્યું જે, ભેંશું આંહીં છે. પછી તો ભેંશુંને પણ છોડવડીનો <a href="#ex1" class="wordMeaning">ઝીંઝવો</a> સાંભરી આવ્યો, તે ખડ ખાય નહિ. અરધી રાતે ચારણ સાબદો થઈને ચાલ્યો ને વાડાની ઝાંપલી ઉઘાડી બોલ્યો જે, ‘લો બા, રામરામ છે.’ એટલે ભેંશું પણ તેનો સાદ સાંભળી વાડામાંથી પાડરડાં લઈને તેની વાંસે ચાલી નીકળી. ચારણે ઘેર જઈ કહ્યું જે, ‘ખીલા સાબદા કરો; ભેંશું આવે છે.’ ત્યાં તો ભેંશું આવી, એમ પશુને પણ દેશવાસના બંધાય છે, માટે આ સૌ ભેળા થયા છીએ તે વિચારવું જે દેહ, લોક, ભોગ ને પક્ષ તેમાંથી શેનું રટણ થાય છે ? 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 ઝીંઝવો= એ નામનું એક પોષક ઘાસ.
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

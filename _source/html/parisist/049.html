@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li> 
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">  ભીમનાથમાં રાંકાં  </h1>
+  અગણ્યોતેરા કાળમાં ભાલપ્રદેશમાં આવેલા ભીમનાથ મહાદેવની જગ્યામાં સદાવ્રત મળતું. નીલકા નદીની ઊંચી ભેખડ પર મંદિર હોઈ, ભૂખ્યાં-દુખ્યાં, ગરીબ-રંક લોકો નદીમાંથી કતાર કરતા ઉપર જતાં ને સદાવ્રતમાં કડછો થૂલું (ઘઉંનું ભડકિયું) મેળવતા. થૂલું આપનાર કંટાળે એટલે એક ધક્કો મારે તા બધા જ ઉપરાછાપરી પડતાં ગુલાંટ ખાતાં નદીની ગરમ રેતીમાં પડે, છતાં કડછો થૂલું અહીં જ મળશે એવો ખપ રાખી ફરી પાછા ચઢે. <a href="ch2095.html">(૨/૯૫)</a> 
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

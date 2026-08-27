@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">કારિયાણી ૪ - જીવ અને સાક્ષીના જાણપણાનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૭ના આસો વદિ ૮ અષ્ટમીને દિવસ દોઢ પહોર દિવસ ચઢતે શ્રીજીમહારાજ ગામ શ્રીકારિયાણી મધ્યે વસ્તાખાચરના દરબારમાં ઉત્તરાદે દ્વાર ઓરડાની ઓસરીએ વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “માંહોમાંહી પ્રશ્ન-ઉત્તર કરો.” ત્યારે ગોપાળાનંદ સ્વામીએ ભજનાનંદ સ્વામીને પૂછ્યું જે, “આ દેહને વિષે જીવનું જાણપણું કેટલું છે ને સાક્ષીનું જાણપણું કેટલું છે?” પછી ભજનાનંદ સ્વામીએ ઉત્તર કરવા માંડ્યો પણ થયો નહીં. ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “બુદ્ધિ છે તે આ દેહને વિષે નખશિખા પર્યંત વ્યાપીને રહી છે. તે બુદ્ધિ જે તે સર્વ ઇન્દ્રિયોની ક્રિયાને એકકાળાવછિન્ન જાણે છે. તે બુદ્ધિને વિષે જીવ વ્યાપીને રહ્યો છે, તે જીવના જાણપણાને કહેવે કરીને બુદ્ધિનું જાણપણું કહેવાયું. અને તે જીવને વિષે સાક્ષી રહ્યા છે, માટે સાક્ષીના જાણપણાને કહેવે કરીને જીવનું જાણપણું પણ કહેવાયું.”
+</p>
+<p class="text_gu">
+ત્યારે શ્રીજીમહારાજને નિત્યાનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! જે આ જીવને વિષે સાક્ષી રહ્યા છે, તે સાક્ષી જે હોય તે તો મૂર્તિમાન હોય, ને જે મૂર્તિમાન હોય તે વ્યાપક કેમ હોય?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “મૂર્તિમાન હોય તે પણ વ્યાપક હોય. જેમ અગ્નિદેવ છે તે પોતાના લોકને વિષે મૂર્તિમાન છે ને પોતાની શક્તિએ કરીને કાષ્ઠને વિષે રહ્યો છે; તેમ ભગવાન પણ પોતાના અક્ષરધામને વિષે મૂર્તિમાન થકા પોતાની અંતર્યામી શક્તિએ કરીને જીવોને વિષે વ્યાપીને રહ્યા છે ને મૂર્તિમાનની પેઠે ક્રિયાને કરે છે, માટે એને પણ મૂર્તિમાન જાણવા.”
+</p>
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

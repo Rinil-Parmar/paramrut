@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">વિભાંડક ૠષિ  અને  શૃંગી ૠષિ (એકલશૃંગી)</h1>
+ 
+એકવાર વિભાંડક ૠષિ એક કુંડમાં સમાધિ કરીને બેઠા હતા. તે સમયે સ્વર્ગની અપ્સરા ઉર્વશી ત્યાંથી પસાર થઈ. તેને જોતાં મુનિ સ્ખલિત થયા. જળ પ્યાસી એક હરણીએ જળ સાથે એ વીર્યનું પણ પાન કર્યું. આમ એ મૃગલીથી શૃંગીૠષિનો જન્મ થયો. વાસ્તવમાં એ મૃગલી દેવકન્યા હતી અને બ્રહ્માજીના શાપથી તે મૃગલી બની હતી, પરંતુ જ્યારે તે મુનિપુત્રને જન્મ આપશે ત્યારે તે શાપથી મુક્ત થશે એમ બ્રહ્માજીએ આશ્વાસન આપેલ. માતાની દેનરૂપે તેમના મસ્તકે એક શીંગ હતું. તેથી તેમનું નામ એકલશૃંગી - ૠષ્યશૃંગ પડ્યું. તેઓ પોતાના પિતા સાથે સદા વનમાં જ રહેતા. નગરમાં આવતા નહિ. તેમણે સ્ત્રી-પુરુષ કે સંસાર જોયો ન હતો.  તેઓ બ્રહ્મચારી જીવન જીવતા.
+<br/><br/>
+
+તે સમયે અંગદેશમાં દુષ્કાળ પડ્યો. રાજા લોમપાદે ચિંતિત થઈ બ્રાહ્મણોને વરસાદ થાય તેનો ઉપાય પૂછ્યો. ત્યારે બ્રાહ્મણોએ ઉપાય બતાવ્યો કે વનમાં રહેતા વિભાંડક ૠષિના પુત્ર ૠષ્યશૃંગને કોઈ પ્રકારે નગરમાં લાવો તો તેમના પુણ્યથી નગરમાં વરસાદ થાય. 
+<br/><br/>
+
+પણ, ૠષિને નગરમાં લાવવા કેમ ? કેમ કે પિતા વિભાંડકને ખબર પડે તો તે શાપ આપે. આથી સૌ ચિંતા કરવા લાગ્યા. ત્યારે એક ચતુર સુંદર વેશ્યાએ આ બીડું ઝડપ્યું. તે વનમાં જઈ સુંદર આલાપ સાથે ગાયન ગાવા લાગી. તેનો મધુર અવાજ સાંભળી શૃંગીૠષિ એ બાજુ આવ્યા અને સ્વર અને સ્ત્રીનું અનુપમ સૌંદર્ય જોયું અને પૂછ્યું કે આપ કોણ છે ? ૠષિને મન આ એક સરલ બાલક હતા. સ્ત્રી સુંદર હાવભાવ અને સુંદર હાસ્ય કરી તેની શિબિરમાં લઈ આવી. પૂર્વ આયોજન મુજબ ૠષિને સુંદર ફળો અને તેનો રસ પાયો અને આલિંગન આપ્યું. જેથી ૠષિ તેના હાવભાવ અને ચેષ્ટાથી આકર્ષિત થયા. આથી તે સ્ત્રી ચતુરાઈપૂર્વક શૃંગીૠષિને છેતરીને તેમને નગરમાં લઈ આવી. જ્યાં ૠષિએ નગરમાં પગ મૂક્યો કે તરત જ દુષ્કાળગ્રસ્ત નગરમાં સુખદાયી વર્ષા શરૂ થઈ. રાજાએ ભાવપૂર્વક ૠષિનું સ્વાગત કરી આદર સત્કાર કર્યો. તેમનું પૂજન કર્યું અને વરદાન માગ્યું કે, આપ અમારા પર પ્રસન્ન રહો અમને શાપ ન આપશો. ત્યારબાદ રાજા ૠષિને પોતાના અંતઃપુરમાં લઈ ગયા અને પોતાની પુત્રી શાંતા સાથે ૠષિનો વિવાહ કર્યો. 
+<br/><br/>
+
+આ બાજુ વિભાંડક ૠષિ ફળફુલ લઈને આશ્રમમાં આવ્યા તો તેમણે પુત્ર શૃંગીને ન જોતાં ચારે બાજુ શોધવા લાગ્યા, પરંતુ પુત્ર ન મળતાં તેઓ ક્રોધિત થયા. તેમને આશંકા થઈ કે આ આખું ષડ્‌યંત્ર રાજાએ ગોઠવ્યું લાગે છે. તેથી રાજાના નગરને બાળીને ભસ્મ કરવા ૠષિ ચંપાપુરી જવા નીકળ્યા. રસ્તામાં ભૂખ લાગતાં તેઓ ગોવાળોના નેસમાં ગયા. ગોવાળોએ તેમનું સ્વાગત કરી સુંદર ભોજન કરાવ્યું. પછી ૠષિએ તેમને પૂછ્યું કે, તમે કોના સેવક છો તથા આવી ભવ્ય સંપત્તિના માલિક કોણ છે ? ત્યારે ગોવાળોએ કહ્યું કે, આ બધો પ્રતાપ આપના પુત્રનો છે. આવા મધુર વચનો સાંભળી ૠષિ પ્રસન્ન થયા. આ રીતે દેશ-દેશમાં સત્કાર મેળવતા તેઓ ચંપાપુરી પહોંચ્યા તે દરમ્યાન તેમનો ક્રોધ શાંત થઈ ગયો. ત્યાં તેમણે સ્વર્ગ જેવી સુખ-સાહ્યબી ભોગવતા પોતાના પુત્રને જોયો અને સુંદર પુત્રવધૂ શાંતાને જોઈ. આથી તેઓ વિશેષ પ્રસન્ન થયા અને રાજાને કહ્યું કે, પૌત્રની પ્રાપ્તિ થાય એટલે શૃંગીને મારી પાસે પાછા વનમાં મોકલી આપજો એવું કહી વિભાંડક ૠષિ વનમાં ચાલ્યા ગયા. 
+
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

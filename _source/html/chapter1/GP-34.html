@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૩૪: ભગવાને કળ ચઢાવ્યાનું</h1>
+			<p class="text_gu">સંવત ૧૮૭૬ના પોષ વદિ ૧૧ એકાદશીને દિવસ સવારમાં શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં આથમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર દક્ષિણાદું મુખારવિંદ રાખીને વિરાજમાન હતા અને ધોળો ખેસ પહેર્યો હતો ને ધોળો ચોફાળ ઓઢ્યો હતો ને માથે ધોળી પાઘ બાંધી હતી ને ફૂલના હાર પહેર્યા હતા ને પાઘને વિષે પુષ્પના તથા હીરના તોરા લટકતા મૂક્યા હતા ને બે કાનની ઉપર પુષ્પના ગુચ્છ ખોસ્યા હતા અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના સત્સંગીની સભા ભરાઈને બેઠી હતી અને મુનિ વાજિંત્ર લઈને કીર્તન ગાતા હતા.</p>
+			<p class="text_gu">પછી શ્રીજીમહારાજ બોલ્યા જે, “કીર્તન રાખીને પ્રશ્ન-ઉત્તર કરો.” પછી બ્રહ્માનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “સર્વ સુખના ધામ અને સર્વ થકી પર એવા પરમેશ્વર છે તેમાં જીવની વૃત્તિ ચોંટતી નથી અને માયિક એવાં જે નાશવંત તુચ્છ પદાર્થ તેમાં જીવની વૃત્તિ ચોંટી જાય છે તેનું શું કારણ છે?” પછી તેનો ઉત્તર મુક્તાનંદ સ્વામી કરવા લાગ્યા પણ થયો નહીં. ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એ પ્રશ્નનો ઉત્તર સાંભળો, અમે કરીએ છીએ જે, જે દિવસથી પરમેશ્વરે આ જગતની સૃષ્ટિ કરી છે તે દિવસથી એવી કળ ચડાવી મૂકી છે જે ફરીને પરમેશ્વરને દાખડો કરવો પડે નહીં અને સંસારની જે વૃદ્ધિ કરવી તે પોતાની મેળે જ થયા કરે, એવો ફેર ચડાવી મૂક્યો છે. તે માટે સહજે જ સ્ત્રીમાં પુરુષને હેત થાય છે ને પુરુષમાં સ્ત્રીને હેત થાય છે અને એ સ્ત્રીથી ઊપજી જે પ્રજા તેમાં પણ સહજે જ હેત થાય છે. તે એ <b>હેતરૂપી જ ભગવાનની માયા છે. તે માયાના પ્રવાહમાં જે ન વહે તેની વૃત્તિ ભગવાનના સ્વરૂપમાં રહે છે</b>. માટે જે ભગવાનનો ભક્ત હોય તે માયિક પદાર્થને વિષે દોષબુદ્ધિ રાખીને વૈરાગ્યને પામે અને ભગવાનને સર્વ સુખમય જાણીને ભગવાનમાં વૃત્તિ રાખે. અને જો માયિક પદાર્થને વિષે વૈરાગ્ય ન રાખે ને ભગવાનના સ્વરૂપથી જુદા પડે તો શિવ, બ્રહ્મા અને નારદાદિક એ જેવા સમર્થ મુક્ત હોય તે પણ માયિક પદાર્થમાં તણાઈ જાય છે. તેટલા માટે ભગવાનને મૂકીને માયિક પદાર્થનો સંગ કરે તો જરૂર તેમાં જીવની વૃત્તિ ચોંટી જાય. તે સારુ પરમેશ્વરના ભક્તને પરમેશ્વર વિના બીજે ઠેકાણે પ્રીતિ રાખવી નહીં.”</p>
+			<p class="text_gu">પછી શ્રીજીમહારાજ બોલ્યા જે, “હવે મુક્તાનંદ સ્વામીને પ્રશ્ન કર્યાનો વારો આવ્યો તે પ્રશ્ન કરો.” પછી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “જીવને ભગવાનની પ્રાપ્તિ થવી તે અતિ દુર્લભ છે અને ભગવાનની પ્રાપ્તિ થઈ ત્યારે એથી બીજો મોટો લાભ પણ નથી ને તેથી આનંદ પણ બીજો નથી, તે એવા મોટા આનંદને મૂકીને તુચ્છ પદાર્થ માટે કેમ ક્લેશને પામે છે? એ પ્રશ્ન છે.” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, એનો ઉત્તર અમે કરીએ જે, <b>પરમેશ્વરના વચનને મૂકીને જ્યારે આડો-અવળો ડોલે છે ત્યારે ક્લેશને પામે છે અને જો વચનને વિષે રહે તો જેવો ભગવાનનો આનંદ છે તેવા આનંદમાં રહે છે</b>, અને જેટલું જે ભગવાનનું વચન લોપે છે તેટલો તેને ક્લેશ થાય છે. માટે ત્યાગીને જે જે આજ્ઞા કરી છે તે પ્રમાણે ત્યાગીને રહેવું અને ગૃહસ્થને જે પ્રમાણે આજ્ઞા કરી છે તે પ્રમાણે ગૃહસ્થને રહેવું ને તેમાં જેટલો ફેર પડે છે તેટલો ક્લેશ થાય છે. અને ત્યાગી હોય તેને અષ્ટ પ્રકારે સ્ત્રીનો ત્યાગ રાખવો ત્યારે તેનું બ્રહ્મચર્ય વ્રત પૂરું કહેવાય ને તેમાંથી જેને જેટલો ફેર પડે તેટલો ક્લેશ થાય છે, અને ગૃહસ્થને પણ બ્રહ્મચર્ય કહ્યું છે જે, પરસ્ત્રીનો ત્યાગ રાખવો તથા પોતાની સ્ત્રીનો પણ વ્રતને દિવસ ત્યાગ રાખવો ને ઋતુ સમે સ્ત્રીનો સંગ કરવો; એ આદિક જે જે ત્યાગીને અને ગૃહસ્થને નિયમ કહ્યા છે તેમાં જેટલો જેને ફેર પડે તેટલો તેને ક્લેશ થાય છે. અને ભગવાનથી જે વિમુખ જીવ હોય તેને જે સુખ-દુઃખ આવે છે તે તો પોતાને કર્મે કરીને આવે છે, અને <b>જે ભગવાનના ભક્ત હોય તેને જેટલું દુઃખ થાય છે તે તુચ્છ પદાર્થને અર્થે ભગવાનની આજ્ઞા લોપવે કરીને થાય છે ને જેટલું સુખ થાય છે તે ભગવાનની આજ્ઞા પાળવે કરીને થાય છે</b>.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>
+</html>

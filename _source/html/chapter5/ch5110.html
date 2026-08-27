@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (110) મહારાજને જ્યારે દેખીએ ત્યારે વાતું જ કરતા હોય. ને જ્ઞાની, પ્રીતિવાળો ને દાસપણું એ ત્રણ અંગ છે; તેમાં જ્ઞાની અધિક. તે ઉપર સ્તુતિ-નિંદાનું વચનામૃત (વચ.લો. 17) વંચાવ્યું ને કહ્યું જે, "પ્રગટ મૂર્તિ વિના બીજું આલંબન છે તે હિંમત દેવા સારુ છે. તે ઉપર ‘ભાગવત’નો શ્ર્લોક તથા કેટલીક સાખી બોલ્યા. ને લક્ષ્મીનારાયણ પધરાવ્યા ત્યારે તેનો પ્રકાશ મહારાજ આગળ કેવો જણાણો ? તો સૂર્યની આગળ દીવાના પ્રકાશ જેટલો જણાણો. ને ચાર અંગ છે તે તો અંગીની સહાયને અર્થે છે ને અંગી જે પ્રગટ મૂર્તિ તે ઘીને ઠેકાણે છે ને અંગ તો છાશને ઠેકાણે છે. ને સચ્ચિદાનંદસ્વામી, ગોપાળાનંદસ્વામીને એમ કહેતા જે, ‘જે આત્માની જ વાત કરે છે એ તો આત્મજ્ઞાની છે.’ ને પ્રગટ મૂર્તિનો જેને આશરો થયો છે, તેને હાથ સર્વે મુદ્દો આવ્યો છે, તેને કાંઈ કરવું રહ્યું નથી ને કાળ, કર્મ, માયાથી રહિત થયો છે. તે ઉપર વાત કરી જે, બકરીને સિંહની સહાય હતી તેથી કોઈથી નામ દઈ શકાયું નહીં. ત્યાં શ્ર્લોક બોલ્યા જે,
+ 
+ <br/><br/>
+નીચાશ્રયો ન કર્તવ્યઃ કર્તવ્યો મહદાશ્રયઃ । <br/>
+અજા સિંહપ્રસાદેન આરૂઢા ગજમસ્તકે ॥<br/>
+
+ (હિતોપદેશ જ્ઞાનદીપ : પાના નં. 93)
+<br/> 
+ અર્થ : નીચનો આશ્રય ન કરવો, આશ્રય મોટાનો જ કરવો. બકરી (સિંહનાં પગલાંનો આશ્રય કરી) સિંહની કૃપાથી હાથીના મસ્તક પર આરૂઢ થઈ.
+ <br/><br/>
+ તેમ પ્રગટ ભગવાન ને પ્રગટ સાધુની સહાયતાથી કાળ, કર્મ, માયા, કોઈ નામ દઈ શકે નહીં.”
+
+<br/>
+<a href="GP-33.html">વચ. ગ.પ્ર. 33 </a>
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

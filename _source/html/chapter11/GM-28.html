@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૨૮: જીવનદોરીનું, દયાળુ પ્રકૃતિનું</h1>
+			<p class="text_gu">સંવત ૧૮૭૯ના ફાગણ સુદિ ૨ દ્વિતીયાને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં પોતાને ઉતારે વેદિ ઉપર આથમણે મુખારવિંદે વિરાજમાન હતા ને ધોળો ખેસ પહેર્યો હતો અને ધોળી ચાદર ઓઢી હતી અને મસ્તક ઉપર શ્વેત પાઘ બાંધી હતી અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+			<p class="text_gu">પછી દવે પ્રાગજીએ કહ્યું જે, “શ્રીમદ્‌ભાગવત જેવો કોઈ ગ્રંથ નથી.” પછી શ્રીજીમહારાજ બોલ્યા જે, “શ્રીમદ્‌ભાગવત તો સારું જ છે પણ સ્કં‍દપુરાણને વિષે શ્રીવાસુદેવમાહાત્મ્ય છે તે જેવો કોઈ ગ્રંથ જ નથી; કાં જે, એ ગ્રંથને વિષે ધર્મ, જ્ઞાન, વૈરાગ્ય અને ભક્તિ તથા અહિંસાપણું એમનું અતિશય પ્રતિપાદન કર્યું છે.” એમ કહીને પછી શ્રીજીમહારાજ બોલ્યા જે, “વાલ્મીકિ-રામાયણને વિષે અને હરિવંશને વિષે અતિશય હિંસાનું પ્રતિપાદન કર્યું છે અને રઘુનાથજી પણ ક્ષત્રિયની પ્રકૃતિએ વર્ત્યા છે. અને રઘુનાથજીને વિષે શરણાગતવત્સલપણું તો ખરું, પણ જે શરણાગત હોય ને તે જો જરાય વાંકમાં આવ્યો હોય તો તેનો તત્કાળ ત્યાગ કરી દે; જો સીતાજીને માથે લગારેક લોકાપવાદ આવ્યો તો અતિ વહાલાં હતાં પણ તત્કાળ ત્યાગ કરી દીધો.” પછી મુક્તાનંદ સ્વામીએ કહ્યું જે, “એવી તો રામાનંદ સ્વામીની પ્રકૃતિ હતી.” પછી શ્રીજીમહારાજ બોલ્યા જે, “અમારી પ્રકૃતિ તો એવી નથી; અમારે તો પરમેશ્વરના ભક્ત ઉપર અતિશય દયા વર્તે છે. અને પાંડવોને વિષે પણ અર્જુનની પ્રકૃતિ બહુ દયાળુ હતી. અને પુરુષમાત્રને વિષે તો રામચંદ્રજી તથા અર્જુન એવો કોઈ પુરુષ નથી અને સીતાજી ને દ્રૌપદી એવી કોઈ સ્ત્રીમાત્રમાં સ્ત્રીઓ નથી. હવે અમે અમારી જે પ્રકૃતિ છે તે કહીએ છીએ જે, અમારો દયાળુ સ્વભાવ છે તો પણ જે હરિભક્તનો દ્રોહી હોય તેનો તો અમારે અભાવ આવે છે. અને હરિભક્તનું ઘસાતું જો કોઈ બોલ્યો હોય અને એને જો હું સાંભળું, તો તે સાથે હું બોલવાને ઘણો ઇચ્છું પણ બોલવાનું મન જ થાય નહીં. અને જે ભગવાનના ભક્તની સેવા-ચાકરી કરે તે ઉપર તો અમારે અતિશય રાજીપો થઈ જાય છે. અને અમારી પ્રકૃતિ એમ છે જે, થોડીક વાતમાં કુરાજી પણ ન થઉં અને થોડીક વાતમાં રાજી પણ ન થઉં. અને જ્યારે જેમાં રાજી થયાનો કે કુરાજી થયાનો સ્વભાવ બહુ દિવસ સુધી જોઉ છું ત્યારે રાજીપો ને કુરાજીપો થાય છે, પણ કોઈના કહ્યા-સાંભળ્યા થકી કોઈની ઉપર રાજીપો કે કુરાજીપો થતો નથી. અને જેનો જેટલો ગુણ મારા મનમાં જણાઈ જાય છે તેટલો તેનો ગુણ આવે છે. અને મારે તો એ જ અંગ છે જે, ‘જો ભગવાનનો ખરેખરો ભક્ત હોય તો હું તો તે ભગવાનના ભક્તનો પણ ભક્ત છું અને હું ભગવાનના ભક્તની ભક્તિ કરું છું,’ એ જ મારે વિષે મોટો ગુણ છે. અને એટલો ગુણ જેમાં ન હોય તો તેમાં કોઈ જાતની મોટ્યપ શોભે નહી.</p>
+			<p class="text_gu">અને ભગવાનના ભક્તનો જેને જેને અભાવ આવ્યો છે, તે અતિશય મોટા હતા તો પણ પોતાની પદવી થકી પડી ગયા છે. અને જેનું રૂડું થાય છે તે પણ ભગવાનના ભક્તની સેવામાંથી જ થાય છે અને જેનું ભૂંડું થાય છે તે પણ ભગવાનના ભક્તના દ્રોહમાંથી જ થાય છે. અને વળી <b>જીવને ભગવાનને રાજી કર્યાનો ઉપાય તો મન-કર્મ-વચને ભગવાનના ભક્તની સેવા કરવી એ જ છે, અને ભગવાનના ભક્તનો દ્રોહ કરવો એ જ ભગવાનને કુરાજી કરવાનો ઉપાય છે</b>. માટે અમારો તો એ જ સિદ્ધાંત છે જે, ભગવાનનો રાજીપો હોય ને ભગવાનના ભક્તનો સંગ હોય તો ભગવાનથી અનંત વર્ષ સુધી છેટે રહીએ તો પણ કાંઈ મનમાં શોક ન થાય અને ભગવાનની પાસે રહેતા હોઈએ ને જો ભગવાનનો રાજીપો ન હોય તો તેને હું સારું નથી જાણતો. અને સર્વ શાસ્ત્રનું પણ એ જ સાર છે જે, ‘ભગવાનનો જેમ રાજીપો હોય તેમ જ કરવું.’ અને જેમ ભગવાનનો રાજીપો હોય તેમ જે ન કરે તેને ભગવાનના માર્ગ થકી પડ્યો જાણવો. અને જેને ભગવાન ને ભગવાનના ભક્તનો સંગ છે ને ભગવાનનો રાજીપો છે, ને તે જો મૃત્યુલોકમાં છે તો પણ ભગવાનના ધામમાં જ છે; કેમ જે, જે સંતની સેવા કરે છે ને ભગવાનના ગમતામાં છે તે ભગવાનને સમીપે જઈને જ નિવાસ કરશે. અને જો ભગવાનના ધામમાં છે ને ભગવાનનો રાજીપો નથી ને ભગવાનના ભક્ત ઉપર ઈર્ષ્યા છે, તો તે ભક્ત ભગવાનના ધામમાંથી પણ જરૂર હેઠો પડશે. માટે <b>અમારે તો ભગવાનનો રાજીપો થયા સારુ જન્મોજન્મ ભગવાનના ભક્તની જ સેવા કરવી છે, અને જેમ અમારો નિશ્ચય છે તેમ જ તમારે પણ નિશ્ચય કરવો</b>.” પછી મુક્તાનંદ સ્વામી આદિક જે સર્વે હરિભક્ત હતા તેમણે હાથ જોડીને કહ્યું જે, “હે મહારાજ! અમારે પણ એ જ નિશ્ચય રાખવો છે.” એમ કહીને સર્વે હરિભક્ત વિનતિએ સહિત શ્રીજીમહારાજને પગે લાગ્યા. પછી વળી શ્રીજીમહારાજ બોલ્યા જે, “આ વાર્તા જે અમે કરી છે તે કેવી છે? તો <b>વેદ, શાસ્ત્ર, પુરાણ આદિક જે જે કલ્યાણને અર્થે પૃથ્વીને વિષે શબ્દમાત્ર છે, તે સર્વેનું અમે શ્રવણ કરીને તેનું સાર કાઢીને આ વાર્તા કરી છે. તે પરમ રહસ્ય છે ને સારનું પણ સાર છે. અને પૂર્વે જે જે મોક્ષને પામી ગયા છે ને હવે જે જે પામશે ને હમણાં જે જે મોક્ષને માર્ગે ચાલ્યા છે, તે સર્વેને આ વાર્તા છે તે જીવનદોરીરૂપ છે</b>.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

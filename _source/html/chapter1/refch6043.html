@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૪૩) દેવની માયાએ જુઓને મોહ પમાડ્યા છે જે, ગાડી, પુસ્તક, ચેલો ને હવેલી એને વિશે માલ મનાણો છે; પણ તેણે કરીને શું થાશે ? બંધન થાશે, માટે એમાં કાંઈ માલ નથી.
+ <br/><br/>
+ રાજ ભયો કહાં કાજ સર્યો, મહારાજ ભયો કહાં લાજ બઢાઈ,
+ <br/>
+ સાહ ભયો કહાં વાત બડી, પતસાહ ભયો કહાં આન ફિરાઈ;
+ <br/>
+ દેવ ભયો તોઉ કાહ ભયો, અહંમેવ બઢો તૃષ્ણા અધિકાઈ,
+ <br/>
+ બ્રહ્મમુનિ સત્સંગ વિના, સબ ઔર ભયો તો કહા ભયો ભાઈ.
+ <br/>
+ (કીર્તન મુક્તાવલિ : નાશવંત દેહ વિશે)
+ <br/><br/>
+ ત્યારે શું <a href="../parisist/022.html">જડભરત</a> રાજ્ય મૂકીને મૃગલામાં બંધાણા એ કાંઈ સાધુનો મારગ છે? અને આસન સારુ, પથારી સારુ, ચેલા સારુ, ગાડી સારુ ને એવાં તુચ્છ પદાર્થ સારુ કરીને મોટી ખોટ ખાવી નહિ ને સર્વે દોષ રહિત થઈને રૂડા સાધુને સેવીને સાધુતા શીખવી એમાં જ માલ છે; નીકર તો મોટપ ને માન સારુ કરીને ગાડી કે ઘોડું ન મળે તો દુ:ખી થાવું પડે, એમાં શું ? એમ કહીને બોલ્યા જે,
+ <br/><br/>
+ મોટા થાવાનું મનમાં રે, દલમાં ઘણો ડોડ;
+ <br/>
+ તેવા ગુણ નથી તનમાં રે, કાં કરે તું કોડ.
+ <br/>
+ ભૂંડા ઘાટ ઊઠે છે ભીતરે રે, જે ન કહેવાય બા’ર,
+ <br/>
+ એહ વાતનો તારે અંતરે રે, નથી નર વિચાર.
+ <br/>
+ (કીર્તન મુક્તાવલિ : ૧૦૫૩)
+ <br/><br/>
+ એવું છે. માટે જ્ઞાન શીખવું, તેણે કરીને કોઈ વાતની અપેક્ષા ન રહે ને જો જ્ઞાન ન હોય તો મૂરખાઈએ કરીને અસદ્યુક્તિયું ઉઠાવે છે. તે અમે સૌ ગોપાળાનંદસ્વામી, કૃપાનંદસ્વામી એ આદિક મોટા મોટા સાધુ, પછી નિવૃત્તિ ન આવે તે સારુ સવારના પહોરમાં નાહ્યા વગર કામ, ક્રોધાદિકને ખોદીને ગોષ્ઠિ કરીએ. ત્યારે એક જણ કહે જે, ‘જુઓને <a href="#ex1" class="wordMeaning">મસાણિયા</a> બેઠા છે, તે શું કરે છે ? તે <a href="#ex1" class="wordMeaning">ઝાંપડાં</a>ને સંભારે છે ને ‘શિક્ષાપત્રી’ તો પાળતા નથી.
+ <br/><br/>
+બ્રાહ્મે મુહૂર્તે શયનં વિહાય નિજસ્વરુપં હૃદિ ચિન્તયિત્વા  । <br/>
+સ્નાનં વિશુદ્ધં પ્રચુરાભિરદ્રિ: શ્રીનિલકણ્થં હૃદિ ચિન્તયામિ ॥
+
+<br/>
+ (શ્રી નીલકંઠ ચિન્તનાષ્ટકમ્)
+ <br/>
+ અર્થ : બ્રાહ્મ મુહૂર્તમાં શય્યાનો (નિદ્રાનો) ત્યાગ કરી પોતાના સ્વરૂપનું હૃદયમાં ચિંતન - ધ્યાન કરી, અધિક જળ વડે સ્વચ્છ સ્નાન કરી શ્રી નીલકંઠનું હું હૃદયમાં ચિંતન કરું છું.
+ <br/><br/>
+ ને નાહ્યા-ધોયા વગર સવારના પહોરમાં લઈ બેઠા છે.’ ત્યારે બીજા નવા જાણે જે વાત ખરી છે, આજ્ઞા <a href="#ex1" class="wordMeaning">લોપતલ</a> તો આ સર્વે છે. ને અમે આત્મનિષ્ઠા ને ઉપાસનાની વાતું કરીએ તે તો સૂક્ષ્મ ભક્તિ છે ને સ્થૂળ ભક્તિમાં તો ગૌણતા આવે, તે સારુ બીજા કહેશે, આ ‘શિક્ષાપત્રી’-લોપતલ છે ને શાસ્ત્રોને ખોટાં કરીને અવગુણ ઘાલે છે. ત્યારે જુઓને ! એ તે કેમ સમજવું જે, રાત લઈને ભગાય છે, એવું હોય એ વાતનું એને કાંઈ નથી, એમ મૂરખને કાંઈ ગતિ નથી; પણ આપણે શું ભક્તિ નથી કરતા ? ને ખોટી વાતું કહીએ છીએ ? માટે સો મૂરખનો ત્યાગ કરીને એક વિવેકીને ગ્રહણ કરવો.
+ <br/><br/>
+ ગિરિસેં ગિરિયે ધાય જઈને સમુદ્રમાં બૂડિયે,
+ <br/>
+ મરીએ મહા વિખ ખાય પણ મૂરખ મિત્ર ન કીજિયે.
+ 
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 મસાણિયા= સ્મશાનમાં રહેનારા. <br/>
+2 ઝાંપડાં= ભૂતડાં. <br/>
+3 લોપતલ= લોપનાર, પાલન નહિ કરનાર.  
+
+</div>
+
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

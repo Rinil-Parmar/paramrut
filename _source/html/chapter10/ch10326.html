@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સ્વામીએ બપોરે વાત કરી જે,
+ <br/>
+ (326) બધું વટલેલું છે માટે જેટલો ઉદ્યમ હોય તે કરવો ને પછી પ્રભુ ભજવા. લખતાં લખતાં થાક લાગે તો સૂઈ જવું, ને સૂતાં સૂતાં ભજન કરવું. વળી ઊઠીને સરસર લખવું ને સમાગમ કરવો. બે મહિના ઘેર રહેવું ને વળી આવવું. આપણું જ્ઞાન કોઈ લઈ લે એમ નથી. કોઈને કાંઈ આપવું નહિ; કાંઈ હોય તો પાસે રાખી મૂકવું. રજ, તમ હોય તો પણ ધ્યાન કરવું ને કથામાં જીવ વળગાડી દેવો ને કીર્તનમાં તો આફુરડી મૂર્તિ સાંભરે, માટે કીર્તન સાંભળવાનો અભ્યાસ રાખવો. મોટા કહેવાતા હોય, પણ જુઓ તો દ્રવ્યની જ વાત થાતી હોય. જેની ઉપાસના હશે ત્યાં જ જવાશે ને ત્યાં તો વિષયનું ખંડન નથી. અહીં જેના ભેળી સુવાણ્ય થાતી નથી, ત્યારે મરીને તેના ભેળું કેમ રહેવાશે ? માટે જેમ કોઈક ગામ ઉચાળો લઈ જવો હોય ત્યારે તે ગામના માણસ સાથે બગાડ્યું જોઈશે ? તેમ મરીને જેના ભેળું રહેવું છે, તેની સાથે આંહીં બગાડ્યું જોઈશે ? જેમ ભગવાન મળવા કઠણ છે, તેમ આ સાધુનો જોગ મળવો કઠણ છે; તેમ જ વિષય મૂકવા કઠણ છે.
+ <br/><br/>
+ જન્મ, મરણ ને ગર્ભવાસનાં દુ:ખનું જેને અનુસંધાન હોય તેને વિષય ઝેર જેવા થઈ જાય. કામદારનો દીકરો રાજાના ઘરમાં ઘર્યો હતો, તે વખતે રાજા બહારથી આવ્યા, ત્યારે કામદારનો દીકરો કહે, ‘હવે હું ક્યાં જાઉં ?’ ત્યારે રાણી કહે, ‘તને ને મને બેયને રાજા મારી નાખશે, માટે આ પાયખાનામાં પડ.’ પછી તે પાયખાનામાં પડ્યો ને સવારે ભંગિયે તેને નદીએ લઈ જઈ ધોઈને સાફ કર્યો ત્યારે તેણે પોતાના હાથનો વેઢ ભંગિયાને આપ્યો ને કહે જે, ‘તું બોલીશ મા.’ એમ કહીને ઘેર ગયો. તે હવે પાછો કોઈ દિવસ તે કામ માટે ત્યાં જાય ખરો ? બીજે દિવસ રાણીએ તેને બોલાવવા માંડ્યો, તો કહે, ‘હવે <a href="#ex1" class="wordMeaning">પોખરામાં</a> પડવા નહિ આવું.’ તેમ જેને ગર્ભવાસના દુ:ખનું અનુસંધાન હોય તે ફરી ગર્ભવાસમાં જાવું પડે એવું કર્મ કરે જ નહિ; માટે મનને કહ્યે એવી કોઈ પણ ક્રિયા ન કરવી. જેવા મહારાજ છે ને જેવા આ સંત છે તેવા જણાતા નથી, એટલે સત્સંગનું સુખ આવતું નથી; માટે જેવા છે તેવા જાણવા. બીજાં જડ પદાર્થ, ઝાડ, મેડી, હવેલી, સ્ત્રી, છોકરું, ઢોર વગેરે જડને જુએ છે તે જડભાવને પામી જાય છે; તેમ ભગવાન તથા આ સાધુને જુએે છે, તે બ્રહ્મરૂપ થઈ જાય છે; માટે ભગવાન તથા આ સાધુને જ જોવા ને તેનું જ મનન કરવું. 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+    1 પોખરામાં= પાયખાનામાં વચલી ખુલ્લી બેઠકમાં- મળ નીચે પડે ત્યાં. 
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

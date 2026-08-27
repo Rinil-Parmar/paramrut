@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+								<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">લોયા ૯: ધર્માદિક ચારને ઊપજ્યાના હેતુનું</h1>
+
+			<p class="text_gu">
+સંવત ૧૮૭૭ના માગશર સુદિ ૬ છઠને દિવસ શ્રીજીમહારાજ ગામ શ્રીલોયા મધ્યે સુરાભક્તના દરબારમાં વિરાજમાન હતા ને ધોળી છીંટની ડગલી પહેરી હતી તથા ધોળો સુરવાળ પહેર્યો હતો તથા ધોળો ફેંટો મસ્તકે બાંધ્યો હતો ને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> <p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “સર્વે પરમહંસ પરસ્પર પ્રશ્ન-ઉત્તર કરો.” ત્યારે આત્માનંદ સ્વામીએ અખંડાનંદ સ્વામીને પ્રશ્ન પૂછ્યો જે, “વૈરાગ્ય, જ્ઞાન, ભક્તિ અને ધર્મ એ ચારને ઊપજ્યાનો હેતુ શો છે?” પછી તેનો ઉત્તર શ્રીજીમહારાજે કર્યો જે, “વૈરાગ્ય તો એમ ઊપજે જે, જો કાળનું સ્વરૂપ જાણ્યામાં આવે. તે કાળનું સ્વરૂપ તે શું? તો નિત્ય પ્રલયને જાણે, નૈમિત્તિક પ્રલયને જાણે, પ્રાકૃત પ્રલયને જાણે અને આત્યંતિક પ્રલયને જાણે, તથા બ્રહ્માદિક સ્તંબ પર્યંત સર્વ જીવના આયુષને જાણે અને એમ જાણીને પિંડ-બ્રહ્માંડ સર્વ પદાર્થને કાળનું ભક્ષ સમજે ત્યારે વૈરાગ્ય ઊપજે. જ્ઞાન તો એમ થાય જે, જો બૃહદારણ્ય, છાંદોગ્ય, કઠવલ્લી આદિક જે ઉપનિષદ તથા ભગવદ્‌‎ગીતા તથા વાસુદેવમાહાત્મ્ય તથા વ્યાસસૂત્ર ઇત્યાદિક ગ્રંથનું સદ્‌ગુરુ થકી શ્રવણ કરે તો જ્ઞાન ઊપજે. અને ધર્મ તો એમ ઊપજે, જો યાજ્ઞવલ્ક્યસ્મૃતિ, મનુસ્મૃતિ, પરાશરસ્મૃતિ, શંખલિખિતસ્મૃતિ ઇત્યાદિક સ્મૃતિનું શ્રવણ કરે તો ધર્મ ઊપજે ને તેમાં નિષ્ઠા આવે. અને ભક્તિ એમ ઊપજે જે, ભગવાનની જે વિભૂતિઓ છે તેને જાણે. તે કેમ જાણે? તો ખંડ-ખંડ પ્રત્યે ભગવાનની મૂર્તિઓ જે રહી છે તેનું શ્રવણ કરે તથા ભગવાનનાં ગોલોક, વૈકુંઠ, બ્રહ્મપુર, શ્વેતદ્વીપાદિક ધામ છે તેને સાંભળે તથા જગતની ઉત્પત્તિ-સ્થિતિ-પ્રલયરૂપ જે ભગવાનની લીલા તેને માહાત્મ્યે સહિત સાંભળે તથા રામ-કૃષ્ણાદિક જે ભગવાનના અવતાર તેની જે કથાઓ તેને હેતે સહિત સાંભળે, તો ભગવાનને વિષે ભક્તિ ઊપજે. અને એ ચારમાં જે ધર્મ છે તે તો કાચી બુદ્ધિ હોય ને પ્રથમ જ કર્મકાંડરૂપ જે સ્મૃતિઓ તેનું શ્રવણ કરે તો ઊપજે, અને જ્યારે ધર્મને વિષે દ્રઢતા થાય ત્યાર પછી ઉપાસનાના ગ્રંથનું શ્રવણ કરે, ત્યારે એને જ્ઞાન, ભક્તિ, વૈરાગ્ય એ ત્રણેય ઊપજે; એવી રીતે એ ચારને ઊપજ્યાના હેતુ છે.”
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

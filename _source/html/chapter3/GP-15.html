@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૧૫: ધ્યાન કરવામાં કાયર ન થવાનું</h1>
+			<p class="text_gu">
+			સંવત ૧૮૭૬ના માગશર વદિ ૩ ત્રીજને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ સર્વ સાધુ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>			
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજે એમ વાર્તા કરી જે, “જેના હૈયામાં ભગવાનની ભક્તિ હોય તેને એવી વૃત્તિ રહે જે, ‘ભગવાન તથા સંત તે મને જે જે વચન કહેશે તેમ જ મારે કરવું છે;’ એમ તેના હૈયામાં હિંમત્ય રહે. અને, ‘આટલું વચન મારાથી મનાશે અને આટલું નહીં મનાય,’ એવું વચન તો ભૂલ્યે પણ ન કહે. અને વળી ભગવાનની મૂર્તિને હૈયામાં ધારવી તેમાં શૂરવીરપણું રહે. અને મૂર્તિ ધારતાં ધારતાં જો ન ધરાય તો પણ કાયર ન થાય અને નિત્ય નવી શ્રદ્ધા રાખે. અને મૂર્તિ ધારતાં જ્યારે ભૂંડા ઘાટ-સંકલ્પ થાય અને તે હઠાવ્યા હઠે નહીં, તો ભગવાનનો મોટો મહિમા સમજીને પોતાને પૂર્ણકામ માનીને તે સંકલ્પને ખોટા કરતો રહે અને ભગવાનના સ્વરૂપને હૈયામાં ધારતો રહે. તે ધારતાં ધારતાં દસ વર્ષ થાય અથવા વીસ વર્ષ થાય અથવા પચીસ વર્ષ થાય અથવા સો વર્ષ થાય તો પણ કાયર થઈને ભગવાનના સ્વરૂપને ધારવું તે મૂકી દે નહીં; કેમ જે, શ્રીકૃષ્ણ ભગવાને ગીતામાં કહ્યું છે જે, ‘અનેકજન્મસંસિદ્ધસ્તતો યાતિ પરાં ગતિમ્ ।’ તે માટે એમ ને એમ ભગવાનને ધારતો રહે. એવું જેને વર્તતું હોય તેને એકાંતિક ભક્ત કહીએ.”
+</p>
+			
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

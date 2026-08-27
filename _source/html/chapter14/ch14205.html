@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (205) કોઈ સર્વસ્વ અર્પણ કરી દે તેવો હોય, દેહને ન ગણે તેવો હોય, ઇન્દ્રિયું-અંત:કરણને ન ગણે તેવો હોય, પણ ત્રણ દેહના ભાવ ટાળી નાખે એવો ન જડે. માટે દેહના ભાવ મૂક્યા વિના ધામમાં નહિ જવાય. આ વાતું હૈયામાં ઠરે ને પોતાને બ્રહ્મરૂપનું નક્કી થાય ત્યારે નિર્વિઘ્ને ધામમાં જવાય. જીવતાં જ મરવા શીખે ને મરવા ચાલે તેને આ વાત થાય. મહારાજનો અવતાર મૂળ અજ્ઞાન જે કારણ શરીર તેનો નાશ કરવા સારુ છે. કારણ શરીરરૂપ બ્રહ્મહત્યા જીવને વળગી છે, તેણે કરોડ જન્મ ધરાવ્યા છે. તે કારણ શરીર ટાળ્યાનો ઉપાય <a href="K-12.html">કારિયાણીના 12માં</a> વચનામૃતમાં કહ્યો છે જે, મહારાજનું ધ્યાન ને મહારાજનું વચન હૃદયમાં ધારે તો જ કારણ શરીર ટળી જાય; માટે એ વાતનું બીજ હૈયામાં રાખવું. એ જ્ઞાનનો લેશ હૈયામાં હોય ને એનું શ્રવણ ને મનન હોય તો અરધું દેહ શૂન્ય જેવું થઈ જાય ને પછી દૃઢ થાય ને દોષમાત્ર ટળી જાય, માટે સાધુ થાવું ને ગુણ પર થાવું, સાધુ થયા વિના તો ગુણ પર થાવાય જ નહીં. તે રામાનંદસ્વામીનો એક શિષ્ય દશ વરસથી સાધુ થયેલ હતો, પણ ‘કાનો વાઘેલો’ મટ્યો નહિ. માટે આ જ્ઞાન શીખ્યા વિના મહારાજની આજ્ઞા પળે નહિ. ખરેખરી સાધુતા આવે નહિ, તો મારું-તારું પણ મટે નહિ. <br/><br/>
+ 
+ એકલડા કેમ રહેવાય તમ વિના વાલાજી ! <br/><br/>
+ 
+ એ ગાયું; ત્યારે મહારાજ કહે, ‘બીજો પુરુષ કરો એટલે રહેવાશે!’ માટે એવાં કીર્તન ગાવાં નહિ. પણ પોતાના આત્મામાં મહારાજને ધારવા એટલે એકલા કહેવાય જ નહીં. માટે જેમાં મહારાજની મૂર્તિનું વર્ણન આવે તેવાં કીર્તન ગાવાં ને મહારાજની મૂર્તિ સામું જોઈ રહેવું. ધ્યાન, ભજન ને આજ્ઞા એ કારણ શરીર ટાળ્યાનો ઉપાય છે.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

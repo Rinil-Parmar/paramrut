@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			  <li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (59) ત્રણ દેહથી પોતાનું સ્વરૂપ જુદું માનવું, મહારાજને ભગવાન જાણવા, પુરુષોત્તમ જાણવા, સર્વેના નિયંતા જાણવા, પરબ્રહ્મ જાણવા, <a href="#ex1" class="wordMeaning">કર્તુમ</a>, અકર્તુમ્ ને <a href="#ex1" class="wordMeaning">અન્યથાકર્તુમ્</a> જાણવા ને એવી ઉપમા બીજાને દેવાય નહીં. એ તો મહારાજ એકને જ દેવાય ને બીજા સર્વે પુરુષ છે ને મહારાજ પુરુષોત્તમ છે. ને અનેક કોટિ પુરુષ છે ને અનેક કોટિ ઈશ્ર્વર છે ને <a href="#ex1" class="wordMeaning">અનેક કોટિ અક્ષર</a> છે. ત્યારે વાઘાખાચરે પૂછ્યું જે, ‘અક્ષર એક કહેવાય છે ને અનેક કોટિ કેમ કહો છો ?’ ત્યારે બોલ્યા જે, ‘ધામરૂપ મૂળઅક્ષર એક જ છે ને બીજા અનેક કોટિ અક્ષરમુક્ત છે.’ પછી હરિશંકરભાઈએ પૂછ્યું જે, ‘ધામરૂપ અક્ષર મૂર્તિમાન છે તે શી (કઈ) રીતે છે ?’ ત્યારે કહ્યું જે, ‘મૂર્તિમાન આપણા જેવા જ છે ને ભગવાન જેવા જ કહેવાય ને ભગવાનથી કામ થાય તેટલું તેમનાથી થાય છે. ને પુરુષપ્રકૃતિથી પર અક્ષરમુક્તો છે અને એ સર્વેથી પર મૂળઅક્ષર છે તેથી તે ભગવાન જેવા છે ને માત્ર એક પુરુષોત્તમના જ દાસ છે.’
+ <br/><br/>
+ ફરી પૂછ્યું જે, ‘પુરુષોત્તમ આંહીં અવતાર ધરીને આવ્યા છે તે ભેળા ધામરૂપ અક્ષર આંહીં આવ્યા છે કે નહિ ?’ ત્યારે ઉત્તર કર્યો જે, ‘પુરુષોત્તમ ભેળા આંહીં આવ્યા છે ને પુરુષોત્તમની આજ્ઞાએ કરીને અનેક જીવોનાં કલ્યાણને અર્થે આંહીં જ રહ્યા છે.’ ફરી પૂછ્યું જે, ‘ધામરૂપ અક્ષર બીજા અક્ષર કોટિને લીન કરે તે શી રીતે છે ?’ તેનો ઉત્તર સ્વામીએ કર્યો જે, ‘લીન કરવાને એ સમર્થ છે તે લીન કરવા હોય તો કરે. ને અક્ષરધામના મુક્ત ત્રણ પ્રકારે શુભ સંકલ્પે કરીને દેહ ધરે છે; એક આજ્ઞાથી, પોતાની ઇચ્છાથી ને વાસનાથી. તેમાં ઇચ્છાથી જે આવે તે અનેક જીવોનાં કલ્યાણ કરીને પાછા જાય ને વાસનાથી જે આવ્યા હોય તે <a href="../parisist/043.html">પ્રિયવ્રત</a> જેવા થાય.’
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કર્તુમ-અકર્તુમ્= સામાન્ય રીતે કરવા, ન કરવાને સમર્થ.  <br/>
+2 અન્યથાકર્તુમ્= ઐશ્ર્વર્ય વાપરીને સામાન્ય રીતે હોય એનાથી જુદી રીતે કરવાને સમર્થ. <br/>
+3 અનેક કોટિ અક્ષર= મૂળઅક્ષરના સાધર્મ્યને પામેલા અનંત અક્ષરમુક્તો.  
+
+
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

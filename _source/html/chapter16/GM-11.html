@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		
+
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li> 
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૧૧ - કર્મમાત્ર ભક્તિરૂપ થયાંનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૭૮ના શ્રાવણ વદિ ૫ પંચમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિર આગળ લીંબડાના વૃક્ષ હેઠે ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજ બોલ્યા જે, “જેટલા ગ્રંથ છે તે સર્વે ગ્રંથોને સાંભળીને કેટલાક જે જીવ છે તે એ ગ્રંથોને ધર્મ, અર્થ ને કામ પર જાણે છે. પછી એમ જાણીને પોતે પણ ધર્મ, અર્થ ને કામ તેને જ અર્થે યજ્ઞ-વ્રતાદિક શુભ કર્મ કરે છે. પછી તે કર્મનું ફળ દેવલોક અથવા બ્રહ્મલોક અથવા મૃત્યુલોક, તેને વિષે ભોગવીને પછી ત્યાંથી પડે છે ને નરક-ચોરાસીમાં જાય છે. માટે જે જીવ ધર્મ, અર્થ ને કામને વિષે પ્રીતિ રાખીને જે જે સુકૃત કરે છે તે સર્વે સાત્ત્વિકી, રાજસી ને તામસી થાય છે ને તે કર્મનું ફળ સ્વર્ગ, મૃત્યુ ને પાતાળ એ ત્રણ લોકમાં રહીને ભોગવાય છે; પણ ગુણાતીત જે ભગવાનનું ધામ તેને પામે નહીં. અને જ્યારે મોક્ષ ન થાય ત્યારે જન્મ-મરણ અને નરકનું દુઃખ તે મટે નહીં. અને <b>જો ધર્મ, અર્થ ને કામ સંબંધી જે ફળની ઇચ્છા તેનો ત્યાગ કરીને તેનાં તે શુભ કર્મ જો ભગવાનની પ્રસન્નતાને અર્થે કરે તો એ જ શુભ કર્મ છે તે ભક્તિરૂપ થઈને કેવળ મોક્ષને અર્થે થાય છે.</b> ત્યાં શ્લોક છે જે,
+</p> 
+<p class=“text_gu”> 
+‘આમયો યેન ભૂતાનાં જાયતે યશ્ચ સુવ્રત! । <br/> 
+તદેવ હ્યામયં દ્રવ્યં ન પુનાતિ ચિકિત્સિતમ્ ॥ <br/>
+એવં નૃણાં ક્રિયાયોગાઃ સર્વે સંસૃતિહેતવઃ । <br/>
+ત એવાત્મવિનાશાય કલ્પન્તે કલ્પિતાઃ પરે ॥’
+</p> 
+<p class=“text_gu”> 
+“એ શ્લોકનો પૂર્વે વાત કરી એ જ ભાવ છે. માટે એ વાર્તા છે તે સૂધી અટપટી છે, તે જો પૂરી સમજાણી ન હોય તો ભગવાનના ભક્ત હોય તેનો પણ સર્વ અજ્ઞાની જીવના સરખો દેહનો વ્યવહાર જોઈને તે ભગવાનના ભક્તનો અવગુણ લે; તેણે કરીને અવગુણનો લેનારો નારકી થાય છે. અને ભગવાનના ભક્તની ને વિમુખ જીવની ક્રિયામાં તો ઘણો ફેર છે; કેમ જે, વિમુખ જે જે ક્રિયા કરે છે તે પોતાનાં ઇન્દ્રિયોને લાડ લડાવવાને અર્થે કરે છે ને ભગવાનનો ભક્ત જે જે ક્રિયા કરે છે તે તો કેવળ ભગવાન ને ભગવાનના ભક્ત તેની સેવાને અર્થે કરે છે. માટે હરિજનની જે સર્વે ક્રિયા તે તો ભક્તિરૂપ છે. અને જે ભક્તિ છે તે તો નૈષ્કર્મ્ય જે જ્ઞાન તે રૂપ છે. માટે હરિજનની ક્રિયા છે તે તો સર્વે નૈષ્કર્મ્યરૂપ છે. ત્યાં શ્લોક ભગવદ્‌ગીતાનો છે -
+</p> 
+<p class=“text_gu”> 
+‘કર્મણ્યકર્મ યઃ પશ્યેદકર્મણિ ચ કર્મ યઃ । <br/>
+સ બુદ્ધિમાન્મનુષ્યેષુ સ યુક્તઃ કૃત્સ્નકર્મકૃત્ ॥’
+</p> 
+<p class=“text_gu”> 
+“એ શ્લોકનો અર્થ છે જે, ‘ભગવાનનો ભક્ત હોય તે ભગવાનની પ્રસન્નતાને અર્થે જે જે કર્મ કરે છે તે કર્મને વિષે અકર્મ જે જ્ઞાન તેને જે દેખે છે અને વિમુખ હોય તે નિવૃત્તિમાર્ગ પકડીને અકર્મપણે રહેતો હોય તો પણ તેને કર્મમાં બૂડ્યો છે એમ જે દેખે છે, તે દેખનારો સર્વે મનુષ્યને વિષે બુદ્ધિમાન છે ને તે જ્ઞાની છે તથા તે યુક્ત છે કહેતાં મોક્ષને યોગ્ય છે અને ‘કૃત્સ્નકર્મકૃત્’ કહેતાં સર્વ કર્મનો કરનારો છે.’ માટે ભગવાનની આજ્ઞાએ કરીને ભગવાનની પ્રસન્નતાને અર્થે ભગવાનના ભક્ત જે જે કર્મ કરે છે તેનો કોઈ રીતે અવગુણ જો લે તો તેના હૃદયને વિષે કુટુંબે સહિત અધર્મ આવીને નિવાસ કરે છે.”
+</p> 
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

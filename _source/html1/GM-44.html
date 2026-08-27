@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૪૪ - દૈવી-આસુરી જીવનાં લક્ષણનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૮૦ના પોષ સુદિ ૮ અષ્ટમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજે મુક્તાનંદ સ્વામીને પૂછ્યું જે, “જ્યારે કોઈક હરિભક્તનો અવગુણ આવે ત્યારે મોરે જેટલા તેમાં દોષ સૂઝતા હોય એટલા ને એટલા સૂઝે કે કાંઈ વધુ સૂઝે?” પછી મુક્તાનંદ સ્વામી બોલ્યા જે, “અટકળે તો એમ જણાય છે જે, મોરે સૂઝતા એટલા ને એટલા સૂઝે છે.” પછી શ્રીજીમહારાજ બોલ્યા જે, “એ વાતમાં તમારી નજર પડી નહીં. એટલા ને એટલા અવગુણ સૂઝતા હોય તો અવગુણ આવ્યો એમ કેમ કહેવાય? માટે એ તો ભૂંડાં દેશ, કાળ, ક્રિયા, સંગ આદિકને યોગે કરીને બુદ્ધિ પલટાઈને બીજી રીતની જ થઈ જાય છે; તેણે કરીને અવગુણ વધુ સૂઝે છે. ત્યારે એમ જાણવું જે, ‘બુદ્ધિને વિષે ભૂંડાં દેશકાળાદિકનું દૂષણ લાગ્યું છે.’ અને અમે તો એમ જાણીએ છીએ જે, જેને પૂર્વે મોટાપુરુષનો સંગ હશે અથવા ભગવાનનું દર્શન થયું હશે, તેને તો પોતાના જ અવગુણ ભાસે પણ બીજા હરિભક્તના અવગુણ ભાસે જ નહીં. અને એવાં જેનાં લક્ષણ હોય તેને દૈવી જીવ જાણવો. અને જે આસુરી જીવ હોય તેને તો પોતામાં એકે અવગુણ ભાસે નહીં અને બીજા જે હરિભક્ત હોય તેને વિષે જ કેવળ અવગુણ ભાસે; એવી જેની બુદ્ધિ હોય તેને આસુરી જીવ જાણવો. અને તે આસુરી જીવ સત્સંગમાં રહ્યો હોય અથવા સંતના મંડળમાં રહ્યો હોય પણ જેવા કાળનેમિ, રાવણ ને રાહુ હતા તે સરખો રહે પણ એને સંતનો સંગ લાગે નહીં. માટે પાકો હરિભક્ત હોય તેને પોતાના જ અવગુણ સૂઝે પણ બીજા હરિભક્તના દોષને તો દેખે જ નહીં.”
+</p> 
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

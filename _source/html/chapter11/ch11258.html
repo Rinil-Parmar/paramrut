@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (258) ‘શિક્ષાપત્રી’ના શ્ર્લોક 27, 34 ને 35માં વહેવાર મારગનાં બીજ મૂક્યાં છે; અને શ્ર્લોક 109, 110, 111, 112, 116, 193 માં ધર્મનાં બીજ મૂક્યાં છે. માટે મહારાજે વહેવાર અને આત્યંતિક મોક્ષનું જ્ઞાન સર્વેને શીખવ્યું છે; પણ જીવને તો કશી ખબર જ નથી. પણ લખેલ બરાબર સમજે તેને તો સુખિયા કરી દીધા છે. મહારાજને ધર્મ, જ્ઞાન, વૈરાગ્ય ને ભક્તિ ને પ્રગટ ભગવાનના સ્વરૂપમાં જોડાવું તે શીખવવાનું ભારે તાન, તે કેટલાય આગ્રહ કર્યા ને સર્વેનાં રૂપ કળાવી દીધાં; તે જેમ મામાએ ભાણેજને હીરા ઓળખાવ્યા, તેમ, <br/> <br/>
+ 
+ આપી પરચા  અનુપ, માયિક મતને ઉખાડીયાં જો; <br/>
+ 
+ જીવ   માયા  બ્રહ્મરૂપ,  જથારથ  તે  દેખાડીયાં જો. <br/>
+ 
+ (કીર્તન મુક્તાવલિ : 786) <br/> <br/>
+ 
+ એમ કીર્તનમાં ગવાણું છે. શંકરાચાર્યે છ અધ્યાયની ટીકા કરી તો પણ જીવનું રૂપ ન આવડ્યું. અને મહારાજે તો ‘શિક્ષાપત્રી’માં અતિસ્પષ્ટ સૂત્રરૂપે જીવ, ઈશ્ર્વર અને માયાનાં રૂપ કરી બતાવ્યાં છે. ને કેટલેક તો મોટા મોટા કૂવા ખોદ્યા છે. ને શક્તિપંથીએ કહ્યું જે, ‘દેવી મોટી છે.’ ત્યારે પતિતપાવનાનંદસ્વામીએ કહ્યું જે, ‘દેવી તે સધવા કે વિધવા ? જો વિધવા કહો, તો ચૂડલો, ચાંદલો ને ચૂંદડી વિધવાને ન હોય; ને જો સધવા કહો તો તેના પતિની દાસી થઈ.’ પછી તે ધખીને વહ્યો ગયો અને <a href="#ex1" class="wordMeaning">રણકીનાં પુણ્ય આપે</a> એવા પણ મત છે. પણ આજ મહારાજે તો બધું સુગમ કરી કેવળ મોક્ષ જ રાખ્યો છે તેને પોતાના એકાંતિક સંતની પ્રાપ્તિ કરાવી; ધર્મે સહિત પ્રગટ પ્રમાણ પોતાની ભક્તિ કરાવી. અધર્મ સર્ગ ને પાખંડ ધર્મનું મૂળ કાઢી, મૂળ જ્ઞાન આપી સુખિયા કરી દીધા છે. માટે આજ આપણે બહુ ભારે જોગ મળી ગયો છે.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 રણકીનાં પુણ્ય આપે.= સમજ્યા વિનાનું પુણ્ય આપે.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

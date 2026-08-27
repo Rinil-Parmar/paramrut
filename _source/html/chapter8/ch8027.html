@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 
+ 
+ (27) એક વખતે <a href="L-13.html">લોયાનું 13</a>મું વચનામૃત વંચાવીને સ્વામીએ વાત કરી જે, ‘અક્ષરધામને વિશે પોતે રહ્યા છે તે અક્ષરને પણ લીન કરીને પોતે સ્વરાટ્ થકા એકલા જ વિરાજમાન રહે અને પોતાને મનમાં આવે તો એ અક્ષરધામ વિના પણ અનંતકોટિ મુક્તોને પોતાના ઐશ્ર્વર્યે કરીને ધારવાને સમર્થ છે; એવા નારાયણ પોતાના ઐશ્ર્વર્યે કરીને સર્વોપરી વરતે છે તે એને ને બીજા અક્ષરાદિક મુક્તને સરખા કહે છે; તેને દુષ્ટ મતવાળા જાણવા ને તેને અતિ પાપી જાણવા અને એનાં દર્શન પણ કરવા નહિ; અને એવી રીતની સમજણવાળાનાં દર્શન કરીએ તો પંચમહાપાપ જેવું પાપ થાય.’ ત્યારે મનજીભાઈએ પૂછ્યું જે, ‘સત્સંગમાં નારાયણને અને મુક્તને સરખા કહે, એવી તો સમજણ કોઈની હોય એમ જણાતી નથી અને મહારાજે એમ કહ્યું, તે કેમ સમજવું ?’ ત્યારે સ્વામીએ કહ્યું જે, ‘એ મર્મની વાત અટપટી બહુ છે, તે શું ? તો મહારાજે આમાં મૂળઅક્ષરને સર્વે અક્ષરમુક્તોથી પર કહ્યા છે અને પોતે તેથી પર છે એમ કહ્યું. 
+ <br/><br/>
+ હવે શાસ્ત્રોના લખનારાઓ પરોક્ષપણે નારાયણ અને અક્ષર અને અક્ષરમુક્તોનું અભેદપણે નિરૂપણ કરે છે, કારણ એમાં પુરુષોત્તમનારાયણનો વિશિષ્ટ સંબંધ આવે છે, તેથી બધાને પુરુષોત્તમરૂપ કહે છે.
+ <br/><br/>
+ વળી વેદ વેદાંત સચ્ચિદાનંદબ્રહ્મનું વર્ણન કરે છે, તેમ જ જ્યાં જ્યાં શાસ્ત્રમાં મહિમા કહ્યો છે, તે અક્ષરરૂપે જ કહ્યો છે. એવા જે સનાતન મૂળઅક્ષર તેનો પ્રકાશ જે સચ્ચિદાનંદબ્રહ્મ, ત્યાં સુધી શાસ્રો પહોંચી શક્યાં છે પણ મૂર્તિમાન મૂળઅક્ષરનો મહિમા કોઈ કહી શક્યા નથી તે માટે સચ્ચિદાનંદ જે પ્રકાશ તેથી પર નારાયણ, એમ કહે છે ત્યારે મહારાજને કહે તો, તેમાં સચ્ચિદાનંદના પ્રકાશી જે મૂળઅક્ષર તે રહી જાય છે અને તેથી તે મૂળઅક્ષર જે તે અક્ષરમુક્ત કોટિ ભેળા થઈ રહ્યા. આમ મહારાજને મૂળઅક્ષર જેવા અને મૂળઅક્ષરને અક્ષરમુક્ત જેવા જાણે, તેને દુષ્ટ મતવાળા કહ્યા છે; કેમ જે, સચ્ચિદાનંદ જે ધામરૂપ પ્રકાશ તે તો મૂળઅક્ષરનો છે તે સચ્ચિદાનંદ પ્રકાશને મહારાજની મૂર્તિનો પ્રકાશ ઠરાવે, એટલે મૂળઅક્ષર મૂર્તિમાનને બીજા મુક્ત ભેગા ગણી કાઢ્યા અને પુરુષોત્તમને કહે છે તો મોટા; પણ તે મૂળઅક્ષર જેવા સમજાય છે; કેમ જે, જેવા મૂળઅક્ષર છે, તેવા જો ન સમજાય તો મૂળઅક્ષરનો જે મહિમા કહ્યો છે તે મહારાજનો સમજાય; તેથી મહારાજને મૂળઅક્ષર જેવા જાણ્યા, કહેતાં સ્વામીને સેવક જેવા જાણ્યા; માટે મૂળઅક્ષરનો મહિમા જાણ્યા વગર મહારાજની ઉપાસનામાં બહુ <a href="#ex1" class="wordMeaning">બાધ</a> આવ્યો અને એવી સમજણવાળા પણ આપણા સત્સંગમાં છે.
+ <br/><br/>
+ તે સારુ મહારાજને પોતાનો રહસ્ય પોતાના ભક્તને સમજાવવો છે. તે જુઓ, તેમાં કહ્યું છે જે, એ નારાયણને લીધા વિના તો અક્ષરને પણ ભગવાન ન કહેવાય તો બીજાની શી વાત કહેવી ? તેમાં શું કહ્યું ? તો, અક્ષરબ્રહ્મને સર્વે બીજા મુક્તોથી પર અને શ્રેષ્ઠ કહ્યા; કારણ કે, તે અક્ષરબ્રહ્મરૂપે થઈને પોતાની ઉપાસના કરવાનું <a href="L-12.html">લોયાનાં 12</a>માં વચનામૃતમાં મહારાજે કહ્યું છે; કેમ જે, જેમ આકાશમાં પક્ષી ઊડે છે તેને વાયુતત્ત્વ પ્રધાન છે તથા જેમ માછલાંને જળતત્ત્વ પ્રધાન છે, તેથી સામા પૂરે ગતિ કરી શકે છે તેમ અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામ્યા વગર ઉપાસક અક્ષરધામમાં મહારાજની સેવામાં રહી શકતો જ નથી, એવી રીતે મહારાજે મૂળઅક્ષર, અક્ષરમુક્તો અને સચ્ચિદાનંદબ્રહ્મ, એ સર્વેની પોતાના પરમ અદ્વૈત સંબંધે કરીને એકતા કહી છે, પણ મૂળઅક્ષર આદિક સર્વેને ઉપાસ્યમૂર્તિ તો એક મહારાજ પુરુષોત્તમ જ છે.’
+ 
+ 
+		</div>
+
+	</div>
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 બાધ= દોષ. 
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

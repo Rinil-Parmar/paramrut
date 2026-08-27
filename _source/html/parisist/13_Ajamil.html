@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">અજામિલ</h1>
+ 
+અજામિલ બ્રાહ્મણ હતો અને કનોજમાં રહેતો હતો. સ્વભાવે કોમળ અને સરળ, ધર્મમાર્ગે ચાલનારો હતો.
+<br/><br/>
+
+એકવાર પિતાની આજ્ઞાથી વનમાં ફળ-ફૂલ લેવા ગયો ત્યારે એક વેશ્યાને કોઈ શુદ્ર જારપુરુષ સાથે વિહાર કરતાં જોઈ તેનામાં કામ વ્યાપ્યો. કામાદિક દોષના પ્રબળ પ્રતાપ સામે પોતે કોણ છે ? તે ભૂલી ગયો અને અત્યંત કામાંધ બની વેશ્યા સાથે તે પણ વિહાર કરવા લાગ્યો. ઘરમાંથી પૈસા ચોરીને, અનૈતિક કાર્યો કરીને, નાણું એકઠું કરીને તે વેશ્યાને આપવા લાગ્યો. પોતાની ગુણવંતી પત્નીને ભૂલી ગયો તેના ઘરેણા વગેરે લઈ તેણે વેશ્યાને આપ્યાં. કર્મકાંડી બ્રાહ્મણ આવા કુસંગથી અનાચારી થઈ ગયો. દારૂ-માંસના વ્યવહાર કરવા લાગ્યો. જુગાર, ઠગાઈ, ચોરીના રવાડે ચડી ગયો. કહો કે માયાના મોહમાં તે પરવશ થઈને અનૈતિક અને શાસ્ત્ર વિરુદ્ધ કાર્યો કરવા લાગ્યો. 
+<br/><br/>
+
+પરંતુ એકવાર તેના પૂર્વના પુણ્ય કર્મના ઉદયે તેના દ્વારે સંતો પધાર્યા. અજાણતામાં તેણે આ સંતોને ભિક્ષા આપી. તેની સેવા કરી. સંતો તેના આચારથી સમજી ગયા કે આ અધમ અને પાપી માણસ છે. સંતોએ તેનો ઉદ્ધાર કરવાનું વિચાર્યું અને એવી માગણી કરી કે : ‘તારા ઘરે હવે જન્મનાર બાળકનું નામ તું નારાયણ રાખજે.’ અજામિલે સંતનું આ વચન માન્યું અને તે બાળકનું નામ નારાયણ રાખ્યું. નાના પુત્રમાં તે અતિ આસક્ત થયો અને વારેવારે દીકરાને નામ લઈને બોલાવે અને નારાયણનો અનાયાસે જપ થતો ગયો. આમ, તેનું પુણ્ય ઉદય થયું. તેનો અંતકાળ આવ્યો. પોતે આખી જિંદગી ભયંકર પાપો જ કરેલાં તેથી યમદૂતો તેના જીવને લેવા આવ્યા. તે સમયે અજામિલે ગભરાઈને પોતાના દીકરા નારાયણને બોલાવવા સાદ કર્યો અને તે જ સમયે ભગવાનના પાર્ષદો આવ્યા અને અજામિલને યમના પાશ થકી મૂકાવ્યો. અજામિલને તેનું સદાચરમય પૂર્વજીવન યાદ આવ્યું. તેને તેના કરેલા કૃત્યોનો પારાવાર પસ્તાવો થયો. યમના દૂતોથી ભગવાને તેને બચાવ્યો તેથી તેના જીવનનું પરિવર્તન થયું. અને અનાચારનો ત્યાગ કરી, પોતે પહેલા હતો તેવો શુદ્ધ બ્રાહ્મણ બની ગંગાકિનારે પર્ણકૂટિ બાંધી પ્રભુભક્તિમાં જીવન વીતાવવા લાગ્યો. સંસાર પ્રત્યે તીવ્ર વૈરાગ્ય ઉપજ્યો અને ભગવત્‌ ભક્તિ કરવા લાગ્યો. ફરીવાર તેનો અંતકાળ આવ્યો પણ તે સમયે તો તે ભક્ત બની ગયો હતો તેથી ભગવાનના પાર્ષદો સાથે તે વૈકુંઠમાં ગયો. 
+<br/><br/>
+
+અજામિલે પોતાના જીવનમાં સુધારણા કરી, નિર્વાસનિક થઈ પ્રભુ ભજન કરવા લાગ્યો તો તેનું કલ્યાણ થયું. લોકમાં એવું કહેવાય કે, અજામિલે એકવાર નારાયણ નામ લીધું અને તેને ભગવાન તેડવા આવ્યા તેવું નથી, એ નામથી તો જમપાશથી મુક્તિ મળી પછી તે સંપૂર્ણ એકાંતિક ભક્ત બન્યો ત્યારબાદ પ્રભુ તેને ફરી વાર તેડવા આવ્યા અને વૈકુંઠવાસી બનાવ્યો.
+
+ 
+
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (119) પ્રભુ ભજવાને મારગે ચલાય નહિ ને દેહ, લોક, ભોગ ને પક્ષ તેના મારગે ચલાય છે; ને મહારાજે કહ્યું છે તેમ જે ન કરે પણ કોઈકનાં દુ:ખ હોય તે હૈયામાં ઘાલે. આ તો <a href="#ex1" class="wordMeaning"> ‘ભેંશ ચઉટે ને કજિયો ઘેર’</a> તે માટે એવાં દુ:ખ ઊભા કરીને હૈયામાં ઘાલવા નહિ. તે દર્શને આવે-જાય તેના કજિયા, રસોઈ દે તેમાં કજિયા, મુક્તિજીવનદાસ, શ્ર્વેતવૈકુંઠદાસ, ઉત્તમચરણદાસ આદિ ચાર સાધુનું મંડળ વંથળી ફરવા ગયું. ત્યારે દેવજીભાઈ સાધુ માટે સીધું મૂકી ગયા. ત્યારે એક કહે, ‘ખીચડી કરશું.’ બીજો કહે, ‘ખીચડી નહિ, દાળ-ભાત કરશું.’ ત્રીજો કહે, ‘શાક ને રોટલા કરશું, અમથો કુટારો કોણ કરે ?’ એમ ચારેનું મળતું ન આવ્યું એટલે મેડે ચડી ચાર ચૂલા કરી ચારેયે નોખું રાંધવા માંડ્યું. <br/><br/>
+ 
+ ત્યાં દેવજીભાઈ દર્શને ગયા, તે ધર્મશાળામાં સાધુ દીઠા નહિ એટલે ભંડારને મેડે ચડ્યા તે ચાર ખૂણે ચાર ચૂલા દીઠા. તે જોઈને મનમાં વિચાર થયો જે, ‘આ મંડળથી દેશમાં સમાસ નહિ થાય.’ એમ ધારી જૂનેગઢ કાગળ લખ્યો ને સવારના પહોરમાં ગાડું જોડાવી લાવ્યા ને કહે જે, મહારાજ જૂનેગઢ પધારો. અમે તમારો મહિમા રોજ ઘેર ગાઈએ છીએ જે, બસે સાધુ એક રસોડે જમે છે, એવો સંપ આપણા સાધુમાં છે. તેથી અમારા ઘરમાં પણ ત્રીસ માણસ એક રસોડે જમે છે તે આ જો તમારી વાત સાંભળશે તો અમારા ઘરમાં પણ નોખા ચૂલા કરશે. માટે ચાલો અમારું ગાડું ને આ સાથી, આપને જૂનાગઢ મૂકવા આવે છે ને આ કાગળ સ્વામીને દેજો. એમ રસોઈના કજિયા ને ગૃહસ્થને પણ કજિયા થાય છે. એક કહેશે જે રસોઈ દેવી છે ને બીજો કહેશે જે રસોઈ દેવી નથી, એમ રસોઈ દે તેના પણ કજિયા થાય છે. <br/><br/>
+ 
+ એક વખત મહારાજ પાસે ગામડાના હરિભક્ત ગયા તેમને મળીને રસોઈ દેવી હતી ત્યારે મહારાજ કહે જે મંદિરનું કામ ચાલે તે ઘી, ગોળ કડિયાને દેવાં છે. તે દઈએ ને તમારી રસોઈ દાળ રોટલા કરી અમે પીરસીએ ને તમારી લાડુની, ચૂરમાની રસોઈ અમે પાકી માની લેશું. ત્યારે સૌએ હા પાડી, પણ એક બ્રાહ્મણે ના પાડી જે, મહારાજ એમ નહિ, પાકી રસોઈ કરો ને સાધુને તમે લાડુ પીરસીને જમાડો. ત્યારે મહારાજ કહે, ‘બહુ સારું, લાવો રસોઈના રૂપિયા. પછી રૂપિયાની ઢગલી કરીને હરિજનને મહારાજે કહ્યું જે, આ રૂપિયો કોનો છે ? ‘આ બ્રાહ્મણનો.’ પછી મહારાજે તેમાંથી તે રૂપિયો બ્રાહ્મણને આપીને કહ્યું, ‘આમાં તમો કહો તેની રસોઈ કરીએ.’ પછી બ્રાહ્મણ ભોંઠો પડ્યો ને કાંઈ બોલ્યો નહિ; એમ એક રૂપિયાના ભાગમાં બધાંને ઠોઈ રાખ્યા. મહારાજની મરજી પ્રમાણે રસોઈ કરવાની ના પાડી. એવાય રસોઈ કરવાના કજિયા થાય છે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ભેંસ ચઉટે ને કજિયો ઘેર= કાર્ય શરૂ થતાં પહેલાં કંકાસ થવો, નકામો ઝઘડો/કંકાસ
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

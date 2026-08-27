@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (109) આજ સુધી સંસારમાં રહ્યા તેમાં તમે શું કાઢયું ? તેનું અમને ફળ બતાવો. તે હજી તેમનું તેમ જ થાય છે અને તમે કહેશો જે, અમારે અન્ન વસ્ત્ર જોઈએ; તો અન્ન વસ્ત્ર તો અમે આપીએ, પણ તમારાથી નહિ રહેવાય; કાં જે, જીવ ઘરમાં બાંધ્યો છે તેટલો આંહીં નથી બાંધ્યો. તે આવું તમને કહેનાર નહિ મળે. પછી ઊલટા જોડશે, કાં જે પદાર્થ લેવાનો સ્વાર્થ, તે ભાઈને જેમ રુચિ હશે તેમ જ કહેશે ને તમારી ગરજ રાખશે અને ધનિકની ને કુસંગીની શુશ્રૂષા કરશે અને મંદિરમાંથી દેવનો પૈસો લુંટાવશે, એવા ગુરુ અને મોટેરા થાશે. કેમ કે, આપણામાં રાહુ રાવણ જેવા પેસી ગયા છે. તે ઉથલપાથલ કરી સત્સંગ વગોવશે. પણ પાપીનું તો જ્યાં સુધી માયાનો પ્રવેશ છે ત્યાં સુધી ચાલશે, તે બધાનું રૂપ ઉઘાડું થઈ રહેશે, અને તેવા સમયમાં જે કાર્ય ભગવાનને કરવાનું હશે તે કરશે ને પછી બડવાળ કાઢવા આચાર્ય, રાજા ને મૂર્તિમાં ભગવાન પ્રેરક થઈ, જે ‘શિક્ષાપત્રી’, ‘ધર્મામૃત’ ને ‘નિષ્કામશુદ્ધિ’ પ્રમાણે વરતશે તેને સત્સંગમાં રાખશે ને બીજાને કાઢી મૂકશે અને અહિંસા અને નિષ્કામધર્મ મહારાજને વહાલો છે, તે સત્સંગમાં પળાવશે અને ધર્મ એક સ્વામિનારાયણનો રહેશે, ને રાજા એક રહેશે અને ધર્મવરો રાજાનો રક્ષણ માટે રહેશે.  <br/><br/>
+ 
+ ત્યારે લાલાભાઈએ કહ્યું કે, ‘આ રાજ્યમાં ભગવાન ભજવાનું તો સુખ છે, પણ હિંસક રાજા છે; ને મહારાજે ગાયનો વધ કરવા ના પાડી છે અને બ્રાહ્મણને ફાંસીએ ન ચડાવવો, એમ માલકમ સાહેબને રાજકોટમાં કહ્યું છે, તો પણ ગાયોનો વધ આ રાજ્યમાં બહુ થાય છે તેનું કેમ ચાલશે ?’ ત્યારે સ્વામી કહે, ‘હમણાં તો તેનું ચાલશે અને જ્યારે બહુ અન્યાય કરશે અને આપણા મંદિર ઉપર હાથ નાખશે ને સત્સંગનો દ્રોહ કરશે ત્યારે ભગવાન ખમી નહિ શકે અને અમારી અરજી છે કે, ગય રાજા જેવો રાજા ને રઘુવીરજી મહારાજ જેવા બે આચાર્ય કરો તો ભગવાન ભજવાનું સર્વેને સાનુકૂળ પડે, તો તેમ મહારાજને કરવું હશે ત્યારે કરશે; આપણે આપણું કરી લેવું. અત્યારે આપણે બધી વાતે સાનુકૂળ છે, માટે આ જોગ, આ દર્શન, આ વાતું ને આ દેશકાળ ફરીથી નહિ મળે; ને પછી તો રોવું પડશે, તે પણ ખપવાળાને સાંભરશે. અહો! તમારે તો આજ પૃથ્વીનું વેજું છે, પ્રગટ ભગવાન, તેમના પ્રગટ સંત જીવોનાં મોક્ષને માટે આવી આ ભેળા બેઠા છે, આવી ગમ્મત કોણ કરાવશે ? આ તો હેત તે કહેવાય છે.’ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

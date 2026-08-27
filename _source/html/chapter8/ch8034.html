@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (34) ભગવાનના સ્વરૂપનું નિરૂપણ તો જેવું શ્રીજીમહારાજને આવડે તેવું બીજા અનેક શાસ્ત્રીઓ ભેગા થાય તો પણ તેવું નિરૂપણ ન થાય. શાસ્ત્રોમાં ક્યાંક જ્ઞાન પ્રધાન, ક્યાંક કર્મ પ્રધાન, ક્યાંક ભક્તિ પ્રધાન માની છે અને તે સર્વે બહુ તો બહુ મહાપુરુષને બ્રહ્મ ને પુરુષોત્તમ કહે છે અને તેની અંદરના સ્વરૂપોસંબંધી નિરૂપણ કરે છે. માટે શ્રીજીમહારાજનો જે અક્ષરમત તે તો આ વખતે શ્રીજીમહારાજ થકી જ પ્રવર્ત્યો છે. સંપ્રદાયની બાંધણીમાં શ્રીજીમહારાજે ‘<a href="#ex1" class="wordMeaning">વિશિષ્ટાદ્વૈત</a>’ મતને માન્ય ગણ્યો છે અને તે મુજબ <a href="#ex1" class="wordMeaning">જડ ચિદ્</a> છે શરીર જેનું એવા, પણ તે સર્વથી ન્યારા, સર્વશક્તિ, ઐશ્ર્વર્ય, સામર્થી, પ્રતાપ આદિક અનંત અપાર શુભગુણે યુક્ત પુરુષોત્તમનારાયણ, મૂળઅક્ષર-અક્ષરબ્રહ્મ અને અનંત અક્ષરમુક્તગણથી અખંડ સેવાયેલ થકા અક્ષરધામમાં સદા સર્વદા વિરાજમાન રહે છે, એ ‘વિશિષ્ટાદ્વૈત’નો સામાન્ય અર્થ થયો. 
+ <br/><br/>
+ પરંતુ અક્ષરબ્રહ્મ કે જેનો સ્વભાવ જ અધ્યાત્મ છે એટલે કે, જેને કેવળ પરબ્રહ્મ પુરુષોત્તમનારાયણનો નિત્યસિદ્ધ સંબંધ છે, તે અક્ષરબ્રહ્મ અને પુરુષોત્તમ-નારાયણ વચ્ચેનો પરમ અદ્વૈતભાવ શ્રીજીમહારાજે અધ્યાત્મજ્ઞાન વિચારમાં અતિ સૂક્ષ્મપણે પ્રતિપાદન કરેલ છે. તેથી સૂક્ષ્મ રીતે જોતાં ભક્તિમારગમાં અક્ષરબ્રહ્મ વિશિષ્ટ પુરુષોત્તમ કે સ્વામી વિશિષ્ટ નારાયણ, એમ અક્ષરબ્રહ્મ અને પુરુષોત્તમ વચ્ચેની પરમ ઐક્યતા, કહેતાં સર્વ પ્રકારે તાદાત્મ્યકપણાને સિદ્ધ કરનાર ભક્તે સહિત શ્રીજીમહારાજનું ‘સ્વામિનારાયણ’ નામ બહુ જ સાર્થક છે. વળી અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામેલ અનંત અક્ષરમુક્તો પુરુષોત્તમ ભગવાનનાં સ્વરૂપમાં એવી જ રીતે તાદાત્મ્યકપણાને પામી અદ્વૈતભાવે વરતે છે અને અનવધિકાતિશય સચ્ચિદાનંદની પરમ સ્થિતિ અખંડ અનુભવે છે, તેથી અક્ષરબ્રહ્મ અને અક્ષરમુક્તોથી વિશિષ્ટ પુરુષોત્તમનારાયણ
+ <br/><br/>
+એકમેવાદ્વિતિયં બ્રહ્મ । 
+ <br/>
+ (છાંદોગ્ય ઉપનિષદ : 6/2/1)
+ <br/>
+ અર્થ :- એક જ અદ્વિતીય બ્રહ્મ.
+ <br/><br/>
+ સદા સર્વદા પર વરતે છે. એ રીતે મૂળઅક્ષર અને પરાત્પર શ્રી પુરુષોત્તમ ભગવાન તે બેના સ્વરૂપમાં; સાક્ષાત્ સંબંધે યુક્ત મુક્તિ મેળવવાના હેતુરૂપ શ્રીજીમહારાજનો આ પરમ ‘વિશિષ્ટાદ્વૈત’ શ્રી રામાનુજાચાર્યના મતથી છેક ભિન્ન અને ઉત્તમોત્તમ છે, માટે શ્રી રામાનુજાચાર્યના અનુયાયીઓ આપણને તેમના મતને માનનારા નથી માનતા; કેમ જે, આપણી સમજણ તેમના જેવી નથી.
+ 
+ 
+		</div>
+
+	</div>
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 વિશિષ્ટાદ્વૈત= "ચિત્ અને અચિત્ સાથેનું વિશિષ્ટ બ્રહ્મ છે” એ પ્રકારનો શ્રી રામાનુજાચાર્યે પ્રવર્તાવેલો વેદાંતનો સિદ્ધાંત.  <br/>
+ 		2 જડચિદ્= નાશવંત, સ્થૂળભાવના ધર્મવાળું. 
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

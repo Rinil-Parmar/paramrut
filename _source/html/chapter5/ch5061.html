@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (61) ઇન્દ્રિયાદિક ક્ષેત્ર થકી કોઈ ઊગરે એમ નથી, માટે ‘વચનામૃત’માં કહ્યું છે તેમ નિયમરૂપી બેડીમાં રહે તો ઊગરે ને બ્રહ્માદિક કાંઈ અણસમજુ કે અજ્ઞાની નહોતા. માટે ઇન્દ્રિયુંને તો મોટા સાધુ વિના બીજા કોઈ જિતાવી શકે જ નહિ ને મોટા સાધુ છે તે કળ બતાવે, છળ બતાવે અને જુક્તિ બતાવીને ઇન્દ્રિયુંને જિતાવે ને મોક્ષ પણ કરે, માટે પોતાનું બળ મૂકીને મોટા સાધુને બાઝી પડવું. ને ઇન્દ્રિયું-અંત:કરણનું તો માનવું જ નહિ ને પોતાને બળે જીતવા જાય તો સામું બંધન થાય. ત્યાં રાજાની રાણીએ છ દીકરાને વૈરાગ્ય ચઢાવીને ત્યાગી કર્યા તેની વાત કરી ને બીજું દૃષ્ટાંત દીધું જે, ઉપાધ્યાયને સો વાર ઊને પાણીએ ધુવે ને ચંદન ચોપડે ને ધૂપ દે તો પણ વાછૂટ થાય ત્યારે એવી ને એવી જ ગંધ આવે. તેમ સર્વે ઇન્દ્રિયું-અંત:કરણ એવાં મલિન છે તે શુદ્ધ થાય તેવાં નથી, માટે એનું માનવું જ નહિ ને
+ <br/><br/>
+ નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ । <br/>
+વિભાવ્ય તેન કર્તવ્યા ભક્તિઃ કૃષ્ણસ્ય સર્વદા ॥
+	<br/>
+(શિક્ષાપત્રી : શ્ર્લોક 116)
+ <br/>
+ અર્થ : સ્થૂળ, સૂક્ષ્મ અને કારણ એ જે ત્રણ દેહ તે થકી વિલક્ષણ એવો જે પોતાનો જીવાત્મા તેને બ્રહ્મરૂપની ભાવના કરીને પછી તે બ્રહ્મરૂપે કરીને શ્રીકૃષ્ણ ભગવાનની ભક્તિ જે તે સર્વ કાળને વિશે કરવી.
+ <br/><br/>
+ પોતાને બ્રહ્મરૂપ માનવું એટલે સર્વે જીતી જ ચૂક્યો.
+ 
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

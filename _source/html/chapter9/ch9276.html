@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (276) ધ્યાન કરતાં બીજું કરે તો ધ્યાન ન થાય; તેમ જ ભણવાનું જાણવું. ઉપલે ડોળે કાંઈ ન થાય, એકાંતિક પણ ન થાવાય. તે તો,
+ <br/><br/>
+ સંત સમાગમ કીજે, હો નિશદિન સંત સમાગમ કીજે.
+ <br/>
+ અંતર કપટ મેટકે અપના, લે ઉનકું મન દીજે. હો 0
+ <br/>
+ (કીર્તન મુક્તાવલિ : 142)
+ <br/><br/>
+ જેસે હિ હેમ હુતાશ મેં ડારકે, ધોય વિકાર સોનાર તપાવે;
+ <br/>
+ વ્યોતત જ્યું દરજી પટ ફારકે, કાષ્ઠ કું બાઢ સુતાર બનાવે;
+ <br/>
+ પાત્ર કુલાલ શીલાકર પાહન, લોહ લુહાર સુધાર હિ લાવે;
+ <br/>
+ યું શિષ્યકું ગુરુદેવ સુધારત, સો બ્રહ્માનંદ આનંદ પાવે.
+ <br/>
+ (કીર્તન મુક્તાવલિ : ગુરુ કો અંગ)
+ <br/><br/>
+ શિષ્ય ગુરુને મન સોંપે ત્યારે તેમાં ગુણ આવે. દ્રુપદ રાજાએ દ્રૌપદીનો સ્વયંવર કર્યો ત્યારે પાણીના હોજમાં થાંભલો ખોડીને માથે સોનાનો મચ્છ મૂક્યો ને થાંભલે ત્રાજવું બાંધ્યું, તેમાં બે પગ મૂકીને પાણીમાં મચ્છને જોવો ને ઉપલો મચ્છ પાડવો તેમાં કેટલાય રાજા પડ્યા, હાથ-પગ ભાંગ્યા ને હોઠ છોલાણાં; પણ મચ્છ વીંંધાણો નહિ, ત્યારે દ્રુપદ રાજાએ કહ્યું કે, ‘પૃથ્વી ઉપર કોઈ ક્ષત્રિયનો બચ્ચો નથી, એમ મેં જાણ્યું હોત તો હું આવું <a href="#ex1" class="wordMeaning">પણ લેત નહીં</a>.’
+ <br/><br/>
+ તે સાંભળી અર્જુન <a href="#ex1" class="wordMeaning">કાપડીને વેશે</a> ઊભા હતા તેને ચાનક લાગી ને કહે જે, ‘કહો તો હું પાડું.’ ત્યારે સૌ હસ્યા ને કહે, ‘એ બાવો શું પાડશે ?’ ત્યારે દ્રોણાચાર્ય કહે જે, ‘ભલેને તેના હોઠ ભાંગે, તમારું શું જાય છે ?’ પછી રજા આપી, એટલે અર્જુને બે હાથે દાંડી ઝાલીને બેય પગ ત્રાજવામાં એકી સાથે મૂક્યા, ત્યારે દ્રોણાચાર્યે જાણ્યું જે, આ કોઈક હુશિયાર છે તે પાડે તો પાડે. પછી પોતે તેમાં ભળ્યા ને કહે, ‘ઊભો રહેજે, હમણાં ઘા કરીશ નહિ, હું કહું ત્યારે ઘા કરજે.’ અર્જુન તો જાણતા હતા જે, આ દ્રોણાચાર્ય છે ને મારા ગુરુ છે તે સાચું જ બતાવશે. દ્રોણાચાર્યે પૂછ્યું જે, ‘શું દેખાય છે ?’ તો કહે, ‘સભા.’ ત્યારે કહે, ‘ઘા કરીશ નહિ ને વૃત્તિ સંકેલ.’ પછી પૂછ્યું, ‘હવે શું દેખાય છે ?’ તો કહે, ‘દંડ દેખું છું.’ એટલે કહે, ‘હજી વૃત્તિ સંકેલ.’ તો કહે, ‘હવે મચ્છ દેખાય છે.’ ત્યારે કહે, ‘વૃત્તિ સંકેલ, હમણાં ઘા કરીશ નહિ.’ પછી કહે, ‘માથું દેખાય છે.’ ત્યારે કહે, ‘હવે કર ઘા.’ એટલે ઘા કર્યો ને મચ્છ વીંધાણો. તે ગુરુને મન સોંપ્યું તો મચ્છ વીંધાણો. તેમ પ્રગટ ગુરુરૂપ હરિને મન સોંપે તો બ્રહ્મવિદ્યાની પ્રાપ્તિ થાય ને ભગવાનમાં જોડે એટલે કાંઈ દેખાય જ નહિ, પણ તે કેને સમજાય, તો જેને પદાર્થ વધાર્યામાં કે, લાડવા ખાધામાં આસક્તિ ન હોય તેને સમજાય.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 પણ લેત નહિ= પ્રતિજ્ઞા-ટેક લેત નહિ. <br/>
+2 કાપડીને વેશે= સાધુ-સંન્યાસીના વેશે.
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

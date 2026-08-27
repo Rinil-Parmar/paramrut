@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">લોયા ૧૧ -  સત્પુરુષની અને અસત્પુરુષની સમજણનું</h1>
+	
+
+<p class="text_gu">
+
+સંવત ૧૮૭૭ના માગશર વદિ ૮ આઠમને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીલોયા મધ્યે સુરાખાચરના દરબારમાં પ્રાતઃકાળને સમે વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ સાધુ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજને શુકમુનિએ પ્રશ્ન પૂછ્યો જે, “શ્રીમદ્‌ભાગવત તથા ભગવદ્‌ગીતા એ આદિક જે સત્શાસ્ત્ર તે થકી અસત્પુરુષ જે તે કેવી સમજણનું ગ્રહણ કરે છે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એનો ઉત્તર કરીએ છીએ જે, અસત્પુરુષની એમ સમજણ છે જે, આ વિશ્વને વિષે સ્થાવર-જંગમરૂપ એવી જે સ્ત્રી-પુરુષની સર્વે આકૃતિઓ તે જે તે વિરાટરૂપ એવા જે આદિપુરુષ નારાયણ તે થકી માયાએ કરીને ઊપજી છે, માટે એ સર્વે આકૃતિઓ તે નારાયણની જ છે. તે સારુ જે મુમુક્ષુ કલ્યાણને ઇચ્છતો હોય તેણે પ્રથમ પોતાનું મન વશ કરવું. તે મન જે તે સ્ત્રીઓ તથા પુરુષરૂપ એવી ઉત્તમ-નીચ જે જે આકૃતિઓ તેને વિષે આસક્ત થાય, ત્યારે તેને તે જ આકૃતિનું મનને વિષે ધ્યાન કરવું, તો એને સદ્ય સમાધિ થાય; અને તે આકૃતિને વિષે જો મન દોષને કલ્પે, તો તેમાં બ્રહ્મની ભાવના લાવવી જે, ‘સમગ્ર જગત તે બ્રહ્મ છે,’ એમ વિચાર કરીને તે સંકલ્પને ખોટો કરવો. એવી રીતે જે સત્શાસ્ત્રમાંથી અનુભવનું ગ્રહણ કરવું તે અસત્પુરુષની સમજણ છે. અને એમ સમજવું એ એના મનનો અતિ દુષ્ટભાવ છે અને એનું ફળ અંતકાળે ઘોરતમ નરક છે ને સંસૃતિ છે.”
+</p>
+<p class="text_gu">
+
+ત્યારે વળી શ્રીજીમહારાજને શુકમુનિએ પ્રશ્ન કર્યો જે, “એ સત્શાસ્ત્ર થકી સત્પુરુષ જે તે કેવી સમજણનું ગ્રહણ કરે છે? તે કહો.” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એ સત્શાસ્ત્રને વિષે જ એ પ્રશ્નનો ઉત્તર કર્યો છે જે, એક પુરુષોત્તમ નારાયણ વિના બીજા જે શિવ-બ્રહ્માદિક દેવતા તેનું ધ્યાન જે મોક્ષને ઇચ્છતો હોય તેને કરવું નહીં; અને મનુષ્યને વિષે તથા દેવતાને વિષે જે પુરુષોત્તમ નારાયણની રામ-કૃષ્ણાદિક મૂર્તિઓ તેનું ધ્યાન કરવું. અને તેને વિષે પણ જે ડાહ્યા છે તે જે તે, જે સ્થાનકમાં એ રામ-કૃષ્ણાદિક ભગવાનની મનુષ્યરૂપ મૂર્તિઓ રહી છે તે સ્થાનકને વિષે વૈકુંઠ, ગોલોક, શ્વેતદ્વીપ, બ્રહ્મપુર એ લોકની ભાવના કરે છે; અને તે લોકોને વિષે રહ્યા જે પાર્ષદ તેની ભાવના રામ-કૃષ્ણાદિકના પાર્ષદ જે હનુમાન-ઉદ્ધવાદિક તેને વિષે કરે છે; અને કોટિ કોટિ સૂર્ય, ચંદ્રમા, અગ્નિ તેના પ્રકાશ જેવી પ્રકાશમાન એવી જે તે લોકોને વિષે રહી પુરુષોત્તમ નારાયણની દિવ્યમૂર્તિઓ તેની ભાવના તે રામ-કૃષ્ણાદિકને વિષે કરે છે. એવી રીતે જે સત્શાસ્ત્ર થકી સમજણનું ગ્રહણ કરીને દિવ્યભાવે સહિત મનુષ્યરૂપ ભગવાનની મૂર્તિનું ધ્યાન કરે છે, તેને ભગવાનના અવતારની જે મૂર્તિઓ તથા તે વિનાના જે અન્ય આકાર તે બેયને વિષે સમપણું થાય જ નહીં. અને ભગવાનના અવતારની જે મૂર્તિઓ તે છે તો દ્વિભુજ અને તેને વિષે ચાર ભુજની ભાવના, અષ્ટ ભુજની ભાવના કહી છે તે પણ ભગવાનની મૂર્તિ ને તે વિનાના અન્ય આકાર તે બેમાં જે અવિવેકી પુરુષને સમભાવ થાય છે તેની નિવૃત્તિને અર્થે કહી છે. અને જેવી ભગવાનની મૂર્તિ પોતાને મળી હોય તેનું જ ધ્યાન કરવું અને પૂર્વે ભગવાનના અવતાર થઈ ગયા તે મૂર્તિનું ધ્યાન ન કરવું. અને પોતાને ભગવાનની મૂર્તિ મળી હોય તેને વિષે જ પતિવ્રતાની પેઠે ટેક રાખવી. જેમ પાર્વતીએ કહ્યું છે જે, ‘કોટિ જન્મ લગ રગડ હમારી, વરું શંભુ કે રહું કુમારી.’ એવી રીતે પતિવ્રતાપણાની ટેક તે પણ ભગવાનનું રૂપ ને અન્ય જીવનું રૂપ તે બેયને વિષે અવિવેકી પુરુષને સમભાવ થાય છે તેની નિવૃત્તિને અર્થે કહી છે; કેમ જે, પોતાને મળી જે મૂર્તિ તેને મૂકીને તેના જ પૂર્વે પરોક્ષ અવતાર થયા છે તેનું જો ધ્યાન કરે, તો તે ભગવાન વિના બીજા જે દેવ-મનુષ્યાદિક આકાર છે તેનું પણ ધ્યાન કરે. માટે પતિવ્રતાના જેવી ટેક કહી છે, પણ ભગવાનની મૂર્તિઓને વિષે ભેદ નથી. આવી રીતે સત્પુરુષની સમજણ છે. માટે જે <b>સત્શાસ્ત્રનું શ્રવણ કરવું તે સત્પુરુષ થકી જ કરવું, પણ અસત્પુરુષ થકી સત્શાસ્ત્રનું કોઈ દિવસ શ્રવણ કરવું નહીં.”</b>
+</p>
+
+
+
+
+	
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

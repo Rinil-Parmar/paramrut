@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત 1919ના ભાદરવા વદિ નવમી ને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (193) દેહમાંથી, ઇન્દ્રિયુંમાંથી ને વિષયમાંથી હેત તોડવું. દેહ, લોક, ભોગ ને પક્ષ તે સાથે વેર કર્યા વિના ધામમાં નહિ જવાય. જેને જ્ઞાન નથી તે તો ખાઈને સૂઈ રહેશે, પણ જેને જ્ઞાન થયું તે દુ:ખ દેખે છે. એકાંતિક ધર્મ કઠણ છે, તે શું ? જે, જીવતાં મરવું, ને વહાલાં હોય તે સાથે જ વેર કરવું, એ તો મહા અટપટી વાત છે. અમે વિચાર્યું જે, આટલી આટલી વાતું કરીએ છીએ ને સુખ થાતું નથી, તેનું શું કારણ છે ? જે, જીવે વિષયમાં જીવન માન્યું છે, ત્યાંથી જ મૂળ તૂટે છે. વિષયમાં રાગ છે ને વળી ભગવાનની વાત સમજાણી એટલે આ જ્ઞાન સાંભળીને જીવ ડોળાય છે જે શું કરવું ? વિષય સાથે ઓળખાણ જૂની છે; તે જેમ <a href="#ex1" class="wordMeaning">રાંડી રાંડનું પેટ વધ્યું</a> તેમ છે. માટે જૂની ઓળખાણનું બળ બહુ છે, તે સારુ એ તોડવી. વાતું સાંભળીને મૂળગો કજિયો પેઠો, તે જાણે સુખે સૂઈ રહેતા ને આ કજિયો ક્યાંથી પેઠો ? પણ તે તો જૂની ઓળખાણનો કજિયો છે, માટે એ સાથે કજિયો થાય ને વેર થાય તો ઠીક પડે, નહિતર નિત્ય ઊઠીને પાધરું જ વિષયનું ખંડન થાય ત્યારે અંતરમાં સળગી ઊઠે. <br/><br/>
+ 
+ ઉમાભાઈ બાઈઓની સભામાં વાતું કરતા, ને ડોશીઓ થાળ લાવે ને પોતે જમે; પછી અક્ષરાનંદસ્વામીએ ના પાડી ત્યારે અમદાવાદ ચાલ્યા ગયા. પંચવિષયની જૂની ઓળખાણ છે તે નડે છે. વિષયખંડન તો મુમુક્ષુ ને ત્વરાવાન હોય ને બ્રહ્મરૂપ થાવું હોય તેને ગમે. વાતું થાય ત્યારે દેહ સાથે ને વિષય સાથે વેર થાય. પ્રથમ તો મૂંઝવણ થાય; પણ જ્યારે લાભ જણાય ત્યારે સુખ આવે. ‘સૌથી નોખા પાડીને બ્રહ્મરૂપ કરવા છે,’ એ મહારાજનો સિદ્ધાંત છે. કેટલીક પ્રકૃતિ તો દેહ છતાં ટળશે ને બાકી રહેશે તો દેહ મૂક્યા પછી પણ નડશે. સો કલ્પે કરીને એ ચાર વાનાં સાથે વેર કરશું ત્યારે છૂટકો થાશે. દેહ પોતાનું ન મનાય તો દુ:ખ જ નથી. આત્મારૂપ થાવું તે દેશ જ નોખો છે. મહારાજે અક્ષરાનંદ, અખંડાનંદ, બ્રહ્માનંદ એવાં નામ પાડ્યાં, તે કેટલાક તો નામ પાડ્યાં તેવા જ હતા ને કેટલાકને એવા કરવા છે. આ તો સાપે છછુંદર ગળી છે, તે વિષય મુકાય નહિ ને ભગવાન પણ મુકાય નહિ. માટે દાબે દાબે રહેવાય છે, પણ અભાવ ક્યાં છે ?  ગ્રંથકાર તો,   વિષયાન્‌ વિષવત્‌ ત્યજ   ।  અર્થ :- વિષયોને ઝેરની જેમ ત્યજો.
+ 
+ એમ લખે છે. માટે જેને મહારાજ ને આ સાધુ ભેળું રહેવું હોય તેણે વિષય સાથે વેર કરવું પડશે ને તેને ત્યજવા પડશે; એ સિદ્ધાંત જાણવું. <br/><br/>
+ 
+ <a href="refch10201.html" class="wordMeaning">પ્રકરણ 10 ની વાત 201 </a><br/>
+ <a href="refch12092.html" class="wordMeaning">પ્રકરણ 12 ની વાત 92 </a>   
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 રાંડીરાંડનું પેટ વધ્યું.= વિધવા સ્ત્રીએ વ્યભિચાર કર્યો ને ગર્ભવતી થઈ.
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૨૫) શ્રીસહજાનંદસ્વામી પરબ્રહ્મ પરમ કારુણિક મૂર્તિનાં બે ચરણારવિંદથી લઈને મસ્તક સુધી સર્વ અંગને પૃથક્ પૃથક્ ધારી ને એકાંત સ્થળને વિશે બેસીને ઇન્દ્રિયો, મન, પ્રાણ, તેનો <a href="#ex1" class="wordMeaning">પ્રત્યાહાર કરીને</a> <a href="#ex1" class="wordMeaning">પૂર્વાપર રાતને</a> વિશે અતિ દૃઢ મતિએ કરીને, અતિ દૃઢ ચિત્તે કરીને, અતિશે સ્થિર થઈને, યોગી જે તે શ્રીહરિનું ધ્યાન કરે. ને કામાર્ત (વિષયેચ્છાથી આતુર બનેલ કામી), તસ્કર (ચોર, છેતરનાર), નટ, વ્યસની ને દ્વેષી એ સર્વે પોતપોતાના વિષયને વિશે જેમ તત્પર થઈને મંડ્યા છે, તેમ મુનિ જે, તે શ્રીહરિની મૂર્તિ ધારવાને વિશે અતિ હર્ષે યુક્ત છે મન જેનું એવો થકો તત્પર થઈને મંડે ને સાધ્વી, ચકોર, <a href="#ex1" class="wordMeaning">શલભ</a>, મચ્છ, <a href="#ex1" class="wordMeaning">ચકવા</a>, <a href="#ex1" class="wordMeaning">ચકવી</a> ને બપૈયા, એ જેમ પોતપોતાના વિષયમાં નિમગ્ન છે, તેમ યોગી જે તે શ્રીહરિની મૂર્તિમાં અતિશે આનંદ થકો નિમગ્ન રહે. ને સમુદ્ર મંથન કરવાને સમે જેમ દેવ-દાનવ મનમાં વિશ્ર્વાસ રાખીને મંડ્યા હતા, તેમ યોગીએ મનમાં દૃઢ વિશ્ર્વાસ રાખીને ભગવાનની મૂર્તિ ધારવાનો નિત્ય નવો અધ્યાસ રાખવો. ને રસાસ્વાદ, નિદ્રા, હિંસા ને વિક્ષેપ, એ ધ્યાનમાં વિરોધી છે, તેનો ત્યાગ કરે ત્યારે ધ્યાન થાય; નહિ તો ન થાય.
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 પ્રત્યાહાર કરીને= વૃત્તિઓને પાછીવાળીને, અંતરવૃત્તિથી જીવવું તે.  <br/>
+2 પૂર્વાપર રાતને= મધ્યરાત્રિ પછીનો સમય, બ્રાહ્મમુહૂર્ત, રાત્રિના અઢી-ત્રણનો સમય.  <br/>
+3 શલભ= પતંગિયું.  <br/>
+4 ચકવા= ચકવો, એ નામનું કાવ્યમાં જાણીતું પક્ષી.  <br/>
+5 ચકવી= ચકવા પક્ષીની માદા. 
+
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

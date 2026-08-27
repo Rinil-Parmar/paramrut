@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ <li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+ 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (18) વહેવાર તો ટળી જાશે ને રૂપિયા જતા રહેશે માટે ખબરદાર થઈને પ્રભુ ભજી લેવા. રૂપિયાને મારગે ચાલે તો નંદ રાજાની પેઠે પાછો જ ન વળે. નંદ રાજાએ આખી પૃથ્વીનું ધન ભેળું કર્યું. પછી ધન કોની પાસે છે તે શોધવા એક <a href="#ex1" class="wordMeaning">દોકડે</a> ઊંટ વેચવા કાઢ્યો. <a href="#ex1" class="wordMeaning">તરકડી</a>નો છોકરો કહે, ‘મા મને દોકડે ઊંટ વેચાય છે તે લઈ દે.’ તેની મા કહે, ‘દોકડો નથી.’ છોકરો બહુ જ રોવા લાગ્યો, ત્યારે તરકડી કહે, ‘તારા <a href="#ex1" class="wordMeaning">બાપની ઘોરમાંથી</a> દોકડો લઈ જા.’ તે વાતની નંદ રાજાને ખબર પડી, એટલે ઘોરું બધી ખોદાવી ને પૈસા કાઢી લીધા. નંદ રાજા પાસે <a href="#ex1" class="wordMeaning">વરાહ</a>નું હાડકું હતું, તેથી દરિયામાં જઈને દ્રવ્ય મૂકી આવતા.
+ <br/><br/>
+ નારદજીના મનમાં એમ થયું જે, આણે તો બહુ ભૂંડું કર્યું. પછી નંદ રાજાની સ્ત્રી પાસે ગયા ને પૂછ્યું જે, ‘નંદ રાજાને તમારા ઉપર કેવું હેત છે?’ તો કહે, ‘ઘણું હેત છે.’ નારદજી કહે, ‘જૂનીના જેવું નથી, તેનું તો હાડકું નવઘરે બાંધી રાખ્યું છે તે રોજ પૂજે છે.’ એમ કહી વહ્યા ગયા. નંદ રાજા જમવા આવ્યા ત્યારે તેણે <a href="#ex1" class="wordMeaning">નવઘરા</a>નો છેડો દાબી જોયો તો સાચું થયું. પછી ચૂલામાં <a href="#ex1" class="wordMeaning"> ભાઠો  ભર્યો</a> હતો તેમાં નાખી દીધું. નંદ રાજા જમીને ઊઠ્યા ત્યારે નવઘરાનો છેડો દાબી જોયો તો દીઠું નહિ; એટલે ફાળ પડી ને પૂછયું જે, ‘આમાંથી મારું ક્યાં ગયું ?’ તો કહે ‘શું ?’ નંદ રાજા કહે, ‘આમાં ડાબલી હતી તે ક્યાં ગઈ ?’ તો કહે, ‘ઓલી કે દિવસની મરી ગઈ છે તેનું હાડકું શા સારુ (શા માટે) રાખવું પડે ?’ નંદ રાજા કહે, ‘લાવો તો ખરાં.’ એટલે કહે, તે તો ચૂલામાં બળીને ક્યારનુંય ખાખ થઈ ગયું !’ તે સાંભળી નંદ રાજા બેભાન થઈ પડ્યા ને મરી ગયા કારણ કે, દ્રવ્યમાત્ર દરિયામાં રહ્યું ! ‘<a href="#ex1" class="wordMeaning">ધમ્યું સોનું</a> ધૂડ મળ્યું’ તેના જેવું થયું. માટે ગૃહસ્થોએ સમજણ રાખવી ને વિવેક પણ રાખવો. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 દોકડો= રૂપિયાના સોમાભાગની કિંમતનો જૂનો તાંબાનો મુસ્લિમકાળનો સિક્કો. <br/>
+		2 તરકડી= મુસ્લિમ સ્ત્રી. <br/>
+		3 બાપની ઘોરમાંથી= બાપની કબરમાંથી.  <br/>
+		4 વરાહ= પૌરાણિક માન્યતા પ્રમાણે વિષ્ણુનો ત્રીજો અવતાર, ડુક્કર, સુવર.  <br/>
+		5 નવઘર= મુગટ-પાઘ કે ફેંટાની જેમ માથે બાંધવાનું જરિયાન વસ્ત્ર. <br/>
+ 		6 ભાઠો ભર્યો= રાખોડી ચઢેલ અંગારા. <br/>
+ 		7 ધમ્યું સોનું= શુદ્ધ સોનું.
+
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

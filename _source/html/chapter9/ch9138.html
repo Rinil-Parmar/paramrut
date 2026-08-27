@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (138) પરચો ઇચ્છે તેને પામર જાણવો. નિષ્કામી વર્તમાન પાળે છે એ જ મોટો પરચો છે માટે ત્રણ ગ્ંરથ અણીશુદ્ધ પાળવા.
+ <br/><br/>
+ સવૈ મન: કૃષ્ણપદારવિંદયોર્વચાંસિ વૈકુણ્ઠગુણાનુવર્ણને । <br/>
+કરૌ હરેર્મન્દિરમાર્જનાદિષુ શ્રુતિં ચકારાચ્યુતસત્ક્થોદયે ॥
+
+ <br/>
+ (શ્રીમદ્ ભાગવત : 9/4/18)
+ <br/>
+ અર્થ : પોતાના મનને શ્રીકૃષ્ણચંદ્રના ચરણારવિંદમાં, વાણીને ભગવાનના ગુણગાનમાં, હાથોને (બે હાથને) શ્રીહરિના મંદિર ને માર્જન વગેરેમાં, કાનને શ્રી અચ્યુતની કથાશ્રવણમાં, નેત્રોને ભગવાનની મૂર્તિ અને મંદિરના સફાઈ કરવામાં, કાનને વિષ્ણુની કથામાં... આ પ્રમાણે ભગવત્-સેવામાં લગાડી દીધા હતા.
+ <br/><br/>
+ એમ કરવું ને ખબર વિના તો દો શેર અત્તર માગ્યું એમ થાય છે. તે એક સાધુએ હરિજનને કહ્યું જે, ‘મહારાજને દર્શને જાવું છે તે દો શેર અત્તર લાવજો, મહારાજને ભેટ ધરવી છે.’ પછી હરિજન અત્તરની શીશી લાવ્યા ને કહ્યું જે, ‘મહારાજને આ અત્તર પસંદ આવે તો વધારે મંગાવજો.’ સાધુએ મહારાજને અત્તરની શીશી આપી તે મહારાજે અત્તરનાં વખાણ કર્યાં એટલે તે સાધુ બોલ્યા જે, ‘મેં તો દો શેર અત્તર મંગાવ્યું હતું, પણ હરિજન કહે, ‘મહારાજને પસંદ આવે તો વધારે મંગાવજો.’ પછી મહારાજ કહે, ‘સાધુને કાંઈ ખબર છે જે, દો શેર અત્તરના કેટલા રૂપિયા થાય? આટલી શીશીના જ દશ રૂપિયા બેઠા હશે !’ ત્યાગી થઈને ગૃહસ્થ પાસે માગી માગીને લાવે છે તે ત્યાગીને દૂષણ છે ને ગૃહસ્થ પાસેથી પરાણે લેવું તે તો તેનું લોહી પીધા જેવું છે ને એ જ હિંસા છે !
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

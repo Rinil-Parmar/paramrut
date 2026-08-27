@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (204) રામબાઈ તે જેતપુરનાં કડવીબાઈ, તે જ્ઞાતે બ્રાહ્મણ હતાં ને પરોક્ષ કીર્તન જે,
+ <br/><br/>
+ તેડી જાઓ તો અમારા મન ઠરે !
+ <br/><br/>
+ એ વારે વારે બોલતાં. એક વખતે કડવીબાઈ જેતપુરની સીમમાં ખડ લેતાં હતાં, ત્યાં મહારાજે ધોરાજીથી આવતાં દીઠાં. એટલે કડવીબાઈનું કીર્તન સાંભળી હોંકારો દીધો ને કહે, ‘જેને પ્રભુ ભજવા હોય તેણે ચૂડલી ન જોઈએ ને માથે વાળ ન જોઈએ.’ તે સાંભળીને કડવીબાઈએ ચૂડલી કાઢી નાખી દીધી તે મહારાજે લઈ લીધી ને મોટીબાઈને આપી. તે ઉપરથી પ્રેમાનંદસ્વામીએ,
+ <br/><br/>
+ મેરો કંગન નીકારી ગયો રે.
+ <br/><br/>
+ એ કીર્તન કર્યું. ત્યારે મહારાજ પ્રેમાનંદસ્વામીને વઢ્યા જે, ‘અમે કે દિવસ એવું કર્યું છે ?’ પછી મોટીબાએ ચૂડલી લાવીને મહારાજ તરફ <a href="#ex1" class="wordMeaning">રેડવી મૂકી</a> ને કહે, ‘આ કામ કેનું ?’ એટલે મહારાજ હસ્યા. 
+ <br/><br/>
+ કડવીએ ગામમાં જઈ વાળંદને બોલાવી જીવતે ધણીએ મૂંડાવ્યું; એટલે તેનો ધણી ખાટલાનો પાયો તેની છાતી માથે મૂકીને સૂતો, એવું દુ:ખ દેતો. તે વાતની મહારાજને ખબર પડી, ત્યારે મહારાજે પાળા સાથે <a href="#ex1" class="wordMeaning">વે’લડું</a> મોકલ્યું, તે પીઠડિયાને રસ્તે ફકીરનો તકિયો છે ત્યાં વે’લડું રાખી બે જણ ગામમાં ગયા, કડવીબાઈને મળ્યા ને કહે, ‘મહારાજે તેડવા મોક્લ્યા છે ને વે’લડું ફકીરના તકિયા આગળ રાખ્યું છે માટે ત્યાં આવજો.’ એમ કહી વહ્યા ગયા. પછી કડવી તેમની માને કહે, ‘મારા સારુ પૂડલા કર, ત્યાં હું ઝાડે ફરી આવું.’ એમ કહી વહ્યાં ગયાં. ને તેમની માને એકલાને હેત તે જાણે, ‘આ <a href="#ex1" class="wordMeaning">લાંઘે છે</a> તે લેને ખાય તો કરું.’ તે પૂડલા કરી રહ્યાં તોય આવ્યાં નહિ એટલે તેમની મા નદીએ ગયાં. ત્યાં તો પૂર આવેલ દીઠું ને એક ખત્રીને દીઠો તેને પૂછ્યું જે, ‘કોઈ બાઈને દીઠી?’ તો કહે, ‘હા, નદીમાં જતાં દીઠી હતી, ને પછી તો પૂર આવ્યું તે કાંઈ સરત રહી નથી.’ પછી તેમની મા જાણે પૂરમાં તણાઈ ગઈ હશે પણ તે તો વે’લડામાં બેસીને ગઢડે મહારાજ પાસે પહોંચ્યાં. 
+ <br/><br/>
+ પછી ગામમાં તેમની માએ વાત કરી જે, ‘કડવી તો પૂરમાં તણાઈ ગઈ.’ પણ સાસરિયાંવાળે માન્યું નહિ ને જેતપુરના કાઠીને રાવ કરી જે, ‘જીવો જોશી, પૂતળી, ગોરધન ને શિવો એ ચાર જણે મળી કડવીને ભગાડી છે.’ એટલે કાઠીએ એ ચારે હરિજનને બોલાવ્યા ને કહ્યું જે, ‘તમે કડવીને ભગાડી છે, માટે જો તે તમારા સત્સંગમાંથી જડશે તો તમારાં ચારેનાં માથાં ડૂલ થાશે.’ એટલે તેમણે <a href="#ex1" class="wordMeaning">માથાં માંડી આપ્યાં</a>. તે વાતની મહારાજને ખબર પડી, ત્યારે મહારાજ કહે, ‘તેને કાઢી મૂકો, તેના સારુ અમે ચાર હરિજનનાં માથાં નહિ દઈએ.’ પછી તો રામબાઈ નામ પાડ્યું ને કઠલાલમાં ધોળે લૂગડે રહ્યાં ને રેંટિઓ કાંતીને ભગવાન ભજ્યા. તે ઉપર પ્રેમાનંદસ્વામીએ,
+ <br/><br/>
+ કર દિની કર દિની કર દિની રે, બાલાપનમેં વેરાગન કર દિની.
+ <br/><br/>
+ એ કીર્તન કર્યું. ને જેતપુરના બ્રાહ્મણોને જીવા જોશી ઉપર મનમાં દાઝ જે તેણે ભગાડી છે માટે તેને હેરાન કરવો. પછી ચોરાશીમાં દાળ, શાક, પાણી વગેરે બધામાં <a href="#ex1" class="wordMeaning">વઘારણી</a> નાખીને કાઠીને કહ્યું જે, ‘જીવો જોશી તમારી ચોરાશી બગાડશે કાં જે, તે જમશે નહીં.’ પછી તે ન જમ્યા, એટલે કાઠીએ તેમને ઘેર કડી દીધી. તે વાતની મહારાજને ખબર પડી, ત્યારે મહારાજ કહે, ‘અમે વઘારણી ખાવાની ના પાડી છે, તે અમારી આજ્ઞા પાળવામાં જીવા જોશીને કેટલો મમત્વ છે, માટે કોઈ શાસ્ત્રવાળે નિષેધ ન કર્યો હોય તો પણ આપણે ન ખાવી.”
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 રેડવી મૂકી= ગબડતી-સરકતી મૂકી. <br/>
+		2 વે’લડું= વહેલ-છાપરાવાળું ગાડું. <br/>
+		3 લાંઘે છે= નકરડા ઉપવાસ કરે છે. <br/>
+		4 માથાં માંડી આપ્યાં= દોષિત ઠરીએ તો માથું કાપી લેવું એવું લખાણ કરી આપ્યું. <br/> 
+		5 વઘારણી= હિંગ.
+
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li> 
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ <h1 class="title_gu">  શિવજી, પાર્વતી, પોઠિયા  </h1>
+ 
+  શિવજીનું વાહન પોઠિયો. એકવાર ત્રણે મુસાફરીએ નીકળ્યાં. એક ગામ આવ્યું. લોકો કહે, ‘છતે વાહન ચાલીને જાય છે !’ આ સાંભળી બન્ને પોઠિયા પર બેઠાં. બીજું ગામ આવ્યું. લોકો કહે, ‘છે દયાનો છાંટો ? બન્ને ચઢી બેઠાં છે !’ થોડે દૂર ગયા પછી પાર્વતી કહે, ‘હું ચાલું છું તમે બેસો.’ શિવજી બેઠા. ત્રીજું ગામ આવ્યું. લોકો કહે, ‘પઠ્ઠા જેવો ચઢી બેઠો છે ને ફૂલ જેવી બાઈને પગે ચલાવે છે.’ આ સાંભળી શિવજી ઊતર્યા ને પાર્વતીને બેસાર્યા. ચોથું ગામ આવ્યું. લોકો કહે, ‘આ તે કેવો સમય આવ્યો છે ! ધણી બિચારો પગે ચાલે છે ને બાઈ ચઢી બેઠી છે !’ આમ લોકોને તો ટીકા-ટિપ્પણ કરવાનો સ્વભાવ જ હોય છે; એમના તરફ નજર રાખીએ તો ઊલટા દુ:ખી થવાય. <a href="ch2027.html">(૨/૨૭)</a> 
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

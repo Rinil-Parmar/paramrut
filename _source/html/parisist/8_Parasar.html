@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">પરાશર ૠષિ</h1>
+ 
+આ ૠષિ વસિષ્ઠ ૠષિના પૌત્ર અને શક્તિ ૠષિના પુત્ર હતા. તેમનો જન્મ દ્વાપરયુગમાં થયો હતો. રાક્ષસો તેમના પિતાનું ભક્ષ કરી ગયા ત્યારે પોતે તેમની માતા ઈલાના ગર્ભમાં હતા. ઈલા મનુની પુત્રી હતાં. પિતામહ વસિષ્ઠ પાસે તેઓ વેદ વગેરે શાસ્ત્રોનું જ્ઞાન લઈ મહાસમર્થ, ઉત્સાહી, શોધક થયા. તેમણે રાક્ષસ સત્ર નામનો યજ્ઞ કરી હજારો રાક્ષસોને મારી નાખ્યા. પછી પિતામહે તેમને સમજાવી તેમનો કોપ શાંત કરી યજ્ઞ બંધ કરાવ્યો. આ રીતે તેમણે પિતાનું વેર લીધું. પોતે શાસ્ત્રના સંશોધક પણ હતા. 
+<br/><br/>
+પરાશર ૠષિ વ્યાસજીના પિતા હતા. તેઓ બ્રહ્મચર્યાવસ્થામાં શૈલ પર્વત ઉપર રહેતા હતા. તે વખતે તેમને પંદર હજાર શિષ્યો હતા. આ મહર્ષિ જ્યોતિષ, ગણિત, બીજગણિત, નૌકાશાસ્ત્રમાં ઘણા પ્રવીણ હતા. ખગોળસંબંધી કેટલીક શોધ તેમણે કરેલ. તેમણે નૌકાશાસ્ત્રના જ્ઞાનબળ વડે સમુદ્રમાં સફર કરી ભરતખંડને લગતા બે-ચાર દ્વીપો પ્રથમ શોધી કાઢ્યા હોય તેમ કહેવાય છે. તેઓ પરાશર સ્મૃતિના પ્રવર્તક હતા. મહાભારતના શાંતિપર્વમાં એમના નામનું એક પ્રકરણ છે. તેઓ જ્યોતિષમાં માહેર હોવાથી જ્યોતિષના અઢાર સિદ્ધાંતમાં એક સિદ્ધાંત તેમનો છે. તેમના નામ પરથી બ્રાહ્મણોની એક જ્ઞાતિ પરાશરના નામે ઓળખાય છે. 
+<br/><br/>
+તેઓ એકવાર નાવમાં બેસીને ગંગાના સામે કાંઠે જતા હતા. નૌકા હંકારનાર તરીકે માછી જ્ઞાતિની મત્સ્યગંધા નામની કુંવારી કન્યા હતી. જે ખૂબ લાવણ્યમયી હતી. ૠષિ તેને જોઈને મોહ પામ્યા અને તેની સાથે વિહાર કરવાનું કહ્યું. સ્ત્રી કહે કાંઠાના માણસો આપણને જુએ છે ત્યારે ૠષિએ પોતાના તપ અને યોગબળથી વાતાવરણને ગાઢ ધુમ્મસ ભર્યું બનાવી દીધું. ૠષિએ તેની સાથે વિહાર કર્યો. આથી સ્ત્રી રડવા લાગી. ત્યારે ૠષિએ તેને આશ્વાસન આપ્યું કે, તારા ઉદરે ભગવાન સ્વયં પ્રગટ થશે. આમ મત્સ્યગંધાના ઉદરે ભગવાન વ્યાસ પ્રગટ થયા. ૠષિએ તે કન્યાનું નામ સત્યવતી રાખ્યું અને પોતાના તપ-બળથી તેને મત્સ્યગંધામાંથી યોજનગંધા એટલે જેની સુગંધ યોજનો સુધી આવે તેવી સુગંધીમાન કન્યા બનાવી દીધી. 
+<br/><br/>
+મહાપુરુષોનું કથિત કૃત્ય જીવના કલ્યાણ માટે હોય છે. જેનાથી વિશ્વનું રૂડું થતું હોય છે. પરાશર ૠષિના કથિત નિંદીત કૃત્યથી ભગવાન વેદવ્યાસ આ સૃષ્ટિને પ્રાપ્ત થયા.
+<br/><br/>
+પરાશરૠષિ વસિષ્ઠ કુળના મંત્ર દૃષ્ટા ગણાય છે. તેમના વંશમાં વસિષ્ઠ, મિત્રાવરુણ અને કુંડિન એ ત્રણ પ્રવરના ગૌર પરાશર, નીલ પરાશર, શ્વેત પરાશર, કૃષ્ણ પરાશર, શ્યામ પરાશર અને ધૂમ્ર પરાશર એવા છ ભેદ છે. પરાશરૠષિ પોતાની વિદ્વતા અને તપ પ્રભાવથી રાજા, પ્રજા અને ૠષિમાં મોટા માનને મેળવી અમર નામના રાખી ગયા છે. 
+
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

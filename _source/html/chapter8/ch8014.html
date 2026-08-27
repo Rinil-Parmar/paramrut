@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (14) શબ્દે કરીને સાધુ થકી જ્ઞાન પામીને દેહ બંધાય છે, પછી જેમ બુંદ સૃષ્ટિના દેહની ઉત્પત્તિને લઈને કણબીનો દીકરો કહે જે, ‘હું કણબી છું.’ બ્રાહ્મણનો દીકરો કહે જે, ‘હું બ્રાહ્મણ છું.’ એમ ઉત્તમ, નીચ જાતિમાં જ્યાં જ્યાં જન્મે તેનું અભિમાન લઈને દેહાંત સુધી બોલે છે; તેમ,
+ <br/><br/>
+ સદ્ગુરુ શબ્દાતીત પરમ પ્રકાશ હૈ, જાકે શરણે જાય, અવિદ્યા નાશ હૈ,
+ <br/><br/>
+ એવા શબ્દે કરીને બ્રહ્મરૂપ ગુરુને શરણે થયો ને મન, કર્મ, વચને શુદ્ધભાવે જોડાણો, તે એમ માને જે, ‘એ સદ્ગુરુને જેવા મેં બ્રહ્મરૂપ જાણ્યા, તેવો જ તેને સજાતીય હું થઈ રહ્યો છું.’ તે <a href="GP-58.html">પ્રથમનાં 58</a>માં વચનામૃતમાં કહ્યું છે જે, ‘સત્પુરુષને નિષ્કામી, નિર્લોભી, નિ:સ્વાદી, જેવા જેવા જાણે તેવો પોતે થાય છે’ ને <a href="GP-14.html">પ્રથમનાં 14</a>માં વચનામૃતમાં કહ્યું છે જે, ‘સંતનો સમાગમ મળ્યો છે તે તો પરમ ચિંતામણિ ને કલ્પવૃક્ષ મળ્યાં છે, માટે હું કૃતાર્થ થઈ રહ્યો છું.’ એમ હમણાં જેવી મતિ છે તેવી ગતિ થાય છે તથા <a href="S-10.html">સારંગપુરનાં 10</a>માં વચનામૃતમાં કહ્યું છે કે, ‘સંત સમાગમમાં પડ્યો રહે ને અપમાનનું સહન કરે તો તે સમજણવાળા સંત જેવો જ તેને જાણવો ને તેના જેવી જ તેની પ્રાપ્તિ જાણવી.’ તથા સૌભરિ ને કર્દમ ઋષિને દૃષ્ટાંતે, ‘જેવા ભક્ત મળે ને તેમાં જેને હેત થાય તેના જેવું જ તેનું કલ્યાણ થાય.’ એમ <a href="GP-75.html">પ્રથમનાં 75</a>માં વચનામૃતમાં ને બીજે ઘણે ઠેકાણે કહ્યું છે, માટે સાક્ષાત્ અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામીને બ્રહ્મસ્વરૂપે વર્તતા એવા સંતને મહારાજે પોતાની મૂર્તિ કહી છે તથા પોતાનું સ્વરૂપ કહ્યું છે તથા એવા સંતને પૂજયે મહારાજ તથા અક્ષરધામ અને અક્ષરમુક્તો પૂજાઈ રહ્યા તથા,
+ <br/><br/>
+ સાચા સંત સેવ્યે સેવ્યા નાથ, સેવ્યા સુર સહુને;
+ <br/>
+ એવા સંત મળ્યે મળ્યા સ્વામી* ખામી કોયે ન રહી;
+ <br/>
+ (*સ્વામી એટલે શ્રી સહજાનંદસ્વામી)
+ <br/>
+ (કીર્તન મુક્તાવલિ : 1034) 
+ <br/><br/>
+ એમ કહ્યું તથા વચનામૃતમાં કહ્યું જે, ‘એવા સંતને દર્શને અનંત પતિત જીવોનો ઉદ્ધાર થાય છે તથા એવા સંતની સેવાએ સાક્ષાત્ ભગવાનની સેવા થાય છે ને એવાનું દર્શન થયું ત્યારે સાક્ષાત્ ભગવાનનું દર્શન થયું.’ (<a href="GP-37.html">વચ.ગ.પ્ર.37</a>) એમ <a href="#ex1" class="wordMeaning">ઠામેઠામ</a> કહ્યું છે. હવે જેવા ગુરુને સેવે છે તેવું શિષ્યમાં દૈવત આવે છે; માટે જેણે ગુણાતીત થાવું હોય ને ગુણાતીત એવું જે અક્ષરધામ તેને સાક્ષાત્ પામવું હોય ને અખંડ પુરુષોત્તમ ભગવાનની સેવામાં રહેવું હોય; તેને આ બરાબર બીજું કાંઈ નથી.
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઠામેઠામ= ઠેકાણે ઠેકાણે, ઠેરઠેર, દરેક જગ્યાએ.  
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect"><li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૯: સ્વરૂપનિષ્ઠાનું, અવતાર જેવા જાણે તો દ્રોહ થયાનું</h1>
+			<p class="text_gu">સંવત ૧૮૭૮ના શ્રાવણ સુદિ ૧૪ ચૌદશને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિર આગળ મશરૂના ચાકળા ઉપર વિરાજમાન હતા ને તે સમે આનંદાનંદ સ્વામીએ પૂજા કરી હતી તે રાતા કિનખાબનો સુરવાળ પહેર્યો હતો તથા રાતા કિનખાબની ડગલી પહેરી હતી તથા મસ્તક ઉપર સોનેરી ફરતા છેડાનો કસુંબી રેંટો બાંધ્યો હતો તથા કમરે જરકસી શેલું બાંધ્યું હતું તથા ગૂઢા આસમાની રંગનો રેંટો ખભા ઉપર નાખ્યો હતો અને હાથે રાખડીઓ બાંધી હતી અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+			<p class="text_gu">પછી મુક્તાનંદ સ્વામીએ કહ્યું જે, “કીર્તન બોલીએ.” પછી શ્રીજીમહારાજે કહ્યું જે, “લ્યો, પરમેશ્વરની વાર્તા કરીએ.” પછી શ્રીજીમહારાજ બોલ્યા જે, “જ્ઞાનમાર્ગ તો એવો સમજવો જે, કોઈ રીતે ભગવાનના સ્વરૂપનો દ્રોહ થાય નહીં. અને કોઈક કાળે ભગવાનના વચનનો લોપ થતો હોય તો તેની ચિંતા નહીં, પણ ભગવાનના સ્વરૂપનો દ્રોહ થવા દેવો નહીં. અને જો ભગવાનનું વચન કાંઈક લોપાયું હોય તો તે ભગવાનની પ્રાર્થના કરીને પણ છૂટકો થાય, પણ ભગવાનના સ્વરૂપનો દ્રોહ કર્યો હોય તો તેનો કોઈ રીતે છૂટકો થાય નહીં. માટે જે સમજુ હોય તેને ભગવાનના વચનમાં તો જેટલું પોતાની સામર્થી પ્રમાણે રહેવાય તેટલું અવશ્ય રહેવું, પણ ભગવાનની મૂર્તિનું બળ અતિશય રાખવું જે, ‘સર્વોપરી ને સદા દિવ્ય સાકારમૂર્તિ અને સર્વ અવતારનું અવતારી એવું જે ભગવાનનું સ્વરૂપ છે તે જ મને પ્રાપ્ત થયું છે.’ અને જે એમ જાણતો હોય ને તેથી જો કદાચિત્ સત્સંગથી બાહેર નીસરી જવાણું તોય પણ તેને ભગવાનની મૂર્તિમાંથી હેત ટળતું નથી અને તે હમણાં તો સત્સંગથી બાહેર છે પણ દેહ મૂકીને તો અંતે ભગવાનનું જે અક્ષરધામ તેને વિષે ભગવાનને સમીપે જશે. અને હમણે સત્સંગમાં રહેતો હશે અને શાસ્ત્રનાં વચનમાં પણ રહેતો હશે અને તેને જો ભગવત્સ્વરૂપની નિષ્ઠા પાકી નહીં હોય તો તે જ્યારે દેહ મૂકશે ત્યારે કાં તો બ્રહ્માના લોકમાં જશે ને કાં તો કોઈક બીજા દેવતાના લોકમાં જશે પણ તે પુરુષોત્તમ ભગવાનના ધામને વિષે નહીં જાય. તે માટે <b>પોતાને સાક્ષાત્ મળ્યું જે ભગવાનનું સ્વરૂપ તેને સદા દિવ્ય સાકારમૂર્તિ ને સર્વ અવતારનું કારણ અવતારી એવું જાણવું. અને જો એમ ન જાણે ને નિરાકાર જાણે ને બીજા અવતાર જેવા જાણે તો એનો દ્રોહ કર્યો કહેવાય</b>. અને જેમ અર્જુન હતા તેને તો ભગવત્સ્વરૂપનું બળ હતું અને યુધિષ્ઠિર રાજાને તો શાસ્ત્રનાં વચનનું બળ હતું. પછી જ્યારે ભારતની લડાઈ થઈ ત્યારે શ્રીકૃષ્ણ ભગવાને અર્જુનને કહ્યું જે,</p>
+			<cite class="text_gu">‘સર્વધર્માન્પરિત્યજ્ય મામેકં શરણં વ્રજ ।<br>
+				અહં ત્વાં સર્વપાપેભ્યો મોક્ષયિષ્યામિ મા શુચઃ ॥’
+			</cite>
+			<p class="text_gu">એ શ્લોકનો એ અર્થ છે જે, ‘હે અર્જુન! સર્વ ધર્મને તજીને તું એક મારા જ શરણને પામ્ય, તો હું તને સર્વ પાપ થકી મુકાવીશ. તું કાંઈ શોક કરીશ માં.’ એ વચનને માનીને અર્જુન જે તે લડાઈને વિષે અનંત દોષ થયા તો પણ લેશમાત્ર મનમાં ઝાંખા થયા નહીં અને ભગવાનના આશ્રયનું બળ રાખી રહ્યા. અને યુધિષ્ઠિરે કાંઈ પાપ કર્યું નહીં તો પણ શાસ્ત્રનાં વચનનો વિશ્વાસ હતો તેણે કરીને એમ જાણ્યું જે, ‘મારું કોઈ કાળે કલ્યાણ નહીં થાય.’ પછી સર્વે ઋષિએ સમજાવ્યા તથા વ્યાસજીએ સમજાવ્યા તથા શ્રીકૃષ્ણ ભગવાને પોતે સમજાવ્યા તોય પણ શોક મૂક્યો નહીં. પછી શ્રીકૃષ્ણ ભગવાને ભીષ્મ પાસે લઈ જઈને શાસ્ત્ર સંબંધી કથા સંભળાવી ત્યારે કાંઈક વિશ્વાસ આવ્યો; તોય પણ અર્જુન જેવા નિઃસંશય થયા નહીં. માટે બુદ્ધિમાનને તો ભગવત્સ્વરૂપનું બળ અતિશય રાખ્યું જોઈએ. એ બળ જો લેશમાત્ર પણ હોય તો મોટા ભયથી રક્ષા કરે. તે પણ શ્રીકૃષ્ણ ભગવાને કહ્યું છે જે,</p>
+			<cite class="text_gu">‘સ્વલ્પમધપ્યસ્ય ધર્મસ્ય ત્રાયતે મહતો ભયાત્ ।’</cite>
+			<p class="text_gu">એ શ્લોકનો એ અર્થ છે જે, ‘ભગવત્સ્વરૂપના બળનો લેશમાત્ર હોય તે પણ મોટા ભય થકી રક્ષાને કરે છે.’ જેમ અર્જુને ભારતી લડાઈ કરી ત્યારે તેને વિષે કેટલીક જાતના અધર્મરૂપી મોટા મોટા ભય આવ્યા, પણ તે ભય થકી જે અર્જુનની રક્ષા થઈ તે ભગવત્સ્વરૂપના બળને પ્રતાપે થઈ. માટે <b>જેને સર્વથી ભગવત્સ્વરૂપનું બળ અધિક હોય એ જ એકાંતિક ભક્ત કહેવાય અને તે જ પાકો સત્સંગી કહેવાય</b>.</p>
+			<p class="text_gu">અને શ્રીમદ્‌ભાગવતમાં પણ એ જ વાત પ્રધાન છે જે, ‘શ્રુતિ-સ્મૃતિના ધર્મને કાંઈક તજાય તો તેની ચિંતા નહીં, પણ ભગવાનનો આશ્રય તજવો નહીં.’ અને કોઈક એમ જાણે જે, ‘આવી વાત કરીએ તો ધર્મ ખોટા થઈ જાય.’ પણ આ વાર્તા કાંઈ ધર્મને ખોટા કર્યા સારુ નથી; આ તો એટલા સારુ છે જે, દેશ, કાળ, ક્રિયા, સંગ, મંત્ર, શાસ્ત્ર, ઉપદેશ અને દેવતા એટલાં વાનાં શુભ અને અશુભ એ બે પ્રકારનાં છે, તેમાંથી જો અશુભનો યોગ થાય ને એને કાંઈક વિઘ્ન પડે તો પણ જો ભગવાનના સ્વરૂપમાં નિષ્ઠા પાકી હોય તો તે કલ્યાણના માર્ગમાંથી કોઈ કાળે પડે નહીં, અને જો ભગવત્સ્વરૂપની નિષ્ઠામાં કાચ્યપ હોય તો જે દિવસ ધર્મમાંથી ચળી જવાય તે દિવસ તે એમ જાણે જે, ‘હું નરકમાં પડી ચૂક્યો.’ માટે જેને ભગવત્સ્વરૂપનું બળ તે જ પાકો સત્સંગી છે અને એ વિના બીજા તો ગુણબુદ્ધિવાળા કહેવાય. અને જેને ભગવત્સ્વરૂપની નિષ્ઠા પાકી હોય તેને જ શાસ્ત્રમાં પણ એકાંતિક ભક્ત કહ્યા છે. અને આ સમયમાં જેવી સત્સંગમાં વાર્તા થાય છે તેને જો નારદ-સનકાદિક ને બ્રહ્માદિક દેવતા સાંભળે, તો સાંભળીને એમ કહે જે, ‘આવી વાર્તા કોઈ કાળે સાંભળી પણ નથી અને સાંભળશું પણ નહીં. આ વાર્તા તો <b>‘ન ભૂતો ન ભવિષ્યતિ’</b> એવી છે.’ અને અતિશય ઝીણી વાર્તા થાય છે તો પણ અતિશય સ્થૂળ બુદ્ધિવાળા હોય તેને પણ સમજાય છે, એવી મૂર્તિમાન વાર્તા થાય છે. માટે, ‘આ સમે જેને સત્સંગમાં પ્રતીતિ આવી છે તેના પુણ્યનો પાર આવે એમ નથી,’ એવું જાણીને સત્સંગી હોય તેને પોતાને વિષે કૃતાર્થપણું માન્યું જોઈએ. અને જેને ભગવાનને વિષે અતિશય પ્રીતિ હોય તેને તો આ વાર્તા સમજાય અથવા ન સમજાય તો પણ તેને તો કાંઈ કરવું રહ્યું નથી; પણ જેને પરમેશ્વરને વિષે અતિશય પ્રીતિ તો ન હોય તેને તો જરૂર ભગવાનના સ્વરૂપનો મહિમા સમજ્યો જોઈએ. માટે જે ડાહ્યો હોય તેને તો આ વાર્તા સમજી-વિચારીને અતિ દ્રઢ ભગવાનનો આશરો કરવો એ જ મત અતિ સારમાં સાર છે.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

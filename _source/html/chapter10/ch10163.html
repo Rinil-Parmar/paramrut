@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (163) આચાર્ય મહારાજ આગળ વાત કરી જે, સમગ્ર શાસ્ત્રનો સાર પાંચ વાતમાં આવી જાય છે, તેમાં પ્રથમ મૂકવાની વાત, તે લોભ, કામ, રસાસ્વાદ, સ્નેહ, માન, દેહાભિમાન અને સાતમો પક્ષપાત; એ સાત દોષ જીવ જ્યારે મૂકે છે ત્યારે જ સુખિયો થાય છે. બીજી વાત જાણવાની, તે સ્થાવર જંગમ જીવપ્રાણીથી લઈને પ્રકૃતિપુરુષ પર્યંત જે નામરૂપ ને આકારમાત્ર છે તે સર્વેનો કાળ જે તે ચાર પ્રકારના પ્રલયે કરીને કાળાંતરે નાશ કરે છે, એ વાત અવશ્ય સમજીને એ માયાના સર્ગમાં લેશમાત્ર પ્રીતિ રહેવા દેવી નહિ અને એ બધાંને સો કરોડ મણ ઢૂંસાં ને રાખનાં પડીકાં જાણવાં.
+ <br/><br/>
+ ત્રીજી વાત સમજવાની, તે પુરુષ-પ્રકૃતિથી પર સદા દિવ્ય સાકાર અને અવતારમાત્રના અવતારી અક્ષરાતીત પ્રગટ પુરુષોત્તમ શ્રી સહજાનંદસ્વામી તથા તેમને રહ્યાનું જે અક્ષરધામ અને તે અક્ષરધામના સાધર્મ્યપણાને પામ્યા જે મુક્તો, તેમનાં સ્વરૂપનું યથાર્થ જ્ઞાન; અને ધર્મ, જ્ઞાન, વૈરાગ્ય ને માહાત્મ્ય જ્ઞાનેયુક્ત જે પ્રગટ ભગવાન શ્રી સહજાનંદસ્વામીને વિશે ભક્તિ અને એ ચારેયસહ વર્તમાન જે પરમ એકાંતિક ધર્મના ધરતલ જે પ્રગટ એકાંતિક સત્પુરુષો; અને જીવ, ઈશ્ર્વર, માયા, બ્રહ્મ ને પરબ્રહ્મના સ્વરૂપને યર્થાથપણે વર્ણવતાં સત્શાસ્ત્રોનાં પ્રમાણ વચનો, એ સર્વનાં સ્વરૂપને બરાબર સમજવાં વળી. પરોક્ષ બ્રહ્મના અને જીવ, ઈશ્ર્વર, બ્રહ્મના અભેદ વર્ણનમાં જ વેદાંતનો અંત આવી જાય છે; પણ નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ । કહેતાં ત્રણ દેહથી પોતાના આત્માને પૃથક્ માની, સનાતન અક્ષરબ્રહ્મ કે તેના સાધર્મ્યપણાને પામેલ પ્રગટ મૂર્તિ સાથે ઐક્યતાની ભાવના કરીને મહારાજની સર્વોપરી ઉપાસના કરવાથી જે આત્યંતિક મુક્તિ થાય છે, એવો ન ભૂતો ન ભવિષ્યતિ । અર્થ :- પહેલાં થયું નથી અને ભવિષ્યમાં થશે નહિ. અને અલૌકિક મોક્ષનો મારગ મહારાજે સ્થાપ્યો છે એ વાત સત્શાસ્ત્ર પઠનથી સમજવાની છે.
+ <br/><br/>
+ ચોથી વાત કરવાની, તે શાસ્ત્રમાં મોક્ષને અર્થે અનેક સાધનો કહ્યાં છે પણ તે સર્વેમાં અતિ શ્રેષ્ઠપણે મુખ્ય તો એકાંતિક સાધુના સંગે કરીને ભગવાનનો દૃઢ આશરો બ્રહ્મરૂપે કરવો તે છે. અને પાંચમી વાત રાખવાની, તે આત્મા પરમાત્માના સ્વરૂપના શુદ્ધ વિચારને અખંડ ધ્યાનમાં રાખવો. અને મહારાજે <a href="GA-30.html" class="wordMeaning">છેલ્લાના 30માં</a> વચનામૃતમાં કહ્યા જે પાંચ અનુસંધાન અને જાણપણારૂપ વિચાર તે અખંડ રાખવા અને <a href="GA-39.html" class="wordMeaning">છેલ્લાના 39માં</a> વચનામૃતમાં કહ્યો જે આત્મા પરમાત્માનો વેગ તે જે અખંડ લગાડી રાખવો અને એ બધા જ્ઞાનનાં કારણ જે ભગવાનના પરમ એકાંતિક સંત તેમની સાથે જે તે દૃઢ પ્રીતિ ને મમતા તે અખંડ રાખવી.
+ <br/><br/>
+ આવી રીતે એ પાંચેય વાનાંએ કરીને આત્યંતિક પ્રલય જે જ્ઞાનપ્રલય તેણે કરીને જે માયિક ઉપાધિનો ત્યાગ કરે છે અને અક્ષરબ્રહ્મરૂપ થઈને જે પુરુષોત્તમ-નારાયણના સ્વરૂપમાં ઉપશમને પામે છે તેને પાછી કોઈ કાળે માયિક ઉપાધિ વળગતી નથી, એ સિદ્ધાંત વાત છે. 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૭ - દરિદ્રીનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૭૮ના શ્રાવણ સુદિ ૧૧ એકાદશીને દિવસ રાત્રિને સમે સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિર આગળ વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+પછી મુક્તાનંદ સ્વામીએ શ્રીજીમહારાજને પ્રશ્ન પૂછ્યો જે, “ભગવાનનો ભક્ત હોય તેના મનમાં તો એમ હોય જે, ભગવાનના ભજનમાં અંતરાય કરે એવો એકે સ્વભાવ રાખવો નથી, તોય પણ અયોગ્ય સ્વભાવ રહી જાય તેનું શું કારણ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જેને વૈરાગ્યની દુર્બળતા હોય તેને ટાળ્યાની શ્રદ્ધા હોય તોય સ્વભાવ ટળે નહીં. જેમ દરિદ્રી હોય તે ઘણાં સારાં સારાં ભોજન ને સારાં સારાં વસ્ત્રને ઇચ્છે પણ તે ક્યાંથી મળે? તેમ વૈરાગ્યહીન હોય તેના હૃદયમાં ઇચ્છા તો હોય પણ સાધુતાના ગુણ આવવા ઘણા દુર્લભ છે.”
+</p> 
+<p class=“text_gu”> 
+પછી વળી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “જેને વૈરાગ્ય ન હોય તે શો ઉપાય કરે ત્યારે વિકાર ટળે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “<b>વૈરાગ્યહીન હોય તે તો કોઈ મોટા સંત હોય તેની અતિશય સેવા કરે અને પરમેશ્વરની આજ્ઞામાં જેમ કહે તેમ મંડ્યો રહે. પછી પરમેશ્વર તેને કૃપાદ્રષ્ટિએ કરીને જુએ જે, ‘આ બીચારો વૈરાગ્યરહિત છે, તેને કામ-ક્રોધાદિક બહુ પીડે છે, માટે એના એ સર્વે વિકાર ટળો;’ તો તત્કાળ ટળી જાય</b> અને સાધને કરીને તો બહુકાળ મહેનત કરતાં કરતાં આ જન્મે ટળે અથવા બીજે જન્મે ટળે. અને તરત જે વિકારમાત્ર ટળે તે તો પરમેશ્વરની કૃપાએ કરીને ટળે.”
+</p> 
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

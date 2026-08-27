@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+	<ul class="reader_tools noselect">			
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૩૩: ચાર વાનાંથી બુદ્ધિમાં ફેર ન પડે, તેનું</h1>
+
+
+<p style="" class="text_gu">સંવત ૧૮૮૫ના ફાગણ સુદિ ૧૧ એકાદશીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીગોપીનાથજીના મંદિરને વિષે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+
+<p style="" class="text_gu">પછી શ્રીજીમહારાજે સર્વ પરમહંસ આગળ એમ વાર્તા કરી જે, “ધન, દોલત, સ્ત્રી અને પુત્ર એ આદિક જે પદાર્થ તેણે કરીને જેની બુદ્ધિમાં ફેર પડે નહીં અને એને અર્થે કોઈને વિષે આસ્થા આવે નહીં, એવા તો સત્સંગમાં થોડાક ગણતરીના હરિભક્ત હોય પણ ઝાઝા હોય નહીં.” એમ કહીને વળી બોલ્યા જે, “એવા તો આ મુક્તાનંદ સ્વામી તથા ગોપાળાનંદ સ્વામી છે. તે એમને કોઈ બીજો ગમે તેવો હોય ને ચમત્કાર દેખાડે તો પણ તેનો કોઈ રીતે ભાર આવે જ નહીં. અને કેવો હોય તેને કોઈનો ભાર ન આવે? તો જે એમ સમજતો હોય જે, ‘આ દેહથી નોખો જે આત્મા તે હું છું ને તે હું પ્રકાશમાન, સત્તારૂપ છું ને તે મારા સ્વરૂપને વિષે પ્રત્યક્ષ ભગવાન અખંડ વિરાજમાન છે ને તે ભગવાનના આકાર વિના બીજા જે પ્રાકૃત આકારમાત્ર તે અસત્ય છે ને તે અનંત દોષે યુક્ત છે.’ એવો વૈરાગ્ય હોય ને ભગવાનનું માહાત્મ્ય યથાર્થ જાણતો હોય તેને કોઈ જાતનો બુદ્ધિમાં ભ્રમ થાય નહીં. પણ એ વાર્તા અતિ કઠણ છે. કેમ જે, એ એવા મોટા છે તો પણ જો એમને માનનો બહુ યોગ થાય તથા રૂપિયા અને સોનામહોરના ઢગલા આગળ આવીને પડવા લાગે તથા રૂપવાન એવી જે સ્ત્રીઓ તેનો યોગ થાય, તો એ ત્યાગી છે તો પણ એણે કરીને એમનું ઠેકાણું રહે નહીં. અને જો એવો યોગ થાય તો આજ આપણા ત્યાગીમાં જે અતિ ઊતરતો હશે, તે જેવા પણ રહે કે ન રહે એમાં પણ સંશય છે. કેમ જે, એ પદાર્થનો તો યોગ જ એવો છે. જેમ આ આપણ સર્વ બેઠા છીએ તે કેવા ડાહ્યા છીએ! પણ જો દારૂના શીશાનું પાન કર્યું હોય તો કોઈ ઠા રહે નહીં; તેમ એ પદાર્થનો સંગ જરૂર લાગ્યા વિના રહે જ નહીં. માટે એ પદાર્થનો યોગ જો ન થવા દે તો એ એથી બચે ને એનો યોગ થયા મોર એનો ભય રાખે જે, ‘રખે મને એનો યોગ થાય!’ અને એ વાર્તા શાસ્ત્રમાં પ્રસિદ્ધ છે જે, ‘એનો સંગ તો એક ભગવાનને ન લાગે.’ તે કહ્યું છે, ‘ઋષિં નારાયણમૃતે’ તથા ‘યેઽન્યે સ્વતઃ પરિહૃતાદપિ બિભ્યતિ સ્મ ।’.”</p>
+
+
+<p style="" class="text_gu">પછી શ્રીજીમહારાજ એમ બોલ્યા જે, “વાસુદેવ ભગવાનનો એકાંતિક ભક્ત કેને કહીએ? તો જેને વિષે સ્વધર્મ, જ્ઞાન, વૈરાગ્ય, અને માહાત્મ્યે યુક્ત એવી વાસુદેવ ભગવાનની અનન્ય ભક્તિ - એટલાં વાનાં હોય તેને એકાંતિક ભક્ત કહીએ. અને એની ગતિ એમ કહી છે જે, ‘એનો વાસુદેવ ભગવાનમાં પ્રવેશ થાય.’ તે પ્રવેશ તે શું? તો તેજના મંડળને વિષે દિવ્યમૂર્તિ એવા જે વાસુદેવ ભગવાન તેને વિષે એ ભક્તને સ્નેહ હોય, તે સ્નેહે કરીને વાસુદેવ ભગવાનની મૂર્તિને વિષે એના મનનું નિરંતર અનુસંધાન રહે ને આસક્ત થકો વર્તે ને એવી રીતે રહ્યો થકો એ વાસુદેવ ભગવાનની સેવાને વિષે પણ બહાર થકી રહે. જેમ લક્ષ્મીજી છે તે વાસુદેવ ભગવાનના હૃદયને વિષે ચિહ્‎નરૂપે સ્નેહના આધિક્યપણે કરીને રહ્યાં છે ને બહાર થકી સ્ત્રીરૂપે કરીને સેવામાં પણ રહ્યાં છે; તેમ એ એકાંતિક ભક્તનો વાસુદેવ ભગવાનને વિષે પ્રવેશ જાણવો. અને હમણાં પણ જે ભક્તને ભગવાનની કથા, કીર્તન, નામસ્મરણ ઇત્યાદિક જે દસ પ્રકારની ભક્તિ તથા ભગવાનનું માહાત્મ્ય તથા સ્વધર્મ તથા વૈરાગ્ય તથા આત્મનિષ્ઠા તથા સંતનો સમાગમ એનું બંધાણ હોય, તે એવું હોય જે, તે વિના કોઈ રીતે ચાલે જ નહીં. જેમ અફીણ આદિકનો બંધાણી હોય તેને તે વિના ચાલે નહીં ને તે અફીણ તો કડવું ઝેર છે તો પણ અફીણના બંધાણીને અફીણ વિના ચાલે નહીં. તથા દારૂનું બંધાણ હોય તો તે દારૂ પણ પીએ ત્યારે ગળું બળે એવો છે તો પણ તે વિના ચાલે નહીં. તે એને ઘણાક રૂપિયા આપે તો પણ એ બંધાણથી તે વહાલા ન થાય ને ન લે; કેમ જે, એ વ્યસન એના જીવ સંગાથે જડાઈ ગયું છે. તેમ જેને ભગવદ્‌ભક્તિ આદિક ક્રિયાનું બંધાણ થયું હોય તે ગમે તેવો કુસંગ થાય તો પણ તે વિના એને ચાલે જ નહીં ને એ વિના બીજા કાર્યમાં એનું મન રાજી થાય નહીં ને ભગવદ્‌ભક્તિ આદિક ક્રિયામાં એનો જીવ જડાઈ ગયો હોય ને એનો જ એને અતિ ઇશક હોય, એવો જે ભગવાનનો ભક્ત તેનો પણ વાસુદેવ ભગવાનને વિષે પ્રવેશ છે એમ જાણવું. અને તે ભગવદ્‌ભક્ત કેવો હોય? તો ભગવાનની સેવા વિના ચતુર્ધા મુક્તિને પણ ન ઇચ્છે તો બીજાની શી વાર્તા? એવો હોય તે ભગવાનનો એકાંતિક ભક્ત જાણવો ને એને કોઈ પદાર્થમાં ઇશક ન હોય. અને એવો ન હોય ને ક્યારેક ભગવાનની ભક્તિમાં સુવાણ થાય ને જો કુસંગનો યોગ થાય તો ભક્તિને ભૂલી જાય ને તે ચાળે ચઢી જાય, એને તો પ્રાકૃત દેહાભિમાની કહીએ; પણ એ ભક્ત ખરો નહીં ને એનો વિશ્વાસ નહીં.”</p>
+
+
+<p style="" class="text_gu">અને વળી શ્રીજીમહારાજે એમ વાર્તા કરી જે, “<b>ભગવાનના ભક્તને સ્ત્રી, ધન, દેહાભિમાન અને સ્વભાવ એ ચાર વાનાંમાં કાચ્યપ હોય ને તે ભગવાનની ભક્તિ કરતો હોય તો પણ એની ભક્તિનો વિશ્વાસ નહીં, એની ભક્તિમાં જરૂર વિઘ્ન આવે.</b> કેમ જે, ક્યારેક એને સ્ત્રી-ધનનો યોગ થાય તો ભક્તિનો ઠા રહે નહીં ને તેમાં આસક્ત થઈ જાય. તથા દેહાધ્યાસ હોય તો જ્યારે દેહમાં રોગાદિક કષ્ટ પ્રાપ્ત થાય તથા અન્ન-વસ્ત્રાદિક ન મળે અથવા કોઈક કઠણ વર્તમાન પાળવાની આજ્ઞા થાય, ત્યારે પણ તેને ભક્તિમાં ભંગ થાય ને વિકળ થઈ જાય ને કાંઈ વિચાર ન રહે ને ચાળા ચૂંથવા લાગે. તથા કોઈક રીતનો સ્વભાવ હોય તેને સંત ટોકવા માંડે ને તે સ્વભાવ પ્રમાણે વર્તવા ન દે, બીજી રીતે વર્તાવે, ત્યારે પણ એ મૂંઝાય ને એને સંતના સમાગમમાં રહેવાય નહીં, ત્યારે ભક્તિ તે ક્યાંથી રહે? માટે જેને દ્રઢ ભક્તિ ઇચ્છવી હોય તેને એ ચાર વાનાંમાં કાચ્યપ રાખવી નહીં. ને એ ચારની કાચ્યપ હોય તો પણ સમજીને ધીરે ધીરે ત્યાગ કરવી, તો વાસુદેવ ભગવાનની નિશ્ચળ ભક્તિ થાય. આ વાર્તા તે આમ જ છે પણ એમાં કોઈ સંશય નથી.”</p>
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

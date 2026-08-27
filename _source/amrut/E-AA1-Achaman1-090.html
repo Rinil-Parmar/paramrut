@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			Tā. 10-6-1973, rātre, mahārājano nirvāṇadina<br/>90. Mahārāje jeṭh sud dasamanā roj dhāmamān javāno sankalpa karyo te pahelān sankalpa karelo ke, ‘hun ā pṛuthvī par akhanḍit rahīsha.’ te mahārāj āpaṇane mukhomukh maḷyā chhe. Āpaṇā jevā bhāgyashāḷī brahmānḍamān koī nathī. <br/><br/>
+ 
+ Koṭi kṛuṣhṇa joḍe hātha, koṭi viṣhṇu name mātha; <br/>Koṭi brahmā kathe jnyāna, koṭi shiv dhare dhyāna; <br/>evā sadguru khele vasanta... <br/> <br/>
+ 
+ Evā sadguru to guṇātīt hatā ane tethī par mahārāja. Te āpaṇane maḷyā. Āpaṇe bahu j moṭā bhāgyashāḷī chhīe. Eno Ekāntamān besīne vichār karavo.
+ 
+ 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

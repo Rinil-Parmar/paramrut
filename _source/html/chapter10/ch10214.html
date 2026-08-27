@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (214) કોઈ માળા ફેરવ્યાનું કહેતું નથી પણ લાવો રૂપિયા, ઘડાવો ઘરેણાં ને ચણાવો મેડીઓ એમ કહે છે, માટે ભગવાન ભજવા તેમાં જીવના સંત વિના કોઈ મિત્ર નથી. બીજા તો ભેંશનો વાંસો થાબડે છે તેમ સ્વાર્થમય છે. માટે વડાદરાની પેઠે પ્રભુ ભજી લેવામાં ધૂર્તવિદ્યા શીખવી. બે મહિના સૂઈ રહો તો કહેશે જે ડાગળી ખસી ગઈ છે, પણ આ તો સૌના દાસ થઈને રહ્યા છીએ ત્યારે ચાલ્યું જાય છે. સગી મા હોય તે લીમડો પાય, તેમ સાચા સાધુ હોય તે હેતનાં વચન વઢીને કહે. મનમાં તો જાણે જે કાંઈ ન કહે તો ઠીક, પણ કહ્યા વિના ન ચાલે, ને કહ્યા વિના જ્ઞાન પણ કેમ થાય ? વાણિયા છે તે છોકરાને કાંઈ વાગે ત્યારે ફૂંકે, પણ ફૂંક્યે સ્વભાવ જાય નહિ. આ જીવને ભમાવતું એવું જે મન તે પ્રભુ ભજવા દેતું નથી, માટે એનું ગમતું કરવું નહિ.
+ <br/><br/>
+ તુલસી સો હિ  ચતુરતા, રામચરણ લૌલીન;
+ <br/>
+ પરધન પરમન હરનકું, વેશા બડી  પ્રવીન.
+ <br/>
+ (તુલસીદાસની સાખીઓ : 65)
+ <br/>
+ અર્થ : ભગવાન રામચંદ્રના ચરણમાં એકાગ્ર થઈ જવું તે જ ખરી ચતુરાઈ છે. બાકી પારકાનું ધન હરી લેવામાં અને પારકાના મનને જીતી લેવામાં તો વેશા પણ બહુ કુશળ હોય છે.
+ <br/><br/>
+ માટે ધન કમાવામાં અને બીજાના ચિત્તનું આકર્ષણ કરવામાં કશી જ ચતુરાઈ નથી, પણ સાચી ચતુરાઈ પ્રભુભક્તિમાં તલ્લીન થાવામાં જ છે.
+ <br/><br/>
+ અર્વ  ખર્વ  વલું  ધન હે, ઉદય અસ્ત મેં રાજ;
+ <br/>
+ તુલસી હરિ કી ભક્તિ બિના સબે નર્ક કો સાજ.
+ <br/>
+ (તુલસીદાસની સાખીઓ : 138)
+ <br/>
+ અર્થ : અર્વ-ખર્વ (હજારો-અબજો રૂપિયા) સુધી ધન મળ્યું; સૂર્ય ઊગે છે ત્યાંથી માંડીને તે આથમે છે ત્યાં સુધીનું રાજ મળ્યું પણ હરિભજન વિના આ સઘળી સામગ્રી નરકમાં લઈ જાય છે.
+ <br/><br/>
+ પારસમણિ  અરુ  કામધેન  કલ્પવૃક્ષ કી  વાડ;
+ <br/>
+ તુલસી હરિ કી ભક્તિ બીન તાસે ભલી ઉજાડ.
+ <br/>
+ (તુલસીદાસની સાખીઓ : 177)
+ <br/>
+ અર્થ : માણસ પાસે લોઢાને સોનું કરે તેવો પારસમણિ હોય, સર્વ ઈચ્છાઓને પૂરનાર કામદૂધા ગાય હોય અને કલ્પવૃક્ષની વાડ હોય, પણ હરિભજન વિના આ ત્રણ વસ્તુઓ હોય, તેના કરતાં તો બધું ઉજ્જડ હોય તે વધારે સારું.
+ <br/><br/>
+ જો પોતાનું રૂડું કરવું હોય તો દાસાનુદાસ થઈ જવું ને કહે તેમ કરવું.
+ <br/><br/>
+ સંત ધન્વંતરી વૈદશમ,  જેસો રોગી જેહુ;
+ <br/>
+ મુક્ત બતાવત તાહીકું, તેસો ઓષધ તેહુ.
+ <br/>
+ (મુક્તાનંદ કાવ્ય : વિ.ચિ.- સાધુકો સંગ -10)
+ <br/><br/>
+ ઇન્દ્રિયુંના પેચને જાણ્યાની આ શાળા છે, તે વિના કોઈ જાણી શકે નહિ. ભણ્યા વિના કાગળ વંચાય નહિ, તેમ સર્વે વાત સાધુથી શિખાય છે. ભગવાનના જેવો અધિકાર કોઈનો નથી; માટે હથેવાળો તો હરિનો સાચો છે. 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

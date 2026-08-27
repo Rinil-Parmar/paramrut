@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (33) પરાત્પર એવા જે પુરુષોત્તમનારાયણ તે જ્યારે પોતાના અક્ષરધામ સહિત પૃથ્વી ઉપર મનુષ્યદેહ ધરે છે, ત્યારે જીવપ્રાણીમાત્રને તે સાકારરૂપે દૃષ્ટિગોચર થાય છે. એ સ્વરૂપને વ્યતિરેક સ્વરૂપ તરીકે આંહીં ઓળખાવી શકાય છે અને સામાન્યપણે મનુષ્યાકાર સ્વરૂપથી જુદા સ્વરૂપે તેમનું દર્શન કરાવી શકાતું નથી. પોતાની સ્વેચ્છાથી જુદા સ્વયં દર્શન આપવાને સદા શક્તિમાન છે, એવા પરાત્પર મૂર્તિમાન પુરુષોત્તમ ભગવાન અક્ષરધામમાં સ્વયં વિરાજી રહેલા છે અને તેથી અક્ષરથી જુદા વર્ણવી શકાતા નથી કારણ કે, પુરુષોત્તમનારાયણ અને મૂળઅક્ષર વચ્ચેના સમ્યક્ તાદાત્મ્યકભાવ સંબંધે કરીને અને પુરુષોત્તમનારાયણની સર્વ વહેવાર સત્તા મૂળઅક્ષર દ્વારે જ શાસ્ત્રકારોથી કલ્પાયેલ છે, તેથી તે બન્નેનો બીજી કોઈ રીતે મજિયારો વહેંચી શકાતો નથી. ફક્ત તત્ત્વ જ્ઞાનના વિચારમાં એટલું જ કહી શકાય છે જે, મૂળઅક્ષર પર્યંત એ સૌ પુરુષોત્તમ ભગવાનને આધીન છે, અને એ પુરુષોત્તમ ભગવાન સૌથી પર અને એક અને પરમ અદ્વિતીય છે. જેના ઉપર ભગવાન કૃપા કરે છે તે જ એ અંતર્ગત ભેદ જોઈ શકે છે.
+ <br/><br/>
+ પછી બે મણિની વાત કરી કહ્યું જે, એક મણિને ઠેકાણે તો મૂળઅક્ષરને સમજવા કે, જેની કિંમત થઈ શકતી નથી; અને બીજા મણિને ઠેકાણે તો પરબ્રહ્મ પુરુષોત્તમનારાયણ છે ને તે જેવો થાવાને મૂળઅક્ષર પર્યંત કોઈ સમર્થ નથી. એમ એ બન્ને દૃષ્ટાંતે તે બન્નેની અદ્વિતીયતા સમજવી. આવી જે જ્ઞાન સમજણ તે જ શ્રીજીમહારાજનો <a href="#ex1" class="wordMeaning">અક્ષરમત</a> છે. એ જ પરમ અદ્વૈત કે પરમાદ્વૈત સિદ્ધાંત છે. આ મત મુજબ મૂળઅક્ષર અને પુરુષોત્તમ ભગવાન વચ્ચે જ્ઞાનભાગમાં <a href="#ex1" class="wordMeaning">સેવક-સેવ્ય</a>, <a href="#ex1" class="wordMeaning">ધાતા-ધ્યેય</a>, કે <a href="#ex1" class="wordMeaning">શરીર-શરીરી</a> સંબંધ હોવા છતાં, તેમના ગુણ, વૈભવ, ઐશ્ર્વર્ય, કર્તુમ્-અન્યથાકર્તુમ્ શક્તિ આદિક અનંત દિવ્ય ગુણો અને કલ્યાણકારી ઐશ્ર્વર્યનો <a href="#ex1" class="wordMeaning">મજિયારો</a> કે, ભાગ વહેંચી શકાતો જ નથી. એ બે વચ્ચે તો પરમ અદ્વૈતભાવ નિત્ય વરતે છે. અરે ! મુક્ત અને પુરુષોત્તમને એવો સંબંધ છે, તો મૂળઅક્ષર અને પુરુષોત્તમને તેવો નિત્ય સંબંધ હોય તેમાં શું આશ્ર્ચર્ય હોય ? એ તો સદા સર્વદા છે જ.
+ <br/><br/>
+ આવા જે મૂળઅક્ષર તેનું સાધર્મ્યપણું પામવા માટે તેનો પ્રગટ સંબંધ જીવને જોઈએ. સર્વત્ર વ્યાપક બ્રહ્મ, જડ-ચેતન સર્વને વિશે વ્યાપી રહેલ છે; પરંતુ તે વડે જીવ બ્રહ્મરૂપ થઈ શકતો નથી; જેમ લાકડામાંનો અગ્નિ બહારના સાક્ષાત્ અગ્નિના યોગ વગર તેને બાળવાને સમર્થ થાતો નથી, તેમ નિરાકાર અને પરોક્ષ બ્રહ્મના જ્ઞાન વડે જીવનો જીવભાવ ટળતો નથી અને કોઈ બ્રહ્મરૂપ થાતું નથી. પ્રગટ પરબ્રહ્મ કે, બ્રહ્મ કે, બ્રહ્મરૂપસંતના પ્રગટ સ્વરૂપમાં ધારણા, ધ્યાન ને સમાધિ વડે તેના જેટલા ગુણ, ઐશ્ર્વર્ય, સ્વભાવ, સુખ આદિક જે જે હોય તે સર્વે તે સંયમીમાં આવે છે; ત્યારે તે સાધર્મ્યપણાને પામ્યો કહેવાય છે.
+ <br/><br/>
+ સ્વયં શ્રીજીમહારાજનો પ્રબળ પ્રતાપ છે કે, પોતાના સાક્ષાત્ સંબંધમાં આવેલને બ્રહ્મરૂપ કરી અક્ષરધામ પમાડે છે માટે ઉપર કહ્યો એવો જે મૂળઅક્ષર અને પુરુષોત્તમનો પરમ અદ્વૈત સંબંધ જે ભક્ત સમજીને મૂળઅક્ષરના સાધર્મ્યપણાને પામે છે, તેને સર્વ પ્રકારે મૂળઅક્ષરની જેમ જ પુરુષોત્તમ ભગવાનની મૂર્તિનું સુખ આવે છે. એમાં જેટલી ઊણપ તેટલી સુખ, સામર્થ્ય ને પ્રકાશમાં પણ તારતમ્યતા રહે છે. જેઓ મૂળઅક્ષરના સ્વરૂપને નથી સમજતા તેઓ શ્રીજીમહારાજના સ્વરૂપને પણ સંપૂર્ણ માહાત્મ્યસહ વર્તમાન જાણી શકતા નથી અને તેથી પુરુષોત્તમનારાયણના સમ્યક્ સુખને પામવામાં તેમને ઘણી ઊણપ રહી જાય છે. કોટિ કલ્પ સુધી ઊંધે માથે તપ કરીને સુકાઈ જાય તો પણ જે મૂળઅક્ષરનાં સ્વપ્નમાંય દર્શન થાય નહિ, તે આજ આ સાક્ષાત્ વાતું કરે છે. જેમ શ્રીજીમહારાજ પરાત્પર પૂર્ણ પુરુષોત્તમ-નારાયણ છે તે તેવા જ પ્રસિદ્ધ થાશે, તેમ અમે પણ અક્ષરબ્રહ્મ-અક્ષરધામ છીએ તે તેવા જ પ્રસિદ્ધ થાશું. અમારો અને પુરુષોત્તમ વચ્ચેનો જે પરમ અદ્વૈત સંબંધ, તે તો કોઈકના જ લહ્યામાં આવે તેવો છે, કદાચ કોઈ બીજાને મૂળઅક્ષર ઠરાવશે તો પણ શું ?
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 અક્ષરમત= અવિનાશી અભિપ્રાય, શ્રી અક્ષરપુરુષોત્તમ ઉપાસના ઉદ્બોધિત જ્ઞાનવિભાગ/ગુણાતીતજ્ઞાનનો સિદ્ધાંત.  <br/>
+	2 સેવક-સેવ્ય= સેવક-સ્વામી, સેવા કરનાર - સેવવા યોગ્ય પ્રગટ પુરુષોત્તમ.  <br/>
+	3 ધાતા-ધ્યેય= સર્જનહાર-કરવા યોગ્ય આદર્શ લક્ષ્ય. <br/>
+ 	4 શરીર-શરીરી= દેહ-દેહમાં રહેનાર આત્મા / આત્મા-આત્મામાં રહેનાર પરમાત્મા.  <br/>
+	5 મજિયારો= સહિયારી કૌટુંબિક મિલકતનો વહીવટ, ભાગ, જુદાપણું 
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત 1919ના બીજા શ્રાવણ સુદિ ચોથને દિવસ સ્વામીએ વાત કરી જે,<br/>
+ 
+ (36) જ્યાં વિષય આવ્યા ત્યાં ભગવાનની સ્મૃતિ રહે જ નહીં. બ્રહ્માને પણ એમ થયું અને અક્રૂરને પણ એમ થયું. માટે એ વસ્તુ એવી છે, તે સમાધિવાળાનું પણ ઠેકાણું રહેવા દીધું નહિ. સ્ત્રીમાં બ્રહ્મના સુખથી પણ વધુ આનંદ મનાય છે એવો એ વિષય બળવાન છે. માટે એકાંતમાં મા, બહેન અને દીકરી સંગાથે પણ ન રહેવું. <br/><br/>
+ 
+ માત્રા સ્વસ્ત્રા દુહિત્રા વા ન વિવિત્કાસનો ભવેત્‌ । <br/>
+ 
+ બલવાનિન્દ્રિયગ્રામો વિદ્વાંસમપિ કર્ષતિ  ।।
+ 
+ <br/>
+ 
+ (સત્સંગિજીવન : પ્ર.3-અ.59-મનુસ્મૃતિ-2-215)
+ 
+ <br/>
+ 
+ અર્થ :- માતા, બહેન, પુત્રી સાથે એકાંતમાં ન બેસવું. પ્રબલ ઇન્દ્રિય સમૂહ વિદ્વાનને પણ આકર્ષે છે.
+ 
+ <br/><br/>
+ 
+ એ શ્ર્લોક વ્યાસજીએ લખાવવા માંડ્યો ત્યારે જૈમિની કહે, ‘એમાં શું લખવું છે ?’ કેટલાક દિવસ પછી વ્યાસજી કહે જે, ‘જૈમિની, મારે સામે ગામ જાવું છે, તે કાલે આવતો રહીશ; આશ્રમ સાચવજો.’ એમ કહી ચાલતા થયા. પછી વરસાદ વરસાવ્યો. નદી બે પૂર આવી ને વ્યાસજી જૈમિનીની બહેનનું રૂપ લઈ, અંગ દેખાય તેવું ઝીણું વસ્ત્ર પહેરી, આશ્રમમાં આવ્યા અને ટાઢે ધ્રૂજતાં જૈમિનીને કહે, ‘ગાય ગોતવા ગઈ હતી ને નદી બે પૂર આવી ગઈ, માટે આજની રાત આંહીં પડી રહેવા દ્યો તો સારું.’ જૈમિનીએ બહેનનાં બધાં અવયવો દીઠાં એટલે કહે, ‘આ ઓરડીમાં વહ્યાં જાઓ અને સવાર સુધી સાંકળ ઉઘાડશો નહિ.’ પણ જૈમિનીને ઉત્થાન થાવા લાગ્યાં. શિષ્યો બધા ઊંઘી ગયા એટલે જૈમિનીએ બારણા પાસે જઈ સંબંધીઓના સમાચાર પૂછવા માંડ્યા. પછી કહે, ‘કમાડ ઉઘાડો, તો મોઢામોઢ વાત કરીએ.’ ત્યારે કહે, ‘સવારે ઉઘાડીશ.’ પછી જૈમિની છાપરા ઉપરથી માંહી ઊતર્યા અને બહેનને બથ ભરી; એટલે વ્યાસજીએ પોતાનું રૂપ દેખાડ્યું ને કહ્યું જે, ‘ઓલ્યો શ્ર્લોક હવે લખવો છે ?’ તો કહે, ‘હા મહારાજ !’ માટે વિષયથી બીતા રહેવું. 
+ 
+ <br/><br/>
+ 
+ આ લોકમાં ગમે તેટલા રૂપિયા મળે કે રાજ મળે કે રૂપવાન સ્ત્રી મળે કે, <br/><br/>
+ 
+ નામ  બડે  ધનધામ  બડે  જગમાંહી  બડી  કીર્તિ  પ્રગટી હૈ, <br/>
+ 
+ બુદ્ધિ  બડી  ચતુરાઈ બડી, અરુ લાવણતા તન મેં  લપટી હૈ; <br/>
+ 
+ દ્વાર  હજારન  લોક ખડે   રિદ્ધિ  ઇન્દ્રહું  તે  નહીં એક ઘટી હૈ, <br/>
+ 
+ તુલસી રઘુવીર કી ભક્તિ બિના, જ્યું સુંદર નારી નાક કટી હૈ. <br/>
+ 
+ (કીર્તન મુક્તાવલિ : નાશવંત દેહ વિશે) <br/> <br/>
+ 
+ રાજ ભયો કહા કાજ સર્યો, મહારાજ ભયો કહા લાજ બઢાઈ, <br/>
+ 
+ શાહ ભયો કહા વાત બડી, બાદશાહ ભયો કહા આન ફિરાઈ; <br/>
+ 
+ દેવ ભયો તોઉ કાહ ભયો, અહંમેવ બઢો  તૃષ્ણા   અધિકાઈ, <br/>
+ 
+ બ્રહ્મમુનિ સત્સંગ વિના,  ઔર ભયો  તો  કહા ભયો  ભાઈ ? <br/>
+ 
+ (કીર્તન મુક્તાવલિ : નાશવંત દેહ વિશે) <br/><br/>
+ 
+ તેમાં કોઈને શાંતિ થઈ નથી અને થાશે પણ નહિ. દેવતા અમર કહેવાય છે, પણ મરી જાશે. માટે ખરેખરા અમર તો શ્રી સ્વામિનારાયણને ભજે છે તે જ કહેવાય. ભગવાન ભજવાનો આનંદ તો ખરેખરા મુનિઓને છે. <br/><br/>
+ 
+ ‘ગીતા’ના છેલ્લા અધ્યાયમાં એકાંતિકનાં લક્ષણ કહ્યાં છે; તે ઉત્તમનાં શાં લક્ષણ ? જે સાધારણ વિષયનું ગ્રહણ કરે, પણ રમણીય વિષયનું તો ગ્રહણ કરે જ નહીં. ચકુભાઈએ સાઠ કોરીની સારંગી લીધી; પણ <a href="#ex1" class="wordMeaning">બીજી સારંગી</a> વળગી; એટલે આગલી સારંગી પડી રહી. જૂનાગઢના નાગર છેલભાઈ પ્રથમ મંદિર સામું લઘુ કર્યું; એટલે રણછોડજીએ ગદા મારીને કહ્યું જે, ‘અમારા મંદિર સામું લઘુ કેમ કરે છે?’ પછી તો પગે લાગ્યો અને દ્વારકા જાવું હતું તે ન ગયો ને સત્સંગ કર્યો ને સારા વૈરાગ્યવાન હરિભક્ત થયા; ત્યારે તેનો કાકો કહે, ‘છેલભાઈ તો સોનાની થાળીમાં લોઢાનો ખીલો છે.’ પ્રહ્લાદના બાપે પણ કહ્યું જે, ‘તું તો ચંદનના વનમાં બાવળિયો થયો.’ સંસ્કારી હોય તેને પણ સંસારનો ધક્કો લાગે, પણ જેણે બહુ સાધુ સેવન કર્યાં હોય તેને દેશકાળ ન લાગે, નહિ તો લાગ્યા વગર રહે નહિ. મહારાજે કહ્યું જે, ‘અમને વન, પર્વત અને ઝાડી ગમે છે.’ તેમાં શું કહ્યું ? જે, તમે વિષયનો સંબંધ રાખશો તો તમારું ઠીક નહિ રહે, એમ શીખવ્યું, માટે આપણે એ મારગે ચાલવું નહિ. <br/> <br/>  
+ 
+  <a href="GA-12.html" class="wordMeaning">વચ. ગ.અં. 12 </a> <br/>
+  <a href="GA-19.html" class="wordMeaning">વચ. ગ.અં. 19 </a> <br/>
+  <a href="GA-21.html" class="wordMeaning">વચ. ગ.અં. 21 </a>
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 બીજી સારંગી= બીજી સ્ત્રી.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

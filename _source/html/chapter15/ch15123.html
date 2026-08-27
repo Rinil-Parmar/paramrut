@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (123) આ જન્મે એકાંતિક થાવાનો હોય તે જો ઉતરતાનો સંગ કરે તો મૂળગા સો જન્મ ધરવા પડે. તે ઉપર વાત કરી જે, સુરતમાં ભજનાનંદનું મંડળ આવે ત્યારે ત્યાંના હરિભક્ત કહે જે, દોડો દોડો ભજનાનંદસ્વામી આવ્યા છે તે લ્યો જમરૂખ, લ્યો બરફી, લ્યો ચાકું. તે આવા પુરુષનો સંગ કર્યાથી મોક્ષ પણ થાય નહિ, જો મોટાં વર્તમાનમાં ફેર પડ્યો હોય પણ ભજનાનંદસ્વામીને કહેશે જે, <a href="#ex1" class="wordMeaning">અણગળ</a> પાણી પિવાણું છે તે ફરી વર્તમાન ધરાવો. તે સ્વામી પણ જાણે, અલ્પવચનમાં ફેર પડ્યો નહિ હોય, પણ મોટા વર્તમાનમાં ફેર પડ્યો હશે; તો પણ વર્તમાન ધરાવીને દ્રવ્ય લે ને આત્માનંદસ્વામી જ્યારે ફરવા આવે ત્યારે હરિજન કહેશે જે આત્માનંદસ્વામી આવ્યા છે, તો કહે, ‘રાત્રે દર્શન કરવા જઈશું.’ રાત્રિએ જઈને કહે જે, સ્વામી અણગળ પાણી પિવાણું છે તે વર્તમાન ધરાવો. ત્યારે આત્માનંદસ્વામી કહે જે, અણીડો આ અણગળ પાણીનું વર્તમાન હોય નહિ, મોટું વર્તમાન ચૂક્યાં હશો! તે કોઈ તેમની પાસે જાય નહિ ને ભજનાનંદ આવે ત્યારે તો દોડે. પણ એવાનો સંગ કર્યે મોક્ષ થાય નહિ. <br/><br/>
+ 
+ એવા હોય તેની મોટપ ઉપરથી તો બહુ જણાય ને તદ્રૂપાનંદસ્વામી જેવા ગરીબ હોય તેને કોઈ લોટ પણ ન આપે; કારણ કે, તેનો મહિમા પણ એ જાણે નહિ, કેમ જે, તેમાં દંભ, કળા કે કારસ્તાન હોય નહિ ને ઓલ્યા તો બધી વાતે પૂરા હોય, પણ એવાને, ઉપરનો આટોપ જોઈને મોટા સમજે તે અજ્ઞાન છે. તે હમણાં આ વર્તમાનકાળે જાગા ભક્ત જેવા જ્ઞાની, ગરીબ સાધુ હોય તેનો મહિમા કોઈ ન જાણે ને કાશીરામ જેવાનો જાણે એ પણ અજ્ઞાન કહેવાય. માટે આપણે તો ગરીબ થઈને આપણા જીવનું શ્રેય કરી લેવું અને ઝાઝાં માણસ થયાં તે કોઈ લડશે, કોઈ ચોરશે, કોઈ મારશે. માટે આપણે તો કોઈમાં ભળવું નહિ, પણ સારી રુચિવાળા હોય તેમના ભેળો જઈને સમાગમ કરવો. તે સો હોય તો સો, પચાસ હોય તો પચાસ, વીસ હોય તો વીસ ને બે હોય તો બે, પણ રુચિવાળા ભેળું જઈને સમાગમ કરી લેવો ને ભગવાનનો મહિમા, વિભૂતિ ને ઐશ્ર્વર્ય તે વિચારીએ તો જીવ વૃદ્ધિ પામે, પણ જો કોઈના દોષ વિચારીએ તો ઊતરી જવાય, માટે બેમાંથી ગમે તે કરો.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 અણગળ = ગાળ્યા વગરનું
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

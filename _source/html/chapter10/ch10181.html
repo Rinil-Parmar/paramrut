@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (181) સર્વોપરી ભગવાન ને સર્વોપરી આ સાધુ મળ્યા તો પણ કોઈના હૈયામાં શાંતિ નથી તે મુક્તાનંદસ્વામીએ મહારાજને કહ્યું જે, ‘શાંતિ થાય એવો ઉપાય બતાવો.’ ત્યારે મહારાજે પોતાનું જન્મ કર્મ કહ્યું; પણ સમજાણું નહિ એટલે મુક્તાનંદસ્વામીએ ફેર કહ્યું જે, ‘શાંતિ થાય એવી વાત કરો.’ ત્યારે મહારાજ કહે, ‘વન, જંગલ ને પર્વતમાં ફર્યા ત્યાં પશુ, પક્ષી, સ્થાવર જંગમ સર્વે જીવોનાં કલ્યાણ કર્યાં ને હજી પણ એમ જ કરીએ છીએ. જેને ભગવાનનો સંબંધ થયો ને જે જે ઉપયોગમાં આવ્યાં તે સર્વેનો મોક્ષ કર્યો; ત્યારે તમારે તો સાક્ષાત્ સંબંધ છે ને છતી દેહે જ પરમપદને પામી રહ્યા છો, છતાં હજી અશાંતિ રહે છે ?’ પણ મુક્તાનંદસ્વામીને એ સમજાણું નહિ; કેમ જે, પોતે મનમાં ધ્યાનનું ધારી રાખેલ તે તો આવ્યું નહિ, એટલે મનમાં એમ થયું જે, ‘મહારાજ બીજે રવાડે ચડી ગયા.’ તેથી ફેર કહ્યું જે, ‘હે મહારાજ! એ તો હું જાણું છું, પણ શાંતિ થાય એવું કહો.’
+ <br/><br/>
+ ત્યારે મહારાજે ખીજીને કહ્યું, ‘જે ફરવા જાઓ.’ પછી મુક્તાનંદસ્વામી ચાલી નીકળ્યા ને નિત્યાનંદસ્વામી વળાવવા ગયા. તે રાધાવાવ આવી, ત્યારે નિત્યાનંદસ્વામીએ મુક્તાનંદસ્વામીને કહ્યું જે, ‘મહારાજ તમને ફરવા ન મોકલે છતાં મોકલ્યા, તે કાંઈ સમજ્યા ?’ તો કહે, ‘ના.’ ત્યારે કહે, ‘ભગવાનનાં જન્મ કર્મ જે ગાય કે સાંભળે તે ધામને પામે, ત્યારે શાંતિ તો થાય જ; પણ તમે મહારાજનું કહેવું સમજ્યા નહિ, તેથી ફરવા કાઢ્યા.’ એટલે મુક્તાનંદસ્વામી કહે, ‘વાત તો સાચી પણ હું સમજ્યો નહિ ! હવે શું થાય ?’ ત્યારે નિત્યાનંદસ્વામી કહે, ‘તમે અહીં બેસો ને હું મહારાજ પાસે જઈ તમને પાછા તેડાવે તેમ કરીશ.’ એમ કહી નિત્યાનંદસ્વામી મહારાજ પાસે આવ્યા ને કહે, ‘મહારાજ મુક્તાનંદસ્વામી તો બહુ દિલગીર થયા ને કહે, મહારાજે શાંતિ થયાનો ઉપાય બતાવ્યો, પણ હું તેવી રીતે સમજ્યો નહિ.’ ત્યારે મહારાજ કહે, ‘સમજ્યા ?’ તો કહે, ‘હા મહારાજ !’ ત્યારે કહે, ‘જાઓ, પાછા વાળો.’ પછી પાછા બોલાવ્યા. માટે મહારાજનાં વચન સમજાય તો એમાં શાંતિ છે. દેહ સાજો રહે કે માંદો રહે એનો તો નિરધાર નહિ. 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

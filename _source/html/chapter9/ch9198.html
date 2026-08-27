@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (198) જે શુદ્ધ મુમુક્ષુ હોય તેને પ્રગટ ભગવાનના જોગ વગર કેવળ પ્રતિમાએ કરીને કે, શાસ્ત્ર શ્રવણે કરીને શાંતિ ન થાય. કુશળકુંવરબાઈ પાસે બ્રાહ્મણ ‘ભાગવત’ની કથા વાંચતો હતો. તેમાં રુક્મિણી હરણની વાત આવી ત્યારે કુશળકુંવરબાઈએ કહ્યું જે, ‘કથા સાંભળતાં મને આટલાં વરસો થયાં ને તું પણ કે’દિવસનો કથા વાંચે છે પણ જે દિવસ પ્રગટ ભગવાન રુક્મિણીની પેઠે કાંડું ઝાલશે, તે દિવસ તારું ને મારું કલ્યાણ થાશે.’ તે વાત પછી કેટલેક વખતે પરમચૈતન્યાનંદસ્વામી ફરતા ફરતા ધરમપુર આવી ચડ્યા અને સદાવ્રત લઈને ધર્મશાળામાં આરામ કરતા હતા, ત્યાં નિયમ પ્રમાણે કુશળકુંવરબાઈ તીર્થવાસીઓના ચરણસ્પર્શ કરતાં કરતાં સ્વામી પાસે આવ્યાં. ત્યારે, ‘અમે તો સ્વામિનારાયણ પ્રગટ ભગવાનના સાધુ છીએ એટલે સ્ત્રીથી દૂર રહીએ છીએ.’ એમ કહી આઘા વહ્યા ગયા. આથી કુશળકુંવરબાઈ વિસ્મય પામ્યાં અને સ્વામીને માટે માન થયું અને મહારાજની આજ્ઞા પ્રમાણે ધર્મ જળવાઈ રહે એ રીતે આડો ચક નંખાવીને મહારાજના પ્રતાપની વાતું સાંભળી, તેથી શાંતિ થઈ ગઈ.
+ <br/><br/>
+ પછી એ પ્રમાણે સ્વામી રોજ થાળ જમે અને દરબારમાં જઈને મહારાજના પ્રગટ મહિમા ને પ્રતાપની વાતું કરે અને કુંવર (પૌત્ર) ભેગા હાથીએ બેસીને હનુમાનગઢીએ દર્શને જાય. આ વાતની મહારાજને ખબર પડી એટલે પરમચૈતન્યાનંદસ્વામીને તેડવા મુક્તાનંદસ્વામીને મોકલ્યા. ને મુક્તાનંદસ્વામીને તો પરમચૈતન્યાનંદસ્વામી ગુરુ તરીકે માનતા, તેથી ઊંચી ગાદીએ બેસાડીને, તેમની પાસે મહારાજના મહિમા અને નિશ્ર્ચયની વાતું કરાવી. આથી કુશળકુંવરબાઈને નિશ્ર્ચય થયો ને મહારાજને ધરમપુર તેડાવી આપવાને પ્રાર્થના કરી. એટલે મહારાજ સંત-પાર્ષદ સાથે ત્યાં પધાર્યા. કુશળકુંવરબાઈ ગરાસિયા ને વળી ઓઝલવાળાં, તો પણ મહારાજનાં ચરણારવિંદને બાઝી પડ્યાં. તેથી મહારાજે કાંડું ઝાલીને કહ્યું કે, ‘એવું રહેવા દ્યો.’ એટલું કહેતાં જ બાઈને અંતરમાં પરમ શાંતિ થઈ ગઈ અને મહારાજ રોકાયા તેટલા દિવસ મહારાજની બાવીસ વાર આરતી ઉતારી ને સભામાં મહારાજને મળ્યાં અને વૃત્તિ પલટાવીને મહારાજની મૂર્તિને અંતરમાં ઉતારતાં ગયાં. પછી મહારાજે ‘બાઈઓ પાસે રાખીને તેમની પાસે કથા વંચાવવી ને સાંભળવી.’ એવી આજ્ઞા કરી અને ગઢપુર જવા રજા માગી. સર્વે ગઢપુર પહોંચ્યાં, ત્યાં તુરત જ ખબર આવ્યા કે કુશળકુંવરબાઈએ ધરમપુરમાં પંદરમે દિવસ અક્ષરવાસ કર્યો છે.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

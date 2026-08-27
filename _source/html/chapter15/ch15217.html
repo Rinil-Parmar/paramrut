@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (217) કાનદાસને ત્રણ વરસ સુધી મંદવાડ રહ્યો. ત્યાર કેડે આવીને વર્તમાન ધાર્યા. દીનાનાથ ભટ્ટની વાત કરી જે, તેને નિશ્ર્ચય નહોતો. તે મહેમદાવાદના બ્રાહ્મણોએ તેને પૂછ્યું જે, સ્વામિનારાયણ ભગવાન હોય તો અમેય સત્સંગ કરીએ. ત્યારે તે કહે, ‘ભગવાન તો કેમ કહેવાય ? પણ મોટાપુરુષ તો ખરા.’ તેથી બ્રાહ્મણો પણ સત્સંગ કરતાં આળસ્યા ને શિક્ષાપત્રીમાં તો મુખ્ય મયારામ ભટ્ટ આદિ સત્સંગી તેની પાસે જ લખાવ્યું. ત્યારે મનમાં એમ થયું જે ‘હું આવો વિદ્વાન ને મારું નામ નહિ ? ને અભણ જે મયારામ ભટ્ટ તેનું નામ નાંખ્યું ?’ માટે મહારાજ પણ ભણેલાનો મહિમા કાંઈ જાણતા નથી. પછી તેની દીકરીને ભૂત વળગ્યું ત્યારે પોતે ચંડીપાઠ કર્યો પણ ભૂત ગયું નહિ. પછી મહારાજ પાસે આવીને પ્રાથર્ર્ના કરી કહ્યું જે, ‘હે મહારાજ ! જમનાને ભૂત વળગ્યું છે તે કાઢો.’ ત્યારે મહારાજ કહે, ‘તમે તો દેવ બ્રાહ્મણ છો, તમારે ત્યાં ભૂત હોય?’ ત્યારે કહે, ‘હું દેવ બ્રાહ્મણ પણ અનાથ છું,’ પછી મહારાજ કહે, ‘મયારામ ભટ્ટ પાસે લઈ જાઓ. તે પાઠ કરશે એટલે જાશે.’ પછી મયારામ ભટ્ટ પાસે લઈ ગયા. તેમણે પાઠ કર્યો એટલે ભૂત ગયું. પછી નિશ્ર્ચય થયો. એમ નિશ્ર્ચય વિનાના પંડિત હોય તો પણ તેનાથી ભૂત ન જાય. પછી જગદેવહરિની વાત કરી જે, બહુ શાસ્ત્રમાં પ્રવર્તતા હોય તેના હૈયામાંથી <a href="#ex1" class="wordMeaning">ડીંગળ</a> ન નીકળે. તે અખંડાનંદ બ્રહ્મચારીને ન નીકળ્યું ને આપણે તો, <br/><br/>
+ 
+ સર્વ ધર્માન્પરિત્યજ્ય મામેકં શરણં વ્રજ ।  <br/>
+ અહં ત્વા સર્વપાપેભ્યો મોક્ષયિષ્યામિ મા શુચ: ॥ <br/>
+ 
+  (શ્રીમદ્‌ ભગવદ્‌ગીતા : 18/66) <br/>
+ 
+ અર્થ :- (હે અર્જુન !) તમામ ધર્મોનો આશરો છોડીને તું કેવળ મારા શરણમાં આવ. હું તને બધા જ પાપોમાંથી મુક્ત કરી દઈશ, તું (નાહક) ચિંતા ન કર. <br/><br/>
+ 
+ એમ છે, ને કોઈનો સંગ જ નહિ, તે એ વાત પેઠી જ નહિ ને બધાએ તો લાખ લાખ જોજન ઊંડા કૂવા ખોદ્યા છે. તેમાં પડે તે નિસરે જ નહિ ને શંકરાચાર્યે તો અદ્વૈતનું પ્રતિપાદન કર્યું છે. માટે રામાનુજે દ્વૈતનું પ્રતિપાદન કર્યું છે, એટલે સંન્યાસી અતીત પાસે શંકરાચાર્યે રામાનુજની આંખો કઢાવી નાખી. એવા મતનાં વેર થાય છે ને આપણામાં પણ પક્ષ થાવાના. પછી વાત કરી જે, ઉત્તમાનંદસ્વામી વરતાલ આવ્યા હતા તેને મહારાજે સભામાં સર્વોપરી એમ કહેવરાવ્યું ને શુકમુનિને અમે કહ્યું જે વાતો કરો છો ત્યારે ચોખી કરો છો; ને કલમ ટાણે મોરલી ઘાલો છો તે તો સ્વપ્નામાં પગ ભાંગ્યો છે. ઓેલ્યા દેશવાળાને મે’મણ જેવો કજિયો છે તે ‘ડાઢી કૂચે કૂચો થાય પણ હકડી ફક ન છડું.’ તે શું? તો નરનારાયણ એ મહારાજ, એમ કહે છે. તે હવે બીજું ન જ કહે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ડિંગળ= બનાવટી વાત, જૂઠું, બનાવટ, ગપ્પાં.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

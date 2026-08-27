@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા અંત્ય ૨૦: સ્વભાવ, પ્રકૃતિ કે વાસનાનું</h1>
+			<p class="text_gu">સંવત ૧૮૮૪ના શ્રાવણ વદિ અમાવાસ્યાને દિવસ રાત્રિને સમે સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં પોતાને ઉતારે વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ સાધુ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી દીનાનાથ ભટ્ટે પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! કાળ તો ભગવાનની શક્તિ છે ને કર્મ તો જીવે કર્યાં હોય તે છે, પણ સ્વભાવ તે વસ્તુગત્યે શું હશે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જીવે જે પૂર્વજન્મને વિષે કર્મ કર્યાં છે તે કર્મ પરિપક્વ અવસ્થાને પામીને જીવ ભેળાં એકરસ થઈ ગયાં છે. જેમ લોઢાને વિષે અગ્નિપ્રવેશ થઈ જાય, તેમ પરિપક્વપણાને પામીને જીવ સાથે મળી રહ્યાં એવાં જે કર્મ તેને જ સ્વભાવ કહીએ અને તેને જ વાસના તથા પ્રકૃતિ કહીએ.”</p>
+
+			<p class="text_gu">પછી મુક્તાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! જીવ સાથે એકરસપણાને પામી રહ્યાં એવાં જે કર્મ એને જ સ્વભાવ તથા વાસના કરીને કહો છો; એ વાસનાને ટાળ્યાનો શો ઉપાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “એ વાસના ટાળ્યાનો ઉપાય તો આત્મનિષ્ઠાએ સહિત શ્રીકૃષ્ણ ભગવાનની ભક્તિ કરવી એ જ ભાસે છે. અને જો આત્મનિષ્ઠા વિના એકલી જ શ્રીકૃષ્ણ ભગવાનની ભક્તિ હોય તો જેમ ભગવાનમાં હેત કરે તેમ બીજા પદાર્થમાં પણ હેત થઈ જાય. માટે આત્મનિષ્ઠા સહિત ભક્તિ કરવી એ જ વાસના ટાળ્યાનો ઉપાય છે. અને આત્મનિષ્ઠાવાળાને પણ જો કોઈક ભૂંડાં દેશકાળાદિકને યોગે કરીને અજ્ઞાનીની પેઠે જ ક્ષોભ થઈ આવે પણ ઝાઝી વાર ટકે નહીં.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (171) અહો ! આ વાતું કેવી છે ! તો સૂતા રહીએ અને કોઈ મથુરાનો પેંડો મોઢામાં મૂકી જાય તેમ મોટા છે તે વાતું સંભળાવે છે માટે આપણે પણ ખપ રાખી વિચાર કરવો કે મહારાજ ને આ સાધુ આંહીં જીવનું મૂળ અજ્ઞાન કાઢવા આવ્યા છે, તેથી રાત દિવસ વાતું કરી સોપો પડવા દેતા નથી અને આપણા માટે આવ્યા, અને આપણે ગાફલાઈ રાખી સૂઈ રહીએ તે કેવું કહેવાય ! માટે આ જોગ તો એવો છે કે સત્સંગી નથી થાવું ને થઈ જવાશે.  <br/> <br/>
+ 
+ તે ઉપર કલ્યાણભાઈની વાત કરી જે, ચણાના ખેતરમાં ચોર આવી, ફાંટ ભરી ચણા લઈ જાતા હતા ત્યાં કલ્યાણભાઈને દીઠા, તે બીના. પણ કલ્યાણભાઈએ તો બહુ સન્માન આપી કહ્યું કે, ‘ભલે લીધા, ને આવો આપણે ઓળા પાડી ખાઈએ ને બીજા ઘેર લઈ જાજો.’ પછી પોતે ઓળા પાડીને આપ્યા ને કહ્યું જે, ‘હંમેશ આવતા જાજો, ને ખેતર તમારું છે, તે જોઈએ તેટલા લઈ લેવા.’ પછી ચોરને બહુ ગુણ આવ્યો ને ચોરી કરતાં આળસ્યા અને સત્સંગી થયા; એમ સત્સંગ કરાવ્યો. <br/> <br/>
+ 
+ વળી બીજી વાત કરી જે વણથળીના કોઈક કણબીને કલ્યાણભાઈના શેઢાશેઢ ખેતર, પણ કલ્યાણભાઈની વાતું ન સાંભળવી એવી ટેક ને તેને એમ જે, જો વાતું સાંભળીશ તો સત્સંગી થઈ જવાશે; તેથી કલ્યાણભાઈ ભેળો ન થાય. પણ કલ્યાણભાઈએ ધાર્યું જે આને મારે સત્સંગી કરવો. પછી વાઢ વાવ્યો ને તૈયાર ઊગીને મોટો થયો ત્યારે તે પટેલને કહ્યું જે, ‘તમે આ વાઢમાં ભાગ રાખો તો ઠીક. અમારાથી ખરચે પૂગાતું નથી.’ તેણે ના કહી ને એ વાત તેની સ્ત્રી આગળ કરી. ત્યારે તે કહે જે, ‘ભાગ શું કામ મૂકો છો ? કાંઈ મહેનત કે ઝાઝું ખરચ નથી, તૈયાર જમણ જમવા જેવું છે.’ પછી ભાગની હા પાડી કહ્યું જે, ‘હું તેમાં કામ કરવા નહિ આવું.’ ત્યારે કલ્યાણભાઈ કહે, ‘કામ અમે કરશું.’ આથી કલ્યાણભાઈનો મનમાં તેને બહુ ગુણ આવ્યો. પછી પાસે બેસવા લાગ્યો ને વાતું કરે, તે ગુણ આવ્યાથી સારી લાગે ને એમ વાતું કરતાં કરતાં સત્સંગી કરી દીધો. <br/> <br/>
+ 
+ પછી મહારાજની મૂર્તિનાં ચિહ્ન વર્ણન તેની આગળ કહે, તેમાં એક ચિહ્ન કલ્યાણભાઈને સાંભરે નહિ જેથી વર્ણન ન કરેલ. પછી તે રાતે તેને મહારાજે દર્શન આપ્યાં ને તેને કહ્યું જે, ‘બધાં ચિહ્ન ધારો છો ને આ ચિહ્ન કેમ નથી ધારતા ?’ ત્યારે તે કહે જે, ‘કલ્યાણભાઈએ મને કહ્યું નથી.’ પછી આ વાત તેણે કલ્યાણભાઈને કરી. ત્યારે કલ્યાણભાઈ કહે, ‘અહો ! તમને મહારાજે દર્શન દીધાં ! એ તો ભારે વાત કહેવાય !’ એવો સત્સંગી કરવાનો ભારે આગ્રહ. <br/> <br/>
+ 
+ વળી બીજી વાત કરી કે, પોતાના ખેતરમાં <a href="#ex1" class="wordMeaning">રખત ખડ</a> રાખી મૂક્યું હતું. પછી કોઈ ખડ લેવા સીમમાં જાતા હોય તેને કલ્યાણભાઈ કહે, ‘ચાલો, મારે ખેતર રખતનું બહુ સારું છે.’ એમ કહીને તેડી જાય ને પોતે પણ કાપી ખડ લેવરાવા લાગે ને વાતું કરતા જાય ને ફાંટમાં ખડ નાખતા જાય; આથી તે ખડ લેનારા ને બહુ ગુણ આવ્યો ને સત્સંગી થઈ ગયા. વળી દર વરસે કલ્યાણભાઈ સાથી રાખે તેને વાતું કરી સત્સંગી કરે ને બીજે વરસે બીજાને રાખી નવા સત્સંગી કરે. એમ મોટા એકાંતિકને સત્સંગ કરાવવાનો બહુ આગ્રહ. કારણ મહારાજનો એવો મત કે ઘણા જીવોનું કલ્યાણ કરવું. તે ઘણા જીવોનું કલ્યાણ કરે તે અતિ મોટા છે. જેમ પર્વતભાઈ બહુ મોટા હતા અને તેમની મોટાઈ સત્સંગમાં પણ બહુ. તે શાથી, જે ઘણાને સત્સંગ કરાવતા; માટે જેણે પર્વતભાઈનાં દર્શન ન કર્યાં હોય, તે આ કલ્યાણભાઈનાં દર્શન કરો, એટલે પર્વતભાઈનાં દર્શન થઈ રહ્યાં. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 રખત ખડ= બગાડ ન થાય એવી રીતની સંભાળ લીધેલ ઘાસ.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

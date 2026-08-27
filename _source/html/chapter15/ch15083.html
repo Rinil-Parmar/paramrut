@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત્ 1919ના શ્રાવણ પહેલા સુદિ સપ્તમીને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (83) કોઈને કૃપાએ કરીને આત્મા દેખાઈ જાય તો પણ સંપૂર્ણ થયું કહેવાય નહિ. તે ઉપર વાત કરી જે, સ્વરૂપાનંદસ્વામીને આત્મા દેખાતો હતો એટલે આત્મામાં જ રહેતા હતા, પણ જ્યારે આખા શરીરે બળતરા થાવા માંડી ત્યારે મહારાજે ચંદન ઘસીને ચોપડાવ્યું, ટાઢું પાણી છંટાવ્યું ને વાહર નખાવ્યો પણ શાંતિ થઈ નહિ. એટલે મહારાજે કહ્યું જે, સ્વરૂપાનંદસ્વામી ! તમે તો આત્માને દેખો છો તે આત્મામાં જતા રહો. પછી સ્વરૂપાનંદસ્વામી બોલ્યા જે, તુમ આડા ખડા હો તે કહાં જાવે ? પછી તો બહુ બળતરા થઈ ને મુંઝાણા. ત્યારે મહારાજે કહ્યું જે, બાહ્યદૃષ્ટિએ કરીને પ્રગટ ભગવાન ને પ્રગટ સંત તેના સંબંધને પામેલા જે ઓરડા, ઓસરી, નળિયાં ને લીંબડો એનું ધ્યાન કરો તો શાંતિ થાશે. પછી જ્યારે એમ કર્યું ત્યારે શાંતિ થઈ.  <br/><br/>
+ 
+ તેમાં મહારાજે જણાવ્યું જે, પ્રત્યક્ષ ભગવાનને પ્રતાપે કરીને આત્મદર્શન થાય છે, પણ જો પ્રત્યક્ષ ભગવાન કરતાં બ્રહ્મમાં અધિકપણું માની લે તો ઉપાસનાનો ભંગ થયો કહેવાય. માટે આત્મા દીઠે કાંઈ સિદ્ધિ થાતી નથી ને સ્વરૂપાનંદસ્વામીને તો પ્રગટ મહારાજ કરતાં પ્રગટ આત્મામાં મહારાજની મૂર્તિ દેખાય તેનો બહુ ભાર હતો. એ ખોટ મહારાજને સૂઝે, બીજાને તો સૂઝે પણ નહિ. વળી મોટા મોટા સાધુમાં જે જે ભૂલ હતી તેમને પ્રશ્ર્ન પૂછ્યા તેમાં મહારાજે એ જ ખોટ બતાવી હતી. પ્રગટ ઈષ્ટનો અભિપ્રાય જે, આત્મદર્શન તેને વિષે વધુ લગની થાય છે તેથી પ્રગટ ભગવાન ને પ્રગટ સંત તેને વિષે વૃત્તિ ગૌણ થાય છે. માટે આત્મા દેખાઈ જાય તો સંપૂર્ણ થયું કહેવાય નહિ. કેટલાકને આત્મા, પરમાત્મા એ બે દેખાય તો પણ પ્રગટને વિષે એવો ભાવ બેસારતાં ન આવડે. ‘આત્મામાં ભગવાન દેખાણા તે જ આ પ્રગટ છે ને પ્રગટને પ્રતાપે આત્મામાં પરમાત્મા દેખાણા.’ એવું જ્ઞાન દેતાં પણ તેને ન આવડે, માટે જ્ઞાનીને આત્મા કહ્યો છે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

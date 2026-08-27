@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૧) ભાદરામાં શ્રીજીમહારાજ પાસે એક પંડિત આવીને શ્ર્લોક બોલ્યો. પછી રત્ના ભક્તને તથા ડોસા ભક્તને સમાધિ થઈ. પછી મહારાજે પંડિતને કહ્યું જે, “તમે શ્ર્લોક બોલ્યા તેમાં ભગવાનનો મહિમા બહુ છે, તે સમાધિ થઈ.” પછી પંડિત બોલ્યો જે, ‘હે મહારાજ ! હું તો કથા કરી કરીને મરી ગયો, પણ કોઈને સમાધિ થાતી નથી.’ તે સમે ભૂજનો એક જમાદાર બેઠો હતો તેને પણ સમાધિ થાઈ. પછી શ્રીજીમહારાજે તેની વાત કરી જે, “આ જમાદાર એક લાખને એંશી હજાર પેગંબરે સ્તુતિને કર્યા એવા અમને ત્રણ અવસ્થામાં દેખે છે.” પછી શ્રીજીમહારાજ તે સમાધિવાળાને પોતાની દૃષ્ટિમાત્રે કરીને જગાડતા હવા. પછી તે પંડિતે પૂછ્યું જે, ‘બીજા ભગવાનના અવતારે આવી સમાધિ કરાવી નહોતી, આ તો કાંઈક જાદુ છે કે મંત્ર-તંત્ર છે!’ ત્યારે તે જમાદારે પંડિતને કહ્યું જે, ‘આ તો અવતાર નહિ, આ તો સર્વે અવતારના અવતારી ને અક્ષરધામના પતિ છે, તે જ આજ કૃપા કરીને જીવોનાં કલ્યાણ કરવાને અર્થે પધાર્યા છે ને બીજા ભગવાનના અવતાર પૂર્વે થઈ ગયા; તે સર્વે તો આ ભગવાનની સ્તુતિ ને પ્રાર્થના કરે છે, એમ હું સમાધિને વિશે દેખું છું.’ એવી રીતે શ્રીજીમહારાજે પોતાનો પ્રતાપ સહેજ જણાવ્યો.
+ <br/><br/>
+ પછી સુતાર વશરામ એવી રીતે શ્રીજીમહારાજનો પ્રતાપ જોઈને અતિશે આનંદ પામીને ખેતરમાં ગયા. ત્યાં રાફડામાં લાખો કીડીઓ પૃથ્વીમાંથી નીકળી, તેને જોઈને દયા આવી જે, ‘આ જીવને ક્યારે ભગવાનનો સંબંધ થાશે?’ એમ અંતરમાં વિચાર થયો. પછી પોતાને સંકલ્પે કરીને તે લાખો કીડીઓને ચતુર્ભુજરૂપ ધરાવીને વિમાનમાં બેસારીને ધામમાં મોકલી.
+ <br/><br/>
+ એવી રીતે શ્રીજીમહારાજે ભક્ત દ્વારે પોતાનું ઐશ્ર્વર્ય જણાવ્યું. તે વાત આવીને તે ભક્તે શ્રીજીમહારાજ પાસે કરી. ત્યારે ડોસા ભક્તે શ્રીજીમહારાજને પૂછ્યું જે, એ કીડીઓએ શું પુણ્ય કર્યાં હશે જે, પુણ્યે કરીને ધામમાં ગઈ ?’ પછી શ્રીજીમહારાજ બોલ્યા જે, “જ્યારે પુરુષોત્તમ ભગવાન અસંખ્ય જીવોનાં કલ્યાણ કરવાનો સંકલ્પ ધારીને અક્ષરધામમાંથી આંહીં પધાર્યા હોય, ત્યારે તો પોતાના સંકલ્પમાત્રે કરીને અસંખ્ય જીવોનાં કલ્યાણ તત્કાળ કરે અથવા પોતાના ભક્તના સંકલ્પમાત્રે કરીને અનંત જીવોનાં કલ્યાણ કરે. તે માટે અવતાર-અવતારીના સંકલ્પમાં ન્યૂનાધિકપણું છે. તે શું ? તો જે, અવતારીને તો સંકલ્પમાત્રે જ તે ક્રિયા સિદ્ધ થઈ જાય છે ને જે અવતાર છે તે તો સંકલ્પ ધારીને તે ક્રિયામાં પોતે ભળે ત્યારે તે ક્રિયા સિદ્ધ થાય છે.” એવી રીતે શ્રીજીમહારાજે અવતાર-અવતારી એવો ભેદ દેખાડ્યો.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

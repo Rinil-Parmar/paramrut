@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૫) દીવ ગામનો વણિક શેઠ સંઘ કાઢીને દ્વારકાની જાત્રા કરવા જાતો (જતો) હતો તેને લોજપુરમાં શ્રીરામાનંદસ્વામી મળ્યા, તેને ચમત્કાર દેખાડ્યો, તેણે કરીને તેને ભગવાનપણાનો રામાનંદસ્વામીને વિશે નિશ્ર્ચય થયો. પછી તે ભક્ત પાછો દીવ ગયો ને પછી ઘણા દહાડે પાછો દર્શને આવ્યો. ત્યારે રામાનંદસ્વામી તો દેહ મૂકી ધામમાં ગયેલા. પછી તે ભક્ત શ્રીજીમહારાજ પાસે આવીને બેઠો; ત્યારે મહારાજ બોલ્યા જે, “તમારે કાંઈ સંશય હોય તો આ બાળક લખમણ સમાધિવાળો છે તેને પૂછો.” ત્યારે તેમણે જે પ્રશ્ર્ન પૂછ્યા તે પ્રશ્ર્નના ઉત્તર સમાધિવાળા બાળકે કર્યા. એમ બાળક દ્વારા રામાનંદસ્વામીના જેવો શ્રીજીમહારાજે ચમત્કાર જણાવ્યો.
+ <br/><br/>
+ ત્યારે તે ભક્તે શ્રીજીમહારાજ પ્રત્યે કહ્યું જે, ‘મહારાજ ! હું પ્રથમ રામાનંદસ્વામીને ભગવાન જાણતો હતો, પણ તે રામાનંદસ્વામીના જેવો આ બાળકને વિશે તમારે પ્રતાપે કરીને ચમત્કાર જણાણો. ત્યારે તમારા મોટા મોટા સાધુ તથા સત્સંગી તેમનો પ્રતાપ તો ઘણો હશે ને તમારી મૂર્તિનો જે પ્રતાપ ને મહિમા તે તો બહુ જ અધિક હશે ! માટે તમારા સ્વરૂપનું જેમ છે, તેમ યથાર્થ જ્ઞાન મને થાય તેમ કૃપા કરીને મને કહો.’ ત્યારે શ્રીજીમહારાજે તે ભક્તને કહ્યું જે, “અંતરની વાર્તા જાણવે કરીને ભગવાનપણાનો નિશ્ર્ચય જો થાય તો અમારા મોટા મોટા સાધુ તથા સત્સંગી તે અનંત જીવોની વાત જાણે એવા છે. માટે પૂર્વે થયા જે જે અવતાર તેમના જેવું ઐશ્ર્વર્ય તો અમારા સાધુ-સત્સંગીમાં જણાય છે. ને અમે તો સર્વે અવતારના અવતારી ને અક્ષરધામના પતિ શ્રીપુરુષોત્તમનારાયણ છીએ, તે અગણિત જીવોનાં કલ્યાણને અર્થે પ્રગટ થયા છીએ.” તે વાર્તાને સાંભળીને તે ભક્તને શ્રીજીમહારાજના પ્રગટ પુરુષોત્તમપણાનો નિશ્ર્ચય થયો. પછી તે ભક્તે શ્રીજીમહારાજના પ્રગટ પુરુષોત્તમપણાની વાત તે બીજા રામાનંદસ્વામીના જૂના હરિભક્તો હતા તેમની આગળ કહી; પણ તે વાત તેમના માન્યામાં ન આવી.
+ <br/><br/>
+ પછી તે રામાનંદસ્વામીના નિશ્ર્ચયવાળા હરિભક્તો હતા, તેમણે શ્રીજી-મહારાજની પાસે આવીને તે નિશ્ર્ચયની વાત પૂછી. ત્યારે તેમને શ્રીજીમહારાજે કહ્યું જે, “તમે સર્વે ધ્યાનમાં બેસો તો જેમ છે તેમ જણાશે.” ત્યારે તે હરિભક્તો ધ્યાનમાં બેઠા. તેમને શ્રીજીમહારાજ પોતાની દૃષ્ટિમાત્રે કરીને સમાધિ કરાવતા હવા. તે અક્ષરધામને વિશે અનંત પાર્ષદે સહિત પોતાની દિવ્યમૂર્તિનું દર્શન કરાવ્યું તથા રામાનંદસ્વામી તથા બીજા સર્વે અવતાર તે શ્રીજીમહારાજની સેવામાં દીઠા ને પછી તે સર્વ અવતાર શ્રીજીમહારાજને વિશે લીન થયા, આમ દીઠું; પછી તે સર્વ ભક્તોને શ્રીજીમહારાજનો સર્વોપરી પુરુષોત્તમપણાનો દૃઢ નિશ્ર્ચય થયો. પછી તે સર્વ ભક્તોને પોતાની દૃષ્ટિમાત્રે કરીને જગાડતા હવા; પછી તે સર્વે ભક્તોએ કહ્યું જે, ‘હે મહારાજ ! તમે તો સર્વોપરી પુરુષોત્તમ છો ને અગણિત જીવોનાં કલ્યાણને અર્થે કૃપા કરીને આંહીં પધાર્યા છો.’ પછી શ્રીજીમહારાજ તે શેઠ ભક્ત પ્રત્યે બોલ્યા જે, “આ પુરુષોત્તમ ભગવાન તો આ બ્રહ્માંડને વિશે આવ્યા નથી ને આવશે પણ નહિ; માટે આ તો સર્વોપરી મૂર્તિ છે તેમાં કિંચિત્માત્ર સંશય નથી.”
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

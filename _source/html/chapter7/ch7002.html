@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૨) જેતપુરમાં ઉનડ રાજાને ઘેર રામાનંદસ્વામીએ પોતાના ધર્મંધૂરાની શ્રીસહજાનંદસ્વામીને સોંપણી કરી ત્યારે કોઈને સંશય થયો જે, ‘મોટા મોટા સાધુ છે, તેને કેમ સોંપણી ન કરી ?’ ત્યારે રામાનંદસ્વામીએ કહ્યું જે, ‘આ નીલકંઠ બ્રહ્મચારી તો મોટા મોટા રામ, કૃષ્ણ, વાસુદેવ અને અક્ષરાદિક એ સર્વેને ઉપાસનીય, પ્રાર્થના કરવા યોગ્ય ને પૂજવા ને પામવા યોગ્ય છે ને અમે પણ એમના મૂક્યા આંહીં આવ્યા છીએ ને એ તો અનેક જીવોનાં કલ્યાણ કરતા કરતા આવે છે. ને સર્વઅવતાર, સર્વવિભૂતિ, સર્વશક્તિ થકી ને અક્ષરમુક્તો ને અક્ષરધામ, એ સર્વ થકી અતિ સર્વોપરી, અક્ષરાતીત, સર્વસુખમય, આનંદમય, સર્વજ્ઞ, સર્વત્રપૂર્ણ, દિવ્યમૂર્તિ, સર્વોત્તમકારણ, સર્વકર્મફળપ્રદાતા, સર્વાધાર, સર્વશિક્ષક, સર્વવ્યાપક, સર્વોપાસ્યમૂર્તિ, સર્વચિંતનીય, સર્વરસમય, સર્વઇચ્છામય, નિર્દોષમૂર્તિ, પરિપૂર્ણમૂર્તિ, અખંડમૂર્તિ, સર્વભજનીય, સર્વઐશ્ર્વર્ય, સર્વશક્તિ, સર્વવિભૂતિ, સર્વસુંદરતા, સર્વલાવણ્યતા, સર્વકરુણા, એ આદિક અનંત કલ્યાણકારી દિવ્ય ગુણના <a href="#ex1" class="wordMeaning">ભાજન</a>, ચિત્રવિચિત્ર, મહા આશ્ર્ચર્યકારી, અનવધિકાતિશય, <a href="#ex1" class="wordMeaning">અજહત્સ્વરૂપ</a>, સ્વભાવ-<a href="#ex1" class="wordMeaning">ગુણમહોદધિ</a>, એવા શ્રીસહજાનંદસ્વામી પુરુષોત્તમનારાયણ, સ્વયં સ્વરાટ્ રાજાધિરાજ છે ને સર્વ અવતારના અવતારી છે.
+ <br/><br/>
+ માટે આ નીલકંઠ બ્રહ્મચારીના જે ગુણ છે તેને કહેવા જાણવાને અર્થે તો અક્ષર પર્યંત કોઈ સમર્થ નથી; તો હું પણ કહેવા જાણવાને અર્થે ક્યાંથી સમર્થ થાઉં ? તે માટે આ તો અગણિત જીવોનાં કલ્યાણ કરવાને અર્થે અક્ષરધામમાંથી આંહીં પધાર્યા છે; તે માટે અમે તો એમની આજ્ઞાએ કરીને જીવોનાં કલ્યાણ કરતા હતા, પણ હવે તો સાક્ષાત્ પોતે પુરુષોત્તમ પધાર્યા છે, એટલે જેવો પોતાનો પ્રતાપ છે ને મહિમા છે, તેવાં જ જીવોનાંં કલ્યાણ કરશે, માટે આ તો અક્ષરધામના પતિ સર્વોપરી, પૂર્ણ પુરુષોત્તમ ભગવાન પધાર્યા છે ને તે પૂર્વે ભગવાનના અવતાર થયા તેણે જીવોનાં જે કલ્યાણ કર્યાં છે તેવાં કલ્યાણ તો પોતાના ભક્ત દ્વારે સહેજમાં કરશે. એવા જે, આ નારાયણમુનિ તેનો પ્રતાપ ને ઐશ્ર્વર્ય છે, તે તમોને (તમને) આગળ જણાશે.’
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ભાજન= ધારનાર.  <br/>
+2 અજહત્સ્વરૂપ= ગ્રહણ કરવા યોગ્ય સ્વરૂપ. <br/>
+3 ગુણમહોદધિ= ગુણના મહાસાગર.  <br/>
+
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

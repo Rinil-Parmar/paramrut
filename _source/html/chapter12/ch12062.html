@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (62) ગમે એવો જ્ઞાની હોય, ધ્યાની હોય તેણે પણ કથામાં આવવું. મહેમદાવાદના બ્રાહ્મણે મહારાજને કહ્યું જે, ‘શંકરાચાર્યે પાડાની પૂંઠે વેદ ભણાવ્યો હતો તેમ તમે કરો તો તમને ભગવાન માનીએ.’ ત્યારે મહારાજ કહે, ‘પાડાની પૂંઠે વેદ ભણાવવો એ સંભવિત નથી પણ પાડા જેવો મૂરખ હશે તેની પાસે વેદ બોલાવેલ છે. તેમ તમે કોઈ એવો મૂરખ લાવો તો તેની પાસે વેદ બોલાવીએ.’ પછી તે બ્રાહ્મણોએ પોતાનો જાણીતો ખરેખરો મૂંગો વાલજી નામનો બ્રાહ્મણ હતો તેને મહારાજ આગળ લાવ્યા, ને કહે જે, ‘આને વેદ બોલાવો;’ પછી મહારાજે તે વાલજીને મોઢે વેદ બોલાવ્યા. <br/><br/>
+ 
+ બીજી વાત કરી જે, મેઘપરમાં એક સાંઈ મહારાજ પાસે આવ્યો. તે કહે જે, ‘તમે અલ્લા કહેવાઓ છો ?’ ત્યારે મહારાજ કહે, ‘અલ્લા તો ભગવાન છે.’ પછી મહારાજે પૂછ્યું જે, ‘તમારે ખંભે શું છે ?’ ત્યારે તે કહે જે, ‘કુરાન છે.’ ત્યારે મહારાજ કહે, ‘આ ભાટનો છોકરો કરસનજી પણ કુરાન મોઢે ભણ્યો છે.’ ત્યારે તે ફકીર કહે, ‘યે લડકા ક્યા જાને ?’ પછી મહારાજ કહે, ‘તમે કુરાનમાં જોતા જાવ ને છોકરો મોઢે બોલતો જાય.’ પછી કરસનજી કુરાન મોઢે બોલી ગયો. તેને જોઈને તે ફકીરે કહ્યું જે, ‘યે લડકા બોલતા નહિ, આપ બોલતા હૈ ! માટે આપ જ ખુદા હૈ.’ પછી સત્સંગી થયો. ત્યારે બીજાએ કહ્યું જે, ‘આને પણ ભૂરકી નાખી !’ <br/><br/>
+ 
+ સત્પુરુષના પ્રસંગ વિના જ્ઞાન ન થાય. વેદ ભણ્યામાં ચાર ભેદ છે :- એક તો ભણી જાય ને બીજો તેના અર્થને જાણે ને ત્રીજાને પ્રશ્ર્ન કરતાં આવડે ને ચોથો સંશયને છેદે. જો એમ ને એમ થઈ જાતું હોય તો નૈમિષારણ્યવાળા, બદરિકાશ્રમવાળા ને શ્ર્વેતદ્વીપવાળા શું કામ મંડ્યા રહે ? ને ફિરંગી નિત્ય કવાયત કરાવે છે તે શા સારુ કરે ?
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

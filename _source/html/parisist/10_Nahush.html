@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">નહુષ રાજા</h1>
+ 
+નહુષ રાજા અયોધ્યાના પ્રાચીન ઇક્ષ્વાકુ વંશના રાજા હતા. તેઓ અંબરીષના પુત્ર હતા. યયાતિના પિતાશ્રી હતા. મહાભારતમાં તેને ચંદ્રવંશી આયુનો પુત્ર માનેલ છે. તે મહાપરાક્રમી, વિદ્વાન અને ધર્માત્મા હતા. તેણે ઘણાં યજ્ઞો કર્યા અને તપશ્ચર્યા કરી દેવોની કૃપા મેળવી હતી. વૃત્રાસુરનો વધ કરવાથી ઇન્દ્રને બ્રહ્મહત્યા લાગી હતી. આથી ભયના કારણે ઇન્દ્ર ૧૦૦૦ વર્ષ સુધી કમલનાળમાં સંતાઈ રહ્યા હતા. ઇન્દ્રાસન ખાલી હોવાથી દેવો અને ૠષિઓએ મળીને નહુષ રાજાને ઇન્દ્રાસન પર બેસાડ્યા. પોતે ઇન્દ્ર હોવાથી ઇન્દ્રાણી (શચી) ઉપર પોતાનો અધિકાર છે તેમ માની શચીને લગ્ન માટે કહેણ મોકલ્યું. ત્યારે શચી કહે, હું પતિવ્રતા સ્ત્રી છું. હું બીજાને પતિ ન કરી શકું. નહુષે બહુ હઠાગ્રહ કર્યો ત્યારે તેણીએ કહ્યું કે, જેના ઉપર કોઈએ અગાઉ ક્યારેય સવારી ન કરી હોય તેવા કોરા વાહન ઉપર બેસીને તમે આવજો તો તમારી સાથે લગ્ન કરું. નહુષે વિચાર્યું કે ૠષિ ઉપર કોઈએ સવારી કરી નથી. તેથી તેણે સપ્તર્ષિ પાસે પોતાની પાલખી પરાણે ઉપડાવી ઇન્દ્રાણી પાસે જવા નીકળ્યો. પણ પોતે કામાંધ થયો હતો તેથી ૠષિઓને પગ અડાડીને સર્પ સર્પ એટલે કે ઉતાવળથી ચાલો તેમ કહેવા લાગ્યો. આ વેણ સાંભળવાથી ૠષિઓ તેના પર ગુસ્સે ભરાયા અને શાપ આપ્યો કે, તું સર્પ બનીને પૃથ્વીલોકમાં જન્મ ધારણ કર. આથી રાજાને પોતાની ભૂલનું ભાન થતાં તેણે ૠષિઓની માફી માગી. ત્યારે ૠષિએ તેના પર અનુગ્રહ કરીને કહ્યું કે, જ્યારે તું યુધિષ્ઠિરને પ્રશ્ન પૂછીશ અને તે તારા પ્રશ્નોના સાચા જવાબો આપશે ત્યારે તને આ સર્પના દેહમાંથી મુક્તિ મળશે.
+<br/><br/>
+
+આમ રાજા અજગર થઈને યામુન પર્વત પાસેના વિશાખપુય સરોવરમાં પડ્યો. આ સરોવરમાં ભીમ પાણી પીવા આવતાં સર્પે તેને પકડ્યો. ભીમને આવતાં વાર લાગી એટલે યુધિષ્ઠિર ભીમને શોધવા આવ્યા. અને સર્પે તેને પકડેલો દીઠો ત્યારે યુધિષ્ઠિરે સર્પને પૂછતા તેણે પોતાના પર બનેલી સઘળી બીના જણાવી અને સર્પના બધા પ્રશ્નોના શાસ્ત્રોક્ત ઉત્તર યુધિષ્ઠિરે આપતા સર્પે ભીમને છોડી દીધો અને પોતે શાપમુક્ત થતા દિવ્યદેહ ધારણ કરી સ્વર્ગે ગયા. 
+<br/><br/>
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

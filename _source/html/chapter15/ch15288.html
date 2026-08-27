@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (288) 	મેવા, મીઠાઈ, ટોપરાંના થાળ ભરી મહાજન ભેટ ધરવા આવ્યા ત્યાં તો ધીરજ રહી નહિ એટલે ઠીકરાનાં <a href="#ex1" class="wordMeaning">ઠેક દીધી </a>તે ટોપલો પડી ગયો ને ભૂંડો દેખાણો. <br/><br/>
+ 
+ એક મૂરખને હાથ મણિ મળી રે, જોઈ, ચાખી, સુંઘી, ન લાગી ગળી રે, <br/>
+ 
+ હતો વેવલો ને કાવતો વિવેકી રે, જોઈ ત્રોડી ફોડી નાખી નરે ફેંકી રે. 1<br/>
+ 
+ તેમ સત્સંગ મળ્યો શિરોમણિ રે, હતી બાળબુદ્ધિ કુબુદ્ધિ ઘણી રે, <br/>
+ 
+ તણે સત્સંગ રંગ અંગ ત્યાગ્યો રે, કાળા કામળાને કસુંબો ન લાગ્યો રે. 2<br/>
+ 
+ રહે પથ્થર કોરો જો પાણી માંહી રે, જેમ જળ મળ્યે જવાસો સુકાય રે, <br/>
+ 
+ મળી મર્કટને રાજ સિદ્ધિ રે, દેખી ટોપરું ને તરત ઠેક દીધી રે. 3<br/>
+ 
+ મળી અલ્પ મતિને વાત મોટી રે, કરે અનુમાન જ્ઞાનવાત ખોટી રે, <br/>
+ 
+ મળી અનુપમ મોજ તે  જ ત્યાગી રે, કહે નિષ્કુળાનંદ એ  અભાગી રે. 4<br/>
+ 
+ (નિષ્કુળાનંદસ્વામી-હજારી કીર્તનાવલી-પદ 7-પાન નં.714) <br/><br/>
+ 
+ તેમ આ જીવ છે તે વાનર જેવો છે. પોતપોતાનાં ડહાપણમાં લેવાઈ ગયા છે. કોઈ મોટાને પૂછતા નથી જે મારો જીવ તે કેવો છે ? મારે શો ઠરાવ કરવો ? <br/><br/>
+ 
+ રાતદિવસ રૂદિયામાંય વરતે એમ વિચારજી, <br/>
+ 
+ હું કોણ ? ને જાઈશ ક્યાં, કરું તેનો નિર્ધારજી. <br/>
+ 
+ (નિષ્કુળાનંદસ્વામી-હજારી કીર્તનાવલી-જનુની જીવો ગોપીચંદની-પદ 4) <br/><br/>
+ 
+ તેમ પોતાનો નિરધાર કરવો.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઠેક દીધી= કૂદકો માર્યો કે છલાંગ મારી.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

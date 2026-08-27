@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+	<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<!-- Added This line -->
+
+				<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			 
+		</ul>
+		<div id="bodytext" style="position:relative">
+		<h1 class="title_gu">ગઢડા પ્રથમ ૧૬: વિવેકનું</h1>
+
+		
+
+<p class="text_gu">
+સંવત ૧૮૭૬ના માગશર વદિ ૪ ચોથને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ સાધુ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજે એમ વાર્તા કરી જે, “જે ભગવાનના ભક્તને સત્-અસત્નો વિવેક હોય તે તો જે જે અવગુણ પોતામાં હોય તેને જાણે અને વિચારીને તેનો ત્યાગ કરી દે. અને સંતમાં અથવા કોઈ સત્સંગીમાં કાંઈક અવગુણ પોતાને ભાસતો હોય તો તેને ત્યાગ કરી દે અને તેના જે ગુણ તેનું જ ગ્રહણ કરે. અને પરમેશ્વરને વિષે તો તેને કોઈ અવગુણ ભાસે જ નહીં. અને ભગવાન અને સંત તે જે જે વચન કહે તેને પરમ સત્ય કરીને માને, પણ તે વચનને વિશે સંશય કરે નહીં. અને સંત કહે જે, ‘તું દેહ, ઇન્દ્રિય, મન, પ્રાણથી જુદો છું અને સત્ય છું અને એનો જાણનારો છું, અને દેહાદિક સર્વે અસત્ય છે,’ એમ વચન કહે તેને સત્ય માનીને તે સર્વથી જુદો આત્મારૂપે વર્તે પણ મનના ઘાટ ભેળો ભળી જાય નહીં. અને <b>જેણે કરીને પોતાને બંધન થાય અને પોતાને એકાંતિક ધર્મમાં ખોટ્ય આવે એવા જે પદાર્થ તથા કુસંગ તેને ઓળખી રાખે અને તેથી છેટે જ રહે અને તેના બંધનમાં આવે નહીં. અને સવળો વિચાર હોય તેને ગ્રહણ કરે અને અવળો વિચાર હોય તેનો ત્યાગ કરે. એવી રીતે જે વર્તતો હોય ત્યારે જાણીએ જે, તેને વિવેક છે.</b>”
+</p>
+
+
+	<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

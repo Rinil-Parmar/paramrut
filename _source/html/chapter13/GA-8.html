@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૮ - સદાય સુખિયા રહેવાનું</h1>
+
+			<p class="text_gu">
+સંવત ૧૮૮૩ના ભાદરવા વદિ ૯ નવમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર ગાદીતકિયા નંખાવીને વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને કંઠને વિષે મોગરાનાં પુષ્પના હાર વિરાજમાન હતા ને પાઘને વિષે મોગરાનાં પુષ્પના તોરા વિરાજમાન હતા ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજે મુનિમંડળને પ્રશ્ન પૂછ્યો જે, “ભગવાનનો ભક્ત હોય તેને એવો કયો ઉપાય છે જે, જેણે કરીને સદા સુખી રહેવાય?” પછી મોટા મોટા સાધુ હતા તેણે જેવું જેને સમજાયું તેવો તેણે ઉત્તર કર્યો. પછી શ્રીજીમહારાજ બોલ્યા જે, “એનો ઉત્તર તો એમ છે જે, જે ભગવાનના ભક્તને <b>એક તો દ્રઢ વૈરાગ્ય હોય, અને બીજો અતિશય દ્રઢ સ્વધર્મ હોય, અને જેણે એ બે સાધને કરીને સર્વે ઇન્દ્રિયોને જીતીને પોતાને વશ કર્યાં હોય; અને જેને ભગવાન ને ભગવાનના ભક્તને વિષે અતિશય પ્રીતિ હોય; અને જેને ભગવાન ને ભગવાનના ભક્તને વિષે અતિશય મિત્રભાવ વર્તતો હોય; અને જે કોઈ દિવસ ભગવાન કે ભગવાનના ભક્ત થકી ઉદાસ થાય નહીં; અને જે ભગવાન ને ભગવાનના ભક્તને સંગે જ રાજી રહે પણ કોઈ વિમુખ જીવની સોબત ગમે નહીં; એવાં જે હરિભક્તનાં લક્ષણ હોય તે આ લોકને વિષે તથા પરલોકને વિષે સદાય સુખિયો રહે છે.</b> અને વૈરાગ્ય ને સ્વધર્મ તેણે કરીને જેણે પોતાનાં ઇન્દ્રિયોને વશ ન કર્યાં હોય તો તે ભગવાન તથા ભગવાનના ભક્તને સંગે રહ્યો થકો પણ દુખિયો રહે છે. શા માટે જે, જેણે પોતાનાં ઇન્દ્રિયો ન જીત્યાં હોય તેને કોઈ ઠેકાણે સુખ થાય નહીં અને ભગવાનની ભક્તિ કરતો હોય તો પણ જ્યારે ઇન્દ્રિયો વિષયમાં તણાઈ જાય ત્યારે તે હરિભક્તના હૃદયમાં અતિ દુઃખ થાય છે. માટે સર્વ પોતાનાં ઇન્દ્રિયોને જીતીને વશ કરે તે જ સદા સુખિયો રહે છે. અને જેણે સર્વ ઇન્દ્રિયોને જીતીને વશ કર્યાં હોય તેને જ વૈરાગ્યવાન ને ધર્મવાળો જાણવો; પણ જેનાં ઇન્દ્રિયો વશ ન થયાં હોય તેને વૈરાગ્યવાન ને ધર્મવાળો ન જાણવો. અને જે વૈરાગ્યવાન ને ધર્મવાળો હોય તેને તો સર્વ ઇન્દ્રિયો નિયમમાં હોય અને તે સદાય સુખિયો હોય.”
+</p>
+<p class="text_gu">
+પછી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! ભગવાનનો ભક્ત હોય તેને ભગવાનની ભક્તિમાં કયું અતિશય મોટું વિઘ્ન છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, <b>“ભગવાનના ભક્તને એ જ મોટું વિઘ્ન છે જે, જે પોતામાં દોષ હોય તેને દેખે નહીં અને ભગવાન ને ભગવાનના ભક્ત થકી જેનું મન નોખું પડી જાય અને તે ભગવાનના ભક્ત થકી જેને બેપરવાઈ થઈ જવાય, એ જ એને અતિશય મોટું વિઘ્ન છે.”</b>
+</p>
+ 
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+	
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

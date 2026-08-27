@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (127) વિષયમાં રાગ છે અને દેહમાં આત્મબુદ્ધિ છે તો દુ:ખ કળાતું નથી; પણ પેટછૂટ થઈ હોય તો ભેળો જાનારો થાકી જાય. આંહીં સમાગમ કરવા આવે તો પણ મનસૂબા ત્યાંના છે અને એમ મનસૂબા કરે છે જે, આપણે આંહીં બેસી રહ્યે કેમ ચાલે ? માટે મન સાથે કજિયો કરીને લડાઈ લે તેને મોટા સહાય કરે છે. પછી તે મહારાજને વરવા જોગ થાય છે. <br/><br/>
+ 
+ નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ ।<br/> 
+ વિભાવ્ય તેન કર્તવ્યા ભક્તિઃ કૃષ્ણસ્ય સર્વદા ॥
+ 
+ <br/>
+ 
+ (શિક્ષાપત્રી શ્ર્લોક : 116)
+ 
+ <br/>
+ 
+ અર્થ :- સ્થૂળ, સૂક્ષ્મ અને કારણ એ જે ત્રણ દેહ તે થકી વિલક્ષણ એવો જે પોતાનો જીવાત્મા તેને બ્રહ્મરૂપની ભાવના કરીને પછી તે બ્રહ્મરૂપે કરીને શ્રીકૃષ્ણ ભગવાનની ભક્તિ જે તે સર્વ કાળને વિશે કરવી.
+ 
+ <br/><br/> 
+ 
+ બ્રહ્મભૂતઃ પ્રસન્નાત્મા ન શોચતિ ન કાંક્ષતિ । <br/>
+ સમઃ સર્વેષુ ભૂતેષુ મદ્‍ભક્તિં લભતે પરામ્ ॥
+ 
+ <br/>
+ 
+ (ભગવદ્ ગીતા : 18/54)
+ 
+ <br/>
+ 
+ અર્થ :- બ્રહ્મભાવને પ્રાપ્ત થયેલો તે પ્રસન્ન ચિત્ત મનુષ્ય કશાનો શોક કરતો નથી કે કશાની આકાંક્ષા કરતો નથી અને સર્વ ભૂતોમાં સમભાવથી રહેતો થકો મારી પરમ ભક્તિને પામે છે.
+ 
+ <br/><br/>
+ 
+ થાવું. ‘કપિ મૂઠી ગ્રહી સો ગ્રહી હે.’ તેમ જીવ વિષયમાં વળગ્યા તેણે કરીને જલ્યા કરે છે, પણ શાંતિ થાતી નથી અને પીડાએ કરીને એકલાં હાડકાં રહે છે અને લોહી તો બળીને રાખ થઈ જાય છે. માટે આજ તો યોગ ને સાંખ્યનું  <a href="P-2.html" class="wordMeaning">પંચાળાનું બીજું</a> વચનામૃત કાઢો. એકલો યોગ છે અને સાંખ્ય નથી એટલે જીવ દુ:ખિયો રહે છે અને સુખ થાતું નથી. સાંખ્ય વિના પદાર્થ આડાં આવીને ઊભાં રહે છે માટે સાંખ્ય ન હોય તો દુ:ખ આવ્યા વિના રહે નહિ. શબ્દ છે તે કહ્યા સાંભળ્યામાં તો બહુ આવે છે, પણ વરત્યામાં આવતું નથી, તેથી બાળકની પેઠે ખબર પડતી નથી.
+ 
+ <br/><br/>
+ 
+ હવે બધે ઠેકાણેથી દુ:ખ આવીને એક ઠેકાણે ભેળું થયું છે. તે શું ? જે, વિષયના કજિયા છે. માટે વિષયમાં દોષ દેખ્યા વિના વિષય ટળનારા જ નથી. માટે દોષાનુધ્યાન કરશું ત્યારે થાશે, એમ ભજન પણ કરશું ત્યારે જ થાશે અને ઉપાધિ કાંઈ નથી તો પણ અખંડ સ્મૃતિ થાતી નથી. અને જેટલા વિષય મળ્યા તેટલું પાપ મળ્યું છે, એમ જાણવું. તે રામાનુજાનંદના પત્તરમાં લાડવા પીરસ્યા એટલે કોઈકને આપ્યા. બીજા વિષયને ખોટા જાણે ખરા, તો પણ તે મારગે ચાલે, અને ભોગવતા જાય તો વિષય ટળે નહિ. ત્યાગ વિના વિષય ટળે એ વાતની લાલચ ન રાખવી.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

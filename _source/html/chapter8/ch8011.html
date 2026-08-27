@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (11) મહારાજે આઠ મહિના સુધી સાધુને ભેગા રાખીને પોતાના પુરુષોત્તમપણાની વાતું કરી, પછી સર્વ સાધુને પૂછ્યું જે, ‘અમને તમે કેવા સમજો છો ?’ ત્યારે કોઈ કહે, ‘તમે નરનારાયણ છો.’ કોઈ કહે, ‘તમે તો શ્ર્વેતદ્વીપના પતિ વાસુદેવ તે જ છો.’ કોઈ કહે, ‘તમે તો વૈકુંઠનાથ લક્ષ્મીનારાયણ છો.’ કોઈ કહે, ‘તમે તો ગોલોકાધિપતિ સ્વયં શ્રીકૃષ્ણ જ છો.’ એમ સૌ નોખા નોખા બોલ્યા, તે સાંભળીને મહારાજ ઉદાસ થઈ ગયા ને બોલ્યા જે, ‘હવે અમે સત્સંગમાં નહિ રહીએ; કેમ જે, તમે અમને બહુ પ્રસિદ્ધ કર્યા ! માટે હવે તો અમે પાછા વનમાં જતા રહીશું.’
+ <br/><br/>
+ ત્યારે સૌ સંત હાથ જોડીને બોલ્યા જે, ‘હે મહારાજ ! જેમ તમે કહેશો તેમ કરશું, પણ તમે સત્સંગમાં રહો.’ ત્યારે મહારાજ કહે, ‘અમને ભગવાન ન કહો તો સત્સંગમાં રહીએ. અમને શુકજી ને સનકાદિક જેવા તથા કપિલદેવ ને દત્તાત્રેય જેવા મોટાપુરુષ કહેવા તથા ધર્માચાર્ય કહેવા; પણ રામ-કૃષ્ણાદિક ભગવાન જેવા અમને ન કહેવા.’ ત્યારે સંતોએ કહ્યું જે, ‘સારુ મહારાજ ! હવે એમ કહીશું પણ તમે સત્સંગમાં રહો.’ એમ કહીને સૌને દેશમાં ફરવા મોકલ્યા.
+ <br/><br/>
+ પછી સૌ ફરીને પાછા આવ્યા, ત્યારે મહારાજે પૂછ્યું જે, ‘દેશમાં કેવી રીતે વાતું કરતા ?’ ત્યારે સંતો બોલ્યા જે, ‘પંચવર્તમાનમાં નિયમ સંબંધી તથા જ્ઞાન, વૈરાગ્ય, ભક્તિ, મહિમા, ઉપાસના એ સંબંધી મનુષ્ય આગળ વાતું કરતા.’ ત્યારે મહારાજે પૂછ્યું જે, ‘ઉપાસના સંબંધી કેવી રીતે વાતું કરતા ?’ ત્યારે સંતે કહ્યું જે, ‘ઉપાસના સંબંધી એમ વાતું કરતા જે, મહારાજ છે તે દત્તાત્રેય, કપિલ, શુક, સનકાદિક જેવા મોટાપુરુષ છે.’ એ સાંભળીને મહારાજે પોતાનું મસ્તક ડોલાવ્યું અને કહ્યું જે, ‘કબૂતરના કબૂતર રહ્યા ! ’ 
+ <br/><br/>
+ એમ કહીને બોલ્યા જે, ‘સર્વોપરી દિવ્ય સાકારમૂર્તિ અને સર્વ અવતારમાત્રના અવતારી અને સર્વેના નિયંતા એવા જે અમે સાક્ષાત્ પૂર્ણ પુરુષોત્તમનારાયણ, તે અમારા અક્ષરધામ તથા મુક્તે સહિત મનુષ્યદેહનું ધારણ કરીને, તમારે સર્વેને સજાતિ થઈને, હળીમળીને ભેળા રહીને, અમારે વિશે તમને હેત કરાવીને, સર્વોપરી અમારા સ્વરૂપનું જ્ઞાન આપ્યું તથા અનંત પ્રકારનાં મહા અદ્ભુત ઐશ્ર્વર્ય જણાવ્યાં તથા અનંત જીવોને સમાધિ કરાવીને ગોલોકાદિક અનંત ધામ દેખાડ્યાં તથા માયા પાર અમારું અક્ષરબ્રહ્મ નામે ધામ તેને વિશે અનંત મુક્તે સહિત અમારા દિવ્ય સ્વરૂપનાં સાક્ષાત્કાર અનંત ભક્તજનને દર્શન કરાવ્યાં તથા સર્વે અવતારને અમારી સ્તુતિ કરતા થકા અમારા સ્વરૂપને વિશે લીન કરી દેખાડ્યા તથા મોટા મોટા રામકૃષ્ણાદિક અવતારથી પણ જે કાર્ય ન થાય તેવાં કાર્ય તો સહેજમાં ભક્ત દ્વારે કર્યાં તથા સત્પુરુષ દ્વારે એવાં અનંત કાર્ય કર્યાં, તો પણ તમને એ વાતની લગાર પણ ખુમારી આવી નહિ ? માટે અમારું સ્વરૂપ તમારા હૃદયમાં પેઠું જ નહિ; ને જો પેઠું હોય તો જીરવાય જ કેમ ?
+ <br/><br/>
+ જેમ મૂળો ખાય ને ગમે તેટલાં ભોજન જમે, પણ મૂળો સર્વેને દાબીને પોતાનો ઓડકાર કાઢે છે, તેમ માહાત્મ્યે સહિત જેવું છે તેવું અમારું સ્વરૂપ યથાર્થ જાણ્યું હોય, તો અમે ના કહીએ તો પણ તમારાથી કહ્યા વિના રહેવાય જ કેમ ? માટે જાણ્યામાં ઘણો ફેર છે. ને જ્યારે આ અમારું સ્વરૂપ જેવું છે તેવું પરિપૂર્ણ સમજાશે, ત્યારે તમારે અમારા સ્વરૂપનો મહિમા કહેવા સાંભળવામાં કોઈ પ્રકારનો અંતરાય નહિ રહે.’ વળી મહારાજ કહેતા જે, ‘ગમે તેવો ઉત્તમ મુમુક્ષુ હોય અને અમ ભેળો રહેતો હોય, પણ તેને જો અમારી મરજીના જાણનારા સત્પુરુષનો સંગ ન હોય, તો અમારું સ્વરૂપ યથાર્થ રીતે સમજવામાં ન્યૂનતા રહી જાય.’ માટે ભગવાન ભેળા રહ્યા ને ખોટ રહી ગઈ, તે આ સાધુના સમાગમ વિના.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

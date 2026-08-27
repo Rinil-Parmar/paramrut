@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">સારંગપુર ૧૨ - આત્માના વિચારનું</h1>
+<p class="text_gu">
+સંવત ૧૮૭૭ના ભાદરવા સુદિ ૧ પડવાને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીસારંગપુર મધ્યે જીવાખાચરના દરબારમાં ઉત્તરાદે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી નિર્વિકારાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “સાધુને વિષે કયા ગુણ અખંડ રહે છે ને કયા ગુણ આવે-જાય એવા છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “એક તો આત્મનિષ્ઠા અને બીજો સ્વધર્મ અને ત્રીજો ભગવાનના સ્વરૂપનો નિશ્ચય એ ત્રણ ગુણ તો અખંડ રહે છે અને બીજા ગુણ તો આવે ખરા ને પાછા જાય પણ ખરા. માટે બીજા ગુણ તો આવ્યા-ગયા રહે છે અને એ ત્રણ ગુણ તો અખંડ રહે છે.”
+</p>
+<p class="text_gu">
+પછી મુક્તાનંદ સ્વામીએ પૂછ્યું જે, “દેહની ને આત્માની નોખી વિક્તિ સમજાણી હોય તોય પણ તે વિક્તિને ભૂલીને પાછો દેહાભિમાની કેમ થાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “દેહ-આત્માની વિક્તિ એક વાર ચોખી સમજાણી હોય તો પછી પાછી ભુલાય નહીં; અને એમ માને જે, ‘હું દેહ છું,’ તો પણ દેહ પોતાનું રૂપ મનાય જ નહીં. અને ભગવાનનો નિશ્ચય પણ જો એક વાર દ્રઢ થયો હોય તો પાછો ટાળે તો પણ ટળે નહીં. અને એમ જણાય છે જે, આત્મબુદ્ધિ મટીને દેહબુદ્ધિ આવી જાય છે; એ તો ખોટો ખોટો મનમાં ભ્રમ પડે છે, પણ દેહાભિમાન તો આવતું જ નથી. અને એવો જે પરિપક્વ જ્ઞાની તેને તો આત્માનું જ અભિમાન દ્રઢ રહે છે ને તે પોતાના આત્માને બ્રહ્મરૂપ માને છે અને તે બ્રહ્મને વિષે પરબ્રહ્મ જે પુરુષોત્તમ ભગવાન તે અખંડ વિરાજમાન છે અને તે ભગવાનના સ્વરૂપનો નિશ્ચય પણ એને અખંડ ને અખંડ રહે છે.”
+</p>
+<p class="text_gu">
+પછી સ્વયંપ્રકાશાનંદ સ્વામીએ પૂછ્યું જે, “પોતાના આત્માનો વિચાર કેમ કરવો?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જ્યારે અંતઃકરણ સામું દ્રષ્ટા એવો જે જીવાત્મા તે જોઈ રહે ત્યારે બાહેર જે સ્થૂળ શરીર અને તે સંબંધી જે વિષય તે સર્વે વીસરી જાય છે, અને અંતઃકરણ ને દ્રષ્ટા એ બેના વચ્ચમાં જે વિચાર ઠરે છે તે વિચારે કરીને મન, બુદ્ધિ, ચિત્ત, અહંકાર એ સર્વનાં રૂપને જાણવાં. પછી વિચારની દ્રષ્ટિએ અંતઃકરણના ઘાટ સામું જોતાં જોતાં જ્યારે ઘાટ બંધ થઈ જાય ત્યારે ભગવાનની મૂર્તિનું ધ્યાન કરવું અને જ્યાં સુધી ઘાટ-સંકલ્પનું બળ હોય ત્યાં સુધી તો સંકલ્પ સામું જોઈ રહેવું, પણ ધ્યાન ન કરવું. અને જે બાહેર સ્થૂળ દેહને વિષે પંચ જ્ઞાનઇન્દ્રિયો છે, તે જ્યારે પોતપોતાના વિષય સામાં જાય છે ત્યારે વિચારને બે પ્રકારે કરવો: એક તો જે વિષયને આકારે ઇન્દ્રિયો થયાં હોય તે વિષયને આકારે વિચાર કરવો, અને બીજો તે ઇન્દ્રિયોના ગોલકને વિષે જે જોનારો દ્રષ્ટા છે તે દ્રષ્ટાને આકારે વિચાર કરવો. પછી વિષયને આકારે ને દ્રષ્ટાને આકારે એ બે પ્રકારે જે વિચાર છે તે એક થઈ જાય છે; પછી તે વિષયમાંથી વૃત્તિ અતિશય તૂટી જાય છે. અને એમ વિચાર્યા વિના જો બલાત્કારે કરીને વિષયમાંથી વૃત્તિને તોડે તો તે વૃત્તિને વિષયમાંથી પ્રીતિ મટે નહીં અને જ્યારે વિચારીને વૃત્તિને પાછી વાળે ત્યારે તે વૃત્તિ પાછી વિષયમાં જોડાય જ નહીં. માટે જ્યાં સુધી ઇન્દ્રિયોની વૃત્તિને વિષય સન્મુખ પ્રીતિ હોય ત્યાં સુધી ભગવાનનું ધ્યાન કરવું નહીં ને જ્યારે ઇન્દ્રિયોની વૃત્તિ સ્થિર થાય ત્યારે ભગવાનનું ધ્યાન કરવું. અને જ્યારે બાહેર સ્થૂળ દેહમાં દ્રષ્ટા વર્તતો હોય ત્યારે ચોખો વિભાગ કરી રાખવો જે, જ્યારે સ્થૂળ દેહમાં વર્તવું ત્યારે સૂક્ષ્મ દેહના ઘાટ સામું તો જોવું જ નહીં અને જ્યારે અંતઃકરણ સન્મુખ જોવું ત્યારે સ્થૂળ દેહને વિસારી દેવું. અને દ્રષ્ટાને ને દ્રશ્યને મધ્યે જે વિચાર છે તે વિચારે કરીને એમ સમજવું જે, ‘દ્રષ્ટા ને દ્રશ્ય તે અતિશય જુદાં જ છે,’ એમ સમજીને દેહના ભાવ તે દેહને વિષે હોમવા અને દ્રષ્ટા જે ચૈતન્ય તેના ભાવ તે ચૈતન્યને વિષે હોમવા. અને બાળ, યૌવન, વૃદ્ધ, સ્થૂળ, કૃશ, જીવવું, મરવું એ સર્વે દેહના ભાવ છે, તે આત્માને વિષે માનવા જ નહીં; અને અછેદ્ય, અભેદ્ય, અજર, અમર, જ્ઞાનરૂપ, સુખરૂપ, સત્તારૂપ એ જે આત્માના ભાવ છે, તે કોઈ કાળે દેહને વિષે સમજવા જ નહીં, એ ગુણ તો આત્માને વિષે સમજવા. એવો જે વિચાર તે જ્યાં સુધી ઘાટ-સંકલ્પનું બળ હોય ત્યાં સુધી મૂકવો નહીં. જેમ રાજા હોય તે જ્યાં સુધી શત્રુનું બળ હોય ત્યાં સુધી રાજગાદીએ બેસીને સુખ ભોગવે નહીં અને જ્યારે શત્રુમાત્રનો નાશ થઈ જાય ત્યારે પોતાના રાજ્યના જે વૈભવ છે તેને ભોગવે છે; તેમ જે ભગવાનનો ભક્ત હોય તેને જ્યાં સુધી મન ને ઇન્દ્રિયોરૂપી શત્રુ પીડતા હોય ત્યાં સુધી પૂર્વે કહ્યો એવો જે વિચાર તે દ્રઢપણે રાખવો અને જ્યારે મન-ઇન્દ્રિયોના ઘાટ સર્વે શમી જાય ત્યારે પરમેશ્વરના સ્વરૂપનું ધ્યાન કરવું.”
+</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+				<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+  (71) મતપંથવાળે લાખ લાખ યોજનના કૂવા ગાળ્યા છે, તે નીકળાય જ નહીં. તે શું ? તો જુઓને, કુડા મારગીવાળે વટલવું ને વ્યભિચાર તેણે કરીને જ મોક્ષ માન્યો છે; તે શું શાસ્ત્રનો મત છે ? ને વેદાંતીએ તો ભગવાનના આકારનું ખંડન કરીને <a href="#ex1" class="wordMeaning">વિધિનિષેધ</a>ને ખોટા કરી નાખ્યા, એ પણ શાસ્ત્રનો મત નહીં. ને શક્તિપંથવાળે તો માંસ ને મદિરા તેણે કરીને મુક્તિ માની છે. તે શું ? તો,
+ 
+ <br/><br/>
+ પીત્વા પીત્વા પુનઃ પીત્વા, પીત્વા પતન્તિ ભૂતલે । <br/>
+ઉત્થાય ચ પુનઃ પીત્વા, પુનર્જન્મ ન વિદ્યતે ॥ <br/>
+
+ (ચાર્વાક)
+ <br/>
+ અર્થ : જેઓ મદ્ય (દારૂ) પી-પીને ફરી ફરી પીને પૃથ્વી પર પડે છે, વળી ઊભા થઈને ફરી વાર પીવે છે તેનો બીજો જન્મ થતો નથી.
+ <br/><br/>
+ એ શ્ર્લોક બોલીને કહ્યું જે, ‘એ શાસ્ત્રનો સનાતન મત નહીં. ને નાસ્તિક મતવાળાને મતે તો ભગવાન જ નથી ને કર્મે કરીને જ કલ્યાણ માન્યું છે; પણ ભગવાન વતે કલ્યાણ નથી માન્યું. તે તો જેમ ‘છોકરાનું નાળ કરતાં ગળું કાપી નાખ્યું’ તેમ થયું ને તેને તો જેમ ‘એકડા વિનાનાં મીંડાં’ ને ‘પુત્ર વિનાનું પારણું’ ને ‘જીવ વિનાની કાયા’ ને ‘મણમાં આઠ પાંચ શેરની ભૂલ’ એમ છે અને આ જગતમાં મોટા ગુરુ કહેવાય છે, પણ તેમનાં પાપ તો મુખ થકી કહેવાય નહિ, અને ભક્તિનો તો ઉપર આડંબર, ને પાપની તો બીક જ નહીં. તે શું ? તો, મા, બહેન ને દીકરી તેની ગમ જ નહિ, એવા પશુના ધર્મ પાળે છે.’ એમ કહીને વળી બોલ્યા જે, ‘મતમાત્ર આજ હમણાં જ બગાડ્યા છે એમ નથી, એ તો મૂળમાંથી જ બગડેલા છે.’ એમ કહીને કહ્યું જે, ‘આ મળદ્વાર છે તે નાનો હોય ત્યારે કાંઈ ચોખ્ખો હશે?’ ત્યારે રૂપશંકરે કહ્યું જે, ‘ના મહારાજ ! એ તો મૂળમાંથી જ બગડેલો છે.’ ત્યારે સ્વામી બોલ્યા જે, ‘વાત તો નિરંતર કરીએ છીએ, પણ આજ તો ટીકા કરી છે.’ ત્યારે સૌએ કહ્યું જે, ‘આવું તો સમજાતું જ નહોતું.’
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 વિધિનિષેધ= ધર્મશાસ્ત્રોમાં જે 'આમ કરવું ને જે આમ ન કરવું' એવો ઉપદેશ.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1918ના ભાદરવા વદિ છઠ ને દિવસે સ્વામીએ પ્રભાતે વાત કરી જે,
+ <br/>
+ (245) શામ, દામ, ભેદ ને દંડ એ ચાર ઉપાય છે. તેમાં છેલ્લો ઉપાય થાય છે ત્યારે સૌની આંખ ઊઘડે છે. ઉત્તમ મુમુક્ષુ છે તે તો લખ્યું છે તેમાંથી સમજશે, પામર ને વિષયી છે તેને દંડ દીધા વિના નહિ ચાલે. ધર્મામૃતમાં કહેલ છે તેવાં લૂગડાં રાખવાં, પણ વધારે કિંમતનાં રાખવાં નહિ. જ્યાં ત્યાં પદાર્થ માગતા ફરવું કે, જે તે ખાતા ફરવું ને કોઈ નિયમ જ નહિ તે પાર નહિ પડે, પણ દંડ દઈએ જે કથામાં ઊંઘે તે પચાસ માળા ફેરવે ને દશ દંડવત્ કરે તો આ ઘડીએ પાધરું વરતાય. જેને ખપ હોય તે રહે ને બીજા માંડે ચાલવા; વળી બીજા બે નવા મૂંડશું. ખાધાનું પણ નિયમ નથી, માટે એક ટાણું ખાવું પણ દિવસ આખો ચાવ ચાવ ન કરવું. ગૃહસ્થ રૂપિયા લાવે તેને મહારાજ કહેતા જે, ‘નાખો કૂવામાં !’ પછી કૂવામાં રૂપિયા નખાવ્યા હતા તે જ આપણે છીએ.
+ <br/><br/>
+ સુત  દારા  અરુ  લક્ષ્મી, પાપી  કો  ભી  હોય;
+ <br/>
+ સંત સમાગમ હરિભજન, તુલસી દુર્લભ સોય.
+ <br/>
+ (તુલસીદાસની સાખીઓ : 83)
+ <br/>
+ અર્થ : સંતોનો સમાગમ અને ભગવાનની કથા એ બે વસ્તુઓ બહુ દુર્લભ છે. બાકી, સ્ત્રી, પુત્ર અને ધન તો પાપીની પાસે પણ હોય છે. 
+ <br/><br/>
+ આકાશમાં ઊડતો હોય તો પણ તેનો અમારે ખપ નથી. મરને ચાર જ જણ હૈઈશું, પણ ગરીબ થઈને જે થાશે તે કરશું; ને દંડ દેવા બેઠા છીએ, તે હમણાં દેશું, નહિ તો મર્યા પછી દેશું. ને ગળું ઝાલશું કાં માંદો પાડશું, પણ દંડ દીધે જ રહેવું છે. ગૃહસ્થને દંડ, જે હાથે રોટલા ઘડવા પડે. સત્સંગ તો મહારાજના હાથમાં છે. આચાર્ય આજ્ઞા નહિ પાળે તો તેણે પણ સત્સંગમાં નહિ રહેવાય ને ત્યાગી-ગૃહી જે કોઈ આજ્ઞા લોપશે તેણે સત્સંગમાં નહિ રહેવાય. તે મહારાજ મોટેરાને વઢીને કહેતા જે, ‘તમે મોટેરા થયા એટલે તમે આજ્ઞા લોપો તો ય તમને ન કહેવાય ? માટે આજ્ઞા લોપે તેને તો કહેવું, કહેવું ને કહેવું ! પછી ન માને તો ગ્રહણનું હાંડલું જાણી કાઢી મૂકવો; પણ નહિ કાઢો તો બીજાને બગાડશે ને સત્સંગનું ભૂંડું દેખાડશે.’
+ <br/><br/>
+ બૂચ્ચાં નકટાં બહુ મળી, કેનીક જાનમાં જાય,
+ <br/>
+ ખોટ  મોટી  એ  વરને  નકટાંને   નહિ  કાંય. 
+ <br/>
+ (નિષ્કુળાનંદ કાવ્ય : હૃદયપ્રકાશ-પ્રસંગ 10)
+ <br/><br/>
+ તેમ નકટા હોય તેને શું ? પણ જે મહિમા જાણનારા છે, તે મહારાજના વચનમાં ટૂક ટૂક થઈ ગયા માટે જેનો મહિમા છે તેનાં જ વચન છે. 
+ <br/><br/>
+ કૃપાનંદસ્વામીનો એવો મત જે ઊની કોશ ગળામાં ઘાલીએ ને દુ:ખ થાય તેટલું દુ:ખ આવે તો પણ મહારાજની આજ્ઞા લોપવી નહિ. તે એક વાર ખારા ગુંદરણની સીમમાં તલાવડીએ લૂગડાં ઉતારીને દિશાએ ગયા. ત્યાં છેટે સાખપરી ધાર ઉપર ડોશી છાણાં વીણતી હતી. તેને દીઠી. એટલે ભાગ્યા ને અમે નહાતા હતા ત્યાં શ્ર્વાસભેર આવ્યા ને કહે, ‘ભાગો ! ભાગો !’ ત્યારે અમે પૂછ્યું જે, ‘શું છે ?’ તો કહે, ‘ઓલીધાર ઉપર ડોશી છે.’ તે એવા સમર્થ થકા આજ્ઞાનો ભય રાખતા. તે શું, એને આજ્ઞા હતી ને બીજાને નથી ? 
+ <br/><br/>
+ મયારામ ભટ્ટે સમ ખાધા જે, ‘સ્ત્રી ભેળા ચાલે તે હરામ ખાય.’ માટે મયારામ ભટ્ટ, નિષ્કુળાનંદસ્વામી ને કૃપાનંદસ્વામી વિષયથી બહુ બીને ચાલે. ઉપાસનાની સમજણે કરીને, વિવેકે કરીને પરાણે ભગવાનની મૂર્તિ સંભારતા, એવો આગ્રહ તો કોઈને નથી. આપણે ઝાઝા ભેળા કર્યાનું શું કામ છે ? સહેજે એની મેળે સત્સંગ થાશે. <br/><br/>
+
+  <a href="refch3057.html" class="wordMeaning"> પ્રકરણ 3 ની વાત 57 </a> 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

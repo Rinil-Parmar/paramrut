@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		
+
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૨૬ - ભક્તિમાં અંતરાય કરતાં આત્મજ્ઞાનાદિકને પાછાં પાડવાનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૭૯ના ભાદરવા સુદિ ૧૧ એકાદશીને દિવસ રાત્રિને સમે શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિરની આગળ વિરાજમાન હતા ને સર્વે શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજ બોલ્યા જે, “જે ભગવાનનો ભક્ત હોય તેને તો ભગવાનને તથા ભગવાનના ભક્તને જે ન ગમતું હોય તે ન જ કરવું, અને પરમેશ્વરને ભજ્યામાં અંતરાય કરતાં હોય ને તે પોતાનાં સગાંવહાલાં હોય તેનો પણ ત્યાગ કરવો, અને ભગવાનને ન ગમે એવો કોઈક પોતાનો સ્વભાવ હોય તો તેનો પણ શત્રુની પેઠે ત્યાગ કરવો, પણ ભગવાનથી જે વિમુખ હોય તેનો પક્ષ લેવો નહીં; જેમ ભરતજીએ પોતાની માતાનો પક્ષ ન લીધો. અને ભગવાનનો ભક્ત હોય તેને તો સૌથી વિશેષ પોતામાં જ અવગુણ ભાસે. અને <b>જે બીજામાં અવગુણ જુએ અને પોતામાં ગુણ પરઠે તે તો સત્સંગી છે તો પણ અર્ધો વિમુખ છે. અને ભગવાનના ભક્તને તો ભગવાનની ભક્તિ કરતાં આત્મજ્ઞાન તથા વૈરાગ્ય તથા ધર્મ તે જો અંતરાય કરતાં હોય તો તેને પણ પાછાં પાડીને ભગવાનની ભક્તિનું જ મુખ્યપણું રાખવું.</b> અને જો ભક્તિને વિષે સહાયરૂપ થતાં હોય તો તો એ ઠીક છે, એમ સમજે તે જ ભગવાનનો પૂરો ભક્ત કહેવાય. અને જેને બીજાનો અવગુણ આવે ને પોતામાં ગુણ પરઠે તે તો ગમે તેવો મોટો હોય તો પણ તેને કલ્યાણના માર્ગમાં વિઘ્ન થાય છે. જેમ રાધિકાજી ઘણાં મોટાં હતાં અને ભગવાનને વિષે પ્રેમ પણ અતિશય હતો, પણ જ્યારે પોતામાં ગુણ માન્યો અને શ્રીકૃષ્ણ ભગવાનને વિષે અવગુણ માન્યો ત્યારે પોતાના પ્રેમમાં તમોગુણનો ભાગ આવ્યો. પછી શ્રીકૃષ્ણ ભગવાન તથા શ્રીદામા સાથે વઢવેડ કરી. પછી શ્રીદામાનો શાપ થયો. તેણે કરીને ગોલોકમાંથી પડીને ગુજ્જરને ઘેર અવતાર લીધો અને ભગવાન વિના અન્ય પુરુષ હતો તેને ધણી કર્યો; એવા મહામોટા લાંછનને પામ્યાં. અને શ્રીદામા હતો તેણે પણ પોતામાં ગુણ માન્યો અને રાધિકામાં અવગુણ પરઠ્યો તો રાધિકાનો શાપ પામીને દૈત્ય થવું પડ્યું. અને એ ધામમાંથી તો પડવાની રીત નથી ને જે પડ્યા તે તો ભગવાનની ઇચ્છા એવી હતી, તો પણ ભગવાને એમ જણાવ્યું જે, ‘રાધિકાજી જેવો મોટો હોય ને તે પોતામાં ગુણ માનીને ભગવાનના ભક્તનો અવગુણ લે તો તે પણ પડી જાય, તો બીજાની શી ગણતી?’ માટે ભગવાનનો ભક્ત હોય તેને તો સર્વે સત્સંગીનો ગુણ જ લેવો ને પોતાનો તો અવગુણ જ લેવો. એવી રીતે સમજતો હોય ને થોડી બુદ્ધિ હોય તો પણ તેનો સત્સંગ દિવસે દિવસે વૃદ્ધિ પામતો જાય; અને તે વિના તો ઝાઝી બુદ્ધિ હોય તો પણ દિવસ-દિવસ પ્રત્યે સત્સંગમાંથી પાછો હઠતો જાય અને અંતે જાતાં નિશ્ચય વિમુખ થાય. અને વળી એ રીત તો સર્વ ઠેકાણે છે જે, જે ચાકર હોય અથવા શિષ્ય હોય તેને રાજા હોય અથવા ગુરુ હોય તે જેમ વઢીને કહેવા માંડે તેમાં જે સવળું લેતો જાય તો તે ઉપર રાજા તથા ગુરુને અતિશય હેત થાય છે અને જેને શિખામણની વાત કહે ને અવળું લે તો તે ઉપર હેત થતું નથી; તેમ જ ભગવાનની પણ રીત છે જે, જેને શિખામણની વાત કહે ને સવળું લે તો તે ઉપર હેત થાય છે પણ જે અવળું લે તે ઉપર થતું નથી.”
+</p> 
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

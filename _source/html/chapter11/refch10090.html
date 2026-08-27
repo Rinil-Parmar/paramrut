@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ <li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+ 
+ (90) ખાવું ને સ્ત્રી એ બે વિષય મોટા છે. જેટલી આસક્તિ છે તે બંધનકારી છે, જેમ દેહને અંગરખું છે તેમ જીવને સ્ત્રી છે. સો વરસ કેડે પ્રલય થાશે એ જ્ઞાન સાચું છે પણ કોણ માને છે ? જેવા શબ્દ સાંભળે તેવો જીવ થઈ જાય છે. કહ્યા વિના સમજાય નહિ. પ્રથમ <a href="#ex1" class="wordMeaning">તૂપ</a>ની ખબર નહોતી માટે શબ્દે કરીને જ જ્ઞાન થાય છે. નાત-જાતનું જન્મ્યા પછી નક્કી થઈ ગયું છે, પણ આપણે તો આત્મા છીએ. થોડા દિવસમાં મેલવું છે; માટે કોઈને અન્ન મળતું હોય તો પ્રભુ ભજી લેવા ને હળવે રહીને મેલી દેવું, પણ આ જીવનો તો લવિયાના જેવો સ્વભાવ છે તે ગોંડળનો દરજી હતો, તેની સ્ત્રી મરી ગઈ એટલે તેની નાતમાં એક રૂપવાન ધણિયાતી સ્ત્રી હતી તેને વરવાનો ઈશક થયો. પછી લાધા રાઠોડ આગળ વાત કરી. ત્યારે તે કહે જે, ‘મહારાજના મંદિરની <a href="#ex1" class="wordMeaning">સંજવારી</a> છ મહિના સુધી કાઢ તો તારું ધાર્યું સિદ્ધ થાશે.’ પછી તેણે તેમ કર્યું, એટલે છ મહિને પેલી બાયડીનો ધણી મરી ગયો. તેને ખબર પડ્યા કે તુરત જઈને માગ્યા તેટલા રૂપિયા ભરીને <a href="#ex1" class="wordMeaning">ઘરઘી આવ્યો</a>. પણ તે જ વરસમાં ટૂંટિયું આવ્યું તે લવિયાને થયું; એટલે ગોપાળાનંદસ્વામી તેડવા આવ્યા. ત્યારે લવિયો કહે, ‘મેં હમણાં જ નવું ઘર કર્યું છે, તે નહિ આવું.’ પછી તો ગોપાળનંદસ્વામીએ તેની સ્ત્રીના જેવું રૂપ દેખાડ્યું ને તેને કહ્યું જે, ‘હું મહારાજ ભેળી જાઉં છું, તમે આવો છો ?’ તો કે’, ‘હા,’ એમ કહી લવિયો તરત દેહમાંથી નીકળી સ્વામી ભેળો ચાલ્યો! એમ જીવને ચોંટવાનો સ્વભાવ છે. લવિયાને તો દેહમાંથી નીકળવું નહોતું, પણ ગોપાળાનંદસ્વામીએ કળા કરીને કાઢ્યો. આવી જીવમાં વાસના રહી જાય છે. તે સારુ કેટલાક નૈમિષારણ્યમાં જઈને બેઠા છે ને કેટલાક બદરિકાશ્રમમાં જઈને બેઠા છે. 
+ <br/><br/>
+ શૂરવીર હોય તે ઘાયે આવે, પણ વાણિયા હોય તે ઘાયે આવે નહિ. મડાંને ઢાલ-તલવાર બંધાવીને લડાઈમાં ઊભાં રાખે તે શું ફતેહ કરે ? તેમ જે સાધુ-સત્સંગી ઉપરથી દેખાતા હોય ને માંહેલી કોરે મડાંની પેઠે જીવન વિનાના હોય તે શું માયાની સામે ઘાયે આવે ? ને એવા હોય તે સત્સંગનું શું સારું દેખાડે ? માટે સાધુ હોય તે સાધુ કરે ને જેનાં હૈયામાંથી જગત નીકળી ગયું હોય તે જીવનાં હૈયામાંથી જગત કાઢે. 
+ <br/><br/>
+ ઊંટને <a href="#ex1" class="wordMeaning">ગાવહુકણું</a> ગળે રહ્યું તે રાજવૈદ્યે ઊંટનું ગળું તપાસી તેલ ચોળી પાટુ મારી, તે ગાવહુકણું ગળે ઊતરી ગયું એટલે ઊંટ જીવ્યો. પછી રાજાની ડોશીને ગળે રતવા થયો ને ગળું પાક્યું. એટલે રાજવૈદ્યને તેડાવ્યા પણ રાજવૈદ્ય તો ગામ ગયેલ એટલે તેનો ભાણેજ દરબારમાં ગયો ને જોયું તો ઊંટના જેવું દરદ દીઠું. પછી કહે, ‘આ તો હું મટાડી દઉં, એમાં મારા મામાનું કામ નથી. મારું જાણેલ-જોયેલ દરદ છે.’ એમ કહી તેલથી ગળું ચોળી પાટુ માર્યું તે ડોશી મરી ગઈ. તેમ જે દેખાદેખીથી સાધુ થાય કે, શીખીને વાત કરે તેનાથી જીવના હૈયામાંથી જગત નીકળે નહિ. એ તો ખરેખરા ધન્વંતરી મળે ત્યારે રોગ કાઢે; તેમ ખરેખરા સંત મળે તો જીવના હૈયામાંથી જગત કાઢે.
+ <br/><br/>
+ સંત ધન્વંતરી વૈદશમ, જેસો રોગી જેહુ;
+ <br/>
+ મુક્ત બતાવત તાહી કું, તેસો ઓષધ તેહુ.
+ <br/>
+ (મુક્તાનંદ કાવ્ય : વિ.ચિ.- સાધુકો સંગ -10) 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 તૂપ= ઘી. <br/>
+2 સંજવારી= સાફસૂફી કરવી. <br/> 
+3 ઘરઘી આવ્યો= નાતરું, પુનર્લગ્ન કર્યા. <br/>
+4 ગાવહુંકણું= એક પ્રકારની વનસ્પતિ જે ગળે ન ઉતરે-કડવું કોઠીમડું, તેને ગાવહુંકણું કહે છે.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

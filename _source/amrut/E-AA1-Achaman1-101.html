@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			Tā. 15-6-1973, savāre, sokhaḍā, vacha. Gaḍhaḍā pra. 63 - nishrchayanun<br/>101. Mahārājanī sattāne āpaṇe mānya rākhatā nathī. Koīk managamato prasanga āve tyāre sārun lāge. Varasād varase, ruchi pramāṇe sankalpa pūrā thāya, tyān mahārājanun kartāpaṇun āpaṇane manāshe. Te vakhate āpaṇe ānandamān āvīne kahīshun ke jenī bīke indra varase chhe, agni baḷe chhe, vāyu vāya chhe, sūrya prakāshe chhe... Paṇ e j mahārāj koī santa dvārā athavā koī haribhakta dvārā āpaṇī kasoṭī kare, man maroḍe, vagaravānke apamān kare, potānī viruddha varte, dehane rog āve, vyavahāramān oṭ āve... Bahu saraḷ vartatā hoīe toya em thaī jāya ke mahārāj jāṇatā hashe ke nahi jāṇatā hoya? Evo sankalpa n ūṭhe e māṭe ṭŏp levalano māhātmyajnyāne sahitano nishchaya ūbho karavo chhe. Āpaṇane akhanḍa ĕrakanḍishan hovun joīe. E bhāvanā ūbhī karavī chhe. Evā nishchayanī paripakavatā ūbhī karavī chhe eṭalā māṭenun ā vachanāmṛut chhe. E āpaṇane joī-jāṇī rahyā chhe. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

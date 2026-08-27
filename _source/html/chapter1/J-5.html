@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">જેતલપુર ૫</h1>
+			<p class="text_gu">સંવત ૧૮૮૨ના ચૈત્ર સુદિ ૭ સાતમને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીજેતલપુર મધ્યે દક્ષિણાદી કોરે જગ્યાની માંહી ચોકને વિષે ઉત્તરાદે મુખારવિંદે પાટ ઉપર વિરાજમાન હતા ને સર્વે શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને મસ્તક ઉપર ઝીણપોતી શ્વેત પાઘ ધરી રહ્યા હતા ને શ્વેત ઝીણી ચાદર ઓઢી હતી અને શ્વેત ધોતિયું પહેર્યું હતું અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">અને રાત દોઢ પહોર વીતી હતી. પછી શ્રીજીમહારાજ ઘડીક વિચારીને બોલ્યા જે, “સર્વે સાંભળો, આજે તો અમારે જેમ છે તેમ વાત કરવી છે જે, <b>ભગવાનને ભજવા એથી બીજી વાત મોટી નથી</b>. કાં જે, ભગવાનનું કર્યું સર્વે થાય છે. અને આ સમે તો આ સભાનું કર્યું પણ થાય છે. અને શ્રીનરનારાયણને પ્રતાપે કરીને અમારું કર્યું પણ થાય છે. તે લ્યો, કહીએ જે, જેવો અમે મનમાં ઘાટ કરીએ છીએ તેવો આ જગતને વિષે પ્રવર્તે છે, અને જેમ ધારીએ છીએ તેમ પણ થાય છે ખરું જે, આને રાજ આવો તો તેને રાજ આવે છે, અને આનું રાજ જાઓ તો તેનું જાય છે; અને ધારીએ જે, આ પળે આટલો વરસાદ આંહીં થાઓ તો તે ત્યાં જરૂર થાય છે, અને આંહીં ન થાઓ તો ત્યાં નથી થાતો; અને વળી ધારીએ જે, આને ધન પ્રાપ્ત થાઓ તો તે થાય છે, અને આને ન થાઓ તો તેને થાતું જ નથી; અને આને દીકરો આવો તો તેને દીકરો આવે છે, અને ધારીએ જે, આને દીકરો ન આવો તો તેને આવતો જ નથી; અને આને રોગ થાઓ તો તેને રોગ પણ થાય છે, અને આને રોગ ન થાઓ તો તેને રોગ પણ નથી થતો. એવી રીતે અમે ધારીએ છીએ તેમ થાય છે ખરું. ત્યારે તમે કહેશો જે, ‘સત્સંગીને સુખ-દુઃખ થાય છે અને રોગાદિક પ્રાપ્ત થાય છે અને કાંઈક ધન-સમૃદ્ધિની હાનિ થાય છે અને મહેનત કરીને મરી જાય છે તો પણ એ દરિદ્રી જેવો રહે છે.’ તો એનું તો એમ છે જે, એને ભગવાન ભજ્યામાં જેટલી કસર છે તેટલી તેને સર્વ ક્રિયાને વિષે બરકત થતી નથી. અને ભગવાનને તો એનું સારું જ કરવું છે જે, શૂળીનું દુઃખ હશે તે ભગવાન પોતાના આશ્રિત જનનું કાંટે કરીને ટાળતા હશે. અને અમે તો એમ જાણીએ છીએ જે, ‘સત્સંગીને તો એક વીંછીની પીડા થતી હોય તો અમને હજાર ગણી થાઓ, પણ તે પીડાથી તે હરિભક્ત રહિત થાઓ અને સુખિયા રહો,’ એમ અમે રામાનંદ સ્વામી આગળ માગ્યું છે. માટે અમારી તો નજર એવી છે જે, સર્વેનું સારું થાઓ. અને ભગવાનને વિષે જીવના મનની વૃત્તિને રાખવાનો ઉપાય નિરંતર કરીએ છીએ. તે શા સારુ જે, હું તો ભૂત, ભવિષ્ય ને વર્તમાન એ ત્રણે કાળને વિષે સર્વ ક્રિયાને જાણું છું અને આંહીં બેઠા સતા પણ સર્વેને જાણીએ છીએ અને માતાના ઉદરને વિષે હતા તે દિવસે પણ જાણતા હતા અને ઉદરને વિષે નહોતા આવ્યા તે દિવસ પણ જાણતા હતા; કેમ જે, અમે તો ભગવાન જે શ્રીનરનારાયણ ઋષિ તે છીએ. અને મહાપાપવાળો જીવ હશે ને અમારે આશરે આવશે ને ધર્મ-નિયમમાં રહેશે તેને અમે અંતકાળે દર્શન દઈને ભગવાનનું જે અક્ષરધામ તેને પમાડીએ છીએ. ને હવે તે અક્ષરધામના પતિ શ્રીપુરુષોત્તમ તે જે તે પ્રથમ ધર્મદેવ થકી મૂર્તિ નામે દેવી, જેને ભક્તિ કહીએ, તેને વિષે શ્રીનરનારાયણ ઋષિરૂપે પ્રગટ થઈને બદરિકાશ્રમને વિષે તપને કરતા હવા. ને તે શ્રીનરનારાયણ ઋષિ આ કળિયુગને વિષે પાખંડી મત તેનું ખંડન કરવા અને અધર્મના વંશનો નાશ કરવા અને ધર્મના વંશને પુષ્ટ કરવા ને ધર્મ, જ્ઞાન, વૈરાગ્ય તેણે સહિત જે ભક્તિ તેને પૃથ્વીને વિષે વિસ્તારવા સારુ શ્રીધર્મદેવ થકી ભક્તિને વિષે નારાયણમુનિરૂપે પ્રગટ થઈને આ સભાને વિષે વિરાજે છે.” એમ કહીને પોતાના જનને અતિ મગ્ન કરતા હવા. અને વળી બોલ્યા જે, “અમે વારેવારે શ્રીનરનારાયણ દેવનું મુખ્યપણું લાવીએ છીએ તેનું તો એ જ હારદ છે જે, શ્રીકૃષ્ણ પુરુષોત્તમ અક્ષરધામના ધામી જે શ્રીનરનારાયણ તે જ આ સભામાં નિત્ય વિરાજે છે. તે સારુ મુખ્યપણું લાવીએ છીએ અને તે સારુ અમે અમારું રૂપ જાણીને લાખો રૂપિયાનું ખરચ કરીને શિખરબંધ મંદિર શ્રીઅમદાવાદમાં કરાવીને શ્રીનરનારાયણની મૂર્તિયું પ્રથમ પધરાવી છે. અને એ શ્રીનરનારાયણ તો અનંત બ્રહ્માંડના રાજા છે. અને તેમાં પણ આ જે ભરતખંડ તેના તો વિશેષે રાજા છે. અને પ્રત્યક્ષ શ્રીનરનારાયણ તેને મેલીને અને આ ભરતખંડના મનુષ્ય બીજા દેવને ભજે છે, તે તો જેમ વ્યભિચારિણી સ્ત્રીઓ હોય તે પોતાના ધણીને મેલીને બીજા જારને ભજે તેમ છે. અને શ્રીનરનારાયણ ભરતખંડના રાજા છે તે શ્રીમદ્‌ભાવતમાં કહ્યું છે.</p>
+
+			<p class="text_gu">અને <b>અમે આ સંત સહિત જીવોના કલ્યાણને અર્થે પ્રગટ થયા છીએ. તે માટે તમે જો અમારું વચન માનશો તો અમે જે ધામમાંથી આવ્યા છીએ તે ધામમાં તમને સર્વેને તેડી જાશું. અને તમે પણ એમ જાણજો જે, ‘અમારું કલ્યાણ થઈ ચૂક્યું છે.’ અને વળી અમારો દ્રઢ વિશ્વાસ રાખશો ને કહીએ તેમ કરશો તો તમને મહાકષ્ટ કોઈક આવી પડશે તેથી અથવા સાત દકાલી જેવું પડશે તે થકી રક્ષા કરશું અને કોઈ ઊગર્યાનો આરો ન હોય એવું કષ્ટ આવી પડશે તોય પણ રક્ષા કરશું; જો અમારા સત્સંગના ધર્મ બહુ રીતે કરીને પાળશો તો ને સત્સંગ રાખશો તો. અને નહીં રાખો તો મહાદુઃખ પામશો. તેમાં અમારે લેણાં-દેણાં નથી.</b> ને અમે તો આ સમે કોઈ વાતનું કાચું રાખ્યું નથી. ને જુઓ ને, આ જેતલપુર ગામમાં અમે કેટલાક યજ્ઞ કર્યા અને કેટલાંક વરસ થયાં આંહીં રહીએ છીએ. અને જુઓ ને, આ તળાવને વિષે અમે સર્વે સંતે સહિત હજારો વાર નાહ્યા છીએ. અને જેતલપુર ગામમાં અમે ઘેર ઘેર સો વાર ફર્યા છીએ ને ઘેર ઘેર ભોજન કર્યાં છે. અને આ ગામની સીમ ને ગામ તે વૃંદાવન કરતાં પણ વિશેષ રમણ સ્થળ કર્યું છે.” એમ વાત મહારાજ કરે છે એટલામાં તો આકાશમાં એક મોટો તેજનો ગોળો દેખાણો અને તે એક ગોળાના ત્રણ ગોળા થઈ ગયા ને મોહોલ ઉપર ઘડીક આકાશમાં દેખાઈને અદ્રશ્ય થઈ ગયા. ત્યારે  સર્વેએ કહ્યું જે, “હે મહારાજ! એ શું હતું?” ત્યારે મહારાજે કહ્યું જે, “બ્રહ્મા, વિષ્ણુ ને શિવ એ ત્રણ દેવ નિત્યે આ સંતની સભાનાં ને અમારાં દર્શન કરવા આવે છે. પણ આજ તો વિમાને સહિત હરિઇચ્છાએ કરીને તમને દેખાણા.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

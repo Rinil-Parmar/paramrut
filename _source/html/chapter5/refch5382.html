@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+								<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (382) સંવત 1919ના ભાદરવા સુદિ પૂનમને દિવસે વંડાની વાડીમાં એક હરિભક્તે સ્વામીને કહ્યું જે, ‘પૂછવું છે.’ ત્યારે સ્વામી ઊઠીને ઓરડીમાં આવ્યા. ત્યાં પૂછ્યું જે, ‘તમને પૂછીએ તેનું સમાધાન કરી આપો છો, પણ વળી એમ થાય છે જે કેમ થાશે ? તે દુ:ખ રહે છે. માટે જેમ સુખ થાય તેમ ઠરાવ કરી આપો.’ ત્યારે સ્વામી કહે, ‘સુખ તો આંહીં જ થાશે. શત્રુ પીડે તો પણ આંહીં સુખ થાશે ને ક્રિયા પોતાથી થાય એવી એવી હળવી ક્રિયા કરવી ને મોટા કામમાં ભરાવું નહિ ને કહેવું જે, એ મારાથી થાય નહીં. ને મંદિરમાં તો માણસનો ખપ છે, તે સૌને રાખે ને મોટા કામમાં તો સુખ ન રહે ને દુ:ખ આવે; માટે લોઢાં, કોદાળી, પાવડા એ સાચવવાં, તાળા-કૂંચીમાં રાખવાં ને દેવાં અને સંભાળીને લેવાં, એવું કામ કરવું; નીકર મંડળમાં ફરવા જવું તથા શોધવાનું... એવાં કામ કરીએ. ને દેહ પાડવો તે કોના હાથમાં છે?’ એમ બોલ્યા ત્યારે કહ્યું જે, ‘એ તો તમારા હાથમાં છે.’ પોતે કહે, ‘એ તો મહારાજના હાથમાં છે.’ ફરી પૂછ્યું જે, ‘આવા રૂડા દેશકાળમાં માંહીથી ને બહારથી ધક્કા લાગે છે, ત્યારે પછવાડે સત્સંગ કેમ રહેશે ?’ સ્વામી કહે, ‘દેશકાળે કરીને કાંઈ સત્સંગ જતો નહિ રહે.’
+ <br/><br/>
+ વળી પૂછ્યું જે, ‘કોઈ ઇન્દ્રિયું તો નિયમમાં નથી થઈ, એટલે મૂંઝવણ આવે ત્યારે મૂવા સુધી મનસૂબા થાય છે. તમે બેઠા મૂંઝવણ આવે તે ટાળો છો પણ પછવાડે કોનાથી ટળશે ? તે નિરધાર કરી આપો. જેમ શ્રીકૃષ્ણે ઉદ્ધવને કરી આપ્યો હતો તેમ કરી આપો. મને તો કાંઈ સૂઝતું નથી, પણ પછવાડે એમ ન થાય જે, આ વાત પૂછવી રહી ગઈ, તેવું પણ કહો.’ ત્યારે સ્વામી બોલ્યા જે, ‘ઇન્દ્રિયું-અંત:કરણનું તો કાળે કરીને સમાધાન થાય, મૂંઝવણ તો એવી જ છે, તે ધીરે ધીરે સારું થાશે. પછવાડે મૂંઝવણ ટાળે એવા ઘણા છે. પૂછવાનું બતાવે એવા પણ પછવાડે છે, તે ઓળખાવ્યા છે.’
+ <br/><br/>
+ ફરી પૂછ્યું જે, ‘ત્યાગી-ગૃહીમાં જીવ કોની કોની સાથે બાંધવો ?’ ત્યારે સ્વામી કહે, ‘જીવ બાંધવામાં બાલમુકુંદદાસજી, પ્રાગજી ભક્ત, જાગા ભક્ત, યોગેશ્ર્વરદાસજી, કલ્યાણભાઈ, લાલાભાઈ, અરજણ બાબરિયો ને જુણોભાઈ આદિક છે.’ વળી પૂછ્યું જે, ‘પછવાડે સમાસ થાશે કે અસમાસ થાશે ?’ ત્યારે સ્વામી કહે, ‘પછવાડે સમાસ નહિ થાય તો બરાબર તો રહેશે.’ પછી કહે, ‘જીવ સામું જુઓ તો કોટિ કલ્પે છૂટકો થાય તેમ નથી.’ ત્યારે સ્વામી કહે, ‘જીવના સામું તો જોતા જ નથી.’ આ રીતે ઉત્તર આપ્યા. 
+
+<br/>
+<a href="V-11.html">વચ. વ. 11 </a>
+ 
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

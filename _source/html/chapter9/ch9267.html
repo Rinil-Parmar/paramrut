@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (267) ખારાગુંદરણમાં એક બાવે આત્માનંદસ્વામીને <a href="#ex1" class="wordMeaning">ખાસડું</a> માર્યુ, ત્યારે સ્વામી ખાસડું લઈને તેને દેવા ગયા. બાવે બીજું ખાસડું મારવાનું કર્યું ત્યારે ગામના લોકે બાવાને વાર્યો, એટલે આળસ્યો. ગામ કારેલામાં બાવો મુક્તાનંદસ્વામી તથા બ્રહ્માનંદસ્વામીને ઓરડામાં પૂરી બહારલી (બહારની) સાંકળ વાસીને છરો ઘસવા બેઠો ને મોઢે બકતો જાય જે, ‘<a href="#ex1" class="wordMeaning">સ્વામિનારાયણના મૂંડિયા</a> હાથ આવ્યા છે તેનાં નાક-કાન કાપવાં છે.’ તે સાંભળી બ્રહ્માનંદસ્વામીએ મુક્તાનંદસ્વામીને કહ્યું જે, ‘માથું કપાય તે સારું પણ નાક-કાન કાપે તે સારું નહીં.’ મુક્તાનંદસ્વામી કહે, ‘સ્ત્રી સારુ ને દ્રવ્ય સારુ ઘણી વખત નાક-કાન કપાવ્યાં છે, માટે આજ તો સ્વામિનારાયણ માટે ભલે નાક-કાન કપાય !’ ત્યારે બ્રહ્માનંદસ્વામી કહે, ‘નાક-કાન કાપે તો બહુ ભૂસ્ત્રીાજ કાપવા દેશે તો બાવો કાપશે ને ? બાવાનાં નાડી પ્રાણ કેના હાથમાં છે ? માટે ભજન કરો.’
+ <br/><br/>
+ ત્યાં તો રાઘવજી જત નીકળ્યો, તેણે બાવાને પૂછ્યું જે, ‘બાવાજી શું કરો છો ’ તો કહે, ‘સ્વામિનારાયણના મૂંડિયાનાં નાક-કાન કાપવા છરો ઘસું છું.’ ત્યારે કહે, ‘ક્યાં છે ?’ તો કહે, ‘આ ઘરમાં પૂર્યા છે.’ પછી જતે સાંકળ ઉઘાડી, ત્યાં સાધુને ભજન કરતા દીઠા ને ‘સાધુ સારા છે’ એવો ગુણ આવ્યો. એટલે બાવાને ખૂબ ધમકાવ્યો ને સાધુને કહે, ‘ચાલો મહારાજ હું તમને <a href="#ex1" class="wordMeaning">વળોટાવા</a> આવું.’ પછી સીમાડા સુધી વળોટાવી પાછો વળ્યો. એમ મહારાજે રાઘવજી જતમાં પ્રવેશ કરીને રક્ષા કરી.
+ <br/><br/>
+ એક વાર મનજીભાઈ અમારો સમાગમ કરવા જૂનાગઢ આવ્યા હતા, તે ચાર મહિના રહ્યા. પછી રજા માગી ત્યારે તેમને મારી નાખે એમ હતું તેથી અમે કહ્યું જે, ‘હમણાં રોકાઓ.’ એટલે રહ્યા ને આજ્ઞા કરી ત્યારે ઘેર ગયા. ત્યાં સાંભળ્યું કે મનજીભાઈને મારી નાખવાનો તેમના શત્રુએ નિરધાર કરી રાખ્યો હતો, પણ રોકાઈ ગયા તે સારું થયું ને જો વહેલા ગયા હોત તો જરૂર મારી નાખત, પણ હવે ફિકર નથી; કેમ જે તે ભાવનગર દરબારના વાંકમાં આવવાથી જેલમાં જન્મટીપમાં પડ્યો છે, ત્યારે મનજીભાઈએ જાણ્યું જે રક્ષા કરવા સારુ જ રોકેલ; એમ મોટા સાધુ તો રક્ષા કરે; માટે આ સાધુ કહે તેમ કરવું, સમૈયે આવ્યાની ના પાડે તો ન આવવું. એક વાર કે બે વાર ના પાડે તો પણ આકળા ન થાવું. મન અકળાય તો મર અકળાય, પણ સત્પુરુષ જે આજ્ઞા કરે તે કદી લોપવી નહીં. આ લોકમાં રક્ષા કરવા સારુ મહારાજે ‘શિક્ષાપત્રી’, આચાર્ય ને સાધુ કર્યા છે. તેમાં આ સાધુ તો રાત-દિવસ પોકારે છે ને ચેતાવે છે. એ કેવા છે ? તો પળમાત્ર ભગવાનથી નોખા રહે એવા નથી, પણ ભગવાનની અનુવૃત્તિ પાળવા આંહીં દેહ રાખી રહ્યા છે.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ખાસડું/ખાસડાં= જોડો, જૂતિયું, પગરખું જૂતિયાં, જોડા, પગરખાં.
+<br/>
+ 2 સ્વામિનારાયણના મૂંડિયા= સ્વામિ- નારાયણ ભગવાને બનાવેલ સાધુ, જેઓ માથું મૂંડાવતા. 
+<br/>
+3 વળોટાવા= વળાવવા.
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<!-- Added This line -->
+			
+				<!--
+				<li>	
+				 <div class="toggleWrapper" onclick="invert();">
+				  	<div class="toggle">
+						<span class="toggle__handler">
+							<span class="crater crater--1"></span>
+							<span class="crater crater--2"></span>
+							<span class="crater crater--3"></span>
+						</span>
+						<span class="star star--1"></span>
+						<span class="star star--2"></span>
+						<span class="star star--3"></span>
+						<span class="star star--4"></span>
+						<span class="star star--5"></span>
+						<span class="star star--6"></span>
+				  	</div>
+				</div>
+			
+			</li>
+			-->
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<img src="css/swamiji.png" height="150px" class="center" />
+
+			<h1 class="title_gu">ગુરુહરિ સ્વામીશ્રીના આશીર્વાદ</h1>
+			<h1 class="title_gu">ગુણાતીત – પાથેય</h1>
+
+<p class="text_gu">
+વચનામૃતની જેમ.. સ્વામીની વાતુમાં પરાવાણી જ વહી છે કારણ અક્ષરબ્રહ્મ દ્વારા જ મહારાજ નિરંતર સર્વે ક્રિયા કરી રહ્યા છે.. માટે ‘વાતુ’ પણ મહારાજનો પ્રસાદ જ છે.
+</p>
+<p class="text_gu">
+જીવના અનંતપ્રકારના રોગને જોઈને.. સ્વામીએ વાણી વહેવડાવી છે માટે અનંતરોગની દવા.. વાતુના મનન-ચિંતનથી મળતી જ રહેશે.. ‘વાતુ’ મનન-ચિંતનથી શુદ્ધ ગુણાતીત જ્ઞાનની સમજણ સહજ પ્રાપ્ત થાય જ.. જેથી સાધના ખૂબ જ સહેલી બને અને છે.
+</p>
+<p class="text_gu">
+યોગીજીમહારાજ કહેતા કે પહેલા પ્રકરણની પહેલી અને છેલ્લી વાત સિદ્ધ થાય તો.. સોળેય પ્રકરણ સહજ સિદ્ધ થઈ જાય.. પણ પહેલી વાતમાં એક ખૂબ અદ્‌ભુત મજકૂર લખાયો છે. તેમાં આપણે અખંડ ડૂબવાનું છે.. તો સાધના ખૂબ જ સહેલી થઈ જાય.
+</p>
+<p class="text_gu">
+પહેલી વાતમાં ‘સ્વામીજી’ બોલ્યા છે કે એવા ભગવદીના પ્રસંગથી જ આવો મહિમા સહજ સિદ્ધ બને છે.
+</p>
+<p class="text_gu">
+‘વાતુ’માં સ્વામી 4-5 વખત બોલ્યા છે, કે બે સારા સાધુ અને ત્રણ-ચાર સારા હરિભક્તો સાથે જીવ જડાય તો સર્વે અર્થ સિદ્ધ થાય છે. મહિમા અને સ્વરૂપનિષ્ઠા દૃઢ થાય છે, જીવ સુખીયો થઈ જ જાય છે.
+</p>
+<p class="text_gu">
+કોઈ વિદ્યાર્થીના 60% માર્ક્સ આવ્યા હોય.. પણ જો એ 80% માર્ક્સ લાવનાર વિદ્યાર્થી જોડે દોસ્તી રાખે તો કેટલો મોટો ફાયદો થઈ જાય જ. ટ્યુશન પણ રાખવાં પડે જ નહીં. 90% થી 98% માર્ક્સ લાવનાર વિદ્યાર્થી સાથે દોસ્તી થાય તો... વિદ્યાર્થીનું જીવન ધન્ય થઈ જાય. બાપા પણ અમને કહેતા કે પૂ. દાદુભાઈનો સમાગમ કરવો.. જેથી શાસ્ત્રીજીમહારાજને રાજી કરવાનો મજકૂર સમજાઈ જાય..
+</p>
+<p class="text_gu">
+ભગવદીનું જીવન કેવળ સંતપ્રધાન હોય. ‘મહારાજનાં બળે અને મહારાજના ગમતામાં વર્તવું’ અને મહારાજની બધી જ ક્રિયા ગમાડવી.. એ એમનો સહજ સ્વભાવ હોય છે.
+</p>
+<p class="text_gu">
+એટલે ‘વાતુ’માં વારંવાર સ્વામી બોલ્યા છે કે ભગવદીના પ્રસંગથી સત્પુરુષ સાથેનો સંબંધ દૃઢ થઈ જાય છે.
+</p>
+<p class="text_gu">
+તો સાધકોએ - મુમુક્ષુઓએ આ વાત જીવથી સમજવાની છે.
+
+</p>
+<p class="text_gu">
+સ્વામીની વાતુમાં એક વાત છે.. ‘આ સાધુને વિષે સદ્‌ભાવ એ જ નિર્વાસનિકપણું છે.’ અને બીજી વાત કેવી સુંદર લખાઈ છે જ... કે... ‘ગુણ ગાવાથી જીવ બ્રહ્મરૂપ થઈ જાય.’ કેટલી અદ્‌ભુત વાતુ છે..!
+</p>
+<p class="text_gu">
+પણ ભગવદીના પ્રસંગથી ‘વાતુ’ સહજ બને છે.
+</p>
+<p class="text_gu">
+આપણો આત્મા અનંત પ્રકારના માનથી અટવાયેલો છે. આપણને આપણા ડહાપણ-ભોળપણનું સ્થૂળ માન પણ દેખાતું નથી તો સૂક્ષ્મ માન તો ત્યાં ક્યાંથી દેખાય ? તો પછી સત્પુરુષ સાથે સંબંધ ક્યાંથી થાય ? અને સત્પુરુષને 100% કેવી રીતે રાજી કરી શકીએ ?
+</p>
+<p class="text_gu">
+હેત, માયા, દયા, પ્રીતિની સૂક્ષ્મ સાત્ત્વિક લાગણીઓનું માન તો દેખાય એવું છે જ નહીં... ધર્મનું.. આત્મનિષ્ઠાનું.. વૈરાગ્ય.. જેવા ગુણોનું માન અને ઐશ્ર્વર્ય પ્રતાપનું... માન તો દેખાય એવું છે જ નહીં. લાખો એમાં જ રાચતા હોય છે... 
+</p>
+<p class="text_gu">
+અને વળી સ્વામી ‘વાતુ’ કહેવા ઈચ્છે છે કે કોઈ પણ ગુણ કરતાં ભગવાનનો સંબંધયોગ શ્રેષ્ઠ છે... કેવું અદ્‌ભુત આ રહસ્ય છે ! અને ‘બાપા’ એટલે જ વારંવાર કહેતા હતા કે અલ્પ સંબંધવાળો આપણા માથાનો મુગટ છે. મહારાજનો સંબંધયોગ સમજાય તો કોઈનોય અભાવ-અવગુણ લેવાય જ નહીં.
+</p>
+<p class="text_gu">
+
+તે માટે જ ‘સ્વામીની વાતુ’ અભ્યાસ અનિવાર્ય બને છે.. સૂક્ષ્મ રોગોમાં દર્શન અને સૂક્ષ્મ રોગોની પૂર્ણાહુતિ માટે ‘વાતુ’નો અભ્યાસ પ્રાણસમાન છે.
+</p>
+<p class="text_gu">
+
+કોટી ધન્યવાદ !.... મૂ.અ.મૂ. ગુણાતીતાનંદસ્વામીજીને. ‘સ્વામીજી’ પૃથ્વી ઉપર ના પધાર્યા હોત તો ! ગુણાતીત ‘વાતુ’ ના વહેવડાવી હોત તો ! ગુણાતીત સ્થિતિનું - સાધુતાનું દર્શન ના કરાવ્યું હોત તો !.. તો ગુણાતીત સ્થિતિ કે સાધુતા લાખો મુમુક્ષુ સાધકો માટે અકલ્પનીય રહી ગઈ હોત, તેથી ‘સ્વામી’ અને ‘સ્વામીની વાતુ’ ઉપકાર પણ કલ્પનાતીત છે.
+</p>
+<p class="text_gu">
+હે ધરતીના લાખો મુમુક્ષુ - યાત્રાળુઓ..! ગુણાતીત સાધુતા માટે... મૂ. અ. મૂ. ગુણાતીતાનંદસ્વામીજીના ગ્રંથનું વાંચન અને એમની અમૃતવાણીથી પ્રગટેલી ‘વાતુ’નું વાંચન અવશ્ય કરશોજી.
+</p>
+<p class="text_gu">
+પૂ. પટેલ સાહેબ.. અને  પૂ. દાસસ્વામી વગેરે સંતોએ દાખડો કરીને ‘વાતુ’ ગ્રંથ તૈયાર કર્યો છે.. જે ‘આત્માનું સાચું ધન છે.’ તેને સૌ વસાવી અભ્યાસ કરશોજી. ભગવાન શ્રી સ્વામિનારાયણ સાથે સંબંધ દૃઢ કરવા માટે ‘વાતુ’ અમૂલ્ય એવો એક જ સેતુ છે, માટે સૌને એ ‘વાતુ’ના આકારે રહેવા માટે ભગવાન સ્વામિનારાયણ ખૂબ બળ-બુદ્ધિ આપે એ જ પ્રાર્થના છે.
+</p>
+
+
+<p class="text_gu1" style="text-align:right;">
+સેવક સાધુ હરિપ્રસાદના <br/>
+અંતરના જય શ્રી સ્વામિનારાયણ
+</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (19) એક વખતે અમે વાત કરી જે, ધર્મ, જ્ઞાન, વૈરાગ્ય, ભક્તિ ને મહિમા એ પાંચેય ગુણમાં અવાંતરે દોષ કેમ આવી જાય છે, તે કહીએ છીએ. હવે જે ધર્મ છે તે સત્સંગમાં અચળ પાયો કરાવે એવો તેમાં ગુણ છે પણ કેવળ ધર્મ પ્રધાન થઈ જાય તો ભક્તિ આદિક બીજા ચારેય ગૌણ થઈ જાય; તેમ જ પ્રગટ ભગવાન ને પ્રગટ સાધુ તે પણ ગૌણ થઈ જાય અને જ્ઞાનમાં એ ગુણ છે જે, જીવથી કરી ને પુરુષોત્તમ ભગવાન પર્યંત સર્વના સ્વરૂપને યથાર્થ જાણે તથા સત્ય અસત્યનો વિવેક થાય, ત્યારે આંહીંથી તે ઠેઠ પ્રકૃતિપુરુષ સુધી જે માયિક સુખદુ:ખમાત્ર તે ખોટાં થઈ જાય ને તેના કાર્યમાં મોહ પામીને તેના પ્રવાહમાં લેવાય નહિ, એ જ્ઞાનને વિશે ગુણ છે પણ કેવળ જ્ઞાન એક જ પ્રધાન થાય તો બીજા ધર્માદિક ચારેય ગૌણ થઈ જાય ને પ્રગટ ભગવાન ને પ્રગટ સાધુ તે પણ ગૌણ થઈ જાય. ને અહંભાવ વૃદ્ધિ પામીને પ્રગટ ભગવાન ને સત્પુરુષ થકી શુષ્ક થઈને ઉદાસ થઈ જવાય ને તેમાં મનુષ્યભાવ પરઠાય એ જ્ઞાનમાં દોષ કહેવાય અને વૈરાગ્યે કરીને પ્રકૃતિપુરુષ પર્યંત જે માયિક પિંડ, બ્રહ્માંડ આદિક સર્વે રૂપ ને આકારમાત્રને અત્યંત નાશવંત ને દુ:ખરૂપ ને સ્વપ્ન તુલ્ય અસાર જાણીને, એ સર્વેને વિશેથી પ્રીતિ ટળી જાય ને એમાં કોઈ કાળે સત્યપણાની ને સુખપણાની ભાવના થાય નહિ, એ વૈરાગ્યને વિશે ગુણ જાણવો, પણ કેવળ વૈરાગ્ય પ્રધાન થઈ જાય તો પ્રગટ ભગવાન ને પ્રગટ સત્પુરુષ તે ગૌણ થઈ જાય ને ભગવાન ને સત્પુરુષને વિશેથી મન લૂખું થઈ ભક્તિ થકી પડી જવાય, એ વૈરાગ્યને વિશે દોષ જાણવો અને ભક્તિએ કરીને તો પ્રગટ ભગવાન તથા પ્રગટ સંત રાજી થાય ને સત્સંગમાં મોટપ મળે, એ ભક્તિમાં ગુણ છે; પણ કેવળ એક ભક્તિ જ પ્રધાન થઈ જાય, તો જ્ઞાન આદિક ચારેય ગૌણ થઈ જાય ને સ્વભાવ વધી જાય; પછી કોઈક ટોકે તે પણ ન ખમાય.
+ <br/><br/>
+ અને પ્રગટ ભગવાન અને પ્રગટ સત્પુરુષ થકી સ્વભાવને વશ થઈને નોખું પડી જવાય છે, એ ભક્તિને વિશે દોષ જાણવો અને મહિમા સમજવામાં એ ગુણ જે દશ-દશ મૂર્તિયું સહિત એવાં જે અસંખ્યાત્ બ્ર્રહ્માંડ તથા તેના અધિપતિ પ્રકૃતિપુરુષ ને મહાકાળ પર્યંત કોઈની મોટપ ઐશ્ર્વર્ય, સામર્થ્ય તે લેશમાત્ર પણ નજરમાં આવે નહિ અને પ્રકૃતિના કાર્યમાં દાઢ્યું અંબાઈ જાય ને સાક્ષાત્ અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામીને પોતે પ્રગટ પુરુષોત્તમ ભગવાનની મૂર્તિ તેને વિશે સદા નિમગ્ન રહે, એ મહિમામાં ગુણ છે, પણ કેવળ એક મહિમા જ પ્રધાન થઈ જાય, તો ધર્મ, ભક્તિ આદિક ચારેય ગૌણ થઈ જાય ને વેદાંતને પામીને ઇન્દ્રિયું-અંત:કરણ મોકળાં થઈ જાય તથા ભગવાન ને પ્રત્યક્ષ સત્પુરુષને વિશે માન આવે, પણ હલકું થઈને તેની સેવામાં વરતાય નહિ, એ મહિમામાં દોષ જાણવો.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

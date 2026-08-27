@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (87) લોકનું થાય તેટલું પોતાના મોક્ષનું ન થાય ને સમાગમ પણ ન થાય. સત્સંગમાં આવીને તરત ભાગવું નહિ. વિવાહમાં જવાય, કાયટામાં જવાય ને વહેવારના કામમાં બે-ત્રણ માસ ભાંગી જાય, પણ આંહીં ન રહેવાય. કેટલાક કાશી, દ્વારકામાં જઈને વાસ કરે છે, તેમ આપણે સમાગમ કરવો. ‘વચનામૃત’ પણ સમાગમે સમજાય, કુસંગે કરીને દોષ લાગ્યા હોય તે પણ સંત સમાગમે કરીને ટળે. મોટાને સેવાએ કરીને રાજી કરે ત્યારે પૂર્વના મલિન સંસ્કાર ટળે. પણ ખાવું નહિ ને ભૂખ ટાળવી એ કેમ ટળે ? ભીમનાથમાં અગણ્યોતેરામાં રાંકાંને કડછો ભરીને થૂલું આપતા; પણ રાંકાં થૂલું તૈયાર થયા મોરે માગવા આવે; ત્યારે બાવો હડસેલો મારે, તે રડતાં રડતાં નીલ નદીમાં જાય, વળી ઊઠીને પાછાં આવે; કારણ કે, બીજે ક્યાંય થૂલું મળે નહિ. એમ અપમાન થાય તો પણ મોક્ષના ખપવાળા, સંત સમાગમનો ત્યાગ કરે જ નહીં. જેમ ધોબી લૂગડાંને બાફીને તેમાંથી ડાઘ કાઢે છે, તેમ સત્પુરુષ વાતે કરીને પૂર્વના મલિન સંસ્કાર ટાળે છે તે પૂર્વના મલિન સંસ્કાર જેને કાઢતાં આવડે તેનાથી જ જાય. અંતરની લડાઈ છે તે ઘર મૂકવા કરતાં પણ કઠણ છે ને એ તો સોડમાં સાપ છે. સાધુ તથા હરિભક્તને મહારાજે પૂછ્યું જે, ‘તમારે ઘાટ થાય છે ?’ ત્યારે સાધુને કળાણું જે ઘાટ તો થાય છે ખરા. કાળ તો ઠરાવને પણ રહેવા દે નહિ.
+ <br/><br/>
+કાલો બલીયાન્‌ બલિનાં ભિદ્યતે તેન બુદ્ધય: । <br/>
+કામલોભરસાસ્વાદ:  સ્નેહમાનવતાં મુને ।।
+
+
+<br/>
+ (સુભાષિત)
+ <br/>
+ અર્થ :- કાળ બળવાન છે, તેથી બળવાન લોકોની પણ બુદ્ધિ ફરે છે. સ્નેહ અને માનવાળાઓ કામ, લોભનો રસાસ્વાદ લે છે.
+ <br/><br/>
+ કામ, લોભ, સ્વાદ, સ્નેહ ને માન એ પાંચ માંહેલો એકેય દોષ હોય ને તેને ખોદે ત્યારે ઠા રહે નહિ; એટલે બળિયામાં બળિયો હોય તેની બુદ્ધિને પણ કાળ ભેદી નાખે છે. ત્યારે હરિજને પ્રશ્ર્ન પૂછયો જે, ‘કેવા હોય તેની બુદ્ધિ ન ભેદાય ?’ ત્યારે શ્ર્લોક બોલ્યા જે,
+ <br/><br/>
+ 
+કામાદિભિર્વિહીના યે સાત્ત્વતાઃ ક્ષીણવાસના । <br/>
+તેષાં તુ બુદ્ધિભેદાય ક્વાપિ કાલો ન શક્નુતે ॥
+
+  <br/>
+ (વાસુદેવ માહાત્મ્ય : 8/7)
+  <br/>
+ અર્થ :- જેઓ કામાદિક દોષથી રહિત, સત્ત્વ ગુણમય અને વાસના રહિત હોય છે, તેઓની બુદ્ધિને ભેદવા માટે કદી પણ કાળ સમર્થ થઈ શકતો નથી.
+  <br/><br/>
+ ઘણો ઘણો સમાગમ કર્યો હોય ને સાત્ત્વિક સેવ્યા હોય તેને એવી સ્થિતિ રહે છે. 
+ <br/>
+ <br/>
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

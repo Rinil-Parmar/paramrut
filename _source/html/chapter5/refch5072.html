@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+								<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (72) જેઠ વદિ 9મી ને શનિવારની અરધી રાત્રે મનજીભાઈએ પૂછ્યું જે, ‘સત્સંગમાં મોટાઈ કોની સમજવી ?’ ત્યારે સ્વામીએ ઉત્તર કર્યો જે, ‘આપણા સત્સંગમાં ઉપાસના જેને વહેલી સુલભ પ્રયાસ વિના સમજાય ને ઘણાને ઉપાસના કરાવે તેની મોટાઈ છે.’ તે ઉપર વાત કરી જે, ‘પર્વતભાઈને રામાનંદસ્વામી છતાં મહારાજનાં દર્શનથી જ સર્વોપરી નિશ્ર્ચય થઈ ગયો ને બીજાને ઉપાસનાનું ઠેકાણું નહોતું. તે કેટલાક ભગવાનની મૂર્તિમાં માયા સમજતા હતા ને કેટલાક શ્રીકૃષ્ણ અને બીજા અવતાર સરખા સમજતા હતા; ને કેટલાક શ્રીકૃષ્ણને સર્વોપરી સમજતા હતા. ને મહારાજની વાત તો થાતી જ નહિ, તેથી બરાબર સમજતા નહિ; શુક-નારદના અવતાર જેવા સમજતા હતા.
+ <br/><br/>
+ પછી માંગરોળમાં સ્વરૂપાનંદસ્વામીને શ્રીકૃષ્ણરૂપ દેખાણા ને પછી અક્ષરધામની સમાધિ કરાવી તેથી પુરુષોત્તમપણાનો નિશ્ર્ચય તેમને એકને થયો ને ગોપાળાનંદસ્વામીને મહારાજનાં દર્શનથી જ સર્વોપરી નિશ્ર્ચય થયો ને મુક્તાનંદસ્વામીને અઠ્ઠયાવીસ વરસે મહારાજે બહુ વાતું કરીને નિશ્ર્ચય કરાવ્યો.’ ને મહારાજની કરેલી વાત કરી જે, ‘મુક્તાનંદસ્વામી ને ગોપાળાનંદસ્વામી સાધુ લક્ષણે સર્વ પ્રકારે મોટા છે ને નિત્યાનંદસ્વામી તથા બ્રહ્માનંદસ્વામી વહેવારીક (વ્યાવહારિક) મોટા છે. ને કોઈની મોટાઈ કહેવી હોય તો બે-ચાર જણના ભેગી મોટાઈ કહેવી પણ એકલાની કહેવી નહિ, નીકર એ વાતમાંથી તમને દુ:ખ આવશે.’
+ <br/><br/>
+ મુક્તાનંદસ્વામીની કહેલી વાત કરી જે, મુક્તાનંદસ્વામીને દેહ મૂકવાને આડો એક મહિનો રહ્યો, ત્યારે કહ્યું જે, ‘હવે મારે આત્મામાં અખંડ મૂર્તિ દેખાય છે ને મહારાજને સર્વોપરી જાણ્યા, તે પહેલાં આટલું સમજાણું નહોતું.’
+ <br/><br/>
+ પછી પોતાની વાત કરી જે, ‘અમને મહારાજે ઘણી વાતું કરી છે, તે કહેવાય એમ નથી ને કહીએ તો પ્રાગજી તથા શામજી કહેતા ફરે. અમને કાંઈ ગોપાળાનંદસ્વામીએ પુરુષોત્તમપણાની વાત કરી નથી, અમે તો અમારી મેળે સમજેલા છીએ. તે હું તથા જ્ઞાનાનંદસ્વામી તથા વિશુદ્ધાત્માનંદસ્વામી તથા બાળમુકુંદાનંદસ્વામી એ ચાર મળીને એકાંતે વાતું કરતા. ને ભૂત નહિ વળગ્યામાં મહારાજે એક પોતાને ગણ્યા ને મુક્તાનંદસ્વામી તથા ગોપાળાનંદસ્વામી એ બેયને ગણ્યા ને બીજાને તો ગણ્યા નહિ; પણ કૃપાનંદસ્વામી બહુ મોટા હતા.’ 
+ <br/><br/>
+ પછી વાત કરી જે, ‘છાવણીમાં રઘુવીરજી મહારાજને પુરુષોત્તમપણાની વાત સમજાવી, પછી ભાઈઆત્માનંદસ્વામીને સમજાવી, મુનિબાવાને સમજાવી, કરુણાશંકરને સમજાવી.’ એ વગેરે ઘણાકની વાતું કરી. ‘માટે તમે વાતું કરો તે ધીરે ધીરે વચનામૃતની સાખ્ય લાવીને વાતું કરજો ને નિશ્ર્ચયની વાત કાળજું તૂટ્યા જેવી છે, માટે ધીરે ધીરે કરવી.’ ત્યાર પછી ઊભા થઈને કહ્યું જે, ‘તમો સર્વે આ અમે કહ્યું તેમ સમજજો ને તેમ જ વાતું કરજો અને એમ સમજવું જે, જેને ઉપાસના તુરત સમજાઈ ગઈ ને ઘણાને સમજાવી એ સર્વથી મોટા છે.’
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૬૯ - દુષ્ટના અને સાધુના ધર્મનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના ચૈત્ર સુદિ ૧૨ દ્વાદશીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિર આગળ આથમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીવાસુદેવ નારાયણની સંધ્યા આરતી થઈ રહી તે પછી નારાયણધૂન્ય કરીને પછી શ્રીજીમહારાજ બોલ્યા જે, “ધર્મ તે કેનું નામ છે? એનો શાસ્ત્રની રીતે ઉત્તર કરો. અને જે હિંસક રાજા હતા તે પણ શરણે આવ્યો હોય તેને મારતા નહીં અને મારવા પણ દેતા નહીં. માટે શરણે આવ્યો જે જીવ તેને માર્યાનું જેમ પાપ છે, તેમ બીજાને માર્યાનું પાપ છે કે નથી?” પછી એનો ઉત્તર જેમ જેને ભાસ્યો તેમ તેણે કરવા માંડ્યો, પણ શ્રીજીમહારાજે આશંકા કરી એટલે કોઈથી ઉત્તર થયો નહીં. પછી મુનિ સર્વે બોલ્યા જે, “હે મહારાજ! અમે એ જ તમને પ્રશ્ન પૂછીએ છીએ જે, યજ્ઞાદિકને વિષે પશુહિંસા સહિત ધર્મ કહ્યો છે અને અહિંસારૂપ પણ ધર્મ કહ્યો છે. માટે એ જેમ યથાર્થ હોય તેમ કહો.” પછી શ્રીજીમહારાજ બોલ્યા જે, “હિંસાયુક્ત જે ધર્મ છે તે તો ધર્મ, અર્થ અને કામપર છે; તે પણ હિંસાના સંકોચને અર્થે કહ્યો છે. અને અહિંસામય જે ધર્મ છે તે મોક્ષપરાયણ છે અને એ સાધુનો ધર્મ છે. અને હિંસામય જે ધર્મ છે તે તો રાગપ્રાપ્ત છે, પણ કલ્યાણને અર્થે નથી. અને જે અહિંસારૂપ ધર્મ છે તે તો કેવળ કલ્યાણને અર્થે છે. માટે ગૃહસ્થ અથવા ત્યાગી એ સર્વેને અહિંસારૂપ જે ધર્મ તે જ કલ્યાણને અર્થે કહ્યો છે. જેમ રાજા ઉપરિચરવસુ રાજ્યમાં હતા તોય પણ અહિંસાધર્મને વિષે રહ્યા હતા. તે માટે <b>સાધુએ તો મન-કર્મ-વચને કરીને કોઈનું ભૂંડું વાંચવું નહીં અને કોઈ વાતનો અહંકાર રાખવો નહીં અને સર્વના દાસાનુદાસ થઈને રહેવું. અને ક્રોધે યુક્ત જે પ્રકૃતિ તે તો દુષ્ટનો ધર્મ છે અને શાંત સ્વભાવે વર્તવું તે જ સાધુનો ધર્મ છે.</b> અને કોઈ કહેશે જે, ‘હજારો માણસને નિયમમાં વર્તાવવાં હોય તેને કેમ સાધુતા ગ્રહણ કર્યે ચાલે?’ તો એનો ઉત્તર એ છે જે, રાજા યુધિષ્ઠિરનું હજારો ગાઉમાં રાજ્ય હતું તોય પણ સાધુતા રાખી હતી. અને ડારા દેનારા તો ભીમસેન જેવા હજારો હોય, તે વારીએ તોય પણ કર્યા વિનાનું રહેવાય નહીં. માટે તીખા સ્વભાવવાળાની તો કાંઈ ખોટ નથી, એવા તો ઘણાય હોય પણ સાધુ થવું એ જ ઘણું દુર્લભ છે.”
+</p>
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

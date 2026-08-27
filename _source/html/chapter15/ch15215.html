@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (215) આ દેહ છે તે તો ધૂડ ઉપર લીંપણ છે ને ત્રાટે ચિત્ર છે. એવો વિચાર રહે તો આ લોકમાં ન બંધાય, પણ પૂર્વાપરની સ્મૃતિ નહિ તેથી બંધાઈ જાય છે ને કેટલાકને મારી નાખે છે. અહંમમત્વ ભરાય છે ત્યારે તો જેમ વિશ્ર્વાસાનંદે લક્ષ્મીનારાયણને કાઢી નરનારાયણ ઘાલ્યા, પણ તે તો સત્સંગમાંથી ગયા. એમ અહંમમત્વમાંથી થાય છે. માટે દરવાજે ઊભા રહ્યા થકા જોવું ને વિવેક કરીને વિચારવું જે, આ પક્ષમાં શું ફળ છે ? ને આ પદાર્થમાં શું ફળ છે ? તે જોવું ને રૂડો સંગ છે તે જ સુખનો કરનારો છે ને પદાર્થમાત્ર પીડાનાં દેનારા છે. માટે ભગવદી હોય તેણે વ્યવહાર કરવો પણ માંહી માલ માનવો નહિ. તે જેમ દાંત અંબાઈ ગયા હોય ને ચાવે તેમ વ્યવહાર કરવો. ગૃહસ્થમાત્ર વ્યવહારમાં રહ્યા છે પણ અંતે જોઈએ તો કોઈ કોઈનું નથી ને દેહ પણ આપણું નથી.
+ 
+ તે ઉપર વાત કરી જે, અમદાવાદમાં ઢૂંઢિયાના મેળામાં ટૂંટિયું આવ્યું. તે માણસો ભાગ્યાં ને રસ્તામાં કેટલાંક મરી ગયાં ને પછી આખા દેશમાં ટૂંટિયું ફેલાણું ને જામસાહેબની કુંવરીઓનું વિવાહમાં કાયટું થયું. તે વાત કરી જે, કુંવરીને ટૂંટિયું થયું ત્યારે રણમલ જામસાહેબ કહે, ‘આ કુંવરીને દશ દિવસ સુધી કોઈ જીવાડે તો તેને લાખ કોરી આપું.’ પણ જીવ્યાં નહિ. પછી સાખી બોલ્યા જે, <br/><br/>
+ 
+ માનવ જાણે મેં કર્યું  કરતલ  બીજો  કોઈ, <br/>
+ 
+ આદર્યા અધવચ રહે ને હરિ કરે સો હોય. <br/><br/>
+ 
+ માટે પ્રકૃતિપુરુષ સુધી કોઈનો દેહ નહિ રહે ને ચાર વાનાં અવિનાશી છે. બીજું બધું નાશવંત છે, પણ મોહે કરીને આદ્ય-અંત જોવાતું નથી ને મધ્ય જોવાય છે ને મોહને ઘોડે ચડે ત્યારે તેમાંથી હરિજનનો, આચાર્યનો ને મંદિરનો દ્રોહ થાય છે, પણ કાર્યાડકાર્ય, ભયાડભય, બન્ધમોક્ષ । (પ્રવૃત્તિ-નિવૃત્તિ, ભય-અભય, બંધન-મોક્ષ) એ બધું જાણતો હોય તેને મોહ ન થાય. તે બુદ્ધિ વિના તો પંચાતમાં નાંખે, તો પૂર્ણાનંદે પંચમહાપાપનો અર્થ કર્યો એવું થાય.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

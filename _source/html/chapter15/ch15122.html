@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (122) આજ્ઞામાં જુક્તિ કરીને વિષય સંપાદન કરવા ને ભોગવવા તેનું નામ મકર કહેવાય. તે એક સંન્યાસી ગૃહસ્થને ઘેર ભિક્ષા કરવા ગયો. બાઈએ બધું પીરસ્યું પણ પાપડ પીરસવો ભૂલી ગઈ, તે સંન્યાસીએ દીઠો. એટલે યુક્તિ કરી જે, આજ સવારમાં નહાવા ગયો ત્યાં આગળ સરપ હતો તેની ફેણ ઓલ્યા પાપડ જેવી હતી, ત્યારે બાઈએ પણ કહ્યું જે, હા મહારાજ, હું પણ પાપડ પીરસવો ભૂલી ગઈ. એમ કહી પીરસ્યો, તે સંન્યાસીએ મકર કરી પાપડ લીધો કહેવાય. તેમજ આપણામાં પણ ઉપદેશ કરે છે જે, આ ગામના હરિભક્તને જમાડવામાં બહુ ભાવ તે દૂધપાક વિના તો રસોઈ નહિ, કાં જલેબી કાં માલપુવા ને થોડા ખરચ સારુ લાડુ કરવાનું કહીએ તો કહેશે જે લાડુમાં તે શું ખાવું ? ને કદાચ લાડુ કરાવે તો ઉપર ઊભા રહીને ઘી રેડાવે ને સાધુ ના પાડે તો ગળાના સમ દઈને પણ ઘી રેડાવે ને મેળાવવા દે જ નહિ. એવા તો ભાવિક છે. <br/><br/>
+ 
+ એમ ફરતી ફરતી રસોઈઓ આપશે ને તમે રાંધતા <a href="#ex1" class="wordMeaning">કાય જશો</a>, પણ તે શૂરવીર તો થાકશે જ નહિ ને બે ત્રણ જાતનાં રાઈતાં ને ત્રણ ચાર જાતનાં શાક કરાવશે ને શાક આંહીં ન મળે તો શહેરમાંથી પણ મંગાવે, પણ કરાવ્યા વિના નહિ રહે ને ભજિયાનો કુટારો ન કરવો હોય તો પણ કરાવે. ‘ તે તમે જો જો તો ખરા કાલે ભાઈની રસોઈ છે. તે કેવી રીતે કરાવે છે ?’ હરિજનોનું એમ કરવાનું મન ન હોય તો પણ કરવું પડે; માટે એમ મકર કરીને માંગી ન લેવું ને જો એવો ઉપદેશ કરશો તો મહારાજ કચવાશે પણ જેને જીવના શ્રેય કરવા ઉપર નજર હોય તે તો એ મારગે ચાલે જ નહિ ને જેને શ્રેય કરવા ઉપર નજર નથી તેને તો જેમ જૂનાગઢના પાદરમાં ગડગડાટ થાય છે તેમ તેના હૈયામાં વિષય સંપાદન કરવાના સંકલ્પ થયા કરે છે. માટે જેમ કહ્યું છે તેમ કરવું તેમ જ ખાવું, પથારી ને લૂગડાં રાખવાં પણ તેથી વધુ-ઘટું કરે તે ઠીક નહિ. તે જેને બીક હોય તેને તો એક લુગડું વધારે હોય તો ગા ભાંભરે એમ થાય ને જેને આજ્ઞા સામી સરત ન હોય તેને તો ગા ટોળામાં ભળી જાય. <br/><br/>
+ 
+ તે ઉપર વાત કરી જે, ગાય ખેતરમાં ચરવા ગઈ તેને ખેતરવાળે પથ્થરનો ઘા કરી હાંકી પણ <a href="#ex1" class="wordMeaning">વરામનો</a> ઘા લાગ્યો તે ગાય <a href="#ex1" class="wordMeaning">બાંબરડા</a> પાડી મરી ગઈ. તે જોઈને તેને એવો ત્રાસ લાગ્યો, જે ખાતાં-પીતાં, હાલતાં-ચાલતાં સર્વ ક્રિયાને વિષે ગાય સાંભર્યા કરે, એટલે તેના મિત્રે પૂછ્યું જે, તને શું રોગ થયો છે ? તે તારું શરીર નંખાઈ ગયું છે ? પછી તેણે વાત કરી જે, મારા હૈયામાં નિરંતર ગાય ભાંભર્યા કરે છે. ત્યારે તે કહે જે, પાપ-પુણ્ય તો દીધું દેવાય છે. તે તારું પાપ મને કૃષ્ણાર્પણ કર. પછી તેમ કર્યું, તે ગાય ભાંભરતી આળસી ગઈ. પછી તેણે તેના મિત્રને પૂછ્યું જે, તને ગાય ભાંભરતી નથી ? ત્યારે તે કહે જે, તારે તો એક જ હતી તે ભાંભરતી, પણ મારે તો ટોળું છે તેના ભેળી ગઈ, તે ભાંભરતી નથી. તેમ જેણે મોટાં વર્તમાન લોપ્યાં હશે તેને અલ્પવચન લોપતાં શું વાર લાગે ? તેમાં મકર કરવું તે તો તેની ગણતીમાંય નહિ. માટે ભગવદી ને મોક્ષભાગી હોય તેણે મકર ન કરવું.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કાય જાશો= કંટાળી જશો. <br/>
+2 વરામનો= જોરદાર.<br/>
+3 બાંબરડા= બૂમો પાડવી.
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

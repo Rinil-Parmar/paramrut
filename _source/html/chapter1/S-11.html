@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">સારંગપુર ૧૧: પુરુષપ્રયત્નનું</h1>
+			<p class="text_gu">સંવત ૧૮૭૭ના શ્રાવણ વદિ ૩૦ અમાસને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીસારંગપુર મધ્યે જીવાખાચરના દરબારમાં ઉત્તરાદે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી મુક્તાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “પુરુષપ્રયત્ન શાસ્ત્રમાં કહ્યું છે, તે પુરુષપ્રયત્ને કરીને કેટલું કામ થાય છે અને પરમેશ્વરની કૃપાએ કરીને કેટલું કામ થાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “સદ્‌ગુરુ ને સત્શાસ્ત્રને વચને કરીને દ્રઢ વૈરાગ્યને પામ્યો હોય અને દ્રઢ શ્રદ્ધાવાન હોય અને અષ્ટ પ્રકારનું જે બ્રહ્મચર્ય તેને અતિ દ્રઢ પાળતો હોય અને અહિંસાધર્મને વિષે પ્રીતિવાન હોય અને આત્મનિષ્ઠા પણ અતિ પરિપક્વ હોય, તો તેને માથેથી જન્મ-મરણની નિવૃત્તિ થઈ જાય છે. જેમ શાળને માથેથી ફોતરું ઊતર્યું તે શાળ પાછી ઊગે નહીં, તેમ કહ્યા એવે ગુણે કરીને જે યુક્ત હોય તે અનાદિ અજ્ઞાનરૂપ જે માયા તેથી છૂટે છે ને જન્મ-મરણ થકી રહિત થાય છે ને આત્મસત્તાને પામે છે. આટલું તો પુરુષપ્રયત્ને કરીને થાય છે. અને પરમેશ્વરની કૃપા પણ જે એવે લક્ષણે યુક્ત હોય તે ઉપર જ થાય છે. અને જ્યારે પરમેશ્વરની કૃપા થાય ત્યારે એ ભગવાનનો એકાંતિક ભક્ત થાય છે. અને શ્રુતિએ કહ્યું છે જે, ‘નિરંજનઃ પરમં સામ્યમુપૈતિ ।’ એ શ્રુતિનો એ અર્થ છે જે, અંજન જે માયા તે થકી જે રહિત થયો તે ભગવાનના તુલ્યપણાને પામે છે; કહેતાં જેમ ભગવાન શુભ-અશુભ કર્મે કરીને બંધાતા નથી, તેમ તે મુક્ત પણ શુભ-અશુભ કર્મે કરીને બંધાય નહીં. અને જેમ લક્ષ્મીજી છે તે હેતે કરીને ક્યારેક તો ભગવાનના સ્વરૂપમાં લીન થઈ જાય છે ને ક્યારેક તો નોખાં રહ્યાં થકાં ભગવાનની સેવામાં રહે છે, તેમ તે ભક્ત પણ અતિશય હેતે કરીને ભગવાનને વિષે ક્યારેક તો લીન થઈ જાય છે અને ક્યારેક તો મૂર્તિમાન થકો ભગવાનની સેવામાં રહે છે. અને જેમ ભગવાન સ્વતંત્ર છે તેમ એ ભગવાનનો ભક્ત પણ સ્વતંત્ર થાય છે. આવી રીતની જે સામર્થી તે તો ભગવાનની કૃપા થકી આવે છે.”</p>
+
+			<p class="text_gu">પછી નિત્યાનંદ સ્વામીએ પૂછ્યું જે, “જેમાં એ સર્વે અંગ સંપૂર્ણ હોય તેની ઉપર તો ભગવાનની કૃપા થાય છે, અને જો એ અંગમાંથી કાંઈક ન્યૂનતા હોય તો તેની શી ગતિ થાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “<b>વૈરાગ્ય, બ્રહ્મચર્ય, શ્રદ્ધા, અહિંસાધર્મ અને આત્મનિષ્ઠા એમાંથી કોઈ અંગમાં ન્યૂનતા હોય તો આત્યંતિક મોક્ષ જે ભગવાનનું અક્ષરધામ તેને તો ન પામે, અને એ વિના બીજાં જે ભગવાનનાં ધામ છે તેને પામે. અથવા વધુ સવાસનિક હોય તો દેવલોકને પામે</b>, જે દેવલોકને ભગવાનના ધામ આગળ મોક્ષધર્મને વિષે નરક તુલ્ય કહ્યા છે, અને દેવતામાંથી મનુષ્ય થાય ને મનુષ્યમાંથી વળી દેવતા થાય. અને ‘અનેકજન્મસંસિદ્ધસ્તતો યાતિ પરાં ગતિમ્ ।’ એ શ્લોકનો પણ એ જ અર્થ છે જે, જે ભગવાનનો ભક્ત સવાસનિક હોય તે નરકચોરાસીમાં તો ન જાય અને દેવતામાં ને મનુષ્યમાં તો અનંત જન્મ ધરે. પછી જ્યારે પૂર્વે કહ્યાં એવાં વૈરાગ્યાદિક લક્ષણે યુક્ત થાય ત્યારે જ ભગવાનની કૃપાનું પાત્ર થાય અને પછી ભગવાનનો એકાંતિક ભક્ત થઈને ગુણાતીત એવું જે ભગવાનનું અક્ષરધામ તેને પામે છે. માટે એક જન્મે અથવા અનંત જન્મે પણ જે દિવસ પ્રથમ કહ્યા એવે લક્ષણે યુક્ત થઈને અતિશય નિર્વાસનિક થશે ત્યારે જ ભગવાનની કૃપાનું પાત્ર થશે ને આત્યંતિક મોક્ષને પામશે, પણ તે વિના તો નહીં જ પામે.”</p>
+
+			<p class="text_gu">પછી નૃસિંહાનંદ સ્વામીએ પૂછ્યું જે, “આ દેહે કરીને જ સર્વે કસરમાત્ર મટી જાય એવો કોઈ ઉપાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “જો ખબડદાર થઈને મંડે તો આ ને આ દેહે જ સર્વે કસર મટી જાય. અથવા દેહ પર્યંત કસર ન મટી હોય અને અંત સમે જ નિર્વાસનિક થાય ને ભગવાનને વિષે અતિશય પ્રીતિ થાય તો અંતકાળે પણ ભગવાનની કૃપા થાય ને ભગવાનના ધામને પામે. માટે એક દેહે અથવા અનંત દેહે અથવા અંત સમે એક ઘડી મૃત્યુ આડી રહી હોય ત્યારે પણ જો અતિશય ભગવાનને વિષે વૃત્તિ જોડાઈ જાય તો તે ભક્તને કોઈ જાતની કસર રહેતી નથી.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

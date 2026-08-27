@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૩: દયા અને સ્નેહનું</h1>
+			<p class="text_gu">
+સંવત ૧૮૮૩ના આષાઢ વદિ ૧ પડવાને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં પોતાના ઉતારાને વિષે વિરાજમાન હતા. અને તે દિવસ ઠક્કર હરજીએ પોતાને ઘેર શ્રીજીમહારાજની પધરામણી કરી ત્યારે શ્રીજીમહારાજ ત્યાં પધાર્યા. પછી ઉગમણે દ્વાર ઓરડાની ઓસરીયે ઢોલિયા ઉપર ગાદીતકિયા બિછાવીને શ્રીજીમહારાજને વિરાજમાન કર્યા. પછી હરજી ઠક્કરે શ્રીજીમહારાજની કેસર-ચંદનાદિકે કરીને પૂજા કરી. એવી રીતે શ્રીજીમહારાજ પૂર્વ મુખારવિંદે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને કંઠને વિષે મોગરાનાં પુષ્પના હાર તથા બે ભુજાને વિષે તે પુષ્પના ગજરા તથા પાઘને વિષે તે પુષ્પના તોરા તે અતિશય વિરાજમાન હતા. અને શ્રીજીમહારાજના મુખારવિંદની આગળ મુનિમંડળ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>			
+<p class="text_gu">
+તે સમયમાં શ્રીજીમહારાજે સર્વ સંતમંડળને પ્રશ્ન પૂછ્યો જે, “જે હરિભક્તના હૃદયને વિષે દયા ને સ્નેહ એ બે સ્વાભાવિક રહ્યાં હોય ત્યારે સ્નેહનું સ્વરૂપ તો મધ જેવું છે તે જ્યાં-ત્યાં ચોંટે અને દયાનો સ્વભાવ એવો છે જે, જ્યાં-ત્યાં દયા કરે. ત્યારે ભરતજીએ મૃગલા ઉપર દયા કરી તો તે મૃગલીને પેટે જન્મ લેવો પડ્યો. અને જે દયાવાન હોય તેને જે ઉપર દયા આવે તે સંગાથે સ્નેહ થયા વિના રહે નહીં. અને એ દયા ને સ્નેહ તેને ટાળ્યાનો ઉપાય તો આત્મજ્ઞાન ને વૈરાગ્ય એ બેય છે. તે આત્મજ્ઞાન એવું છે જે, જેમાં કાંઈ બીજું પેસે જ નહીં. અને વૈરાગ્યનું એવું સ્વરૂપ છે જે, સર્વે નામરૂપને નાશવંત દેખાડે. માટે આત્મજ્ઞાન ને વૈરાગ્ય એ બે વતે કરીને દયા ને સ્નેહનો નાશ થઈ જાય છે અને સ્થૂળ, સૂક્ષ્મ ને કારણ એ આદિક સર્વે ઉપાધિનો પણ નાશ થઈ જાય છે અને કેવળ બ્રહ્મસત્તામાત્ર રહે છે. પછી એને ભગવાન તથા ભગવાનના ભક્તને વિષે દયા ને સ્નેહ રહે છે કે નથી રહેતો? એ પ્રશ્ન છે.” પછી મુક્તાનંદ સ્વામી તથા શુકમુનિ તથા નિત્યાનંદ સ્વામી એ આદિક પરમહંસે જેની જેવી દ્રષ્ટિ પૂગી તેવો તેણે ઉત્તર કર્યો પણ શ્રીજીમહારાજના પ્રશ્નનું સમાધાન થયું નહીં.
+</p>
+			
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, અમે ઉત્તર કરીએ. એનો તો ઉત્તર એમ છે જે, જ્ઞાન ને વૈરાગ્ય કરીને ત્રણ શરીર, ત્રણ અવસ્થા ને ત્રણ ગુણ એ સર્વ માયિક ઉપાધિ થકી ચૈતન્ય જુદો થઈ જાય છે ને કેવળ સત્તામાત્ર રહે છે, પણ માયિક ઉપાધિનો લેશ પણ રહેતો નથી. ત્યારે જેમ દીપકનો અગ્નિ તે કોડિયું, તેલ ને વાટ્ય ત્રણને યોગે કરીને દ્રષ્ટિમાં આવે તથા ગ્રહણ કર્યામાં આવે, પણ જ્યારે એ ત્રણ પ્રકારની ઉપાધિનો સંગ છૂટી જાય છે ત્યારે એ અગ્નિ કોઈની દ્રષ્ટિમાં પણ ન આવે ને ગ્રહણ પણ ન થાય; ને ઉપાધિએ યુક્ત હોય ત્યારે જ દ્રષ્ટિએ આવે ને ગ્રહણ કર્યામાં આવે. તેમ જ્ઞાન-વૈરાગ્યે કરીને સર્વે માયિક ઉપાધિ નિવૃત્તિ પામે છે ત્યારે એ જીવાત્મા છે તે કેવળ બ્રહ્મસત્તામાત્ર રહે છે ને તે મન-વાણીને અગોચર છે ને કોઈ ઇન્દ્રિયે કરીને ગ્રહણ કર્યામાં આવતો નથી. પછી તે કાળે તો એને જો શુદ્ધ સંપ્રદાયે કરીને ભગવાનનું જ્ઞાન પ્રાપ્ત થયું હોય ને ભગવાન ને ભગવાનના ભક્તનું માહાત્મ્ય યથાર્થપણે સમજાયું હોય, તેને તો સર્વ માયિક ઉપાધિનો સંગ ટળી જાય ને પોતાનો જીવાત્મા બ્રહ્મરૂપ થાય તો પણ ભગવાન ને ભગવાનના ભક્તને વિષે જે દયા ને પ્રીતિ તે નિરંતર રહે છે. ત્યાં દ્રષ્ટાંત છે: જેમ દીપકની જ્યોત છે તેને જ્યારે ઉપાધિનો સંગ ટળી જાય છે ત્યારે એ અગ્નિ કોઈ ઇન્દ્રિયે કરીને ગ્રહણ ન થાય એવો આકાશને વિષે રહે છે તો પણ એ અગ્નિને વિષે સુગંધી તથા દુર્ગંધીનો જે પાશ લાગ્યો હોય તે ટળતો નથી. જેમ વાયુ છે તે તો અગ્નિ થકી પણ વધુ અસંગી છે તો પણ તેને સુગંધી તથા દુર્ગંધીનો પાશ લાગે છે. તેમ જે જીવાત્માને જ્ઞાન-વૈરાગ્યે કરીને માયિક ઉપાધિનો સંગ ટળી જાય છે તો પણ સત્સંગનો પાશ લાગ્યો છે તે ટળતો નથી. અને તે બ્રહ્મરૂપ થાય છે તો પણ નારદ-સનકાદિક ને શુકજીની પેઠે ભગવાન તથા ભગવાનના ભક્તને વિષે અતિશય દયા ને પ્રીતિએ યુક્ત વર્તે છે. ત્યાં શ્લોક -
+</p>
+
+<p class="text_gu">
+‘પરિનિષ્ઠિતોઽપિ નૈર્ગુણ્ય ઉત્તમશ્લોકલીલયા । <br/>
+ગૃહીતચેતા રાજર્ષે આખ્યાનં યદધીતવાન્ ॥’<br/>
+<br/>
+તથા<br/><br/>
+‘હરેર્ગુણાક્ષિપ્તમતિર્ભગવાન્ બાદરાયણિઃ ।<br/>
+અધ્યગાન્મહદાખ્યાનં નિત્યં વિષ્ણુજનપ્રિયઃ ॥’<br/>
+<br/>
+તથા ‘આત્મારામાશ્ચ મુનયો’ તથા ‘પ્રાયેણ મુનયો રાજન્’ તથા ગીતામાં કહ્યું છે જે,<br/><br/>
+
+‘બ્રહ્મભૂતઃ પ્રસન્નાત્મા ન શોચતિ ન કાઙ્‍ક્ષતિ ।<br/>
+સમઃ સર્વેષુ ભૂતેષુ મદ્‌ભક્તિં લભતે પરામ્ ॥’<br/>
+
+</p>
+
+<p class="text_gu">
+ઇત્યાદિક ઘણાક શ્લોકે કરીને પ્રતિપાદન કર્યું છે જે, ભગવાનના ભક્ત હોય તે જ્ઞાન-વૈરાગ્યે કરીને માયિક ઉપાધિને ત્યાગ કરીને બ્રહ્મરૂપ થયા હોય તો પણ ભગવાન તથા ભગવાનના ભક્તને વિષે દયા ને પ્રીતિ તેણે યુક્ત હોય છે. અને જે ભગવાનનો ભક્ત ન હોય ને કેવળ આત્મજ્ઞાન ને વૈરાગ્યે કરીને માયિક ઉપાધિને ટાળીને સત્તામાત્ર વર્તતો હોય, તેને તો સાધનદશાને વિષે ભગવાનની ઉપાસનાએ રહિત એવા જે કેવળ આત્મજ્ઞાની તેના સંગરૂપ કુસંગનો પાશ લાગ્યો છે; માટે ભગવાન ને ભગવાનના ભક્તને વિષે દયા ને સ્નેહ થતાં નથી. જેમ વાયુને ને અગ્નિને દુર્ગંધનો પાશ લાગે છે તેમ જ એને તે કુસંગનો પાશ લાગ્યો છે, તે કોઈ પ્રકારે ટળતો નથી. જેમ અશ્વત્થામા બ્રહ્મરૂપ થયો હતો, પણ એને કુસંગનો પાશ લાગ્યો હતો; માટે શ્રીકૃષ્ણ ભગવાન ને તે ભગવાનના ભક્ત જે પાંડવ તેને વિષે દયા ને સ્નેહ થયાં નહીં. તેમ કેવળ જે આત્મજ્ઞાની છે તે બ્રહ્મરૂપ થાય છે તો પણ તેને કુસંગનો પાશ જતો નથી ને ભગવાન ને ભગવાનના ભક્તમાં દયા ને સ્નેહ થતાં નથી. માટે ભગવાનના ભક્તને તો માયિક ઉપાધિનો સંગ મટી જાય છે તો પણ ભગવાન તથા ભગવાનના ભક્ત તેને વિષે અતિશય દયા ને પ્રીતિ વૃદ્ધિને પામે છે; પણ કોઈ રીતે દયા તથા પ્રીતિ ટળતી નથી, અખંડ રહે છે.” એમ વાર્તા કરીને શ્રીજીમહારાજ ‘જય સચ્ચિદાનંદ’ કહીને પોતાને ઉતારે પધાર્યા.
+</p>
+
+
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

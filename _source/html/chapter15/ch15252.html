@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (252) મુમુક્ષુનું લક્ષણ એ જે મોક્ષમાં વિઘ્ન કરનાર પદાર્થને ઈચ્છે નહિ ને તૃષ્ણા છે તે મુમુક્ષુનું લક્ષણ નહિ ને મુમુક્ષુ હોય તે ‘લાવો, લાવો’ ન કરે. તે ઉપર નિષ્કુળાનંદસ્વામીનું કીર્તન બોલ્યા જે, <br/><br/>
+ 
+ કરજો સત્સંગીની સાયે-સત્સંગીની સાયે રે, <br/>
+ 
+ વા’લા ધરમ સંકટની માયે કરજો સત્સંગીની સાયે. 0ટેક0<br/>
+ 
+ વિદ્યાર્થીની વિપ્ર વરણીએ ભલી બાંધી છે ભેઠ, <br/>
+ 
+ સત્સંગીની શ્રદ્ધા સ્વામી નૈ રે’વા દીયે નેઠ રે. વા’લા-1<br/>
+ 
+ સાંખ્ય જોગી ને શસ્ત્રધારી સન્યાસી ને સંત, <br/>
+ 
+ લાવો લાવો લાવો કરે ફરે લેવા અંત રે. વા’લા-2<br/>
+ 
+ અસન વચન વાસન વલી જે જે જોયે સમાજ, <br/>
+ 
+ અવસ એ તો આપવું પડશે ન આપે તો આપે ન રહેલા જ રે. વા’લા-3<br/>
+ 
+ ઘરનું હોયે તો ધોળું પરૂં કાઢી અપાયે કેમ, <br/>
+ 
+ સુખ જુનાનું જોઈને નવા-ધારતા નથી નિમ રે. વા’લા-4<br/>
+ 
+ નિત્યે ઉઠીને નવલા આવે-ગાવે માતમ મુખ, <br/>
+ 
+ કોટિ ઉપાયે કેડ્ય ન મૂકે-એ વાતનું દુ:ખ રે. વા’લા-5<br/>
+ 
+ એ તો સહુંનું સરખું કયું-વળી કે’વાનું એક, <br/>
+ 
+ રસ્તાના રે’નારની-કે’દિ ટકશે નહિ ટેક રે. વા’લા-6<br/>
+ 
+ જેમ છે તેમ જણાવતો નથી-અંતરજામી અલબેલ, <br/>
+ 
+ વાલમ વે’લા વારે ચડજો-વળી મકરજો વેલ રે. વા’લા-7<br/>
+ 
+ આવું સાંભળીને સમજું હોય તે કરજો હૈયામાંયે તોલ, <br/>
+ 
+ કર  જોડીને  એ  તો  કહે નિષ્કુળાનંદ  બોલ  રે. વા’લા-8<br/><br/>
+ 
+ પછી વડતાલ માંડણ સુતારની વાત કરી જે, તેને અમે પૂછ્યું જે મંદિર આવવાનું નિયમ છે કે નહિ ? ત્યારે કહે, ‘ બધા સાધુ આવે છે ને ગાડું જોડાવે છે તેથી નિયમ નથી. સાધુ ન હોય તે દિવસ નિયમ રહે છે.’ માટે સાધુ થઈને હરિજનના નિયમ તોડાવશે તે પાપ સાધુને લાગશે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

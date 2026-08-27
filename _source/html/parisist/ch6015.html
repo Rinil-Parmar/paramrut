@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+   					<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 						 			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+				  
+  		  
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૧૫) ગંગાજી પર્વત ફોડીને સમુદ્રને મળ્યાં તે તો મળે; કેમ જે, પાણી ઝાઝું થાય ત્યારે એમ થાય; પણ જે પંચવિષય તે તો એથી આકરા છે; કેમ જે, બ્રહ્મા, શિવ સરખાને ભૂલાવ્યા ને ઇન્દ્રને હજાર <a href="#ex1" class="wordMeaning">ભગ</a> થયાં ને ચંદ્રમાને કલંક લાગ્યું. એવા મોટા મોટાને ને રાવણાદિકને દુ:ખ થયું ને સૌભરિને છેતર્યો ને પરાશર ને એકલશૃંગી એ આદિક કંઈકને લૂંટ્યા. તે માટે તેનો જોગ જ ન કરવો ને આ તો મહારાજે પ્રગટ થઈને આમ રાખ્યું છે, આવું તો કોઈએ બાંધેલ નહીં. ને મોટા મોટા અવતારે પણ કજિયા કર્યા છે, પણ આવો મારગ તો કોઈએ પ્રવર્તાવ્યો જ નથી. તે મહારાજે ‘વેદરસ’માં કહ્યું છે જે, “હે પરમહંસો ! આ સ્ત્રીરૂપી તલવારની જે તીખી ધારા, તે થકી જે પુરુષ નથી હણાણો તે તો દેવનો પણ દેવ છે. માટે એ ધારા કાંઈ થોડી નથી, એ ધારા તો બહુ જ આકરી છે; માટે તેનો જોગ જ ન થાવા દેવો.” 
+ <br/>
+ (જુઓ પ્રકરણ ૧૦ની વાત ૨૯૬)
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ભગ= કાણાં, ભગંદરના રોગમાં થાય. 
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

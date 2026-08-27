@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૨૮૫) એક ગરીબ બાવાનો છોકરો આવ્યો. તે કહે જે, ‘સ્વામિનારાયણ તમે ભગવાન કહેવાવ છો તે મને રોટલો આપો.’ પછી રોટલો આપ્યો ને મહારાજ કહે જે, "છોકરા, આ નાના ભક્ત છે તેની સાથે પ્રશ્ર્ન-ઉત્તર કર. ત્યારે તે કહે જે, ‘મને આવડે નહિ, એ મારા ગુરુએ મને શીખવ્યું નથી.’ એટલે નાના રાઠોડ કાઠી ભક્ત થયેલ હતા તેણે કહ્યું જે, ‘લો હું પૂછું. ભક્તિનો મહિમા કેટલો ?’ એટલે આને તો ઉત્તર ન આવડ્યો. પછી મહારાજે એ પ્રશ્ર્ન સર્વ સાધુને પૂછ્યો, પણ કોઈને ઉત્તર સૂઝ્યો નહીં. પછી મહારાજ કહે, “ભાગવતમાં આ વાત છે.” પછી સ્કંધ તથા અધ્યાયનું નામ લીધું, તો પણ કોઈને ઉત્તર ન આવડ્યો. પછી મહારાજ કહે, “લો અમે એનો ઉત્તર કરીએ, તે તૃતીય સ્કંધમાં કહ્યું છે જે, નારદજી જ્યારે વૈકુંઠમાં ગયા ત્યારે વૈકુંઠનાથને પૂછ્યું જે, ‘આ વિમાન છાઈ રહ્યાં છે તે શા પુણ્યે મળ્યાં છે? ને તે પાછાં હેઠાં પડશે કે કેમ ?’ પછી કહ્યું કે, ‘એક વાર પ્રગટના સાધુને પગે લાગ્યા છે તેણે કરીને એને મળ્યાં છે ને પછી એ ભગવાનના ધામમાં જાશે.’ એવો ભક્તિનો મહિમા છે.” તે ઉપર શ્ર્લોક બોલ્યા જે,
+ <br/><br/>
+
+ એકોઽપિ કૃષ્ણસ્ય કૃતઃ પ્રણામો દશાશ્વમેધાવભૃથેન તુલ્યઃ ।<br/>
+દશાશ્વમેધી પુનરેતિ જન્મ કૃષ્ણપ્રણામી ન પુનર્ભવાય ॥<br/>
+ (મહાભારત : શાંતિપર્વ ૧૨/૪૭/૯૨)v<br/> 
+ અર્થ : શ્રીકૃષ્ણને કરેલો એક જ પ્રણામ દશ અશ્ર્વમેધ યજ્ઞને અંતે કરવામાં આવતાં સ્નાન બરોબર પુણ્ય આપનાર છે. દશ અશ્ર્વમેધ કરનારને ફરી જન્મ લેવો પડે છે. શ્રીકૃષ્ણને પ્રણામ કરનારને ફરી જન્મ લેવાનો રહેતો નથી.
+ <br/><br/>
+ પછી વાતું કરી ને કહ્યું કે, ‘આ સૌનાથી નિયમ સરસ પાળીએ તો માણસ <a href="#ex1" class="wordMeaning">શક ખાય છે</a>, પણ ભગવાનનો મહિમા તો કહ્યો એવો મોટો છે.’
+ 
+
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 શક ખાય છે= શંકા કરે છે, વિશ્ર્વાસ નથી આવતો.  
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

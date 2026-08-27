@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">ચંદ્રદેવ અને ઇન્દ્રદેવ</h1>
+ 
+ ચંદ્રદેવ:
+ <br/><br/>
+ભાસ્કરાચાર્યના મતે ચંદ્રમા જળમય છે. પુરાણાનુસાર જ્યારે સમુદ્રમંથન થયું ત્યારે ચૌદ રત્નો સમુદ્રમાંથી નીકળ્યાં તે પૈકી ચંદ્ર પણ નીકળ્યો, જેને શિવજીએ પોતાના મસ્તક ઉપર ધારેલ છે. ચંદ્રની ગણતરી દેવતામાં થાય છે. સમુદ્રમંથન વખતે નીકળેલ અમૃત પીવા માટે એક રાહુ નામનો અસુર ચંદ્ર અને સૂર્ય વચ્ચે આવીને બેસી ગયો. ત્યારે ચંદ્રએ તે વૃત્તાંત વિષ્ણુ ભગવાનને કહ્યું. વિષ્ણુએ ગુસ્સે થઈને એ અસુરના બે ભાગ કરી નાખ્યા. તેથી અસુર બે નામથી ઓળખાય છે, એક રાહુ અને બીજો કેતુ. તેથી આ બે અસુર ચંદ્ર ઉપર વેર રાખીને ગ્રહણ સમયે તેનો ગ્રાસ કરે છે. 
+<br/><br/>
+
+ચંદ્રના શરીર ઉપર કાળા ધાબા શું કામ છે ? 
+<br/><br/>
+
+પ્રજાપતિ દક્ષે પોતાની ૨૭ કન્યાઓને ચંદ્રમા સાથે પરણાવેલ. એ બધી પત્નીઓમાં રોહિણી નામની પત્ની ચંદ્રને વધારે પ્રિય હતી. બીજી કન્યાઓ ઉપર ચંદ્ર વિશેષ ધ્યાન આપતા ન હતા. તેથી અન્ય પત્નીઓએ ચંદ્રથી નારાજ થઈને પોતાના પિતા દક્ષને પોતાની વેદના જણાવી. દક્ષે આ વાત ચંદ્રને કહી પણ રોહિણી પ્રત્યેના મોહને કારણે ચંદ્રએ દક્ષની સલાહ પર ધ્યાન ન આપ્યું. તેથી દક્ષે નારાજ થઈને ચંદ્રને ક્ષયરોગી થવાનો શાપ આપ્યો. તેથી ચંદ્ર દિવસે દિવસે ક્ષીણ થવા લાગ્યો. (જો ચંદ્ર ક્ષીણ થાય તો પૃથ્વી ઉપરની વનસ્પતિ સૃષ્ટિ ઉપર ચંદ્રની પોષણકૃપા થતી હોય તે ઓછી થાય આથી તે સૃષ્ટિનું અસ્તિત્વ જોખમાય) આથી બધા દેવતાઓ બ્રહ્માના શરણમાં આવીને પ્રાર્થના કરી. આથી બ્રહ્માએ તેમને પ્રભાસક્ષેત્રમાં જઈ શિવની આરાધના કરવાની વાત કરી. આથી ચંદ્રદેવે ત્યાં જઈને શિવની આરાધના કરી તેમને પ્રસન્ન કર્યા અને ક્ષય રોગ મટાડવાની અને પ્રતિદિન વધવાની માંગણી કરી. શિવે વરદાન આપ્યું અને ચંદ્રનો ક્ષય દૂર થયો અને તેની કળા પૂર્વવત્‌ વધવા માંડી. 
+<br/><br/>
+
+
+ઇન્દ્ર અને ચંદ્રને કલંક લાગ્યું ?
+<br/><br/>
+
+ઇન્દ્ર ગૌતમૠષિની પત્ની અહલ્યા ઉપર મોહિત થઈ ગયો. તેને મેળવવાની ઇચ્છાથી તેણે એક તરકટ રચ્યું. ચંદ્રનો સાથ લીધો કે, તારે કુકડાનું રૂપ લઈને ૠષિના આશ્રમની પાછળ મધરાતે બાંગ પોકારવી જેથી ૠષિ સવાર થયું એમ માનીને સરોવરમાં સ્નાન કરવા જશે. વળી, તારે વાદળાની ઓથ લેવાની જેથી અંધકાર થતાં હું ૠષિની ઝૂંપડીમાં જઈશ. આથી ચંદ્રએ કુકડો થઈ બાંગ પોકારતાં ૠષિ સ્નાન કરવા ગયા અને ઇન્દ્ર ૠષિનું રૂપ લઈને કપટ કરી ઝૂંપડીમાં જઈ અહલ્યાનું શિયળભંગ કર્યું. પરંતુ તે સમયે અચાનક ૠષિ આવી જતાં તેણે ઇન્દ્રને પોતાના વેષમાં જોયો અને આખુ કપટ બહાર આવી ગયું. તેથી ૠષિ ઇન્દ્ર ઉપર ગુસ્સે થયા ને તેને હજાર યોનિ થશે તેવો શાપ આપ્યો. ૠષિને ખબર પડી કે ચંદ્રએ આ અધમ કાર્યમાં સાથ આપ્યો છે તેથી ૠષિએ પોતાના કમંડળ અને મૃગચર્મથી ચંદ્રને માર મારતાં તેના શરીર પર ડાઘ પડી ગયા. વળી ૠષિની પત્નીના શિયળભંગના કૃત્યમાં ચંદ્રનો આડકતરો સાથ હતો તેથી તેના આ અધમ કાર્ય બદલ ચંદ્રને પણ ઇન્દ્રની સાથે કલંક લાગ્યું.
+<br/><br/>
+
+
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

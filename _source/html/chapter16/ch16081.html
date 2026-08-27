@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (81) આ જીવ છે તે બદ્ધ છે. તે ઘરમાં બંધાઈ જાય છે, પશુપંખી માળામાં, દરમાં ને સુળુનાં ઘરમાં બંધાઈ રહે છે. અને આ જે સમાગમ થાય છે, તે તો કોઈ મોટા ભળે છે ત્યારે ઘર મૂકીને અવાય છે, તે ઉપર બળદનું દૃષ્ટાંત દીધું જે નવે ઘરે ખાય નહિ ને પાણી પણ પીએ નહિ ને આજે ઘરમાંથી નીકળીને અવાય છે તે કોઈ પુણ્ય ઉદય થયું છે; તે ઉપર આયર રાઘા ભક્તની વાત કરી જે, મા-બાપ અગિયાર વાર લઈ ગયા ને પાછા આવ્યા ને પ્રદક્ષિણા ફરતા, રાત બધી ચોકી કરતા ને આલો આયર દેશમાં છે તે મોર અમારી ભેળો ને ભેળો ફરતો ને હવે ઘરમાંથી નીકળતો નથી, સત્સંગ કરે તેનો તો વહેવાર પણ ભગવાન ચલવે માટે મોક્ષભાગી હોય તેને આવા વિચાર કર્યા જોઈએ. કેટલાક છે તે તો આ સત્સંગ છે એટલો જ અધર્મ સમજે છે ને કયા પુણ્યે આમ થયું જે આ સાધુ સાથે મેળાપ થયો ને આમ બેસીને વાતું કરવી તે તો અક્ષરધામમાં, શ્ર્વેતદ્વીપમાં, બદરીકાશ્રમમાં ને આંહીં એકાંતિકમાં છે. આપણામાં ચાલી શકે એવા જવાનિયા હોય પણ રસ્તામાંથી ગાડાં જોડાવે છે તે સ્વભાવ કહેવાય. શું ઘેર હતા ત્યારે ગાડે બેસીને ચાલતા હશે? આપણે અનંત બ્રહ્માંડથી ઉદાસ થઈને ભગવાન ભજી લેવા ને જેટલાં નિયમ પળ્યાં કે જેટલાં વિષય મૂક્યા તેટલા બ્રહ્મરૂપ થયા છીએ. શહેરમાં ને રૂપિયામાં દોષ રહ્યા છે તેની મુમુક્ષુને ખબર પડે છે. રાજાની રસોઈ બાર કલાકે થાય છે ને કોઈને રાત-દિવસની ખબર નથી જે ભજન કરવું, સત્સંગ કરવો ને કથા કરવી તે તો સત્સંગમાં જ થાય છે. આ લોકમાં તો નહિ જ રહેવાય ને હવે બાકી આવરદા રહી તેણે કરીને તો પ્રભુ જ ભજી લેવા. ને આ સાધુને દર્શને કરીને તો મેરુ જેવડાં પાપ હોય તે નાશ પામે. <br/><br/>
+ 
+ દૃષ્ટાઃ સ્પૃષ્ટા નતા વા કૃતપરિચરણા ભોજિતાઃ પૂજિતા વા<br/>
+ સદ્યઃ પુંસામઘૌઘં બહુજનિજનિતં ઘ્નન્તિ યે વૈ સમૂલમ્ ।<br/> 
+ પ્રોક્તાઃ કૃષ્ણેન યે વા નિજહૃદયસમા યત્પદે તીર્થજાતમ્ <br/>
+ તેષાં માતઃ પ્રસંગાત્ કિમિહ નનુ સતાં દુર્લભં સ્યાન્મુમુક્ષોઃ ॥<br/>
+ 
+  (સત્સંગિજીવન : શ્રી ધર્મનન્દનાષ્ટકમ્ -1/32/46) <br/>
+ 
+ અર્થ :- જે સંતોનાં દર્શનમાત્રથી, જેમનો સ્પર્શ કરવાથી, જેમને નમવાથી, જેમને જમાડવાથી, જેમની સેવા કરવાથી કે, જેમનું પૂજન કરવાથી, તે કરનારા પુરુષોના અનેક જન્મોના પાપપુંજનો મૂળે સહિત તે જ ક્ષણમાં નિશ્ર્ચે નાશ થઈ જાય છે. વળી, જે સંતોને શ્રીકૃષ્ણ ભગવાન પોતાના હૃદય સમાન કહે છે અને જેમના ચરણકમળમાં સર્વ તીર્થો નિવાસ કરીને રહ્યાં છે એવા સાધુઓના પ્રસંગથી આ લોકમાં મુમુક્ષુને દુર્લભ શું હોય? કાંઈ પણ નથી. <br/><br/>
+ 
+ એ બોલ્યા, તેમ ભગવાનમાં ને આ સાધુમાં નિષ્ઠા આવી ત્યારે તે બધું કરી રહ્યો.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

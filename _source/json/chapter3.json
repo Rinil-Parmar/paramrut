@@ -1,0 +1,668 @@
+[
+	{
+		"VatId": "536",
+		"ChId": "3",
+		"VatName": "Dhorajie lalavad hethe",
+		"VatNameGuj": "ધોરાજીએ લાલવડ હેઠે",
+		"VatFile": "ch3001.html",
+		"VatNo": "1",
+		"RefFile": ""
+	},
+	{
+		"VatId": "537",
+		"ChId": "3",
+		"VatName": "Ek divas Shreejimaharaj ",
+		"VatNameGuj": "એક દિવસ શ્રીજીમહારાજ નર્મદામાં",
+		"VatFile": "ch3002.html",
+		"VatNo": "2",
+		"RefFile": ""
+	},
+	{
+		"VatId": "538",
+		"ChId": "3",
+		"VatName": "Shreejimaharaje Muktanandswami",
+		"VatNameGuj": "શ્રીજીમહારાજે મુક્તાનંદસ્વામી",
+		"VatFile": "ch3003.html",
+		"VatNo": "3",
+		"RefFile": ""
+	},
+	{
+		"VatId": "539",
+		"ChId": "3",
+		"VatName": "Avatarmatra to chamakpan",
+		"VatNameGuj": "અવતારમાત્ર તો ચમકપાણ",
+		"VatFile": "ch3004.html",
+		"VatNo": "4",
+		"RefFile": ""
+	},
+	{
+		"VatId": "540",
+		"ChId": "3",
+		"VatName": "Vadi, fulvadi ne garudi",
+		"VatNameGuj": "વાદી, ફૂલવાદી ને ગારુડી",
+		"VatFile": "ch3005.html",
+		"VatNo": "5",
+		"RefFile": ""
+	},
+	{
+		"VatId": "541",
+		"ChId": "3",
+		"VatName": "Shreejimaharajne Jesangbhaie",
+		"VatNameGuj": "શ્રીજીમહારાજને જેસંગભાઈએ",
+		"VatFile": "ch3006.html",
+		"VatNo": "6",
+		"RefFile": ""
+	},
+	{
+		"VatId": "542",
+		"ChId": "3",
+		"VatName": "Shreejimaharaje Anandswamine",
+		"VatNameGuj": "શ્રીજીમહારાજે આનંદસ્વામીને",
+		"VatFile": "ch3007.html",
+		"VatNo": "7",
+		"RefFile": ""
+	},
+	{
+		"VatId": "543",
+		"ChId": "3",
+		"VatName": "Ek divas Swarupanandswami",
+		"VatNameGuj": "એક દિવસ સ્વરૂપાનંદસ્વામી",
+		"VatFile": "ch3008.html",
+		"VatNo": "8",
+		"RefFile": ""
+	},
+	{
+		"VatId": "544",
+		"ChId": "3",
+		"VatName": "Muktanandswami tatha Brahmanand",
+		"VatNameGuj": "મુક્તાનંદસ્વામી તથા બ્રહ્માનંદ",
+		"VatFile": "ch3009.html",
+		"VatNo": "9",
+		"RefFile": ""
+	},
+	{
+		"VatId": "545",
+		"ChId": "3",
+		"VatName": "Ek divas Swarupanandswamie",
+		"VatNameGuj": "એક દિવસ સ્વરૂપાનંદસ્વામીએ",
+		"VatFile": "ch3010.html",
+		"VatNo": "10",
+		"RefFile": ""
+	},
+	{
+		"VatId": "546",
+		"ChId": "3",
+		"VatName": "Ek vakhat gam Jaliyama",
+		"VatNameGuj": "એક વખતે ગામ જાળિયામાં",
+		"VatFile": "ch3011.html",
+		"VatNo": "11",
+		"RefFile": ""
+	},
+	{
+		"VatId": "547",
+		"ChId": "3",
+		"VatName": "Maharajne purushottam Janya",
+		"VatNameGuj": "મહારાજને પુરુષોત્તમ જાણ્યા",
+		"VatFile": "ch3012.html",
+		"VatNo": "12",
+		"RefFile": ""
+	},
+	{
+		"VatId": "548",
+		"ChId": "3",
+		"VatName": "Ek harijane char-panch",
+		"VatNameGuj": "એક હરિજને ચાર-પાંચ",
+		"VatFile": "ch3013.html",
+		"VatNo": "13",
+		"RefFile": ""
+	},
+	{
+		"VatId": "549",
+		"ChId": "3",
+		"VatName": "Prabhu bhajava deh to ",
+		"VatNameGuj": "પ્રભુ ભજવા દેહ તો",
+		"VatFile": "ch3014.html",
+		"VatNo": "14",
+		"RefFile": ""
+	},
+	{
+		"VatId": "550",
+		"ChId": "3",
+		"VatName": "Jeva Maharaj chhe ne",
+		"VatNameGuj": "જેવા મહારાજ છે ને",
+		"VatFile": "ch3015.html",
+		"VatNo": "15",
+		"RefFile": ""
+	},
+	{
+		"VatId": "551",
+		"ChId": "3",
+		"VatName": "Ek vedanti agal em vat",
+		"VatNameGuj": "એક વેદાંતી આગળ એમ વાત",
+		"VatFile": "ch3016.html",
+		"VatNo": "16",
+		"RefFile": ""
+	},
+	{
+		"VatId": "552",
+		"ChId": "3",
+		"VatName": "Shreejimaharaje anant prakarni",
+		"VatNameGuj": "શ્રીજીમહારાજે અનંત પ્રકારની",
+		"VatFile": "ch3017.html",
+		"VatNo": "17",
+		"RefFile": ""
+	},
+	{
+		"VatId": "553",
+		"ChId": "3",
+		"VatName": "Sadhu to kyay olakhay chhe",
+		"VatNameGuj": "સાધુ તો ક્યાં ઓળખાય છે",
+		"VatFile": "ch3018.html",
+		"VatNo": "18",
+		"RefFile": ""
+	},
+	{
+		"VatId": "554",
+		"ChId": "3",
+		"VatName": "Jiv bije kyay atakato nathi",
+		"VatNameGuj": "જીવ બીજે ક્યાંય અટકતો નથી",
+		"VatFile": "ch3019.html",
+		"VatNo": "19",
+		"RefFile": ""
+	},
+	{
+		"VatId": "555",
+		"ChId": "3",
+		"VatName": "Ek mota haribhakt hata",
+		"VatNameGuj": "એક મોટા હરિભક્ત હતા",
+		"VatFile": "ch3020.html",
+		"VatNo": "20",
+		"RefFile": ""
+	},
+	{
+		"VatId": "556",
+		"ChId": "3",
+		"VatName": "Swamie ek divas",
+		"VatNameGuj": "સ્વામીએ એક દિવસ",
+		"VatFile": "ch3021.html",
+		"VatNo": "21",
+		"RefFile": ""
+	},
+	{
+		"VatId": "557",
+		"ChId": "3",
+		"VatName": "Swamie ek divas shivlalane",
+		"VatNameGuj": "સ્વામીએ એક દિવસ શિવલાલને",
+		"VatFile": "ch3022.html",
+		"VatNo": "22",
+		"RefFile": ""
+	},
+	{
+		"VatId": "558",
+		"ChId": "3",
+		"VatName": "Ek harijane prashna puchhyo",
+		"VatNameGuj": "એક હરિજને પ્રશ્ર્ન પૂછ્યો",
+		"VatFile": "ch3023.html",
+		"VatNo": "23",
+		"RefFile": ""
+	},
+	{
+		"VatId": "559",
+		"ChId": "3",
+		"VatName": "Ame je je agna karie",
+		"VatNameGuj": "અમે જે જે આજ્ઞા કરીએ",
+		"VatFile": "ch3024.html",
+		"VatNo": "24",
+		"RefFile": ""
+	},
+	{
+		"VatId": "560",
+		"ChId": "3",
+		"VatName": "Maharajno ne mota sadhuno",
+		"VatNameGuj": "મહારાજનો ને મોટા સાધુનો",
+		"VatFile": "ch3025.html",
+		"VatNo": "25",
+		"RefFile": ""
+	},
+	{
+		"VatId": "561",
+		"ChId": "3",
+		"VatName": "Jevo satsang chhe tevo to",
+		"VatNameGuj": "જેવો સત્સંગ છે તેવો તો",
+		"VatFile": "ch3026.html",
+		"VatNo": "26",
+		"RefFile": ""
+	},
+	{
+		"VatId": "562",
+		"ChId": "3",
+		"VatName": "Kharekharu gnan thay to ",
+		"VatNameGuj": "ખરેખરું જ્ઞાન થાય તો",
+		"VatFile": "ch3027.html",
+		"VatNo": "27",
+		"RefFile": ""
+	},
+	{
+		"VatId": "563",
+		"ChId": "3",
+		"VatName": "So karod rakhna padika",
+		"VatNameGuj": "સો કરોડ રાખનાં પડીકાં",
+		"VatFile": "ch3028.html",
+		"VatNo": "28",
+		"RefFile": ""
+	},
+	{
+		"VatId": "564",
+		"ChId": "3",
+		"VatName": "Chandramanu pratibimb jalma",
+		"VatNameGuj": "ચંદ્રમાનું પ્રતિબિંબ જળમાં",
+		"VatFile": "ch3029.html",
+		"VatNo": "29",
+		"RefFile": ""
+	},
+	{
+		"VatId": "565",
+		"ChId": "3",
+		"VatName": "Ek harijan sansar mukine",
+		"VatNameGuj": "એક હરિજન સંસાર મૂકીને",
+		"VatFile": "ch3030.html",
+		"VatNo": "30",
+		"RefFile": ""
+	},
+	{
+		"VatId": "566",
+		"ChId": "3",
+		"VatName": "Ek harijane prashna puchhyo",
+		"VatNameGuj": "એક હરિજને પ્રશ્ર્ન પૂછ્યો",
+		"VatFile": "ch3031.html",
+		"VatNo": "31",
+		"RefFile": ""
+	},
+	{
+		"VatId": "567",
+		"ChId": "3",
+		"VatName": "Bhajan karata karata  kriya",
+		"VatNameGuj": "ભજન કરતાં કરતાં ક્રિયા",
+		"VatFile": "ch3032.html",
+		"VatNo": "32",
+		"RefFile": ""
+	},
+	{
+		"VatId": "568",
+		"ChId": "3",
+		"VatName": "Satsangma em vat thay chhe",
+		"VatNameGuj": "સત્સંગમાં એમ વાત થાય છે",
+		"VatFile": "ch3033.html",
+		"VatNo": "33",
+		"RefFile": ""
+	},
+	{
+		"VatId": "569",
+		"ChId": "3",
+		"VatName": "Ek divas Swami nana nana",
+		"VatNameGuj": "એક દિવસ સ્વામી નાના નાના",
+		"VatFile": "ch3034.html",
+		"VatNo": "34",
+		"RefFile": ""
+	},
+	{
+		"VatId": "570",
+		"ChId": "3",
+		"VatName": "Shreejimaharaj em kaheta je",
+		"VatNameGuj": "શ્રીજીમહારાજ એમ કહેતા જે",
+		"VatFile": "ch3035.html",
+		"VatNo": "35",
+		"RefFile": ""
+	},
+	{
+		"VatId": "571",
+		"ChId": "3",
+		"VatName": "Ek divas Swami suta hata",
+		"VatNameGuj": "એક દિવસ સ્વામી સૂતા હતા",
+		"VatFile": "ch3036.html",
+		"VatNo": "36",
+		"RefFile": ""
+	},
+	{
+		"VatId": "572",
+		"ChId": "3",
+		"VatName": "Ek divas Swamie aradhi",
+		"VatNameGuj": "એક દિવસ સ્વામીએ અરધી",
+		"VatFile": "ch3037.html",
+		"VatNo": "37",
+		"RefFile": ""
+	},
+	{
+		"VatId": "573",
+		"ChId": "3",
+		"VatName": "More to Maharajno anek",
+		"VatNameGuj": "મોરે તો મહારાજનો અનેક",
+		"VatFile": "ch3038.html",
+		"VatNo": "38",
+		"RefFile": ""
+	},
+	{
+		"VatId": "574",
+		"ChId": "3",
+		"VatName": "Agya lagi chahu or ",
+		"VatNameGuj": " આગ્ય લગી ચહુ ઓર",
+		"VatFile": "ch3039.html",
+		"VatNo": "39",
+		"RefFile": ""
+	},
+	{
+		"VatId": "575",
+		"ChId": "3",
+		"VatName": "Aaj satsangma bhagavan",
+		"VatNameGuj": "આજ તો સત્સંગમાં ભગવાન",
+		"VatFile": "ch3040.html",
+		"VatNo": "40",
+		"RefFile": ""
+	},
+	{
+		"VatId": "576",
+		"ChId": "3",
+		"VatName": "Aaj to purushottam, akshardham",
+		"VatNameGuj": "આજ તો પુરુષોત્તમ, અક્ષરધામ",
+		"VatFile": "ch3041.html",
+		"VatNo": "41",
+		"RefFile": ""
+	},
+	{
+		"VatId": "577",
+		"ChId": "3",
+		"VatName": "Bhagvanma jodavu ka sadhuma",
+		"VatNameGuj": " ભગવાનમાં જોડાવું કાં સાધુમાં ",
+		"VatFile": "ch3042.html",
+		"VatNo": "42",
+		"RefFile": ""
+	},
+	{
+		"VatId": "578",
+		"ChId": "3",
+		"VatName": "Gopalanandswamie sarve",
+		"VatNameGuj": "ગોપાળાનંદસ્વામીએ સર્વે",
+		"VatFile": "ch3043.html",
+		"VatNo": "43",
+		"RefFile": ""
+	},
+	{
+		"VatId": "579",
+		"ChId": "3",
+		"VatName": "Satyugma manushyane lakh",
+		"VatNameGuj": "સત્યુગમાં મનુષ્યને લાખ",
+		"VatFile": "ch3044.html",
+		"VatNo": "44",
+		"RefFile": ""
+	},
+	{
+		"VatId": "580",
+		"ChId": "3",
+		"VatName": "Satsang kyare thay?",
+		"VatNameGuj": "સત્સંગ ક્યારે થાય ? ",
+		"VatFile": "ch3045.html",
+		"VatNo": "45",
+		"RefFile": ""
+	},
+	{
+		"VatId": "581",
+		"ChId": "3",
+		"VatName": "Varatalma amba hetha char",
+		"VatNameGuj": "વરતાલમાં આંબા હેઠે ચાર",
+		"VatFile": "ch3046.html",
+		"VatNo": "46",
+		"RefFile": ""
+	},
+	{
+		"VatId": "582",
+		"ChId": "3",
+		"VatName": "Ek bave avine kahyu je",
+		"VatNameGuj": "એક બાવે આવીને કહ્યું જે",
+		"VatFile": "ch3047.html",
+		"VatNo": "47",
+		"RefFile": ""
+	},
+	{
+		"VatId": "583",
+		"ChId": "3",
+		"VatName": "Lakh man lodhani lodhi",
+		"VatNameGuj": "લાખ મણ લોઢાની લોઢી",
+		"VatFile": "ch3048.html",
+		"VatNo": "48",
+		"RefFile": ""
+	},
+	{
+		"VatId": "584",
+		"ChId": "3",
+		"VatName": "Swamie sarve dhamona mukt",
+		"VatNameGuj": "સ્વામીએ સર્વે ધામોના મુક્ત",
+		"VatFile": "ch3049.html",
+		"VatNo": "49",
+		"RefFile": ""
+	},
+	{
+		"VatId": "585",
+		"ChId": "3",
+		"VatName": "Bije kyay jiv atakato",
+		"VatNameGuj": "બીજે ક્યાંય જીવ અટકતો",
+		"VatFile": "ch3050.html",
+		"VatNo": "50",
+		"RefFile": ""
+	},
+	{
+		"VatId": "586",
+		"ChId": "3",
+		"VatName": "Game tevo panino taravaiyo",
+		"VatNameGuj": "ગમે તેવો પાણીનો તરવૈયો",
+		"VatFile": "ch3051.html",
+		"VatNo": "51",
+		"RefFile": ""
+	},
+	{
+		"VatId": "587",
+		"ChId": "3",
+		"VatName": "Are Vishay to bandhe eva",
+		"VatNameGuj": "અરે વિષય તો બાંધે એવા",
+		"VatFile": "ch3052.html",
+		"VatNo": "52",
+		"RefFile": ""
+	},
+	{
+		"VatId": "588",
+		"ChId": "3",
+		"VatName": "Hamana mumukshue deh",
+		"VatNameGuj": "હમણાં મુમુક્ષુએ દેહ",
+		"VatFile": "ch3053.html",
+		"VatNo": "53",
+		"RefFile": ""
+	},
+	{
+		"VatId": "589",
+		"ChId": "3",
+		"VatName": "Juone ek purush ugyo",
+		"VatNameGuj": "જુઓને, એક પુરુષ ઊગ્યો",
+		"VatFile": "ch3054.html",
+		"VatNo": "54",
+		"RefFile": ""
+	},
+	{
+		"VatId": "590",
+		"ChId": "3",
+		"VatName": "Ek haribhakte prashna puchhyu",
+		"VatNameGuj": "એક હરિભક્તે પ્રશ્ર્ન પૂછ્યું",
+		"VatFile": "ch3055.html",
+		"VatNo": "55",
+		"RefFile": ""
+	},
+	{
+		"VatId": "591",
+		"ChId": "3",
+		"VatName": "Ek divas Maharaje mane",
+		"VatNameGuj": "એક દિવસ મહારાજે મને",
+		"VatFile": "ch3056.html",
+		"VatNo": "56",
+		"RefFile": ""
+	},
+	{
+		"VatId": "592",
+		"ChId": "3",
+		"VatName": "Krupanandswamino em mat",
+		"VatNameGuj": "કૃપાનંદસ્વામીનો એમ મત",
+		"VatFile": "ch3057.html",
+		"VatNo": "57",
+		"RefFile": ""
+	},
+	{
+		"VatId": "593",
+		"ChId": "3",
+		"VatName": "Adharm sarg jab karat",
+		"VatNameGuj": " અધર્મ સર્ગ જબ કરત",
+		"VatFile": "ch3058.html",
+		"VatNo": "58",
+		"RefFile": ""
+	},
+	{
+		"VatId": "594",
+		"ChId": "3",
+		"VatName": "Swamie ek bavaliya ",
+		"VatNameGuj": "સ્વામીએ એક બાવળિયા",
+		"VatFile": "ch3059.html",
+		"VatNo": "59",
+		"RefFile": ""
+	},
+	{
+		"VatId": "595",
+		"ChId": "3",
+		"VatName": "Jiv samu joie chhie",
+		"VatNameGuj": "જીવ સામું જોઈએ છીએ",
+		"VatFile": "ch3060.html",
+		"VatNo": "60",
+		"RefFile": ""
+	},
+	{
+		"VatId": "596",
+		"ChId": "3",
+		"VatName": "Jem jem gnan thatu jay",
+		"VatNameGuj": "જેમ જેમ જ્ઞાન થાતું જાય",
+		"VatFile": "ch3061.html",
+		"VatNo": "61",
+		"RefFile": ""
+	},
+	{
+		"VatId": "597",
+		"ChId": "3",
+		"VatName": "More to mumukshu",
+		"VatNameGuj": "મોરે તો મુમુક્ષુ ",
+		"VatFile": "ch3062.html",
+		"VatNo": "62",
+		"RefFile": ""
+	},
+	{
+		"VatId": "598",
+		"ChId": "3",
+		"VatName": "Raghuvirjimaharaj pruthvi",
+		"VatNameGuj": "રઘુવીરજી મહારાજ પૃથ્વી",
+		"VatFile": "ch3063.html",
+		"VatNo": "63",
+		"RefFile": ""
+	},
+	{
+		"VatId": "599",
+		"ChId": "3",
+		"VatName": "Amari samajan to koine",
+		"VatNameGuj": "અમારી સમજણ તો કોઈને",
+		"VatFile": "ch3064.html",
+		"VatNo": "64",
+		"RefFile": ""
+	},
+	{
+		"VatId": "600",
+		"ChId": "3",
+		"VatName": "Swamie ek harijanne",
+		"VatNameGuj": "સ્વામીએ એક હરિજનને",
+		"VatFile": "ch3065.html",
+		"VatNo": "65",
+		"RefFile": ""
+	},
+	{
+		"VatId": "601",
+		"ChId": "3",
+		"VatName": "Aa jivne makhimathi surya",
+		"VatNameGuj": "આ જીવને માખીમાંથી સૂર્ય",
+		"VatFile": "ch3066.html",
+		"VatNo": "66",
+		"RefFile": ""
+	},
+	{
+		"VatId": "602",
+		"ChId": "3",
+		"VatName": "Swamie kariyaninu 8mu",
+		"VatNameGuj": "સ્વામીએ કારિયાણીનું 8મું",
+		"VatFile": "ch3067.html",
+		"VatNo": "67",
+		"RefFile": ""
+	},
+	{
+		"VatId": "603",
+		"ChId": "3",
+		"VatName": "Hajar varasno khijado hoy",
+		"VatNameGuj": "હજાર વરસનો ખીજડો હોય",
+		"VatFile": "ch3068.html",
+		"VatNo": "68",
+		"RefFile": ""
+	},
+	{
+		"VatId": "604",
+		"ChId": "3",
+		"VatName": "Garibne kalpavashe te",
+		"VatNameGuj": "ગરીબને કલ્પાવશે તે",
+		"VatFile": "ch3069.html",
+		"VatNo": "69",
+		"RefFile": ""
+	},
+	{
+		"VatId": "605",
+		"ChId": "3",
+		"VatName": "Swamie vanathali jata",
+		"VatNameGuj": "સ્વામીએ વણથળી જાતાં",
+		"VatFile": "ch3070.html",
+		"VatNo": "70",
+		"RefFile": ""
+	},
+	{
+		"VatId": "606",
+		"ChId": "3",
+		"VatName": "Matpanthvale lakh lakh",
+		"VatNameGuj": "મતપંથવાળે લાખ લાખ",
+		"VatFile": "ch3071.html",
+		"VatNo": "71",
+		"RefFile": ""
+	},
+	{
+		"VatId": "607",
+		"ChId": "3",
+		"VatName": "Swamie Kalyanbhai agal",
+		"VatNameGuj": "સ્વામીએ કલ્યાણભાઈ આગળ",
+		"VatFile": "ch3072.html",
+		"VatNo": "72",
+		"RefFile": ""
+	},
+	{
+		"VatId": "608",
+		"ChId": "3",
+		"VatName": "Swamie ek bhakt samu",
+		"VatNameGuj": "સ્વામીએ એક ભક્ત સામું",
+		"VatFile": "ch3073.html",
+		"VatNo": "73",
+		"RefFile": ""
+	},
+	{
+		"VatId": "609",
+		"ChId": "3",
+		"VatName": "Ek divas Maharaje mane",
+		"VatNameGuj": "એક દિવસ મહારાજે મને",
+		"VatFile": "ch3074.html",
+		"VatNo": "74",
+		"RefFile": ""
+	}
+]

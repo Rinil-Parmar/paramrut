@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૫૬: કસુંબલ વસ્ત્રનું</h1>
+
+		<p style="" class="text_gu">સંવત ૧૮૮૧ના આષાઢ સુદિ ૫ પંચમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર ગાદીતકિયા બિછવાવીને વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ મુનિમંડળની સભા તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+<p style="" class="text_gu">અને સાધુ દૂકડ-સરોદા લઈને કીર્તન બોલતા હતા. તે કીર્તન-ભક્તિ થઈ રહ્યા પછી શ્રીજીમહારાજ એમ બોલ્યા જે, “આ કીર્તન સાંભળ્યામાંથી તો અમારો આત્મા વિચારમાં જતો રહ્યો. પછી તેમાં એમ જણાયું જે, ‘ભગવાનને વિષે જે અતિશય પ્રીતિ એ ઘણી મોટી વાત છે.’ પછી તો ગોપાળાનંદ સ્વામી આદિક જે ભગવાનને વિષે પ્રીતિવાળા હરિભક્ત તે સર્વે સાંભરી આવ્યા અને એ સર્વેનાં અંતઃકરણ ને એ સર્વેના જીવ ને એમની જે ભગવાનને વિષે પ્રીતિ તે સર્વે જોયામાં આવ્યાં. પછી અમે અમારા આત્માને તપાસી જોયો, ત્યારે અમારે જેવી ભગવાનને વિષે પ્રીતિ જણાણી તેવી બીજાની પ્રીતિ જણાણી નહીં. શા માટે જે, કાંઈક ભૂંડાં દેશકાળાદિકનો જ્યારે યોગ થાય છે ત્યારે એ સર્વે મોટા છે તો પણ કાંઈક એમની બુદ્ધિને વિષે ફેર પડી જાય છે. ત્યારે એમ જણાય જે, ‘અંતે પાયો કાચો દેખાય છે.’ તે સારી પેઠે જો કોઈક ભૂંડાં દેશકાળાદિકનો યોગ થાય તો ભગવાનમાં પ્રીતિ છે તેનું કાંઈ ઠેકાણું રહે નહીં. માટે એ સર્વેને જોતાં અમને અમારી કોરનું ઠીક ભાસે છે જે, ‘ગમે તેવાં ભૂંડાં દેશકાળાદિકનો યોગ થાય પણ કોઈ રીતે અમારું અંતઃકરણ ફરે નહીં.’ અને ભગવાનને વિષે પ્રીતિ તો તેની જ સાચી જે, જેને ભગવાન વિના બીજા કોઈ પદાર્થને વિષે પ્રીતિ જ ન થાય. અને સર્વે સદ્‌ગ્રંથનું પણ એ જ રહસ્ય છે જે, ભગવાન છે એ જ પરમ સુખદાયક છે ને પરમ સાર વસ્તુ છે. અને તે પ્રભુ વિના જે જે બીજા પદાર્થ છે તે અતિશય તુચ્છ છે ને અતિ અસાર છે. અને જેને ભગવાન જેવી બીજા પદાર્થમાં પણ પ્રીતિ હોય તેનો તો ઘણો જ પાયો કાચો છે. જેમ કસુંબલ વસ્ત્ર હોય તે ઘણું સારું જણાતું હોય, પણ જ્યારે તે ઉપર પાણી પડે ને પછી તેને તડકામાં સુકાવીએ ત્યારે સૂધું નકારું થઈ જાય ને ધોળા વસ્ત્ર જેવું પણ ન રહે; તેમ જેને પંચવિષયમાં પ્રીતિ હોય તેને જ્યારે કુસંગનો યોગ થાય ત્યારે કાંઈ ઠેકાણું રહે નહીં. માટે જે ભગવાનનો ભક્ત હોય તેને તો ભગવાનને રાજી કર્યા સારુ પંચવિષયનો અતિશય ત્યાગ કર્યો જોઈએ, પણ ભગવાનને વિષે જે પ્રીતિ તેમાં વિઘ્ન કરે એવું કોઈ પદાર્થ વહાલું રાખવું નહીં.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>
+</html>

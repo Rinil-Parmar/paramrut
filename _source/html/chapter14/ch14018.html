@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (18) પેટમાં ઓસડ જાય ત્યારે પેટનો રોગ જાય, તેમ જ્ઞાન થાય ત્યારે જીવમાંથી દોષ જાય ને જ્યાં સુધી સ્ત્રી દેખીને મન તણાય છે, ખાધામાં મન તણાય છે, ત્યાં સુધી પેટમાં રોગ ભર્યા છે. હવે તો ગામ, ગરાસ અને માણસ તેના કજિયા ચાલ્યા છે. મહારાજનું સિદ્ધાંત જે, બ્રહ્મરૂપ કરવા છે ને આપણે આ લોક અને પદાર્થના કજિયા ચાલે છે. ખેતરમાં <a href="#ex1" class="wordMeaning">ઓહલિયાત સલો</a> કરતાં કરતાં <a href="#ex1" class="wordMeaning">દાતરડે આવે</a> છે ને ધણી તો કો’ક છે. બે મેમણ ગામ જવા નીકળ્યા તે રસ્તામાં જારનું ખેતર આવ્યું. ત્યારે કહે જે, ‘કેટલી જાર થાશે ?’ તો એક કહે જે, ‘ચાળીસ કળશી’ ને બીજો કહે, ‘ત્રીસ કળશી’, એમ વાદ કરતાં બાઝ્યા, તે એકને હેઠે નાખી બીજો માથે ચડી બેઠો, ને દાઢી ખેંચી કહ્યું જે, ‘કહે કે, ત્રીસ કળશી થાશે !’ ત્યારે ઓલ્યો કહે જે, ‘દાઢી કૂચે કૂચો થાય, પણ હકડી ફક ન છડું !’ તેમ જીવને પણ એવા કજિયા છે.  <br/><br/>
+ 
+ માટે એવો વિચાર કરવો જે, હું ક્ષેત્રજ્ઞ, દૃષ્ટા, સાક્ષી ને બ્રહ્મરૂપ એવો દાસ છું. અક્ષરધામમાં બે ચરણની ઉપાસના છે ને બીજા ધામમાં ચાર ચરણની ઉપાસના છે. તે શું ? જે, અક્ષરધામ વિના આણી કોરે બીજે બધે ઠેકાણે સ્ત્રીરૂપ માયાનું પાપ છે. માટે એ પાપને ટાળ્યાનો ઉપાય તો નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ ।  ત્રણ દેહથી ને ત્રણ અવસ્થાથી નોખો સત્તારૂપે પોતાના આત્માને અક્ષરરૂપે જાણીને મહારાજને ઉપાસે ત્યારે એ પાપ મૂળમાંથી જાય એવું છે. બીજાએ કલ્યાણ કર્યાં તે તો સાંગે સાંધ્યા જેવું કર્યું છે. <br/><br/>
+ 
+ તાતે ટાઢું  નહીં  મળે  મળશે  તાયે  તા; <br/>
+ 
+ સમજ્યા વિનાનાં સાંગડા દે રાંપીનો ઘા. <br/><br/>
+ 
+ એમ અમાયિક ને માયિકનો સાંધો હોય જ નહીં; તે માટે બ્રહ્મરૂપ થાવું. પ્રથમ મહારાજે ગોપાળાનંદસ્વામીને સત્તારૂપ થાવાનું કહ્યું, ત્યારે કહે જે, ‘નિરાકાર થઈ જવાય તો ?’ પછી મહારાજ કહે, ‘સાકાર ને પ્રત્યક્ષ ભગવાનને ભજો છો અને જેની ઉપાસના કરો છો તે નિરાકાર કેમ થાવા દેશે?’ એમ કહેતાં કહેતાં મહારાજનાં નેત્ર સજળ થઈ ગયાં.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ખેતરમાં ઓહલિયાત સલો= કો’કના ખેતરનો ઊભો પાક જોઈ બીજા જોડે વાદે ચડવું.  <br/>
+2 દાતરડે આવે= મારામારી પર આવી જાય.
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

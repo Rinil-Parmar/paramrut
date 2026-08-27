@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (87) કથાના પ્રસંગમાં સ્વામીએ વાત કરી જે, દૈત્યોએ દેવોને જ્યારે બહુ કષ્ટ દીધું ત્યારે દેવો સર્વે બ્રહ્મા પાસે ગયા; પછી બ્રહ્મા અને સર્વે દેવો ક્ષીરસાગરને વિશે જે નારાયણ છે તે નારાયણ આગળ ગયા, અને કહ્યું જે, ‘દૈત્યો બહુ કષ્ટ દે છે, માટે રક્ષા કરો.’ પછી નારાયણે પોતાના શરીરમાંથી બે કેશ તોડીને આપ્યા; તેમાં એક ધોળો અને એક કાળો હતો, અને કહ્યું જે, ‘આ બે વાળ, જે મારા મુક્ત, તે તમારી રક્ષા કરશે.’ તેમાં ધોળો કેશ તે રોહિણીના ગર્ભને વિશે આવીને બળભદ્રજી થયા ને કાળો કેશ તે દેવકીના ગર્ભને વિશે આવીને કૃષ્ણ થયા અને સર્વે દૈત્યોને મારી દેવોની રક્ષા કરી. તે ઉપર ‘શ્રીમદ્ ભાગવત’ના દ્વિતીય સ્કંધના 7મા અધ્યાયમાં 26મો શ્ર્લોક છે જે, <br/> <br/>
+ 
+ ભૂમેઃ સુરેતરવરૂથવિમર્દિતાયાઃ ક્લેશવ્યયાય કલયા સિતકૃષ્ણકેશઃ । <br/>
+ 
+ જાતઃ કરિષ્યતિ જનાનુપલક્ષ્યમાર્ગઃ કર્માણિ ચાત્મમહિમોપનિબન્ધનાનિ ॥
+ 
+  (શ્રીમદ્ ભાગવત : 2/7/26) <br/>
+ 
+ અર્થ :- જ્યારે પૃથ્વી દૈત્ય સમૂહથી પીડિત થશે ત્યારે અને ભાર ઉતારવા માટે પોતાના શ્ર્વેત (સફેદ) અને કૃષ્ણ (કાળા) વાળ ક્રમથી બલભદ્ર અને કૃષ્ણરૂપથી કલાવતાર લઈને ભગવાન પોતાની મહિમાને પ્રગટ કરવા માટે અનેક કર્મ કરશે, તે સમયે એમનો માર્ગ મનુષ્યોની બુદ્ધિથી બહાર હશે. <br/><br/>
+ 
+ દૈત્યોના ઝૂંડોથી પીડાયેલ પૃથ્વીના ભારના નાશ માટે ભૂમાપુરુષના ધોળા અને કાળા એવા બે કેશરૂપ કલાવતાર બળરામ અને શ્રીકૃષ્ણ બન્ને પોતાના મહિમાથી અલૌકિક ચમત્કારો બતાવશે તો પણ મનુષ્યો તેમને ઓળખી નહિ શકે. આવી રીતે ‘ભાગવત’માં કહ્યું છે. ‘આદિ બ્રહ્મપુરાણ’ના 74મા અધ્યાયમાં પણ તેમ જ કહ્યું છે. <br/><br/>
+ 
+ હવે આપણા સંપ્રદાયનો મુખ્ય ગ્રંથ ‘સત્સંગીજીવન’ છે, તેમાં મહારાજને શ્રીકૃષ્ણ જેવા કહ્યા છે પણ અમને તો મહારાજે પંડે કહ્યું છે અને જાણીએ છીએ જે, મહારાજ તો સર્વોપરી અનંત નારાયણના પણ નારાયણ છે, અને અવતારી, અક્ષરધામના પતિ સ્વયં પુરુષોત્તમ ભગવાન છે, એમ મુખોમુખ પંડે મહારાજે કહ્યું છે, તે હવે બીજી રીતે શ્રીકૃષ્ણ જેવા કેમ કહેવાય ? જેમ શ્રીકૃષ્ણ માહાત્મ્યનું ‘ભાગવત’ શાસ્ત્ર છે તેવું બીજું પ્રમાણ નહિ, પણ તેમાં શ્રીકૃષ્ણનો વૈકુંઠનાથથી વધુ મહિમા નથી કહ્યો. અને જ્યાં જ્યાં દર્શન દીધાં છે ત્યાં ત્યાં ચતુર્ભુજ એટલે વૈકુંઠનાથરૂપે દર્શન દીધાં છે અને ગોલોકધામના પતિ ને રાધિકાને પણ મુખ્ય ભક્ત લખ્યા નથી; તો પણ શ્રીકૃષ્ણ ગોલોકધામના પતિ ને રાધિકા મુખ્ય ભક્ત છે તો આપણે સર્વે ગોલોકધામના પતિ કહીએ છીએ. માટે ‘ભાગવત’માં વૈકુંઠનાથ લખ્યા છે, તે તો તેમાં રહ્યું અને પોતે ગોલોકના પતિ હતા તો તેમ જ પ્રસિદ્ધ થયા છે. તેમ મહારાજ કહે, ‘અમને પણ ‘સત્સંગીજીવન’માં શ્રીકૃષ્ણ જેવા લખે છે તે ગ્રંથમાં જ રહેવાનું છે અને અમે એ સર્વેથી પર જેવા છીએ તેવા સત્સંગમાં પ્રસિદ્ધ થાશું.’ એમ મહારાજે નિત્યાનંદસ્વામીને કહેલ છે તે વાત સૌ જાણે છે. <br/><br/>
+ 
+ આવો મહારાજનો અભિપ્રાય અને રહસ્ય જાણતા નથી ને પ્રથા પ્રથા કૂટે છે. માટે આપણે તો મહારાજ જેવા છે તેવા મહિમાવાળું શાસ્ત્ર જ મુખ્ય રાખવું. તે ‘વેદરસ’ અને જૂના ‘વચનામૃત’માં બહુ પુરુષોત્તમપણું નિરૂપણ કર્યું છે તેથી જ મહારાજના સ્વરૂપની આગળ પુષ્ટિ થાશે. જ્યારે અમે ‘સત્સંગીજીવન’ સાંભળ્યો, ત્યારે અમને વિચાર થયો જે, આ ગ્રંથમાં મહારાજનું સર્વોપરીપણું આવ્યું નહિ. પછી અમે બ્રહ્મચારી અચિંત્યાનદજી પાસે ગ્રંથ કરાવ્યો ને તેમાં મહિમા ચરિત્ર સંપૂર્ણ નંખાવ્યું. એ ગ્રંથ ‘હરિલીલાકલ્પતરુ’ કર્યો ત્યારે અમે ઘણું રાજી થયા છીએ. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

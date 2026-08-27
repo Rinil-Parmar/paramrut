@@ -1,0 +1,36 @@
+[{
+		"Id": "221",
+		"VachanName": "Amadavad 1",
+		"Tithi": "Samvat 1882- Maha Vad 11",
+		"Panchang": "4/3/1826",
+		"Day": "Saturday ",
+		"SqlMonth": "3",
+		"SqlDate": "4",
+		"File": "A-1.html",
+		"NameGuj": "ચમત્કારી ધ્યાનનું",
+		"VachanNo": "1"
+	},
+	{
+		"Id": "222",
+		"VachanName": "Amadavad 2",
+		"Tithi": "Samvat 1882- Fagan Sud 11",
+		"Panchang": "20/3/1826",
+		"Day": "Monday",
+		"SqlMonth": "3",
+		"SqlDate": "20",
+		"File": "A-2.html",
+		"NameGuj": "નાહી-ધોઈ પૂજા કર્યાનું",
+		"VachanNo": "2"
+	},
+	{
+		"Id": "223",
+		"VachanName": "Amadavad 3",
+		"Tithi": "Samvat 1882- Fagan Vad 2",
+		"Panchang": "25/3/1826",
+		"Day": "Saturday ",
+		"SqlMonth": "3",
+		"SqlDate": "25",
+		"File": "A-3.html",
+		"NameGuj": "વડવાઈનું-ઉપશમનું",
+		"VachanNo": "3"
+	}]

@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (47) સર્વેની ઉગમણી કોરે નજર છે ને સર વળી ગઈ છે તે જાણનારા જાણે છે. સત્સંગીનો દીકરો હોય પણ સાધુ મળ્યા વિના સત્સંગી ન થાય, પ્રભુ ભજ્યાની વાત ક્યાંઈ ન થાય ને દેહે કરીને પ્રભુ ન ભજાણા ત્યારે શું કમાણા? માટે તપાસ કરવો જે, બળદિયો હોય તે ખેડ્યામાં કામ ન આવે ને ઘોડું ચડવામાં કામ ન આવે ને દ્રવ્ય વાપરવાના કામમાં ન આવે, શું ફળ થયું ? તેમ દેહે કરીને ભગવાન ન ભજાણા ત્યારે દેહ કાંઈ કામમાં ન આવ્યું. વિમુખને તો સત્સંગ સાથે વેર છે. તે પૂંજા ભક્તને ગામમાંથી કાઢ્યા ને કુંકાવાવમાં રહેવા ન દીધા તે રામોદમાં જઈને રહ્યા ને ઘણાને સત્સંગ કરાવ્યો. પરમેશ્ર્વર ભજવા તે કોઈને ગમે નહિ ને ઈન્દ્રિયુંને પણ ન ગમે ને આ તો સાધુ લોંઠાયે કરાવે છે. મરને સત્સંગમાં જન્મ હોય ને દાદાખાચરને ઘેર જન્મ હોય તોય ઘેટાં વઢાડીને આવરદા પૂરી કરે ને ખાધાનો કે બોલવાનો સત્સંગ તો રહે જ નહિ ને ભિક્ષુકનો સત્સંગ રહેવો પણ કઠણ. તે ઉપર વાત કરી જે, અમરેલીનો લાધો શુક્લ, દેવ કરશન, બેચર ને ભાણજી તેનો કોઈનો સત્સંગ ન રહ્યો. એક જણ કહે, અમે દેવની માળા ફેરવીએ છીએ. ને બારપટોળીમાં કાળા વાવડિયાને ઘેર એક શુક્લ આવ્યો, તે એની સ્ત્રીને કહે, ‘તમારે દશમો ગ્રહ બેઠો છે.’ એવું કહ્યું તે મૂળગો રોટલો ગયો. માટે જોશી થઈને, વૈદ થઈને સત્સંગને ધૂતે છે તે વૈદને તો જમ કહ્યા છે. માટે પ્રભુ ભજવામાં વિઘ્ન તમને ઓળખાવ્યાં ને ગૃહસ્થને લોભે કરીને શિક્ષાપત્રી નહિ પળે ને સાધુને દેહાભિમાને કરીને નહિ પળે; માટે એ પણ વિચારવું. પુસ્તક ને પ્રતિમાઓ તો હતી પણ આ સાધુ ને નિયમ મહારાજ અક્ષરધામમાંથી લાવ્યા છે. પણ સત્સંગ ઉપર એવું વેર છે જે, સત્સંગ કરે ને ત્રીશ ગાઉ ઉપર સગાં હોય તેને વસમું લાગે.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (275) જ્ઞાન કરી કરીને જીભ ઘસાઈ ગઈ પણ દેહ ને જીવ ભેળા થઈ જાય છે ને ઉત્તમ ભોગમાંથી રાગ મટતો નથી તેમ સાધુ ઓળખાતા નથી ને પુરુષોત્તમ જેવા છે તેવા જણાતા નથી. માટે કાર્યાકાર્ય ભયાભય બંધમોક્ષ । (પ્રવૃત્તિ-નિવૃત્તિ, ભય-અભય, બંધન-મોક્ષ) એ બધું જાણ્યું જોઈએ ને જે અનિત્ય માનીને બેઠાં છીએ ને વાછડાં, વછેરાં ને નાનાં છોકરાં તે કહોવાઈ ગયેલાં હોય તો કોઈ બોલાવે નહિ ને જે જે પદાર્થના મોહ લાગે છે તેના વેગ લાગી જાય છે. તે સાઠ સાઠ રૂપિયાના કૂતરાં લીધાં, માટે એવાં અજ્ઞાન છે તેનો પાર જ ન આવે. માટે એક નિત્યને જાણવું ને એક અનિત્યને જાણવું એવા બે વિભાગ કરવા; પછી અનિત્યનો ત્યાગ કરવો ને નિત્યનું ગ્રહણ કરવું. જ્ઞાનીને સુખ છે તે મેડી વતે કે પદાર્થ વતે નથી. તેને તો જ્ઞાન વતે સુખ છે. <br/><br/>
+ 
+ એક દૃષ્ટિએ જુઓ તો જગત બધું ચિચોડામાં શેરડીની પેઠે પીલાય છે ને દેહ તો કોઈનો રહેવાનો નથી. સ્થાવર, જંગમ, પશુ, મનુષ્ય, દેવતા કોઈનો રહેવાનો નથી. માટે આપણે જે આ ભગવાન ભજવાનો આદર કર્યો છે તે વાત અવિનાશી છે ને બીજાં વિવાહ, કાયટાં જે જે કાર્ય છે તે નાશવંત છે. તે નાશવંતમાં જીવમાત્ર બંધાઈ ગયા છે, ને ભજન પણ પંચવિષયનું જ થાય છે તે ખોટું છે. એમ તો પ્રકૃતિપુરુષના લોક સુધી કોઈ કહેનાર નથી તે તો સાચું માનીને બેઠા છે. પોતાના ઘરમાં રહીને ઉદ્યમ કરવો તે ઉત્તમ છે ને બહાર નીકળીને કરવો તે મધ્યમ, દરિયો ઊતરવો તે કનિષ્ઠ છે. તે ઉપર ઘોઘલાના વાણિયાની વાત કરી જે, નવાં ઘર કરી સાંકળું દઈને વયા જાય. પછી ઝાઝા વરસે આવે ત્યાં જૂનાં થઈ જાય તે સમાં કરીને મહિનો માંડ રહે ને બીજી વાર તો આવે કે ન આવે. ‘જેણે રે ગોંવિદરામ તમને વિસાર્યાં.’ એ બોલ્યા. પરબારા પત્તર ધોનારા, પથારી કરનારા, તાંસળી ધોનારા ને ભાઈ તો લાંબા થઈને સૂવે. ચમરીથી બળદના પૂંછડાં ઝાટકે તેમ કરે ને ભગવાન નથી સંભારતા. જીવને વેગ લાગે છે તે એક રાજાને ગઢ કરાવ્યાનો વેગ લાગ્યો તે ગઢ જ કરાવ્યા પણ મંદિર ન કરાવ્યાં. ગોંડળનો જોધો લુહાર તે ગરીબ ને પોતે એકલે દાખડે કરીને હરિમંદિર કર્યું. જીવ છે તે ઘરમાં જ રહીને મરી જાય છે. કોઈ દિવસ ભજન નહિ, સ્મરણ નહિ ને ઘરમાં બેઠો છે ને ગંદવાડમાં આનંદ માન્યો છે. દેહ પણ અન્નના વિકારનો થયો છે તે પણ ગંધાય છે. આટલી સભા અમે કરીએ છીએ પણ તે અહીં હજારો ક્રિયાઓ આવે છે તેને ઠેલીને આ કરીએ છીએ. તે ઉપર ઉત્તર ગુલાબગરની વાત કરી. તે કોઈક મુમુક્ષુ હોય તે ભજન કરે એવા પણ હોય ને કોઈક ગુલાબગર જેવો મોટેરો હોય તો ધોલ મારે ને ઉઠાડે ને કહે જે ઊઠો.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

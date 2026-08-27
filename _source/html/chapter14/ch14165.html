@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (165) ઘરમાં લાખ રૂપિયા હોય તો ય એક રોટલો જ ખાવો છે; માટે જે જોગ કોઈને મળ્યો નથી, તે જોગ આપણને આજ મળ્યો છે. બીજા જોગ તો મળશે ને ભગવાનના ભક્ત થાવાશે ને ભાગવતી તનુ મળશે ને ભગવાનનું ધામ પણ મળશે; તો પણ આવો જોગ મળવો દુર્લભ છે, તે રહી જાશે; કેમ કે, આજ મહારાજની શુદ્ધ ઉપાસનાના દૃઢાવ આંહીં થાય છે, તેવા ક્યાંય બીજે થાતા નથી. આ દર્શન કોઈને ઘડી, કોઈને બે ઘડી, કોઈને આખો દિવસ, કોઈને પાંચ દિવસ ને કોઈને મહિનો થાશે, તેણે કરીને દોષમાત્ર ટળી જાશે ! જીવને દોષ ટાળ્યાનું, વાસના ટાળ્યાનું ને શુદ્ધ થાવાનું એ જ કારણ છે, માટે મહિમા સમજીને દર્શન કરવાં. હમણાં નહિ સમજીએ તો આગળ સમજવું પડશે ને અમારે તો એટલો જ ખરખરો છે જે, મહારાજ પુરુષોત્તમ આવ્યા ને આવા સંત ભેળા બેઠા ને અજ્ઞાન રહી ગયું ! તે ‘વુઠે મેહે કાળ’ પડ્યા જેવું છે. ઉપાસનામાં બધું એક કહે છે, તેને બહુ ઠપકો લખે છે. આ વાત જીવમાં પેસવી તે બહુ કઠણ છે. કથાવાર્તામાં જીવને મૂંઝવણ થાય છે, તે તેનો મહિમા જાણ્યો નથી ને મહિમા જાણ્યો હોય તો ભગવાનના ગુણ સાંભળતાં તૃપ્તિ થાય જ નહીં. એક મહારાજનાં ચિહ્ન, ચરિત્ર ને ચેષ્ટા ને જન્મ, કર્મ તે મહિમા સમજીને કહ્યાં જ કરવાં ને સાંભળ્યા જ કરવાં.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (95) એક ખૂંટિયે બહુ ખાધું, તે પાડા સાથે ત્રણ મહિના સુધી લડ્યો ને એક પાડાને મારી નાખ્યો, માટે આપણે પૂર્વના હોય તેનું <a href="#ex1" class="wordMeaning">ખત કાઢવું</a> ને વિચારવું જે, ઇન્દ્રિયુંનું પોષણ કરવું તે <a href="#ex1" class="wordMeaning">ખૂંટિયા</a>ને તેલ પાયા જેવું છે ને આપણો જીવ જવાની વાત છે. તે શું ? જે, એ આપણા પડખામાં શિંગડાં ભરાવે એવા છે. કૃપાનંદસ્વામી કહેતા જે, ‘એકબીજાને મારી નાખે એવા ખારીલા પાંચ <a href="#ex1" class="wordMeaning">પાડા</a>ને એક ઘરમાં પૂરીને વચ્ચે પથારી કરી સૂતો, તે કાંઈ ક્ષેમકુશળ રહેવાનો છે ?’ તેમ જે પંચવિષયનો જોગ રાખશે તેનું ઠેકાણું નહિ રહે. આગળ મોટા મોટાને ઘેર <a href="#ex1" class="wordMeaning">કાણ્યું બેઠી છે</a> ને હમણાં પણ કેટલાકને ઘેર બેસે છે. માટે એ મારગે ચાલશે તેને ઘેર થોરનાં ડીંડલાં પડશે. જે <a href="#ex1" class="wordMeaning">વહાણ કવામાં</a> ચાલ્યું તે જરૂર બૂડે; તેમ જો ઇન્દ્રિયુંમાં કવા વાયો તો ધર્મ, નિયમ સર્વે જાતાં રહેશે; જે તેમાં હેત કરે તેનું જ માથું કાપી નાખે.
+ <br/> <br/>
+ ચંદ્ર  ઠગે અરૂ ઇન્દ્ર  ઠગે, વિધિ ઈશ ઠગે  જેહિ  જક્ત પસારો;<br/>
+ 
+ જોગી ઠગે અરૂ ભોગી ઠગે, બનવાસી સંન્યાસિન કો એક ધારો.<br/>
+ 
+ ભેખ રૂ શેખત  પેશ  ઠગે, સબ  પંડિત  જાન  પ્રવિન  સુચારો;<br/>
+ 
+ બ્રહ્મમુનિ કહે હાથ ન આવત, યા મનસો  કોઉ નાહિ  ઠગારો.<br/>
+ 
+ (બ્રહ્માનંદ કાવ્ય : માનકો અંગ)<br/>
+ <br/>
+ માટે મન તથા ઇન્દ્રિયું-અંત:કરણનો વિશ્ર્વાસ કરવો નહિ, પણ સમાગમ વિના એ વાત સૂઝે નહિ. 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ખત કાઢવું= નોંધ તૈયાર કરવી, યાદી બનાવવી.  <br/>
+2 ખૂંટિયો= સાંઢ. <br/>
+3 પાડો= ભેંસનું નર બચ્ચું કે તેનો નર.  <br/>
+4 કાણ્યું બેઠી છે= મરણપાછળ રોવું/કુટવું પડે, તેમ પંચવિષયનો જોગ રાખે તો ભલભલાને ધ્યેય ચૂકી જવાય ને પસ્તાવાનો વારો આવે.  <br/>
+5 વહાણ કવામાં= વહાણ પ્રતિકૂળ પવનમાં.
+ 
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

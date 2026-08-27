@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (369) મહારાજે તેરેથી કાગળ લખ્યો જે કોઈ બાઈ માણસને ભારી ન ચડાવવી. પછી તેની વાત કરી જે, સલડી ગામમાં હરિજનનું એક જ ઘર હતું. બાકી બધા વૈષ્ણવ હતા. તે આ હરિજન તો બીજાને નિયમ, ધર્મ ને વર્તમાન પાળ્યાની વાતું કરે તે ઓલ્યા મતપંથી કોઈને ગમે નહિ પછી પરિયાણ્યા જે, હરિજનને માથે અપવાદ નાખીએ તો પછી કોઈ દિવસ આપણી વાતું ન કરે. એવું ધારી કો’ક વંઠેલબાઈને સો કોરી આપવી ઠરાવીને અપવાદ નાખવાનું ઠરાવ્યું. તે બાઈ હરિજનના ખેતરમાં ખડ લેવા ગઈ, તે ભારી બાંધીને તૈયાર થઈ ત્યારે હરિજનને કહ્યું જે ભાઈ મને ભારી ચડાવો ત્યારે તે હરિજને ભારો ચડાવ્યો તે ભારો નાખી દઈને રાડ પાડી જે મારી લાજ લીધી ને મને બાઝ્યો. એમ કહેતાં કહેતાં ગામમાં ગઈ ને હરિજનને હો, હો! કર્યો. પછી તે હરિજન તેલનો ઘડો, કડાયું, રાશ ને છાણાની ગાંસડી માથે ઉપાડી ગામના ચોકમાં ગયો. ત્યાં દેવતા સળગાવી તેલ ધગાવ્યું ને કહે, ‘તે બાઈને તેડાવો ને તેનો ને મારો હાથ બાંધીને આમાં નાખો એટલે સાચું કળાશે’ પછી તે બાઈને બોલાવીને કહ્યું જે, આમાં હાથ નાખ. ત્યારે કહે જે, હું તો હાથ નહિ બોળું મને તો વૈષ્ણવે સો કોરી આપવી ઠરાવી હતી તેથી ખોટું આળ નાખ્યું છે પણ તે એવો નથી. એમ ચોકમાં બોલી એટલે તેના માથેથી આળ ઊતર્યું. એમ બાઈને ભારો ચડાવવામાંથી એટલું થયું. માટે કોઈને ભારો પણ ન ચડાવવો ને મહારાજ પૂછતા જે, ક્યાં ઉતર્યા છો ? ને લઘુશંકા ક્યાં કરો છો? ને ઝાડે ક્યાં જાવ છો ? ને સસલા જેવું કે ભેંશના જેવું ? એ બધું પૂછતા. માટે શિક્ષાપત્રી પ્રમાણે વર્તવું ને કુંજવિહારીદાસે પ્રાગજી ભગતને ઝેર આપ્યું. તેમાં શી વાત કરી જે, કોઈ વાતે ગાફલાઈ રાખવી નહિ ને શામ, દામ, દંડ ને ભેદ કરશો તો ઉગરશો.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

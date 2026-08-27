@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1918ના ભાદરવા વદિ દશમીને દિવસે સ્વામીએ સવારે વાત કરી જે,
+ <br/>
+ (299) મહેમાન હોય તે કોઈને ઘેર ઊતરે તેમ તથા દીકરી હોય તે માવતરને ઘેર હોય પણ તેને ઘર બીજું મનાણું છે તેમ આપણે આ ઘર ન માનવું; પણ દેવની માયાનો મોહ છે. રૂપિયાનાં તો કાંઈ બટકાં ભરાતાં નથી, પણ મોહ ટળતો નથી. જેને સંસ્કાર હોય તેને આ વાત તુરત બેસી જાય છે. પણ ‘હું ને મારું, તથા દેહ ને કુટુંબ’ એ અજ્ઞાને કરીને લીલની પેઠે છવરાઈ ગયું છે; તે દડાની પેઠે ધકા ખાય છે. દેવની માયા તો જુઓ ! બાયડી ભેળો એક જ દિવસ રહે ત્યાં જીવ બંધાઈ જાય ને આટલાં આટલાં વરસ મહારાજ ભેળા રહ્યા પણ એનો જીવ ન બંધાણો. બાયડીને કહ્યે માને કાઢી મૂકી. તે ગમે એટલાં શાસ્ત્ર વાંચે પણ દેવની માયાનો મોહ છે, તે એમાં જ જીવ જાય છે, ને ભગવાન કોર વળતો નથી તે શા સારુ ? જે, કોઈ દિવસ સમાગમ કર્યો નથી. નાનો હોય ત્યારે ભાગી ભાગીને આંહીં આવે ને મોટો થાય ત્યારે તેડાવીએ તો પણ ન આવે; કેમ કે, લોકમાં, ભોગમાં ને દેહાભિમાનમાં ઘાયલ થઈ ગયો છે.
+ <br/><br/>
+ યસ્યાત્મબુદ્ધિઃ કુણપે ત્રિધાતુકે  સ્વધીઃ કલત્રાદિષુ ભૌમ ઇજ્યધીઃ । <br/>
+યત્તીર્થબુદ્ધિઃ સલિલે ન કર્હિચિજ્  જનેષ્વભિજ્ઞેષુ સ એવ ગોખરઃ ॥
+
+ <br/>
+
+ (શ્રીમદ્ભાગવત : 10/84/13)
+ <br/>
+ અર્થ :- જે પુરુષને વાત, પિત્ત અને કફ આ ત્રણ ધાતુઓથી બનેલ આ શબ તુલ્ય શરીરમાં જ આત્મબુદ્ધિ છે, જે સ્ત્રી વગેરેને પોતાના માન્યા હોય છે, જેની કેવળ પાર્થિવ પ્રતિમાઓમાં જ દેવબુદ્ધિ અને કેવળ જળમાં જ તીર્થબુદ્ધિ છે તથા જે જ્ઞાની મહાત્માઓમાં ક્યારે પણ પૂજ્યબુદ્ધિ નથી રાખતા તે ગધેડા સમાન જ છે.
+ <br/><br/>
+ વાત, પિત્ત ને કફનો જે દેહ તેને વિશે આત્મપણાની બુદ્ધિ છે, દેહ ને દેહના સંબંધીને વિશે આત્માપણાની બુદ્ધિ છે, પ્રતિમાને વિશે પૂજ્યબુદ્ધિ છે ને જળને વિશે તીર્થની બુદ્ધિ છે પણ જો ભગવાનના સિદ્ધાંતના જાણનારા જે એકાંતિક સંત તેને વિશે આત્મબુદ્ધિ નથી, તો તે ગધેડો ને બળદિયો છે.
+ <br/><br/>
+અનન્તં બત મે વિત્તં યસ્ય મે નાસ્તિ કિંચન । <br/>
+મિથિલાયાં પ્રદીપ્તાયાં ન મે દહ્યતિ કિંચન ।।
+
+ <br/>
+ (શ્રીમદ્ભાગવત : જનક રાજા)
+ <br/>
+ અર્થ :- હે અનન્ત, મારી પાસે કંઈ પણ ધન નથી, તેથી મિથિલા પ્રદીપ્ત થવાથી મારું કંઈ પણ દઝાતું નથી.
+ <br/><br/>
+ જનકે કહ્યું જે, ‘મિથિલાનગરી બળે છે, પણ તેમાં મારું કાંઈ બળતું નથી.’
+ <br/><br/>
+ત્યજ ધર્મમધર્મં ચ ઉભે સત્યાનૃતે ત્યજ । <br/>
+ઉભે સત્યાનૃતે ત્યક્ત્વા યેન ત્યજસિ તત્ત્યજ  ।।
+
+ <br/>
+ (સુભાષિત)
+ <br/>
+ અર્થ :- ધર્મ અને અધર્મનો ત્યાગ કર. તેમ જ સત્ય અને અનૃતનો ત્યાગ કર. સત્ય ને અનૃતનો ત્યાગ કર્યા પછી જે કંઈ છોડી શકાય તે છોડ. 
+ <br/><br/>
+ એમ જ્ઞાની હોય તે તો જાણે જે જાણતા નથી એનું તો કાંઈ નહિ, પણ ભણનારા પણ ભરવાડણની પેઠે સમ ખાતા જાય છે ને પડિયા ચાટતા જાય છે.
+ <br/><br/>
+ ભરવાડણ દૂધ વેચવા જતી હતી તેની સાથે પાડોશીએ તમાકુ કેળવવા ગોળ મંગાવ્યો હતો. તે દૂધ વેચીને પાછી વળી ત્યારે ગોળ લીધો, ને રસ્તે ચાલી ત્યારે મનમાં થયું જે ગોળ કેવોક છે ? પછી તો આંગળી ભરીને ચાખ્યો, ત્યાં તો ગળ્યો લાગ્યો. પછી બીજી આંગળી ભરી, ત્રીજી આંગળી ભરી ને ચાટવા માંડયું. પછી કહે, ‘હવે ખાઉં તો હરસત માતાના સમ.’ જરા આઘે ગઈ ત્યાં જીભ ચળવળી એટલે આંગળી ભરી મોંમાં મૂક્યો. પછી કહે, ‘પારકો છે, તેને શું જવાબ દેશું ? માટે હવે ખાઉં તો ખોડિયાર માતાના સમ.’ એમ ઘેર ગઈ ત્યાં સુધી જુદા જુદા સમ ખાતી ગઈ ને ગોળ ચાટતી ગઈ તેમ ભણી જાય છે, પણ વરતાતું નથી; કેમ કે, માંહી અંકુર રહ્યા છે; તેથી મોઢેથી નિષેધ કરતા જાય છે ને ભરવાડણની પેઠે પડિયા ચાટતા જાય છે. પ્રહ્‌લાદ ને ઋષભદેવનું સિદ્ધાંત બીજું છે ને ભણેલાનું સિદ્ધાંત દ્રવ્ય ઉપર છે.
+ <br/><br/>
+ તુલસી સો હિ  ચતુરતા, રામચરણ લૌલીન;
+ <br/>
+ પરધન પરમન હરનકું, વેશ્યા બડી  પ્રવીન.
+ <br/>
+ (તુલસીદાસની સાખીઓ : 65)
+ <br/>
+ અર્થ : ભગવાન રામચંદ્રના ચરણમાં એકાગ્ર થઈ જવું તે જ ખરી ચતુરાઈ છે. બાકી પારકાનું ધન હરી લેવામાં અને પારકાના મનને જીતી લેવામાં તો વેશા પણ બહુ કુશળ હોય છે.
+ <br/><br/>
+ માટે ધન કમાવામાં અને બીજાના ચિત્તનું આકર્ષણ કરવામાં કશી જ ચતુરાઈ નથી, પણ સાચી ચતુરાઈ પ્રભુભક્તિમાં તલ્લીન થાવામાં જ છે. બીજે બધે ડાહ્યા, પણ ત્યાં લૂગડાં ઉતારી લે. માટે રોટલા મળ્યા કે, કટ લઈને પ્રભુ ભજવા મંડી પડવું. પૃથ્વી ઠરી પણ હૈયું ઠર્યું નહિ. ટાંકાં ભરાણાં, તળાવ ભરાણાં; પણ તૃષ્ણારૂપી ટાંકું ભરાણું નહિ. 
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

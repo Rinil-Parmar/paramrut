@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૫ - પતિવ્રતા અને શૂરવીરપણાનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૭૮ના શ્રાવણ સુદિ ૭ સાતમને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિર આગળ ઓટા ઉપર ચાકળો નંખાવીને વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી અને મુનિ તાલ-મૃદંગ લઈને ગાવતા હતા.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજે નેત્રકમળની સાને કરીને તે કીર્તન બંધ રખાવીને બોલ્યા જે, “સર્વે સાંભળો, એક વાત કરીએ છીએ જે, જે ભગવાનના ભક્ત હોય તેને એક પતિવ્રતાનો ધર્મ રાખવો અને બીજું શૂરવીરપણું રાખવું. જેમ પતિવ્રતા સ્ત્રી હોય તેને પોતાનો પતિ વૃદ્ધ હોય તથા રોગી હોય તથા નિર્ધન હોય તથા કુરૂપ હોય, પણ પતિવ્રતા સ્ત્રીનું મન કોઈ બીજા પુરુષના રૂડા ગુણ દેખીને ડોલે જ નહીં. અને જો રાંકની સ્ત્રી હોય ને તે જો પતિવ્રતા હોય તો મોટો રાજા હોય તો પણ તેને દેખીને તે પતિવ્રતાનું મન ચળે જ નહીં. એવી રીતે ભગવાનના ભક્તને પતિવ્રતાનો ધર્મ ભગવાનને વિષે રાખવો. અને પોતાના પતિનું કોઈ ઘસાતું બોલે તે ઠેકાણે કાયર થઈને ગળી જવું નહીં, અતિશય શૂરવીર થઈને જવાબ દેવો પણ પાજીપળાવની છાયામાં ભગવાનના ભક્તને દબાવું નહીં; એવી રીતે શૂરવીરપણું રાખવું. અને લોકમાં એમ કહે છે જે, ‘સાધુને તો સમદ્રષ્ટિ જોઈએ,’ પણ એ શાસ્ત્રનો મત નથી; કેમ જે, નારદ, સનકાદિક ને ધ્રુવ, પ્રહ્‌લાદાદિક તેમણે ભગવાનનો ને ભગવાનના ભક્તનો જ પક્ષ રાખ્યો છે પણ વિમુખનો પક્ષ કોઈએ રાખ્યો નથી. અને જે વિમુખનો પક્ષ રાખતો હશે, તે આ જન્મે અથવા બીજે જન્મે જાતો જરૂર વિમુખ થશે. માટે જે ભગવાનના ભક્ત હોય તેને જરૂર ભગવદીયનો પક્ષ રાખ્યો જોઈએ અને વિમુખનો પક્ષ ત્યાગ્યો જોઈએ. આ અમારી વાર્તાને સર્વે અતિ દ્રઢ કરીને રાખજ્યો.”
+</p> 
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

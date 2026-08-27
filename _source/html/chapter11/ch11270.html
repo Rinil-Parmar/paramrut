@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1919ના જેઠ વદિ નવમીને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (270) ધીણોજા બ્રાહ્મણ ટેલ નાખવા નીકળ્યા, તે ડોળીમાં એકને બેસાડી બે જણ ઉપાડે. પછી માંહે બેઠો હોય તે બોલે જે, ‘ઝવેરચંદની ડોશી છું, ભાઈ ઝવેરચંદની ડોશી છું.’ ત્યારે ઉપાડનારા કહે, ‘હોય, ભાઈ, હોય !’ એમ વરસ દિવસ સુધી ટેલ નાખી. કેટલેક દિવસ પછી ઝવેરચંદ શેઠની માએ પજુસણમાં લૂમઝૂમ ઘરેણાં પહેરેલાં; તે જોઈને તેને ઉપાડી ને ડોળીમાં નાખી ઉપાડી ચાલ્યા. પછી ડોશી કહે, ‘ઝવેરચંદની ડોશી છું.’ ત્યારે ઉપાડનારા કહે, ‘હોય, ભાઈ, હોય.’ એમ કહેતા ગયા ને ગામ બહાર લઈ ગયા. પછી ઘરેણું ઉતારી લઈ ડોશીને કાઢી મૂકી ને પોતે ભાગી ગયા.  <br/> <br/>
+ 
+ વળી બીજે ગામ એક શેઠને ત્યાં મણ એક સોનાની મૂર્તિ હતી. પછી ધીણોજાએ તે લઈ જાવાનો વિચાર કરી, ત્યાં દર્શને જાવા માંડ્યું. વળી પુષ્પ લઈ જાવા મંડ્યા અને મૂર્તિ આગળ નાચ કરી ગાય ને બહુ પ્રેમ જણાવે ને મૂર્તિ આગળ બેસી માળા ફેરવે. ત્યારે શેઠે તેને પૂજારી તરીકે રાખ્યો ને બધી સેવા સોંપી દીધી. પછી એક વખત શેઠનો છોકરો પરણવા ગયો, ત્યારે તેને પૂજા સોંપી બધા જાનમાં ગયા. તે ધીણોજા કહે, ‘એકલો નહિ રહી શકું.‘ એટલે શેઠ કહે, ‘અમારે તમારો વિશ્ર્વાસ છે. પછી કહે, ‘કાંઈ જાય આવે તો ?’ શેઠ કહે, ‘કંઈ ફિકર નહિ.’ પછી તેના બીજા ત્રણ જણ મળી તે મૂર્તિ લઈ ગયા ને બીજી સવારે બૂમો પાડીને રોવા લાગ્યો ને ખાધું નહિ ને પછડાઈ પછડાઈને લોહી કાઢયાં. <br/> <br/>
+ 
+ એક માણસ શેઠને ખબર કરવા ગયું કે, ‘ખાતર પડ્યું ને મૂર્તિ લઈ ગયા. ને ઓલ્યો પૂજારી બ્રાહ્મણ પછડાઈ મરે છે ને કહે છે જે, અમારા ઠાકોરજી ગયા માટે હવે અમારે જીવીને શું કરવું છે ?’ પછી શેઠે આવીને કહ્યું જે, ‘તેમાં તમે શું કરો? તમારો વાંક નથી,’ એમ કહી ખવડાવ્યું. પછી કહે, ‘અમે નહિ રહીએ. ગામમાં શું મોઢું દેખાડીએ ?’ પછી ખરચીના રૂપિયા પાંચસેં આપી તેને રજા આપી. ત્યારે ધીણોજો બોલ્યો જે, ‘અમારા પૂર્વનાં પાપ નડ્યાં જે, અમારા નસીબમાંથી ઠાકોરજીની સેવા ગઈ !’ <br/> <br/>
+ 
+ એ વાત કરીને કહ્યું જે, ‘જેને ભગવાનની મૂર્તિ રાખવી હોય તેણે એના જેટલો દાખડો કરવો જોઈએ ત્યારે રહે.’ તે ધીણોજાને કેટલો દાખડો કરવો પડ્યો? માટે એવા દંભીને ઓળખવા. તે આંહીં એક ધીણોજો આવ્યો હતો, તે ઠાકોરજી આગળ નાચ કરવા લાગ્યો ને કીર્તન ગાય ને પાછા પગે ચાલે ને પાછો આવે એમ પ્રેમ જણાવવા લાગ્યો. તે અમે દર્શને ગયા ત્યારે તેને દેખ્યો. પછી કહ્યું જે, ‘આ ઠગારો છે, કાઢી મૂકો.’ એમ કેટલાક ઠગવા આવે છે, તેથી છેતરાવું નહિ.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

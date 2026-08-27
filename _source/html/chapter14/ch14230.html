@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (230) સર્વ શાસ્ત્રનું સિદ્ધાંત આત્મા અને પરમાત્મા એ બે જ છે ને તે માટે બ્રહ્મરૂપ થાવાનો અને મહારાજની ઉપાસનાનો વેગ લગાડી દેવો. વરતાલ જાતાં રસ્તામાં ભીમભાઈએ મોટીબાને પૂછ્યું જે, ‘ભગવાનમાં તમારે છે એવું હેત અમારે કેમ થાય ?’ ત્યારે મોટીબા કહે, ‘તમે પુરુષના દેહનો ત્યાગ કરીને સ્ત્રીનો દેહ ધરો ત્યારે એવું હેત થાય !’ પછી મહારાજે કહ્યું જે, ‘આત્મા છે તે સ્ત્રીયે નથી અને પુરુષેય નથી. માટે પોતાને બ્રહ્મરૂપ કહેતાં અક્ષરરૂપ માનીને ભગવાનમાં હેત કરવું. અક્ષરધામમાં સ્ત્રી કે પુરુષનાં ચિહ્ને રહિત બ્રહ્મતનુ છે.’ <br/><br/>
+ 
+ 
+ 
+ પુંસ: સ્ત્રિયા મિથુનીભાવમેતં તયોર્મિથો હ્રદયગ્રંથિમાહુ: । <br/>
+ 
+ અતો ગૃહક્ષેત્રસુતાત્પવિત્તૈર્જનસ્ય મોહોડયમહં મમેતિ ।।
+ 
+ <br/>
+ 
+ (શ્રીમદ્ ભાગવત : 5/5/8)
+ 
+ <br/>
+ 
+ અર્થ :- સ્ત્રી અને પુરુષ બંનેનો જે પરસ્પર દામ્પત્ય ભાવ છે, તે જ તેમના હૃદયની દુર્ભેદ્ય ગ્રંથિ છે. આ કારણથી પુરુષને ગૃહ, ક્ષેત્ર, પુત્ર, સ્વજન અને ધન વગેરેમાં ‘આ હું છું, મારું છે.’ એવો મોહ થઈ જાય છે.
+ 
+ <br/><br/>
+ 
+ માટે મૂળ જ્ઞાન જે બ્રહ્મવિદ્યા તેને શીખે ત્યારે જ સ્ત્રી કે પુરુષ એવો ભાવ ટળે છે. અને એમ થયા વિના કોઈએ અક્ષરધામમાં જવાની લાલચ રાખવી નહિ. તે માટે જ મહારાજે નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ । એ શ્ર્લોક લખ્યો છે. વેદવેદાંતમાં નિરાકાર બ્રહ્મના જ ગુણ ગાયા છે ને જીવરૂપે જ બ્રહ્મ થયું છે એવું પરોક્ષ જ્ઞાન કથ્યું છે. પણ ખીજડાને આંબો માને તો પણ તેમાં કેરીઓ ન થાય, તેમ સાચા બ્રહ્મરૂપ ગુરુ વિના જીવને ખરું જ્ઞાન થાય નહિ. વળી કાશીએ આંબો વાવે અને આંહીં પાણી રેડવાથી તે આંબો ઉછરે નહિ, તેમ પરોક્ષ નિરાકારથી કાંઈ ફળ મળતું નથી.
+ 
+ <br/><br/>
+ 
+ મહારાજે <a href="GM-30.html">મધ્યનાં 30માં</a> વચનામૃતમાં કહ્યું છે જે, જ્યારે પ્રકૃતિપુરુષ થકી પર એવું જે શુદ્ધ ચૈતન્યબ્રહ્મ તેને જ એક સત્ય જાણે ને તે બ્રહ્મને જ પોતાનું સ્વરૂપ માને ને તે બ્રહ્મરૂપ થઈને પરબ્રહ્મની ઉપાસના કરે અને બ્રહ્મ થકી ઓરું જે પ્રકૃતિ ને પ્રકૃતિનું કાર્યમાત્ર તેને અસત્ય જાણે ને નાશવંત જાણે ને તુચ્છ સમજે ને માયિક જે નામરૂપ તેને વિશે અતિશય દોષદૃષ્ટિ રાખે ને તે સર્વ નામરૂપને વિશે અતિશય વૈરાગ્ય પામે, તેને સોનું ને સ્ત્રી બંધન ન કરે અને બીજાને તો જરૂર બંધન કરે. તે ગૃહસ્થે પણ સમજી રાખવું જે,
+ 
+ <br/><br/>
+ 
+ પારકી પોતાની જે નાર, કાપે તન જેમ તલવાર.
+ 
+ <br/><br/>
+ 
+ માટે જ્યાં સુધી રૂપ કે દ્રવ્યમાં અવ્યક્ત રાગ હશે ત્યાં સુધી બ્રહ્મરૂપ થાવાતું નથી ને બ્રહ્મરૂપ થાવા માટે પણ પ્રગટ પરબ્રહ્મ મહારાજનો કે આ અક્ષરબ્રહ્મનો કે તેને સેવીને તે રૂપ થયા હોય એવા પ્રગટ મુક્તાત્માનો યોગ જોઈએ. પછી તેમના પ્રસંગ થકી બ્રહ્મરૂપ થાવાય, ત્યારે જ મહારાજની ઉપાસનાનો અધિકારી થાય. આ જ્ઞાન તો કોઈ શાસ્ત્રમાં મળે એવું નથી. આ તો શાસ્ત્રો પરની વાત મહારાજે શીખવાડી છે. પણ જેને પરોક્ષમાં પ્રતીતિ છે તેને આ ઘડ બેસતી નથી. તે સંતોએ મહારાજને પ્રાર્થના કરી જે, <br/><br/>
+ 
+ પછી સંત ઉઠ્યા જોડી હાથ, જેમ કહો તેમ કરીએ નાથ. <br/>
+ 
+ કહો તો મટકું ન ભરીએ મીટે, કહો તો અન્ન ન જમીએ પેટે. <br/>
+ 
+ કહો તો તજીએ છાજનનો સંગ, રહીએ હિમમાં ઉઘાડે અંગ. <br/>
+ 
+ કહો તો પીવું તજી દૈએ પાણી, રહીએ મૌન ન બોલીએ વાણી. <br/>
+ 
+ કહો તો બેસીએ આસન વાળી, નવ જોઈએ આ દેહ સંભાળી. <br/>
+ 
+ એમ હિંમત છે મનમાંય, તમે કહો તે કેમ ન થાય? <br/>
+ 
+ એમ બોલ્યા જ્યારે મુનિજન, સુણી પ્રભુજી થયા પ્રસન્ન. <br/>
+ 
+ કહે નાથ સુણો સાધુ શૂર, એતો અમને જણાય જરૂર. <br/>
+ 
+ તમે બોલ્યા તે સર્વે સાચું, બીજામાંય પણ નથી કાચું. <br/>
+ 
+ એક એકથી અધિક છો તમે, એવું જાણ્યું છે જરૂર અમે. <br/>
+ 
+ એક વાત કહું માનો તેહ, આપણે આત્મા, નહિ દેહ. <br/>
+ 
+ માનો     ચૈતન્યરૂપ     તમારું, દુ:ખરૂપ    દેહ   તેહ    ન્યારું. <br/>
+ 
+ (નિષ્કુળાનંદ કાવ્ય : ભક્તચિંતામણિ-પ્ર.-71) <br/><br/>
+ 
+ એમ સર્વ ઉપદેશમાત્રનો સાર અને આત્યંતિક મોક્ષનું સાધન પણ એ જ છે જે, અક્ષરબ્રહ્મરૂપે થઈને મહારાજની ઉપાસના કરવી; એ મહારાજનો અચળ સિદ્ધાંત છે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

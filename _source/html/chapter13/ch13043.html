@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત 1919ના બીજા શ્રાવણ સુદિ પાંચમને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (43) મહારાજે કચ્છમાંથી કાગળ લખી મોકલ્યો જે, આટલા જણે ત્યાગી થઈને ચાલી નીકળવું. ત્યારે મેથાણના અજા પટેલે સૌને કહ્યું જે, આટલાં નામ છે. પછી કડુના કલ્યાણભાઈ જે અદ્ભુતાનંદસ્વામી તે મીંઢળ સોતા ચાલી નીકળ્યા. ત્યારે અજા પટેલે ક્હ્યું જે, ‘છોકરા, તારું નામ આમાં નથી.’ એટલે કહે, ‘હું આદિકમાં આવ્યો કે નહિ ?’ પછી મહારાજ પાસે ગયા ત્યારે મહારાજે કહ્યું, ‘તમારું નામ અમે લખ્યું નહોતું ને કેમ આવ્યા ?’ ત્યારે કહે, ‘આદિકમાં હું આવું કે નહિ?’ ત્યારે મહારાજ કહે, ‘<a href="#ex1" class="wordMeaning">આંખ માથા ઉપર</a> !’ એમ ત્રણ વાર કહ્યું. એવા ખપવાળા હતા; પણ જેને રાગ છે તેને તો નિયમ પાળીને ઘેર ભગવાન ભજી લેવા. આ સાધુ છે તે જીવને પ્રભુના મારગે ચલાવે છે, પણ આ જીવ નવરો થઈને પ્રભુ ભજે તેવો નથી; મુંબઈ જાય, કરાંચી જાય, બહારવટે જાય; પણ પ્રભુ ન ભજે. માયાના પાંચ પ્રવાહ ચાલ્યા છે તેમાં દેવ, દાનવ, મનુષ્ય સર્વે વહ્યા જાય છે. બધું મહારાજનું કર્યું થાય છે, <br/><br/>
+ 
+ મેરે તો એક તુમહી આધારા. <br/>
+ 
+ (શ્રી સ્વામિનારાયણ હજારી : 14) <br/><br/>
+ 
+ મોક્ષને મારગે ચાલે તેને અર્થે આપણી સર્વ ક્રિયા છે અને જીવ તો વિષયની ક્રિયામાંથી થાકતા જ નથી. તે મેડી કરતાં ને બાયડી શણગારતાં કોઈ થાકતું નથી. સુરતમાં <a href="#ex1" class="wordMeaning">નજરાં નાખવા</a> ન જાય તે દિવસ અન્ન પચે નહિ. અમારે તો જીવમાંથી સર્વે કુમતિ કાઢીને ભગવાન ભજાવવા તાન છે; જીવને વિષયમાં તાન છે પણ ઘડો ફૂટશે ત્યારે ખાટલામાંથી ઉઠાશે નહિ, માટે આજ જ કરી લેવું. જેણે કામ અને દેહાભિમાન જીતવું હોય તેણે એવી રીતે ભક્તિ કરવી જે મનને માગ જ ન મળે; જેમ ઘોડા દોડતા હોય તે વચ્ચે નીસરાય નહિ, તેમ કથાવાર્તા, કીર્તન, સેવા, ભક્તિ કે ઘરના કામકાજમાં વૃત્તિ લાગે તો બીજું કાંઈ ન સાંભરે. <br/><br/>
+ 
+ હરજી ઠક્કર હિસાબનો મેળ મેળવવા સારુ આખી રાત જાગ્યા; તેમ વેગ લાગે તો વિષય ભોગવાય નહિ. જેને માથે વિષયરૂપી શત્રુ છે તે નિર્ભય રહે તો તેને સત્સંગની ખબર જ નથી. જોગીદાસ ખુમાણે ચૌદ વરસ ઘોડા ઉપર આસન રાખ્યું, તેમ અંતરશત્રુ ઉપર એવો અનાદર હોય તો તે જિતાય. સ્ત્રી અને મન નવરાં હોય તો વ્યભિચાર કરે; માટે મનને નવરું રહેવા દેવું નહિ. જેણે ઘરેણાં પહેર્યાં હોય તેની વાંસે ચોર ભમ્યા કરે છે. ત્યાગી લાડવા ખાઈને સૂઈ રહે છે, માટે અમને તેમની ફિકર થાય છે. સંત હરિભક્તમાં જેટલો સદ્‌ભાવ તેટલો સત્સંગ જાણવો.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 આંખ માથા ઉપર= આદર/સન્માન સહિત આવકાર/સ્વીકાર. <br/>
+	2 નજરાં નાખવા= રૂપ જોવા બહાર ફરવા જવું.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

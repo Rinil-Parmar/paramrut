@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૭૬ - ક્રોધી, ઈર્ષ્યાવાળો, કપટી ને માનીનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના પ્રથમ જ્યેષ્ઠ સુદિ ૧૧ એકાદશીને દિવસ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં સ્વામી શ્રીસહજાનંદજી મહારાજ પોતાના ઉતારાને વિષે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ મોટા મોટા સાધુ કેટલાક બેઠા હતા.
+</p>
+<p class="text_gu">
+તેમની આગળ શ્રીજીમહારાજે વાર્તા કરી જે, “ક્રોધી, ઈર્ષ્યાવાળો, કપટી અને માની એ ચાર પ્રકારના જે મનુષ્ય તે જો હરિભક્ત હોય તો પણ તે સાથે અમારે બને નહીં. અને ક્રોધ ને ઈર્ષ્યા એ બેય માનને આશરે રહે છે. અને કામીનો તો અમારે કોઈ કાળે વિશ્વાસ જ નથી જે, એ સત્સંગી છે. અને કામી તો સત્સંગમાં હોય તોય વિમુખ જેવો છે. અને <b>જેને પંચ વર્તમાનમાં કોઈ વાતે ખોટ્ય ન હોય અને ગમે તેવા વચનના ભીડામાં લઈએ અને એનું ગમતું મુકાવીને અમારા ગમતામાં રાખીએ તો પણ કોઈ રીતે દેહ પર્યંત મૂંઝાય નહીં, એવો હોય તે પાકો સત્સંગી છે. અને એવા હરિભક્ત ઉપર અમારે વગર કર્યું સહજે જ હેત થાય છે.</b> અને એવા ગુણ ન હોય તો હેત કરવા જાઈએ તોય પણ હેત થાય નહીં. અને અમારી તો એ જ પ્રકૃતિ છે જે, જેના હૃદયમાં ભગવાનની એવી પરિપૂર્ણ ભક્તિ હોય તે ઉપર જ હેત થાય છે.”
+
+</p>
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

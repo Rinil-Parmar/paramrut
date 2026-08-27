@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (116) ઘેર રહે અને કહે જે, ‘મારે કેમ સંકલ્પ ઓછા થાતા નથી?’ પણ ઘેર બેઠા તો સંકલ્પ વધશે જ. માટે સંત સમાગમ હશે તો જ દોષ ઓછા થાશે. ખરેખરા એકાંતિક ભક્તમાં આત્મબુદ્ધિ કરવી, એવું કોઈ સાધન બળિયું નથી.
+ 
+ <br/><br/>
+ 
+ આકુતિચિતિચાપલ્યરહિતા નિષ્પરિગ્રહાઃ ।  <br/>
+ 
+ બોધને નિપુણા આત્મનિષ્ઠા: સર્વોપકારિણ: ॥  
+ 
+ <br/>
+ 
+ (સત્સંગિજીવન : 1/32/28)
+ 
+ <br/>
+ 
+ અર્થ :- શ્રીહરિ ભક્તિમાતાને કહે છે :‘હે સતિ ! મુમુક્ષુઓએ કેવા સંતને સેવવા જોઈએ ? તે જેઓ કર્મેન્દ્રિયો અને જ્ઞાનેન્દ્રિયોની ચપળતાએ રહિત અર્થાત્ વિષય વાસનાઓ વિરહિત આત્મહિતમાં વિરોધી પરિગ્રહ રહિત, તત્ત્વબોધ આપવામાં પ્રવીણ, આત્મામાં જ એક નિષ્ઠાવાળા (આત્મારામ), સર્વ જનોનો આ લોક-પરલોકમાં ઉપકાર કરવાના સ્વભાવવાળા હોય.’
+ 
+ <br/><br/>
+ 
+ એ ચોસઠ લક્ષણ આવે તો કાંઈ બાકી ન રહે. સત્સંગ કર્યો અને કોઈ જાતનું પાપ રહ્યું; ત્યારે કોઢના ચાંદલા જેવું કહેવાય અને વાંસાના ઘા જેવું કહેવાય. ધન, સ્ત્રીમાં બટ્ટો લાગ્યો ત્યારે સભામાં મોઢું દેખાડી શકાય નહિ. જીવ બગડે ત્યારે નિયમ હોય તે ગમે નહિ. આ મોટા જાશે ત્યારે માયા બળ કરશે અને માંહોમાંહી લડાઈ કરશે ને <a href="#ex1" class="wordMeaning">હુલકા ઊઠશે</a>. અક્ષરધામના નિવાસી હોય તે અક્ષરધામમાં લઈ જાય; પણ બીજાથી ન લઈ જવાય. મંદિરમાં માણસ હોય તે બધા નોખી નોખી પ્રકૃતિવાળા હોય અને મંડળમાં પણ એમ હોય; તેમાં જો વિભૂતિ હોય તો બરાબર ચાલે અને આ ચાલે છે તે વિભૂતિ વડે ચાલે છે. સત્સંગમાં જે કપટ કરશે તેનું ઉઘાડું થયા વિના નહિ રહે. ચોરી, <a href="#ex1" class="wordMeaning">છિનાળીનો</a> મારગ જુદો છે અને પ્રભુ ભજ્યાનો મારગ જુદો છે.
+ 
+ <br/><br/> 
+ 
+ ‘વઢવેડ કર તો બોલ આડું અને ખેડ કર તો લે ગાડું.’
+ 
+ <br/><br/>
+ 
+ ગામડાના મનુષ્યને ઝાઝી ફિકર નહિ. જીવોનું કલ્યાણ કરવા મહારાજ મનુષ્ય જેવા થયા અને ભેળા ભળી ગયા; તે જેઠા મેરને ઘેર ગોવિંદસ્વામી સાથે જમ્યા અને ઘરોઘર પધાર્યાં; તે એમની અનુકંપાની વાત શી કહેવી! એવા મહારાજ મળ્યા, તો પણ જીવને વિષયમાં માલ મનાણો છે; પણ મહારાજ આગળ આ સુખ તે સડેલા કૂતરા જેવું છે, તે પ્રકૃતિપુરુષ સુધી એવું છે. માટે આ લાભ મળ્યો છે તેનો આનંદ નથી આવતો અને વિષયમાં આનંદ આવે છે એ અજ્ઞાન છે. મહારાજના કાંઈક ગુણ આવ્યા હશે તે જ સુખિયા છે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 હુલકા ઊઠે/ઊઠશે= વિષયભોગ માટેના ઉભરા ઊઠવા.  <br/>
+2 છિનાળીનો= વ્યભિચારીણીનો.
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

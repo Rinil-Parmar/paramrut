@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (279) આ સાધુનાં દર્શન કરે તો પંચમહાપાપ હોય તે બળી જાય, એવો મહિમા છે. એક વખત અમે ગિરનારમાં વાંસ કાપવા ગયા હતા. તે વળતાં શિવાનંદને તરસ બહુ લાગી પણ આત્મનિવેદી હતા ને ચરણરજ સાથે લેવી ભૂલી ગયા હતા, તેથી પાણી પિવાય નહિ; તેમ મંદિર સુધી પૂગી શકાય તેમ નહોતું. પછી રસ્તામાં સોનરખનું વહેણ આવ્યું તેમાં અમે અમારો પગ મૂક્યો ને કહ્યું જે, ‘આ હેઠે ગંગા ચાલી જાય છે ને પ્રસાદીનું પાણી છે, તે પીવો.’ એટલે શિવાનંદે અમારા વચનમાં વિશ્ર્વાસ હોવાથી પાણી પી લીધું, પણ સાથે બીજા સાધુ હતા તેમણે એ વાત ઠેઠ મહારાજ સુધી પહોંચાડી, ત્યારે મહારાજ કહે, ‘એ તો કરોડ ગંગા ને કરોડ ચરણરજ ! કેમ જે, એ સાધુના ચરણમાં તો સર્વે તીર્થમાત્ર રહ્યાં છે માટે બહુ સારા કર્યા; પણ તમને મહિમા નથી એટલે શંકા થાય છે.’ 
+ <br/><br/>
+ પાંડવોનો રાજસૂય યજ્ઞમાં તેડવાનો શ્રીકૃષ્ણ ઉપર કાગળ આવ્યો અને હારોહાર વીસ હજાર રાજાઓને જરાસંધે બંદીખાને નાખ્યા હતા, તેમને છોડાવવાનો તેમની સ્ત્રીઓનો વિનંતી પત્ર આવ્યો જે, ‘અમે તમારાં છીએ ને તમારી <a href="#ex1" class="wordMeaning">મેહની ઘોડ્યે</a> વાટ જોઈએ છીએ તો રક્ષા કરવા વહેલા પધારશો.’ પછી ભગવાને ઉદ્ધવને પૂછ્યું જે, ‘બેમાંથી પ્રથમ ક્યાં જવું ?’ તો કહે, ‘પ્રથમ પાંડવોના રાજસૂય યજ્ઞમાં જવું એટલે પાંડવોને સારું લાગે જે, સહાયે આવ્યા ને પછી દિશાઓ જીતવા જાશે; ત્યારે આપણે જરાસંધની દિશ લેશું ને પહેલાં જરાસંધને મારશું ને રાજાઓને છોડાવશું, એટલે તેઓ પણ રાજી થાશે. તે એક કામમાં બે કામ થાશે.’
+ <br/><br/>
+ એમ નિરધાર કરી પ્રથમ યજ્ઞમાં ગયા, પછી જરાસંધ પાસે દ્વંદ્વયુદ્વ માગ્યું, ત્યારે કહે, ‘અર્જુને સ્ત્રીનાં લૂગડાં પહેર્યાં હતાં તેથી તેની સાથે નહિ લડું ને તમે તો મારી આગળ ભાગ્યા હતા માટે તમારી સાથે ય નહિ લડું ને કહો તો આ ભીમ સાથે લડું.’ પછી <a href="#ex1" class="wordMeaning">લઠા લઈ</a> પાળે-પાળા લડ્યા. તે રાતે ભીમ કહે, ‘માળો, બળિયો છે! મારાં તો હાડેહાડ કળે છે. હું તેને પૂગીશ નહીં.’ ત્યારે શ્રીકૃષ્ણે ભીમને કહ્યું જે, ‘કાલે યુદ્ધ થાય ને તું થાકી જાય ત્યારે મારા સામું જોજે ને હું જેમ ઇશારો કરું તેમ તું કરજે.’ પછી બીજે દિવસ બરાબર યુદ્ધ થયું ને ભીમે ભગવાન સામું જોયું, ત્યારે શ્રીકૃષ્ણે પીંપળની ડાળખી તોડી ફેરવીને કેડમાં મારી, ચીરીને નાખી દીધી, એમ ઇશારો કર્યો. એટલે ભીમે ગદા ફેરવીને જરાસંધને કેડમાં મારી તે પડી ગયો, એટલે એક પગ પોતાના પગે દબાવી, બીજો પગ બે હાથે ઝાલી ચીરી નાખ્યો ને બેય કટકા જુદા જુદા નાખી દઈ વચમાં શિવલિંગ કર્યું એટલે બેય કટકા ભેળા ન થયા ને મરી ગયો. પછી તેના દીકરા ભગદત્તને ગાદીએ બેસાર્યો ને રાજાઓને બંદીખાનેથી છોડાવ્યા. એમાં કહેવાનું એ છે જે, એકાંતિકનાં વચનમાં બધુંય આવી જાય.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 મેહની ઘોડ્યે= વરસાદની રાહ જોઈએ તેમ.
+<br/>
+2 લઠા લઈ= ગદા લઈ.
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

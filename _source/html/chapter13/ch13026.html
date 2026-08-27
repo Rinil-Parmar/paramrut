@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (26) કંથકોટનો રાજા આંધળો અને બ્રહ્મજ્ઞાની હતો તેણે સો શિષ્ય કર્યા હતા, અને ‘શતપ્રશ્ર્ની’ મોંઢે કરી હતી. મહારાજે તેની સભામાં જઈને જય સચ્ચિદાનંદ કહ્યા. ત્યારે તેમણે પૂછ્યું જે, ‘તમે કોણ છો ?’ મહારાજે કહ્યું જે, ‘સચ્ચિદાનંદ છું, પણ તમે કોણ છો ?’ ત્યારે રાજા કહે, ‘અમેય સચ્ચિદાનંદ છીએ.’ મહારાજ કહે, ‘તમે સચ્ચિદાનંદ હો તો પ્રકાશ દેખાડો.’ તે આંધળો શું પ્રકાશ દેખાડે ? મહારાજને કહે, ‘તમે પ્રકાશ દેખાડો.’ એટલે મહારાજે પોતાની મૂર્તિમાંથી પ્રકાશ દેખાડ્યો અને પાછો પોતામાં સમાવી દીધો, તે સર્વેએ પ્રકાશ દીઠો અને આંધળા રાજાએ પણ પ્રકાશ દીઠો, એટલે મહારાજ સચ્ચિદાનંદ નહિ, એમ કેમ કહી શકાય ? <br/><br/>
+ 
+ પછી રાજાએ મનમાં એમ ધાર્યું જે, આને બંદીખાને રાખીએ તો તેમના શિષ્ય ઘણા છે, તે જે દર્શને આવે તેની પાસેથી રૂપિયા લઈને દર્શન કરાવીએ, એટલે આપણને રૂપિયા ઘણા થાશે. એવું ધારીને ઉતારો આપ્યો ને પાકાં સીધાં મોકલ્યાં અને દરવાજાવાળાને કહ્યું જે, ‘આને જાવા દેશો મા.’ પણ મહારાજ તો પ્રભાવ જણાવી રાતે વહ્યા ગયા. પછી સવારે રાજાએ મહારાજને દીઠા નહિ. એટલે બ્રહ્મચારીને પૂછ્યું તો કહે, ‘હું સૂઈ ગયો હતો; ક્યારે ગયા તેની મને ખબર નથી.’ પછી રાજા બ્રહ્મચારીને કહે, ‘તમારું કામ નથી. તમે વહ્યા જાઓ.’ મહારાજનો મહિમા અને ઐશ્ર્વર્ય સાધુ સમજાવે છે. મહારાજના સ્વરૂપમાં કોઈ દિવસ મનુષ્યભાવ ન આવે તેનું કારણ સાધુનો સમાગમ છે. સત્સંગમાં જેનો પગ અટક્યો તે આઘોપાછો ચાલે નહિ અને કોઈ મોટા સાથે જીવ બાંધ્યો હોય તો પાછો વળે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

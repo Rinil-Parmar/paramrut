@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (396) અમે તો એમ જાણીએ છીએ આ સમાગમમાં રહીને બે દિવસ કે બે ઘડી જે જાય તે કાંઈ થોડી વાત નથી. નિર્ગુણદાસજીએ પ્રશ્ર્ન પૂછ્યો જે, જ્ઞાનાંશની વાતો થાય છે છતાં આસક્તિ મટતી નથી ને તે પ્રમાણે વર્તાય છે તેનું કેમ? ત્યારે સ્વામીએ ઉત્તર કર્યો જે, તમે ભણ્યા, તે એક દિવસમાં શબ્દની વ્યુત્પત્તિ આવડી ? ને જેમ વાઢ બાર મહિને પાકે તેમ કાળે કરીને થાય. <br/><br/>
+ 
+ ‘બહુત કાળ કરહી સત્સંગા, તબ હોત સંશય કા ભંગા’<br/>
+ 
+ (શ્રીરામ ચરિતમાનસ-ઉત્તરકાન્ડ-દોહા 80-પાન નં.547) <br/><br/>
+ 
+  ને તરત તો પૂંજા ડોડિયા જેવાને થાય, તે આકાશવાણીથી તરત ભગવાન મેળવ્યા. એમ તરત તો એવા સંસ્કારે મનાય ને આપણે તો શેરડી કાચી છે તેને તો ગોળ ન જામે. માટે આપણે તો જ્ઞાનના કોશ જોડી દેવા. પછી જ્ઞાનથી પકવતા થાશે ત્યારે કોઈ વાત જીવમાં નહિ પેસે. માયાના કાર્યમાં તો કેવળ દુ:ખ જ છે પણ સુખનો લેશ નથી. જનક રાજાએ કહ્યું જે, મારું કાંઈ બળતું નથી. એવી સમજણ થાય ત્યારે મન ક્યાંય ન તણાય માટે જ્ઞાનની પક્વતા વિના તો શબ્દ, સ્પર્શ, રૂપ, રસ ને ગંધ માંહી પેસી જાય. માટે જો જ્ઞાન હોય તો સુખ જ છે, માટે સુખ તો સમજણમાં છે. બારલાનું સુખદુ:ખ રહેતું નથી; દુ:ખ-સુખ તો હૈયામાં છે. <br/><br/>
+ 
+ વસોવાળા વાઘજીભાઈને કહ્યું જે ચાંદલો કરીને કોઈ વળાવે છે ? માટે ઊંટ તો પલાણીએ ગાંગરે જ ને તમારા ઘરનું દુ:ખ તો આંહીં ક્યાં છે. આંહી તો કાગળ આવે તો દુ:ખ થાય ને બધા કહે છે જે તમે બગડી ગયા ને વહેવાર કરતા નથી, માટે રૂપિયા ભેળા કરો. પણ તેમાં આપણી બુદ્ધિ મેળવવી જે રૂપિયા ભેળા કરવામાં કેટલો માલ છે ? તે વિચારવું ને હેત છે તે આહીં આવ્યા છો પણ તાણ તો ત્યાંની છે તે અવધિથી વધુ રહેવાય નહિ. માટે બીજું સુખ મેલે ત્યારે આ સુખ આવે. ને આવા કે’દિ મળ્યા છે ? આ તો કપુરની દલાલી છે ને બીજી તો કોયલાની દલાલી છે. ધર્મ, અર્થ ને કામ તે ભગવાન ભજવામાં સહાય થાય તો ઠીક, નીકર કેવળ દુ:ખરૂપ છે. આપણે તો કોઈમાં માલ માનવો નહિ ને જેમ નદી હોય ને તેમાં <a href="#ex1" class="wordMeaning">બગદો</a> ભરાણો હોય પણ ભારે પુર આવે તો બધું ધોવાઇને સાફ થઇ જાય તેમ પંચવિષયરૂપી બગદો જીવના હૈયામાં ભરાણો છે તે જ્યારે નિજાત્માનં બ્રહ્મરૂપં । એવો વિચાર રાખે ને ભગવાનના મહિમારૂપ પૂર આવે તો પંચવિષયરૂપી બગદો ધોવાઈ જાય છે ને હૈયું સાફ થઈ જાય છે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 બગદો= કચરો.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

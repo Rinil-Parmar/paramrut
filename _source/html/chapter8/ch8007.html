@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (7) એક વખતે એમ વાત કરી જે, ‘શિક્ષાપત્રી’માં મહારાજે કહ્યું છે જે, ‘અમારા આશ્રિત જે સર્વે સત્સંગી તેમણે નિત્ય પ્રત્યે સાધુનો સમાગમ કરવો.’ ત્યારે એક હરિજને પૂછ્યું જે, ‘સત્સંગની મર્યાદા પ્રમાણે રહીએ છીએ તથા આજ્ઞા પ્રમાણે દશમો-વીસમો ભાગ તથા <a href="#ex1" class="wordMeaning">નામનું</a> પણ દઈએ છીએ તથા મંદિર, મૂર્તિયું, આચાર્ય, સાધુ એ સર્વેની યથાશક્તિ સેવા પણ કરીએ છીએ તો પણ નિત્ય પ્રત્યે સાધુનો સમાગમ કરવાનું કહે છે, તેનું શું કારણ છે ?’ ત્યારે બોલ્યા જે, ‘આ તમે સર્વ ધર્મ પાળો છો, પણ જો અશુભ દેશકાળનો જોગ થાય તો ધર્મમાં મોળું પડી જવાય અને પૂર્વે પણ બ્રહ્મા, શિવ, બૃહસ્પતિ, નારદ વગેરેને દેશકાળ લાગ્યા; તે સાધુના સમાગમ વિના લાગ્યા, વળી જો સાધુનો સમાગમ હોય તો અહિંસા ને બ્રહ્મચર્યરૂપી પોતાના વર્ણાશ્રમ સંબંધી જે સદાચાર તે દૃઢ પળે તથા કોઈ આજ્ઞાનો લોપ ન થાય ને તેનો સત્સંગમાં અચળ પાયો થાય ને તેને કાંઈ ધક્કો ન લાગે ને કોઈ વિઘ્ન પણ ન થાય; એવાએ પણ સમાગમ કરવો; કેમ જે, <a href="#ex1" class="wordMeaning">સ્તંબ</a>થી કરીને પુરુષોત્તમ જે મહારાજ તે પર્યંત સર્વના સ્વરૂપનું જે જ્ઞાન તે સાધુના સમાગમથી જ થાય છે તથા મૂળપુરુષ ને મૂળમાયા થકી મુક્ત ને પર એવા જે શુદ્ધ મુક્તાત્મા તથા પરમાત્માના પ્રત્યક્ષ સ્વરૂપનું જે સાક્ષાત્ જ્ઞાન તે પણ સાધુના સમાગમથી જ પમાય છે તથા માયિક જે સુખ-દુ:ખ તે સર્વે ખોટાં થઈ જાય છે.
+ <br/><br/>
+ હવે એવું શુદ્ધ જ્ઞાન તો થયું, પણ પ્રકૃતિપુરુષનું કાર્યમાત્ર તેને વિશે અનાસક્તિરૂપ એવો જે દૃઢ વૈરાગ્ય પામવો, તે સાધુના સમાગમથી જ પમાય છે અને તે વડે માયિક આકારમાત્ર ખોટા થઈ જાય છે. વળી જે, અતિ દૃઢ સ્નેહે કરીને સર્વ પ્રકારે ભગવાનમાં જોડાવું એવી જે દૃઢ ભક્તિ તે પણ સાધુના સમાગમથી જ પમાય છે. તેમ જ ભગવાનના સ્વરૂપ, સ્વભાવ, ગુણ, ઐશ્ર્વર્ય, વિભૂતિ, પ્રતાપ, બળ, તેજ, <a href="#ex1" class="wordMeaning">ઓજ</a> એ આદિક જે અનવધિકાતિશય એવો જે ભગવાનનો અપાર મહિમા, તે પણ સાધુના સમાગમ વિના સમજાય નહિ, માટે નિત્ય પ્રત્યે સાધુનો સમાગમ કરવો, એમ મહારાજે ‘શિક્ષાપત્રી’માં કહ્યું છે.’
+<br/><br/>
+<a href="refch9256.html" class="wordMeaning"> પ્રકરણ 9 ની વાત 256 </a>
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 નામનું= હકદાર કરવું, દસ્તાવેજમાં નામ લખવું, નામાંકિત કરવું, ધર્માદો ભગવાનના નામે કાઢવો.  <br/>
+		2 સ્તંબ= થૂંબડું-છોડવાનો નીચલો મૂળિયાવાળો ભાગ. <br/>
+		3 ઓજ= ઓજસ, પ્રતિભા, શારીરિક તેજસ્વિતા, બુદ્ધિની સૂક્ષ્મતા, મન, અંતર.
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

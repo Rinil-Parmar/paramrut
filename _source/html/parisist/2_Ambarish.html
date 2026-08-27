@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">અંબરીષ રાજા</h1>
+અંબરીષ રાજા વૈવસ્વત મનુના પ્રપૌત્ર તથા રાજર્ષિ નાભાગના પુત્ર હતા. પૃથ્વીના સાતે દ્વીપ, અચળ સંપત્તિ અને અપાર ઐશ્વર્ય તેમને પ્રાપ્ત હતું. તેમ છતાં તેઓ તેને સ્વપ્નતુલ્ય સમજતા હતા એવા વૈરાગ્યવાન હતા. તેમને ભગવાન અને તેમના સંતોમાં પરમ પ્રેમ હતો. તેઓ સ્વર્ગની ઇચ્છા કરતા ન હતા, પરંતુ ભગવાનના પરમધામની ઇચ્છા કરતા. તેમની પ્રજા પણ ગુણવાન અને પ્રભુમાં પ્રેમ ધરાવનારી હતી અને આખો દિવસ પ્રભુ સ્મરણ કરતા. આથી પ્રભુએ પ્રસન્ન થઈને રાજા અને તેની પ્રજાનું રક્ષણ કરવા સુદર્શન ચક્રને તેમની સેવામાં રાખેલ. આમ, રાજા તપસ્યાયુક્ત ભક્તિયોગ અને પ્રજાપાલનરૂપી સ્વધર્મ દ્વારા ભગવાનને પ્રસન્ન કરવા લાગ્યા અને સર્વ પ્રકારની આસક્તિઓનો ત્યાગ કરી દીધો. તેઓ ભગવાનના સંબંધે સહિતના ધર્મનું પાલન કરતા.
+<br/><br/>
+તેમના પત્ની પણ તેમના જેવા જ ધર્મશીલ અને ભક્તિ પરાયણ હતાં. એકવાર રાજાએ પોતાના પત્ની સહિત ભગવાનની આરાધના કરવા માટે એક વર્ષ સુધી દ્વાદશી પ્રધાન એકાદશીનું વ્રત કર્યું અને બ્રાહ્મણોનું પૂજન કરી દાન કર્યું. ત્યારબાદ તેઓ પારણું કરવાની તૈયારી કરતા હતા તે દરમ્યાન દુર્વાસા મુનિ તેના શિષ્યો સહિત પધાર્યા અને રાજાએ તેમને ભોજન માટે પ્રાર્થના કરી. ૠષિએ તે પ્રાર્થના સ્વીકારી અને યમુના નદીમાં સ્નાન કરવા ગયા. આ બાજુ દ્વાદશી ઘડીભર બાકી હતી અને રાજા ધર્મ સંકટમાં મૂકાયા. જો પારણું ન કરે તો એકાદશીઓનું પુણ્ય ન મળે અને પારણું કરે તો અતિથિરૂપ મુનિને જમાડ્યા પહેલાં પોતે જમી લીધું તેનું પાપ લાગે. આથી બ્રાહ્મણોની સલાહથી રાજાએ પારણામાં ફક્ત પ્રસાદીનું જળ ને તુલસીપાન લીધું કે જેથી પારણું કર્યું પણ કહેવાય અને ન કર્યું પણ કહેવાય. આ બાજુ દુર્વાસાએ સ્નાન કરતા જાણ્યું કે, રાજાએ મને મૂકીને પારણું કરી લીધું છે તેથી તે ક્રોધે ભરાયા અને રાજાને મારવા માટે કૃત્યાને મોકલી, પરંતુ રાજાની રક્ષા માટે સ્વયં સુદર્શન ચક્ર હાજર હતું. તેણે કૃત્યાને તત્ક્ષણ બાળીને ભસ્મ કરી દીધી અને કૃત્યાને મોકલનાર દુર્વાસા મુનિ તરફ સુદર્શન ચક્ર ગયું. ૠષિ તેના ભયથી ભાગ્યા. પણ ચક્ર તેમની પાછળ પાછળ જઈ તેને દઝાડતું રહ્યું. શિવજી, બ્રહ્મા પાસે ગયા પણ ત્યાં રક્ષણ ન થતાં આખરે ૠષિ ભગવાન વિષ્ણુ પાસે ગયા અને પોતાને બચાવવા વિનંતી કરી. ત્યારે પ્રભુ કહે, હું તો ભક્તને આધીન છું. હું તમારી રક્ષા કરવા સમર્થ નથી. તમે સ્વયં ભક્ત પાસે જાઓ અને તેની માફી માંગો અને તે સુદર્શન ચક્રને પાછું વાળે તો તમારી રક્ષા થાય. આથી ૠષિ રાજા પાસે આવીને તેમની ક્ષમા માંગી. ત્યારે રાજાએ કહ્યું કે, મને તમારા પર જરાય રોષ નથી. તમે જ્યારે અહીં પધાર્યા ત્યારે મને તમારા પર જેવો આદરભાવ હતો. તેવોને તેવો જ ભાવ જો અત્યારે પણ હોય તો હે સુદર્શન ચક્ર! આપ આપના સ્થાને પરત જાઓ. આમ કહ્યું ત્યાં તો તરત જ સુદર્શન ચક્ર તેમના યથાસ્થાને પરત પધાર્યું.
+<br/><br/>
+આમ, ૠષિને પાછા ફરતાં એક વર્ષ જેટલો સમય વીતી ગયો ત્યાં સુધી રાજા અને તેમનાં પત્ની નિરાહાર રહ્યાં અને ૠષિના આવ્યા બાદ તેમને પારણું કરાવી પછી પોતે પારણું કર્યું.
+
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

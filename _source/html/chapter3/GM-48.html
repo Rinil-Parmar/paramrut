@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૪૮: ‘વંદું’ના કીર્તનનું, સંતના મધ્યમાં જન્મ ધરવાનું</h1>
+			<p class="text_gu">
+સંવત ૧૮૮૦ના મહા વદિ ૧૪ ચૌદશને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને તુલસીની નવીન શ્વેત કંઠીઓ કંઠને વિષે ધારણ કરી હતી ને પાઘને વિષે પીળાં પુષ્પનો તોરો વિરાજમાન હતો ને કંઠને વિષે પુષ્પના હાર ધારણ કર્યા હતા ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>			
+<p class="text_gu">
+અને સાધુ પ્રેમાનંદ સ્વામી ભગવાનના ધ્યાનના અંગની ગરબીઓ જે, ‘વંદું સહજાનંદ રસરૂપ અનુપમ સારને રે લોલ’ એ ગાવતા હતા. પછી જ્યારે ગાઈ રહ્યા ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “બહુ સારાં કીર્તન ગાયાં. આ કીર્તનને સાંભળીને તો અમારા મનમાં એમ વિચાર થયો જે, ‘આવી રીતે એને ભગવાનની મૂર્તિનું ચિંતવન છે, માટે એ સાધુને તો ઊઠીને સાષ્ટાંગ દંડવત્ પ્રણામ કરીએ.’ અને જેને આવી રીતે અંતઃકરણમાં ભગવાનનું ચિંતવન થતું હોય ને એવી વાસનાએ યુક્ત જો દેહ મૂકે તો તેને ફરીને ગર્ભવાસમાં જવું પડે જ નહીં. અને એવી રીતે ભગવાનનું ચિંતવન કરતાં જીવતો હોય તો પણ એ પરમ પદને પામ્યો જ છે અને જેવા શ્વેતદ્વીપમાં નિરન્નમુક્ત છે તેવો જ એ પણ નિરન્નમુક્ત થઈ રહ્યો છે. અને દેહક્રિયા તો યોગ્ય હોય એટલી સહજે જ થાય છે. અને જેને ભગવાનના સ્વરૂપનું એવી રીતે ચિંતવન થાય છે તે તો કૃતાર્થ થયો છે ને તેને કાંઈ કરવું બાકી રહ્યું નથી; અને જેને ભગવાન વિના બીજા પદાર્થનું ચિંતવન કરતે થકે દેહ પડશે તેને કોટિ કલ્પે દુઃખનો અંત આવતો નથી. માટે આવો અવસર આવ્યો છે તેને પામીને ભગવાન વિના બીજા પદાર્થનું ચિંતવન મૂકીને એક ભગવાનના સ્વરૂપનું ચિંતવન કરવું.
+</p>
+			
+<p class="text_gu">
+“અને જો ભગવાનના સ્વરૂપનું ચિંતવન થઈ ન શકે તો પણ ધર્મ, જ્ઞાન, વૈરાગ્ય અને ભક્તિ તેણે યુક્ત એવા જે આ સાધુ તેને મધ્યે પડી રહેવું. અને અમારે પણ એ જ અંતરમાં વાસના છે જે, આ દેહને મૂકશું પછી કોઈ રીતનો જન્મ થવાનું નિમિત્ત તો નથી, તો પણ અંતરમાં એમ વિચારીએ છીએ જે, ‘જન્મ ધર્યાનું કોઈક કારણ ઉત્પન્ન કરીને પણ સંતના મધ્યમાં જન્મ ધરવો,’ એમ જ ઇચ્છીએ છીએ. અને જેને એ કીર્તનમાં કહ્યું એવી રીતનું ચિંતવન થતું હોય તે તો કાળ, કર્મ ને માયાના પાશ થકી મુકાયો છે; અને જેને ઘેર એવા પુરુષે જન્મ ધર્યો તેનાં માબાપ પણ કૃતાર્થ થયાં જાણવાં. અને ભગવાન વિના બીજા વિષયનું જે ચિંતવન કરે છે તે તો અતિશય ભૂલ્યો જાણવો. અને સ્ત્રી, પુત્ર ને ધનાદિક પદાર્થ તે તો જે જે યોનિમાં જાય છે તે સર્વેમાં મળે છે, પણ આવા બ્રહ્મવેત્તા સંતનો સંગ ને શ્રીવાસુદેવ ભગવાનનું સાક્ષાત્કાર દર્શન ને ચિંતવન તે તો અતિશય દુર્લભ છે. માટે જેમ વિષયી જનને પંચવિષયનું ચિંતવન અંતઃકરણમાં થયા કરે છે, તેમ જેના અંતરમાં અખંડ ભગવાનનું ચિંતવન થયા કરે એથી ઉપરાંત મનુષ્ય દેહનો બીજો લાભ નથી. અને એ તો સર્વે હરિભક્તમાં મુખિયો છે. અને એ ભક્તને શબ્દ, સ્પર્શ, રૂપ, રસ અને ગંધ એ પંચવિષય હોય તો પણ ભગવાન સંબંધી જ હોય; અને તેના શ્રવણ તે અખંડ ભગવાનની કથા સાંભળવાને ઇચ્છે, અને ત્વચા તે ભગવાનનો સ્પર્શ કરવા ઇચ્છે, અને નેત્ર તે ભગવાન ને ભગવાનના સંતનાં દર્શન કરવા ઇચ્છે, અને રસના તે ભગવાનના મહાપ્રસાદના સ્વાદને ઇચ્છે, અને નાસિકા તે ભગવાનને ચડ્યાં જે પુષ્પ-તુળસી તેના સુગંધને ઇચ્છે, પણ પરમેશ્વર વિના અન્ય વસ્તુને સુખદાયી જાણે જ નહીં. એવી રીતે જે વર્તે તે ભગવાનનો એકાંતિક ભક્ત કહેવાય.”
+</p>
+
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+
+<p class="text_gu">
+
+</p>
+
+<p class="text_gu">
+
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

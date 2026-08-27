@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (114) ભગવાન કરતાં ભગવાનના પરમ એકાંતિકની સેવા કરીએ તો ભગવાન વધારે રાજી થાય છે, પણ માવતરનો સત્કાર કરે ને છોકરાંનો તિરસ્કાર કરે તો માવતર રાજી ન થાય. તેમ જ સંતની સેવાએ કરીને ભગવાન અતિશે રાજી થાય છે. તે ઉપર નરસિંહ મહેતાનું કિર્તન બોલ્યા જે, <br/><br/>
+ 
+ સંત ચાલે ત્યાં હું આગળ ચાલું, સંત સૂવે ત્યાં હું જાગું રે. <br/>
+ 
+ જે મારા સંતની નિંદા કરે, તેના કુળ સહિત હું ભાંગુ રે. <br/>
+ 
+ જે મારાં બાંધ્યાં વૈષ્ણવ છોડે, વૈષ્ણવનાં બાંધ્યાં મુજથી નવ છૂટે રે. <br/>
+ 
+ એકવાર જો મુને વૈષ્ણવ બાંધે, તે બંધન મેં નવ તૂટે રે. <br/>
+ 
+ બેઠા બેઠા ગાય ત્યાં હું ઉભો ઉભો સાંભળું, ઉભા ગાય ત્યાં હું નાચું રે. <br/>
+ 
+ એવા હરિજનથી ક્ષણું નહિ વેગળો, ભણે નરસૈયો પદ સાચું રે. <br/>
+ 
+ (કીર્તન મુક્તાવલી-સંત મહિમાનાં પદો-નં.740-પાન નં.385) <br/><br/>
+ 
+ ત્યારે શું ભગવાન તે ભક્તના ભક્ત થઈ ગયા ? પણ એમ નથી પણ એ તો ભગવાન ભક્તિને લીધે ભક્તને વશ છે અને એમ તો મહારાજ અમારી આગળ સુરતમાં પાછે પગે ચાલતા, તે સુરતમાં સંત ઝોળી માગવા જતા તેને ઉપવાસ પડતા; કારણ કે, શહેરના માણસો એક વસ્ત્રભર રહેતા તે ભિક્ષા દેવા આવે ત્યારે ગોખેથી, ‘લ્યો મહારાજ !’ તે સાધુ ઊંચું જુએ તો ઉઘાડા દેખાય એટલે ઉપવાસ પડે ને નીચું જોઈ રાખે તો અનાજ આડું અવળું પૃથ્વી ઉપર પડે ને પૃથ્વી તો લઘુ કરેલ હોય તે ભિક્ષા કામ ન આવે, ત્યારે સૌએ વિચાર કર્યો જે, આનું શું કરવું ? પછી મુક્તાનંદસ્વામી કહે જે, ઊંચું જોઈને ભિક્ષા લે ને ઉપવાસ ન પડે એવા સાધુ આપણા મંડળમાંથી ગોતી કાઢો. પછી કૃપાનંદસ્વામી ચિકિત્સાવાળા તે કહે, ‘એવા તો મારા મંડળમાં ગુણાતીતાનંદસ્વામી છે.’ તેમની સાથે બીજા સાધુ જાય તેમણે નીચે જોઈને ચાલવું પણ આડું અવળું કે ઊંચું જોવું નહિ ‘એમ ઠરાવ કર્યો.’ પછી અમે એક સાધુને લઈને ભિક્ષા લેવા નીકળ્યા ત્યારે મહારાજની મૂર્તિની ધારણા કરીને ચાલ્યા તે જે ભિક્ષા દેવા આવે તેના સામું જોઈને ભિક્ષા લઈએ તે માણસ ન દેખાય ને મહારાજ ભિક્ષા આપે એમ દેખાય, એટલે ઉપવાસ ન પડતો. <br/><br/>
+ 
+ અમે રસ્તે ચાલતા ત્યારે જેમ સૂર્યના રથ આગળ વાલખીલ ઋષિ પાછે પગે ચાલે છે તેમ મહારાજ અમારી આગળ. પાછે પગે ચાલતા. પછી રસ્તામાં કોઈ અગ્નિના તણખાં સોતા રાખ નાખી ગયેલ તે મહારાજ તેના ઉપર પગ મૂકીને ચાલ્યા ત્યારે અમે કહ્યું જે, કૃપાનાથ ! તમો આગળ જોઈને ચાલો તો ઠીક; કેમ જે, નરસી (ખરાબ) પૃથ્વીમાં પગ પડે તે ઠીક નહિ. પછી મહારાજ કહે જે, તમ જેવા સંતને વાંસો કેમ દેવાય ? ત્યારે અમને એમ થયું જે આ સાધુનો મહિમા તો મહારાજ જાણે છે તેવો બીજો કોઈ જાણતાં નથી ને મહારાજે તેમ કહ્યું ને અમને દર્શન દેવા સારુ અમારી આગળ, પાછે પગે ચાલ્યા. તે શું મહારાજ અમારા સેવક થઈ ગયા ? એ તો ભગવાનને વિષે દયાનું અધિકપણું છે એમ જાણવું.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

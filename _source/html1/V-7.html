@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<!-- Added This line -->
+
+				<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">વરતાલ ૭: દૈવી-આસુરી જીવનાં લક્ષણનું, અન્વય-વ્યતિરેકનું</h1>
+			
+<p class="text_gu">
+
+સંવત ૧૮૮૨ના માગશર વદિ ૧૪ ચૌદશને દિવસ શ્રીજીમહારાજ શ્રીવરતાલ મધ્યે શ્રીલક્ષ્મીનારાયણના મંદિરની આગળ મંચ ઉપર વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+અને હરિભક્ત પરસ્પર ભગવદ્‌વાર્તા કરતા હતા. તેમાં એવો પ્રસંગ નીસર્યો જે, દૈવી ને આસુરી એ બે પ્રકારના જીવ છે; તેમાં દૈવી જીવ હોય તે તો ભગવાનના ભક્ત જ થાય ને આસુરી હોય તે તો ભગવાનથી વિમુખ જ રહે. ત્યારે ચીમનરાવજીએ શ્રીજીમહારાજને પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! આસુરી જીવ હોય તે કોઈ પ્રકારે દૈવી થાય કે ન થાય?” પછી શ્રીજીમહારાજ બોલ્યા જે, “આસુરી જીવ તો દૈવી ન જ થાય; કેમ જે, એ તો જન્મથી જ આસુરભાવે યુક્ત છે. અને જો કોઈક રીતે કરીને આસુરી જીવ સત્સંગમાં આવી પડ્યો તો પણ આસુરભાવ તો ટળે નહીં. પછી સત્સંગમાં રહ્યો થકો જ જ્યારે શરીરને મૂકે ત્યારે બ્રહ્મને વિષે લીન થાય ને વળી પાછો નીકળે. એમ અનંત વાર બ્રહ્મમાં લીન થાય ને પાછો નીસરે ત્યારે એનો આસુરભાવ છે તે નાશ પામે, પણ તે વિના તો આસુરભાવ નાશ પામે નહીં.”
+</p>
+<p class="text_gu">
+
+પછી શોભારામ શાસ્ત્રીએ પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! ભગવાનનું અન્વયપણું કેમ છે ને વ્યતિરેકપણું કેમ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “અન્વય-વ્યતિરેકની વાર્તા તો એમ છે જે, ભગવાન અર્ધાક માયાને વિષે અન્વય થયા છે ને અર્ધાક પોતાના ધામને વિષે વ્યતિરેક રહ્યા છે, એમ નથી. એ તો ભગવાનનું સ્વરૂપ જ એવું છે જે, માયામાં અન્વય થયા થકા પણ વ્યતિરેક જ છે, પણ ભગવાનને એમ બીક નથી જે, ‘રખે હું માયામાં જાઉં ને અશુદ્ધ થઈ જાઉં!’ ભગવાન તો માયાને વિષે આવે ત્યારે માયા પણ અક્ષરધામરૂપ થઈ જાય છે અને ચોવીસ તત્ત્વને વિષે આવે તો ચોવીસ તત્ત્વ પણ બ્રહ્મરૂપ થઈ જાય છે. તે શ્રીમદ્‌ભાગવતમાં કહ્યું છે જે, ‘ધામ્ના સ્વેન સદા નિરસ્તકુહકં સત્યં પરં ધીમહિ ।’ ઇત્યાદિક અનંત વચને કરીને ભગવાનના સ્વરૂપનું પ્રતિપાદન કર્યું છે. અને જેમ વૃક્ષનું બીજ હોય તેમાં પણ આકાશ છે, પછી એ બીજમાંથી વૃક્ષ થયું ત્યારે તે વૃક્ષનાં ડાળ, પાનડાં, ફૂલ, ફળ એ સર્વેને વિષે આકાશ અન્વય થયો; પણ જ્યારે વૃક્ષને કાપે ત્યારે વૃક્ષ કપાય તે ભેળો આકાશ કપાય નહીં અને વૃક્ષને બાળે ત્યારે આકાશ બળે નહીં. તેમ ભગવાન પણ માયા ને માયાનું કાર્ય તેને વિષે અન્વય થયા થકા પણ આકાશની પેઠે વ્યતિરેક જ છે; એમ ભગવાનના સ્વરૂપનું અન્વય-વ્યતિરેકપણું છે.” 
+</p>
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

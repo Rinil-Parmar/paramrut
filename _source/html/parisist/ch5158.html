@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+								 			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+				 
+				 
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (158) ધર્મસ્વરૂપાનંદ બ્રહ્મચારીના જીવમાંથી નહિ વટલવાનો સંશય ટળે જ નહીં. ત્યારે હરિશંકરભાઈએ પૂછ્યું જે, ‘આત્મનિષ્ઠા હોય તો પણ એમ રહેતું હશે ?’ ત્યારે ઉત્તર કર્યો જે, ‘આત્મનિષ્ઠામાં ન રહે, કસર હોય તો રહે. ને આત્મનિષ્ઠા હોય પણ મયારામ ભટ્ટની પેઠે પૂર્વના ઋષિપણાના પાશ ટળે નહીં.’ તે ઉપર દુર્યોધન તથા યુધિષ્ઠિરને જીવમાં પાશ હતા, તેની વાત કરી.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			152. Pratyakṣha svarūp āgaḷ sahue ek yā bījī rīte khullā thavānun j chhe. Eṭale shun? Kharekhar bhagavān mānatā hoīe to, game tyāre be hāth joḍīne ūbhā rahevānun j chhe. Ekāntik dharma siddha karāvavā māṭe bāpā āpaṇane khullā karyā vagar rahevānā nathī. Ekāvan tattvo emanān chhe em mānīne vartavun j paḍe, maravun j paḍe. Emane āpī devun j paḍe. 
+ 
+ <br/><br/>
+ 
+ Potāne maḷyun je bhagavānanun pratyakṣha svarūp tene vishe sadā divya sākārapaṇānī ane sarvagnapaṇānī samajaṇ karavī j paḍashe. Eṭale shun? ‘jevā akṣharadhāmamān chhe evā j pṛuthvī par atyāre paṇ vichare chhe. Evā j paḷe paḷ sekanḍe sekanḍe āpaṇā haiyāmān rūnvāḍe rūnvāḍe birājamān chhe.’ em jo āpaṇe emane mānīe to sānnidhyamān chhīe ja. Em mānīne je vartīe e āpaṇe emanun brahmarūpe sevan karyun kahevāya. Game teṭalī sevā karo paṇ sāchā santanā samāgam vagar jīvane e jāṇapaṇun nahi āve. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

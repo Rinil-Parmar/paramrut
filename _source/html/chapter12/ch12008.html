@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (8) મંદિરનો વહેવાર હોય ને ક્રિયા પણ હોય. તે શું ? તો, ઢોરાં ચાર્યાં જોઈએ, પાણા કાઢ્યા જોઈએ, રોટલા પણ ઘડ્યા જોઈએ, એમ સર્વે ક્રિયા કરવી તે તો જેમ <a href="#ex1" class="wordMeaning">આલંબન</a> હોય તેમ એ સર્વે ક્રિયા ભજનની પુષ્ટિને અર્થે છે ને કરવાનું તો એકાંતે બેસીને ભગવાનને સંભારવા. ને આ વહેવાર છે તે આચાર્ય, સાધુ, બ્રહ્મચારી, પાર્ષદ કે હરિજન કોઈને ઇન્દ્રિયું લડાવવા સારુ નથી અને જે સત્સંગના વહેવારે ઇન્દ્રિયુંને લડાવશે તેનાથી જરૂર સત્સંગમાં નહિ રહેવાય ને દેહ ને જીવ બેયનું ભૂંડું થાશે. આ જીવને તો ખાવું, સૂવું ને કોઈની નિંદા કરવી, એ જ ગમે છે. પણ એટલું વિચારતો નથી જે, જ્યારે સત્સંગમાં આવ્યા, ને ભગવાનનું ગમતું ન થયું ત્યારે શું કમાણા ? ને બંદૂકુંના સો ભડાકા કર્યા ને વેજું ન પડ્યું; ખેતી કરી, વેપાર કર્યો ને ચાકરી કરી ને રૂપિયા ન પાક્યા, તે વાત અલેખે ગઈ. તેમ જ સત્સંગ કરવા આવ્યા ને તે ન થયું, ત્યારે આવ્યા તે ન આવ્યા. એકાંતમાં બેસી રહેતો હોય ને મહાત્યાગી હોય, પણ જો બીજા ઉપર કટાક્ષ રાખતો હોય તો તે મહારાજને ન ગમે ને જે કોઈ ભગવાન પામવાને અર્થે કાંઈક સેવા કરે ને ભગવાનના ભક્તની મન, કર્મ, વચને સેવા કરે તે ઉપર મહારાજનો રાજીપો છે. તે ઉપર <a href="GM-28.html" class="wordMeaning">મધ્યનું 28મું</a> વચનામૃત વંચાવ્યું.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 આલંબન= આધાર, ટેકો.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (391) કલાભાઈને અભેસિંહભાઈ પર ઈર્ષ્યા. તે સરકારમાં ચાડી કરવા ગયા. જે સાહેબ, એ તો તમારું પણ નહિ માને ને તેડાવશો તોય નહિ આવે. પછી સાહેબે પટાવાળાને તેડવા મોકલ્યો તે અભેસિંહભાઈ પૂજા કરતા હતા તે સિપાઈને કહે, ‘સાહેબને કહો હમણાં આવે છે.’ પણ પૂજા કરતાં વાર લાગી એટલે કલાજીએ સાહેબને કહ્યું જે એ તો ઊંધો છે તમારુંએ ન માન્યું. એટલે સાહેબે ફેર બીજું માણસ મોકલ્યું ને જમ્યા વગર ગયા. સાહેબ કહે, ‘અમારા હુકમ પ્રમાણે કેમ ન આવ્યા ?’ ત્યારે દરબારે સાહેબને કહ્યું જે, સાહેબ મારે પૂજાનો નિયમ છે. તે હું પરમેશ્ર્વરની પૂજા કરતો હતો ને પૂજાની સમાપ્તિ થઈ નહોતી, તેથી મેં, ‘હમણાં આવું છું’ એમ કહ્યું હતું ને બીજું માણસ આવ્યું ત્યારે પૂજાની સમાપ્તિ કરી જમ્યા વગર આવ્યો છું. એ સાંભળી સાહેબ ઘણો જ ખુશી થયો ને કહે જે, પરમેશ્ર્વરની બંદગી કરતાં ઊઠ્યા નહિ એ સારું છે ને કલાભાઈને ખીજ્યા જે તું તો ઈર્ષા કરે છે, મારું વચન ન માન્યું એવું કયાં છે ? એ તો ખુદાની બંદગી કરતા હતા. એમ કહી ઘણો જ ઠબકો (ઠપકો) દીધો. <br/><br/>
+ 
+ માટે <a href="#ex1" class="wordMeaning">કળાહોળ</a>નો પાર આવે નહિ ને આપણે તો જ્ઞાન, વૈરાગ્ય રાખીને સુખિયા રહેવું. કજિયા તો ઘરોઘર છે. કોઈને વાત સારી લાગે ને કોઈને ન લાગે. જીભ છે તે કેમે બોલાઈ જાય. માટે શબ્દ છે તે આકાશનો ભાગ જાણી કોઈ સામું જોવું નહિ. ને આહીં અમારે દર્શને આવે તે પણ કોઈને નહિ ગમતું હોય ને તે તો ઘરના મનુષ્યને પણ નહિ ગમતું હોય ને પોતાના શિષ્ય ક્યાંય બેસવા જાય તે પણ નહિ ગમતું હોય. તે શું ? જે, અહંમમત્વ આવ્યો ને અમારે તો સ્વભાવ પડ્યો તે કોઈને ગમે કે ન ગમે પણ કહ્યા વિના રહેવાય જ નહિ.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કળાહોળ= ઘોંઘાટ.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

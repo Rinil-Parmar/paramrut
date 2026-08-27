@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૫૪: સર્વ સાધનથી સત્સંગ અધિક કહ્યો, તેનું; ગોખરનું, આત્મબુદ્ધિનું</h1>
+			<p class="text_gu">સંવત ૧૮૮૦ના જ્યેષ્ઠ સુદિ ૭ સપ્તમીને દિવસ ત્રીજા પહોરને સમે સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાંથી ઘોડીએ અસવાર થઈને શ્રીલક્ષ્મીવાડીએ પધાર્યા હતા. ત્યાં ઘણી વાર સુધી તો ઘોડી ફેરવી. પછી તે વાડી મધ્યે વેદિ ઉપર વિરાજમાન થયા હતા અને સર્વ શ્વેત વસ્ત્ર પહેર્યાં હતાં અને મસ્તક ઉપર કાળા છેડાની ધોતલી બાંધી હતી ને કંઠને વિષે મોગરાનાં પુષ્પનો હાર વિરાજમાન હતો ને પાઘને વિષે તોરો વિરાજમાન હતો અને પોતાના મુખારવિંદની આગળ મુનિમંડળ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજે મુનિ પ્રત્યે પ્રશ્ન પૂછ્યો જે, “એકાદશ સ્કંધના બારમા અધ્યાયમાં શ્રીકૃષ્ણ ભગવાને ઉદ્ધવ પ્રત્યે કહ્યું છે જે, ‘અષ્ટાંગયોગ, સાંખ્ય, તપ, ત્યાગ, તીર્થ, વ્રત, યજ્ઞ અને દાનાદિક એણે કરીને હું તેવો વશ થતો નથી, જેવો સત્સંગે કરીને વશ થઉ છું;’ એમ ભગવાને કહ્યું છે. માટે સર્વ સાધન કરતાં સત્સંગ અધિક થયો. તે જેને સર્વ સાધન થકી સત્સંગ અધિક જણાતો હોય તે પુરુષનાં કેવાં લક્ષણ હોય?” પછી જેને જેવું સમજાયું તેવું તેણે કહ્યું, પણ યથાર્થ ઉત્તર થયો નહીં. પછી શ્રીજીમહારાજ બોલ્યા જે, “જેને ભગવાનના સંતને વિષે જ આત્મબુદ્ધિ છે. જેમ કોઈક રાજા હોય ને તે વાંઝિયો હોય ને પછી તેને ઘડપણમાં દીકરો આવે, પછી તે છોકરો તેને ગાળો દે ને મૂછો તાણે તો પણ અભાવ આવે નહીં અને કોઈકના છોકરાને મારે તથા ગામમાં અનીતિ કરી આવે તો પણ કોઈ રીતે તેનો અવગુણ આવે જ નહીં; શા માટે જે, એ રાજાને પોતાના દીકરાને વિષે આત્મબુદ્ધિ થઈ ગઈ છે. એવી <b>જેને ભગવાનના ભક્તને વિષે આત્મબુદ્ધિ થાય છે તેણે જ સર્વ સાધન થકી અધિક કલ્યાણકારી સત્સંગને જાણ્યો છે</b>. એ વાર્તા ભાગવતમાં કહી છે જે,</p>
+
+			<cite class="text_gu">‘યસ્યાત્મબુદ્ધિઃ કુણપે ત્રિધાતુકે સ્વધીઃ કલત્રાદિષુ ભૌમ ઇજ્યધીઃ ।<br>
+			યત્તીર્થબુદ્ધિઃ સલિલે ન કર્હિચિજ્જનેષ્વભિજ્ઞેષુ સ એવ ગોખરઃ ॥’</cite>
+
+			<p class="text_gu">એ શ્લોકને વિષે એ વાર્તા યથાર્થ કહી છે.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

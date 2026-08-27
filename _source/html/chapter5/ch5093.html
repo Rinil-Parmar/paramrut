@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (93) કારિયાણીનું 8મું વચનામૃત ને મધ્યનું 17મું વચનામૃત વંચાવી વાત કરી જે, આ પ્રમાણે સમજવાનું છે તે રહી ગયું ને ઈંટો, પથરા, લાકડાં, રૂપિયા ને માણસ તેને ભામે ચડી જવાણું છે. ને અમે તો આ હવેલી ઊખેડી તેમાં બહુ અકળાતા કે ક્યારે પૂરી થાશે ને વાતું કરશું ? ને દેહ પડી જાશે તો વાતું કરવી રહી જાશે. ને મારે તો એમ થાય છે કૂબામાં બેસીને દાણા ભેગા કરીને બધી પૃથ્વીનાં માણસને વાતું કરું. ને ત્રિકમદાસ છત જડાવે છે ને રંગ ચડાવે છે ને બદરિકાશ્રમવાળા તથા શ્ર્વેતદ્વીપવાળા તથા અક્ષરધામવાળા તથા ગોવર્ધનભાઈ કાંઈ ગાંડા છે ? ને ગોવર્ધનભાઈએ વીસ હજાર કોરી બગાડી નાખી. તે મુક્તાનંદસ્વામીએ મહારાજને કહ્યું જે, ‘ગોવર્ધનભાઈનું બહુ ભૂંડું થયું !’ ત્યારે મહારાજ કહે જે,“
+ 
+ <br/><br/>
+ સમદુ:ખસુખ: સ્વસ્થ: સમલોષ્ટાશ્મકાન્ચન: ।  <br/>
+તુલ્યપ્રિયાપ્રિયો ધીરસ્તુલ્યનિન્દાત્મસંસ્તુતિ: ।।
+
+ <br/>
+ (ભગવદ્ ગીતા : 14/24)
+ <br/>
+ અર્થ : જેને મન દુ:ખ અને સુખ સમાન છે, જે સ્વસ્થ છે, જેને મન ઢેફાં તથા સોનું સમાન છે, જેને મન પ્રિય અને અપ્રિય સમાન છે, જે ધીરજવાન છે, અને જેને મન પોતાની સ્તુતિ કે નિંદા સમાન છે તે પુરુષ ગુણાતીત કહેવાય છે.
+ <br/><br/>
+ 
+ થયું તે બહુ ભૂંડું થયું ”ત્યારે મુક્તાનંદસ્વામી સમજ્યા. એમ વાત કરીને કહ્યું જે, ‘આ બે વચનામૃત પ્રમાણે સમજે તો પણ આંહીં બેઠા અક્ષરધામ દેખે ને અક્ષરધામના પતિ દેખાણા એટલે અક્ષરધામ તો ભેગું જ આવી ગયું ને આ મૂર્તિ મળી છે તેના સામું જોઈ રહેવું. ને <a href="#ex1" class="wordMeaning">ધ્રોડીધ્રોડીને</a> ઘેર જવાય છે તે તો અભ્યાસ પડી ગયો છે, જેમ અફીણનું બંધાણ પડે તેમ.’ એમ વાત કરીને, 
+ 
+ <br/><br/>
+ રાજે ગઢપુર મહારાજ, પૂરણ બ્રહ્મ પરમાત્મા જો;
+ <br/>
+ આવ્યા ગરીબ નિવાજ, એ તો અક્ષરના આત્મા જો.
+ <br/>
+ (કીર્તન મુક્તાવલિ : 786)
+ <br/><br/>
+ એ કીર્તન ગવરાવ્યું ને ઉદ્ધવજી તથા ગોપીઓની વાત કરી. ને પ્રગટ સ્વરૂપના જ્ઞાનીને અધિક કહ્યો ને પ્રથમના 71માં વચનામૃતની વાત કરી જે, ‘પ્રગટ વાત કર્યા વિના એમ સમજાય છે જે બદરિકાશ્રમમાં, શ્ર્વેતદ્વીપમાં તથા ગૌલોકમાં ભગવાન છે ને થોડાક આંહીં છે; પણ સર્વોપરી ભગવાન આંહીં સમજાતા નથી, માટે પ્રગટ વાત કરીએ છીએ. ને આવો સમાગમ મળ્યો ને અહો ! અહો ! થાતું નથી, તથા ગાંડા થાવાતું નથી, તે તો ભગવાને જીવનાં કલ્યાણને અર્થે એમ રાખ્યું છે; નીકર ગાંડા થઈ જવાય.’
+ <br/><br/>
+ મત્ય દીધે માને નહિ, કુમત્યે મન કોળાય;
+ <br/>
+ આવેલ અવળે અક્ષરે, તે સવળે કેમ સોહાય.
+ <br/>
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ધ્રોડી ધ્રોડીને= દોડી દોડીને. 
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

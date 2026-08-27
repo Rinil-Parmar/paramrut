@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૫૨ - ત્યાગી અને ગૃહસ્થની શોભાનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૮૦ના ચૈત્ર વદિ ૧૧ એકાદશીને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાંથી ઘોડીએ અસવાર થઈને શ્રીલક્ષ્મીવાડીએ પધાર્યા હતા ને ત્યાં વેદિકા ઉપર વિરાજમાન થયા હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને કંઠને વિષે પુષ્પનો હાર પહેર્યો હતો ને પાઘને વિષે ફૂલનો તોરો વિરાજમાન હતો ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+અને પોતાની આગળ મુનિમંડળ ઝાંઝ-મૃદંગ લઈને કીર્તન ગાવતા હતા. તે જ્યારે કીર્તન ગાઈ રહ્યા ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, હવે વાર્તા કરીએ તે સાંભળો જે, આ સંસારને વિષે ગૃહસ્થાશ્રમી ને ત્યાગી એ બેના માર્ગ જુદા જુદા છે. તે જે ગૃહસ્થને શોભા હોય તે ત્યાગીને દૂષણરૂપ હોય અને જે ત્યાગીને શોભા હોય તે ગૃહસ્થને દૂષણરૂપ હોય. તેને બુદ્ધિમાન હોય તે જાણે પણ બીજો જાણી શકે નહીં. માટે તેની વિક્તિ કહીએ છીએ જે, જે ગૃહસ્થાશ્રમી છે તેને ધન-દોલત, હાથી-ઘોડા, ગાય-ભેંસ, મેડી-હવેલી, સ્ત્રી-છોકરાં, ભારે ભારે વસ્ત્ર-આભૂષણ એ સર્વે પદાર્થ શોભારૂપ છે અને એ જ જે સર્વે પદાર્થ તે જે ત્યાગી હોય તેને દોષરૂપ છે. અને ત્યાગી છે તેને વનમાં રહેવું, વસ્ત્ર વિના ઉઘાડું એક કૌપીનભર રહેવું, માથામાં ટોપી ઘાલવી, દાઢી-મૂછ મૂંડાવી નંખાવવી, ભગવાં વસ્ત્ર રાખવાં, અને કોઈ ગાળો દે ને કોઈ ધૂળ નાંખે તે અપમાનને સહન કરવું, એ જ ત્યાગીને પરમ શોભારૂપ છે. અને એ ત્યાગીની જે શોભા તે જ ગૃહસ્થને પરમ દોષરૂપ છે. માટે આ સંસારમાંથી જે નીસર્યો ને ત્યાગી થયો તેને તો એમ વિચારવું જે, ‘હું કયા આશ્રમમાં રહ્યો છું?’ એમ બુદ્ધિમાન હોય તેને વિચાર કરવો, પણ મૂર્ખની પેઠે વિચાર્યા વિના કોઈ ચાળે ચડી જવું નહીં. અને જે સમજુ હોય તેને કોઈક વઢીને કહે ત્યારે સામો ગુણ લે અને જે મૂર્ખ હોય તેને કોઈક હિતની વાત કહે ત્યારે તે મૂંઝાઈ જાય. અને મુકુંદ બ્રહ્મચારી તથા રતનજી એ બે મૂંઝાતા નથી, તો એમની સાથે અમારે ઘણું બને છે. અને વળી જે શ્રદ્ધાએ સહિત સેવા-ચાકરી કરે તે અમને ગમે; અને શ્રદ્ધા વિના તો કોઈ જમ્યાનું લાવે તો તે જમ્યાનું ગમે નહીં અને વસ્ત્ર લાવે તો તે વસ્ત્ર ઓઢવું ગમે નહીં અને પૂજા લાવે તો પૂજા ગમે નહીં, અને શ્રદ્ધાએ કરીને કરે તો અતિશય ગમે. અને શ્રદ્ધાએ કરીને ભક્તિ કરતો હોય ને બીજો કોઈક તેમાં ભક્તિ કરવા આવે ને તેની ઉપર ઈર્ષ્યા કરે, તો તે અમને ન ગમે. માટે <b>શ્રદ્ધાએ સહિત ને ઈર્ષ્યાએ રહિત જે ભક્તિ કરે તે અમને અતિશય ગમે છે.</b>”
+</p> 
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

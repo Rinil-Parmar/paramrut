@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (167) કેટલાક એમ કહે છે જે, પતિવ્રતાના અંગવાળા ભક્તે ભગવાનના જેવું હેત મોટા મોટા સાધુમાં ન કરવું. તેમાં <a href="GA-16.html" class="wordMeaning">છેલ્લાનાં 16માં</a> વચનામૃતની શાખ આપે છે; પણ મહારાજનો તો એવો મત નથી. ને <a href="V-5.html" class="wordMeaning">વરતાલનાં પાંચમાં</a> વચનામૃતમાં ઉત્તમ લક્ષણવાળા જે સંત તેની પુરુષોત્તમના ભેળી સરખી સેવા કરે તો સો જન્મે શુદ્ધ થાવાનો હોય તો એક જ જન્મે શુદ્ધ થાય છે, એવો નિત્યાનંદસ્વામીના પ્રશ્ર્નનો ઉત્તર છે ને <a href="GA-26.html" class="wordMeaning">છેલ્લાનાં 26માં</a> વચનામૃતમાં ભગવાનની પેઠે સેવા કરવા યોગ્ય જે સંત તે કહ્યા છે. માટે <a href="GA-16.html" class="wordMeaning">છેલ્લાનાં 16માં</a> વચનામૃતમાં જે સરખું હેત કરવાની ના પાડી છે તે તો શ્રીજીમહારાજની સર્વોપરી નિષ્ઠા વગરના ને જેને અવતારાદિકનો હૈયામાં ભાર હોય એવા બીજા ધામના જે ભક્તો આંહીં આવ્યા હતા ને મોટા મોટા કહેવાતા હતા તેમની સાથે પ્રીતિ કરવાની મહારાજે ના પાડી છે. પણ મહારાજના અને અક્ષરબ્રહ્મના સ્વરૂપ જ્ઞાનને જે ભક્તોએ સિદ્ધ કર્યું છે, તે સર્વેને તો માનવા, પૂજવા અને સેવવા એવો મહારાજે અનેક વચનામૃતમાં પોતાનો મત કહ્યો છે. તે જુઓ, <a href="GP-54.html" class="wordMeaning">પ્રથમનાં 54માં</a> વચનામૃતમાં એવા સંતના પ્રસંગ થકી મોક્ષનું દ્વાર ઉઘાડું થાય છે અને <a href="GM-54.html" class="wordMeaning">મધ્યનાં 54માં</a> વચનામૃતમાં એવા સંત સાથે જેને દેહ, સંબંધી, દેવ ને તીર્થ જેવી બુદ્ધિ નથી તો તેને બળદિયો કહ્યો છે. અને <a href="GM-28.html" class="wordMeaning">મધ્યનાં 28માં</a> વચનામૃતમાં મહારાજે કહ્યું જે, ‘હું તો એવા ભગવાનના ભક્તનો પણ ભક્ત છું, અને હું ભગવાનના ભક્તની ભક્તિ કરું છું; એ જ અમારે વિશે મોટો ગુણ છે.’ અને <a href="GA-7.html" class="wordMeaning">છેલ્લાનાં 7માં</a> અને <a href="GA-11.html" class="wordMeaning">11માં</a> વચનામૃતમાં એવા ભક્તમાં જ આત્મબુદ્ધિ કરવાનું કહ્યું છે. વળી, <br/> <br/>
+ 
+ધર્મસ્ત્યાજ્યો ન કૈશ્ચિત્ સ્વનિગમવિહિતો વાસુદેવે ચ ભક્તિ <br/>
+  ર્દિવ્યાકારે વિધેયા સિતઘનમહસિ બ્રહ્મણૈક્યં નિજસ્ય । <br/>
+નિશ્ચિત્યૈવાન્યવસ્તુન્યણુમપિ ચ રતિં સમ્પરિત્યજ્ય સન્ત <br/>
+  સ્તનમાહાત્મ્યાય સેવ્યા ઇતિ વદતિ નિજાન્ ધાર્મિકો નીલકંઠઃ ॥ <br/>
+
+
+
+  (સત્સંગિજીવન : શ્રી ધર્મનન્દનાષ્ટકમ્ ) <br/> 
+ 
+ અર્થ :- ‘કોઈએ પણ પોતાના ધર્મગ્રંથોમાં કહેલા ધર્મનો ત્યાગ ન કરવો જોઈએે, ભગવાન શ્રી વાસુદેવ કૃષ્ણના દિવ્યસ્વરૂપની ભક્તિ કરવી જોઈએ. શ્ર્વેત વાદળના તેજ સમાન ઘનશ્યામ શ્રીકૃષ્ણરૂપ બ્રહ્મમાં પોતાની એકતાનો (અભેદનો) નિશ્ર્ચય કરવો અને અન્ય વસ્તુ પર સહેજ પણ પ્રેમ હોય તો તેને તજી દેવો. સંતનો મહિમા આપણને પણ પ્રાપ્ત થાય તે માટે સંતોની સેવા કરવી.’ આ પ્રમાણે ધર્મપરાયણ નીલકંઠ મુનિ પોતાના ભક્તોને ઉપદેશ આપે છે. <br/> <br/>
+ 
+ એમ કહ્યું. અને <a href="V-11.html" class="wordMeaning">વરતાલના 11માં</a> વચનામૃતમાં એમ કહ્યું જે, સત્પુરુષને વિશે દૃઢ પ્રીતિ એ જ આત્મદર્શનનું સાધન છે અને મહિમા જાણ્યાનું પણ એ જ સાધન છે અને પરમેશ્ર્વરનું સાક્ષાત્ દર્શન થાવાનું પણ એ જ સાધન છે ને <a href="S-10.html" class="wordMeaning">સારંગપુરનાં 10માં</a> વચનામૃતમાં કહ્યું છે જે, એવા સંતનું દર્શન સાક્ષાત્ ભગવાનનાં દર્શન તુલ્ય છે. માટે ઉત્તમ લક્ષણવાળા સંતની તો ભગવાનની પેઠે સેવા કરવી, એવો તો મહારાજનો મત છે. કેમ જે, એવા સંત તો મહારાજના સ્વરૂપમાં પતિવ્રતાની ભક્તિ દૃઢ કરાવી મુમુક્ષુને એકાંતિક ભાવે મહારાજમાં જ જોડે છે. ને મુક્તાનંદસ્વામીના કીર્તનમાં કહ્યું છે જે, <br/> <br/>
+ 
+ જીન નરતન ધરી સંત ન સેવ્યા, તીન નિજ જનની વિગોઈ; <br/>
+ 
+ (કીર્તન મુક્તાવલિ : 712) <br/> <br/>
+ 
+ તેથી એવા પરમ એકાંતિક ભક્તની સેવા અને પ્રસન્નતા તે સ્વયં મહારાજની જ સેવા પ્રસન્નતા છે તેથી જે એ <a href="GA-16.html" class="wordMeaning">છેલ્લાનાં 16માં</a> વચનામૃતનો અવળો અર્થ કરે છે તેને મહારાજના વચનમાં નજર જ પડી નથી અને તે તો કેવળ પ્રાકૃત છે એમ જાણવું. 
+
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

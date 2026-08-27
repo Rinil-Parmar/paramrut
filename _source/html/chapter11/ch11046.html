@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (46) વિપરીત બુદ્ધિ થાય ત્યારે ભગવદીનો અભાવ આવે તે ‘વિનાશ કાળે વિપરીત બુદ્ધિ,’ એમ કહ્યું છે તે ઓલ્યા દેશના બધાને અને આ દેશના ત્રીજા ભાગને ગોપાળાનંદસ્વામીનો અભાવ, ને ધર્મામૃતને ‘ઘરબોળ્યું’ કહે છે, અને ગોપાળિયું જ્ઞાન ‘ખૂણિયું’ કહે છે તે સાંભળે નહિ ને સાંભળે તેનો દ્રોહ કરે અને ઝોળીમાં દેવતા નાખ્યો, એવો સત્સંગમાં કુસંગ છે. <br/> <br/>
+ 
+ તે ઓલ્યા દેશમાં આચાર્યે સભામાં ઠરાવ કર્યો કે, ગોપાળિયું જ્ઞાન શીખે નહિ અને ‘સૂત્રભાષ્ય’ની ટીકા ગોપાળાનંદસ્વામી પાસેથી ભણી આવે એવા કોઈ હોય તે વરતાલ ભણવા જાઓ. પછી વૃંદાવનદાસ અને નિર્ગુણદાસ બે સાધુ કહે, ‘અમે ગોપાળિયું જ્ઞાન પેસવા નહિ દઈએ, અને ગોપાળાનંદસ્વામીને છેતરીને ભણી આવશું.’ એટલે તેમને જાવા દીધા. પણ ગોપાળાનંદસ્વામી મહ સમર્થ યોગી, તે ભણાવતા ગયા અને નરનારાયણ એ સ્વામિનારાયણ નહિ, એવું જ્ઞાન શીખવી દીધું. પછી જૂનુ-નવું જ્ઞાન ભેગું થયું, તે વિભ્રાંત ચિત્તથી આંહીં સમાગમ કરવા આવી જાય છે ને આંહીંથી ઉપાસનાની વાતું શીખી તે દેશમાં કરે છે; તે બીતાં બીતાં પુરુષોત્તમ કહે છે, પણ જેમ છે તેમ નિરૂપણ કરતાં આવડે જ નહીં. એ તો ‘નહિ ઝાડ ત્યાં એરંડો <a href="#ex1" class="wordMeaning">રૂખ</a>.’ને આપણે તો બહુ રાજી છીએ કે આપણા સ્વામીને (શ્રીજીમહારાજને) બીજા કરતાં તો મોટા કહે છે, અને સમજાવે છે કે, ભવાઈયો ને વેશ એ સમજણ તો મટશે, પણ ‘મારે મિયાં અને ફુલાય પીંજારો,’ એવું થયું છે. પીંજારાથી સતારાગઢ લેવાય તેવો નહોતો, આ તો ઠાલો ફુલાયો અને પીંજતાં આળસ્યો. તેમ સર્વોપરી પુરુષોત્તમપણાનો ડંકો આંહીં જ બેસાડ્યો છે અને આંહીંથી સાંભળી શીખી બીજે કહે છે, તે પણ આ સાધુના પ્રતાપથી છે, એમ સાચી વાત કહે તો જાણે સાંભળનારને મહિમા ઓછો થઈ જાય. પણ મોટા મોટા અક્ષરના મહા ઉત્તમ સ્વતંત્ર મુક્તો પણ આ સાધુ થકી શીખ્યા છે અને નિષ્ઠામાં તો મોટા મોટા ઘણા રહી ગયા છે અને રહી જાય, એવી વાતું છે; પણ અંતે અમારે તો જેમ છે તેમ સમજાવી દેવું છે. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 રૂખ= પ્રધાન. 
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

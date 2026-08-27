@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">સૌભરી ૠષિ</h1>
+ 
+એ નામના એક બ્રહ્મર્ષિ હતા. તેમણે ગરૂડને શાપ દઈને યમુનાના ધરામાં આવવાની મનાઈ કરી હતી. ૠષિએ પાણીમાં બેસીને ૬૦,૦૦૦ વર્ષ સુધી તપ કર્યું, પણ જળમાં માછલાનું મૈથુન જોઈને તેને પરણવાની ઇચ્છા થઈ. તેથી માંધાતા રાજા પાસે જઈ કન્યાની યાચના કરી. પણ ૠષિ વૃદ્ધ અને કદરૂપા હોવાથી રાજાએ કહ્યું કે, તમે મારા અંતઃપુરમાં જાઓ. તમારી સાથે કોને પરણવાની ઇચ્છા છે તે જુઓ. પછી સૌભરીએ પોતાના તપોબળ વડે પોતાનો દિવ્ય અને તરૂણ દેહ ધારણ કર્યો. આ જોઈને માંધાતાની ૫૦ કન્યાઓ ૠષિના રૂપ જોઈને મોહ પામી અને તેની સાથે પરણી. પછી તેઓ બધી કન્યાઓ સાથે આશ્રમે આવ્યા. ત્યાં વિશ્વકર્માને બોલાવી પચાશે કન્યા માટે અલગ-અલગ મહેલ બંધાવ્યા. દૈવી શક્તિ વડે તેઓ કાયમ બધી સાથે રહી શકતા. આનાથી તેમને ૧૫૦ પુત્રો થયા. 
+<br/><br/>
+
+આ રીતે હજારો વર્ષ વીતી ગયાં. એકવાર સંધ્યાનો સૂરજ જોતા તેમને પોતાની ૠષિ કાળની સ્મૃતિ થઈ અને કહ્યું કે મને તરભાણુ, ફૂલ, ચંદન વગેરે આપો મારે સંધ્યા કરવી છે. ત્યારે તેની પત્ની બોલી કે તમે આ બધું હજારો વર્ષથી કર્યું નથી. આજે કેમ સંધ્યા કરવી છે ? આ સાંભળી તેમને થયું કે મેં મોહના કારણે આટલા હજાર વર્ષોનું તપ ગુમાવ્યું અને સંસાર ઊભો કરવા માટે પણ આટલું તપ અને સમય ગુમાવ્યો. આમ વિચાર થવાથી ફરીથી તેને વૈરાગ્ય થયો અને ફરી ૠષિ બન્યા.
+<br/><br/>
+
+એકવાર સૌભરી ૠષિ સ્વસ્થ ચિત્તે બેઠા હતા તો તેમને પોતાના પૂર્વજીવનની ઝાંખી થઈ અને પસ્તાવો થયો કે હું શું હતો ? માછલાનું મૈથુન જોઈને પરણ્યો. મારું બ્રહ્મ તેજ ખોયું. આવા વિચારથી તેમનો વૈરાગ્ય ફરી ઉદય થયો અને ત્યાગમાર્ગે જવા નીકળ્યા. તેમની પચાશ પત્નીઓને ૠષિમાં આસક્તિ હતી તેથી તેઓ હેતે કરીને તેમની સાથે વનમાં ગઈ. વનમાં ૠષિએ ઘોર તપ કર્યું અને આહ્‌વનીય વગેરે અગ્નિઓની સાથે પોતાની જાતને પરમાત્મામાં લીન કરી દીધી. પચાસ પત્નીઓએ જ્યારે પતિની આવી આધ્યાત્મિક ગતિ જોઈ ત્યારે તેમના પ્રભાવથી તેમની પત્નીઓ પણ સતિ થઈને તેમનામાં જ લીન થઈ ગઈ અને ૠષિની ગતિને પ્રાપ્ત કરી લીધી.  ૠષિના જેવું કલ્યાણ થયું.
+<br/><br/>
+
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

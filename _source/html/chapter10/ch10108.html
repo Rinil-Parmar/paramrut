@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (108)
+ <br/>
+ જહાં સુમતિ  તહાં  સંપત્તિ  નાના;
+ <br/>
+ જહાં કુમતિ તહાં વિપત્તિ નિદાના.
+ <br/><br/>
+ ત્યાગી થયા છે પણ માંહોમાંહી કજિયા કરે છે ને ગૃહસ્થને આડું અવળું સમજાવી વઢાડે છે; પછી પોતે વચમાં પડી વાંદરાના જેવો ન્યાય કરે છે. એક બ્રાહ્મણની નાતનો પટેલ સંન્યાસી થયો. કેટલેક દિવસ પછી પાછો ફરતો ફરતો પોતાના દેશમાં આવ્યો. ત્યારે તેણે વિચાર્યું જે, મને મારી પ્રથમની વિદ્યા આવડે છે કે નહિ, તેની આજ અજમાયશ કરું.
+ <br/><br/>
+ જે બ્રાહ્મણને ઘેર ઊતર્યો હતો તેના ઘરમાં ભાઈ, બહેન ને ભાઈની વહુ ત્રણ હતાં ને તે ત્રણેને સંપ અતિશે હતો. સંન્યાસીએ પ્રથમ તેની બહેનને કહ્યું જે, ‘તારો ભાઈ દારૂડિયો છે.’ બહેન કહે, ‘હોય નહિ.’ સંન્યાસી કહે, ‘રાતે સૂવે ત્યારે મોઢું સૂંઘવા જજે; જો ગંધાતું હોય તો સાચું માનજે.’ પછી તેનો ભાઈ ઘેર આવ્યો; ત્યારે સંન્યાસી કહે, ‘તારી બહેન તો ડાકણ છે.’ ભાઈ કહે, ‘હોય નહિ.’ સંન્યાસી કહે, ‘તે રોજ સૂંઘતી સૂંઘતી આવે છે, પણ લાગ આવતો નથી, માટે જાગતો રહેજે ને આજે રાતે તારું મોઢું સૂંઘવા આવે તો સાચું માનજે.’ પછી તે કામે ગયો, ને તેની સ્ત્રી આવી. તેને કહે જે, ‘તારી નણંદ ને તારો ધણી બેય <a href="#ex1" class="wordMeaning">ખૂટલ</a> છે.’ ત્યારે કહે, ‘ભાઈ બહેનને એમ હોય નહિ.’ તો કહે, ‘રાતે ખબર રાખજે ને ઘર ઉઘાડું રાખજે; જો ઘરમાં જાય તો સાચું માનજે.’
+ <br/><br/>
+ રાતે ત્રણેય જણાં ખોટે ખોટે સૂઈ ગયાં. પ્રથમ બહેન ભાઈનું મોઢું સૂંઘવા ગઈ ને જેવી સૂંઘવા લાગી કે તુરત જ ભાઈ બોલ્યો જે, ‘હે રાંડ ડાકણ!’ ત્યારે બહેન કહે, ‘હે મારા પીટ્યા દારૂડિયા !’ ત્યાં વહુ બોલી, ‘હે મારાં <a href="#ex1" class="wordMeaning">પીટ્યાં છિનાળવાં</a> !’ એમ પરસ્પર ખૂબ કજિયો થયો ને મારામારી થઈ. તે સાંભળી પાડોશી ભેળાં થયાં. આ બધું સંન્યાસીએ સૂતાં સૂતાં જોયું ને મનમાં રાજી થયો જે, ‘હજી મોરેની (પહેલાની) વિદ્યા આવડે છે તો ખરી !’ પછી બોલ્યો જે, ‘ભાઈ, કોઈનો વાંક નથી; એ તો મેં મારી વિદ્યા અજમાવી છે.’ તેમ સંન્યાસીની પેઠે કરે છે ને હરિજનને વઢાડે છે, તે ઠીક ન કહેવાય; માટે એમ ન કરવું. 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ખૂટલ= વિશ્ર્વાસઘાતી-અપ્રામાણિક.  <br/>
+2 પીટ્યાં છિનાળવાં= સ્ત્રીઓમાં બોલાતા નિમ્ન પ્રકારના શબ્દો (“સાલા વ્યાભિચારી”)
+
+	
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

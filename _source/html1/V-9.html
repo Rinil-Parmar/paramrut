@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">વરતાલ ૯ - ભગવાનનું નિર્ગુણ સુખ કેમ જણાય? તેનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૮૨ના પોષ સુદિ ૮ અષ્ટમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીવરતાલ મધ્યે શ્રીલક્ષ્મીનારાયણના મંદિરની આગળ મંચ ઉપર ગાદીતકિયા બિછવાવીને વિરાજમાન હતા અને સર્વે શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજે મુનિમંડળ સમસ્ત પ્રત્યે પ્રશ્ન પૂછ્યો જે, “રાજસી, તામસી ને સાત્ત્વિકી એ ત્રણ પ્રકારનું જે માયિક સુખ તે જેમ ત્રણ અવસ્થાને વિષે જણાય છે, તેમ નિર્ગુણ એવું જે ભગવાન સંબંધી સુખ તે કેમ જણાય છે?” પછી એ પ્રશ્નનો ઉત્તર મુનિમંડળ સમસ્ત મળીને કરવા માંડ્યો પણ એનું સમાધાન થયું નહીં. પછી શ્રીજીમહારાજ બોલ્યા જે, “પૃથ્વી આદિક ચાર ભૂત વિના એકલો જ આકાશ હોય અને જેટલા આકાશને વિષે તારા છે તેટલા ચંદ્રમા હોય ને તેનો જેવો પ્રકાશ થાય તેવો ચિદાકાશનો પ્રકાશ છે. અને તે ચિદાકાશને મધ્યે સદાય ભગવાનની મૂર્તિ વિરાજમાન છે. તે મૂર્તિને વિષે જ્યારે સમાધિ થાય ત્યારે એક ક્ષણમાત્ર ભગવાનના સ્વરૂપમાં સ્થિતિ થઈ હોય, તે ભજનના કરનારાને એમ જણાય જે, ‘હજારો વર્ષ પર્યંત મેં સમાધિને વિષે સુખ ભોગવ્યું.’ એવી રીતે ભગવાનના સ્વરૂપ સંબંધી જે નિર્ગુણ સુખ તે જણાય છે. અને જે માયિક સુખ છે તે બહુકાળ ભોગવ્યું હોય તો પણ અંતે ક્ષણ જેવું જણાય છે. માટે <b>ભગવાનના સ્વરૂપ સંબંધી જે નિર્ગુણ સુખ છે તે અખંડ, અવિનાશી છે; ને જે માયિક સુખ છે તે નાશવંત છે.”</b>
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

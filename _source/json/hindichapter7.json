@@ -1,0 +1,282 @@
+
+   [
+    {
+      "VatId": "1481",
+      "ChId": "7",
+      "VatName": "Manavadarma mayaram bhattne",
+      "VatNameGuj": "માણાવદરમાં મયારામ ભટ્ટને",
+      "VatFile": "ch07001.txt",
+      "VatNo": "1",
+      "VatNameHindi": "माणावदर में मयाराम भट्ट के"
+    },
+    {
+      "VatId": "1482",
+      "ChId": "7",
+      "VatName": "Jetpurma unad rajane gher",
+      "VatNameGuj": "જેતપુરમાં ઉનડ રાજાને ઘેર",
+      "VatFile": "ch07002.txt",
+      "VatNo": "2",
+      "VatNameHindi": "जेतपुर में उनड राजा के महल"
+    },
+    {
+      "VatId": "1483",
+      "ChId": "7",
+      "VatName": "Gam fanenima mandirni",
+      "VatNameGuj": "ગામ ફણેણીમાં મંદિરની",
+      "VatFile": "ch07003.txt",
+      "VatNo": "3",
+      "VatNameHindi": "गाँव फणेणी में मन्दिर की ज"
+    },
+    {
+      "VatId": "1484",
+      "ChId": "7",
+      "VatName": "Shrijimaharajne lojma",
+      "VatNameGuj": "શ્રીજીમહારાજને લોજમાં",
+      "VatFile": "ch07004.txt",
+      "VatNo": "4",
+      "VatNameHindi": "लोज गाँव में श्रीजीमहाराज "
+    },
+    {
+      "VatId": "1485",
+      "ChId": "7",
+      "VatName": "Div gamno vanik sheth",
+      "VatNameGuj": "દીવ ગામનો વણિક શેઠ",
+      "VatFile": "ch07005.txt",
+      "VatNo": "5",
+      "VatNameHindi": "दीव गाँव का एक वणिक सेठ सं"
+    },
+    {
+      "VatId": "1486",
+      "ChId": "7",
+      "VatName": "Agatraima hal mandir chhe",
+      "VatNameGuj": "અગત્રાઈમાં હાલ મંદિર છે",
+      "VatFile": "ch07006.txt",
+      "VatNo": "6",
+      "VatNameHindi": "अगत्राई में फिलहाल मन्दिर "
+    },
+    {
+      "VatId": "1487",
+      "ChId": "7",
+      "VatName": "Shrijimaharaje santo pratye",
+      "VatNameGuj": "શ્રીજીમહારાજે સંતો પ્રત્યે",
+      "VatFile": "ch07007.txt",
+      "VatNo": "7",
+      "VatNameHindi": "श्रीजीमहाराज ने सन्तों के "
+    },
+    {
+      "VatId": "1488",
+      "ChId": "7",
+      "VatName": "Parvatbhaine Shrijimaharajni",
+      "VatNameGuj": "પર્વતભાઈને શ્રીજીમહારાજની",
+      "VatFile": "ch07008.txt",
+      "VatNo": "8",
+      "VatNameHindi": "पर्वतभाई को श्रीजीमहाराज क"
+    },
+    {
+      "VatId": "1489",
+      "ChId": "7",
+      "VatName": "Amadavadma santne dushte",
+      "VatNameGuj": "અમદાવાદમાં સંતને દુષ્ટે",
+      "VatFile": "ch07009.txt",
+      "VatNo": "9",
+      "VatNameHindi": "अहमदाबाद में सन्त को दुष्ट"
+    },
+    {
+      "VatId": "1490",
+      "ChId": "7",
+      "VatName": "Ek same Shrijimaharaje",
+      "VatNameGuj": "એક સમે શ્રીજીમહારાજે",
+      "VatFile": "ch07010.txt",
+      "VatNo": "10",
+      "VatNameHindi": " एक समय श्रीजीमहाराज ने व्"
+    },
+    {
+      "VatId": "1491",
+      "ChId": "7",
+      "VatName": "Bhadarama Shrijimaharaj pase",
+      "VatNameGuj": "ભાદરામાં શ્રીજીમહારાજ પાસે",
+      "VatFile": "ch07011.txt",
+      "VatNo": "11",
+      "VatNameHindi": " भादरा में श्रीजीमहाराज के"
+    },
+    {
+      "VatId": "1492",
+      "ChId": "7",
+      "VatName": "Ek pathan zinzavadarni simma",
+      "VatNameGuj": "એક પઠાણ ઝીંઝાવદરની સીમમાં",
+      "VatFile": "ch07012.txt",
+      "VatNo": "12",
+      "VatNameHindi": " एक पठान झींझावदर गाँव की "
+    },
+    {
+      "VatId": "1493",
+      "ChId": "7",
+      "VatName": "Gam vandhiyama paroksh",
+      "VatNameGuj": "ગામ વાંઢિયામાં પરોક્ષ",
+      "VatFile": "ch07013.txt",
+      "VatNo": "13",
+      "VatNameHindi": " गाँव वांढिया में परोक्ष अ"
+    },
+    {
+      "VatId": "1494",
+      "ChId": "7",
+      "VatName": "Damodare nathu bhattne",
+      "VatNameGuj": "દામોદરે નથુ ભટ્ટને",
+      "VatFile": "ch07014.txt",
+      "VatNo": "14",
+      "VatNameHindi": " दामोदरजी ने नथु भट्ट से श"
+    },
+    {
+      "VatId": "1495",
+      "ChId": "7",
+      "VatName": "Gadhadama Shrijimaharaje ek",
+      "VatNameGuj": "ગઢડામાં શ્રીજીમહારાજે એક",
+      "VatFile": "ch07015.txt",
+      "VatNo": "15",
+      "VatNameHindi": " गढ़पुर में श्रीजीमहाराज न"
+    },
+    {
+      "VatId": "1496",
+      "ChId": "7",
+      "VatName": "Jetalpurna maholma",
+      "VatNameGuj": "જેતલપુરના મહોલમાં",
+      "VatFile": "ch07016.txt",
+      "VatNo": "16",
+      "VatNameHindi": " जेतलपुर के महल में मुक्ता"
+    },
+    {
+      "VatId": "1497",
+      "ChId": "7",
+      "VatName": "Jaliyama Shrijimaharaje sarv",
+      "VatNameGuj": "જાળિયામાં શ્રીજીમહારાજે સર્વ",
+      "VatFile": "ch07017.txt",
+      "VatNo": "17",
+      "VatNameHindi": " जालिया गाँव में श्रीजीमहा"
+    },
+    {
+      "VatId": "1498",
+      "ChId": "7",
+      "VatName": "Kariyanima Shrijimaharaj sarv",
+      "VatNameGuj": "કારિયાણીમાં શ્રીજીમહારાજ સર્વ",
+      "VatFile": "ch07018.txt",
+      "VatNo": "18",
+      "VatNameHindi": " कारियाणी में श्रीजीमहाराज"
+    },
+    {
+      "VatId": "1499",
+      "ChId": "7",
+      "VatName": "Amadavadma Shrinarnarayandevni",
+      "VatNameGuj": "અમદાવાદમાં શ્રીનરનારાયણદેવની",
+      "VatFile": "ch07019.txt",
+      "VatNo": "19",
+      "VatNameHindi": " अहमदाबाद में श्रीनरनारायण"
+    },
+    {
+      "VatId": "1500",
+      "ChId": "7",
+      "VatName": "Varatalma Shrijimaharaje",
+      "VatNameGuj": "વરતાલમાં શ્રીજીમહારાજે",
+      "VatFile": "ch07020.txt",
+      "VatNo": "20",
+      "VatNameHindi": " वड़ताल में श्रीजीमहाराज न"
+    },
+    {
+      "VatId": "1501",
+      "ChId": "7",
+      "VatName": "Varatalma Satsangijivan",
+      "VatNameGuj": "વરતાલમાં સત્સંગિજીવન",
+      "VatFile": "ch07021.txt",
+      "VatNo": "21",
+      "VatNameHindi": " वड़ताल में 'सत्संगिजीवन' "
+    },
+    {
+      "VatId": "1502",
+      "ChId": "7",
+      "VatName": "Ek Samaye Shrijimaharaje",
+      "VatNameGuj": "એક સમયે શ્રીજીમહારાજે",
+      "VatFile": "ch07022.txt",
+      "VatNo": "22",
+      "VatNameHindi": " एक बार श्रीजीमहाराज ने सन"
+    },
+    {
+      "VatId": "1503",
+      "ChId": "7",
+      "VatName": "Shrijimaharaje santne potano",
+      "VatNameGuj": "શ્રીજીમહારાજે સંતને પોતાનો",
+      "VatFile": "ch07023.txt",
+      "VatNo": "23",
+      "VatNameHindi": " श्रीजीमहाराज ने सन्तों को"
+    },
+    {
+      "VatId": "1504",
+      "ChId": "7",
+      "VatName": "Je aksharatit pratyaksh",
+      "VatNameGuj": "જે અક્ષરાતીત પ્રત્યક્ષ",
+      "VatFile": "ch07024.txt",
+      "VatNo": "24",
+      "VatNameHindi": " अक्षरातीत प्रत्यक्ष पुरुष"
+    },
+    {
+      "VatId": "1505",
+      "ChId": "7",
+      "VatName": "Shri Sahajanandswami",
+      "VatNameGuj": "શ્રીસહજાનંદસ્વામી",
+      "VatFile": "ch07025.txt",
+      "VatNo": "25",
+      "VatNameHindi": " श्री सहजानन्दस्वामी परब्र"
+    },
+    {
+      "VatId": "1506",
+      "ChId": "7",
+      "VatName": "Panch indriyo ne",
+      "VatNameGuj": "પાંચ ઇન્દ્રિયો ને",
+      "VatFile": "ch07026.txt",
+      "VatNo": "26",
+      "VatNameHindi": " पाँच इन्द्रियाँ एवं छठे म"
+    },
+    {
+      "VatId": "1507",
+      "ChId": "7",
+      "VatName": "Akshardhamma anant apar",
+      "VatNameGuj": "અક્ષરધામમાં અનંત અપાર",
+      "VatFile": "ch07027.txt",
+      "VatNo": "27",
+      "VatNameHindi": " अक्षरधाम में अनन्त अपार ज"
+    },
+    {
+      "VatId": "1508",
+      "ChId": "7",
+      "VatName": "Jena upar satshastrno",
+      "VatNameGuj": "જેના ઉપર સત્શાસ્ત્રનો",
+      "VatFile": "ch07028.txt",
+      "VatNo": "28",
+      "VatNameHindi": " जिस पर सत्शास्त्र का अधिक"
+    },
+    {
+      "VatId": "1509",
+      "ChId": "7",
+      "VatName": "Harikrushn Purushottam te",
+      "VatNameGuj": "હરિકૃષ્ણ પુરુષોત્તમ તે",
+      "VatFile": "ch07029.txt",
+      "VatNo": "29",
+      "VatNameHindi": " हरिकृष्ण पुरुषोत्तम अक्षर"
+    },
+    {
+      "VatId": "1510",
+      "ChId": "7",
+      "VatName": "Varatale ugamana bangalane",
+      "VatNameGuj": "વરતાલે ઉગમણા બંગલાને",
+      "VatFile": "ch07030.txt",
+      "VatNo": "30",
+      "VatNameHindi": " वड़ताल में पूर्वमुख बंगले"
+    },
+    {
+      "VatId": "1511",
+      "ChId": "7",
+      "VatName": "Tran dehthi par",
+      "VatNameGuj": "ત્રણ દેહથી પર",
+      "VatFile": "ch07031.txt",
+      "VatNo": "31",
+      "VatNameHindi": " तीन देह से पर 'निजात्मानं"
+    }
+  ]

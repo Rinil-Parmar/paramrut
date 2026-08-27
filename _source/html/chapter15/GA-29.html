@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+	<ul class="reader_tools noselect">			
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૨૯ - વીસ વીસ વર્ષના બે હરિભક્તો</h1>
+			
+			
+<p class="text_gu">
+
+સંવત ૧૮૮૫ના પોષ સુદિ ૨ બીજને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં મેડીને આગળ ઓટા ઉપર ઢોલિયો ઢળાવીને રાત્રિને સમે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ સાધુ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજે શુકમુનિને પ્રશ્ન પૂછ્યો જે, “બે સત્સંગી છે તેની અવસ્થા વીસ વીસ વર્ષની છે તથા બેયને નિશ્ચય, હેત, ભક્તિ, વૈરાગ્ય, ધર્મ તે બરોબર છે. અને તેમાંથી એકને તો પ્રારબ્ધયોગે કરીને પરણીને સ્ત્રી મળી ને એકને ન મળી ને સાંખ્યયોગી રહ્યો ને એને પણ પરણ્યાની તો ઇચ્છા હતી પણ મળી નહીં. ત્યારે એ બે જણને તીવ્ર વૈરાગ્ય તો પ્રથમથી જ ન હતો; માટે વિષયભોગમાં બેયની તીક્ષ્ણ વૃત્તિ હતી. તે તીક્ષ્ણ વૃત્તિ ઓછી તે એ ગૃહસ્થ થયો તેની થાય કે સાંખ્યયોગીની થાય? તે કહો. અને વેદ તો એમ કહે છે જે, ‘જેને તીવ્ર વૈરાગ્ય હોય તેને બ્રહ્મચર્યપણા થકી જ સંન્યાસ કરવો. ને જેને મંદ વૈરાગ્ય હોય તેને વિષયભોગની તીક્ષ્ણતા ટાળ્યાને અર્થે ગૃહસ્થાશ્રમ કરવો ને પછી વાનપ્રસ્થ થવું ને પછી સંન્યાસ કરવો.’ માટે વિચારીને ઉત્તર કરજ્યો.” પછી શુકમુનિએ એનો ઉત્તર કરવા માંડ્યો પણ થયો નહીં. પછી શ્રીજીમહારાજે એનો ઉત્તર કર્યો જે, “એ ગૃહસ્થાશ્રમી સારો ને બીજો જે સાંખ્યયોગી તે ભૂંડો; કેમ જે, એને તીવ્ર વૈરાગ્ય નથી, માટે એણે વિષયને તુચ્છ ને અસત્ય જાણ્યા નથી. તેમ કાંઈ પોતામાં આત્મનિષ્ઠાની પણ દ્રઢતા નથી. તે સારુ એ સત્સંગથી બહાર જાય ને વિષયનો યોગ થાય તો બંધાઈ જાય ને જો વિષયનો યોગ ન થાય તો સત્સંગની પાછી લાલચ રાખે ને સત્સંગમાં આવે. અને જે ગૃહસ્થ છે તેને છ મહિને સંતનાં દર્શન થાય તો પણ સમાસ રહે. માટે મંદ વૈરાગ્યવાળાને ત્યાગ કરવો એ ઠીક નથી, ત્યાગ તો તીવ્ર વૈરાગ્યવાળાને કરવો તે ઠીક છે. અને મંદ વૈરાગ્યવાળો ત્યાગ કરે તો એનો ત્યાગ દેહ પર્યંત નભે નહીં; વર્ષે, બે વર્ષે, દસ વર્ષે તેના ત્યાગમાં વિઘ્ન જરૂર પડે.”
+</p>
+<p class="text_gu">
+
+ત્યારે શુકમુનિએ આશંકા કરી જે, “હે મહારાજ! એ મંદ વૈરાગ્યવાળો ત્યાગી છે તે સંત થકી ભગવાનના માહાત્મ્યની વાત સાંભળે ને પછી પોતે મનમાં વિચાર કરે તો શું એને તીવ્ર વૈરાગ્ય ન આવે? અને પ્રથમથી જ તીવ્ર વૈરાગ્ય તો કોઈકને પ્રારબ્ધયોગે કરીને હશે; અને બહુધા તો એમ પ્રત્યક્ષ દેખાય છે જે, આને વૈરાગ્ય ન હતો ને પછી થયો, ત્યારે એનું કેમ સમજવું?” પછી શ્રીજીમહારાજ બોલ્યા જે, “એનો તો એમ ઉત્તર છે જે, પોતાને વિચારે તથા કોઈ રીતે તીવ્ર વૈરાગ્ય થાય નહીં. અને જો ધર્મ, જ્ઞાન, વૈરાગ્ય, ભક્તિ એ ચાર ગુણે કરીને સંપન્ન એવા જે મોટા સાધુ તેની સાથે એને અતિશય હેત થાય, જેમ ભગવાન સાથે હેત થાય છે, ત્યારે તો તે જુએ, સાંભળે, બોલે ઇત્યાદિક જે જે ક્રિયાને કરે તે પોતાને જે મોટા સંત સાથે હેત છે તેની મરજી પ્રમાણે જ કરે પણ મરજી ન હોય તેવી કોઈ ક્રિયા કરે નહીં. અને તે સંતની મરજીથી બાહેર વર્ત્યામાં તેના મનને વિષે નિરંતર ભય વર્તે જે, ‘જો હું એમની મરજી પ્રમાણે નહીં વર્તું તો એ મારી સાથે હેત નહીં રાખે;’ તે સારુ નિરંતર તેની મરજી પ્રમાણે વર્તે. માટે જો એવું સંત સાથે હેત થયું હોય તો વૈરાગ્ય ન હોય તો પણ એનો ત્યાગ પાર પડે. અને જુઓ ને, આપણા સત્સંગમાં બાઈ, ભાઈ, પરમહંસ એ સર્વેને અમારી ઉપર હેત છે તો મોટેરી બે-ત્રણ બાઈઓ છે તે બરોબર બીજી સર્વે બાઈઓ વર્તમાન પાળે છે. કેમ જે, એ મનમાં એમ જાણે છે જે, ‘જો અમે ખબડદાર થઈને વર્તમાન નહીં પાળીએ તો મહારાજનું હેત અમારી ઉપર નહીં રહે ને કુરાજી થશે.’ તથા પરમહંસમાં પણ એમ છે તથા બીજા જે સત્સંગી તથા બ્રહ્મચારી તથા પાળા એ સર્વેમાં પણ એમ છે. તથા દેશદેશનાં હરિભક્ત બાઈ-ભાઈ છેટે રહ્યાં છે તે પણ વર્તમાનમાં ખબડદાર વર્તે છે અને એમ જાણે છે જે, ‘જો આપણ સારી પેઠે નહીં વર્તીએ તો મહારાજ કુરાજી થશે.’ માટે અમારે વિષે હેતે કરીને બંધાણાં થકાં સર્વે ધર્મમાં દ્રઢપણે વર્તે છે; પણ વૈરાગ્ય તો કોઈકને થોડો હશે ને કોઈકને ઝાઝો હશે, તેનો કાંઈ મેળ છે નહીં. અને અમે પંચાળામાં મોરે માંદા થયા હતા ને તેમાંથી જો કાંઈક થયું હોત તો જેમ હમણાં સર્વેની વૃત્તિઓ છે તેવી ન રહેત. ત્યારે તો જે તીવ્ર વૈરાગ્યવાળા હોય તે ધર્મમાં રહે તથા તેની સાથે જેણે પોતાના જીવને હેતે કરીને બાંધી રાખ્યો હોય તે ધર્મમાં રહે તથા જે સત્સંગનો યોગ રાખે ને ભગવાનને અંતર્યામી જાણીને પોતપોતાના નિયમ કહ્યા છે તે પ્રમાણે વર્તે તો ધર્મમાં રહે અને એ વિના બીજાનું તો કાંઈ ઠીક રહે નહીં. માટે અમે જે પ્રશ્ન પૂછ્યો હતો તેનો આ અમે કહ્યો તે જ ઉત્તર છે.”
+</p>
+
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

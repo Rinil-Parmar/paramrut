@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">અમદાવાદ ૮</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૮૨ના ફાગણ વદિ ૮ અષ્ટમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીઅમદાવાદ મધ્યે શ્રીનરનારાયણના મંદિરથી ઉત્તર દિશે ધર્મશાળાને વિષે સાધુને જમાડતા હતા ને સુંદર શ્વેત રૂમાલ મસ્તક ઉપર બાંધ્યો હતો ને શ્વેત ખેસ પહેર્યો હતો ને ડાબા ખભા ઉપર ખેસ નાંખીને કેડ બાંધી હતી ને કંઠને વિષે ગુલાબનો મોટો હાર વિરાજમાન હતો.
+</p>
+<p class="text_gu">
+ને પછી પંક્તિમાં લાડુ ફેરવતાં ફેરવતાં શ્રીજીમહારાજે સર્વે સાધુને એમ વાર્તા કરી જે, “સાધુને સર્વે પ્રકારે ક્રોધ જીતવો. તે ક્રોધ કેવો છે? તો જપ, તપ, જ્ઞાન એ આદિક સર્વે શુભ ગુણને નાશ કરે એવો છે. ને હવે જે નિમિત્તે ક્રોધ ઊપજે છે તે નિમિત્તને કહીએ છીએ જે, સાધુને માંહોમાંહી પ્રશ્ન-ઉત્તર કરતાં ક્રોધ ઊપજે તથા વાદવિવાદ કરતાં ક્રોધ ઊપજે તથા કોઈ પદાર્થ લેવા-દેવામાં ક્રોધ ઊપજે તથા કોઈકને શિક્ષા કરતા હોઈએ ને ક્રોધ ઊપજે તથા પોતાની શુશ્રૂષાને વિષે રહેતો હોય જે સાધુ તેને પક્ષપાતે કરીને ક્રોધ ઊપજે તથા અપમાને કરીને ક્રોધ ઊપજે તથા ઈર્ષ્યાએ કરીને ક્રોધ ઊપજે તથા આસન કરવાને વિષે ક્રોધ ઊપજે તથા ભગવાનની પ્રસાદી વહેંચવાને વિષે ન્યૂનાધિકપણું કરે ને ક્રોધ ઊપજે, એ પ્રકારે ક્રોધ ઊપજ્યાનાં નિમિત્ત ઘણાંક છે. માટે તે ક્રોધ જો મોટા સાધુને ઊપજે અથવા નાના સાધુને ઊપજે, તો જેની ઉપર ક્રોધ ઊપજે તેને સાષ્ટાંગ દંડવત્ પ્રણામ કરવો અને ગદ્‌ગદ-હૃદય થઈને દીનતાએ નિષ્કપટપણે કરીને રૂડાં રૂડાં વચન બોલીને તેને પ્રસન્ન કરવો; એમ અમારી આજ્ઞા છે. અને જો કોઈક સાધુ ઉપર દ્રોહ-બુદ્ધિએ સંકલ્પ થાય તો નિષ્કપટ થઈને પોતાને મુખે તે સંકલ્પ કહેવો જે, ‘હે મહારાજ! આ રીતનો ભૂંડો સંકલ્પ તમારી ઉપર થયો.’ ને તે સંકલ્પનો જે દોષ તેની નિવૃત્તિને અર્થે હાથ જોડીને તેની પ્રાર્થના કરવી. અને જો સાધુને ગૃહસ્થ હરિભક્ત ઉપર ક્રોધ ઊપજે તો તે સાધુ ગૃહસ્થની વચને કરીને પ્રાર્થના કરે અને બેઠે થકે નમસ્કાર કરે, પણ સાષ્ટાંગ દંડવત્ ન કરે. અને જે સાંખ્યયોગી બાઈઓ છે તેમને પણ જો પરસ્પર ક્રોધ ઊપજે તથા કર્મયોગી સ્ત્રીઓને વિષે ક્રોધ ઊપજે તો વચને કરીને પ્રાર્થના કરવી ને બેઠે થકે નમસ્કાર કરવો. અને સાંખ્યયોગી પુરુષ તથા સાધુ તેમની તો એક જ રીત છે. અને જેની ઉપર ક્રોધ ઊપજે તેને આપણા સ્વામી જે શ્રીનરનારાયણ તેનો ભક્ત જાણીને તત્કાળ માન મૂકીને નમસ્કાર કરવો ને પ્રાર્થના કરવી પણ દેહદ્રષ્ટિ ન રાખવી જે, ‘હું મોટો છું ને ઉત્તમ છું ને આ તો મોટો નથી ને નાનો છે,’ એવી રીતે દેહદ્રષ્ટિ ન કરવી. ને આપણા ઇષ્ટદેવ જે શ્રીનરનારાયણ તે પણ ક્રોધ તથા માન નથી રાખતા. માટે તે શ્રીનરનારાયણના આશ્રિત એવા જે ઉદ્ધવ સંપ્રદાયના આપણ સર્વે તેમણે ક્રોધ તથા માન તેનો સર્વ પ્રકારે ત્યાગ કરવો. અને આ જે અમે ક્રોધનું પ્રાયશ્ચિત્ત કહ્યું છે તેને જે કરશે તેને ઉપર શ્રીનરનારાયણ પ્રસન્ન થશે ને તેનું અંતઃકરણ શુદ્ધ થશે ને તેનાં કામ, ક્રોધ, માન, લોભ, મદ, મત્સર તે સર્વ નાશ પામી જશે. અને ક્રોધ ઊપન્યો ને જે આ પ્રાયશ્ચિત્ત નહીં કરે તેને સર્પ તુલ્ય જાણવો પણ તેને ભગવાનનો ભક્ત જાણવો નહીં.” એવી રીતે શ્રીજીમહારાજે વાર્તા કરી તેને સાંભળીને સાધુ તથા સર્વ હરિભક્ત પુરુષ ને સ્ત્રીઓ પરમ આનંદ પામતાં હવાં.
+</p>
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

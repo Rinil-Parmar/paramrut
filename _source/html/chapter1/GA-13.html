@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૧૩: દેશકાળે એકાંતિક ધર્મ રહ્યાનું</h1>
+			<p class="text_gu">સંવત ૧૮૮૪ના આષાઢ વદિ ૯ નવમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને કંઠને વિષે મોગરાનાં પુષ્પના હાર પહેર્યા હતા ને પાઘને વિષે તોરા વિરાજમાન હતા ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી અને આગળ મુનિમંડળ દૂકડ-સરોદા લઈને કીર્તન ગાવતા હતા.</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજ બોલ્યા જે, “કીર્તન રાખો, હવે ભગવદ્‌વાર્તા કરીએ.” એમ કહીને શ્રીજીમહારાજે મુનિમંડળ પ્રત્યે પ્રશ્ન પૂછ્યો જે, “જીવનો દેહ છે તે તો પૂર્વકર્મને આધીન છે. તેનો એક નિર્ધાર રહેતો નથી. તે ક્યારેક સાજો રહે ને ક્યારેક કર્માધીનપણે કરીને માંદો થઈ જાય, ને ક્યારેક સ્વતંત્ર વર્તતો હોય ને ક્યારેક પરાધીનપણે થઈ જાય, અને ધાર્યું હોય તે ઠેકાણે રહેવાય કે ન જ રહેવાય. અને ક્યારેક હરિભક્તના મંડળમાં રહેતા હોઈએ ને કર્મ કે કાળને યોગે કરીને નોખા પડી ગયા ને એકલા જ રહી જવાય, ત્યારે જે જે નિયમ રાખવાની દ્રઢતા હોય તેનો કાંઈ મેળ રહે જ નહીં. અથવા ઇંગ્રેજ જેવો કોઈક રાજા હોય ને તેણે ક્યાંઈક પરવશ રાખ્યા અથવા પોતાનાં મન ને ઇન્દ્રિયો તે ઇંગ્રેજ જેવાં જ છે તેણે જ પરવશ રાખ્યા, ત્યારે જે સંતના મંડળમાં રહેવું ને સત્સંગની મર્યાદા પાળવી તેનો કાંઈ મેળ રહે નહીં. અને શાસ્ત્રમાં તો એમ જ કહ્યું છે જે, ‘ધર્મ, જ્ઞાન, વૈરાગ્ય અને ભક્તિ એ ચાર સંપૂર્ણ હોય ત્યારે એકાંતિક ભક્ત કહેવાય ને એકાંતિકની જે મુક્તિ છે તેને પામે.’ અને કાળ, કર્મને યોગે કરીને દેહની વ્યવસ્થા તો એકની એક રહે એમ જણાતું નથી. માટે ભગવાનના ભક્તને કેવી રીતે એકાંતિકપણું રહે છે? એ પ્રશ્ન છે.” પછી ગોપાળાનંદ સ્વામી, ચૈતન્યાનંદ સ્વામી, નિત્યાનંદ સ્વામી, મુક્તાનંદ સ્વામી, બ્રહ્માનંદ સ્વામી, શુકમુનિ ઇત્યાદિક મોટા મોટા સાધુ હતા તેમણે જેવું જેને જણાયું તેવો ઉત્તર કર્યો, પણ એ પ્રશ્નનું સમાધાન ન થયું.</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજ બોલ્યા જે, “જેમ અમારે ભગવાનને વિષે નિષ્ઠા રહે છે તેમ અમે કહીએ જે, અમારે તો ગમે તેવું સુખ-દુઃખ આવે તથા સંપત-વિપત આવે તેમાં એમ રહે છે જે, એક તો ભગવાનની અતિશય મોટ્યપ જાણીએ છીએ, તેણે કરીને આ સંસારમાં મોટા મોટા રાજાની સમૃદ્ધિ ને રાજ્યલક્ષ્મી તેને જોઈને લેશમાત્ર પણ અંતરમાં તેનો ભાર આવતો નથી. અને એમ સમજીએ છીએ જે, ‘આપણે તો ભગવાન થકી કાંઈ અધિક નથી ને આપણું મન છે તે ભગવાનનાં ચરણારવિંદમાં ચોંટાડ્યું છે.’ અને ભગવાન સંગાથે એવી દ્રઢ પ્રીતિ કરી છે જે, તે પ્રીતિને કાળ, કર્મ, માયામાંથી કોઈ એ ટાળવાને અર્થે સમર્થ નથી અને પોતાનું મન એ પ્રીતિ ટાળવાને કરે તોય પણ ભગવાનમાંથી એ પ્રીતિ ન ટળે; એવી રીતનો દ્રઢાવ છે. તે ગમે તેવું સુખ-દુઃખ આવે છે તોય નથી ટળતો. અને સ્વાભાવિક મનમાં એવી રુચિ રહે છે જે, શહેર હોય કે મેડી હોય કે રાજદરબાર હોય ત્યાં તો ગમે જ નહીં; અને વન હોય, પર્વત હોય, નદી હોય, ઝાડ હોય, એકાંત ઠેકાણું હોય ત્યાં અતિશય ગમે છે, ને એમ જાણીએ છીએ જે, ‘એકાંતમાં બેસીને ભગવાનનું ધ્યાન કરીએ તો સારું,’ એવી સદાય રુચિ રહે છે. અને જ્યારે અમને રામાનંદ સ્વામીનું દર્શન નહોતું થયું ત્યારે મુક્તાનંદ સ્વામી સંગાથે અમે એમ ઠરાવ કરી રાખ્યો હતો જે, ‘મને રામાનંદ સ્વામીનું દર્શન કરાવો, તો આપણે બે જણ વનમાં જઈને ભગવાનનું અખંડ ધ્યાન કર્યા કરીશું અને કોઈ દિવસ વસતિમાં તો આવીશું જ નહીં.’ એમ મનનો ઠરાવ હતો. તે હમણાં પણ મન એવું ને એવું જ વર્તે છે. અને ભગવાન ને ભગવાનના જે ભક્ત તેમાં તો એવું દ્રઢ હેત છે તેને કાળ, કર્મ ને માયા તેમાંથી કોઈ ટાળવાને સમર્થ નથી અને પોતાનું મન ટાળ્યાનું કરે તોય પણ હૃદયમાંથી ટળે જ નહીં; એવી ભગવાન ને ભગવાનના ભક્ત સંગાથે અતિશય પ્રીતિ છે. અને અમે કેટલીક વાર સત્સંગમાંથી જવાને અર્થે ઉદાસ થયા છીએ પણ ભગવાનના ભક્તનો સમૂહ જોઈને ટક્યા છીએ, તે કોઈ રીતે મૂકીને જવાતું નથી. અને જેને હું ભગવાનનો ભક્ત ન જાણું તે ઠેકાણે તો મને રાખ્યાના કોટિ ઉપાય કરે તોય ન જ રહેવાય અને ગમે તેવી અમારી શુશ્રૂષા કરે તોય અભક્ત સંગાથે અમારે બને જ નહીં. એવી રીતે ભગવાન ને ભગવાનના ભક્ત સંગાથે અમે અમારા મનને અતિશય પ્રીતિએ કરીને જોડી રાખ્યું છે અને તે ભગવાન વિના બીજું કોઈ પદાર્થ વહાલું રાખ્યું નથી; માટે શા સારુ ભગવાનમાં પ્રીતિ નહીં રહે? અને ભગવાનનાં કથા-કીર્તનાદિક કરતા હોઈએ ત્યારે તો એવી મસ્તાઈ આવે છે જે, જાણીએ, દીવાના થઈ જવાશે. અને જેટલો વિવેક રહે છે તે તો કોઈક ભક્તજનના સમાસને અર્થે રહે છે પણ મનમાં તો એવી ને એવી જ ખુમારી રહે છે અને ઉપરથી તો લોકને મળતો વ્યવહાર રાખીએ છીએ.</p>
+
+			<p class="text_gu">અને તે ભગવાન છે તે જ આ દેહના પ્રવર્તાવનારા છે. તે ગમે તો દેહને હાથીએ બેસારો ને ગમે તો બંદીખાનામાં નંખાવો અને ગમે તો આ દેહમાં કોઈક મોટો રોગ પ્રેરો, પણ કોઈ દિવસ ભગવાન આગળ એવી પ્રાર્થના કરવી નથી જે, ‘હે મહારાજ! આ મારું દુઃખ છે તેને ટાળો.’ શા માટે જે, આપણે પોતાના દેહને ભગવાનના ગમતામાં વર્તાવવો છે; તે જેમ એ ભગવાનનું ગમતું હોય તેમ જ આપણને ગમે છે, પણ ભગવાનના ગમતા થકી પોતાનું ગમતું લેશમાત્ર પણ નોખું રાખવું નથી. અને <b>આપણે જ્યારે તન-મન-ધન ભગવાનને અર્પણ કર્યું ત્યારે હવે ભગવાનની ઇચ્છા તે જ આપણું પ્રારબ્ધ છે, તે વિના બીજું કોઈ પ્રારબ્ધ નથી. માટે ભગવાનની ઇચ્છાએ કરીને ગમે તેવું સુખ-દુઃખ આવે, તેમાં કોઈ રીતે અકળાઈ જવું નહીં ને જેમ ભગવાન રાજી તેમ જ આપણે રાજી રહેવું</b>. અને આવી રીતની જે ભગવાનને વિષે દ્રઢ પ્રીતિ તેણે યુક્ત એવો જે એ ભક્ત તેનાં જે ધર્મ, જ્ઞાન, વૈરાગ્ય ને ભક્તિ તેની રક્ષાને તો એ ભગવાન પોતે જ કરે છે. અને ક્યારેક દેશકાળના વિષમપણે કરીને બાહેરથી તો તે ધર્માદિકના ભંગ જેવું જણાતું હોય પણ તે ભક્તના અંતરમાં તો ધર્માદિકનો ભંગ થતો જ નથી.” એવી રીતે શ્રીજીમહારાજ પોતાને ઉપદેશે કરીને જે ભગવાનના અતિ દ્રઢ ભક્ત હોય તેને જેમ સમજવું ઘટે અને જેમ ભગવાનમાં દ્રઢ પ્રીતિ કરી જોઈએ તે સર્વે વાર્તા કરી દેખાડતા હવા.</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

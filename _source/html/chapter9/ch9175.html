@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (175) આંબા શેઠને પ્રેમનું અંગ ને સેવા કરવાનું અંગ પણ ખરું. તે જ્યારે દર્શને આવે ત્યારે મહારાજ ને સાધુ સારુ કાંઈક ચીજ લેતા આવે, એવા પ્રેમી ભક્ત હતા પણ એક વખત મહારાજને વાસુદેવનારાયણના ઓરડેથી હેઠું ઊતરવું હતું ને અદીબા <a href="#ex1" class="wordMeaning">જેરના થડમાં હેઠે</a> ઊભાં હતાં તેમને ખંભે હાથ મૂકીને મહારાજ હેઠે ઊતર્યા, તે આંબા શેઠે નજરોનજર દીઠું એટલે સંશય થયો જે, ‘આ તે ભગવાન કે શું ? જુવાન બાઈને ખંભે હાથ મૂકીને ઊતર્યા તે રખે કપટ હોય નહિ !’ પછી વિચારમાં ને વિચારમાં ગઢાળી ચાલ્યા ગયા ને એક વરસ સુધી દર્શને આવ્યા નહીં. પછી મહારાજ કહે જે, ‘આંબા શેઠ કેમ દેખાતા નથી ?’ ત્યારે સંતે કહ્યું જે, ‘દેહ મૂકી ગયા હશે.’ ત્યારે મહારાજ કહે, ‘અમે તેડવા ગયા નથી ને દેહ કોણ મુકાવે ને કોણ તેડી જાય ? છતાં દેહ મૂક્યો હોય તો આંહીં રસોઈ તો આવે !’ પછી ગઢાળીના એક હરિભક્ત સભામાં બેઠા હતા તેણે કહ્યું જે, ‘મહારાજ ! આંબા શેઠ તો જીવે છે, પણ તમારો અવગુણ આવ્યો છે તેથી દર્શને આવતા નથી.’ પછી મહારાજ મુક્તાનંદસ્વામીને કહે જે, ‘તમે ગઢાળીએ જાઓ ને આંબા શેઠને વાતું કરી અવગુણ કાઢો.’ 
+ <br/><br/>
+ પછી મુક્તાનંદસ્વામી ગઢાળી ગયા ને આંબા શેઠ આગળ મનુષ્યભાવ ને દિવ્યભાવ એક સમજવાની ઘણી વાતું કરી. તેમાં એક દૃષ્ટાંત દીધું જે, ‘એક શાહુકાર હતો તેને એક દીકરી ને એક દીકરાની વહુ બેય બાર-તેર વરસનાં તેવતેવડાં હતાં, તેમણે પોતા જેવડી રમવાની ઢીંગલી ચીંથરાની કરી તેને ઘરેણાં-લૂગડાં પહેરાવી લાજ કઢાવી મેડી ઉપર એકખૂણે ઊભી રાખી, બહાર કામે ગયાં ને શેઠ મેડીએ ચોપડા લેવા ચડ્યા ત્યાં વહુને દીઠાં એટલે ખોંખાર્યા, પણ વહુ તો હેઠે ન ઊતર્યાં ને શેઠ દાદરે ઊભા થઈ રહ્યા. ત્યારે શેઠાણી કહે, ‘કેમ દાદરે ઊભા છો ?’ ત્યારે શેઠ કહે, ‘વહુ મેડી ઉપર એકલાં છે તે મેં (મારાથી) કેમ જવાય ?’ ત્યારે શેઠાણી કહે, ‘વહુ તો બહાર ગયાં છે.’ ત્યારે શેઠ કહે, ‘ઉપર લાજ કાઢીને ઊભાં છે તે મેં નજરે જોયું, તોય બહાર ગયાનું કેમ કહો છો ?’ એટલે શેઠાણી મેડી ઉપર ચડ્યાં, ત્યાં તો ઢીંગલી દીઠી, એટલે શેઠને કહે, ‘એ તો ચીંથરાની ઢીંગલી રમવા સારુ કરી છે તે ઊભી છે, માટે જાઓ.’ પછી શેઠ ચોપડા લઈ આવ્યા ને સંશય ટળી ગયો. તેમ મૂળ પ્રકૃતિપુરુષથી લઈને જગતના તમામ જીવપ્રાણીમાત્રને સ્ત્રી જાતિમાં મોહ છે, પણ મહારાજની દૃષ્ટિમાં તો સર્વે આકાર ચીંથરાની ઢીંગલી જેવા છે તેમાં શું મોહ પામે ? મહારાજના મોટા સંતને પણ માયિક આકારને વિશે મોહ થાતો નથી તો મહારાજને વિશે સંભવે જ કેમ ? મહારાજ તો એ પંચભૂતના પાચ-પરુથી ભરેલ ને ચામડેથી મઢેલ હાડકાંના દેહ સામું જોતા જ નથી. એક વાર પંચાળામાં મહારાજે અદીબા સ્ત્રી છે એમ ધારી સામું જોયું હતું તો મહારાજને ઊલક થઈ ને સ્ત્રીની ગંધ આવે છે એમ કહી અન્ન-પાણી પણ લીધું નહિ તે વાત શું ભૂલી ગયા? એ તો આપણામાં એ દોષ છે ને સ્ત્રીને વિશે મોહ છે તેથી ભગવાનને વિશે દોષ કલ્પીએ છીએ પણ ભગવાન તો નિર્દોષ છે.’ એમ વાતે કરીને સંશય ટાળી નાખ્યો પછી આંબા શેઠ મહારાજનાં દર્શને આવ્યા.
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 જેરના થડમાં હેઠે= દાદરાના પગથિયાંની એક બાજુમાં નીચે.
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

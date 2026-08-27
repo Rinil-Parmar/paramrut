@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+						<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૪૯: ભગવાન અને માયિક આકારમાં ઘણો ફેર છે, તેનું; કથા-કીર્તનાદિકમાં તૃપ્તિ ન થયાનું</h1>
+
+<p class="text_gu">
+સંવત ૧૮૮૦ના ફાગણ સુદિ ૨ બીજને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિરની આગળ આથમણે દ્વાર મેડીની ઓસરીએ ઢોલિયા ઉપર ગાદીતકિયા બિછવાવીને વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પાઘમાં ધોળાં પુષ્પનો હાર લટકતો મૂક્યો હતો ને પોતાના મુખારવિંદની આગળ મુનિમંડળ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રત્યક્ષ ભગવાનની જે મૂર્તિ ને બીજા જે માયિક આકાર એ બેયને વિષે તો ઘણો ફેર છે. પણ જે અજ્ઞાની છે ને અતિશય મૂર્ખ છે તે તો ભગવાન અને માયિક આકારને સરખા જાણે છે; કેમ જે, માયિક આકારના જે જોનારા છે ને માયિક આકારના જે ચિંતવન કરનારા છે તે તો અનંત કોટિ કલ્પ સુધી નરક-ચોરાસીને વિષે ભમે છે. અને જે ભગવાનના સ્વરૂપનાં દર્શન કરનારા છે ને ભગવાનના સ્વરૂપના ચિંતવન કરનારા છે તે તો કાળ, કર્મ ને માયા એ સર્વેનાં બંધન થકી છૂટીને અભયપદને પામે છે ને ભગવાનના પાર્ષદ થાય છે. માટે અમારે તો ભગવાનની કથા, કીર્તન કે વાર્તા કે ભગવાનનું ધ્યાન એમાંથી કોઈ કાળે મનની તૃપ્તિ થતી જ નથી ને તમારે પણ સર્વેને એવી રીતે કરવું.”
+</p>
+
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

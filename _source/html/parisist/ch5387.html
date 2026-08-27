@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+        							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+								 			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+				 
+				 
+</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 (387) ભાદરવા સુદિ પ્રતિપદાને દિવસે સંધ્યા આરતી થયા પછી સંતના નામનું પ્રકરણ ચાલ્યું, તેમાં મોટા મોટા પણ એક એક નામના બે-ચાર-પાંચ ખરા. તે પોતે કહેતા જાય ને બીજા પૂછતા જાય; તેમાં ગુણાતીતાનંદ નામ તો એક જ. પછી કથામાં સંતનાં નામ આવ્યાં, ત્યારે કોઈકે પૂછ્યું જે, ‘તમારે નામે બીજા કોઈ હતા ?’ ત્યારે પોતે બોલ્યા જે, ‘એ તો એક જ, બાકી બીજા બધા નામના સાધુ ને સંન્યાસી ઘણા.’ પછી સંગ કરવાનું પૂછ્યું, તેમાં પ્રથમ જાગા ભક્તનું કહ્યું, તે પછી બીજાનાં નામ લીધાં. 
+
+<br/>
+<a href="refch5382.html">પ્રકરણ 5ની વાત 382</a>
+
+			 
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

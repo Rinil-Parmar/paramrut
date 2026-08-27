@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સ્વામીએ રાત્રે વાત કરી જે,<br/>
+ 
+ (267) દ્રવ્યને અર્થે દગા થાય છે, ઝેર આપે છે ને જાનથી મારી નાખે છે તે કેટલેક ઠેકાણે મારેલા તે ગણાવ્યા, માટે દ્રવ્યમાં સર્વે પાપમાત્ર રહ્યાં છે. ને ભાગવતમાં શ્ર્લોકે શ્ર્લોકે સ્ત્રી, ધનનો ત્યાગ કરવો કહ્યો છે. તે આપણે પણ એમ જ કરવું છે ને કરાવવું છે. એક જણ પચીસ વરસ સત્સંગમાં રહ્યો ત્યાર પછી એક જોડ ચરણારવિંદ વાસ્તે વિમુખ થઈને ઘેર ગયો ને બાયડી <a href="#ex1" class="wordMeaning"> ઘરઘવાનો મનસૂબો </a> કર્યો તે ઘરઘ્યો; પણ એક મહિના કેડે બાયડી મરી ગઈ ને ત્યાર પછી પોતે મરી ગયો. એક પાળે તો સમ ખાધા જે, સમૈયા કેડે ઘેર જવું ને બાયડી ઘરઘી ગયેલી છે તેને પાછી લાવવી; પણ તાવ આવ્યો તે દશ દિવસમાં મૂઓ ને મનસૂબો તો પાર પડ્યો નહિ, માટે ત્યાગી થઈને સ્ત્રી, ધનના મનસૂબા કરે છે તે <a href="#ex1" class="wordMeaning"> ખડ ખાય છે</a>. 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઘરઘવાનો મનસૂબો= બીજીવાર પરણવાનો સંકલ્પ.<br/> 
+        2 ખડ ખાય છે= ઘાસ ખાવા જેવી મૂર્ખાઈ કરે છે. 
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

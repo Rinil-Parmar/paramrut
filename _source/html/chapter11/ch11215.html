@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (215) મનુષ્યને રાખવાં તેમાં કેટલાકને તો ‘પાઘડી બંધાવીને માથાં કાપવા મૂકીએ’ એવાં હોય. તે ઉપર રોળાનંદની વાત કરી કે તે અસુર હતો ને જુક્તિ કરી મહારાજે ધોળાં પહેરાવી પોતાના પાળા ભેગો ભેળવીને કાઢી મૂક્યો. એક વાણિયાના ઘરમાં ચોર ચોરી કરવા ગયો. તેમાં ચોરને વાણિયે માર્યો. પછી ડાહ્યો તે વિચાર્યું અને તેની શેરીનો જમાદાર તેને બહુ હેરાન કરતો, તેથી છાનોમાનો <a href="#ex1" class="wordMeaning">ચાવડી</a> પાસે તે મડદાને મૂકીને પછી <a href="#ex1" class="wordMeaning">ગોકીરો</a> કર્યો અને કહે જમાદારે ચોર માર્યો. તે આડોશી પાડોશીને ખબર પડી ને દરબારમાં પણ વાત જાહેર થઈ. પછી દરબારે તે જમાદારને પાઘડી બંધાવી. તે વાતની વાણિયાની સ્ત્રીને ખબર પડી, તેથી કહ્યું કે, ‘ચોર તમે માર્યો ને પાઘડી આપણને હંમેશ દુ:ખ દે છે તે જમાદારને મળી.’ ત્યારે તે વાણિયે કહ્યું જે, ‘<a href="#ex1" class="wordMeaning">ધોતલીના ધોળ હવે ગવાશે</a> ! ઉતાવળ કર મા.’ પછી તે મરનાર ચોરના ભાઈને ખબર પડી કે જમાદારે તેના ભાઈને માર્યો ને તે વેરથી જમાદારને લાગ આવે મારી નાખ્યો એટલે જમાદારને ઘેર રોકકળ થઈ તે વાત વાણિયાની વહુએ વાણિયાને કહી ત્યારે કહે, ‘ધોતલીના ધોળ ગવાણા !’ એમ <a href="#ex1" class="wordMeaning">પરબારું સૂડ નીકળ્યું.</a> <br/> <br/>
+ 
+ તે એવાને એમ કરવું, તે શું ? તો, કેટલાક વચને કરીને સત્કાર કરીને રાખ્યા જેવા હોય, ને કેટલાક પદાર્થ આપીને રાખ્યા જેવા હોય, ને કેટલાક વઢીને રાખ્યા જેવા પણ હોય; માટે એ સર્વે વાત મોટેરાએ જાણી જોઈએ. ને સૌ કરતાં ત્યાગ, વૈરાગ્ય ને ધર્મ અધિક પાળે ને ભગવાનની અખંડ સ્મૃતિ રાખે એવો મોટેરો હોય તે સમાસ કરે. પણ સત્સંગની પુષ્ટિ એકલા ગામ ગરાસ ને દ્રવ્ય વડે થાતી નથી. તે ભજનાનંદે અમને ભરવાડ જેવા અને ચૈતન્યાનંદે અક્ષરાનંદસ્વામીને આજકાલના આવેલ ને મોટેરા કર્યાં એમ કહ્યું; પણ બધુંય આવડે એવા છે, ત્યારે મોટેરા કર્યા છે, એ મહારાજની વાત ન જાણી. તે આંહીંનું બીજા બધાં મંદિર કરતાં સર્વોપરી થયું છે. તે વાતની ખંભાતના બ્રાહ્મણ કાશીરામ જેવા હોય તેને ખબર ન પડે એ તો મૂળગા દોષ ન હોય તો ય ઊભા કરે. તે અમે એને કહ્યું હતું કે, ‘તારે ત્યાગી ન થાવું, અને થાય તો કોઠારે ન રહેવું અને રહે તો જૂનાગઢ ન આવવું અને જો જૂનાગઢ આવ્યો તો નવટાંકની ઉંદરડીને હજાર મણનો ઊભો પાટડો પડે તેમ તું છો ! તેમ છતાં પણ મનાશે નહિ ને બધું ન કરવાનું કરીશ,’ તે <a href="#ex1" class="wordMeaning">ખળે ખબર</a>. એ તો જાણે છે કે કમાણી કરું છું, પણ ભોઈની પટલાઈ ને કોયલાની દલાલીમાં જેમ કાળા હાથ, તેમ ત્યાગીની પટલાઈ એવી છે. 
+<br/><br/>
+ <a href="refch9145.html" class="wordMeaning">પ્રકરણ 9 ની વાત 145 </a> 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ચાવડી= પોલીસચોકી/થાણું. <br/>
+2 ગોકીરો= શોરબકોર, કોલાહલ.  <br/>
+3 ધોતલીના ધોળ હવે ગવાશે= (ધોતલી= નાનું ધોતિયું ધોળ=ગીતનો એક પ્રકાર) કટાક્ષમાં,‘હમણાં આનંદ છે પણ હવે પછી શોકનાં ગીતો ગવાશે.’ એવો ભાવ.  <br/>
+4 પરબારું સૂડ નીકળ્યું= બારોબાર મૂળમાંથી સફાઈ થઈ. <br/>
+5 ખળે ખબર= ડૂંડાં/કણસલાં ગૂંદીને કે ઝૂડીને અનાજ કાઢવાની જગ્યા-ખળું કેટલું પાક્યું તેની ખળે ખબર પડે તેમ ક્રિયાનું પરિણામ આવે ખબર.
+
+ 
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

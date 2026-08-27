@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (142) ભગવાનને રાજી કરવા હોય, તેણે ભગવાનના એકાંતિક સાધુને વશ થાવું.
+ <br/><br/>
+ જણ જણકા મન રાખતાં, વેશા રહી ગઈ વાંઝણી.
+ <br/><br/>
+ માટે જેને ભગવાનને રાજી કરવા હોય, તેને બધાની મહોબત ન રખાય, એક ભગવાનની અને સંતની જ રખાય. વિનય ન હોય ને બ્રહ્મચર્ય ન હોય તેને ભણાવવો નહીં. કડવું ઓષડ મા પાય. સ્વભાવ ટાળવો હોય તેને એક વેણ મારીએ ને છ મહિના સુધી વીસરે નહિ, તો સ્વભાવ ટળે. કપટી ન ઓળખાય, માટે તેનો વિશ્ર્વાસ ન કરવો. અશ્ર્વત્થામા જેવો પણ કોઈક માંહી હોય, તે માંહી બેઠો બેઠો છેલ્લા વર્તમાન સુધી પણ પૂગી જાય. હમીર સાંખ્યયોગી બાઈને લઈને ગીરમાં ગયો ને અરીઠ્યિામાં રહ્યો. પછી આચાર્ય મહારાજ, ગોપાળાનંદસ્વામી, નિત્યાનંદસ્વામી, બીજા સાધુ ને હરિજન ઊને જાતાં તેની પાદર નીકળ્યા, એટલે હમીરે મોઢામાં તરણાં લઈને દંડવત્ કરવા માંડ્યા ને માફી માગી ત્યારે નિત્યાનંદસ્વામીએ તેનો તિરસ્કાર કર્યો; એટલે ગોપાળાનંદસ્વામી કહે, ‘એને આગલા અવતારના ભક્ત જેવો તો માનો !’ પછી તેને વર્તમાન ધરાવીને સત્સંગી કર્યો, ને સાધુને આજ્ઞા કરી જે, ‘તેને ઘેર જજો.’
+ <br/><br/>
+ પણ એવા હોય તેની મંડળી બાંધ્યે સમાસ ન થાય જુઓને, ગોતીતાનંદ ને અદ્વૈતાનંદ કોઈકની ઓસરીમાં ઊતર્યા ને કહે, ‘હમણાં પ્રકરણ ફર્યું છે જે, બાઈઓને વાતું કરવી.’ ત્યારે હરિજને કહ્યું જે, ‘તમારું પ્રકરણ ફર્યું છે, માટે ચાલવા માંડો.’ એમ કહીને કાઢી મેલ્યા. પછી મંદિરમાં આવ્યા ત્યારે અમે નોખા બેસાર્યા ને કહ્યું જે, ‘રઘુવીરજી મહારાજ આવે છે તે કહેશે તેમ કરશું.’ ત્યારે અમને કહે, ‘શું કલ્યાણ તમારા હાથમાં છે ?’ એટલે અમે કહ્યું કે, ‘હા, કલ્યાણ તો અમારા જ હાથમાં છે, હું કહું તો જ મહારાજ કલ્યાણ કરે, નીકર ન કરે.’ પછી વહ્યા ગયા. સાપને સાણસે ઝાલે તો કરડી શકે નહિ, તેમ એવાને તો છેટેથી જ નમસ્કાર કરવા; પણ તેનો સંગ ન કરવો.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

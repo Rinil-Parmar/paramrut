@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+				<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+				<li><button  onClick="javascript: window.history.go(-1)" >X</button></li> 
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ <h1 class="title_gu">સર્વનિવાસાનંદસ્વામી </h1>
+ 
+  અમદાવાદ દેશના મુમુક્ષ સંત. એકવાર ગોપાળાનંદસ્વામી અમદાવાદમાં પધાર્યા. આ સંતે એમનો સમાગમ કર્યો. જ્ઞાનનાં પડળ ખુલી ગયાં. મનુષ્યદેહે કરીને મોક્ષ પ્રાપ્ત કરી લેવાનો નિશ્ર્ચય કરી ગોપાળાનંદસ્વામી સાથે જવા તૈયાર થયા. અયોધ્યાપ્રસાદજી આચાર્યમહારાજને તેના ખબર મળ્યા. તેમણે સર્વનિવાસાનંદસ્વામીને રોક્યા ને લાલચ આપી કે, “તમને મહારાજના વીસ જોડ ચરણારવિંદ આપું ને અમદાવાદ મંદિરના મહંત બનાવું. તમે રહો. અહીં શી ખોટ છે!” તેઓ કહે, “અહીં બધું છે પણ ગોપાળાનંદસ્વામી નથી, મારે તેમનો સમાગમ કરવો છે.” એમ મહોબત મૂકીને એમણે સમાગમ કરેલો. તેમણે ગુણાતીતાનંદસ્વામીને કહેલું કે, “ઓલ્યા દેશમાં રહ્યો હોત તો કલ્યાણ રહી જાત.” (<a href="ch2110.html">૨/૧૧૦</a>,<a href="ch2142.html">૨/૧૪૨</a>) 
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

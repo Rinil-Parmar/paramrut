@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૬૪: શરીર-શરીરીનું, સ્વામી-સેવકભાવનું</h1>
+			
+<p class="text_gu">
+
+સંવત ૧૮૭૬ના ફાગણ વદિ ૯ નવમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં ઉગમણે દ્વાર ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા ને ધોળો ખેસ પહેર્યો હતો ને કાળા છેડાનો ખેસ ઓઢ્યો હતો ને મસ્તકે હીરકોરનું ધોતિયું બાંધ્યું હતું ને તુલસીની નવી કંઠી કંઠને વિષે પહેરી હતી અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજે મુનિ પ્રત્યે પ્રશ્ન પૂછ્યો જે, “પુરુષોત્તમ એવા જે ભગવાન તેનું શરીર આત્મા તથા અક્ષર છે, એમ શ્રુતિએ કહ્યું છે. તે આત્મા અને અક્ષર તે તો વિકારે રહિત છે, ને તે આત્મા ને અક્ષરને વિષે કાંઈ હેય ઉપાધિ નથી, અને જેમ ભગવાન માયા થકી પર છે તેમ આત્મા ને અક્ષર પણ માયા થકી પર છે; એવા જે આત્મા ને અક્ષર તે કેવી રીતે ભગવાનનું શરીર કહેવાય છે? અને જીવનું શરીર તો જીવ થકી અત્યંત વિલક્ષણ છે ને વિકારવાન છે અને દેહી જે જીવ તે તો નિર્વિકારી છે, માટે દેહ અને દેહીને તો અત્યંત વિલક્ષણપણું છે; તેમ પુરુષોત્તમને અને પુરુષોત્તમનાં શરીર જે આત્મા ને અક્ષર તેને વિષે અત્યંત વિલક્ષણપણું જોઈએ, તે કહો કેમ વિલક્ષણપણું છે?” પછી સર્વે મુનિએ જેની જેવી બુદ્ધિ તેણે તેવો ઉત્તર કર્યો, પણ યથાર્થ ઉત્તર કોઈથી થયો નહીં.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજ બોલ્યા જે, “લ્યો, અમે ઉત્તર કરીએ જે, આત્મા અને અક્ષર એ બેને જે પુરુષોત્તમ ભગવાનનું શરીરપણું તે તો વ્યાપ્યપણું, આધીનપણું અને અસમર્થપણું તેણે કરીને છે. કેવી રીતે? તો ભગવાન જે તે પોતાની અંતર્યામી શક્તિએ કરીને આત્મા ને અક્ષર તેને વિષે વ્યાપક છે ને એ બેય તો વ્યાપ્ય છે; અને ભગવાન જે તે સ્વતંત્ર છે, ને આત્મા ને અક્ષર તે તો ભગવાનને આધીન છે - પરતંત્ર છે; અને ભગવાન જે તે અતિ સમર્થ છે, ને આત્મા ને અક્ષર તે તો ભગવાનની આગળ અતિ અસમર્થ છે. એવી રીતે ભગવાન જે તે એ બેયના શરીરી છે અને એ બેય જે તે ભગવાનનું શરીર છે. અને શરીરી એવા જે પુરુષોત્તમ ભગવાન તે તો સદાય દિવ્ય મૂર્તિમાન છે. અને એવા જે એ ભગવાન તે જે તે વ્યાપક ને દ્રષ્ટા એવા જે સર્વે આત્મા અને તે આત્માને વ્યાપ્ય ને આત્માને દ્રશ્ય એવા જે દેહ એ સર્વેમાં પોતાની અંતર્યામી શક્તિએ કરીને આત્માપણે રહ્યા છે. અને એવી રીતે સર્વેના આત્મા જે પુરુષોત્તમ ભગવાન તે જ્યારે રૂપવાન એવું જે દ્રશ્ય તેના આત્માપણે કરીને શાસ્ત્રને વિષે કહ્યા હોય ત્યારે તે પુરુષોત્તમને દ્રશ્યરૂપે કરીને પ્રતિપાદન કર્યા હોય; અને જ્યારે એ દ્રષ્ટાના આત્માપણે કરીને પ્રતિપાદન કર્યા હોય ત્યારે એ પુરુષોત્તમને અરૂપપણે કરીને શાસ્ત્રમાં કહ્યા હોય છે. અને વસ્તુતાએ તો રૂપવાન જે દ્રશ્ય અને અરૂપ જે આત્મા એ બેય થકી પુરુષોત્તમ ભગવાન ન્યારા છે ને સદા મૂર્તિમાન છે ને પ્રાકૃત આકારે રહિત છે, અને મૂર્તિમાન થકા પણ દ્રષ્ટા ને દ્રશ્ય એ બેયના દ્રષ્ટા છે. અને એ આત્મા ને અક્ષર એ સર્વેના પ્રેરક છે ને સ્વતંત્ર છે ને નિયંતા છે ને સકળ ઐશ્વર્યે સંપન્ન છે, ને પર થકી પર એવું અક્ષર તે થકી પણ પર છે. એવા જે પુરુષોત્તમ ભગવાન તે જીવના કલ્યાણને અર્થે કૃપાએ કરીને પૃથ્વીને વિષે મનુષ્ય જેવા જણાય છે, તેને જે આવી રીતે સદા દિવ્ય મૂર્તિમાન જાણીને ઉપાસના-ભક્તિ કરે છે, તે તો એ ભગવાનના સાધર્મ્યપણાને પામે છે અને અનંત ઐશ્વર્યને પામે છે. અને બ્રહ્મભાવને પામ્યો જે પોતાનો આત્મા તેણે કરીને પ્રેમે સહિત નિરંતર પરમ આદર થકી પુરુષોત્તમ ભગવાનની સેવાને વિષે વર્તે છે. અને જે એ ભગવાનને નિરાકાર જાણીને ધ્યાન-ઉપાસના કરે છે તે તો બ્રહ્મસુષુપ્તિને વિષે લીન થાય છે, તે પાછો કોઈ દિવસ નીસરતો નથી અને ભગવાન થકી કોઈ ઐશ્વર્યને પણ પામતો નથી. અને આ જે વાર્તા તે અમે પ્રત્યક્ષ દેખીને કહી છે, માટે એમાં કાંઈ સંશય નથી. અને આ વાર્તા તો જેને એ ભગવાનના સ્વરૂપમાં સદા દિવ્ય સાકારપણે ઉપાસનાની દ્રઢ નિષ્ઠા થઈ હોય તે થકી જ પમાય છે, પણ બીજા થકી તો પમાતી જ નથી; માટે આ વાર્તાને અતિ દ્રઢ કરીને રાખજ્યો.”
+</p>
+
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

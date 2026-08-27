@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (188) ભગવાન મનુષ્ય જેવા થઈને સૌના ધર્મ લખી ગયા જે, આશ્રમવાળાને આમ કરવું ને વર્ણવાળાને આમ કરવું, આવી ભૂમિ વાવવી, આવા બળદ રાખવા, આવી રીતનું ખળું કરવું, આવું સાંતી રાખવું ને ભગવાનનું સ્વરૂપ કેમ સમજવું, તે પણ કહી ગયા છે.
+  <br/><br/>
+ જન્મ કર્મ ચ મે દિવ્યમેવં યો વેત્તિ તત્ત્વતઃ । <br/>
+ત્યક્ત્વા દેહં પુનર્જન્મ નૈતિ મામેતિ સોઽર્જુન ॥ 
+
+  <br/>
+ (ભગવદ્ ગીતા : 4/9)
+  <br/>
+ અર્થ :- હે અર્જુન ! આમ મારા દિવ્ય જન્મ તથા કર્મને જે તત્ત્વથી દિવ્ય જાણે છે, તે દેહ ત્યજીને પુનર્જન્મ પામતો નથી, (પણ) મને પામે છે. 
+  <br/><br/>
+ માટે આપણા હિતને અર્થે બધું કહી ગયા છે ને આપણે ચાડ ન રાખીએ ત્યારે એ ઉપેક્ષા કરે. જ્યારે એની ઉપેક્ષા થઈ ત્યારે થઈ રહ્યું ને આપણું બગડયું જાણવું પણ જ્યારે દુ:ખ લગાડીને કહે, ત્યારે જાણવું જે આપણું રૂડું થાવાનું થયું. ને એને અર્થે મોટે મોટે રાજ્ય મેલ્યાં છે, એટલું આપણે દુ:ખ નથી; માટે આંહીં આવ્યા છીએ તે લાભ માનવો, શીખવાનું હોય તે શીખી લેવું ને મૂકવાનું હોય તે મૂકી દેવું. આખ્યાન કઢાવીને સાંભળવું, એના ગુણ કહેવરાવવા ને એટલું ય પૂછતાં ન આવડે તો ‘શિક્ષાપત્રી’નો પાઠ કરવો. ત્યાગી હોય તેણે જડભરતનું આખ્યાન કઢાવવું ને વાંચવું, એ કેમ વરતી ગયા છે તે તપાસવું ને તે પ્રમાણે હમણાં જીવતાં જ કરવું; કેમ જે, દેહનો નિરધાર ક્યાં છે ? માટે તેમ કર્યા વિના તો બીજા ધામમાં જાવું પડશે. મહારાજ તેડવા આવશે ત્યારે કેમ રાજી થાશે ? માટે સત્સંગ કર્યો ને તેની રીત ન સમજ્યા, તો શું પાક્યું ? 
+  
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (253) <br/>
+ 
+ સંત  સુખી  સંસારમેં, ઉદ્ધવ  મેરો સંત સુખી સંસારમેં. <br/>
+ 
+ ઔર  સબે  જગ  જરત  નિરંતર, તીન તાપકી ઝારમેં.  ઉદ્ધવ0 <br/>
+ 
+ 	(કીર્તન મુક્તાવલિ:512) <br/> <br/>
+ 
+ એ કીર્તન બોલાવીને કહ્યું જે, આમાં કહ્યું તે પ્રમાણે વરતે તો સર્વે કરી રહ્યા છે. પછી, <br/> <br/>
+ 
+ સંત  સુખી  સંસારમેં, ઉદ્ધવ મેરો સંત સુખી સંસારમેં. <br/>
+ 
+ જ્ઞાન વિના દુ:ખ પાવત દુનિયા, માયા ઘોર અંધારમેં; <br/>
+ 
+ મુક્તાનંદ મુનિવર  વિજ્ઞાની, પહોંચત  તેજ  અંબારમેં. ઉદ્ધવ0 <br/>
+ 
+ (કીર્તન મુક્તાવલિ : 512) <br/> <br/>
+ 
+ એ બોલ્યા ને તેનો અર્થ કર્યો જે, અક્ષરરૂપ થાય ત્યારે મહારાજને વરણીય થાવાશે, ને દોષમાત્ર નહિ રહે. ભીમનાથથી તે પાવાગઢ સુધી ક્યાંય પાણા ન આવે; તેમ અક્ષરરૂપ થાવામાં દોષ કે માયાનું કાર્ય જ નથી; ને તે માયા પર કહેવાય. તે વિના નિયમ અણીશુદ્ધ ખરેખરાં પાળે, તો પણ એ આત્મારૂપ કહેવાય ને તેમાં પણ માયા પ્રવેશ ન કરે. ને સાધારણ હરિભક્ત હોય તેને પાંચ દોષ છે, તે પાંચ પર્વત જેવા છે. ને એકાંતિકને પંચવિષય સંબંધી રમણીય પદાર્થ તથા આ દેહ તે અંતરાયરૂપ છે; ને બરાબર કાયદે રાખે તો સહાયરૂપ છે. <br/> <br/>
+ 
+ ભગવાનના ધામમાં આઠ આવરણને ભેદે ત્યારે જવાય. તે આઠ આવરણ :- પ્રથમ પૃથ્વીનું આવરણ, ને તેની માત્રા ગંધ છે; તે બ્રહ્માંડમાં જેટલાં ગંધમાત્ર છે તેમાં વૃત્તિ ન તણાય એટલે પૃથ્વીનું આવરણ ઉલંઘાણું. બીજું આવરણ જળ, ને તેની માત્રા રસ છે; તેને આશરીને જેટલાં પદાર્થ રહ્યાં છે, તેમાં ક્યાંય ન લોભાય એટલે જળનું આવરણ ઉલંઘાણું. ત્રીજું આવરણ તેજ છે, તેની માત્રા રૂપ છે; તે બ્રહ્માંડમાં રૂપમાત્રમાં વૃત્તિ ન તણાય એટલે તે આવરણ જિતાણું. ચોથું આવરણ વાયુ છે, તેની માત્રા સ્પર્શ છે; તે બ્રહ્માંડમાં જેટલા સ્પર્શમાત્ર છે તેમાં આસક્ત ન થાય તો વાયુનું આવરણ જિતાણું. પાંચમું આવરણ આકાશ, ને તેની માત્રા શબ્દ છે; તે કોઈ શબ્દે કરી અંતર ન ભેદાય તો આકાશનું આવરણ જિતાણું. અને છઠું આવરણ અહંકાર છે, તે રજ, તમ અને સત્ત્વ એ ત્રણે ગુણ થકી પર ગુણાતીત વરતે એટલે ત્રણે ગુણમાં ન લેવાય તો અહંકારનું આવરણ ભેદ્યું કહેવાય. સાતમું આવરણ મહત્તત્ત્વ છે, તે ચિત્તને જીતે એટલે કે, ચિત્તમાં એક ભગવાન વિના પ્રકૃતિપુરુષ સુધીનો કોઈ આકારમાત્ર ન રહે ત્યારે મહત્તત્ત્વનું આવરણ ગયું જાણવું. ને આઠમું આવરણ પ્રકૃતિનું છે, તે પ્રકૃતિ તે સ્વભાવરૂપ વરતવું તે છે; તે સ્વભાવને જીતે તો પ્રકૃતિનું આવરણ જિતાણું જાણવું. એમ આ આઠેય આવરણો એકાંતિકને ભગવાનના મારગમાં વિઘ્નરૂપ છે.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

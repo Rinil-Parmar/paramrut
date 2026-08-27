@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			 
+ સંવત 1919ના શ્રાવણ સુદિ પ્રતિપદાને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (1) ભગવાનનું અને મોટા સંતનું સ્વરૂપ નિર્દોષ સમજવું ને જેને મોટપ મળી કે રૂપિયા મળ્યા તેણે તો પ્રભુ ભજાય જ નહિ ને વાસના છે તે એક દિવસમાં ન ટળે. મડદું બાળે ત્યારે છાતી વાંસેથી બળે છે, તે શું ? જે, એટલામાં ગ્રંથિ  છે. ને ભગવાન સામું જોઈએ ને મોટા સામું જોઈએ ત્યારે જણાય જે એ ક્યાં ને આપણે ક્યાં ? કોઈને પૂર્વના સંસ્કાર હોય ને કોઈને બુદ્ધિમાં સ્ફુરતા હોય ને કોઈને ન હોય. કોઈને માન મળે ને કોઈને ન મળે, પણ ભગવાન ને આ સંતને વિશે નિષ્ઠા છે તેટલી જ બુદ્ધિ કામ આવી. સર્વે વિષયથી મન નોખું પાડી દેવું ને જ્યાં મોટા વિષય ત્યાં મોટાં દુ:ખ ને ફરવા જાય ત્યાં બે ટાણાં ન ખવાય ને દિવસે ઊંઘાય નહિ ને મંદિરમાં તો સેવા હોય. આવ્યા છીએ સ્વભાવ મૂકવા ને સ્વભાવ વધતા જાય છે. જેવો મોટેરો હોય તેવા ગુણ તેના શિષ્યમાં આવે, તે જેવું કૂવામાં હોય તેવું <a href="#ex1" class="wordMeaning">અવેડામાં</a> આવે તેમ. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 અવેડામાં= હવાડામાં, ઢોરને પાણી પીવાની જગ્યામાં.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

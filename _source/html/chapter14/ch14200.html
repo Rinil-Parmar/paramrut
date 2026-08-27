@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત 1919ના ભાદરવા વદિ એકાદશીને દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (200) નિત્યે વિચારવું જે, આ જીવને દેહ, લોક, ભોગ, પક્ષ ને મોક્ષ એમાંથી શેનું તાન વધારે વરતે છે ? સાધારણ છે તેને તો વિષય ઉપર તાન છે ને કાંઈક સમર્થ છે તેને ઐશ્ર્વર્ય જોઈએ છે. ઐશ્ર્વર્ય ન જોઈએ એવો કોઈ નજરે ન આવે. જીવને કાંઈક ઐશ્ર્વર્ય આવે ત્યારે તેમાં ભગવાનને મૂકીને હેત થાય; પણ ઐશ્ર્વર્યમાં માલ ન માને તે જ ભગવાનને વરવા યોગ્ય કહેવાય, એવાથી જ ભગવાનની સેવામાં રહેવાય છે. માટે બ્રહ્મરૂપ થાય ત્યારે જ કોઈ વિઘ્ન ન આવે ને ગુણાતીત કહેવાય ને ગુણાતીત થાય તો જ ભગવાન વરે. સ્ત્રીને ગમે તેવું હેત ભગવાનમાં થાય પણ એકાંતિકભાવ તો એમાં કોઈ દિવસ આવે જ નહીં. રાધિકાજી સમર્થ થયાં હતાં; પણ એકાંતિકભાવ વિના ક્રોધ થયો. માટે <br/><br/>
+ 
+ બ્રહ્મભૂતઃ પ્રસન્નાત્મા ન શોચતિ ન કાંક્ષતિ । <br/>
+ સમઃ સર્વેષુ ભૂતેષુ મદ્‍ભક્તિં લભતે પરામ્ ॥<br/>
+ 
+ (ભગવદ્ ગીતા : 18/54)
+ 
+ <br/>
+ 
+ અર્થ :- બ્રહ્મભાવને પ્રાપ્ત થયેલો તે પ્રસન્ન ચિત્ત મનુષ્ય કશાનો શોક કરતો નથી કે કશાની આકાંક્ષા કરતો નથી અને સર્વ ભૂતોમાં સમભાવથી રહેતો થકો મારી પરમ ભક્તિને પામે છે.
+ 
+ <br/><br/>
+ 
+ નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ । <br/>
+ વિભાવ્ય તેન કર્તવ્યા ભક્તિઃ કૃષ્ણસ્ય સર્વદા ॥
+ 
+ <br/>
+ 
+ (શિક્ષાપત્રી શ્ર્લોક : 116)
+ 
+ <br/>
+ 
+ અર્થ :- સ્થૂળ, સૂક્ષ્મ અને કારણ એ જે ત્રણ દેહ તે થકી વિલક્ષણ એવો જે પોતાનો જીવાત્મા તેને બ્રહ્મરૂપની ભાવના કરીને પછી તે બ્રહ્મરૂપે કરીને શ્રીકૃષ્ણ ભગવાનની ભક્તિ જે તે સર્વ કાળને વિશે કરવી.
+ 
+ <br/><br/>
+ 
+ એવું થાવું. ગુણાતીતને તો વિષયનાં સુખ નરક જેવાં થઈ જાય છે; માટે સિદ્ધાંત કરવો જે, સો કરોડ જન્મ ધરીને પણ બ્રહ્મરૂપ થાવાશે ત્યારે જ મહારાજની સેવામાં રહેવાશે. સાધુ થાશું અને સાધુના ગુણ આવશે ત્યારે ભગવાન પાસે રહેવાશે. જ્ઞાનીને આત્મા કહ્યો છે; પણ પ્રેમીને નથી કહ્યો, માટે બ્રહ્મરૂપ થઈને ભગવાનની સેવા કરે તેનો જ પાયો અચળ છે. હેતે કરીને જોડાણો હોય તેને કોઈક દિવસ વિઘ્ન થાય ખરું. બ્રહ્મરૂપ થયા વિના તો તુંબડું ફૂટે ને કજિયો થાય. ગુરુ-ચેલાના કજિયા થાય ને સામસામા બાઝે. મંદિરવાળાને અરસપરસ કજિયા છે તે બધા બ્રહ્મરૂપ થયા વિના છે અને તેવામાં જ માયા ઝડપું નાખે છે. આટલું સુહૃદપણું રહ્યું છે, તે તો મહારાજની ઇચ્છાએ રહ્યું છે; પણ બ્રહ્મરૂપ થયા વિના તો સુહૃદપણું પણ નહિ રહે. 
+ 
+ <br/><br/>
+ 
+ મંદિરનો મમત્વ કરીએ છીએ, તે તો અસંખ્ય જીવોનાં કલ્યાણ સારુ છે. જીવ છે તે અખંડ ધ્યાન કરે એવા નથી; માટે મંદિરની સેવામાં પ્રેર્યા છે. ધ્યાનમાં બેસો તો બપોર નહિ થાય ને ધ્રાબો ટીપવામાં બપોર થાશે; માટે સેવામાં પ્રેર્યા છે. પંગતમાં જમે તે ઉપર મહારાજનો રાજીપો છે ને નોખી રસોઈ કરે ત્યારે ચાર પૈસાભાર ઘી આવે; પણ એ મારગે કોઈ ચડશો નહિ. પંગતમાં ખાવું તે તો આજ્ઞા છે, તેમાં અખંડાનંદસ્વામીની પેઠે એકમેક કરીને જમવું. એકાંતમાં નાના છોકરા સાથે રહેશે તેને માથે જરૂર અપવાદ આવશે. કૃપાનંદસ્વામીએ ત્રણ નિયમ ધરાવ્યા હતા જે, છોકરા સાથે ગોઠ ન કરવી, દૂધપાક ખાવો નહિ ને નોખી રસોઈ કરવી નહિ. અમે પચીસ વરસથી દૂધ મૂક્યું છે. રસમાંથી નિષ્કામી વર્તમાનને ઘસારો લાગશે; પછી અંતરે સુખ કેમ રહેશે ? આમ ને આમ આજ્ઞામાં રહીને મંદિરને વળગી રહેશો, તો ઉપાસના રહેશે. ગમે તેવા દેશકાળમાં પણ મંદિર તો મૂકવાં જ નહીં. મહારાજ ધામમાં પધાર્યા પછી કેટલાકે મંદિર મૂકી દીધાં. કેટલાકે ખાધાના નિયમ લીધા હતા; પણ અંતે તે ન રહ્યું. માટે મંદિર ને સત્સંગમાં સુહૃદપણું રાખજો. ત્યાગીને ધન, સ્ત્રી ને ખાધાના સંકલ્પ કરવા તે તો સત્સંગમાંથી પાડી નાખે. <br/><br/>
+ 
+ <a href="refch9106.html" class="wordMeaning"> પ્રકરણ 9 ની વાત 106 </a>  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (192) મહારાજ દેશમાં ફરતા ફરતા આખા ને પીપલાણા નજીક આવ્યા ત્યારે આખાના ને પીપલાણાના હરિજન સામા તેડવા ગયા. તે આખાના હરિજન કહે જે, આખે પધારો ને પીપલાણાના હરિજન કહે જે, પીપલાણે પધારો. ત્યારે મહારાજ મુક્તાનંદસ્વામીને પૂછ્યું જે, ‘શું કરશું ?’ ત્યારે મુક્તાનંદસ્વામી કહે જે, ‘શ્રીકૃષ્ણ ભગવાન મિથિલાનગરીમાં ગયા ત્યારે જનક તથા એક ભગવદી બ્રાહ્મણ તે બેને સાથે દેખાણા હતા. તેમ તમે પણ કરો એટલે બેય રાજી થાશે.’ ત્યારે મહારાજ કહે, ‘ઠીક ચાલો.’ એમ કહી ચાલતા થયા. તે આખાના હરિજન જાણે ‘આખે પધારે છે.’ ને પીપલાણાના હરિજન જાણે ‘પીપલાણે પધારે છે.’ તે બેયને ત્યાં એકસાથે પધાર્યા. સામૈયાં થયાં, જમીને સભા થઈ, ત્યારે મહેમાન હતા તે જમીને પીપલાણે ગયા તો ત્યાં આગળ પણ મહારાજને વાતો કરતા દીઠા. એટલે મનમાં એમ થયું જે આ શું ? આપણા મોર તો કોઈ ગયું નથી. પછી એક ત્યાં રોકાણો ને એક આખે ગયો. ત્યાં પણ મહારાજને વાતો કરતાં દીઠા. તે મહારાજે હરિજનને રાજી રાખવા સારુ એમ કર્યું હતું. <br/><br/>
+ 
+ અમારે પણ શેલણામાં એમ કરવું પડ્યું હતું ને અમે ઓઘડ ખુમાણને ત્યાં અઢાર દિવસ રહ્યા, પછી અમારી પૂજા કરી હાર પહેરાવ્યો ને ધોતિયાં ઓઢાડ્યાં, પછી અમને કહે જે, ઓરડામાં પધારો. તે ઓરડામાં ડોશીઓ હતી એટલે અમે કહ્યું જે, માંહીલીપા (અંદર) વાઘ છે તે જવાય નહિ. એમ ત્રણ વાર કહ્યું. પછી તો અમે ઓઘડ ખુમાણનું કાંડું ઝાલી વાજતે-ગાજતે મંદિરમાં જવા નીકળ્યા ને બીજેરૂપે ઓરડામાં ગયા ને બધે ફર્યા ને હાર પટારા ઉપર મૂકીને અમે મંદિરમાં ગયા. પણ ઓઘડ ખુમાણની નજરે અમે ઓરડામાં ગયા નહિ તેથી તે ઉદાસ થઈ ઘેર ગયા; ત્યારે તેમની દીકરી રાજબાઈએ પૂછ્યું જે, આપા ઉદાસી કેમ છો ? તો કહે, ‘સ્વામી અઢાર દિવસ રહ્યા પણ ઓરડા પ્રસાદીના ન કર્યા.’ ત્યારે રાજબાઈએ કહ્યું જે, આપા! સ્વામી તો ઓરડામાં પધાર્યા હતા ને સ્વામીએ પટારા તથા ઓરડા બહુ વખાણ્યા ને પછવાડેથી ઓશરીમાં પણ પધાર્યા હતા ને અમે સારી રીતે દશે જણે દર્શન કર્યાં હતાં, તોય ઓઘડ ખુમાણ તો મંદિરમાં આવ્યા ને સાધુને પૂછવા લાગ્યા જે, સ્વામીએ ગુલાબનો હાર કેને આપ્યો ? સ્વામીની ડોકમાં પણ નથી. તેમ કોઈને આપતાં પણ દીઠા નથી. ત્યારે અમે કહ્યું જે, તમારા પટારા ઉપર મૂકીને આવ્યા છીએ. <br/><br/>
+ 
+ પછી તો ઘેર ગયા ને પટારા ઉપર હાર દીઠો એટલે બહુ રાજી થયા. એમ બે રૂપ ધરી કાર્યની સિદ્ધિ કરી. તે ભગવાન કે મોટા સંતને કાંઈ કઠણ નથી. મહારાજે મુક્તાનંદસ્વામીને ઘણી વાતો કરી પણ પુરુષોત્તમપણું સમજાણું નહિ, પછી મુક્તાનંદસ્વામી કાળવાણીમાં ખાખરામાં જંગલ જવા ગયા ત્યાં મહારાજે રામાનંદસ્વામી રૂપે દર્શન દીધાં ને કહ્યું જે, મહારાજ પુરુષોત્તમ ભગવાન છે ને હું તો તેમનો મોકલેલો ડુગડુગી વગાડવા આવ્યો હતો. એમ કહીને અંતરધ્યાન થઈ ગયા ને એક પટેલના બળદ ખોવાઈ ગયા હતા તે ગોત્યા પણ જડ્યા નહિ; પછી અમે તેને ખળે, આખાના કાનજીરૂપે ગયા ને કહ્યું જે, પટેલ ! સ્વામી કહેવરાવે છે જે, તમારા બળદ ઓલી તળાવડીએ બેઠા છે. ત્યાંથી હાંકી આવજો, તે ઘઉં <a href="#ex1" class="wordMeaning">વાવલતાં</a> કહે જે, ઘેર જાઓ, ઉતારો કરો ને હું વાંસેથી આવું છું. એમ કહી પટેલ તો બળદ લેવા ગયા ને અમે અંતરધ્યાન થઈ ગયા. તે ઘેર આવ્યા ને કહે, ‘કાનજી, મહારાજ ક્યાં ?’ તો કહે, ‘આંહીં આવ્યા નથી.’ પછી મંદિરમાં ખબર કાઢી પણ ક્યાંઈ નહિ, એટલે તેમને આશ્ર્ચર્ય જેવું થયું. અમારે કહેવું પડ્યું જે, એ તો અમે આવ્યા હતા. એમ ભગવાન ને સંત તે તો ઘણા દયાળુ છે. હરકોઈ પ્રકારે ભક્તની રક્ષા કરે છે.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 વાવલતા= ઉપણતાં.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

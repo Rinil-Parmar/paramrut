@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			
+	<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+					
+<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">વરતાલ ૧ - નિર્વિકલ્પ સમાધિનું</h1>
+			
+
+<p class="text_gu">
+સંવત ૧૮૮૨ના કાર્તિક સુદિ ૧૧ એકાદશીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીવરતાલ મધ્યે શ્રીલક્ષ્મીનારાયણના મંદિરથી ઉત્તરાદી કોરે ગોમતીજીને કાંઠે આંબાવાડિયામાં સિંહાસન ઉપર ગાદીતકિયા નંખાવીને વિરાજમાન હતા ને ધોળો સુરવાળ ને ધોળો અંગરખો પહેર્યો હતો અને ગૂઢા રંગનો રેંટો કમરે બાંધ્યો હતો ને માથા ઉપર કસુંબલ રેંટો સોનેરી તારના છેડાવાળો બાંધ્યો હતો ને ખભે કસુંબલ રેંટો જરકસી છેડાનો વિરાજમાન હતો ને કંઠને વિષે ગુલાબનાં પુષ્પના હાર વિરાજમાન હતા ને માથા ઉપર ગુલાબનાં પુષ્પના તોરા વિરાજમાન હતા ને ભુજાઓને વિષે ગુલાબના ગજરા ને બાજુબંધ બાંધ્યા હતા. એવી શોભાને ધરતા થકા ઉત્તરાદે મુખારવિંદે વિરાજમાન હતા અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી વડોદરાવાળા શોભારામ શાસ્ત્રીએ શ્રીજીમહારાજને પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! મુમુક્ષુ હોય તે જ્યારે નિર્વિકલ્પ સમાધિને પામે ત્યારે ગુણાતીત થાય ને ભગવાનનો એકાંતિક ભક્ત થાય; ત્યારે જેને નિર્વિકલ્પ સમાધિ ન થાય તેની શી ગતિ થાય?” પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રાણનો નિરોધ થાય ત્યારે જ નિર્વિકલ્પ સમાધિ થાય એમ નથી. નિર્વિકલ્પ સમાધિની રીત તો બીજી છે. તે કહીએ તે સાંભળો જે, શ્રીમદ્‌ભાગવતમાં કહ્યું છે જે,
+</p>
+<p class="text_gu">
+‘અત્ર સર્ગો વિસર્ગશ્ચ સ્થાનં પોષણમૂતયઃ । <br/>
+મન્વન્તરેશાનુકથા નિરોધો મુક્તિરાશ્રયઃ ॥’ 
+</p>
+<p class="text_gu">
+“એ શ્લોકનો એમ અર્થ છે જે, વિશ્વનાં સર્ગવિસર્ગાદિક જે નવ લક્ષણ તેણે કરીને જાણ્યામાં આવે એવું આશ્રયરૂપ જે શ્રીકૃષ્ણ ભગવાનનું સ્વરૂપ તેને વિષે જે મુમુક્ષુની અચળ મતિ થઈ; જેમ આ આંબાનું વૃક્ષ છે તે એક વાર દ્રઢ કરીને જાણ્યું પછી કામ વ્યાપે, ક્રોધ વ્યાપે, લોભ વ્યાપે તો પણ કોઈ રીતે આંબાને વિષે ભ્રાંતિ ન થાય જે, ‘આંબાનું વૃક્ષ હશે કે નહીં હોય?’ તેમ જેને પ્રત્યક્ષ શ્રીકૃષ્ણ ભગવાનના સ્વરૂપનો દ્રઢ નિશ્ચય થયો ને તેમાં કોઈ જાતનો કુતર્ક ન થાય, તો તે પુરુષના પ્રાણ લીન ન થયા હોય તો પણ નિર્વિકલ્પ સમાધિ છે ને પ્રાણ લીન થયા હોય તો પણ નિર્વિકલ્પ સમાધિ છે. અને જેને એ ભગવાનના સ્વરૂપમાં સંકલ્પ-વિકલ્પ રહેતા હોય જે, ‘બ્રહ્મપુરને વિષે કેવું ભગવાનનું સ્વરૂપ હશે? અને શ્વેતદ્વીપ ને વૈકુંઠને વિષે કેવું ભગવાનનું સ્વરૂપ હશે? અને તે સ્વરૂપનું ક્યારે દર્શન થશે?’ એવી જાતના સંકલ્પ-વિકલ્પ કર્યા કરે, પણ પ્રકટ ભગવાન મળ્યા તેને જ સર્વના કારણ જાણીને તેણે કરીને જ પોતાને કૃતાર્થ ન માને. અને એવાને જો દૈવેચ્છાએ કરીને સમાધિ થાય તો પણ સંકલ્પ-વિકલ્પ મટે નહીં અને સમાધિમાં જે જે દેખાય તેથી નવું નવું જોવાને ઇચ્છે પણ મનના વિકલ્પ મટે નહીં, એવો હોય તેને સમાધિ છે તો પણ સવિકલ્પ છે ને સમાધિ ન હોય તોય સવિકલ્પ છે. માટે એવો હોય તે ગુણાતીત એકાંતિક ભક્ત ન કહેવાય. અને જેને ભગવાનના સ્વરૂપનો દ્રઢ નિશ્ચય હોય ને તેને સમાધિ છે અથવા નથી, તોય પણ તેને સદા નિર્વિકલ્પ સમાધિ જ છે.”
+</p>
+<p class="text_gu">
+પછી દીનાનાથ ભટ્ટે પ્રશ્ન પૂછ્યો જે, “મનમાં સંકલ્પ-વિકલ્પ ટાળવાનો ઉપાય કરે અને જો મનને ન જીતી શકે તો તેની શી ગતિ થાય?” પછી શ્રીજીમહારાજ બોલ્યા જે, “કૌરવને ને પાંડવને યુદ્ધ કરવાનો પ્રારંભ થયો ત્યારે કૌરવ ને પાંડવે વિચાર્યું જે, ‘આપણે એવે ઠેકાણે યુદ્ધ કરીએ જે, તે યુદ્ધમાં જે કોઈ મરે તો પણ તેના જીવનું રૂડું થાય,’ એવું વિચારીને કુરુક્ષેત્રને વિષે યુદ્ધ કર્યું. પછી જીત્યા તેનું પણ સારું થયું ને એ સંગ્રામમાં મરાયા તેને પણ દેવલોકની પ્રાપ્તિ થઈ ને રાજ્ય થકી પણ અધિક સુખને પામ્યા. તેમ જે મન સાથે લડાઈ આદરે અને જો મનને જીતે તો નિર્વિકલ્પ સ્થિતિને પામે ને ભગવાનનો એકાંતિક ભક્ત થાય, અને જો મન આગળ હારે તો પણ યોગભ્રષ્ટ થાય. તે પછી એક જન્મે અથવા બે જન્મે અથવા ઘણે જન્મે પણ અંત્યે જાતો એ એકાંતિક ભક્ત થાય, પણ એણે દાખડો કર્યો તે છૂટી ન પડે. માટે બુદ્ધિવાન હોય તેને તો પોતાના કલ્યાણને અર્થે મન સાથે જરૂર વૈર બાંધવું. પછી એ મનને જીતશે તો પણ સારું છે ને એ મનથી હારશે તો પણ યોગભ્રષ્ટ થશે. તેમાં અંત્યે જાતાં સારું છે. તે માટે <b>જે કલ્યાણને ઇચ્છે તેને તો મન સાથે જરૂર વૈર બાંધવું.</b>”
+</p>
+
+
+			
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>
+</html>

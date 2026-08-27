@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (31) ભગવાનમાં હેત ને મહિમા અંતરમાં હોય તો જે પદાર્થ આડું આવે તેને કાપી નાખે. ઝીણાભાઈ ગઢડે આવ્યા હતા ત્યાં ઘેર તેડાવ્યાના કાગળ આવે તે બધા પથારી હેઠે ઘાલી રાખે; પણ વાંચે નહિ. કારણ કે, વાંચે તો ખેદ થાય ને ઘેર જાવાના સંકલ્પ થાય એટલે વાંચતા નહિ. પછી મહારાજ ઉપર કાગળ આવ્યો જે, ‘ઝીણાભાઈ ત્યાં છે, કે નથી ? અમે ઘણાય કાગળ લખ્યા, પણ એકેયનો જવાબ નથી તો ક્યાં છે તે લખશો.’ મહારાજે ઝીણાભાઈને પૂછયું જે, ‘તમારે ઘેરથી કાગળ આવે છે ?’ તો કહે, ‘હા મહારાજ! પણ મેં વાંચ્યા નથી. મારી પથારી હેઠે રાખી મૂકું છું.’ ત્યારે મહારાજે પૂછયું, ‘કેમ વાંચ્યા નથી ?’ તો કહે, ‘વાંચું તો ઉદ્વેગ થાય, ઘેર જાવાના સંકલ્પ થાય ને સમાગમનું સુખ આવે નહિ, તે સારુ વાંચ્યા નથી.’ એમ ઝીણાભાઈ મહારાજ પાસે રહ્યા, પણ વહેવાર સંભાર્યો નહિ.
+ <br/><br/>
+ લાડીલા ! થાને ખમા !!
+ <br/>
+ એ હેતનાં કીર્તન ઝીણભાઈનાં અંગનાં છે, એમ મહારાજે કહ્યું હતું.
+ <br/><br/>
+ ભૂજવાળા દેવરામભાઈને તેમની સ્ત્રી ગુજરી ગયેલ તેનું નદીમાં સ્નાન કરાવ્યું. ત્યારે દેવરામભાઈએ કહ્યું જે, ‘બીજું હોય તો તે પણ કહો, એટલે ભેળાભેળું નહાઈ નાખીએ.’ એવી આત્મનિષ્ઠાના જ્ઞાનવાળા હતા, માટે ભગવાનમાં જોડાય તો આત્મનિષ્ઠા સહેજે આવી જાય. પીપળાવના પ્રભાશંકર પરણવા જતા હતા ને મહારાજનો કાગળ વરતાલ બોલાવ્યાનો આવ્યો એટલે જાન જાતી હતી તો પણ ગાડેથી ઊતરીને ચાલી નીકળ્યા ને મા-બાપને કહે જે, ‘જાન તો ફરીથી જોડાશે, પણ મહારાજની આવી આજ્ઞા પાળવાનું ફરીથી ન મળે.’ એમ એવા હેતવાળાને રાખ્યા વિનાની આત્મનિષ્ઠા રહે છે. તે જુઓને, તેને કાંઈ વળગ્યું જ નહીં ! માટે છેલ્લાના પહેલા વચનામૃતમાં ઝીણાભાઈ, દેવરામ ને પ્રભાશંકરને જ્ઞાનનાં અંગવાળા કહ્યા છે, પણ એ આત્મનિષ્ઠાનાં જ્ઞાનવાળા, તે ભગવાનમાં હેતનું જ્ઞાન પણ સર્વોપરી સ્વરૂપનિષ્ઠા નહિ, કેમ જે, ઝીણાભાઈ શ્ર્વેતદ્વીપમાં ગયા તે વાત ‘ભક્તચિંતામણિ’માં પ્રસિદ્ધ છે. તે જોતાં એમ જણાય છે જે, જગત મિથ્યા ને આ લોકનાં સુખ-દુ:ખમાં ન લેવાય એવા સાંખ્ય જ્ઞાનવાળા છે; પણ મહારાજના સ્વરૂપની સર્વોપરી નિષ્ઠાનું જ્ઞાન નહિ. 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

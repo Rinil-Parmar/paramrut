@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			Tā. 26-4-1973, bapore, vacha. Gaḍhaḍā pra. 1<br/>79. Moṭāpuruṣhanī sevā kevaḷ bhagavat prasannatārthe, kevaḷ potānā j kalyāṇane arthe ahohobhāve thāya to enun anantagaṇun puṇya maḷe. Moṭāpuruṣhane prakṛutipuruṣh sudhīnun badhun narka tulya chhe. Eṭale sāchā sevak thavun. Sāchā sevakane sāchavavā n paḍe. <br/>
+ 
+ <br/>Parvatabhāī traṇ divas sudhī bhūkhyā rahyā. Mūḷajī brahmachārīnā rasoḍāvāḷā jāṇe ke jīvubānā rasoḍe jamatā hashe ne jīvubānā rasoḍāvāḷā jāṇe mūḷajī brahmachārīnā rasoḍe jamatā hashe, paṇ parvatabhāīno bilakul hunhāṭo nahi. Emano e j bhāv e sevaka. Je sevakane sāchavavo paḍe e sevakane moṭāpuruṣhanā sambandhamān kachāsh chhe. Manadhāryun mukāve tyāre kaṭ vaḷī jāya e sevaka. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

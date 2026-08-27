@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			36. Aravindo ātmasattārūpe vartyā. 500 paramahanso vyāpakānandaswāmī, sachchidānandaswāmī vagere e rīte vartyā. Mahārāj kahe, baḷ pāmavāno ethīye ek visheṣh upāya chhe : sevāmān atishaya shraddhā rākhe. Mahārāje baḷ pāmavānān traṇ vachanāmṛut mūkyān. Ga.pra.58-alpasanbandhavāḷāno sampūrṇa dās thaī varte. Vacha. ga.chhe.11-deh ne dehanā sanbandhī karatān visheṣh bhagavān ne bhagavānanā bhaktamān prīti. Vacha.ga.ma.28-bhagavān ne bhaktanī sevā e jīvanadorī. Yogībāpā kahetā ke ṭūka-ṭūk vartavun emān badhun j āvī jāya. Bhagavān ne bhagavānanā santo taraf udāsīnatā e maraṇadorī. Enun vachanāmṛut gaḍhaḍā madhya 46. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

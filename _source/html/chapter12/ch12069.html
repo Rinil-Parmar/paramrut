@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (69) આ જીવને ભગવાનને મારગે ચાલવું તેમાં અનંત વિઘ્ન છે તે ગંગાજી પર્વત ફોડીને ચાલ્યાં તેમ પંચવિષય છે તે કાળા પર્વત જેવા છે. ને સ્વાદ ને કામ, એનું બળ બહુ જણાય છે, તે બીજા દોષની નિંદા કરી છે પણ સ્વાદની ને કામની નિંદા તો કોઈકે જ કરી છે. માટે એમાંથી જીવ નીકળે નહિ, તે <br/><br/>
+ 
+ સર્વે બ્રહ્મવિદ ભવિષ્યન્તિ સંપ્રાપ્તે  તુ કલૌ યુગે । <br/>
+ 
+ તત્ર નૈવાનુતિષ્ઠન્તિ શિશ્નોદરપરાયણા: ॥
+ 
+ <br/>
+ 
+ અર્થ :- પણ કળિયુગ પ્રાપ્ત થતાં બધા બ્રહ્મને જાણનારા થશે. કામસેવન અને ભોજનમાં રાચેલા લોકો યજ્ઞ વગેરેનું અનુષ્ઠાન કરશે નહિ. <br/><br/>
+ 
+ એમ લખે છે. માટે જ્ઞાનવાન થાવું. આ ભક્તિ તો ઉપકરણ છે; તે ઉપકરણમાં ચોંટી ગયા, ને લખે છે તો, <br/><br/>
+
+ વાણી ગુણાનુકથને શ્રવણૌ કથાયાં હસ્તૌ ચ કર્મસુ મનસ્તવ પાદયોર્નઃ । <br/>
+સ્મૃત્યાં શિરસ્તવ નિવાસજગત્પ્રણામે  દૃષ્ટિઃ સતાં દર્શનેઽસ્તુ ભવત્તનૂનામ્ ॥
+
+ <br/>
+ 
+ (સત્સંગિજીવન : 1/59/86 તથા શ્રીમદ્ ભાગવત 10/10/38) <br/>
+ 
+ અર્થ :- ગુણોનાં પુન: પુન: કથનમાં વાણી, સેવામાં હાથ, ચરણકમળની સ્મૃતિમાં મન, મસ્તક આપને પ્રણામ કરવામાં, અને આંખ આપના અને આપના સંતોનાં દર્શનમાં રહે. <br/><br/>
+ 
+ માટે આ ઇન્દ્રિયું ને અંત:કરણ ભગવાનમાં રાખવાં એ તાન છે.
+ 
+ <br/><br/>
+ 
+ કૃષ્ણ ત્વદીય પદપંકજ પઞ્જરાન્તે અદ્યૈવ મે વિશતુ માનસરાજહંસ: । <br/>
+ 
+ પ્રાણપ્રયાણસમયે કફવાતપિત્તૈ: કણ્ઠાવરોધનવિધૌ સ્મરણં કુતસ્તે ।।
+ 
+ 
+ 
+ <br/>
+ 
+ (પાંડવ ગીતા : 52) <br/>
+ 
+ અર્થ :- હે કૃષ્ણ, મારો ચિત્તરૂપી માનસહંસ આજે જ આપના શ્રીચરણ-કમળરૂપી પાંજરામાં પૂરાઈ જાઓ, પણ જ્યારે આ શરીરના પ્રાણના પ્રયાણ સમયે કફ, વાત અને પિત્તથી ઘેરાઈને કંઠ રુંધાઈ જશે ત્યારે આપનું સ્મરણ ક્યાંથી થઈ શકશે ?
+ 
+ <br/><br/>
+ 
+ નષ્ટો મોહઃ સ્મૃતિર્લબ્ધા ત્વત્પ્રસાદાન્મયાચ્યુત । <br/>
+સ્થિતોઽસ્મિ ગતસન્દેહઃ કરિષ્યે વચનં તવ ॥ 
+
+ 
+  (ભગવદ્ ગીતા : 18/73) <br/> 
+ 
+ અર્થ :- હે અચ્યુત ! આપની કૃપાથી મારો મોહ નાશ પામ્યો છે, અને મેં (સ્વધર્મકર્મ, આત્મજ્ઞાન આદિની) સ્મૃતિ મેળવી છે; (હવે) સંશય રહિત થઈ હું ઊભો છું અને આપનાં વચન પ્રમાણે કરીશ. <br/><br/>
+ 
+ સર્વ ધર્માન્પરિત્યજ્ય મામેકં શરણં વ્રજ ।  <br/>
+ 
+ અહં ત્વા સર્વપાપેભ્યો મોક્ષયિષ્યામિ મા શુચ: ॥ 
+ 
+ 
+
+ 
+ <br/>
+ 
+ (ભગવદ્ ગીતા : 18/66) <br/>
+ 
+ અર્થ :- સર્વ ધર્મો છોડી તું મારે એકને શરણે આવ, હું તને સર્વ પાપોથી છોડાવીશ, તું શોક ન કર. <br/><br/>
+ 
+ 
+ 
+ પ્રસંગમજરં પાશમાત્મનઃ કવયો વિદુઃ । <br/>
+ સ એવ સાધુષુ કૃતો મોક્ષદ્વારમપાવૃતમ્ ॥
+ 
+ <br/>
+ 
+ (શ્રીમદ્ ભાગવત-3/25/20) <br/>
+ 
+ અર્થ :- ‘સંગ એ આત્માનું જબરું બંધન છે.’ એમ કવિઓ કહે છે. એ જ સંગ જો સાધુપુરુષો સાથે કરવામાં આવે તો મોક્ષનું દ્વાર ખુલી જાય છે. <br/><br/>
+ 
+ એવું જ્ઞાન શીખીને જે શિષ્ય થયો હોય તે ભગવાનને મારગે ચાલે. અને
+ 
+ <br/><br/>
+ 
+ પ્રસંગમજરં પાશમાત્મનઃ કવયો વિદુઃ । 
+ 
+ <br/><br/>
+ 
+ એ મારગે તો સૌને ચાલવું જ ને ઝાઝું ન સૂઝે તો આ સાધુમાં બંધાઈ જાવું ને શ્ર્લોક ભણી ગયા ને સમજ્યા નહિ, તે તો, <br/><br/>
+ 
+ 
+ 
+ યથા ખરશ્ચન્દનભારવાહી ભારસ્ય વેત્તા ન હિ ચંદનસ્ય । <br/>
+તથા હિ વિપ્રા સ્મૃતિપુરાણા મદ્‌ભક્તિહીના ખરવદ્વહન્તિ  ॥
+
+ <br/>
+ 
+ અર્થ :- ચંદનનો ભાર વહન કરનાર ગધેડો ભારને જ જાણે છે. ચંદનને નહિ. તેમ જ બ્રાહ્મણો મારી ભક્તિ વગર, સ્મૃતિ અને પુરાણો વગેરે ગધેડાંની માફક વહે છે.
+ 
+ <br/><br/>
+ 
+ એમ છે. માટે ખેડુ જેમ ગોળ સામી નજર રાખીને વાડ કરે છે, તેમ આપણે પણ ફળ સામી નજર રાખીને કરવું.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા મધ્ય ૫૦: રહસ્યનું, જગતના લોચાનું</h1>
+
+<p class="text_gu">
+સંવત ૧૮૮૦ના ચૈત્ર વદિ ૨ દ્વિતીયાને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિરની આગળ આથમણે દ્વાર મેડીની ઓસરી ઉપર રાત્રિને વિષે વિરાજમાન હતા ને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “આજ તો અમારું જે રહસ્ય છે તે તમને સર્વેને અમારા જાણીને કહીએ છીએ જે, જેમ નદીઓ સમુદ્રને વિષે લીન થાય છે, અને જેમ સતી ને પતંગ તે અગ્નિને વિષે બળી જાય છે, અને જેમ શૂરો રણને વિષે ટુકટુક થઈ જાય છે, તેમ એકરસ પરિપૂર્ણ એવું જે બ્રહ્મસ્વરૂપ તેને વિષે અમે અમારા આત્માને લીન કરી રાખ્યો છે. અને તે તેજોમય એવું જે અક્ષરબ્રહ્મ, તેને વિષે મૂર્તિમાન એવા તે પુરુષોત્તમ ભગવાન ને તે ભગવાનના જે ભક્ત તે સંગાથે અખંડ પ્રીતિ જોડી રાખી છે અને તે વિના કોઈ પદાર્થમાં પ્રીતિ નથી, એવું અમારે અખંડ વર્તે છે. અને ઉપરથી તો અમે અતિશય ત્યાગનો ફૂંફવાડો જણાવતા નથી પણ જ્યારે અમે અમારા અંતર સામું જોઈને બીજા હરિભક્તના અંતર સામું જોઈએ છીએ ત્યારે મોટા મોટા પરમહંસ તથા મોટી મોટી સાંખ્યયોગી બાઈઓ એ સર્વેને કાંઈકે જગતની કોરનો લોચો જણાય, પણ અમારા અંતરને વિષે તો ક્યારેય સ્વપ્નમાં પણ જગતની કોરનો ઘાટ થતો નથી. અને ભગવાન ને ભગવાનના ભક્તની ભક્તિમાંથી અમને પાડવાને અર્થે કોઈ સમર્થ નથી, એમ જણાય છે. અને જે દિવસ ભગવાનની પ્રાપ્તિ નહોતી થઈ તે દિવસ પણ ભગવાનની શક્તિ જે કાળ તે પણ આ જીવનો નાશ કરી શક્યો નથી, અને કર્મ પણ નાશ કરી શક્યાં નથી, અને માયા પણ પોતાને વિષે લીન કરી શકી નથી, અને હવે તો ભગવાન મળ્યા છે માટે કાળ, કર્મ, માયાનો શો ભાર છે? એમ જાણીને એવી હિંમત બાંધી છે જે, ‘હવે તો ભગવાન ને ભગવાનના ભક્ત વિના કોઈને વિષે પ્રીતિ રાખવી નથી.’ અને જે અમારી સોબત રાખશે તેના હૃદયમાં પણ કોઈ જાતનો લોચો રહેવા દેવો નથી. શા માટે જે, જેને મારા જેવો અંતરનો દ્રઢાવ હોય તે સાથે જ અમારે બને છે. અને જેના હૃદયમાં જગતના સુખની વાસના હોય તે સંગાથે તો અમે હેત કરીએ તો પણ થાય નહીં. માટે <b>જે નિર્વાસનિક ભગવાનના ભક્ત હોય તે જ અમને વહાલા છે. એ અમારા અંતરનું રહસ્ય તે કહ્યું</b>.” એવી રીતે શ્રીજીમહારાજે પોતાના ભક્તજનની શિક્ષાને અર્થે વાર્તા કરી.
+</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

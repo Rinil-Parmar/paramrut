@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+				 			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+				 
+ 			  
+
+			</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (33) સત્સંગમાં એમ વાત થાય છે જે, જીવ બ્રહ્મરૂપ થઈ જાય. ત્યારે પૂછ્યું જે, ‘સત્સંગમાં વાત તો થાય છે, તોય જીવ બ્રહ્મરૂપ કેમ થાતો નથી?’ પછી સ્વામી બોલ્યા જે, ‘હેતે કરીને સત્પુરુષમાં જીવ બાંધ્યો નથી અને સત્પુરુષમાં જીવ બાંધ્યો હોય તોય તેનો વિશ્ર્વાસ ન આવે.’ ત્યારે વળી પૂછ્યું જે, ‘હેતે કરીને જીવ બાંધ્યો હોય, તોય તેનો વિશ્ર્વાસ કેમ ન આવે ?’ ત્યારે સ્વામી બોલ્યા જે, ‘આ જલાભક્તે મારા સાથે જીવ ઘણો બાંધ્યો છે, પણ મારો વિશ્ર્વાસ ન આવે.’ એમ કહીને વળી બોલ્યા જે, ‘વિશ્ર્વાસ તો હોય તો પણ નિષ્કપટપણે વરતાય નહિ, ને નિષ્કપટપણે વરતે તો જીવ બ્રહ્મરૂપ થયા વિના રહે નહિ; એ સિદ્ધાંત વાત છે.’
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> <!-- Find new scripts1.js in js folder, Added This line and removed script -->
+</body>
+</html>

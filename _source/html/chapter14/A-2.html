@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">અમદાવાદ ૨ - નાહી-ધોઈ પૂજા કર્યાનું</h1>
+			
+
+<p class="text_gu">
+સંવત ૧૮૮૨ના ફાગણ સુદિ ૧૧ એકાદશીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીઅમદાવાદ મધ્યે શ્રીનરનારાયણના મંદિર આગળ વેદિને વિષે પાટ ઉપર ગાદીતકિયા નંખાવીને વિરાજમાન હતા અને ધોળો ખેસ પહેર્યો હતો ને ધોળી ચાદર ઓઢી હતી ને મસ્તકને વિષે ગુલાબી રંગનો ફેંટો બાંધ્યો હતો ને તે પાઘને વિષે ગુલાબનાં પુષ્પના તોરા ઝૂકી રહ્યા હતા ને કાનને ઉપર ગુલાબના બે ગુચ્છ ખોસ્યા હતા ને કંઠને વિષે ગુલાબનાં પુષ્પના હાર પહેર્યા હતા ને બે ભુજને વિષે ગુલાબના બાજુબંધ બાંધ્યા હતા ને બે હાથને વિષે ગુલાબનાં પુષ્પના ગજરા પહેર્યા હતા. એવી રીતે સર્વે અંગમાં ગુલાબનાં પુષ્પે ગરકાવ થયા હતા. અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ સર્વે પરમહંસ પ્રત્યે બોલ્યા જે, “એક પ્રશ્ન પૂછું છું જે, એક પરમેશ્વરનો ભક્ત છે તે તો જાગ્રત, સ્વપ્ન ને સુષુપ્તિ તે થકી પર વર્તે છે ને મલિન રજ, તમ ને મલિન સત્ત્વ તેનો ત્યાગ કરીને શુદ્ધ સત્ત્વમય વર્તે છે ને એવો થકો પરમેશ્વરને ભજે છે. અને બીજો જે ભક્ત છે તે તો ત્રિગુણાત્મક વર્તે છે ને પરમેશ્વરને વિષે તો અતિશય પ્રીતિએ યુક્ત વર્તે છે. એ બે ભક્તમાં કયો ભક્ત શ્રેષ્ઠ છે?” પછી સંતમંડળે તો એમ કહ્યું જે, “ભગવાનને વિષે પ્રીતિવાળો શ્રેષ્ઠ છે.”
+</p>
+<p class="text_gu">
+ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એક તો નાહી-ધોઈને પવિત્ર થઈને ભગવાનની પૂજા કરે છે અને એક તો મળમૂત્રનો ભર્યો થકો ભગવાનની પૂજા કરે છે, એ બેમાં કયો શ્રેષ્ઠ છે?” ત્યારે મુનિમંડળે કહ્યું જે, “પવિત્ર થઈને ભગવાનની પૂજા કરે તે શ્રેષ્ઠ છે.”
+</p>
+<p class="text_gu">
+ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “જે માયિક ઉપાધિને તજીને ભગવાનને ભજે છે તેને તો તમે ન્યૂન કહો છો ને જે માયિક ઉપાધિએ સહિત થકો પરમેશ્વરને વિષે પ્રીતિવાન છે તેને શ્રેષ્ઠ કહો છો; તે એ કેવી રીતે શ્રેષ્ઠ છે?” પછી એ પ્રશ્નનું કોઈથી સમાધાન ન થયું. પછી શ્રીજીમહારાજ બોલ્યા જે, “ગીતામાં ચાર પ્રકારના ભક્ત કહ્યા છે, તેમાં જ્ઞાનીને જ ભગવાને પોતાનો આત્મા કહ્યો છે. માટે જે માયિક ઉપાધિને તજીને બ્રહ્મરૂપ થઈને ભગવાનને ભજે તે જ ભક્ત શ્રેષ્ઠ છે. શા માટે જે, નિત્ય પ્રલય જે સુષુપ્તિ ને નિમિત્ત પ્રલય જે બ્રહ્માની સુષુપ્તિ ને પ્રાકૃત પ્રલય જે પ્રકૃતિનું કાર્ય સર્વે પ્રકૃતિને વિષે લીન થઈ જાય અને આત્યંતિક પ્રલય જે જ્ઞાનપ્રલય તેમાં તો પ્રકૃતિ પર્યંત સર્વે બ્રહ્મના પ્રકાશને વિષે લીન થઈ જાય છે. અને નિત્ય પ્રલયમાં જીવની ઉપાધિ લીન થઈ જાય છે ને નિમિત્ત પ્રલયમાં ઈશ્વરની ઉપાધિ લીન થઈ જાય છે ને પ્રાકૃત પ્રલયમાં પુરુષની ઉપાધિ સર્વે લીન થઈ જાય છે, પણ જ્યારે સૃષ્ટિ સૃજાય છે ત્યારે એ ત્રણેને પોતપોતાની ઉપાધિ વળગે છે. અને <b>આત્યંતિક પ્રલય જે જ્ઞાનપ્રલય તેણે કરીને જેણે માયિક ઉપાધિનો ત્યાગ કર્યો તેને તો પાછી કોઈ કાળે માયિક ઉપાધિ વળગતી નથી. અને જો કોઈક કાળે દેહ ધરે તો જેમ ભગવાન સ્વતંત્ર થકા દેહ ધરે છે તેમ તે પણ સ્વતંત્ર થકો દેહ ધરે છે પણ કાળ, કર્મ ને માયા તેને આધીન થકો દેહને નથી ધરતો. માટે બ્રહ્મરૂપ થઈને જે પરમેશ્વરને ભજે તે જ શ્રેષ્ઠ છે.</b> અને આ વાર્તા છે તે જે પરમેશ્વરનો અનન્ય ભક્ત છે અને એકાંતિક ભક્તના લક્ષણે યુક્ત છે તેને જ સમજાય છે.”
+</p>
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (196) વિષયનાં સુખ શેલડી (શેરડી) ને કેરી જેવાં છે. તેમાં દુ:ખ નથી દેખાતું એ મોટું અજ્ઞાન છે. ગાડી-ઘોડામાં પણ દુ:ખ છે; તે કેટલાકના હાથ-પગ ભાંગ્યા છે.<a href="#ex1" class="wordMeaning"> ગૃહસ્થને ઘેર જઈને બળદ બાંધવા,</a> એ ગૃહસ્થનું લોહી પીધા જેવી વાત છે. ભેખધારીને ચેલામાં ને પદાર્થમાં બહુ હેત થાય છે. દાડમાવાળા નથુ મહારાજે અમને પછેડી ઓઢાડી, તે અમે તેના ડોસાને ઓઢાડી, એટલે ડોસાને અમારો ગુણ આવ્યો; પછી વર્તમાન ધરાવી તેને સત્સંગી કર્યો ને ભજનાનંદે તો પછેડી સારુ કજિયો કર્યો. આગરિયાવાળા વસ્તા ભક્ત પાસે સાધુએ જીરું માગ્યું. ત્યારે ઘેર જીરું નહોતું ને ગામમાં પણ જડ્યું નહિ, એટલે રાજુલેથી દોડતા જીરું લઈ આવ્યા, ત્યાં તો સાધુ જમી રહ્યા.
+ <br/><br/>
+ સાંખ્યજોગી ને શાસ્ત્રધારી, સન્યાસી ને સંત;
+ <br/>
+ ‘લાવો, લાવો, લાવો’ કરે,  ફરે  લેવાને અંતરે; કરજો0
+ <br/><br/>
+ માટે વગર વિચાર્યું માગવું એ ગૃહસ્થનું લોહી પીધા જેવું છે. સાધુને હરિજને કહ્યું જે, ‘સ્વામી ગામમાં શાક મળતું નથી.’ ત્યારે સાધુ કહે, ‘દાળે ચલાવશું.’ ત્યારે હરિજન કહે, ‘ઈ જ મળતું નથી, અમે દાળને જ શાક કહીએ છીએ.’ રસ્તાના ગામમાં મંડળ ગયું એટલે પાકી રસોઈ આપી; તે જમી રહ્યા ત્યાં બીજું મંડળ ગયું તેને દાળ, ભાત ને રોટલી જમાડી; ત્યાં ત્રીજું મંડળ ગયું તેને દાળ, રોટલા દીધા; ત્યાં ચોથું મંડળ ગયું તેને લોટ નહિ મળવાથી એકલી ખીચડી ખવરાવી; તે જમી રહ્યા ત્યાં પાંચમું મંડળ ગયું એટલે તેને ભડકું રાંધી દીધું; તે જમી રહ્યા ત્યાં છઠ્ઠું મંડળ ગયું તેને પોંક દીધો; ને તે ખાઈ રહ્યા ત્યાં સાતમું મંડળ ગયું એટલે તેને ગામમાંથી દાળિયા લાવી દીધા; એમ પરાણે પૂરું કર્યું.
+ <br/><br/>
+ અશન   વસન   વાસન  વળી  જે  જે  જોયે  સમાજ;
+ <br/>
+ અવશ્ય એ તો આપવું પડશે ન આપે તો ન રહે લાજ. કરજો0
+ <br/>
+ એ   તો   સૌનું   સરખું   કહ્યું   વળી   કહેવાનું   એક;
+ <br/>
+ રસ્તાના   રહેનારાની   કેદી    નહિ   રહેવા    દે    ટેક. કરજો0
+ <br/><br/>
+ ‘લાવ લાડુ ને જોડ ગાડું; પછે થાશે તાપ તો તુંને લાગશે પાપ.’ એમ કહી ગૃહસ્થને ડરાવે તે ત્યાગીનો ધર્મ નહિ. મહારાજની મરજી એમ જે રસ્તાના ગામને ઘસારો ન દેવો માટે કાંઈ ન જોઈએ તો અહિંસા ધર્મ રહે. સાઠ (સાંઈઠ) મૂર્તિ ઝીંજાવદર ગઈ તે જેઠસુરે ઠપકો દીધો; માટે હરિજન દુ:ખાય તો સ્વામિનારાયણ દુ:ખાય. 
+ <br/><br/>
+ એક વાર અમારે ભાલના ગામમાં જાવું હતું, તે રસ્તામાં ગોડી, આરતી, ધૂન કરીને પાણીનાં તુંબડાં સૌએ ભરી લીધાં; કેમ જે, રાતે મંદિરમાં જઈએ તો પાણી હોય નહિ ને તે વખતે બે ગાઉથી પાણી પણ લવાય નહિ, તેથી હરિજન કચવાય. પછી અમે મોડામોડા મંદિરમાં ગયા. એટલે હરિજન કહે, ‘આમાં કોઈ જૂના છે કે બધા નવા છે ?’ ત્યારે અમે કહ્યું જે, ‘જૂના છે, ફિકર રાખશો નહિ, અત્યારે રસોઈ કરવી નથી ને પાણી ભરી લાવ્યા છીએ, તે લાવો હાંડો એટલે ભરી દઈએ ને આવો સૌ બેસો એટલે વાતું કરીએ તે સાંભળો.’ તેથી હરિજન રાજી થયા ને નવા તો જેમ <a href="#ex1" class="wordMeaning"> મોસલના પાળા </a> આવ્યા હોય તેમ હરિજન આગળ માગ માગ કરે, ત્યારે હરિજન કેમ રાજી થાય ? પછી
+ <br/><br/>
+ આગે સાધુ આવા નોતા.
+ <br/><br/>
+ એ કીર્તન બોલાવ્યું. મેળાવ્યાનું કહ્યું ત્યારે એક જણ કહે, ‘પેટ બાળવા ભેખ લીધો નથી.’ એવાને શું કહેવું ?
+ <br/><br/>
+ કાંઉ  ઝાઝા  કગોરડાં  કાંઉ  ઝાઝા  કપૂત,
+ <br/>
+ હકડી તો મહિડી ભલી હકડો ભલો સપૂત.
+ <br/><br/>
+ એક મનુષ્ય એવો હોય તે આ બધાને પ્રભુ ભજાવે ને એક એવો હોય તે બધાને વેરી નાખે. 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ગૃહસ્થને ઘેર જઈને બળદ બાંધવા= ગૃહસ્થને ઘેર મહેમાનની જેમ ઉતારો કરવો. <br/>
+		2 મોસલના પાળા= સરકારી હુકમ બજાવવા આવેલ અમલદારના માણસો.
+		
+		
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

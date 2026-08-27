@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૨: સર્વે અર્થ સિદ્ધ થયાનું, પ્રગટ ગુરુરૂપ હરિનું</h1>
+			<p class="text_gu">સંવત ૧૮૮૨ના જ્યેષ્ઠ સુદિ ૬ છઠને દિવસ સાંજને સમે સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના મંદિરના ફળિયાને વિષે બાજોઠ ઉપર વિરાજમાન હતા અને મસ્તક ઉપર શ્યામ છેડાની ધોળી પાઘ બાંધી હતી અને શ્વેત ચાદર ઓઢી હતી અને શ્વેત ખેસ પહેર્યો હતો અને પાઘને વિષે મોગરાનાં પુષ્પનો તોરો ખોસ્યો હતો અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજે પ્રશ્ન પૂછ્યો જે, “જગતને નાશવંત દેખે છે અને દેહને મૂકીને ચૈતન્ય જુદો થઈ જાય છે તેને પણ દેખે છે, તો પણ આ જીવને જગતનું પ્રધાનપણું હૃદયમાંથી મટતું નથી. અને પરમેશ્વરને સર્વ પ્રકારે સુખના સિંધુ જાણે છે તો પણ પરમેશ્વરમાં જીવનું ચિત્ત ચોંટતું નથી, તેમ સત્સંગ પણ એના હૃદયમાં મુખ્ય થતો નથી અને ધન, સ્ત્રીઆદિક જે સાંસારિક પદાર્થ તેમાંથી પ્રીતિ મટતી નથી. તેનું શું કારણ હશે?” પછી મુક્તાનંદ સ્વામીએ કહ્યું જે, “જીવના હૃદયમાં વૈરાગ્ય નથી તેણે કરીને જગતનું પ્રધાનપણું મટતું નથી ને ભગવાનમાં પ્રીતિ થતી નથી.” પછી શ્રીજીમહારાજ બોલ્યા જે, “વૈરાગ્યની ન્યૂનતા છે એ તો વાત સાચી; પણ અમને તો એમ ભાસે છે જે, જેને સત્સંગ થતાં થતાં જેવું અંગ બંધાય જાય છે તેવું ને તેવું જ સદાય રહે છે પણ તે વિના બીજું થતું નથી. અને સત્સંગે કરીને તે અંગની પુષ્ટિ તો થાય પણ અંગ તો તેનું તે જ રહે છે. અને જ્યારે જેને જે અંગ બંધાય છે, ત્યારે અંગ બંધાતાં એનું ચિત્ત વિભ્રાંત જેવું થઈ જાય છે. જેમ કામી હોય તેનું ચિત્ત કામે કરીને વિભ્રાંત થાય ને જેમ ક્રોધી હોય તેનું ચિત્ત ક્રોધે કરીને વિભ્રાંત થાય ને જેમ લોભી હોય તેનું ચિત્ત લોભે કરીને વિભ્રાંત થાય, તેમ એનું ચિત્ત અંગ બંધાતાં વિભ્રાંત થઈ જાય છે. પછી તે વિભ્રાંતમાં જેવું અંગ બંધાય તેવું અંગ રહે છે. માટે જે સમજુ હોય તેને પોતાનું જે અંગ હોય તેને ઓળખી રાખ્યું જોઈએ; તે જ્યારે કામ-ક્રોધાદિકે કરીને પોતાને વિક્ષેપ થતો હોય, ત્યારે પોતાના અંગનો વિચાર કરે તો તે કામાદિક ક્ષીણ પડી જાય. જેમ કોઈક ગૃહસ્થ હોય તેને પોતાની માતા, બોન અથવા દીકરી અતિ સ્વરૂપવાન હોય, તેને જોઈને જો ભૂંડો ઘાટ થઈ જાય તો પછી તેની કેવી દાઝ થાય! તેવી દાઝ જ્યારે સત્સંગ વિના બીજું પદાર્થ પ્રધાન થાય ત્યારે થઈ જોઈએ. અને જ્યારે એવી દાઝ અયોગ્ય પ્રદાર્થના સંકલ્પને દેખીને ન થાય તેના હૃદયમાં તો સત્સંગ પણ પ્રધાન ન રહે. અને સર્વે સાધનના ફળરૂપ તો આ સત્સંગ છે, તે શ્રીકૃષ્ણ ભગવાને ઉદ્ધવ પ્રત્યે એકાદશ સ્કંધમાં કહ્યું છે જે, ‘અષ્ટાંગયોગ તથા સાંખ્યવિચાર તથા શાસ્ત્રપઠન તથા તપ, ત્યાગ, યોગ, યજ્ઞ અને વ્રતાદિકે કરીને હું તેવો વશ થતો નથી જેવો સત્સંગે કરીને વશ થાઉં છું.’ માટે અમને તો એમ ભાસે છે જે, પૂર્વજન્મનો સંસ્કાર હશે તે પણ સત્પુરુષને યોગે કરીને થયો હશે અને આજ પણ જેને સંસ્કાર થાય છે તે સત્પુરુષને યોગે કરીને જ થાય છે. માટે એવા સત્પુરુષનો સંગ પ્રાપ્ત થયો છે તો પણ જેને જેમ છે તેમ સમજાતું નથી તેને અતિશય મંદ-બુદ્ધિવાળો જાણવો. શા માટે જે, <b>જેવી શ્વેતદ્વીપમાં સભા છે ને જેવી ગોલોક, વૈકુંઠલોકને વિષે સભા છે ને જેવી બદરિકાશ્રમને વિષે સભા છે, તેથી પણ હું આ સત્સંગીની સભાને અધિક જાણું છું અને સર્વે હરિભક્તને અતિશય પ્રકાશે યુક્ત દેખું છું. એમાં જો લગાર પણ મિથ્યા કહેતા હોઈએ તો આ સંતસભાના સમ છે</b>. તે સમ શા સારુ ખાવા પડે છે જે, સર્વને એવું અલૌકિકપણું સમજાતું નથી અને દેખવામાં પણ આવતું નથી, તે સારુ સમ ખાવા પડે છે. અને બ્રહ્માદિકને પણ દુર્લભ એવો જે આ સત્સંગ તેમાં આવીને પરમેશ્વર વિના જેને બીજા પદાર્થમાં હેત રહે છે તેનું કારણ એ છે જે, જેવી એ જીવને પરોક્ષને વિષે પ્રતીતિ છે તેવી પ્રત્યક્ષને વિષે દ્રઢપણે પ્રતીતિ થતી નથી. તે શ્રુતિમાં કહ્યું છે જે, <b>‘જેવી પરોક્ષ દેવને વિષે જીવને પ્રતીતિ છે તેવી જો પ્રત્યક્ષ ગુરુરૂપ હરિને વિષે આવે, તો જેટલા અર્થ પ્રાપ્ત થવાના કહ્યા છે તેટલા સર્વે અર્થ તેને પ્રાપ્ત થાય છે.’ અને જ્યારે આવો સંત-સમાગમ પ્રાપ્ત થયો ત્યારે દેહ મૂકીને જેને પામવા હતા તે તો દેહ છતાં જ મળ્યા છે; માટે જેને પરમ પદ કહીએ, મોક્ષ કહીએ તેને છતે દેહે જ પામ્યો છે.</b> અને આ વાર્તા જે કહી, તે જણાય છે તો જાડી જેવી, પણ એ તો અતિશય ઝીણી છે. તે જે એવી રીતે વર્તતો હોય તેને એમ સમજાય જે, ‘એ વાર્તા અતિ ઝીણી છે,’ ને બીજાને તો સમજ્યામાં પણ આવે નહીં; એવી અતિશય ઝીણી વાર્તા છે.” એમ વાર્તા કરીને શ્રીજીમહારાજ ‘જય સચ્ચિદાનંદ’ કહીને પોતાના ઉતારામાં પધાર્યા.</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

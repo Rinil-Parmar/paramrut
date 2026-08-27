@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૨૮ - અર્ધબળ્યા કાષ્ઠનું, વધવાઘટવાનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના પોષ સુદિ ૧૪ ચૌદશને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં શ્રીવાસુદેવ નારાયણના ઓરડાની હારે જે ઓરડો તેની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને પોતાના મુખારવિંદની આગળ સાધુને જમવાની પંક્તિ થઈ હતી.
+</p>
+<p class="text_gu">
+તે સમે શ્રીજીમહારાજ બોલ્યા જે, “જે સત્સંગી સત્સંગમાંથી પાછો પડવાનો હોય તેને અસદ્‍વાસનાની વૃદ્ધિ થાય છે ને તેને પ્રથમ તો દિવસે દિવસે સત્સંગીમાત્રનો અવગુણ આવે છે ને પોતાના હૈયામાં એમ જાણે જે, ‘સર્વે સત્સંગી તો અણસમજુ છે ને હું સમજુ છું’ એમ સર્વથી અધિક પોતાને જાણે અને રાત્રિ-દિવસ પોતાના હૈયામાં મૂંઝાયા કરે અને દિવસમાં કોઈ ઠેકાણે સુખે કરીને બેસે નહીં અને રાત્રિમાં સૂએ તો નિદ્રા પણ આવે નહીં અને ક્રોધ તો ક્યારેય મટે જ નહીં અને અર્ધબળેલા કાષ્ઠની પેઠે ધૂંધવાયા કરે, એવું જેને વર્તે ત્યારે તેને એમ જાણીએ જે, ‘એ સત્સંગમાંથી પડવાનો થયો છે.’ અને એવો હોય અને તે જેટલા દિવસ સત્સંગમાં રહે પણ તેના હૈયામાં કોઈ દિવસ સુખ આવે નહીં અને અંતે પાછો પડી જાય છે.
+</p>
+<p class="text_gu">
+“અને સત્સંગમાં જેને વધારો થવાનો હોય તેને શુભ વાસના વૃદ્ધિ પામે છે ત્યારે તેને દિવસે દિવસે સત્સંગીમાત્રનો હૈયામાં ગુણ જ આવે અને સર્વ હરિભક્તને મોટા સમજે ને પોતાને ન્યૂન સમજે ને આઠે પહોર તેના હૈયામાં સત્સંગનો આનંદ વર્ત્યા કરે, એવાં લક્ષણ જ્યારે હોય ત્યારે જાણીએ જે, ‘શુભ વાસના વૃદ્ધિ પામી છે.’ અને તે જેમ જેમ વધુ વધુ સત્સંગ કરે તેમ તેમ વધુ વધુ સમાસ થતો જાય અને અતિશય મોટ્યપને પામી જાય છે.” એવી રીતે શ્રીજીમહારાજ વાત કરીને ‘જય સચ્ચિદાનંદ’ કહીને પોતાને આસને પધાર્યા.
+</p>
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

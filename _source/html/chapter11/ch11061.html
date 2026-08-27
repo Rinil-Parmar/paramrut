@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (61) જેમ પંચાળાના ખીમા ચારણનો ભાણેજ ગીરમાં રહે, તે માળવાળી હવેલી ભાળેલ નહિ ને આંહીં આવ્યા ત્યારે મેડા ઉપર ચડતાં દાદરા ધ્રૂજે ને કહે જે, ‘પડ્યો ! એ, પડ્યો !’  ને કહે જે, ‘ખોરડા ઉપર ખોરડું કેમ ચડાવ્યું હશે !’ તેમ મહારાજના યથાર્થ મહિમાની દિશ ન હોય, પછી કહે ભગવાન ઉપર ભગવાન કહી દે છે. ને મહારાજથી આ સાધુ એક ક્ષણનો કરોડમો ભાગ પણ છેટે રહેતા નથી. આ તો અનાદિ મૂળઅક્ષર મહારાજનું પરમ સત્ય સ્વરૂપ છે; તેમાં મહારાજ વ્યતિરેક થકા અન્વય અને અન્વય થકા વ્યતિરેક છે. કહેતાં ધામરૂપ અક્ષરમાં સ્વરાટ્ વિરાજમાન થકા મૂળઅક્ષરમાં તેવા ને તેવા જ અખંડ પ્રકાશી રહ્યા છે. અને મહારાજે તો કહ્યું છે જે, ‘જેવો મને જાણશે તેવો તો તે ભક્ત થાશે.’ જેમ જેમ અધિક મહિમા સમજાય છે, તેમ તેમ સ્વામીસેવકપણું અતિ દૃઢ થાય છે અને અહો ! અહો! રહે છે કે, આવી સ્થિતિને હું પામ્યો ત્યારે આ મારા સ્વામી તો નિરંતર અપાર રહે છે ! <br/> <br/>
+ 
+ મહારાજે તો આ સાધુને જ મૂળઅક્ષર કહ્યા છે, ને ભગવાન જેવી જ મોક્ષની મૂર્તિ કહી છે, હવે કેટલું મોઢામોઢ કહીએ ? પણ અમે ન કહીએ તો બીજો કોણ કહેશે ? એક મહારાજ જ કહી શકે. ભગવાન શબ્દથી ભડકાય છે. પણ રામ, કૃષ્ણ, નરનારાયણને ભગવાન કહેતાં આંચકો ખાતા નથી અને આ તો અનંત ભગવાનથી પર અક્ષર છે, ને તેથી પર સર્વોપરી પુરુષોત્તમનારાયણ છે; એવો ધામ ને ધામીનો મહિમા આ સાધુના સમાગમ વગર નથી સમજાતો અને તેથી ઉપાસના ચોખ્ખી થાતી નથી અને સેવકનો મહિમા સ્વામીને લગાડી અક્ષર જેવા મહારાજને ઉપાસે છે; પણ શુદ્ધ સર્વોપરી ઉપાસનામાં ઉપાસકની આ ભૂલ રહી જાય છે. 
+ <br/><br/>
+ <a href="GM-67.html" class="wordMeaning">વચ. ગ.મ. 67 </a> 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

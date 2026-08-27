@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (35) <a href="#ex1" class="wordMeaning">અધ્યાત્મવાર્તામાં</a> પુરુષોત્તમ ભગવાન, મૂળઅક્ષર-અક્ષરબ્રહ્મ, માયા, ઈશ્ર્વર અને જીવ એ પાંચના અન્વય, વ્યતિરેકપણાની વિક્તિ યથાર્થ સમજાતી નથી, તેથી ભ્રમી જવાય છે. સામાન્ય રીતે જીવ, ઈશ્ર્વર, માયા ને બ્રહ્મ એ ચાર ભેદમાં શંકા થાતી નથી; પણ પાંચમો ભેદ સમજી શકાતો નથી. શાસ્ત્રો બહુધા મૂળપુરુષને જ પુરુષોત્તમબ્રહ્મ કે અક્ષરબ્રહ્મ તરીકે વર્ણવે છે.
+ <br/><br/>
+દ્વાવિમૌ પુરુષૌ લોકે ક્ષરશચાક્ષર  એવ ચ । <br/>
+ક્ષર: સર્વાણિ ભૂતાનિ કૂટસ્થોડક્ષર ઉચ્યતે ।।  
+ <br/>
+ (ભગવદ્ ગીતા : 15/16)
+ <br/>
+ અર્થ :- આ લોકમાં ક્ષર-નાશવંત અને અક્ષર-અવિનાશી એવા બે પુરુષો છે. તેમાં સર્વ ભૂતો એ નાશવંત પુરુષ છે. તેમનામાં રહેલો જે અંતર્યામી (કૂટસ્થ) પુરુષ તે અક્ષર-અવિનાશી કહેવાય છે.
+ <br/><br/>
+ કૂટસ્થને અક્ષર કહે છે; આ મૂળપુરુષ અક્ષરબ્રહ્માત્મક છે તેથી તેને અક્ષરબ્રહ્મ પણ કહેલ છે.
+ <br/><br/>
+ <a href="GP-63.html">પ્રથમનાં 63</a>માં વચનામૃતમાં કહ્યું જે, પ્રધાન અને પુરુષનું કારણ મૂળપ્રકૃતિ અને બ્રહ્મ છે. ત્યાં મૂળપુરુષને મહારાજે બ્રહ્મ કહ્યા અને પ્રકૃતિપુરુષાદિક સર્વેનું કારણ અક્ષરબ્રહ્મ છે અને તે અક્ષરબ્રહ્મ તો પુરુષોત્તમ ભગવાનનું ધામ છે ને તે મૂર્તિમાન છે. આમાં જે અક્ષરબ્રહ્મ કહ્યા તે મૂળઅક્ષરને કહ્યા. <a href="GM-31.html">મધ્યનાં 31</a>માં વચનામૃતમાં મૂળપુરુષને <a href="#ex1" class="wordMeaning">નિરન્નમુક્ત</a>, બ્રહ્મ, માયાના કારણ, માયાથી નિર્બંધ, બ્રહ્મસુખે સુખિયા ને પૂર્ણકામ કહ્યા છે. આમ જ્યાં મહારાજે શાસ્ત્રની રીતે વાત કરી હોય, ત્યાં ચોથો ભેદ જે બ્રહ્મ તે મૂળપુરુષને કહ્યા હોય છે અને પાંચમા ભેદમાં મૂળઅક્ષર અને પુરુષોત્તમને એકપણે ગણી પુરુષોત્તમ કહ્યા હોય છે.
+ <br/><br/>
+ વળી જૂના ‘વચનામૃત’માં મહારાજે કહ્યું છે કે, પંચભૂત, દશ ઇન્દ્રિયું, ચાર અંત:કરણ, ચૌદ ઇન્દ્રિયુંના દેવતા, ત્રણ અવસ્થા, ત્રણ ગુણ, પંચકોશ એ સર્વે સોતું જ્યારે જીવનું સ્વરૂપ કહે છે, ત્યારે વાચ્યાર્થ સમજ્યામાં આવે છે; જ્યારે વાચ્યાર્થનો ત્યાગ કરીને જીવને અચ્છેદ્ય, અભેદ્ય, નિત્ય, પૂર્ણ, સચ્ચિદાનંદ, પુરાણ, અવ્યય એવે લક્ષણે કરીને શાસ્ત્રને વિશે જીવના લક્ષ્યાર્થ સ્વરૂપને કહે છે, ત્યારે વાંચનારની ને સાંભળનારની બુદ્ધિ ભ્રમી જાય છે; કેમ જે, બુદ્ધિની જડતાએ કરીને જીવના લક્ષ્યાર્થ કે વ્યતિરેક સ્વરૂપને વિશે ઈશ્ર્વરનું ભાન થાય છે અથવા બ્રહ્મનું ભાન થાય છે કાં પુરુષોત્તમની ભ્રાંતિ પડે છે; પણ યથાર્થ સમજાતું નથી. એવી જ રીતે જ્યારે સચ્ચિદાનંદ, પૂર્ણ, અદ્વૈત આદિક અનંત વિશેષણે કરીને ઈશ્ર્વરના લક્ષ્યાર્થ સ્વરૂપનું વર્ણન આવે, તો પણ તેને ઈશ્ર્વરનું વ્યતિરેક સ્વરૂપ સમજવું અને પ્રાકૃતપ્રલયને અંતે જે સ્વરૂપનું વર્ણન આવે તેને બ્રહ્મનું સ્વરૂપ જાણવું અને તેથી પર જે સ્વરૂપનું વર્ણન આવે તેને પરબ્રહ્મનું સ્વરૂપ જાણવું અને જીવ, ઈશ્ર્વર, બ્રહ્મ ને પરબ્રહ્મનો વિવેક જાણવો, આમ મહારાજે વૈરાટાદિક ઈશ્ર્વરથી પર જે બ્રહ્મ કહ્યા તે મૂળપુરુષને કહ્યા છે.
+ <br/><br/>
+ હવે પાંચમો ભેદ તે પરબ્રહ્મ કે પુરુષોત્તમનો છે. પૂર્ણ પુરુષોત્તમ ભગવાન સદા સાકાર દિવ્યમૂર્તિ પરમ અદ્વિતીય, કહેતાં જેની તુલ્ય બીજો કોઈ નથી અને અવર્ણનીય કહેતાં જેનું વર્ણન થઈ શકતું જ નથી, એવા શ્રી સહજાનંદસ્વામી અને મૂળઅક્ષરને સ્વામીસેવકભાવે અખંડ સંબંધ છે અને તેવો સંબંધ અક્ષરમુક્તો અને પુરુષોત્તમને સદૈવ વરતે છે. આમ પુરુષોત્તમ, અક્ષરધામ અને મહા અક્ષરમુક્તો, તે સર્વે સાકાર, અતિ દિવ્ય, અતિ સૂક્ષ્મ અને એકબીજાના અંતર્યામી તથા એકરૂપે કે બહુરૂપે વરતી શકે તેવા પુરુષોત્તમ આકારે અખંડ વિરાજી રહેલ છે. તેમના વચ્ચે સ્વામી-સેવક કે, ધાતા-ધ્યેય કે શરીર-શરીરીભાવ કઈ રીતે છે તે પણ મન-વાણીમાં સમજાવી શકાય તેવો નથી. અક્ષરધામમાં સર્વે બ્રહ્મરૂપે જ છે. ભેદ તો પ્રકૃતિપુરુષથી શરુ થાય છે; કેમ જે, તે ઉત્પતિ સર્ગના કારણ બ્રહ્મ છે. તેથી ચોથો ભેદ મૂળપુરુષથી જાણવો.
+ 
+ 
+		</div>
+
+	</div>
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 અધ્યાત્મવાર્તામાં= આત્મા-પરમાત્માસંબંધી જ્ઞાનમાં- બ્રહ્મજ્ઞાનમાં - આત્મજ્ઞાનમાં. <br/>
+		2 નિરન્નમુક્ત= અન્નની જેને જરૂરિયાત નથી એવી વ્યક્તિ. 
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,148 @@
+[
+	
+	{
+		"Id": "263",
+		"VachanName": "Amadavad 4",
+		"Tithi": "Samvat 1882- Fagan Vad 3",
+		"Panchang": "26/3/1826",
+		"Day": "Sunday ",
+		"SqlMonth": "3",
+		"SqlDate": "26",
+		"File": "A-4.html",
+		"NameGuj": "અમદાવાદ ૪",
+		"VachanNo": "1"
+	},
+	{
+		"Id": "264",
+		"VachanName": "Amadavad 5",
+		"Tithi": "Samvat 1882- Fagan Vad 4",
+		"Panchang": "27/3/1826",
+		"Day": "Monday",
+		"SqlMonth": "3",
+		"SqlDate": "27",
+		"File": "A-5.html",
+		"NameGuj": "અમદાવાદ ૫",
+		"VachanNo": "2"
+	},
+	{
+		"Id": "265",
+		"VachanName": "Amadavad 6",
+		"Tithi": "Samvat 1882- Fagan Vad 6",
+		"Panchang": "29/3/1826",
+		"Day": "Wednesday",
+		"SqlMonth": "3",
+		"SqlDate": "29",
+		"File": "A-6.html",
+		"NameGuj": "અમદાવાદ ૬",
+		"VachanNo": "3"
+	},
+	{
+		"Id": "266",
+		"VachanName": "Amadavad 7",
+		"Tithi": "Samvat 1882- Fagan Vad 7",
+		"Panchang": "30/3/1826",
+		"Day": "Thursday",
+		"SqlMonth": "3",
+		"SqlDate": "30",
+		"File": "A-7.html",
+		"NameGuj": "અમદાવાદ ૭",
+		"VachanNo": "4"
+	},
+	{
+		"Id": "267",
+		"VachanName": "Amadavad 8",
+		"Tithi": "Samvat 1882- Fagan Vad 8",
+		"Panchang": "31/3/1826",
+		"Day": "Friday",
+		"SqlMonth": "3",
+		"SqlDate": "31",
+		"File": "A-8.html",
+		"NameGuj": "અમદાવાદ ૮",
+		"VachanNo": "5"
+	},
+	{
+		"Id": "268",
+		"VachanName": "Aslali 1",
+		"Tithi": "Samvat 1882- Chaitra Sud 2",
+		"Panchang": "9/4/1826",
+		"Day": "Sunday",
+		"SqlMonth": "4",
+		"SqlDate": "9",
+		"File": "Ash-1.html",
+		"NameGuj": "શ્રીઅશ્લાલીનું વચનામૃત",
+		"VachanNo": "6"
+	},
+	{
+		"Id": "269",
+		"VachanName": "Jetalpur 1",
+		"Tithi": "Samvat 1882- Chaitra Sud 3",
+		"Panchang": "10/4/1826",
+		"Day": "Monday",
+		"SqlMonth": "4",
+		"SqlDate": "10",
+		"File": "J-1.html",
+		"NameGuj": "જેતલપુર ૧",
+		"VachanNo": "7"
+	},
+	{
+		"Id": "270",
+		"VachanName": "Jetalpur 2",
+		"Tithi": "Samvat 1882- Chaitra Sud 4",
+		"Panchang": "11/4/1826",
+		"Day": "Tuesday",
+		"SqlMonth": "4",
+		"SqlDate": "11",
+		"File": "J-2.html",
+		"NameGuj": "જેતલપુર ૨",
+		"VachanNo": "8"
+	},
+	{
+		"Id": "271",
+		"VachanName": "Jetalpur 3",
+		"Tithi": "Samvat 1882- Chaitra Sud 5",
+		"Panchang": "12/4/1826",
+		"Day": "Wednesday",
+		"SqlMonth": "4",
+		"SqlDate": "12",
+		"File": "J-3.html",
+		"NameGuj": "જેતલપુર ૩",
+		"VachanNo": "9"
+	},
+	{
+		"Id": "272",
+		"VachanName": "Jetalpur 4",
+		"Tithi": "Samvat 1882- Chaitra Sud 6",
+		"Panchang": "13/4/1826",
+		"Day": "Thursday ",
+		"SqlMonth": "4",
+		"SqlDate": "13",
+		"File": "J-4.html",
+		"NameGuj": "જેતલપુર ૪",
+		"VachanNo": "10"
+	},
+	{
+		"Id": "273",
+		"VachanName": "Jetalpur 5",
+		"Tithi": "Samvat 1882- Chaitra Sud 7",
+		"Panchang": "14/4/1826",
+		"Day": "Friday",
+		"SqlMonth": "4",
+		"SqlDate": "14",
+		"File": "J-5.html",
+		"NameGuj": "જેતલપુર ૫",
+		"VachanNo": "11"
+	},
+	{
+		"Id": "274",
+		"VachanName": "khagol Bhugol",
+		"Tithi": "Samvat 1863 - Bhadarva Sud 11",
+		"Panchang": "21/11/1806",
+		"Day": "Friday",
+		"SqlMonth": "11",
+		"SqlDate": "21",
+		"File": "KB-1.html",
+		"NameGuj": "ભૂગોળ-ખગોળનું વચનામૃત",
+		"VachanNo": "12"
+	}
+
+]

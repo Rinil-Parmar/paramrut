@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૨૧) વરતાલમાં ‘સત્સંગિજીવન’ ગ્રંથ લખવાનો આરંભ કર્યો, ત્યારે ઉપાસનાનો પ્રસંગ નીકળ્યો. તેમાં સંતને સાત-આઠ દિવસ સુધી વાદવિવાદ થયો. તે પછી તેમાં કેટલાક સંત કહે જે, ‘શ્રીકૃષ્ણ જેવા મહારાજને લખો.’ ત્યારે નિત્યાનંદસ્વામીએ કહ્યું જે, “બીજા અવતાર જેવા મહારાજને કેમ કહેવાય ? ને બીજા અવતારે ક્યારે પોતાને વિશે ચોવીસ અવતાર તથા ભૂમાપુરુષાદિક અનંતને પોતાને વિશે લીન કરી દેખાડ્યા ? તથા સર્વેને પોતાની પૂજા કરતા દેખાડ્યા ? ને પોતાના સ્વરૂપનો સર્વોપરી નિશ્ર્ચય કરાવવા સારુ વ્યાપકાનંદસ્વામી દેખતાં શ્રીજીમહારાજે પોતાને વિશે ચોવીસ અવતાર લીન કરાવી દીધા તથા પર્વતભાઈને સાંતી હાંકતાં શ્રીજીમહારાજની મૂર્તિને વિશે ચોવીસ અવતાર લીન થાતા દેખાડ્યા! ને વળી શ્રીજીમહારાજ માંગરોળ આદિક જે જે ગામ પધાર્યા, ત્યારે જે જે અવતારના ઉપાસક હતા, તે શ્રીજીમહારાજને દર્શને આવતા તે સર્વેને ધ્યાનમાં બેસારીને પોતપોતાના ઇષ્ટદેવનાં દર્શન કરાવતા હવા અને તે તે પોતાના ઇષ્ટદેવ તે પોતપોતાના ભક્તને કહેતા હવા જે, ‘આ શ્રીસહજાનંદસ્વામી તો સર્વ અવતારના અવતારી પૂર્ણ પુરુષોત્તમ છે ને અમે તો એમના દાસ છીએ.’ એવી રીતે અનંત ઐશ્ર્વર્ય જણાવ્યાં એ આદિક અનંત આશ્ર્ચર્યકારી ચમત્કાર દેખાડ્યા. એવા જે અક્ષરાતીત શ્રી સહજાનંદસ્વામી તે તો રામકૃષ્ણાદિક સર્વ અવતારના અવતારી છે. તેમને બીજા અવતાર જેવા કેમ કહેવાય? ને બીજા અવતાર જેવા મહારાજને કહીએ તો અનંત મહા અદ્ભુત શ્રીજીમહારાજનાં ઐશ્ર્વર્ય ખોટાં પડે.”
+ <br/><br/>
+ ત્યાર પછી શ્રીજીમહારાજ બોલ્યા જે, “એ ઠીક કહે છે ને ઠીક સમજે છે ને જે ઉપાસક હોય તે તો આવા જ હોય. ને તમે સર્વ અમ ભેગા ફરી ગયા પણ અમે તો કેમેય કહેતા હશું ને કેમેય જાણતા હશું ?” એમ કહીને નિત્યાનંદસ્વામીને રાજી થઈને હાર આપ્યો. પછી શ્રીજીમહારાજ બોલ્યા જે, “આ બ્રહ્માંડનાં આવરણ પાર ને ચિદાકાશ પર્યંત અવતાર ને અનંત અવતારનાં સ્થાનક ને તેમના અનંત મુક્ત તે કોઈ અક્ષરધામને પામતા નથી ને જેને આ પ્રગટ પુરુષોત્તમનારાયણનો સંબંધ થાય છે, તે જ અક્ષરધામને પામે છે ને બીજા પુરુષ તો કોટિ સાધન કરે તો પણ પામે નહીં.”
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

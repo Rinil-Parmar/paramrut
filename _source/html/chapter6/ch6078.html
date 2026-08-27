@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૭૮) ‘સત્સંગિજીવન’નું સાર મહારાજે
+ 
+<br/><br/>
+ શ્રી વાસુદેવવિમલામૃતધામવાસં, નારાયણં નરકતારણનામધેયમ્ । <br/>
+શ્યામં સિતં દ્વિભુજમેવ ચતુર્ભુજં ચ, ત્વાં ભક્તિધર્મતનયં શરણં પ્રપધે  ॥
+ <br/>
+ (સત્સંગિજીવન : શ્રી ધર્મનન્દનાષ્ટકમ્)
+<br/> 
+ અર્થ : દિવ્ય વિશુદ્ધ વાસુદેવરૂપી અક્ષરધામમાં નિવાસ કરનારા, નરકથી તારનારા, નારાયણ જેનું નામ છે, તેમ જ શામ તથા શ્ર્વેત વર્ણવાળા, હમેશાં બે ભુજાઓથી શોભનાર, કોઈ વાર ચાર ભુજાથી શોભતા, ભક્તિ તથા ધર્મના પુત્ર - આપને હું શરણે જાઉં છું.
+ <br/><br/>
+ એ અષ્ટકમાં કહ્યું છે ને તેનું સાર છેલ્લો શ્ર્લોક,
+ <br/><br/>
+ 
+ધર્મસ્ત્યાજ્યો ન કૈશ્ચિત્ સ્વનિગમવિહિતો વાસુદેવે ચ ભક્તિ <br/>
+ર્દિવ્યાકારે વિધેયા સિતઘનમહસિ બ્રહ્મણૈક્યં નિજસ્ય ।<br/>
+નિશ્ચિત્યૈવાન્યવસ્તુન્યણુમપિ ચ રતિં સમ્પરિત્યજ્ય સન્ત<br/>
+સ્તનમાહાત્મ્યાય સેવ્યા ઇતિ વદતિ નિજાન્ ધાર્મિકો નીલકંઠઃ ॥
+<br/>
+ (સત્સંગિજીવન : શ્રી ધર્મનન્દનાષ્ટકમ્)
+ <br/>
+ અર્થ : ‘કોઈએ પણ પોતાના ધર્મગ્રંથોમાં કહેલા ધર્મનો ત્યાગ ન કરવો જોઈએ, ભગવાન શ્રી વાસુદેવ કૃષ્ણના દિવ્યસ્વરૂપની ભક્તિ કરવી જોઈએ. શ્ર્વેત વાદળના તેજસમાન ઘનશ્યામ શ્રી કૃષ્ણરૂપ બ્રહ્મમાં પોતાની એકતાનો (અભેદનો) નિશ્ર્ચય કરવો અને અન્ય વસ્તુ પર સહેજ પણ પ્રેમ હોય તો તેને ત્યજી દેવો. સંતનો મહિમા આપણને પણ પ્રાપ્ત થાય તે માટે સંતોની સેવા કરવી.’ આ પ્રમાણે ધર્મપરાયણ નીલકંઠ મુનિ પોતાના ભક્તોને ઉપદેશ આપે છે.
+ <br/><br/>
+ એ છે; તે પ્રમાણે રહે તો બહુ સારો થાય. ને આશરો દૃઢ રાખવો,વ્યભિચારિણી ભક્તિ કરવી નહિ ને નિષ્કામી ભક્ત થાવું. ને ઉત્તમ પતિવ્રતાનાં લક્ષણ તો કેને કહીએ જે, ‘કોઈ દેવ-દેવી કે ઈશ્ર્વરાદિકનો લગારે ભાર પડે નહિ એવા ભક્ત’, મહારાજ કહે, ‘અમને બહુ ગમે છે.’
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

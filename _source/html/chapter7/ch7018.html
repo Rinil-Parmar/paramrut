@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (૧૮) કારિયાણીમાં શ્રીજીમહારાજ સર્વ પરમહંસ સહિત સભા કરીને મંદિરમાં કૂવાના કાંઠા ઉપર વિરાજમાન હતા. પછી તે પરમહંસને શ્રીજીમહારાજે પોતાનાં સર્વોપરી ઐશ્ર્વર્ય દેખાડ્યાં. ત્યાર પછી પરમહંસ નોખા નોખા બોલ્યા, તેમાં કેટલાક સંતો તો કહે જે, ‘હે મહારાજ ! આ સભા લઈને અક્ષરધામમાં જાઉં !’ અને વળી એક સંત કહે જે, ‘હે મહારાજ ! મારે તો એક બ્રહ્માંડની ક્રિયા હસ્તામલકવત્ દેખાય છે !’ ત્યારે વ્યાપકાનંદસ્વામી બોલ્યા જે, ‘તમારે તો એક બ્રહ્માંડ દેખાય છે ને મારે તો અનંતકોટિ આશ્ર્ચર્ય ને અનંત ઐશ્ર્વર્યે યુક્ત એવા જે અનંતકોટિ બ્રહ્માંડના ઈશ્ર્વર તથા ગૌલોક ને વૈકુંઠાદિક ધામ તે હસ્તામલકવત્ દેખાય છે, તે તો સર્વે અવતારના અવતારી એવા જે આ શ્રીસહજાનંદસ્વામી પ્રગટ પુરુષોત્તમના ધામનો પ્રતાપ છે.’ ત્યાર પછી સ્વરૂપાનંદસ્વામી બોલ્યા જે, ‘અક્ષરધામના પતિ જે આ પુરુષોત્તમ ભગવાન તે પોતાની દયાએ કરીને અગણિત જીવોનાં આત્યંતિક કલ્યાણ કરવાને અર્થે પોતાનું જે સમગ્ર ઐશ્ર્વર્ય અને પોતાના સર્વે પાર્ષદ તથા પોતાનું જે અક્ષરધામ તેણે સહિત આ પૃથ્વી ઉપર પધાર્યા છે ને એ સર્વે છે તે આ પ્રગટ પુરુષોત્તમની સભામાં બેઠા છે તેને હું દેખું છું અને આ સભામાં તો મહાપુરુષાદિક કેટલાક અવતાર અને ઈશ્ર્વરો પણ પોતાના મુક્તે સહિત આવ્યા છે તે હું દેખું છું; એવો આ શ્રીજીમહારાજની મૂર્તિનો પ્રતાપ છે !’ એવી રીતે શ્રીજીમહારાજ પોતાની દૃષ્ટિમાત્રે કરીને પોતાનું ઐશ્ર્વર્ય દેખાડીને પછી પોતાને પ્રતાપે કરીને તે સર્વે સંતનું ઐશ્ર્વર્ય તાણી લેતા હવા.
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

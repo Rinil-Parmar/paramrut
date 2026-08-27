@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (202) સમૈયા ઉત્સવ થાય છે તે માંહોમાંહી સુહૃદપણું વધે તે સારુ છે અને તેથી જ મહારાજે સૌ સાધુ હરિજનને એક સ્થળે ભેળા થાવું ને કથાવાર્તા કરવી ને એકબીજાની ખોટ ટાળવી ને ‘ધર્મામૃત’, ‘નિષ્કામશુદ્ધિ’ ને ‘શિક્ષાપત્રી’માં ફેર પડેલ હોય તેને, સત્સંગમાં કુસંગ હોય તેને ઉપદેશ દઈ સુધારવા. કોઈ રીતે સત્સંગમાં નભે તેવા સારા સાધુના સમાગમમાં આવે તે માટે, અને મૂળ અજ્ઞાન જાય ને પ્રગટ ભગવાન ને પ્રગટ સાધુને વિશે નિરંતર નિર્દોષબુદ્ધિ રહે ને તેથી જીવનું પરમ કલ્યાણ થાય છે. પણ આ તો ઓલ્યો ઓલ્યાનું ખોદે છે ને ઓલ્યો ઓલ્યાનું ખોદે છે. માટે પંચવિષય ને દેહાભિમાન એ બે વાનાં આપણું સુહૃદપણું રહેવા દે એવાં નથી ને પક્ષપાત થાય છે તેનું મૂળ તો પંચવિષય છે. તેથી કોઈ રીતે અવિદ્યા જે માયા પ્રવેશ કરી જાય છે ને મહારાજ સાથે પણ કેટલાક માણસ લડ્યા હતા તેનું કારણ દેહાભિમાન, પંચવિષય ને પક્ષપાત છે. અને તેણે કરીને આ સાધુનો ને ભગવાનનો પણ અવગુણ આવે. માટે હવે લડ્યે પાર નહિ આવે, એ તો ખમ્યે જ પાર પડશે. ને ગરીબ દાવે સુખ થાશે; માટે ગરીબ થઈને સાધુ રહી ભગવાન ભજી લેવા, અને મોક્ષ સુધારી લેવો. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

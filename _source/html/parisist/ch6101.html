@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+</script>
+
+
+</head>
+<body>
+<div>
+
+	<div class="wrap"> 
+ <ul class="reader_tools noselect"> 
+   			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li> 
+ 				 			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+				  
+  
+ </ul>
+
+
+		<div class="vaat_ind" id="vaat1_1">
+			 (૧૦૧) મયારામ ભટ્ટને હાટ માંડવું હતું તેનું લેખું કરવા બેઠા, ત્યાં તો સવાર થઈ ગયું. પછી તો જળ મૂક્યું જે, હજી હાટ માંડ્યું નથી ત્યાં જ નિદ્રા ગઈ, તો માંડશું ત્યારે શું થાશે ? માટે એ તો દીર્ઘદર્શી એટલે વિચારીને એ મારગે ન જ ચાલ્યા ને આપણે તો એકાંતમાં સ્ત્રી ભેળું રહેવું નહિ ને એકલી સ્ત્રી હોય ત્યાં ઉઘરાણીએ ન જવું ને ભારો ન ચડાવવો; કેમ જે, એ સર્વમાં કલંક લાગે છે, ને કાળાખરીઓ આવે છે. તે ઉપર વચનામૃત જે, ‘મુક્તાનંદસ્વામી જેવો હોય ને તેને જોગ થાય તો ઊતરતા જેવો રહે કે ન રહે, એમાં પણ સંશય છે.’ એ વંચાવીને બોલ્યા જે, ત્યારે ‘આપણો શો ભાર ?’
+ <br/><br/>
+ જેહિ મારુત ગિરિ મેરુ ઉડાઈ, કહો તુળ કહા લેખા માંઈ ?
+ <br/>
+ જોગી ઠગે અરુ ભોગી ઠગે, બનવાસી સંન્યાસી કો એક ધારો.
+ <br/>
+ હો મન હરનાં, ત્રિય વનમેં નહિ ચરનાં. હો૦
+ <br/>
+ (બ્રહ્માનંદ કાવ્ય : ૨૩૭૯)
+ <br/><br/>
+ એમ બોલ્યા. આ દેશકાળની વાત કરી તે વિચારીને પગ ભરજો. મોટા સાધુ હોય ત્યાં તો એ કહે પછી આ વિચારજો; નીકર ઠા નહિ રહે. ને અમારે તો છેલ્લી વારે હવે દિવાળી સુધી સાધુને રાખીને વાતું જ કહેવી છે; પછી દેહ રહો કે ન રહો, પણ ભગવાનના સ્વરૂપસંબંધી જ્ઞાન આપીને સુખિયા કરવા છે.
+ <br/><br/>
+ ત્યાગ કરે એ ત્યાગી કહેવાય ને જેણે પદાર્થ રાખ્યા તે મોટા મોટાનાં પણ છિદ્ર ઉઘાડાં થયાં ને રૂપિયા નીકળ્યા. તે માટે ‘ધર્મામૃત’, ‘શિક્ષાપત્રી’ ને ‘નિષ્કામશુદ્ધિ’ એ ત્રણ ગં્રથ પ્રમાણે રહેવું ને પાળવું. આ તો કોણ જાણે કેમ રહેવાણું છે, તે તો સારો જોગ છે ને વળી જે પદાર્થ જોઈએ તે પદાર્થ કોઠારેથી અપાવીએ છીએ તેણે કરીને રહે છે. માટે ત્યાગ પાળવો એ કાંઈ મીઠો નથી, કડવો છે. મહારાજ પાસે જાવું હોય તો વચનમાં રહેવું તે એક સાધુએ સ્વપ્નનો ઉપવાસ ન કર્યો ત્યારે મહારાજે <a href="#ex1" class="wordMeaning">ઠોંટ</a> મારીને કહ્યું જે, “આમ કર્યું તે તેં મારી જીભ ઉપર પગ દીધો ને આ તો તું મારો છો તેથી તને આમ કહું છું, પણ બીજાને ન કહું.” પછી તાવ આવ્યો તે ત્રીસ ઉપવાસ થયા. અને એક જણે જાગરણ ન કર્યું, તે વળતે દિવસ સાંજે વીંછીએ ચટકાવ્યો, તે રાત આખી જાગવું પડ્યું. એમ વચન લોપ્યાનું છે.
+ <br/><br/>
+ <a href="GM-27.html">વચ.ગ.મ. ૨૭ </a> <br/>
+ <a href="GA-33.html">ગ.અં. ૩૩ </a> <br/>
+ 
+ (જુઓ પ્રકરણ ૧૦ની વાત ૧૯૪)
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઠોંટ = ધોલ, થપાટ, થપ્પડ
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

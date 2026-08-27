@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (32)
+ 
+એકમેવાદ્વિતિયં બ્રહ્મ । 
+ <br/>
+ (છાંદોગ્ય ઉપનિષદ : 6/2/1)
+ <br/>
+ અર્થ :- એક જ અદ્વિતીય બ્રહ્મ.
+ <br/><br/>
+ એ શ્રુતિ અનુસાર મૂળપ્રકૃતિ અને મૂળપુરુષથી પર જે <a href="#ex1" class="wordMeaning">અધોઊર્ધ્વ</a> અને પ્રમાણે રહિત અક્ષરધામ છે, તેમાં સદા વિરાજમાન પરબ્રહ્મ પુરુષોત્તમનારાયણ તે જ એક પરાત્પર સનાતન ભગવાન છે અને પરમ અદ્વિતીય કહેતાં એના જેવો બીજો કોઈ નથી તેવા છે. આવા પુરુષોત્તમનારાયણનું સનાતન અનાદિ દિવ્ય વ્યતિરેક મૂળસ્વરૂપ પંચાળાનાં ચોથા વચનામૃતમાં કહ્યું છે. વળી એ ભગવાનનું જે અક્ષરધામ છે તેવું બીજું કોઈ પણ સ્થાનક નથી કે, જેને એ ભગવાનના ધામની ઉપમા દેવાય અને એ ધામને વિશે રહ્યા જે મુક્ત તેમને જેવું સુખ છે, તેવું કોઈ બીજાને સુખ નથી કે, જેની એને ઉપમા દેવાય.
+ <br/><br/>
+ એ રીતે એ ભગવાન, તેનું ધામ, તેના મુક્તો, તેનું સુખ, એ સર્વ પુરુષપ્રકૃતિ પર્યંત જે કાંઈ છે તે સર્વથી અતિશે પર, જુદું અને વિલક્ષણ છે. એમ ધામી, ધામ, ને મુક્તનું <a href="#ex1" class="wordMeaning">સાદૃશ્યપણું</a> બીજા કોઈની સાથે થઈ શકે તેમ નથી જ; કેમ જે, માયિક ને અમાયિક વિશે સાદૃશ્યપણું સંભવે જ કેમ ? માટે પુરુષપ્રકૃતિ પર્યંત વિજાતીય આકૃતિઓની ઉપમા પુરુષોત્તમ ભગવાન કે, એ ભગવાનના ધામને કે, તેમના મુક્તને દેવાય જ નહીં. આવી રીતે પરાત્પર પુરુષોત્તમનારાયણ શ્રી સહજાનંદસ્વામી, તેમનું અક્ષરધામ અને તેમના મુક્તો એ ત્રણ પુરુષપ્રકૃતિ આદિક સર્વ થકી પર અને પરમ અદ્વૈતપણે છે; કહેતાં એમના જેવા બીજા કોઈ નથી. આવા પુરુષોત્તમ ભગવાન, તેમનું ધામ અને તેમના અનાદિ મુક્તો જ્યારે આ બ્રહ્માંડમાં મનુષ્ય દેહધારી થાય છે ત્યારે તેઓ 
+ <br/><br/>
+ તત્‌  પદ । , ત્વમ્‌ પદ ।   અને અસિ પદ । 
+ <br/>
+ (વેદના 12 મહાવાક્યોનું એક વાક્ય (તત્ ત્વમસિ))
+ <br/>
+ અર્થ :- તત્ એ પદ / ત્વમ્ એ પદ/ અસિ એ પદ.
+ <br/><br/>
+ ને ધારીને વરતે છે; છતાં તેઓ સ્વયં સ્વરૂપે ગુણાતીત જ હોય છે.
+ <br/><br/>
+ જે મુમુક્ષુ જીવાત્મા, સંત સમાગમ કરી સાંખ્ય વિચારને પામી, પ્રકૃતિજન્ય ગુણોનો ત્યાગ કરી, પરાત્પર પુરુષોત્તમનારાયણના સ્વરૂપનું યથાર્થ માહાત્મ્યે સહિત જ્ઞાનદર્શન કરે છે, ત્યારે એ જીવને ભગવાનનો સંબંધ થયો કહેવાય છે. એવા મુમુક્ષુ આત્માની દૃષ્ટિમાંથી જ્ઞાને કરીને જ્યારે માયાકૃત ગુણોનાં કાર્યનો લય થાય છે ત્યારે જ તેણે માયાના આવરણને ભેદ્યું કહેવાય. એવા મુક્તને સાક્ષાત્ ધામરૂપ મૂળઅક્ષરનાં દર્શન અને સંબંધ અને જ્ઞાન વડે માયાનું કપટ નાશ પામતાં, તે સનાતન અક્ષરબ્રહ્મરૂપ બને છે અને અક્ષરધામ અને પુરુષોત્તમને જેવો નિત્ય સંબંધ છે તેવો તે મુક્તને <a href="#ex1" class="wordMeaning">લહ્યામાં</a> આવે છે અને ત્યારે જ તે મુક્તને પરાત્પર પુરુષોત્તમનારાયણનું સાક્ષાત્ દર્શન પોતાના હૃદયાકાશને વિશે થાય છે.
+ <br/><br/>
+ આંહીં આશંકા થાય જે, મુક્ત અને પુરુષોત્તમનારાયણની વચ્ચે અક્ષરધામને લાવવાની શી જરૂર હશે ? તેનો ઉત્તર એ છે જે, ‘અક્ષરધામમાં જે મુક્તો પુરુષોત્તમની સેવામાં રહ્યા છે તે સર્વે અક્ષરના સાધર્મ્યપણાને પામેલ છે. શાસ્ત્રાનુસાર જે લોકમાં રહેવું હોય તે લોકના પ્રધાનતત્ત્વ પ્રમાણે તે ધામમાં રહેનારાનો દેહ થાય છે. જેમ કે વરુણ લોકમાં રહેનારાનો દેહ જળરૂપ હોય છે; અગ્નિલોકમાં રહેનારાનો દેહ અગ્નિરૂપ, સૂર્યલોકમાં વસનારાનો દેહ સૂર્યરૂપ, વાયુલોકમાં રહેનારાનો દેહ વાયુરૂપ હોય છે. એમ તે તે લોકમાં રહેનારાનો દેહ તે તે લોકના તત્ત્વરૂપ ન હોય તો ત્યાં રહી શકાતું જ નથી. તેમ અક્ષરધામમાં રહેનારા મુક્તોને પુરુષોત્તમને પામીને તેમની સેવામાં રહેવા પૂર્વે અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામવું પડે છે. જ્યારે જીવાત્મા અક્ષરબ્રહ્મરૂપ થાય છે, ત્યારે જ તે અક્ષરધામમાં પુરુષોત્તમનારાયણની સેવામાં રહી શકે છે.
+ <br/><br/>
+ આમ જે સનાતન અનાદિ મૂળઅક્ષર છે તેમના સાધર્મ્યપણાને જીવાત્મા પામે છે, ત્યારે જ તેનો અક્ષરધામમાં વાસ થાય છે. અક્ષરધામમાં અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામેલ અનંતકોટિ મુક્તો છે તે સર્વેને અક્ષર સંજ્ઞા લાગુ પડે છે; પરંતુ તે સર્વેના કારણ સ્વરૂપે વિદ્યમાન જે મૂળઅક્ષર તે તો એક જ છે. એ જે મૂળઅક્ષર તે જ અનંતકોટિ મૂળપુરુષોના પ્રેરક અને અક્ષરમુક્તોના આધાર છે અને તે જેવા તો તે એક જ હોવાથી અદ્વિતીય ગણાય છે. એવા જે મૂળઅક્ષર તે થકી પણ પર અને અતિ અપાર અને તેમને પણ ઉપાસ્ય અને ભજનીય એવા તો એક પરબ્રહ્મ શ્રી પુરુષોત્તમનારાયણ છે અને તેથી તે તો પરમ અદ્વિતીય છે.
+ 
+ 
+		</div>
+
+	</div>
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 અધોઊર્ધ્વ= નીચે-ઉપર.  <br/>
+		2 સાદૃશ્યપણું= સરખાપણું, સમાનપણું,  <br/>
+ 		3 લહ્યામાં= અનુભવમાં, માણવામાં. 
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

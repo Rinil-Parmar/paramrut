@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect">
+			<li>
+				<button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button>
+				
+			</li><!-- Added This line -->
+
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+
+			 
+
+		</ul>
+		<div class="vaat_ind" id="vaat1_1">
+			71. ‘Hun akṣhar chhun, hun guṇātīt chhun,’ evā bhāvathī bhajan karavun. Man eṭale svabhāva. Man eṭale vāsanā. Āpaṇe man kāḍhī nānkhavun chhee. Aman karī devun chhe. Gharanī ke bahāranī darek kriyā karatī vakhate manamān bhajana. Ānkha-kāna-nāka-sparsha vagere chaud devatārūpī nokar chhe. Eno  vishvās n thāya. Bhajan n thāya to nondhī levun. Ā bahu moṭī ājnyā chhe. Avatār koṭithī paranā puruṣhanī ā vāt chhe. Ā niyam tamāre pāḷavāno, bākīnī badhī j javābadārī amārī. Pachhī bhajanathī sukhiyā thaī javāshe. Shāk samāratī vakhate vagere kriyā karatī vakhate bhajan karyā karavun. Ā ek niyam agharo chhe, chhatān shraddhā rākhavānī chhe. 
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

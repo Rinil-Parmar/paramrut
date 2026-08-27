@@ -1,0 +1,2657 @@
+[
+	{
+		"VatId": "1186",
+		"ChId": "6",
+		"VatName": "Hu purvashramma hato",
+		"VatNameGuj": "હું પૂર્વાશ્રમમાં હતો",
+		"VatFile": "ch6001.html",
+		"VatNo": "1",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1187",
+		"ChId": "6",
+		"VatName": "Ame nana hata tyare",
+		"VatNameGuj": "અમે નાના હતા ત્યારે",
+		"VatFile": "ch6002.html",
+		"VatNo": "2",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1188",
+		"ChId": "6",
+		"VatName": "Bajaro bhelo karine",
+		"VatNameGuj": "બાજરો ભેળો કરીને",
+		"VatFile": "ch6003.html",
+		"VatNo": "3",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1189",
+		"ChId": "6",
+		"VatName": "Aa niyam chhe e",
+		"VatNameGuj": "આ નિયમ છે",
+		"VatFile": "ch6004.html",
+		"VatNo": "4",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1190",
+		"ChId": "6",
+		"VatName": "Ek harijan pase",
+		"VatNameGuj": "એક હરિજન પાસે",
+		"VatFile": "ch6005.html",
+		"VatNo": "5",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1191",
+		"ChId": "6",
+		"VatName": "Dholerama ek bave",
+		"VatNameGuj": "ધોલેરામાં એક બાવે",
+		"VatFile": "ch6006.html",
+		"VatNo": "6",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1192",
+		"ChId": "6",
+		"VatName": "Shudhdh Swarupnishtha  rakhavi",
+		"VatNameGuj": "શુદ્ધ સ્વરૂપનિષ્ઠા રાખવી",
+		"VatFile": "ch6007.html",
+		"VatNo": "7",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1193",
+		"ChId": "6",
+		"VatName": "Aa satsangno mahima to",
+		"VatNameGuj": "આ સત્સંગનો મહિમા તો",
+		"VatFile": "ch6008.html",
+		"VatNo": "8",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1194",
+		"ChId": "6",
+		"VatName": "Padarth jhajha bhela ",
+		"VatNameGuj": "પદાર્થ ઝાઝાં ભેળાં",
+		"VatFile": "ch6009.html",
+		"VatNo": "9",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1195",
+		"ChId": "6",
+		"VatName": "Swamie kahyu je",
+		"VatNameGuj": "સ્વામીએ કહ્યું જે",
+		"VatFile": "ch6010.html",
+		"VatNo": "10",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1196",
+		"ChId": "6",
+		"VatName": "Brahmacharine tya vatu",
+		"VatNameGuj": "બ્રહ્મચારીને ત્યાં વાતું",
+		"VatFile": "ch6011.html",
+		"VatNo": "11",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1197",
+		"ChId": "6",
+		"VatName": "Aa satsangma to sukh",
+		"VatNameGuj": "આ સત્સંગમાં તો સુખ",
+		"VatFile": "ch6012.html",
+		"VatNo": "12",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1198",
+		"ChId": "6",
+		"VatName": "Deshakaladik ath shubh",
+		"VatNameGuj": "દેશકાળાદિક આઠ શુભ",
+		"VatFile": "ch6013.html",
+		"VatNo": "13",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1199",
+		"ChId": "6",
+		"VatName": "Kam, krodh, man, irsha",
+		"VatNameGuj": "કામ, ક્રોધ, માન, ઈર્ષા",
+		"VatFile": "ch6014.html",
+		"VatNo": "14",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1200",
+		"ChId": "6",
+		"VatName": "Gangaji parvat fodine ",
+		"VatNameGuj": "ગંગાજી પર્વત ફોડીને",
+		"VatFile": "ch6015.html",
+		"VatNo": "15",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1201",
+		"ChId": "6",
+		"VatName": "Aa deh dharyo chhe ",
+		"VatNameGuj": "આ દેહ ધર્યો છે",
+		"VatFile": "ch6016.html",
+		"VatNo": "16",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1202",
+		"ChId": "6",
+		"VatName": "Apanne je labh malyo",
+		"VatNameGuj": "આપણને જે લાભ મળ્યો",
+		"VatFile": "ch6017.html",
+		"VatNo": "17",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1203",
+		"ChId": "6",
+		"VatName": "Satyug, dvapar, treta",
+		"VatNameGuj": "સત્યુગ, દ્વાપર, ત્રેતા",
+		"VatFile": "ch6018.html",
+		"VatNo": "18",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1204",
+		"ChId": "6",
+		"VatName": "Ek divas Vachanamrut",
+		"VatNameGuj": "એક દિવસ વચનામૃત",
+		"VatFile": "ch6019.html",
+		"VatNo": "19",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1205",
+		"ChId": "6",
+		"VatName": "Ame jayare ath varasna ",
+		"VatNameGuj": "અમે જ્યારે આઠ વરસના",
+		"VatFile": "ch6020.html",
+		"VatNo": "20",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1206",
+		"ChId": "6",
+		"VatName": "Sarve avatarna karan",
+		"VatNameGuj": "સર્વે અવતારના કારણ",
+		"VatFile": "ch6021.html",
+		"VatNo": "21",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1207",
+		"ChId": "6",
+		"VatName": "Swamie kahyu je",
+		"VatNameGuj": "સ્વામીએ કહ્યું જે",
+		"VatFile": "ch6022.html",
+		"VatNo": "22",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1208",
+		"ChId": "6",
+		"VatName": "Atma chhe te",
+		"VatNameGuj": "આત્મા છે તે ",
+		"VatFile": "ch6023.html",
+		"VatNo": "23",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1209",
+		"ChId": "6",
+		"VatName": "Ek jane prashn puchhyo",
+		"VatNameGuj": "એક જણે પ્રશ્ર્ન પૂછ્યો",
+		"VatFile": "ch6024.html",
+		"VatNo": "24",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1210",
+		"ChId": "6",
+		"VatName": "Jivne chhar ghati ame",
+		"VatNameGuj": "જીવને ચાર ઘાંટી અમે",
+		"VatFile": "ch6025.html",
+		"VatNo": "25",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1211",
+		"ChId": "6",
+		"VatName": "Jadabharatne vakhanya ke",
+		"VatNameGuj": "જડભરતને વખાણ્યા કે",
+		"VatFile": "ch6026.html",
+		"VatNo": "26",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1212",
+		"ChId": "6",
+		"VatName": "Bhagavanna avatar to ",
+		"VatNameGuj": "ભગવાનના અવતાર તો",
+		"VatFile": "ch6027.html",
+		"VatNo": "27",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1213",
+		"ChId": "6",
+		"VatName": "Ek jane prashn puchhyo",
+		"VatNameGuj": "એક જણે પ્રશ્ર્ન પૂછ્યો",
+		"VatFile": "ch6028.html",
+		"VatNo": "28",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1214",
+		"ChId": "6",
+		"VatName": "Koi aishvaryne bhala thaine",
+		"VatNameGuj": "કોઈ ઐશ્ર્વર્યને ભલા થઈને",
+		"VatFile": "ch6029.html",
+		"VatNo": "29",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1215",
+		"ChId": "6",
+		"VatName": "Varatalthi padharya te ",
+		"VatNameGuj": "વરતાલથી પધાર્યા તે",
+		"VatFile": "ch6030.html",
+		"VatNo": "30",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1216",
+		"ChId": "6",
+		"VatName": "Sabhama vidhatranandswami",
+		"VatNameGuj": "સભામાં વિધાત્રાનંદસ્વામી",
+		"VatFile": "ch6031.html",
+		"VatNo": "31",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1217",
+		"ChId": "6",
+		"VatName": "Atmanishtha ave tene karine",
+		"VatNameGuj": "આત્મનિષ્ઠા આવે તેણે કરીને",
+		"VatFile": "ch6032.html",
+		"VatNo": "32",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1218",
+		"ChId": "6",
+		"VatName": "Maharaje pratham nityanandswami",
+		"VatNameGuj": "મહારાજે પ્રથમ નિત્યાનંદસ્વામી",
+		"VatFile": "ch6033.html",
+		"VatNo": "33",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1219",
+		"ChId": "6",
+		"VatName": "Svapnma gopalanandswamine ",
+		"VatNameGuj": "સ્વપ્નમાં ગોપાળાનંદસ્વામીને",
+		"VatFile": "ch6034.html",
+		"VatNo": "34",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1220",
+		"ChId": "6",
+		"VatName": "Ek var puchhyu je",
+		"VatNameGuj": "એક વાર પૂછ્યું જે",
+		"VatFile": "ch6035.html",
+		"VatNo": "35",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1221",
+		"ChId": "6",
+		"VatName": "Ek var varatalma banne",
+		"VatNameGuj": "એક વાર વરતાલમાં બન્ને",
+		"VatFile": "ch6036.html",
+		"VatNo": "36",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1222",
+		"ChId": "6",
+		"VatName": "Maharaje em kahyu je",
+		"VatNameGuj": "મહારાજે એમ કહ્યું જે",
+		"VatFile": "ch6037.html",
+		"VatNo": "37",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1223",
+		"ChId": "6",
+		"VatName": "Sarvopari purushottampanu",
+		"VatNameGuj": "સર્વોપરી પુરુષોત્તમપણું",
+		"VatFile": "ch6038.html",
+		"VatNo": "38",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1224",
+		"ChId": "6",
+		"VatName": "Maharaje varatalma sarve",
+		"VatNameGuj": "મહારાજે વરતાલમાં સર્વે ",
+		"VatFile": "ch6039.html",
+		"VatNo": "39",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1225",
+		"ChId": "6",
+		"VatName": "Nagadakama swarupanandswamie",
+		"VatNameGuj": "નાગડકામાં સ્વરૂપાનંદસ્વામીએ",
+		"VatFile": "ch6040.html",
+		"VatNo": "40",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1226",
+		"ChId": "6",
+		"VatName": "Gadhadama samaiyo hato  ",
+		"VatNameGuj": "ગઢડામાં સમૈયો હતો",
+		"VatFile": "ch6041.html",
+		"VatNo": "41",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1227",
+		"ChId": "6",
+		"VatName": "Bhaktie karine Maharaj",
+		"VatNameGuj": "ભક્તિએ કરીને મહારાજ",
+		"VatFile": "ch6042.html",
+		"VatNo": "42",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1228",
+		"ChId": "6",
+		"VatName": "Devni mayae juone moh",
+		"VatNameGuj": "દેવની માયાએ જુઓને મોહ",
+		"VatFile": "ch6043.html",
+		"VatNo": "43",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1229",
+		"ChId": "6",
+		"VatName": "Maharaje kidiyarana rogni",
+		"VatNameGuj": "મહારાજે કીડિયારાના રોગની",
+		"VatFile": "ch6044.html",
+		"VatNo": "44",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1230",
+		"ChId": "6",
+		"VatName": "Arth: sara kamma vighno",
+		"VatNameGuj": " અર્થ : સારા કામમાં વિઘ્નો ",
+		"VatFile": "ch6045.html",
+		"VatNo": "45",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1231",
+		"ChId": "6",
+		"VatName": "Jo garasiyo motero hoy to",
+		"VatNameGuj": "જો ગરાસિયો મોટેરો હોય તો",
+		"VatFile": "ch6046.html",
+		"VatNo": "46",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1232",
+		"ChId": "6",
+		"VatName": "Swamie kahyu ke",
+		"VatNameGuj": "સ્વામીએ કહ્યું કે",
+		"VatFile": "ch6047.html",
+		"VatNo": "47",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1233",
+		"ChId": "6",
+		"VatName": "Maharaje to ",
+		"VatNameGuj": "મહારાજે તો",
+		"VatFile": "ch6048.html",
+		"VatNo": "48",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1234",
+		"ChId": "6",
+		"VatName": "Ruchinu loyanu 14mu",
+		"VatNameGuj": "રુચિનું લોયાનું ૧૪મું",
+		"VatFile": "ch6049.html",
+		"VatNo": "49",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1235",
+		"ChId": "6",
+		"VatName": "Aa loknu het to kevu",
+		"VatNameGuj": "આ લોકનું હેત તો કેવું ",
+		"VatFile": "ch6050.html",
+		"VatNo": "50",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1236",
+		"ChId": "6",
+		"VatName": "Dhud jetalo pan je ",
+		"VatNameGuj": "ધૂડ જેટલો પણ જે",
+		"VatFile": "ch6051.html",
+		"VatNo": "51",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1237",
+		"ChId": "6",
+		"VatName": "Jene sukhiya thavu hoy",
+		"VatNameGuj": "જેને સુખિયા થાવું હોય",
+		"VatFile": "ch6052.html",
+		"VatNo": "52",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1238",
+		"ChId": "6",
+		"VatName": "Anandji sanghadiyane tya",
+		"VatNameGuj": "આણંદજી સંઘાડિયાને ત્યાં",
+		"VatFile": "ch6053.html",
+		"VatNo": "53",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1239",
+		"ChId": "6",
+		"VatName": "Jivno to avalo swabhav",
+		"VatNameGuj": "જીવનો તો અવળો સ્વભાવ",
+		"VatFile": "ch6054.html",
+		"VatNo": "54",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1240",
+		"ChId": "6",
+		"VatName": "Je jene vahalu hoy te",
+		"VatNameGuj": "જે જેને વહાલું હોય તે ",
+		"VatFile": "ch6055.html",
+		"VatNo": "55",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1241",
+		"ChId": "6",
+		"VatName": "Aa bhagavan bahu mota",
+		"VatNameGuj": "આ ભગવાન બહુ મોટા",
+		"VatFile": "ch6056.html",
+		"VatNo": "56",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1242",
+		"ChId": "6",
+		"VatName": "Swamine bhogavavana ",
+		"VatNameGuj": "સ્વામીને ભોગવવાનાં",
+		"VatFile": "ch6057.html",
+		"VatNo": "57",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1243",
+		"ChId": "6",
+		"VatName": "Aa satsangma tran prakar",
+		"VatNameGuj": "આ સત્સંગમાં ત્રણ પ્રકાર",
+		"VatFile": "ch6058.html",
+		"VatNo": "58",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1244",
+		"ChId": "6",
+		"VatName": "Khadhanu, pathari, chela",
+		"VatNameGuj": "ખાધાનું, પથારી, ચેલા",
+		"VatFile": "ch6059.html",
+		"VatNo": "59",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1245",
+		"ChId": "6",
+		"VatName": "Jem bhagavan kare tem",
+		"VatNameGuj": "જેમ ભગવાન કરે તેમ",
+		"VatFile": "ch6060.html",
+		"VatNo": "60",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1246",
+		"ChId": "6",
+		"VatName": "Jene aa satsang malyo",
+		"VatNameGuj": "જેને આ સત્સંગ મળ્યો",
+		"VatFile": "ch6061.html",
+		"VatNo": "61",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1247",
+		"ChId": "6",
+		"VatName": "Aa bhagavan to jem",
+		"VatNameGuj": "આ ભગવાન તો જેમ",
+		"VatFile": "ch6062.html",
+		"VatNo": "62",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1248",
+		"ChId": "6",
+		"VatName": "Shastrama mukhy ahinsa",
+		"VatNameGuj": "શાસ્ત્રમાં મુખ્ય અહિંસા",
+		"VatFile": "ch6063.html",
+		"VatNo": "63",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1249",
+		"ChId": "6",
+		"VatName": "Maharaj kahe",
+		"VatNameGuj": "મહારાજ કહે",
+		"VatFile": "ch6064.html",
+		"VatNo": "64",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1250",
+		"ChId": "6",
+		"VatName": "Motano avagun le tenu",
+		"VatNameGuj": "મોટાનો અવગુણ લે તેનું",
+		"VatFile": "ch6065.html",
+		"VatNo": "65",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1251",
+		"ChId": "6",
+		"VatName": "Karod rupiya hase te",
+		"VatNameGuj": "કરોડ રૂપિયા હશે તે",
+		"VatFile": "ch6066.html",
+		"VatNo": "66",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1252",
+		"ChId": "6",
+		"VatName": "Aa samagam malyo chhe",
+		"VatNameGuj": "આ સમાગમ મળ્યો છે",
+		"VatFile": "ch6067.html",
+		"VatNo": "67",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1253",
+		"ChId": "6",
+		"VatName": "Gadi saru je asha rakhe",
+		"VatNameGuj": "ગાડી સારુ જે આશા રાખે",
+		"VatFile": "ch6068.html",
+		"VatNo": "68",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1254",
+		"ChId": "6",
+		"VatName": "Aa sarir to matino dhagalo",
+		"VatNameGuj": "આ શરીર તો માટીનો ઢગલો",
+		"VatFile": "ch6069.html",
+		"VatNo": "69",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1255",
+		"ChId": "6",
+		"VatName": "Gujaratma tal sudhi ",
+		"VatNameGuj": "ગુજરાતમાં તળ સુધી",
+		"VatFile": "ch6070.html",
+		"VatNo": "70",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1256",
+		"ChId": "6",
+		"VatName": "Gruhasthane to aam ",
+		"VatNameGuj": "ગૃહસ્થને તો આમ ",
+		"VatFile": "ch6071.html",
+		"VatNo": "71",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1257",
+		"ChId": "6",
+		"VatName": "Amadavadma ek eshi",
+		"VatNameGuj": "અમદાવાદમાં એક એંશી",
+		"VatFile": "ch6072.html",
+		"VatNo": "72",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1258",
+		"ChId": "6",
+		"VatName": "Bajarma ne padoshma",
+		"VatNameGuj": "બજારમાં ને પાડોશમાં",
+		"VatFile": "ch6073.html",
+		"VatNo": "73",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1259",
+		"ChId": "6",
+		"VatName": "Ekaliyani pan kalakhario",
+		"VatNameGuj": "એકલિયાની પણ કાળાખરીઓ",
+		"VatFile": "ch6074.html",
+		"VatNo": "74",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1260",
+		"ChId": "6",
+		"VatName": "Varamvar antardrashti",
+		"VatNameGuj": "વારંવાર અંતર્દૃષ્ટિ",
+		"VatFile": "ch6075.html",
+		"VatNo": "75",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1261",
+		"ChId": "6",
+		"VatName": "Bhagavan bhajavama sukh",
+		"VatNameGuj": "ભગવાન ભજવામાં સુખ",
+		"VatFile": "ch6076.html",
+		"VatNo": "76",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1262",
+		"ChId": "6",
+		"VatName": "Gopalanandswamini vatma",
+		"VatNameGuj": "ગોપાળાનંદસ્વામીની વાતમાં",
+		"VatFile": "ch6077.html",
+		"VatNo": "77",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1263",
+		"ChId": "6",
+		"VatName": "Satsangijivannu sar Maharaje",
+		"VatNameGuj": "સત્સંગિજીવનનું સાર મહારાજે",
+		"VatFile": "ch6078.html",
+		"VatNo": "78",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1264",
+		"ChId": "6",
+		"VatName": "Aa dehe bhagavanne ",
+		"VatNameGuj": "આ દેહે ભગવાનને",
+		"VatFile": "ch6079.html",
+		"VatNo": "79",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1265",
+		"ChId": "6",
+		"VatName": "Desh kai koina bapna",
+		"VatNameGuj": "દેશ કાંઈ કોઈના બાપના",
+		"VatFile": "ch6080.html",
+		"VatNo": "80",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1266",
+		"ChId": "6",
+		"VatName": "Sanchit, kriyaman ne",
+		"VatNameGuj": "સંચિત, ક્રિયમાણ ને ",
+		"VatFile": "ch6081.html",
+		"VatNo": "81",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1267",
+		"ChId": "6",
+		"VatName": "Mota harijanno",
+		"VatNameGuj": "મોટા હરિજનનો",
+		"VatFile": "ch6082.html",
+		"VatNo": "82",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1268",
+		"ChId": "6",
+		"VatName": "Bhagavan bhajavama ",
+		"VatNameGuj": "ભગવાન ભજવામાં",
+		"VatFile": "ch6083.html",
+		"VatNo": "83",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1269",
+		"ChId": "6",
+		"VatName": "Gnanna shabd padava",
+		"VatNameGuj": "જ્ઞાનના શબ્દ પાડવા",
+		"VatFile": "ch6084.html",
+		"VatNo": "84",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1270",
+		"ChId": "6",
+		"VatName": "Bhagavan rakhavama be",
+		"VatNameGuj": "ભગવાન રાખવામાં બે",
+		"VatFile": "ch6085.html",
+		"VatNo": "85",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1271",
+		"ChId": "6",
+		"VatName": "Mota sadhuno siddhant ",
+		"VatNameGuj": "મોટા સાધુનો સિદ્ધાંત",
+		"VatFile": "ch6086.html",
+		"VatNo": "86",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1272",
+		"ChId": "6",
+		"VatName": "Nirmal antakaran karine",
+		"VatNameGuj": "નિર્મળ અંત:કરણ કરીને",
+		"VatFile": "ch6087.html",
+		"VatNo": "87",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1273",
+		"ChId": "6",
+		"VatName": "Sankhyavala ramdasji",
+		"VatNameGuj": "સાંખ્યવાળા રામદાસજી",
+		"VatFile": "ch6088.html",
+		"VatNo": "88",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1274",
+		"ChId": "6",
+		"VatName": "Kathama sabha tane",
+		"VatNameGuj": "કથામાં સભા ટાણે",
+		"VatFile": "ch6089.html",
+		"VatNo": "89",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1275",
+		"ChId": "6",
+		"VatName": "Nishchay chhe pan",
+		"VatNameGuj": "નિશ્ર્ચય છે પણ",
+		"VatFile": "ch6090.html",
+		"VatNo": "90",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1276",
+		"ChId": "6",
+		"VatName": "Aho! Ek samarth thaka",
+		"VatNameGuj": "અહો ! એક સમર્થ થકાં",
+		"VatFile": "ch6091.html",
+		"VatNo": "91",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1277",
+		"ChId": "6",
+		"VatName": "Sara sathe jiv bandhavo",
+		"VatNameGuj": "સારા સાથે જીવ બાંધવો",
+		"VatFile": "ch6092.html",
+		"VatNo": "92",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1278",
+		"ChId": "6",
+		"VatName": "Sadharan bhaktnu to ",
+		"VatNameGuj": "સાધારણ ભક્તનું તો",
+		"VatFile": "ch6093.html",
+		"VatNo": "93",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1279",
+		"ChId": "6",
+		"VatName": "Maharaj kaheta je",
+		"VatNameGuj": "મહારાજ કહેતા જે",
+		"VatFile": "ch6094.html",
+		"VatNo": "94",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1280",
+		"ChId": "6",
+		"VatName": "Ikoter chokadi raj karine",
+		"VatNameGuj": "ઇકોતેર ચોકડી રાજ કરીને",
+		"VatFile": "ch6095.html",
+		"VatNo": "95",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1281",
+		"ChId": "6",
+		"VatName": "Strino sang karavo ne",
+		"VatNameGuj": "સ્ત્રીનો સંગ કરવો ને ",
+		"VatFile": "ch6096.html",
+		"VatNo": "96",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1282",
+		"ChId": "6",
+		"VatName": "More to jem tirmathi",
+		"VatNameGuj": "મોરે તો જેમ તીરમાંથી ",
+		"VatFile": "ch6097.html",
+		"VatNo": "97",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1283",
+		"ChId": "6",
+		"VatName": "Mandirma bija manas",
+		"VatNameGuj": "મંદિરમાં બીજાં માણસ",
+		"VatFile": "ch6098.html",
+		"VatNo": "98",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1284",
+		"ChId": "6",
+		"VatName": "Atmarup thavu tema",
+		"VatNameGuj": "આત્મારૂપ થાવું તેમાં",
+		"VatFile": "ch6099.html",
+		"VatNo": "99",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1285",
+		"ChId": "6",
+		"VatName": "Aho! Sadhu sathe saune",
+		"VatNameGuj": "અહો ! સાધુ સાથે સૌને",
+		"VatFile": "ch6100.html",
+		"VatNo": "100",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1286",
+		"ChId": "6",
+		"VatName": "Mayaram bhattne hat",
+		"VatNameGuj": "મયારામ ભટ્ટને હાટ",
+		"VatFile": "ch6101.html",
+		"VatNo": "101",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1287",
+		"ChId": "6",
+		"VatName": "Vavyo mol saro tya ",
+		"VatNameGuj": "વાવ્યો મોલ સારો ત્યાં",
+		"VatFile": "ch6102.html",
+		"VatNo": "102",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1288",
+		"ChId": "6",
+		"VatName": "Sankalp thay chhe te",
+		"VatNameGuj": "સંકલ્પ થાય છે તે",
+		"VatFile": "ch6103.html",
+		"VatNo": "103",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1289",
+		"ChId": "6",
+		"VatName": "Aa satsangmathi padavano",
+		"VatNameGuj": "આ સત્સંગમાંથી પડવાનો",
+		"VatFile": "ch6104.html",
+		"VatNo": "104",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1290",
+		"ChId": "6",
+		"VatName": "Jem sutarnu man ",
+		"VatNameGuj": "જેમ સુતારનું મન",
+		"VatFile": "ch6105.html",
+		"VatNo": "105",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1291",
+		"ChId": "6",
+		"VatName": "Samvat 1919 aso masma",
+		"VatNameGuj": "સંવત ૧૯૧૯ આસો માસમાં",
+		"VatFile": "ch6106.html",
+		"VatNo": "106",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1292",
+		"ChId": "6",
+		"VatName": "Aa dehmathi to nav",
+		"VatNameGuj": "આ દેહમાંથી તો નવ",
+		"VatFile": "ch6107.html",
+		"VatNo": "107",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1293",
+		"ChId": "6",
+		"VatName": "Juone ketalak chhe ",
+		"VatNameGuj": "જુઓને કેટલાક છે",
+		"VatFile": "ch6108.html",
+		"VatNo": "108",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1294",
+		"ChId": "6",
+		"VatName": "Jhajhi avarada e pan",
+		"VatNameGuj": "ઝાઝી આવરદા એ પણ",
+		"VatFile": "ch6109.html",
+		"VatNo": "109",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1295",
+		"ChId": "6",
+		"VatName": "Samvat 1919na aso vadi",
+		"VatNameGuj": "સંવત ૧૯૧૯ના આસો વદિ",
+		"VatFile": "ch6110.html",
+		"VatNo": "110",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1296",
+		"ChId": "6",
+		"VatName": "Aa saune par sthiti",
+		"VatNameGuj": "આ સૌને પર સ્થિતિ",
+		"VatFile": "ch6111.html",
+		"VatNo": "111",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1297",
+		"ChId": "6",
+		"VatName": "Achary adik charno",
+		"VatNameGuj": "આચાર્ય આદિક ચારનો",
+		"VatFile": "ch6112.html",
+		"VatNo": "112",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1298",
+		"ChId": "6",
+		"VatName": "Ek bhagavanni murtima",
+		"VatNameGuj": "એક ભગવાનની મૂર્તિમાં",
+		"VatFile": "ch6113.html",
+		"VatNo": "113",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1299",
+		"ChId": "6",
+		"VatName": "Agna pale etali vasana",
+		"VatNameGuj": "આજ્ઞા પળે એટલી વાસના",
+		"VatFile": "ch6114.html",
+		"VatNo": "114",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1300",
+		"ChId": "6",
+		"VatName": "Panchavishay saru to",
+		"VatNameGuj": "પંચવિષય સારુ તો",
+		"VatFile": "ch6115.html",
+		"VatNo": "115",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1301",
+		"ChId": "6",
+		"VatName": "Bhajan karavu te rate",
+		"VatNameGuj": "ભજન કરવું તે રાતે",
+		"VatFile": "ch6116.html",
+		"VatNo": "116",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1302",
+		"ChId": "6",
+		"VatName": "Ava pragat sadhu chhe",
+		"VatNameGuj": "આવા પ્રગટ સાધુ છે",
+		"VatFile": "ch6117.html",
+		"VatNo": "117",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1303",
+		"ChId": "6",
+		"VatName": "Nari nindana shlok ne",
+		"VatNameGuj": "નારી નિંદાના શ્ર્લોક ને",
+		"VatFile": "ch6118.html",
+		"VatNo": "118",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1304",
+		"ChId": "6",
+		"VatName": "Papini sobatma to",
+		"VatNameGuj": "પાપીની સોબતમાં તો",
+		"VatFile": "ch6119.html",
+		"VatNo": "119",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1305",
+		"ChId": "6",
+		"VatName": "Hu pratilom karu ke ",
+		"VatNameGuj": "હું પ્રતિલોમ કરું કે",
+		"VatFile": "ch6120.html",
+		"VatNo": "120",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1306",
+		"ChId": "6",
+		"VatName": "More jhajha manas",
+		"VatNameGuj": "મોરે ઝાઝા માણસ",
+		"VatFile": "ch6121.html",
+		"VatNo": "121",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1307",
+		"ChId": "6",
+		"VatName": "Ekthi pachas mala sudhi",
+		"VatNameGuj": "એકથી પચાસ માળા સુધી",
+		"VatFile": "ch6122.html",
+		"VatNo": "122",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1308",
+		"ChId": "6",
+		"VatName": "Ava sadhuno gun le te",
+		"VatNameGuj": "આવા સાધુનો ગુણ લે તે",
+		"VatFile": "ch6123.html",
+		"VatNo": "123",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1309",
+		"ChId": "6",
+		"VatName": "Maharaj kahe",
+		"VatNameGuj": "મહારાજ કહે",
+		"VatFile": "ch6124.html",
+		"VatNo": "124",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1310",
+		"ChId": "6",
+		"VatName": "Aho! aho! Bhagavan",
+		"VatNameGuj": "અહો ! અહો ! ભગવાન",
+		"VatFile": "ch6125.html",
+		"VatNo": "125",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1311",
+		"ChId": "6",
+		"VatName": "Ava sadhune kai",
+		"VatNameGuj": "આવા સાધુને કાંઈ",
+		"VatFile": "ch6126.html",
+		"VatNo": "126",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1312",
+		"ChId": "6",
+		"VatName": "Aa to tamane ghadi ghadi",
+		"VatNameGuj": "આ તો તમને ઘડી ઘડી",
+		"VatFile": "ch6127.html",
+		"VatNo": "127",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1313",
+		"ChId": "6",
+		"VatName": "Stuti-nindana loyana",
+		"VatNameGuj": "સ્તુતિ-નિંદાના લોયાનાં",
+		"VatFile": "ch6128.html",
+		"VatNo": "128",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1314",
+		"ChId": "6",
+		"VatName": "Koik moto manas ghoda",
+		"VatNameGuj": "કોઈક મોટો માણસ ઘોડાં",
+		"VatFile": "ch6129.html",
+		"VatNo": "129",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1315",
+		"ChId": "6",
+		"VatName": "Maharaj kahe",
+		"VatNameGuj": "મહારાજ કહે",
+		"VatFile": "ch6130.html",
+		"VatNo": "130",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1316",
+		"ChId": "6",
+		"VatName": "Sadhu thaine bhajan",
+		"VatNameGuj": "સાધુ થઈને ભજન",
+		"VatFile": "ch6131.html",
+		"VatNo": "131",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1317",
+		"ChId": "6",
+		"VatName": "Je same jevi bhagavanni",
+		"VatNameGuj": "જે સમે જેવી ભગવાનની",
+		"VatFile": "ch6132.html",
+		"VatNo": "132",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1318",
+		"ChId": "6",
+		"VatName": "Antarno kusang, baharno",
+		"VatNameGuj": "અંતરનો કુસંગ, બહારનો",
+		"VatFile": "ch6133.html",
+		"VatNo": "133",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1319",
+		"ChId": "6",
+		"VatName": "Ek sadhue prasadi khadhi",
+		"VatNameGuj": "એક સાધુએ પ્રસાદી ખાધી",
+		"VatFile": "ch6134.html",
+		"VatNo": "134",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1320",
+		"ChId": "6",
+		"VatName": "Paksh ne sneh to ",
+		"VatNameGuj": "પક્ષ ને સ્નેહ તો",
+		"VatFile": "ch6135.html",
+		"VatNo": "135",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1321",
+		"ChId": "6",
+		"VatName": "Tame kaho chho je",
+		"VatNameGuj": "તમે કહો છો જે",
+		"VatFile": "ch6136.html",
+		"VatNo": "136",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1322",
+		"ChId": "6",
+		"VatName": "Bahar bhajan kare ",
+		"VatNameGuj": "બહાર ભજન કરે",
+		"VatFile": "ch6137.html",
+		"VatNo": "137",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1323",
+		"ChId": "6",
+		"VatName": "Biju je kahe te thay",
+		"VatNameGuj": "બીજું જે કહે તે થાય",
+		"VatFile": "ch6138.html",
+		"VatNo": "138",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1324",
+		"ChId": "6",
+		"VatName": "Jhajhu tap, dharana",
+		"VatNameGuj": "ઝાઝું તપ, ધારણાં",
+		"VatFile": "ch6139.html",
+		"VatNo": "139",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1325",
+		"ChId": "6",
+		"VatName": "Ek aa kam pan kathan",
+		"VatNameGuj": "એક આ કામ પણ કઠણ",
+		"VatFile": "ch6140.html",
+		"VatNo": "140",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1326",
+		"ChId": "6",
+		"VatName": "Ek sadhune ramdasjibhaini",
+		"VatNameGuj": "એક સાધુને રામદાસજીભાઈની",
+		"VatFile": "ch6141.html",
+		"VatNo": "141",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1327",
+		"ChId": "6",
+		"VatName": "Ek kanabi hato te be",
+		"VatNameGuj": "એક કણબી હતો તે બે",
+		"VatFile": "ch6142.html",
+		"VatNo": "142",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1328",
+		"ChId": "6",
+		"VatName": "Swami kahe",
+		"VatNameGuj": "સ્વામી કહે",
+		"VatFile": "ch6143.html",
+		"VatNo": "143",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1329",
+		"ChId": "6",
+		"VatName": "Jo rotala malata hoy",
+		"VatNameGuj": "જો રોટલા મળતા હોય",
+		"VatFile": "ch6144.html",
+		"VatNo": "144",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1330",
+		"ChId": "6",
+		"VatName": "Nrusinhanandswamine Maharaje",
+		"VatNameGuj": "નૃસિંહાનંદસ્વામીને મહારાજે",
+		"VatFile": "ch6145.html",
+		"VatNo": "145",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1331",
+		"ChId": "6",
+		"VatName": "Ek kadiye Maharajni murti",
+		"VatNameGuj": "એક કડિયે મહારાજની મૂર્તિ",
+		"VatFile": "ch6146.html",
+		"VatNo": "146",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1332",
+		"ChId": "6",
+		"VatName": "Aa netrathi aa sadhuna",
+		"VatNameGuj": "આ નેત્રથી આ સાધુનાં",
+		"VatFile": "ch6147.html",
+		"VatNo": "147",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1333",
+		"ChId": "6",
+		"VatName": "Ek divas jarur maravu",
+		"VatNameGuj": "એક દિવસ જરૂર મરવું",
+		"VatFile": "ch6148.html",
+		"VatNo": "148",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1334",
+		"ChId": "6",
+		"VatName": "Ame vadi kari chhe",
+		"VatNameGuj": "અમે વાડી કરી છે",
+		"VatFile": "ch6149.html",
+		"VatNo": "149",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1335",
+		"ChId": "6",
+		"VatName": "Ek jan to kotharine",
+		"VatNameGuj": "એક જણ તો કોઠારીને",
+		"VatFile": "ch6150.html",
+		"VatNo": "150",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1336",
+		"ChId": "6",
+		"VatName": "Mede manadali bheli ",
+		"VatNameGuj": "મેડે મંડળી ભેળી",
+		"VatFile": "ch6151.html",
+		"VatNo": "151",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1337",
+		"ChId": "6",
+		"VatName": "Amare to kai vastra",
+		"VatNameGuj": "અમારે તો કાંઈ વસ્ત્ર",
+		"VatFile": "ch6152.html",
+		"VatNo": "152",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1338",
+		"ChId": "6",
+		"VatName": "Brahmachary rakhavana to",
+		"VatNameGuj": "બ્રહ્મચર્ય રાખવાના તો",
+		"VatFile": "ch6153.html",
+		"VatNo": "153",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1339",
+		"ChId": "6",
+		"VatName": "Maharajni vanse ekantikni",
+		"VatNameGuj": "મહારાજની વાંસે એકાંતિકની",
+		"VatFile": "ch6154.html",
+		"VatNo": "154",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1340",
+		"ChId": "6",
+		"VatName": "Have navara thaya te",
+		"VatNameGuj": "હવે નવરા થયા તે ",
+		"VatFile": "ch6155.html",
+		"VatNo": "155",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1341",
+		"ChId": "6",
+		"VatName": "Ek divas Maharaje mane",
+		"VatNameGuj": "એક દિવસ મહારાજે મને",
+		"VatFile": "ch6156.html",
+		"VatNo": "156",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1342",
+		"ChId": "6",
+		"VatName": "Aa je Swaminarayan tene",
+		"VatNameGuj": "આ જે સ્વામિનારાયણ તેને",
+		"VatFile": "ch6157.html",
+		"VatNo": "157",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1343",
+		"ChId": "6",
+		"VatName": "Ek var Maharaje ubha",
+		"VatNameGuj": "એક વાર મહારાજે ઊભા",
+		"VatFile": "ch6158.html",
+		"VatNo": "158",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1344",
+		"ChId": "6",
+		"VatName": "Aho! Juone, paradeshthi",
+		"VatNameGuj": "અહો ! જુઓને, પરદેશથી",
+		"VatFile": "ch6159.html",
+		"VatNo": "159",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1345",
+		"ChId": "6",
+		"VatName": "Aa jiv to gharma",
+		"VatNameGuj": "આ જીવ તો ઘરમાં",
+		"VatFile": "ch6160.html",
+		"VatNo": "160",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1346",
+		"ChId": "6",
+		"VatName": "Aa deh jevu to koi",
+		"VatNameGuj": "આ દેહ જેવું તો કોઈ",
+		"VatFile": "ch6161.html",
+		"VatNo": "161",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1347",
+		"ChId": "6",
+		"VatName": "Nagar gavaiya pase",
+		"VatNameGuj": "નાગર ગવૈયા પાસે",
+		"VatFile": "ch6162.html",
+		"VatNo": "162",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1348",
+		"ChId": "6",
+		"VatName": "Aa jivne ajivika hoy",
+		"VatNameGuj": "આ જીવને આજીવિકા હોય",
+		"VatFile": "ch6163.html",
+		"VatNo": "163",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1349",
+		"ChId": "6",
+		"VatName": "Aa jiv to jhad, pathara",
+		"VatNameGuj": "આ જીવ તો ઝાડ, પથરા",
+		"VatFile": "ch6164.html",
+		"VatNo": "164",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1350",
+		"ChId": "6",
+		"VatName": "Je divas te divas",
+		"VatNameGuj": "જે દિવસ તે દિવસ",
+		"VatFile": "ch6165.html",
+		"VatNo": "165",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1351",
+		"ChId": "6",
+		"VatName": "Ketalak dhor sathe jiv",
+		"VatNameGuj": "કેટલાક ઢોર સાથે જીવ",
+		"VatFile": "ch6166.html",
+		"VatNo": "166",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1352",
+		"ChId": "6",
+		"VatName": "Mumbai jay to satsang",
+		"VatNameGuj": "મુંબઈ જાય તો સત્સંગ",
+		"VatFile": "ch6167.html",
+		"VatNo": "167",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1353",
+		"ChId": "6",
+		"VatName": "Shaher-patan sevava  nahi",
+		"VatNameGuj": "શહેર-પાટણ સેવવાં નહિ",
+		"VatFile": "ch6168.html",
+		"VatNo": "168",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1354",
+		"ChId": "6",
+		"VatName": "Bhagavanna kathakirtan",
+		"VatNameGuj": "ભગવાનનાં કથાકીર્તન",
+		"VatFile": "ch6169.html",
+		"VatNo": "169",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1355",
+		"ChId": "6",
+		"VatName": "Jiv panchavishay saru",
+		"VatNameGuj": "જીવ પંચવિષય સારુ",
+		"VatFile": "ch6170.html",
+		"VatNo": "170",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1356",
+		"ChId": "6",
+		"VatName": "Mangarolma Maharaj",
+		"VatNameGuj": "માંગરોળમાં મહારાજ",
+		"VatFile": "ch6171.html",
+		"VatNo": "171",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1357",
+		"ChId": "6",
+		"VatName": "Aho! Bhadarave mahine",
+		"VatNameGuj": "અહો ! ભાદરવે મહિને ",
+		"VatFile": "ch6172.html",
+		"VatNo": "172",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1358",
+		"ChId": "6",
+		"VatName": "Sadhune koike puchhyu je",
+		"VatNameGuj": "સાધુને કોઈકે પૂછ્યું જે",
+		"VatFile": "ch6173.html",
+		"VatNo": "173",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1359",
+		"ChId": "6",
+		"VatName": "Ek haribhakt khambhatthi",
+		"VatNameGuj": "એક હરિભક્ત ખંભાતથી",
+		"VatFile": "ch6174.html",
+		"VatNo": "174",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1360",
+		"ChId": "6",
+		"VatName": "Ek jane puchhyu je",
+		"VatNameGuj": "એક જણે પૂછ્યું જે",
+		"VatFile": "ch6175.html",
+		"VatNo": "175",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1361",
+		"ChId": "6",
+		"VatName": "Anant kirya thay pan",
+		"VatNameGuj": "અનંત ક્રિયા થાય પણ",
+		"VatFile": "ch6176.html",
+		"VatNo": "176",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1362",
+		"ChId": "6",
+		"VatName": "Aa dehne to jem koi",
+		"VatNameGuj": "આ દેહને તો જેમ કોઈ",
+		"VatFile": "ch6177.html",
+		"VatNo": "177",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1363",
+		"ChId": "6",
+		"VatName": "Man, kam, krodhma jiv",
+		"VatNameGuj": "માન, કામ, ક્રોધમાં જીવ",
+		"VatFile": "ch6178.html",
+		"VatNo": "178",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1364",
+		"ChId": "6",
+		"VatName": "Dehne to shu karavu ",
+		"VatNameGuj": "દેહને તો શું કરવું",
+		"VatFile": "ch6179.html",
+		"VatNo": "179",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1365",
+		"ChId": "6",
+		"VatName": "Samvat 1920na ",
+		"VatNameGuj": "સંવત ૧૯૨૦ના",
+		"VatFile": "ch6180.html",
+		"VatNo": "180",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1366",
+		"ChId": "6",
+		"VatName": "Varatalma meda upar",
+		"VatNameGuj": "વરતાલમાં મેડા ઉપર",
+		"VatFile": "ch6181.html",
+		"VatNo": "181",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1367",
+		"ChId": "6",
+		"VatName": "Aa sadhunu to darshan",
+		"VatNameGuj": "આ સાધુનું તો દર્શન",
+		"VatFile": "ch6182.html",
+		"VatNo": "182",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1368",
+		"ChId": "6",
+		"VatName": "He paramhanso !",
+		"VatNameGuj": "હે પરમહંસો ! ",
+		"VatFile": "ch6183.html",
+		"VatNo": "183",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1369",
+		"ChId": "6",
+		"VatName": "He paramhanso !",
+		"VatNameGuj": "હે પરમહંસો !",
+		"VatFile": "ch6184.html",
+		"VatNo": "184",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1370",
+		"ChId": "6",
+		"VatName": "Aso vadi athame vat",
+		"VatNameGuj": "આસો વદિ આઠમે વાત",
+		"VatFile": "ch6185.html",
+		"VatNo": "185",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1371",
+		"ChId": "6",
+		"VatName": "Samvat 1921na karatak",
+		"VatNameGuj": "સંવત ૧૯૨૧ના કારતક",
+		"VatFile": "ch6186.html",
+		"VatNo": "186",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1372",
+		"ChId": "6",
+		"VatName": "Are! Ava sadhu chhe",
+		"VatNameGuj": "અરે ! આવા સાધુ છે ",
+		"VatFile": "ch6187.html",
+		"VatNo": "187",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1373",
+		"ChId": "6",
+		"VatName": "Vahan chhe tenu sukan",
+		"VatNameGuj": "વહાણ છે તેનું સુકાન",
+		"VatFile": "ch6188.html",
+		"VatNo": "188",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1374",
+		"ChId": "6",
+		"VatName": "Samvat 1921na magashar",
+		"VatNameGuj": "સંવત ૧૯૨૧ના માગશર",
+		"VatFile": "ch6189.html",
+		"VatNo": "189",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1375",
+		"ChId": "6",
+		"VatName": "Pustakma to vatu lakhi",
+		"VatNameGuj": "પુસ્તકમાં તો વાતું લખી",
+		"VatFile": "ch6190.html",
+		"VatNo": "190",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1376",
+		"ChId": "6",
+		"VatName": "Dharmashalano tal",
+		"VatNameGuj": "ધર્મશાળાનો તાલ",
+		"VatFile": "ch6191.html",
+		"VatNo": "191",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1377",
+		"ChId": "6",
+		"VatName": "Jivne satsang thay nahi",
+		"VatNameGuj": "જીવને સત્સંગ થાય નહીં",
+		"VatFile": "ch6192.html",
+		"VatNo": "192",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1378",
+		"ChId": "6",
+		"VatName": "Aho! Aho!  Aa ",
+		"VatNameGuj": "અહો ! અહો ! આ",
+		"VatFile": "ch6193.html",
+		"VatNo": "193",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1379",
+		"ChId": "6",
+		"VatName": "Aa deh hadakano",
+		"VatNameGuj": "આ દેહ હાડકાંનો",
+		"VatFile": "ch6194.html",
+		"VatNo": "194",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1380",
+		"ChId": "6",
+		"VatName": "Aho! Manas badha aa",
+		"VatNameGuj": "અહો ! માણસ બધાં આ",
+		"VatFile": "ch6195.html",
+		"VatNo": "195",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1381",
+		"ChId": "6",
+		"VatName": "Man pan navaru rahetu",
+		"VatNameGuj": "મન પણ નવરું રહેતું",
+		"VatFile": "ch6196.html",
+		"VatNo": "196",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1382",
+		"ChId": "6",
+		"VatName": "Aa chalya! Aa dehma",
+		"VatNameGuj": "આ ચાલ્યા ! આ દેહમાં",
+		"VatFile": "ch6197.html",
+		"VatNo": "197",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1383",
+		"ChId": "6",
+		"VatName": "Jo tame avya to",
+		"VatNameGuj": "જો તમે આવ્યા તો",
+		"VatFile": "ch6198.html",
+		"VatNo": "198",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1384",
+		"ChId": "6",
+		"VatName": "Samvat 1921na posh",
+		"VatNameGuj": "સંવત ૧૯૨૧ના પોષ",
+		"VatFile": "ch6199.html",
+		"VatNo": "199",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1385",
+		"ChId": "6",
+		"VatName": "Ketalek thekane dharm kare",
+		"VatNameGuj": "કેટલેક ઠેકાણે ધર્મ કરે ",
+		"VatFile": "ch6200.html",
+		"VatNo": "200",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1386",
+		"ChId": "6",
+		"VatName": "Bija to surabhaktna",
+		"VatNameGuj": "બીજા તો સૂરાભક્તના",
+		"VatFile": "ch6201.html",
+		"VatNo": "201",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1387",
+		"ChId": "6",
+		"VatName": "Apane kaiye karavu nathi",
+		"VatNameGuj": "આપણે કાંઈયે કરવું નથી",
+		"VatFile": "ch6202.html",
+		"VatNo": "202",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1388",
+		"ChId": "6",
+		"VatName": "Aa sadhu pase bhagavan",
+		"VatNameGuj": "આ સાધુ પાસે ભગવાન છે",
+		"VatFile": "ch6203.html",
+		"VatNo": "203",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1389",
+		"ChId": "6",
+		"VatName": "Ani kor dvarakanath",
+		"VatNameGuj": "આણી કોર દ્વારકાનાથ",
+		"VatFile": "ch6204.html",
+		"VatNo": "204",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1390",
+		"ChId": "6",
+		"VatName": "Aa jiv aam sankalp",
+		"VatNameGuj": "આ જીવ આમ સંકલ્પ કરે",
+		"VatFile": "ch6205.html",
+		"VatNo": "205",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1391",
+		"ChId": "6",
+		"VatName": "Pangatma besine melavine",
+		"VatNameGuj": "પંગતમાં બેસીને મેળાવીને",
+		"VatFile": "ch6206.html",
+		"VatNo": "206",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1392",
+		"ChId": "6",
+		"VatName": "Chovis varas thaya",
+		"VatNameGuj": "ચોવીસ વરસ થયાં",
+		"VatFile": "ch6207.html",
+		"VatNo": "207",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1393",
+		"ChId": "6",
+		"VatName": "Sadhu thaya ne bhekh",
+		"VatNameGuj": "સાધુ થયા ને ભેખ ન",
+		"VatFile": "ch6208.html",
+		"VatNo": "208",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1394",
+		"ChId": "6",
+		"VatName": "Vaishakh vadi ekadashie",
+		"VatNameGuj": "વૈશાખ વદિ એકાદશીએ",
+		"VatFile": "ch6209.html",
+		"VatNo": "209",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1395",
+		"ChId": "6",
+		"VatName": "Upasam kare te mane",
+		"VatNameGuj": "ઉપશમ કરે તે મને",
+		"VatFile": "ch6210.html",
+		"VatNo": "210",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1396",
+		"ChId": "6",
+		"VatName": "Ek bhakte puchhyu je",
+		"VatNameGuj": "એક ભક્તે પૂછ્યું જે",
+		"VatFile": "ch6211.html",
+		"VatNo": "211",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1397",
+		"ChId": "6",
+		"VatName": "Aa deh chhe te",
+		"VatNameGuj": "આ દેહ છે તે",
+		"VatFile": "ch6212.html",
+		"VatNo": "212",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1398",
+		"ChId": "6",
+		"VatName": "Mava bhakt kaheta je",
+		"VatNameGuj": "માવા ભક્ત કહેતા જે",
+		"VatFile": "ch6213.html",
+		"VatNo": "213",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1399",
+		"ChId": "6",
+		"VatName": "Aa jiv koi divas",
+		"VatNameGuj": "આ જીવ કોઈ દિવસ",
+		"VatFile": "ch6214.html",
+		"VatNo": "214",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1400",
+		"ChId": "6",
+		"VatName": "Varamvar manav deh",
+		"VatNameGuj": "વારંવાર માનવ દેહ",
+		"VatFile": "ch6215.html",
+		"VatNo": "215",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1401",
+		"ChId": "6",
+		"VatName": "Kal rate muddani vat",
+		"VatNameGuj": "કાલ રાતે મુદ્દાની વાત",
+		"VatFile": "ch6216.html",
+		"VatNo": "216",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1402",
+		"ChId": "6",
+		"VatName": "Panch gnanendriyu vash",
+		"VatNameGuj": "પંચ જ્ઞાનેન્દ્રિયું વશ ",
+		"VatFile": "ch6217.html",
+		"VatNo": "217",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1403",
+		"ChId": "6",
+		"VatName": "Chhellanu biju Vachanamrut",
+		"VatNameGuj": "છેલ્લાનું બીજું વચનામૃત",
+		"VatFile": "ch6218.html",
+		"VatNo": "218",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1404",
+		"ChId": "6",
+		"VatName": "Chaitanyanandswamini ",
+		"VatNameGuj": "ચૈતન્યાનંદસ્વામીની",
+		"VatFile": "ch6219.html",
+		"VatNo": "219",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1405",
+		"ChId": "6",
+		"VatName": "Ek jane prashn puchhyo",
+		"VatNameGuj": "એક જણે પ્રશ્ર્ન પૂછ્યો",
+		"VatFile": "ch6220.html",
+		"VatNo": "220",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1406",
+		"ChId": "6",
+		"VatName": "Aa te kai vatu chhe !",
+		"VatNameGuj": "આ તે કાંઈ વાતું છે !",
+		"VatFile": "ch6221.html",
+		"VatNo": "221",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1407",
+		"ChId": "6",
+		"VatName": "Samvat 1922na karatak",
+		"VatNameGuj": "સંવત ૧૯૨૨ના કારતક",
+		"VatFile": "ch6222.html",
+		"VatNo": "222",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1408",
+		"ChId": "6",
+		"VatName": "Swami kahe, Amane",
+		"VatNameGuj": "સ્વામી કહે, અમને",
+		"VatFile": "ch6223.html",
+		"VatNo": "223",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1409",
+		"ChId": "6",
+		"VatName": "Magashar masma swamie",
+		"VatNameGuj": "માગશર માસમાં સ્વામીએ",
+		"VatFile": "ch6224.html",
+		"VatNo": "224",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1410",
+		"ChId": "6",
+		"VatName": "Maharaj kahe, vishayno",
+		"VatNameGuj": "મહારાજ કહે, વિષયનો",
+		"VatFile": "ch6225.html",
+		"VatNo": "225",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1411",
+		"ChId": "6",
+		"VatName": "Aa lok to dukhrup chhe",
+		"VatNameGuj": "આ લોક તો દુ:ખરૂપ છે",
+		"VatFile": "ch6226.html",
+		"VatNo": "226",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1412",
+		"ChId": "6",
+		"VatName": "Panchal deshma ek gam",
+		"VatNameGuj": "પાંચાળ દેશમાં એક ગામ",
+		"VatFile": "ch6227.html",
+		"VatNo": "227",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1413",
+		"ChId": "6",
+		"VatName": "Posh vadi ekame vat",
+		"VatNameGuj": "પોષ વદિ એકમે વાત",
+		"VatFile": "ch6228.html",
+		"VatNo": "228",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1414",
+		"ChId": "6",
+		"VatName": "Ek janna manma je ",
+		"VatNameGuj": "એક જણના મનમાં જે",
+		"VatFile": "ch6229.html",
+		"VatNo": "229",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1415",
+		"ChId": "6",
+		"VatName": "Aa vatu saru to pachhi",
+		"VatNameGuj": "આ વાતું સારુ તો પછી ",
+		"VatFile": "ch6230.html",
+		"VatNo": "230",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1416",
+		"ChId": "6",
+		"VatName": "Aho! Ame nana hata",
+		"VatNameGuj": "અહો ! અમે નાના હતા",
+		"VatFile": "ch6231.html",
+		"VatNo": "231",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1417",
+		"ChId": "6",
+		"VatName": "Jeva bhagavan ",
+		"VatNameGuj": "જેવા ભગવાન",
+		"VatFile": "ch6232.html",
+		"VatNo": "232",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1418",
+		"ChId": "6",
+		"VatName": "Biji vat juo",
+		"VatNameGuj": "બીજી વાત જુઓ",
+		"VatFile": "ch6233.html",
+		"VatNo": "233",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1419",
+		"ChId": "6",
+		"VatName": "Vadodarama divanjine ",
+		"VatNameGuj": "વડોદરામાં દીવાનજીને",
+		"VatFile": "ch6234.html",
+		"VatNo": "234",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1420",
+		"ChId": "6",
+		"VatName": "Bhujma sundarji sutarne",
+		"VatNameGuj": "ભૂજમાં સુંદરજી સુતારને ",
+		"VatFile": "ch6235.html",
+		"VatNo": "235",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1421",
+		"ChId": "6",
+		"VatName": "Ek sadhu raghavanand",
+		"VatNameGuj": "એક સાધુ રાઘવાનંદ",
+		"VatFile": "ch6236.html",
+		"VatNo": "236",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1422",
+		"ChId": "6",
+		"VatName": "Aa jivne aa lok ne",
+		"VatNameGuj": "આ જીવને આ લોક ને",
+		"VatFile": "ch6237.html",
+		"VatNo": "237",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1423",
+		"ChId": "6",
+		"VatName": "Ek var samaiyethi avya",
+		"VatNameGuj": "એક વાર સમૈયેથી આવ્યા",
+		"VatFile": "ch6238.html",
+		"VatNo": "238",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1424",
+		"ChId": "6",
+		"VatName": "Ekagr thaya vina kai",
+		"VatNameGuj": "એકાગ્ર થયા વિના કાંઈ",
+		"VatFile": "ch6239.html",
+		"VatNo": "239",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1425",
+		"ChId": "6",
+		"VatName": "Agna lopay chhe tethi",
+		"VatNameGuj": "આજ્ઞા લોપાય છે તેથી",
+		"VatFile": "ch6240.html",
+		"VatNo": "240",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1426",
+		"ChId": "6",
+		"VatName": "Maha vadima vat kari",
+		"VatNameGuj": "મહા વદિમાં વાત કરી",
+		"VatFile": "ch6241.html",
+		"VatNo": "241",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1427",
+		"ChId": "6",
+		"VatName": "So varas sudhi ava",
+		"VatNameGuj": "સો વરસ સુધી આવા",
+		"VatFile": "ch6242.html",
+		"VatNo": "242",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1428",
+		"ChId": "6",
+		"VatName": "Juone! Vishay to ",
+		"VatNameGuj": "જુઓને ! વિષય તો",
+		"VatFile": "ch6243.html",
+		"VatNo": "243",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1429",
+		"ChId": "6",
+		"VatName": "Mota sadhu hoy teni",
+		"VatNameGuj": "મોટા સાધુ હોય તેની",
+		"VatFile": "ch6244.html",
+		"VatNo": "244",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1430",
+		"ChId": "6",
+		"VatName": "Chhellanu biju Vachanamrut",
+		"VatNameGuj": "છેલ્લાનું બીજું વચનામૃત",
+		"VatFile": "ch6245.html",
+		"VatNo": "245",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1431",
+		"ChId": "6",
+		"VatName": "Samvat 1922na pratham",
+		"VatNameGuj": "સંવત ૧૯૨૨ના પ્રથમ",
+		"VatFile": "ch6246.html",
+		"VatNo": "246",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1432",
+		"ChId": "6",
+		"VatName": "Ame to lakhyu chhe ke",
+		"VatNameGuj": "અમે તો લખ્યું છે કે",
+		"VatFile": "ch6247.html",
+		"VatNo": "247",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1433",
+		"ChId": "6",
+		"VatName": "Ame nana hata tyare",
+		"VatNameGuj": "અમે નાના હતા ત્યારે",
+		"VatFile": "ch6248.html",
+		"VatNo": "248",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1434",
+		"ChId": "6",
+		"VatName": "Juone! Shastrama pan",
+		"VatNameGuj": "જુઓને ! શાસ્ત્રમાં પણ ",
+		"VatFile": "ch6249.html",
+		"VatNo": "249",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1435",
+		"ChId": "6",
+		"VatName": "Chhellana 30ma",
+		"VatNameGuj": "છેલ્લાનાં ૩૦માં",
+		"VatFile": "ch6250.html",
+		"VatNo": "250",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1436",
+		"ChId": "6",
+		"VatName": "Aa panchavishayrupi ",
+		"VatNameGuj": "આ પંચવિષયરૂપી ",
+		"VatFile": "ch6251.html",
+		"VatNo": "251",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1437",
+		"ChId": "6",
+		"VatName": "Ek var ame dhorajine",
+		"VatNameGuj": "એક વાર અમે ધોરાજીને ",
+		"VatFile": "ch6252.html",
+		"VatNo": "252",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1438",
+		"ChId": "6",
+		"VatName": "Sadhu thavu etale ",
+		"VatNameGuj": "સાધુ થાવું એટલે",
+		"VatFile": "ch6253.html",
+		"VatNo": "253",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1439",
+		"ChId": "6",
+		"VatName": "Lilani vat kari",
+		"VatNameGuj": "લીલાની વાત કરી",
+		"VatFile": "ch6254.html",
+		"VatNo": "254",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1440",
+		"ChId": "6",
+		"VatName": "Shravan vadi navmi ne",
+		"VatNameGuj": "શ્રાવણ વદિ નવમી ને ",
+		"VatFile": "ch6255.html",
+		"VatNo": "255",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1441",
+		"ChId": "6",
+		"VatName": "Ek vediye avine",
+		"VatNameGuj": "એક વેદીયે આવીને ",
+		"VatFile": "ch6256.html",
+		"VatNo": "256",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1442",
+		"ChId": "6",
+		"VatName": "Purushrupe prakrutima avya",
+		"VatNameGuj": "પુરુષરૂપે પ્રકૃતિમાં આવ્યા",
+		"VatFile": "ch6257.html",
+		"VatNo": "257",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1443",
+		"ChId": "6",
+		"VatName": "Shravan vadi chhathne",
+		"VatNameGuj": "શ્રાવણ વદિ છઠને",
+		"VatFile": "ch6258.html",
+		"VatNo": "258",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1444",
+		"ChId": "6",
+		"VatName": "Bhagavan, sadhu, ",
+		"VatNameGuj": "ભગવાન, સાધુ,",
+		"VatFile": "ch6259.html",
+		"VatNo": "259",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1445",
+		"ChId": "6",
+		"VatName": "Apanamay khot ketalik",
+		"VatNameGuj": "આપણામાંય ખોટ કેટલીક",
+		"VatFile": "ch6260.html",
+		"VatNo": "260",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1446",
+		"ChId": "6",
+		"VatName": "Jem swarupanandswamie",
+		"VatNameGuj": "જેમ સ્વરૂપાનંદસ્વામીએ",
+		"VatFile": "ch6261.html",
+		"VatNo": "261",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1447",
+		"ChId": "6",
+		"VatName": "Bhadarava sudi satamne",
+		"VatNameGuj": "ભાદરવા સુદિ સાતમને ",
+		"VatFile": "ch6262.html",
+		"VatNo": "262",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1448",
+		"ChId": "6",
+		"VatName": "Ek sadhune to pande",
+		"VatNameGuj": "એક સાધુને તો પંડે",
+		"VatFile": "ch6263.html",
+		"VatNo": "263",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1449",
+		"ChId": "6",
+		"VatName": "Gruhasth manas biju",
+		"VatNameGuj": "ગૃહસ્થ માણસ બીજું",
+		"VatFile": "ch6264.html",
+		"VatNo": "264",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1450",
+		"ChId": "6",
+		"VatName": "Ame koi divas ",
+		"VatNameGuj": "અમે કોઈ દિવસ",
+		"VatFile": "ch6265.html",
+		"VatNo": "265",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1451",
+		"ChId": "6",
+		"VatName": "Samvat 1923na ashadh",
+		"VatNameGuj": "સંવત ૧૯૨૩ના અષાઢ",
+		"VatFile": "ch6266.html",
+		"VatNo": "266",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1452",
+		"ChId": "6",
+		"VatName": "Swami kahe, jena",
+		"VatNameGuj": "સ્વામી કહે, જેના",
+		"VatFile": "ch6267.html",
+		"VatNo": "267",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1453",
+		"ChId": "6",
+		"VatName": "Agal aa be vatne",
+		"VatNameGuj": "આગળ આ બે વાતને",
+		"VatFile": "ch6268.html",
+		"VatNo": "268",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1454",
+		"ChId": "6",
+		"VatName": "Bhagavan to ek jiv",
+		"VatNameGuj": "ભગવાન તો એક જીવ ",
+		"VatFile": "ch6269.html",
+		"VatNo": "269",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1455",
+		"ChId": "6",
+		"VatName": "Ame to vicharine joyu",
+		"VatNameGuj": "અમે તો વિચારીને જોયું",
+		"VatFile": "ch6270.html",
+		"VatNo": "270",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1456",
+		"ChId": "6",
+		"VatName": "Juone! Aa bija ",
+		"VatNameGuj": "જુઓને ! આ બીજા ",
+		"VatFile": "ch6271.html",
+		"VatNo": "271",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1457",
+		"ChId": "6",
+		"VatName": "Ek var bahu bhare",
+		"VatNameGuj": "એક વાર બહુ ભારે ",
+		"VatFile": "ch6272.html",
+		"VatNo": "272",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1458",
+		"ChId": "6",
+		"VatName": "Aa jivne panchavishay",
+		"VatNameGuj": "આ જીવને પંચવિષય",
+		"VatFile": "ch6273.html",
+		"VatNo": "273",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1459",
+		"ChId": "6",
+		"VatName": "Karod man sutarni",
+		"VatNameGuj": "કરોડ મણ સૂતરની",
+		"VatFile": "ch6274.html",
+		"VatNo": "274",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1460",
+		"ChId": "6",
+		"VatName": "Jem gujaratma pachhali ",
+		"VatNameGuj": "જેમ ગુજરાતમાં પાછલી ",
+		"VatFile": "ch6275.html",
+		"VatNo": "275",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1461",
+		"ChId": "6",
+		"VatName": "Aa vatu sambhaline gandu",
+		"VatNameGuj": "આ વાતું સાંભળીને ગાંડું",
+		"VatFile": "ch6276.html",
+		"VatNo": "276",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1462",
+		"ChId": "6",
+		"VatName": "Udhdhavmat vina niskami",
+		"VatNameGuj": "ઉદ્ધવમત વિના નિષ્કામી",
+		"VatFile": "ch6277.html",
+		"VatNo": "277",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1463",
+		"ChId": "6",
+		"VatName": "Shravan sudi panchamne",
+		"VatNameGuj": "શ્રાવણ સુદિ પાંચમને",
+		"VatFile": "ch6278.html",
+		"VatNo": "278",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1464",
+		"ChId": "6",
+		"VatName": "Jo thodu j gnan hoy",
+		"VatNameGuj": "જો થોડું જ જ્ઞાન હોય",
+		"VatFile": "ch6279.html",
+		"VatNo": "279",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1465",
+		"ChId": "6",
+		"VatName": "Bhagavan chheta chhe",
+		"VatNameGuj": "ભગવાન છેટા છે",
+		"VatFile": "ch6280.html",
+		"VatNo": "280",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1466",
+		"ChId": "6",
+		"VatName": "Kalyanna maragma vighn",
+		"VatNameGuj": "કલ્યાણના મારગમાં વિઘ્ન",
+		"VatFile": "ch6281.html",
+		"VatNo": "281",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1467",
+		"ChId": "6",
+		"VatName": "Dashond-vishond kahi chhe",
+		"VatNameGuj": "દશોંદ-વિશોંદ કહી છે",
+		"VatFile": "ch6282.html",
+		"VatNo": "282",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1468",
+		"ChId": "6",
+		"VatName": "Strivale mahino",
+		"VatNameGuj": "સ્ત્રીવાળે મહિનો",
+		"VatFile": "ch6283.html",
+		"VatNo": "283",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1469",
+		"ChId": "6",
+		"VatName": "Jene mathe mota shatru",
+		"VatNameGuj": "જેને માથે મોટા શત્રુ",
+		"VatFile": "ch6284.html",
+		"VatNo": "284",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1470",
+		"ChId": "6",
+		"VatName": "Ek garib bavano chhokaro",
+		"VatNameGuj": "એક ગરીબ બાવાનો છોકરો",
+		"VatFile": "ch6285.html",
+		"VatNo": "285",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1471",
+		"ChId": "6",
+		"VatName": "Shravan vadi barasne ",
+		"VatNameGuj": "શ્રાવણ વદિ બારસને",
+		"VatFile": "ch6286.html",
+		"VatNo": "286",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1472",
+		"ChId": "6",
+		"VatName": "Kal olyama avyu je",
+		"VatNameGuj": "કાલ ઓલ્યામાં આવ્યું જે",
+		"VatFile": "ch6287.html",
+		"VatNo": "287",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1473",
+		"ChId": "6",
+		"VatName": "Tyagine to bar upar",
+		"VatNameGuj": "ત્યાગીને તો બાર ઉપર",
+		"VatFile": "ch6288.html",
+		"VatNo": "288",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1474",
+		"ChId": "6",
+		"VatName": "Gondalma vaniye haveli",
+		"VatNameGuj": "ગોંડળમાં વાણિયે હવેલી",
+		"VatFile": "ch6289.html",
+		"VatNo": "289",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1475",
+		"ChId": "6",
+		"VatName": "Svarg, mrutyu ne patal",
+		"VatNameGuj": "સ્વર્ગ, મૃત્યુ ને પાતાળ ",
+		"VatFile": "ch6290.html",
+		"VatNo": "290",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1476",
+		"ChId": "6",
+		"VatName": "Jetalu aa jagat pradhan",
+		"VatNameGuj": "જેટલું આ જગત પ્રધાન",
+		"VatFile": "ch6291.html",
+		"VatNo": "291",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1477",
+		"ChId": "6",
+		"VatName": "Aa jagatnu sukh to",
+		"VatNameGuj": "આ જગતનું સુખ તો",
+		"VatFile": "ch6292.html",
+		"VatNo": "292",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1478",
+		"ChId": "6",
+		"VatName": "Swami kahe, vancho",
+		"VatNameGuj": "સ્વામી કહે, વાંચો",
+		"VatFile": "ch6293.html",
+		"VatNo": "293",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1479",
+		"ChId": "6",
+		"VatName": "Ek jane puchhyu je",
+		"VatNameGuj": "એક જણે પૂછ્યું જે",
+		"VatFile": "ch6294.html",
+		"VatNo": "294",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1480",
+		"ChId": "6",
+		"VatName": "Pruthvi gandhne muke pan",
+		"VatNameGuj": "પૃથ્વી ગંધને મૂકે પણ",
+		"VatFile": "ch6295.html",
+		"VatNo": "295",
+		"RefFile": ""
+	}
+]

@@ -1,0 +1,326 @@
+[
+	{
+		"VatId": "1512",
+		"ChId": "8",
+		"VatName": "Prathama to je hetu mate",
+		"VatNameGuj": "પ્રથમ તો જે હેતુ માટે ",
+		"VatFile": "ch8001.html",
+		"VatNo": "1",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1513",
+		"ChId": "8",
+		"VatName": "Aa brahmandna vairatpurushna",
+		"VatNameGuj": "આ બ્રહ્માંડના વૈરાટપુરુષનાં",
+		"VatFile": "ch8002.html",
+		"VatNo": "2",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1514",
+		"ChId": "8",
+		"VatName": "Ek to sanskar",
+		"VatNameGuj": "એક તો સંસ્કાર",
+		"VatFile": "ch8003.html",
+		"VatNo": "3",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1515",
+		"ChId": "8",
+		"VatName": "Aa bharatkhandma je je",
+		"VatNameGuj": "આ ભરતખંડમાં જે જે ",
+		"VatFile": "ch8004.html",
+		"VatNo": "4",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1516",
+		"ChId": "8",
+		"VatName": "Sarv jivpranimatrne lobh",
+		"VatNameGuj": "સર્વ જીવપ્રાણીમાત્રને લોભ",
+		"VatFile": "ch8005.html",
+		"VatNo": "5",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1517",
+		"ChId": "8",
+		"VatName": "Satsang char prakarno ",
+		"VatNameGuj": "સત્સંગ ચાર પ્રકારનો",
+		"VatFile": "ch8006.html",
+		"VatNo": "6",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1518",
+		"ChId": "8",
+		"VatName": "Ek vakhate em vat kari ",
+		"VatNameGuj": "એક વખતે એમ વાત કરી",
+		"VatFile": "ch8007.html",
+		"VatNo": "7",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1519",
+		"ChId": "8",
+		"VatName": "Ek same brahma, vishnu ",
+		"VatNameGuj": "એક સમે બ્રહ્મા, વિષ્ણુ ",
+		"VatFile": "ch8008.html",
+		"VatNo": "8",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1520",
+		"ChId": "8",
+		"VatName": "Bhagavan ne bhagavanna ",
+		"VatNameGuj": "ભગવાન ને ભગવાનના ",
+		"VatFile": "ch8009.html",
+		"VatNo": "9",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1521",
+		"ChId": "8",
+		"VatName": "Ek divas shivalalbhai",
+		"VatNameGuj": "એક દિવસ શિવલાલભાઈ",
+		"VatFile": "ch8010.html",
+		"VatNo": "10",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1522",
+		"ChId": "8",
+		"VatName": "Maharaje ath mahina sudhi ",
+		"VatNameGuj": "મહારાજે આઠ મહિના સુધી",
+		"VatFile": "ch8011.html",
+		"VatNo": "11",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1523",
+		"ChId": "8",
+		"VatName": "Ek same Maharaj kachchh",
+		"VatNameGuj": "એક સમે મહારાજ કચ્છ",
+		"VatFile": "ch8012.html",
+		"VatNo": "12",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1524",
+		"ChId": "8",
+		"VatName": "Ek vakhate gadhadama ",
+		"VatNameGuj": "એક વખતે ગઢડામાં",
+		"VatFile": "ch8013.html",
+		"VatNo": "13",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1525",
+		"ChId": "8",
+		"VatName": "Shabde karine sadhu thaki",
+		"VatNameGuj": "શબ્દે કરીને સાધુ થકી",
+		"VatFile": "ch8014.html",
+		"VatNo": "14",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1526",
+		"ChId": "8",
+		"VatName": "Samvat 1911ni salma",
+		"VatNameGuj": "સંવત 1911ની સાલમાં",
+		"VatFile": "ch8015.html",
+		"VatNo": "15",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1527",
+		"ChId": "8",
+		"VatName": "Samvat 1886ni salma",
+		"VatNameGuj": "સંવત 1886ની સાલમાં",
+		"VatFile": "ch8016.html",
+		"VatNo": "16",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1528",
+		"ChId": "8",
+		"VatName": "Ek vakhate swamie vat",
+		"VatNameGuj": "એક વખતે સ્વામીએ વાત ",
+		"VatFile": "ch8017.html",
+		"VatNo": "17",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1529",
+		"ChId": "8",
+		"VatName": "Ek vakhate swamie vat",
+		"VatNameGuj": "એક વખતે સ્વામીએ વાત",
+		"VatFile": "ch8018.html",
+		"VatNo": "18",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1530",
+		"ChId": "8",
+		"VatName": "Ek vakhate ame vata",
+		"VatNameGuj": "એક વખતે અમે વાત",
+		"VatFile": "ch8019.html",
+		"VatNo": "19",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1531",
+		"ChId": "8",
+		"VatName": "Ek samaye Maharaj kahe",
+		"VatNameGuj": "એક સમયે મહારાજ કહે ",
+		"VatFile": "ch8020.html",
+		"VatNo": "20",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1532",
+		"ChId": "8",
+		"VatName": "Ek vakhate vandama orada ",
+		"VatNameGuj": "એક વખતે વંડામાં ઓરડા",
+		"VatFile": "ch8021.html",
+		"VatNo": "21",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1533",
+		"ChId": "8",
+		"VatName": "Ek vakhate loyanu 9mu",
+		"VatNameGuj": "એક વખતે લોયાનું 9મું ",
+		"VatFile": "ch8022.html",
+		"VatNo": "22",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1534",
+		"ChId": "8",
+		"VatName": "Ek same Maharaj varatalma",
+		"VatNameGuj": "એક સમે મહારાજ વરતાલમાં",
+		"VatFile": "ch8023.html",
+		"VatNo": "23",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1535",
+		"ChId": "8",
+		"VatName": "Ek same gam alaiyama",
+		"VatNameGuj": "એક સમે ગામ અલૈયામાં",
+		"VatFile": "ch8024.html",
+		"VatNo": "24",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1536",
+		"ChId": "8",
+		"VatName": "Vidyao to anant prakarani",
+		"VatNameGuj": "વિદ્યાઓ તો અનંતપ્રકારની",
+		"VatFile": "ch8025.html",
+		"VatNo": "25",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1537",
+		"ChId": "8",
+		"VatName": "Ek vakhate madhynu 42mu",
+		"VatNameGuj": "એક વખતે મધ્યનું 42મું ",
+		"VatFile": "ch8026.html",
+		"VatNo": "26",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1538",
+		"ChId": "8",
+		"VatName": "Ek vakhate loyanu 13mu",
+		"VatNameGuj": "એક વખતે લોયાનું 13મું ",
+		"VatFile": "ch8027.html",
+		"VatNo": "27",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1539",
+		"ChId": "8",
+		"VatName": "Ek divas madhynu 24mu",
+		"VatNameGuj": "એક દિવસ મધ્યનું 24મું ",
+		"VatFile": "ch8028.html",
+		"VatNo": "28",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1540",
+		"ChId": "8",
+		"VatName": "Shrijimaharaje vedarasma",
+		"VatNameGuj": "શ્રીજીમહારાજે વેદરસમાં",
+		"VatFile": "ch8029.html",
+		"VatNo": "29",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1541",
+		"ChId": "8",
+		"VatName": "Prakrutipurushnu kary",
+		"VatNameGuj": "પ્રકૃતિપુરુષનું કાર્ય",
+		"VatFile": "ch8030.html",
+		"VatNo": "30",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1542",
+		"ChId": "8",
+		"VatName": "Mahapurush mahamaya sathe",
+		"VatNameGuj": "મહાપુરુષ મહામાયા સાથે ",
+		"VatFile": "ch8031.html",
+		"VatNo": "31",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1543",
+		"ChId": "8",
+		"VatName": "E shruti anusar",
+		"VatNameGuj": "એ શ્રુતિ અનુસાર",
+		"VatFile": "ch8032.html",
+		"VatNo": "32",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1544",
+		"ChId": "8",
+		"VatName": "Paratpar eva je",
+		"VatNameGuj": "પરાત્પર એવા જે ",
+		"VatFile": "ch8033.html",
+		"VatNo": "33",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1545",
+		"ChId": "8",
+		"VatName": "Bhagavanna svarupnu nirupan",
+		"VatNameGuj": "ભગવાનના સ્વરૂપનું નિરૂપણ ",
+		"VatFile": "ch8034.html",
+		"VatNo": "34",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1546",
+		"ChId": "8",
+		"VatName": "Adhyatmvartama purushottam",
+		"VatNameGuj": "અધ્યાત્મવાર્તામાં પુરુષોત્તમ",
+		"VatFile": "ch8035.html",
+		"VatNo": "35",
+		"RefFile": ""
+	},
+	{
+		"VatId": "1547",
+		"ChId": "8",
+		"VatName": "Aa panchabhutnu sharir",
+		"VatNameGuj": "આ પંચભૂતનું શરીર ",
+		"VatFile": "ch8036.html",
+		"VatNo": "36",
+		"RefFile": ""
+	}
+]

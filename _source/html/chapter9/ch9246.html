@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (246) આ જીવને સમાગમ વિના બળ ન આવે ને જ્ઞાન પણ થાય નહિ માટે સમાગમ કરે તો બધું સૂઝે. એક શાહુકાર ગુજરી ગયો પછી તેના ઘરમાં દારિદ્ર આવ્યું ને કાંઈ ખાવા ન રહ્યું. પછી તેના દીકરા પાસે બે હીરા હતા તે લઈને મામાને ગામ ગયો ને મામાને કહ્યું જે, ‘આ બે હીરા અમારે વેચવા છે.’ તે મામો ઝવેરી હતો, તેને જોતાં વેંત જ ખોટા છે એમ લાગ્યું, પણ બોલ્યો નહિ; કાં જે, ભાણેજ માને નહિ, ને મામાને પડાવી લેવા છે તે સારુ ખોટા કહે છે એમ ધારી મામાએ ભાણેજને કહ્યું જે, ‘તમે હમણાં આંહીં રહો, ઘરાક આવશે એટલે વેચી દઈશું.’ ભાણેજને કહે, ‘તું હાટે આવતો જાજે.’ પછી ભાણેજ પણ હાટે બેસે ને હીરા, માણેક, મોતી વગેરે ઝવેરાત લેવાય-દેવાય તે ભાણેજને દેખાડે; ને તે પણ તેમાં સરત રાખતો. પછી તો તેને પણ સાચા-ખોટા હીરાની ખબર પડી, ને તેના મામાને ખાત્રી થઈ જે, હવે બરાબર હુશિયાર થયો છે.
+ <br/><br/>
+ પછી એક દિવસ ઘરાક હીરા લેવા આવેલ તેને જોઈને મામાએ ભાણેજને કહ્યું, ‘ઓલ્યા તારા હીરા લઈ આવ તો આને આપીએ.’ ભાણેજ ઘેર ગયો ને તેની મા પાસેથી હીરાની ડાબલી લઈ ચાલ્યો આવતો હતો ત્યાં તેને ‘હીરાની કિંમત શું ઊપજશે ?’ એવો વિચાર થયો કે, તુરત જ ડાબલી ઉઘાડી ને જોયું તો ખોટા લાગ્યા. એટલે ઉકરડામાં ફગાવી દીધા. મામાએ પૂછ્યું, ‘લાવ્યો ?’ તો કહે, ‘મામા, એ તો કાંકરા હતા.’ મામા કહે, ‘લાવ તો ખરો.’ એટલે ભાણેજ કહે, ‘એ તો ઉકરડામાં નાખી દીધા.’ મામા કહે, ‘તેં મને બતાવ્યા તે દિવસ પણ તે કાંકરા હતા; પણ જો તે દિવસ મેં તને હીરા ખોટા છે એમ કહ્યું હોત તો મનાત નહિ ને તેં જો પરીક્ષા કરી તો હવે તેં જ નાખી દીધા ને ખોટા છે એમ તને જ જીવમાં થઈ ગયું.’ તેમ દેહ, લોક, ભોગ અને કુટુંબ એની મેળે સમાગમે ખોટું થઈ જાશે ને આંહીં અવાય છે તો સારું થાશે પણ બીજા શબ્દ સાંભળશું તો જેમ ગાયનો ચાર ચોરે વાઘ કર્યો તેમ થાશે. તેમ આપણામાં પણ કહેશે જે, ‘અરે, ત્યાં કયાં ગયા ? એનો સંગ કરશો નહીં.’ એમ ચાર-પાંચ જણ કહે ત્યાં મનાઈ જાય, પણ કોઈ આંખ ઉઘાડીને જોતું નથી જે, આ કહેનારા કેવા છે ? તેનું વર્તન કેવું છે, ને તેનાથી કેવા થયા છે ?
+ <br/><br/>
+ જેને જોઈયે તે આવો મોક્ષ માગવા રે લોલ,
+ <br/>
+ જુવો આંખ ઉઘાડીને વિવેકની રે લોલ,
+ <br/>
+ શીદ કરો છો ગોળ-ખોળ એક પાડ, નરનારી. જોઈ 0
+ <br/>
+ (કીર્તનસાર સાગર : 390)
+ <br/><br/>
+ જૂનાગઢમાં વશરામ ભક્ત કોઈકની દાઢી ઝાલીને વાતું કરતા એવું પ્રભુ ભજાવ્યાનું તાન હતું. વાદળીની પેઠે જીવ પલળે ત્યારે આ વાતું ઠરે. દેવતા કે મનુષ્યમાં કોઈનો દેહ રહેવાનો નથી. જાળિયાના અરજણ બાબરિયાને ધાવણો ભાળ્યો હતો તે પણ આવડો મોટો થયો ! માટે સાધુ સમાગમ વિના, મૂંઝવણ આવ્યા વિના રહે નહિ ને સુખ, શાંતિ પણ થાય નહીં.
+ <br/><br/>
+ સુરપુર, નરપુર, નાગપુર, એ તીન મે સુખ નાંહિ;
+ <br/>
+ કાં સુખ હરિ કે ચરણ મેં, કાં સુખ સંતન કે માંહિ.
+ <br/><br/>
+ બધેય <a href="#ex1" class="wordMeaning">ઓશલા કુટાય</a> છે.
+<br/><br/>
+  <a href="refch6084.html">પ્રકરણ 6 ની વાત 84</a>
+ 
+ 
+		</div>
+
+	</div>
+
+
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઓશલા કુટાય= માયાનાં બંધનનાં જ કાર્યો થાય, પછી પસ્તાઈ છાતી કુટવાની. 
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

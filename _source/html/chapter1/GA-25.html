@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">ગઢડા અંત્ય ૨૫: શ્રીજીની પ્રસન્નતાનું, ખરા ભક્તનું</h1>
+			<p class="text_gu">સંવત ૧૮૮૫ના કાર્તિક સુદિ ૧૦ દશમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં આથમણા દ્વારના ઓરડાની ઓસરીએ ઢોલિયા ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજે કૃપા કરીને એમ વાર્તા કરી જે, “‘ભગવાન સંબંધી ભક્તિ, ઉપાસના, સેવા, શ્રદ્ધા, ધર્મનિષ્ઠા એ આદિક જે જે કરવું તેમાં બીજા ફળની ઇચ્છા ન રાખવી,’ એમ સચ્છાસ્ત્રમાં કહ્યું છે તે તો સાચું, પણ એટલી તો ઇચ્છા રાખવી જે, ‘એણે કરીને મારી ઉપર ભગવાનની પ્રસન્નતા થાય,’ એટલી ઇચ્છા રાખવી. અને એવી ઇચ્છા રાખ્યા વિના અમથું કરે તો તેને તમોગુણી કહેવાય. માટે ભગવાનની ભક્તિ આદિક જે ગુણ તેણે કરીને ભગવત્પ્રસન્નતારૂપ ફળને ઇચ્છવું. અને જો એ વિના બીજી ઇચ્છા રાખે તો ચતુર્ધા મુક્તિ આદિક ફળની પ્રાપ્તિ થાય.</p>
+
+			<p class="text_gu">અને ભગવાનની જે પ્રસન્નતા તે ઘણા ઉપચારે કરીને જે ભક્તિ કરે તેની જ ઉપર થાય ને ગરીબ ઉપર ન થાય, એમ નથી; ગરીબ હોય ને શ્રદ્ધા સહિત જળ, પત્ર, ફળ, ફૂલ ભગવાનને અર્પણ કરે તો એટલામાં પણ રાજી થાય; કેમ જે, ભગવાન તો અતિ મોટા છે, તે જેમ કોઈક રાજા હોય તેના નામનો એક શ્લોક જ કોઈક કરી લાવે તો તેને ગામ આપે, તેમ ભગવાન તુરત રાજી થાય છે.</p>
+
+			<p class="text_gu">અને વળી ભગવાનનો ખરો ભક્ત તે કોણ કહેવાય? તો પોતાના દેહમાં કોઈક દીર્ઘ રોગ આવી પડે તથા અન્ન ખાવા ન મળે, વસ્ત્ર ન મળે ઇત્યાદિક <b>ગમે એટલું દુઃખ અથવા સુખ તે આવી પડે તો પણ ભગવાનની ઉપાસના-ભક્તિ, નિયમ-ધર્મ, શ્રદ્ધા એમાંથી રંચમાત્ર પણ મોળો ન પડે, રતીવા સરસ થાય, તેને ખરો હરિભક્ત કહીએ</b>.”</p>
+
+			<p class="text_gu">પછી શ્રીજીમહારાજને રાજબાઈએ પ્રશ્ન પુછાવ્યો જે, “હે મહારાજ! ક્યા ગુણે કરીને તમે રાજી થાઓ ને ક્યા દોષે કરીને કુરાજી થાઓ?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “આટલા તો વચનમાં દોષ છે. તે કયા? તો પોતાના અંતરમાં કાંઈક વિશેષ વર્તવાનું હોય તેનું અમને એક વાર કહી દેવું જે, ‘હે મહારાજ! તમે કહો તો હું આવી રીતે વર્તું;’ પણ વારંવાર ન કહેવું જે, ‘હે મહારાજ! હું આમ વર્તું કે આમ વર્તું, તે તમે કેમ મને કહેતા નથી?’ તે ન ગમે. અને મને પોતાનો ઇષ્ટદેવ જાણે ને વારે વારે મારા વેણ ઉપર વેણ લાવે તે ન ગમે. અને હું કોઈની આગળ વાત કરતો હઉં ને બોલાવ્યા વિના વચમાં બોલે તે ન ગમે. અને ભગવાનનું ધ્યાન કરવું, તથા ધર્મ પાળવો, ભક્તિ કરવી ઇત્યાદિક જે જે શુભ ક્રિયા કરવાની છે તેને જે ભગવાન ઉપર નાંખે જે, ‘ભગવાન કરાવશે તો થશે,’ તે ન ગમે. અને ‘આમ હું કરીશ, આમ હું કરીશ,’ એમ કેવળ પોતાનું જ બળ રાખે પણ ભગવાનનું બળ ન રાખે તે ન ગમે. અને જેને બોલ્યામાં પોતાના અંગનો ઠા ન હોય તે તો અતિશય ન ગમે. અને બીજાં વ્યાવહારિક કામ કરવાં હોય તેમાં તો લાજ તથા આળસ ન હોય ને ભગવાનની વાર્તા કરવી, કથા કરવી, કીર્તન ગાવવાં, તેમાં લાજ રાખે ને આળસ રાખે તે ન ગમે. અને ત્યાગનો અથવા ભક્તિનો અથવા કોઈ રીતનો જે અહંકાર બોલીમાં લાવે તે ન ગમે. અને સભા બેઠી હોય ત્યારે સૌથી છેલ્લો આવીને બેસે પણ પોતાને જ્યાં ઘટતું હોય ત્યાં ન બેસે, તે ન ગમે. તથા કોઈક મોટા તે સભામાં બેઠા હોય ને તેને કૂણી મારીને માગ કરીને પોતે બેસે તે ન ગમે. અને બાઈ માણસ હોય ને તે પોતાના અંગને ઢાંકીને લજ્જા સહિત વર્તે તે ગમે તથા ચાલે ત્યારે નીચી દ્રષ્ટિ રાખીને ચાલે પણ ફાટી દ્રષ્ટિ રાખે નહીં, તે ગમે. અને અમારાં દર્શન કરતા હોય ને કોઈ બાઈ-ભાઈ આવે અથવા કૂતરું નીસરે કે ઢોર નીસરે કે કાંઈક ખડખડે, તેની સામું વારંવાર દર્શન મૂકીને જુએ પણ એકદ્રષ્ટિએ દર્શન ન કરે, તેની ઉપર તો એવી રીસ ચડે જે, ‘શું કરીએ? સાધુ થયા, નહીં તો એનું કાંઈક તાડન કરીએ.’ પણ તે તો થાય નહીં; કેમ જે, સાધુને કોઈનું તાડન કરવું એ અતિ અયોગ્ય કર્મ છે. અને જે કપટ રાખે પણ પોતાના મનના જે સંકલ્પ તે જેને કહેવા યોગ્ય હોય તેની આગળ પણ કહે નહીં, તે ન ગમે. અને માન તથા ક્રોધ તથા કોઈથી દબાઈને રહેવું તે શું? તો પોતાના મનમાં જેવું હોય તેવું બીજાથી દબાઈને કહેવાય નહીં; એ ત્રણ વાનાં તો અતિશય ભૂંડાં છે. અને હરિભક્તને માંહોમાંહી બરોબરિયાપણું રહે, પણ એક-એકનો ભાર ન આવે એ પણ અતિશય ભૂંડું છે.”</p>
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

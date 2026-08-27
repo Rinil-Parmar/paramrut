@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+ <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (207) મહારાજ સાથે મુક્તાનંદસ્વામીને દશ વરસ સુધી આ જ્ઞાનનો ભેદ રહ્યો હતો. પછી ત્રણ અંગનું <a href="GM-62.html">મધ્યનું 62મું</a> વચનામૃત સમજાવ્યું ત્યારે, <br/><br/>
+ 
+ મારો મત કહું તે સાંભળો વ્રજવાસીજી. <br/><br/>
+ 
+ એ કીર્તન કર્યું.
+ 
+ <br/><br/>
+ 
+ વાગ્વૈખરી શબ્દઝરી શાસ્ત્રવ્યાખ્યાનકૌશલમ્‌  ।  <br/>  
+ 
+ વૈદુષ્યં વિદુષાં  તદ્‌તદ્‌  ભુત્કયે ન તુ મુત્કયે   ।।
+ 
+ <br/>
+ 
+ (વિવેકચૂડામણિ : 60)
+ 
+ <br/>
+ 
+ અર્થ :- જેમ વીણાનું રૂપ, લાવણ્ય તથા તેનું વાદન મનુષ્યોના મનોરંજનનું સાધન બની શકે, તેથી વિશેષ નહિ; તેમ વિદ્વાનોની વાક્કુશળતા, શબ્દોની ધારાવાહી, શાસ્ત્ર વ્યાખ્યાનમાં કુશળતા, વિદ્વત્તા ભોગનું સાધન બની શકે, મોક્ષનું નહિ.
+ 
+ <br/><br/>
+ 
+ એમ જ્ઞાનમાત્રનો ઉપયોગ વિષય પ્રાપ્ત કરવાના તાન ઉપર છે તે,
+ 
+ <br/><br/>
+ 
+ સ્વામિનારાયણનું     સ્મરણ    કરતાં;<br/>
+ 
+ શ્રોતા ને વક્તા બેઉ સમજ્યા વિનાના,<br/>
+ 
+ પેટને અર્થે પુરાણી રે. સ્વામિ0<br/>
+ 
+ (કીર્તનસાર સાગર : 133) <br/><br/>
+ 
+ એમ જાણવું. અક્ષરરૂપ થઈને પુરુષોત્તમનારાયણની ઉપાસના કરવી, એ રીત તો મહારાજે જ પ્રવર્તાવી છે, પણ પૂર્વે કોઈએ એવો ચોખ્ખો નિર્ણય કર્યો જ નથી. માટે મહારાજ અવતારમાત્રના અવતારી પુરુષોત્તમનારાયણ છે અને આ તમને વાતું કરે છે તે જ મૂળ અક્ષરધામ છે. તે જૂના ખરડામાં પરમહંસોને નામ દીધાં છે, તેમાં ગોપાળાનંદસ્વામીને શ્રીકૃષ્ણ, મુક્તાનંદસ્વામીને નારદજી, નિત્યાનંદસ્વામીને વ્યાસજી, શુકમુનિને શુકદેવજી, બ્રહ્માનંદસ્વામીને બૃહસ્પતિ, દાદાખાચરને અર્જુન, મૂળજી બ્રહ્મચારીને હનુમાન, ચૈતન્યાનંદસ્વામીને દત્તાત્રેય, જીવુબા-લાડુબાને રાધા-લક્ષ્મી એવાં જુદાં જુદાં નામો દીધાં છે; પણ તેમાં અમને એકને જ અક્ષર કહ્યા છે. મહારાજે પોતાના યોગમાં જે જે આવ્યા તે સર્વને પોતાના સંબંધે કરીને મુક્તપણાને પમાડ્યા. તે ગોપાળાનંદસ્વામીએ આ વાતનો મર્મ જાણ્યો હતો; તેથી પોતાનામાં હેતવાળા બધાને આંહીં જૂનાગઢ મોકલ્યા છે. માટે જીવને બ્રહ્મરૂપ, ગુણાતીત કરવા ઉપર જ મહારાજને બહુ આગ્રહ. માટે દિવસમાં એક વાર તો આ વાતનું મનન કરવું જ. આ વાતનું બીજ હશે તો બીજબળ કોઈક જન્મે ઊગી આવશે. અમારો દેહ નહિ હોય ત્યારે જો વાતનું મનન નહિ રાખે તો સૌ ક્રિયારૂપ થઈ જાશે, અને પોતાને બ્રહ્મરૂપ માનવું એ દિશ રહેશે નહિ.  
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (296) દેહ હોય તે એકાદો રોગ તો હોય. આ તો ગાડે ઉચાળા છે એમ પણ એક વિચારવું. બ્રાહ્મણ વટલે, પણ મુસલમાન ન વટલે, તેમ મોટા શહેરમાં સત્સંગ ન રહે ને સત્સંગને ઘસારો છે, કાંઈ કુસંગને નથી. એક ગામમાં અમે ગયા ત્યાં પટેલ બેસવા આવ્યો. તે કહે જે, ‘અમારે ઘેર <a href="#ex1" class="wordMeaning">દૂધાધારી</a> બાવો બહુ સારા છે.’ ત્યારે અમે પૂછયું જે, ‘આ ગામમાં દૂધાધારી કેટલા છે?’ પટેલ કહે, ‘બાવો એક જ છે.’ ત્યારે અમે કહ્યું જે, ‘છોકરાં, ગલૂડિયાં ને પાડરડાં એ સર્વે દૂધાધારી છે, એમાં શું ?’ ત્યારે પટેલ કહે, ‘તમે કાંઈ પરચો આપો તો માનીએ.’ ત્યારે અમે કહ્યું જે, ‘પરચો તો દૂધાધારી બાવો આપશે.’ પછી છ મહિના થયા ત્યાં દૂધાધારી બાવો પટેલની દીકરીને લઈને વયો ગયો; એમ પરચો દીધો. બ્રહ્મચર્યવ્રત રાખવું એ ઘણું કઠણ છે. અષ્ટ પ્રકારે બ્રહ્મચર્યવ્રત રાખવું, એ જ મોટો પરચો છે. સ્ત્રીરૂપ માયાનું બળ તો જુઓ ! મોટા મોટા રાજાઓ રાવણ, નહુષ આદિક શૂરવીર, દિશાઓના જીતનારને પગે કરીને કચરી નાખ્યા, તેમ સ્ત્રીએ ભૃકુટિના વિલાસે કરીને સૌને કચરી નાખ્યા છે; માટે સ્ત્રીનો સંગ કે વિશ્ર્વાસ ન કરવો.
+   <br/><br/>
+નન્વગ્નિઃ પ્રમદા નામ ઘૃતકુમ્ભસમઃ પુમાન્ । <br/>
+સુતામપિ રહો જહ્યાદન્યદા યાવદર્થકૃત્ ॥
+
+
+  <br/>
+ (શ્રીમદ્ ભાગવત : 7/12/9)
+   <br/>
+ અર્થ:- ખરેખર સુંદર સ્ત્રી અગ્નિ સમાન છે અને પુરુષ ઘી ભરેલા ઘડા જેવો છે. આથી એકાંતમાં તો એણે પોતાની ક્ધયા (પુત્રી) સાથે પણ રહેવું જોઈએ નહિ તથા બીજે પણ જેટલું પ્રયોજન હોય એટલી વાર સુધી જ રહેવું. 
+   <br/><br/>
+ સ્ત્રી છે તે અગ્નિ છે ને પુરુષ છે તે ઘી છે; માટે પોતાની દીકરી સાથે પણ એકાંતે ન રહેવું.
+   <br/><br/>
+અનેકચિત્તવિભ્રાન્તા મોહજાલસમાવૃતાઃ । <br/>
+પ્રસક્તાઃ કામભોગેષુ પતન્તિ નરકેઽશુચૌ ॥ 
+
+   <br/>
+
+   (ભગવદ્ગીતા : 16/16)
+   <br/>
+ અર્થ :- અજ્ઞાનથી મોહિત થયેલા અનેક પ્રકારે ભ્રમિત ચિત્તવાળા અને મોહજાળથી ઘેરાયેલા, કામભોગમાં અત્યંત આસક્ત થયેલા તે આસુરી લોકો અપવિત્ર નરકમાં પડે છે. 
+   <br/><br/>
+ જે પુરુષ કામને વિશે આસક્ત થાય છે તે અશુચિ એવા નરકમાં પડે છે.
+   <br/><br/>
+યોષિદ્ધિરણ્યાભરણામ્બરાદિ દ્ર વ્યેષુ માયારચિતેષુ મૂઢઃ । <br/>
+પ્રલોભિતાત્મા હ્યુપભોગબુદ્ધ્યા પતઙ્ગવન્નશ્યતિ નષ્ટદૃષ્ટિઃ ॥
+
+
+   <br/>
+   (શ્રીમદ્ભાગવત : 11/8/8)
+  <br/>
+ અર્થ :- સ્ત્રી, સુવર્ણ, ભૂષણ અને વસ્ત્રાદિ માયારૂપી પદાર્થોમાં જે મૂઢ ભોગબુદ્ધિથી ફસાયો છે, તે વિવેકબુદ્ધિને ખોઈને પતંગિયાની માફક નષ્ટ થઈ જાય છે.
+  <br/><br/>
+ સ્ત્રીને વિશે કામે કરીને જે પુરુષનું મન લોભાણું છે, તે પતંગની પેઠે નાશ પામે છે, માટે તેનો સંગ કરવાની સર્વે શાસ્ત્ર ના પાડે છે.
+  <br/><br/>
+ધ્યાયતો વિષયાન્પુંસઃ સઙ્ગસ્તેષૂપજાયતે । <br/>
+સઙ્ગાત્સઞ્જાયતે કામઃ કામાત્ક્રોધોઽભિજાયતે ॥ 
+
+
+  <br/>
+(ભગવદ્ગીતા : 2/62)
+   <br/>
+ અર્થ :- વિષયોનું ચિંતન કરતા પુરુષ તેઓમાં આસક્ત થાય છે, આસક્તિથી કામના થાય છે અને કામનાથી ક્રોધ જન્મે છે.
+   <br/><br/>
+ક્રોધાદ્ભવતિ સમ્મોહઃ  સમ્મોહાત્સ્મૃતિવિભ્રમઃ । <br/>
+સ્મૃતિભ્રંશાદ્ બુદ્ધિનાશો બુદ્ધિનાશાત્પ્રણશ્યતિ ॥ 
+
+   <br/>
+   (ભગવદ્ગીતા : 2/63)
+   <br/>
+ અર્થ :- ક્રોધથી મૂઢતા થાય છે, મૂઢતાથી સ્મૃતિનો નાશ થાય છે, સ્મૃતિના નાશથી બુદ્ધિનો નાશ થાય છે અને બુદ્ધિના નાશથી (મનુષ્ય) સંપૂર્ણ નાશ પામે છે.
+   <br/><br/>
+ પ્રથમ વિષયનું ધ્યાન થાય; પછી વિષયનો સંગ થાવાથી કામ ઊપજે છે, કામથી ક્રોધ ઊપજે છે, ક્રોધમાંથી મોહ થાય છે, મોહમાંથી સ્મૃતિમાં વિભ્રમ થાય છે; સ્મૃતિના વિભ્રમથી બુદ્ધિનો નાશ થાય છે ને બુદ્ધિના નાશથી જીવનો નાશ થાય છે; માટે કુશળ ઇચ્છો તો સ્ત્રીનો સંગ કરશો નહિ. મોઢું જોયે વિકાર થાય, તો પ્રસંગે શું ન થાય ? સ્ત્રીને સત્સંગ કરાવ્યાની લાલચ રાખવી નહિ. ગુરુ કહે તો ય તેનો સંગ થાવા ન દેવો, સંગ થયે કોઈનો ઠા રહ્યો નથી ને રહેશે પણ નહિ. મહારાજ કહે, ‘આટલું અમારું વચન જરૂરાજરૂર માનજો, તો જાણીએ તમે અમારી સર્વે સેવા કરી, નહિ તો તમારે અને અમારે લેવા દેવા નથી.’
+   <br/><br/>
+<a href="GP-18.html" class="wordMeaning">વચ.ગ.પ્ર.18 </a>  <br/> 
+<a href="refch11282.html" class="wordMeaning"> પ્રકરણ 11 ની વાત 282 </a>  
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+    1 દૂધાધારી= ફક્ત દૂધપર જીવનાર.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

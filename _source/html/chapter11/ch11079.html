@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (79) ધોલેરાના મંદિરની વાત કરી જે, મહારાજે ક્યારે કહ્યું છે જે, વ્યાજ ખાઈ વેપાર કરવો ને ગામ ગરાસ રાખવા ? તે જેટલા મંદિરવાળા મોટેરાએ આજ્ઞા લોપી છે તેટલું સત્સંગનું ભૂંડું કર્યું છે. મંદિરનો વહેવાર તો મહારાજે કેવળ ધર્માદા ઉપર રાખ્યો છે. તે <a href="#ex1" class="wordMeaning">‘અંતે લૂણી ધ્રો લઈ ગઈ.’</a> એમ થયું છે. આ મંદિર તો સોનાને પતરે મઢાશે ને ગાડીએ રૂપિયા ચાલ્યા આવશે અને સાધુને ધર્માદા માટે કહેવું ને માગવું નહિ પડે; પણ વહેવારિક (વ્યાવહારિક) બુદ્ધિવાળા મોટા થઈ બેઠા છે અને મહારાજની આજ્ઞા લોપે છે તે ધ્યાન, ભજન, કથાવાર્તા કરી ભગવાન પરાયણ વરતતા નથી; અને દ્રવ્યની હાયવોય કર્યા કરે છે, ને જો કોઈક કહે તો સોરી પાડે છે કે, ‘દેવમંદિરનો વહેવાર માળા ફેરવે ન ચાલે !’ પણ અમારું તો આંહીં ભગવાને કથાવાર્તાથી જ ચલાવ્યું છે. <br/> <br/>
+ 
+ તે પ્રથમ આ મંદિર કરવા આવ્યા ત્યારે ગોપાળાનંદસ્વામી નિરંતર વાતું જ કરતા; અને તુળસીનાં માંજર મૂર્તિ ઉપર ચડાવી શિખર કરતા. ને કોઈકે પૂછ્યું જે, ‘સ્વામી, શું કરો છો ?’ ત્યારે ગોપાળાનંદસ્વામી કહે જે, ‘મંદિરનું શિખર કરીએ છીએ !’ ત્યારે <a href="#ex1" class="wordMeaning">અખતરડાહ્યા</a> કહે જે, ‘ગોપાળાનંદસ્વામી મંદિર કરવા નથી આવ્યા, પણ વાતું કરી રમત કરવા આવ્યા છે.’ પણ મોટાની ક્રિયા જીવ શું જાણી શકે ? અમે પણ પ્રથમ આંહીં આવ્યા તે વખતે પાણા ભાંગવા હથોડી પણ નહોતી, તે પાણેથી પાણો ભાંગતા અને ધર્માદા માટે કોઈને ઉપદેશ કર્યો નથી, ને આફુરડું આટલું થઈ ગયું છે અને હજુ સૌથી સર્વોપરી બધા પ્રકારે થાશે. અમે તો દુર્જનનો સંગ મુકાવી, સત્સંગ પ્રધાન કરાવી, ભગવાન પરાયણ કરીએ છીએ અને જ્યારે એવા શુદ્ધ હરિજન થાશે ત્યારે વગર ક્હ્યે સત્સંગ વગર બીજે નહિ જ વાવરે. એથી મંદિરને સમાસ છે અને જીવ અને સત્સંગ વૃદ્ધિ પામે છે. મહારાજે એમ જ કર્યું છે ત્યારે આટલું બધું થયું છે, પણ બીજી રીતે કર્યું નથી અને અમે પણ એ જ રીતે કરીએ છીએ કે, ભગવાન મુખ્ય અને વહેવાર પછી. 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 અંતે લૂણી ધ્રો લઈ ગઈ= અસંભવિત વાત બનવી, નબળી પરિસ્થિતિ મજબૂત સ્થિતિને અસર કરે છે.  <br/>
+ 2 અખતરડાહ્યા= દોઢડાહ્યા.
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

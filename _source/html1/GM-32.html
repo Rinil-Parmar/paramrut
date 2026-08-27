@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા મધ્ય ૩૨ - થોરના ઝાડનું, નિર્વિઘ્ન ભક્તિનું</h1>
+			
+<p class=“text_gu”> 
+સંવત ૧૮૮૦ના શ્રાવણ સુદિ ૫ પંચમીને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં પોતાને ઉતારે વિરાજમાન હતા અને શ્રીજીમહારાજે અંગને વિષે સર્વ શ્વેત વસ્ત્ર પહેર્યાં હતાં અને મસ્તકને ઉપર કાળા છેડાની ધોતલી બાંધી હતી ને કંઠને વિષે પુષ્પના હાર વિરાજમાન હતા તથા કર્ણને ઉપર પુષ્પના ગુચ્છ વિરાજમાન હતા તથા મસ્તક ઉપર પુષ્પના તોરા વિરાજમાન હતા અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p> 
+<p class=“text_gu”> 
+પછી શ્રીજીમહારાજ સર્વે હરિભક્ત પ્રત્યે બોલતા હવા જે, “આ સંસારને વિષે પોતાનાં કુટુંબીનો સંબંધ છે તે તો જેમ થોરનું ઝાડ હોય અથવા વડનું કે પીંપરનું ડાળ હોય તે એક ઠેકાણેથી કાપીને બીજે ઠેકાણે રોપીએ તો ઊગીને ઝાડ થાય; અને આંબો તથા લીંબડો હોય ને તેને એક વાર કાપ્યો એટલે ફરીને ચોંટે નહીં. તેમ કુટુંબી વિના બીજાનો જે સંબંધ છે તે તો આંબાના ઝાડના જેવો છે, તે એક વાર કાપ્યો એટલે ફરીને ચોંટે નહીં; અને કુટુંબીનો સંબંધ છે તે તો થોરના ને વડના ઝાડ જેવો છે, તે કાપી નાખ્યો હોય તો પણ ધરતીમાં પડ્યો પડ્યો પણ પાલવ્યા વિના રહે નહીં. માટે એ કુટુંબીનો સંબંધ તો તો ટળે, જો સ્થૂળ, સૂક્ષ્મ અને કારણ એ ત્રણ દેહ થકી નોખો એવો જે આ દેહને વિષે જીવાત્મા તેને પોતાનું રૂપ જાણીને, તેને વિષે ભગવાનની મૂર્તિને ધારીને ને જાતિ, વર્ણ, આશ્રમ તેના માનને મૂકીને કેવળ ભગવાનના સ્મરણને વિષે તત્પર થાય તો કુટુંબીનો સંબંધ ચોખો ટળે; તે વિના બીજો ઉપાય કોઈ નથી.
+</p> 
+<p class=“text_gu”> 
+“અને વળી <b>જીવનું જે કલ્યાણ થાય અને જીવ માયાને તરીને બ્રહ્મસ્વરૂપ થાય તેનું કારણ તો પુરુષોત્તમ એવા જે વાસુદેવ ભગવાન તેના પ્રત્યક્ષ સ્વરૂપનું જ્ઞાન, ધ્યાન, કીર્તન અને કથાદિક એ જ છે; ને એણે કરીને જ એ જીવ છે તે માયાને તરે છે અને અતિ મોટાઈને પામે છે અને ભગવાનનું જે અક્ષરધામ તેને પામે છે.</b> અને આત્મનિષ્ઠા, વૈરાગ્ય ને ધર્મ તે તો ભગવાનની ભક્તિનાં સહાયરૂપ ઉપકરણ છે, પણ ભગવાનની ભક્તિ વિના એકલો વૈરાગ્ય તથા આત્મનિષ્ઠા તથા ધર્મ તે જીવને માયા તર્યાનું સાધન નથી. અને જો અતિશય ધર્મ, આત્મનિષ્ઠા ને વૈરાગ્ય ન હોય ને એકલી ભગવાનની ભક્તિ હોય તો પણ એ જીવનું કલ્યાણ થાય ને માયાને તરે, એટલો ધર્માદિક થકી ભક્તિને વિષે વિશેષ છે. તો પણ ધર્માદિક અંગનું સહાયપણું હોય તો એ ભક્તિને વિષે કોઈ વિઘ્ન થતું નથી અને જો ધર્માદિક અંગનું સહાયપણું ન હોય તો વિષમ દેશકાળાદિકે કરીને ભક્તિને વિષે વિઘ્ન જરૂર થાય છે. તે માટે ધર્માદિક અંગે સહિત ભક્તિ કરવી. અને એવી રીતે ભક્તિને કરતો જે ભક્ત તેને પણ જો ભૂંડાં દેશ, કાળ, ક્રિયા ને સંગ છે તેને વિષે પ્રવર્તાય તો ભગવાનનો ભક્ત હોય તેનું પણ અંતર ડોળાઈ જાય ને તેના સ્વભાવનો ઠા ન રહે. માટે ભૂંડો દેશ, ભૂંડો કાળ, ભૂંડી ક્રિયા અને ભૂંડો સંગ તેનો ત્યાગ કરીને રૂડો દેશ, રૂડો કાળ, રૂડો સંગ, રૂડી ક્રિયા તેને વિષે સદા પ્રવર્તવું પણ ભૂંડાં દેશાદિકનો સંગ કરવો જ નહીં.”
+</p> 
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

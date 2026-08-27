@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+	<ul class="reader_tools noselect">
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<!-- Added This line -->				
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+		<li><button  onClick="javascript: history.go(-1)" >X</button></li>
+	</ul>
+		<div id="bodytext" style="position:relative">
+		<h1 class="title_gu">ગઢડા પ્રથમ ૫ - ધ્યાનના આગ્રહનું</h1>
+
+			<p class="text_gu">
+
+સંવત ૧૮૭૬ના માગશર સુદિ ૮ અષ્ટમીને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ પરમહંસ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજ બોલ્યા જે, “રાધિકાએ સહિત એવા જે શ્રીકૃષ્ણ ભગવાન તેનું ધ્યાન કરવું. અને તે ધ્યાન કરતાં મૂર્તિ હૃદાને વિષે ન દેખાય તો પણ ધ્યાન કરવું; પણ કાયર થઈને તે ધ્યાનને મૂકી દેવું નહીં. એવી રીતના જે આગ્રહવાળા છે તેની ઉપર ભગવાનની મોટી કૃપા થાય છે અને એની ભક્તિએ કરીને ભગવાન એને વશ થઈ જાય છે.”
+</p>
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

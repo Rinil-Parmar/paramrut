@@ -1,0 +1,326 @@
+[
+    {
+      "VatId": "1512",
+      "ChId": "8",
+      "VatName": "Prathama to je hetu mate",
+      "VatNameGuj": "પ્રથમ તો જે હેતુ માટે",
+      "VatFile": "ch08001.txt",
+      "VatNo": "1",
+      "VatNameHindi": "प्रथम तो जिस हेतु "
+    },
+    {
+      "VatId": "1513",
+      "ChId": "8",
+      "VatName": "Aa brahmandna vairatpurushna",
+      "VatNameGuj": "આ બ્રહ્માંડના વૈરાટપુરુષનાં",
+      "VatFile": "ch08002.txt",
+      "VatNo": "2",
+      "VatNameHindi": "इस ब्रह्माण्ड के वैराटपुरु"
+    },
+    {
+      "VatId": "1514",
+      "ChId": "8",
+      "VatName": "Ek to sanskar",
+      "VatNameGuj": "એક તો સંસ્કાર",
+      "VatFile": "ch08003.txt",
+      "VatNo": "3",
+      "VatNameHindi": "एक तो संस्कार, दूसरा आशीर्"
+    },
+    {
+      "VatId": "1515",
+      "ChId": "8",
+      "VatName": "Aa bharatkhandma je je",
+      "VatNameGuj": "આ ભરતખંડમાં જે જે",
+      "VatFile": "ch08004.txt",
+      "VatNo": "4",
+      "VatNameHindi": "इस भरतखण्ड में जो जो आचार्"
+    },
+    {
+      "VatId": "1516",
+      "ChId": "8",
+      "VatName": "Sarv jivpranimatrne lobh",
+      "VatNameGuj": "સર્વ જીવપ્રાણીમાત્રને લોભ",
+      "VatFile": "ch08005.txt",
+      "VatNo": "5",
+      "VatNameHindi": "सर्व जीवप्राणीमात्र को लोभ"
+    },
+    {
+      "VatId": "1517",
+      "ChId": "8",
+      "VatName": "Satsang char prakarno",
+      "VatNameGuj": "સત્સંગ ચાર પ્રકારનો",
+      "VatFile": "ch08006.txt",
+      "VatNo": "6",
+      "VatNameHindi": "सत्संग चार प्रकार का है। उ"
+    },
+    {
+      "VatId": "1518",
+      "ChId": "8",
+      "VatName": "Ek vakhate em vat kari",
+      "VatNameGuj": "એક વખતે એમ વાત કરી",
+      "VatFile": "ch08007.txt",
+      "VatNo": "7",
+      "VatNameHindi": "एक बार ऐसी बात कही, कि 'शि"
+    },
+    {
+      "VatId": "1519",
+      "ChId": "8",
+      "VatName": "Ek same brahma, vishnu",
+      "VatNameGuj": "એક સમે બ્રહ્મા, વિષ્ણુ",
+      "VatFile": "ch08008.txt",
+      "VatNo": "8",
+      "VatNameHindi": "एक बार ब्रह्मा, विष्णु और "
+    },
+    {
+      "VatId": "1520",
+      "ChId": "8",
+      "VatName": "Bhagavan ne bhagavanna",
+      "VatNameGuj": "ભગવાન ને ભગવાનના",
+      "VatFile": "ch08009.txt",
+      "VatNo": "9",
+      "VatNameHindi": "भगवान तथा भगवान के एकान्ति"
+    },
+    {
+      "VatId": "1521",
+      "ChId": "8",
+      "VatName": "Ek divas shivalalbhai",
+      "VatNameGuj": "એક દિવસ શિવલાલભાઈ",
+      "VatFile": "ch08010.txt",
+      "VatNo": "10",
+      "VatNameHindi": " एक दिन शिवलालभाई गोपालानन"
+    },
+    {
+      "VatId": "1522",
+      "ChId": "8",
+      "VatName": "Maharaje ath mahina sudhi",
+      "VatNameGuj": "મહારાજે આઠ મહિના સુધી",
+      "VatFile": "ch08011.txt",
+      "VatNo": "11",
+      "VatNameHindi": " महाराज ने आठ महीने तक साध"
+    },
+    {
+      "VatId": "1523",
+      "ChId": "8",
+      "VatName": "Ek same Maharaj kachchh",
+      "VatNameGuj": "એક સમે મહારાજ કચ્છ",
+      "VatFile": "ch08012.txt",
+      "VatNo": "12",
+      "VatNameHindi": " एक बार महाराज ने कच्छ में"
+    },
+    {
+      "VatId": "1524",
+      "ChId": "8",
+      "VatName": "Ek vakhate gadhadama",
+      "VatNameGuj": "એક વખતે ગઢડામાં",
+      "VatFile": "ch08013.txt",
+      "VatNo": "13",
+      "VatNameHindi": " एक बार गढ़पुर में महाराज "
+    },
+    {
+      "VatId": "1525",
+      "ChId": "8",
+      "VatName": "Shabde karine sadhu thaki",
+      "VatNameGuj": "શબ્દે કરીને સાધુ થકી",
+      "VatFile": "ch08014.txt",
+      "VatNo": "14",
+      "VatNameHindi": " साधु के शब्द द्वारा ज्ञान"
+    },
+    {
+      "VatId": "1526",
+      "ChId": "8",
+      "VatName": "Samvat 1911ni salma",
+      "VatNameGuj": "સંવત 1911ની સાલમાં",
+      "VatFile": "ch08015.txt",
+      "VatNo": "15",
+      "VatNameHindi": " संवत् १९११ की साल में रघु"
+    },
+    {
+      "VatId": "1527",
+      "ChId": "8",
+      "VatName": "Samvat 1886ni salma",
+      "VatNameGuj": "સંવત 1886ની સાલમાં",
+      "VatFile": "ch08016.txt",
+      "VatNo": "16",
+      "VatNameHindi": " संवत् १८८६ की साल में जब "
+    },
+    {
+      "VatId": "1528",
+      "ChId": "8",
+      "VatName": "Ek vakhate swamie vat",
+      "VatNameGuj": "એક વખતે સ્વામીએ વાત",
+      "VatFile": "ch08017.txt",
+      "VatNo": "17",
+      "VatNameHindi": " एक बार स्वामीजी ने कहा कि"
+    },
+    {
+      "VatId": "1529",
+      "ChId": "8",
+      "VatName": "Ek vakhate swamie vat",
+      "VatNameGuj": "એક વખતે સ્વામીએ વાત",
+      "VatFile": "ch08018.txt",
+      "VatNo": "18",
+      "VatNameHindi": " एक बार स्वामीजी ने कहा, क"
+    },
+    {
+      "VatId": "1530",
+      "ChId": "8",
+      "VatName": "Ek vakhate ame vata",
+      "VatNameGuj": "એક વખતે અમે વાત",
+      "VatFile": "ch08019.txt",
+      "VatNo": "19",
+      "VatNameHindi": " एक बार हमने बात कही, कि ध"
+    },
+    {
+      "VatId": "1531",
+      "ChId": "8",
+      "VatName": "Ek samaye Maharaj kahe",
+      "VatNameGuj": "એક સમયે મહારાજ કહે",
+      "VatFile": "ch08020.txt",
+      "VatNo": "20",
+      "VatNameHindi": " एक बार महाराज ने कहा कि, "
+    },
+    {
+      "VatId": "1532",
+      "ChId": "8",
+      "VatName": "Ek vakhate vandama orada",
+      "VatNameGuj": "એક વખતે વંડામાં ઓરડા",
+      "VatFile": "ch08021.txt",
+      "VatNo": "21",
+      "VatNameHindi": " एक बार धर्मशाला के कमरों "
+    },
+    {
+      "VatId": "1533",
+      "ChId": "8",
+      "VatName": "Ek vakhate loyanu 9mu",
+      "VatNameGuj": "એક વખતે લોયાનું 9મું",
+      "VatFile": "ch08022.txt",
+      "VatNo": "22",
+      "VatNameHindi": " एक बार लोया का ९वाँ वचनाम"
+    },
+    {
+      "VatId": "1534",
+      "ChId": "8",
+      "VatName": "Ek same Maharaj varatalma",
+      "VatNameGuj": "એક સમે મહારાજ વરતાલમાં",
+      "VatFile": "ch08023.txt",
+      "VatNo": "23",
+      "VatNameHindi": " एक बार महाराज वड़ताल में "
+    },
+    {
+      "VatId": "1535",
+      "ChId": "8",
+      "VatName": "Ek same gam alaiyama",
+      "VatNameGuj": "એક સમે ગામ અલૈયામાં",
+      "VatFile": "ch08024.txt",
+      "VatNo": "24",
+      "VatNameHindi": " एक बार अलैया गाँव में महा"
+    },
+    {
+      "VatId": "1536",
+      "ChId": "8",
+      "VatName": "Vidyao to anant prakarani",
+      "VatNameGuj": "વિદ્યાઓ તો અનંતપ્રકારની",
+      "VatFile": "ch08025.txt",
+      "VatNo": "25",
+      "VatNameHindi": " विद्याएँ तो अनन्त प्रकार "
+    },
+    {
+      "VatId": "1537",
+      "ChId": "8",
+      "VatName": "Ek vakhate madhynu 42mu",
+      "VatNameGuj": "એક વખતે મધ્યનું 42મું",
+      "VatFile": "ch08026.txt",
+      "VatNo": "26",
+      "VatNameHindi": " एक बार वचनामृत ग. मध्य का"
+    },
+    {
+      "VatId": "1538",
+      "ChId": "8",
+      "VatName": "Ek vakhate loyanu 13mu",
+      "VatNameGuj": "એક વખતે લોયાનું 13મું",
+      "VatFile": "ch08027.txt",
+      "VatNo": "27",
+      "VatNameHindi": " स्वामीजी ने एक बार वचनामृ"
+    },
+    {
+      "VatId": "1539",
+      "ChId": "8",
+      "VatName": "Ek divas madhynu 24mu",
+      "VatNameGuj": "એક દિવસ મધ્યનું 24મું",
+      "VatFile": "ch08028.txt",
+      "VatNo": "28",
+      "VatNameHindi": " एक दिन वचनामृत ग. मध्य का"
+    },
+    {
+      "VatId": "1540",
+      "ChId": "8",
+      "VatName": "Shrijimaharaje vedarasma",
+      "VatNameGuj": "શ્રીજીમહારાજે વેદરસમાં",
+      "VatFile": "ch08029.txt",
+      "VatNo": "29",
+      "VatNameHindi": " श्रीजीमहाराज ने 'वेदरस' म"
+    },
+    {
+      "VatId": "1541",
+      "ChId": "8",
+      "VatName": "Prakrutipurushnu kary",
+      "VatNameGuj": "પ્રકૃતિપુરુષનું કાર્ય",
+      "VatFile": "ch08030.txt",
+      "VatNo": "30",
+      "VatNameHindi": " प्रकृतिपुरुष का कार्य बृह"
+    },
+    {
+      "VatId": "1542",
+      "ChId": "8",
+      "VatName": "Mahapurush mahamaya sathe",
+      "VatNameGuj": "મહાપુરુષ મહામાયા સાથે",
+      "VatFile": "ch08031.txt",
+      "VatNo": "31",
+      "VatNameHindi": " महापुरुष महामाया के साथ ज"
+    },
+    {
+      "VatId": "1543",
+      "ChId": "8",
+      "VatName": "E shruti anusar",
+      "VatNameGuj": "એ શ્રુતિ અનુસાર",
+      "VatFile": "ch08032.txt",
+      "VatNo": "32",
+      "VatNameHindi": " 'एकमेवाद्वितीयं ब्रह्म ।'"
+    },
+    {
+      "VatId": "1544",
+      "ChId": "8",
+      "VatName": "Paratpar eva je",
+      "VatNameGuj": "પરાત્પર એવા જે",
+      "VatFile": "ch08033.txt",
+      "VatNo": "33",
+      "VatNameHindi": " परात्पर ऐसे जो पुरुषोत्तम"
+    },
+    {
+      "VatId": "1545",
+      "ChId": "8",
+      "VatName": "Bhagavanna svarupnu nirupan",
+      "VatNameGuj": "ભગવાનના સ્વરૂપનું નિરૂપણ",
+      "VatFile": "ch08034.txt",
+      "VatNo": "34",
+      "VatNameHindi": " भगवान के स्वरूप का निरूपण"
+    },
+    {
+      "VatId": "1546",
+      "ChId": "8",
+      "VatName": "Adhyatmvartama purushottam",
+      "VatNameGuj": "અધ્યાત્મવાર્તામાં પુરુષોત્તમ",
+      "VatFile": "ch08035.txt",
+      "VatNo": "35",
+      "VatNameHindi": " अध्यात्मवार्ता में पुरुषो"
+    },
+    {
+      "VatId": "1547",
+      "ChId": "8",
+      "VatName": "Aa panchabhutnu sharir",
+      "VatNameGuj": "આ પંચભૂતનું શરીર",
+      "VatFile": "ch08036.txt",
+      "VatNo": "36",
+      "VatNameHindi": " यह पंचभूत का शरीर वासना द"
+    }
+  ]

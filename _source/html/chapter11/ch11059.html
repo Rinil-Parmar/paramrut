@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (59) મોટા સંતના સમાગમમાં રહી ઉપાસક થયા હશે, તેટલા જ સત્સંગના કામમાં આવશે અને બાકી બીજાને તો મંદિરનો અવગુણ તે અંતે ખાસડે દાળ વહેંચીને વેરાઈ જાનારા સમજવા. અને સોનાના દોરા જેવા હશે તે તો દૃઢ થકા રહેશે ને બીજાને તો હવે અમે કહેનારા નથી. આચાર્ય હોય કે સાધુ હોય કે હરિજન કે હરકોઈ મંદિરવાળા હોય પણ જો મહારાજની આજ્ઞા બહાર વરતે તો તેવાનો અવગુણ લેવો તેનું પાપ નથી; સ્વામિનારાયણ રાઈરાઈનાં લેખાં લેશે. આપણે તેવા અધર્મીનો સંગ ન કરવો, ભલે એવાં મડદાં સત્સંગમાં પડ્યાં હોય, તેને ભગવાન ભારે દંડ દેશે. ભગવાનને <a href="#ex1" class="wordMeaning">કોઈનો સટાકો નથી</a>, તે તો ભક્તના જ છે. ને ‘શિક્ષાપત્રી’માં પણ કહી દીધું છે કે, ‘અમારી આજ્ઞા પાળતા નથી તે અમારા સંપ્રદાયમાં નથી.’ હવે ભગવાન તો તેવાથી છેટા છે, માટે એવાને આપણે પણ શા માટે સંભારવા ? <br/> <br/>
+ 
+ હેત, મહિમા ને વિશ્ર્વાસ હોય ને સત્સંગની ગરજ હોય તેને સાચું કહ્યે સમાસ છે, અને બીજાને તો પથ્થર ઉપર પાણી છે, તે કોરોકટ રહી ખુવાર મળશે; ને તેવાને કહ્યે સમાસ નથી થાતો. તે ઉપર પ્રકૃતિ મૂકવાનું  <a href="GA-35.html" class="wordMeaning">છેલ્લાનું 35મું</a> વચનામૃત વંચાવ્યું અને આમ કહ્યા વિના તો જીવના રોગ જવાના નહિ. તે આમ ને આમ બે કલ્પ સુધી સમાગમ કરશો ત્યારે સાધુ જેવા થાવાશે અને પછી મહારાજની સેવામાં રહેવાશે. તે તો ભગવાનનો દીકરો હોય કે, સદ્ગુરુનો ચેલો હોય કે, નાનો-મોટો ભગવાન થઈ આંહીં પૂજાતો હોય કે, આચાર્ય હોય તેને પણ મહારાજની મરજી પ્રમાણે વરત્યા વિના છૂટકો નથી અને આવું મહારાજ આત્મારામ હોય તેને શીખવે છે, પણ અર્થારામ કે ઇન્દ્રિયારામને કહેતા નથી.
+
+<br/><br/>
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કોઈનો સટાકો નથી= કોઈની વગ/લાગવગની અસર નથી-નિષ્પક્ષ/તટસ્થ છે.
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

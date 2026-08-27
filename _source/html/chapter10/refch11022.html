@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ <li><button  onClick="javascript: window.history.go(-1)" >X</button></li>  
+</ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (22) આંહીં હરિકૃષ્ણ મહારાજની મૂર્તિ પધરાવવી હતી અને સીધું સામાન તથા બીજી બધી સગવડતા કરી રાખી હતી પણ ગઢડાવાળે રઘુવીરજી મહારાજને સમજાવ્યું જે, મહોદયનો સમૈયો કરવો છે તેવી કંકોત્રીઓ દેશમાં લખી વાળી છે તેથી રઘુવીરજી મહારાજ જૂનાગઢ આવતાં આળસ્યા. પછી અમે તો મહારાજને અરજી કરી કે, અમારું તમ વિના બીજું કોઈ નથી. એથી તે જ ક્ષણે મહારાજે રઘુવીરજી મહારાજને સાક્ષાત્કાર દર્શન દઈ ઠપકો આપ્યો કે, ‘સવારમાં જૂનાગઢ ચાલવા માંડજો.’ પછી તો આચાર્યે એકાએક તૈયારી કરી ચાલવા માંડ્યું અને કહ્યું કે, ‘રોકાવું હોય તે રોકાઓ, અમે તો જૂનાગઢ જઈશું.’  <br/> <br/>
+ 
+ પછી રઘુવીરજી મહારાજ જૂનાગઢ આવ્યા અને મુહૂર્ત બીજે દિવસ હતું અને ઉમરેઠના હરિપ્રસાદ શુકલ પ્રતિષ્ઠા કરાવનાર કહે, ‘વેદી માટે ઈંટો કાચી જોઈશે.’ પણ કાચી ઈંટો નહોતી. પછી અમે કહ્યું જે, ‘માંડો ગારો કરી ઈંટો પાડવા, ઉપરથી સૂર્ય સૂકવશે અને નીચેથી શેષનારાયણ ફૂંક મારશે.’ પછી પિંડલા વાળી એક જણ  ઈંટ કરે અને બીજો  ઊખેડે, તે સાવ સુકાઈલી નીકળે. એમ મહારાજે રક્ષા કરી, અને પ્રતિષ્ઠા નિર્વિઘ્ને થઈ રહી; પણ કૂવામાં પાણી ખૂટયું. ત્યારે અમે મહારાજને કહ્યું જે, ‘અમારાથી રઘુવીરજી મહારાજને જાઓ એમ કેમ કહેવાય ? અને ઘણા માણસો એટલે પાણી થઈ રહ્યું.’ પછી મહારાજે રઘુવીરજી મહારાજને કહ્યું કે, ‘આટલા બધા માણસો સાથે હવે આંહીં ન રહેવું.’ પછી સવારે આચાર્યે અમને કહ્યું જે, ‘સ્વામી ! હું તમારું માનત, જો મને કહ્યું હોત તો. પણ મહારાજ પાસે બે વાર ઠપકો દેવરાવ્યો !’ ત્યારે અમે કહ્યું કે, ‘અમારે એક મહારાજ છે. તમે તો રાજાધિરાજ છો તે ગરીબનું કહ્યું જેમ પ્રથમ ન કર્યું તેમ ન કરો તો ?’ એથી રઘુવીરજી મહારાજ કહે કે, ‘સ્વામી!  મારે તો જૂનાગઢ આવવું હતું પણ ગઢડાવાળે રોક્યો હતો; તેથી તમારો ઠપકો મહારાજ દ્વારા બે વાર સાંભળવો પડ્યો.’ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

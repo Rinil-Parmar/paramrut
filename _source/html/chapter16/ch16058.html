@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (58) પરિચય હોય તેની ખબર પડે પણ જેનો પરિચય ન હોય તેની શી ખબર પડે ? બુદ્ધિવાન હોય તે દેશકાળે જણાય તે ઉપર બુદ્ધિ વેચાતી લીધી તે વાત કરી. જેના આગવા (આગેવાન) આંધળા તેનું કટક કૂવામાં પડે: <br/><br/>
+ 
+ તુલસી  સો નર ચતુર  હે  રામચરન  લેલીન, <br/>
+ 
+ પર ધન પર મન હરનકું વેશ્યા બો’ત પ્રવીન ! <br/>
+ 
+ (તુલસી સતસઈ-દોહા 47-પાન નં.24) <br/>
+ 
+ અર્થ : ભગવાન રામચંદ્રના ચરણમાં એકાગ્ર થઈ જવું તે જ ખરી ચતુરાઈ છે. બાકી પારકાનું ધન હરી લેવામાં અને પારકાના મનને જીતી લેવામાં તો વેશ્યા પણ બહુ કુશળ હોય છે. <br/><br/>
+ 
+ માટે ધન કમાવામાં અને બીજાના ચિત્તનું આકર્ષણ કરવામાં કશી જ ચતુરાઈ નથી, પણ સાચી ચતુરાઈ પ્રભુભક્તિમાં તલ્લીન થવામાં જ છે. ને પ્રભુ ભજતા આવડે તે તો સમાગમે કરીને જ આવડે. ગોપાળાનંદસ્વામીએ શ્ર્લોક શીખવ્યો જે, <br/><br/>
+ 
+ પ્રવૃત્તિં ચ નિવૃત્તિં ચ કાર્યાકાર્યે ભયાભયે । <br/>
+ 
+ બન્ધં મોક્ષં ચ યા વેત્તિ બુદ્ધિઃ સા પાર્થ સાત્ત્વિકી ॥ <br/>
+ 
+  (શ્રીમદ્ ભગવદ્ગીતા : 18/30) <br/>
+ 
+ અર્થ :- હે પૃથાપુત્ર અર્જુન ! જે બુદ્ધિ પ્રવૃત્તિ અને નિવૃત્તિને, કર્તવ્યને અને અકર્તવ્યને, ભયને અને અભયને તથા બંધન અને મોક્ષને જાણે છે એ સાત્ત્વિકી બુદ્ધિ છે. <br/><br/>
+ 
+ ત્યારે મેં વિચાર્યું જે, એમાં આપણને ખબર નહિ પડે. આપણે તો શિક્ષાપત્રીમાં કહ્યું છે તેમ કરશું. જેવા પુરુષ હોય તેવો રંગ જીવને લાગે ને આ ધર્મશાળામાં આરબ ઊતર્યા હોય તો આવી વાતું ન થાય ને જેને બુદ્ધિ હોય તેને રૂપિયા હોય તો રૂપિયા વતે પ્રભુ ભજી લેવા ને ભાઈ હોય તો તે વતે ને દેહ તો આપણો જ છે તે વતે પ્રભુ ભજી લેવા.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

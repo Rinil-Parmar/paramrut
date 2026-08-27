@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ સંવત 1918ના અષાઢ સુદિ તેરસને દિવસે સ્વામીએ વાત કરી જે,
+ <br/>
+ (22) સંબંધી સર્વેને કેવળ સ્વાર્થનું હેત છે તે ઉપર વાત કરી જે, કણબીના છોકરે સાધુને કહ્યું જે, ‘મારાં માવતરને મારે વિશે મરી મટે એવું હેત છે.’ ત્યારે વિજયાત્માનંદસ્વામીએ કહ્યું જે, ‘સ્વાર્થનું હેત છે, સાચું ન હોય.’ ત્યારે છોકરે કહ્યું જે, ‘ મહારાજ ! ખરેખરું હેત છે.’ ત્યારે વિજ્યાત્માનંદસ્વામી કહે જે, ‘તું ખોટે ખોટે માંદો થાજે, પછી અમે આવશું, એટલે જેમ હશે તેમ બતાવી દેશું.’ પછી તે છોકરો માંદો થયો, એટલે તેનાં માવતર <a href="#ex1" class="wordMeaning">ઓષડ</a> કરવા લાગ્યાં ને કહે જે, ‘ભાઈ, તને રોગ થયો તે અમને કાં ન થયો ?’ એમ કરતાં હતાં ત્યાં સાધુ ગયા ને પૂછ્યું જે, ‘કોણ સૂતું છે ?’ ત્યારે કહે જે, ‘અમારા દીકરાને કાંઈક <a href="#ex1" class="wordMeaning">ચોઘડિયું ભજી ગયું</a>, તે આવતાં વેંત <a href="#ex1" class="wordMeaning">ભૂંટ પડી ગયો</a> ને બોલતો નથી. ઘણા ઉપાય કર્યા, ફકીર તેડાવ્યા, ઝાડા નંખાવ્યા, પણ કાંઈ કારી લાગતી નથી.’
+ <br/><br/>
+ પછી સાધુ કહે, ‘કહો તો અમે સાજો કરીએ.’ તો કહે જે, ‘તો તો તમારા જેવા કોઈ નહીં.’ પછી સાધુએ દૂધ મંગાવ્યું ને માંહી સાકર નંખાવીને સાત વાર તેને માથેથી ઉતાર્યું. પછી કહે, ‘આ દૂધમાં મોત આવ્યું છે; માટે જે કોઈ આ પીએ તે <a href="#ex1" class="wordMeaning">સાટે</a> મરે ને આ છોકરો જીવતો થાય.’ પછી તેના બાપને કહ્યું જે, ‘તમે ખાઈ-પી ઊતર્યા છો માટે પી જાઓ.’ ત્યારે તેના બાપે પીવાની ના પાડી ને કહે, ‘મેં મરાય નહીં.’ પછી તેની માને પુછાવ્યું. તો તે કહે જે, ‘હું તો રેંદો કાંતીને પેટ ભરીશ, પણ મરાય નહિ, ભાઈ!’ પછી તેની સ્ત્રીને પીવા કહ્યું. ત્યારે તે કહે જે, ‘હું તો <a href="#ex1" class="wordMeaning">ઘરઘી જાઈશ</a>, મારે શું કામ પીવું પડે ?’ પછી તેની બહેનને કહ્યું. તો કહે, ‘હું તો મારે સાસરે જઈશ, મારે એનો <a href="#ex1" class="wordMeaning">કમખો</a> જોઈતો નથી.’ એમ રૂડી રીતે સૌએ ના પાડી. ત્યારે વિજયાત્માનંદસ્વામી કહે, ‘કહો તો અમે પી જઈએ.’ ત્યારે કહે, ‘અહો ! અહો ! મહારાજ, તમે તો પ્રભુના ઘર છો. તે તમે પી જાઓ તો તો બહુ ઠીક !’ પછી સાધુ તે દૂધ પી ગયા ને છોકરાને કહે, ‘ઊઠ, થા બેઠો !’ એટલે તે તુરત બેઠો થયો ને કહ્યું જે, ‘તમે તો મને <a href="#ex1" class="wordMeaning">મૂઓ વાંચ્યો</a> હતો, ને આ સાધુએ જીવાડ્યો છે; માટે હું તો એના ભેળો જઈશ.’ એમ કહી સાધુ ભેળો ચાલી નીકળ્યો. તે વૈરાગ્યવાનની એવી કળાઓ હોય ને જગતનું સ્વાર્થનું હેત છે પણ તે ખરે ટાણે ખબર પડે.
+ 
+ 
+		</div>
+
+	</div>
+		<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+		1 ઓષડ= રોગ મુક્ત કરવાના ઉપચાર. <br/>
+		2 ચોઘડિયું ભજી ગયું= અશુભ ચોઘડિયાએ એનો ભાવ ભજવ્યો.<br/> 
+		3 ભૂંટ પડી ગયો= ઢળી પડ્યો-ઘૂંટણીએ પડી ગયો. <br/>
+		4 સાટે= બદલેઅવેજમાં. <br/>
+		5 ઘરઘી જાઈશ= નાતરું-પુનર્લગ્ન કરી લઈશ.  <br/>
+		6 કમખો= કપડું-કાંચળી-બ્લાઉઝની જગ્યાએ પહેલાં પહેરાતું વસ્ત્ર. <br/>
+		7 મૂઓ વાંચ્યો= મરેલ જાણ્યો.
+
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

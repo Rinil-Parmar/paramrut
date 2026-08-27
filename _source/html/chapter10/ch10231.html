@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ 
+ 
+ (231) આવું કોઈનું ધામ નથી, આવો કોઈનો આકાર નથી; માટે એક મહારાજના જ ગુણ ગાવા.
+ <br/><br/>
+ કૌતુહળના   રે   ભરીયા,   યોગકળાના   પૂરણ   દરિયા;
+ <br/>
+ બ્રહ્મવિદ્યાના રે સ્વામી, આવા રૂડા પ્રેમસખી વર પામી.
+ <br/><br/>
+ દત્તાત્રેય, કપિલ, ઋષભદેવ, રામચંદ્ર ને શ્રીકૃષ્ણાદિક અનંત અવતાર તે સર્વે આ સાધુમાં આવી ગયા ને મહારાજ તો અપારના અપાર રહ્યા. ગામ અલૈયામાં અખંડાનંદસ્વામીએ મહારાજને પૂછ્યું ત્યારે મહારાજ કહે, ‘આ બ્રહ્માંડ ઉપર એક કરોડ જોજન ઊંચો ગોલોક છે અને તે ઉપર એકલું શૂન્ય છે. તે શૂન્યને વિશે મનને વેગે કરીને વૈરાટબ્રહ્માની આયુષ પર્યંત ચાલે તો પણ શૂન્ય ભેદવાને કોઈ સમર્થ નથી. એ શૂન્યને મહાશૂન્ય કહે છે, તે મહાશૂન્ય તો અસંખ્ય બ્રહ્માંડ અને તેના કારણ જે પ્રકૃતિપુરુષ તે સર્વેને આવરી રહ્યું છે. તે મહાશૂન્યથી પર અક્ષરધામ છે. તે ધામને વિશે અક્ષરબ્રહ્મ અને અક્ષરરૂપ ચૈતન્ય આકૃતિવાળા અસંખ્ય મુક્ત રહ્યા છે. તે સર્વેને એક મહારાજની જ ઉપાસના છે, અને કેવળ મહારાજના જ સુખે સુખિયા છે પણ બીજા કોઈ સુખે કરીને સુખિયા નથી.
+ <br/><br/>
+ અને અક્ષરધામ મૂર્તિમાન ને અમૂર્ત એ બે પ્રકારે છે. તેમાં જે મૂર્તિમાન છે તે તો અખંડ મહારાજની સેવામાં રહ્યા છે અને જે અમૂર્ત છે તે તો ધામરૂપે કરીને સર્વના આધારભૂત છે. એ સ્વરૂપનું પ્રત્યક્ષ જ્ઞાન તો એમ સમજવું જે, પૃથ્વી ઉપર મનુષ્યદેહ ધારણ કરીને સર્વે જનને દૃષ્ટિગોચર વરતતા એવા જે મહારાજ તે પુરુષોત્તમ છે ને આ સાધુ પોતે મૂળઅક્ષર છે. તે બેય સ્વરૂપનો દિવ્યભાવ ને મનુષ્યભાવ એક સમજવો. અક્ષરધામમાં મૂળઅક્ષર તથા અસંખ્યકોટિ મુક્ત તેમણે સદાય સેવ્યા થકા પૂર્ણ પુરુષોત્તમ વિરાજમાન છે, તેના તે જ આ પૃથ્વી ઉપર મહારાજ છે પણ આ મહારાજ ને તે ધામની મૂર્તિમાં એક રોમનો ફેર નથી, બેય એક જ છે. તેમ જ અક્ષરધામને વિશે મૂળઅક્ષર મૂર્તિમાન થકા અખંડ પુરુષોત્તમ નારાયણની સેવામાં રહ્યા છે ને ધામરૂપે કરીને અસંખ્ય કોટિ બ્રહ્માંડ તથા મુક્તે સહિત પુરુષોત્તમનારાયણને ધરી રહ્યા છે, તેના તે જ પૃથ્વી ઉપર મનુષ્યદેહ ધારણ કરીને આ સાધુરૂપે પણ મહારાજની સેવામાં રહ્યા છે. તે બે સ્વરૂપમાં એક રોમનો ફેર નથી, બેય એક જ છે. એમ જેને આત્મા-પરમાત્માના કે અક્ષરપુરુષોત્તમનાં સ્વરૂપનું અપરોક્ષ જ્ઞાન થાય, તેનું કારણ શરીર નાશ થઈ જાય છે, માટે એ બે વાતનો વેગ લગાડી દેવો ને મોટા મોટા જે મારગે ચાલ્યા છે તે મારગે ચાલવું એ સિદ્ધાંત રાખવો. 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

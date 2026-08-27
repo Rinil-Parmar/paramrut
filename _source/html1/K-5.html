@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">કારિયાણી ૫ - અવતાર ધર્યાના પ્રયોજનનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૭ના આસો વદિ ૧૪ ચૌદશને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ ગામ શ્રીકારિયાણી મધ્યે વસ્તાખાચરના દરબારમાં ઉત્તરાદે દ્વાર ઓરડાની ઓસરીએ છપરપલંગ ઉપર વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજ બોલ્યા જે, “અમે એક પ્રશ્ન પૂછીએ છીએ.” પછી મુનિ બોલ્યા જે, “પૂછો, મહારાજ!” પછી શ્રીજીમહારાજે પૂછ્યું જે, “ભગવાન જીવના કલ્યાણને અર્થે પૃથ્વી ઉપર અવતાર ધરે છે, તે અવતાર ધર્યા વિના પોતાના ધામમાં રહ્યા થકા શું કલ્યાણ કરવાને સમર્થ નથી? અને કલ્યાણ તો ભગવાન જેમ ધારે તેમ કરે. ત્યારે અવતાર ધર્યાનું શું પ્રયોજન છે? અને જો અવતાર ધરે ત્યારે જ ભગવાનમાં કલ્યાણ કરવાની સામર્થી હોય અને અવતાર ધર્યા વિના જીવનાં કલ્યાણ ન કરી શકતા હોય તો ભગવાનને વિષે પણ એટલું અસમર્થપણું આવે. માટે ભગવાન તો અવતાર ધરીને પણ કલ્યાણ કરે અને અવતાર ન ધરે તો પણ જીવનાં કલ્યાણ કરવા સમર્થ છે. માટે એવા જે ભગવાન તેને અવતાર ધર્યાનું શું પ્રયોજન છે? એ પ્રશ્ન છે.” પછી મોટા મોટા સંત હતા તેમણે જેની જેવી બુદ્ધિ તેણે તેવો ઉત્તર કર્યો, પણ શ્રીજીમહારાજના પ્રશ્નનું કોઈથી સમાધાન ન થયું અને શ્રીજીમહારાજે આશંકા કરી તે સર્વેના ઉત્તર ખોટા થઈ ગયા. પછી મુનિ સર્વે હાથ જોડીને બોલ્યા જે, “હે મહારાજ! એ પ્રશ્નનો ઉત્તર તો તમે જ કરો તો થાય.” પછી શ્રીજીમહારાજ બોલ્યા જે, “ભગવાનને અવતાર ધર્યાનું એ જ પ્રયોજન છે જે, ભગવાનને વિષે અતિશય પ્રીતિવાળા જે ભક્ત હોય તેની ભક્તિને આધિન થઈને તે ભક્તને સુખ દેવાને અર્થે જેવી ભક્તની ઇચ્છા હોય તેવા રૂપનું ધારણ કરે છે. પછી જેવા જેવા પોતાના ભક્તના મનોરથ હોય તે સર્વે પૂરા કરે છે. અને તે ભક્ત હોય તે સ્થૂળભાવે યુક્ત છે અને દેહધારી છે, માટે ભગવાન પણ સ્થૂળભાવને ધારણ કરીને દેહધારી જેવા થાય છે અને તે પોતાના ભક્તને લાડ લડાવે છે; અને પોતાની સામર્થીને છપાડીને તે ભક્ત સંગાથે પુત્રભાવે વર્તે છે અથવા સખાભાવે વર્તે છે અથવા મિત્રભાવે વર્તે છે અથવા સગાંસંબંધીને ભાવે વર્તે છે, તેણે કરીને એ ભક્તને ભગવાનની ઝાઝી મર્યાદા રહેતી નથી. પછી જેવી એ ભક્તને ઇચ્છા હોય તેવી રીતે લાડ લડાવે છે. માટે પોતાના જે પ્રેમી ભક્ત તેના મનોરથ પૂરા કરવા એ જ ભગવાનને અવતાર ધર્યાનું પ્રયોજન છે અને તે ભેળું અસંખ્ય જીવનું કલ્યાણ પણ કરે છે ને ધર્મનું સ્થાપન પણ કરે છે. હવે એમાં આશંકા થતી હોય તો બોલો.” પછી મુનિએ કહ્યું જે, “હે મહારાજ! યથાર્થ ઉત્તર થયો.”
+</p>
+
+
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

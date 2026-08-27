@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">વરતાલ ૨૦: જનકની સમજણનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૮૨ના મહા સુદિ ૩ ત્રીજને દિવસ સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીવરતાલ મધ્યે શ્રીલક્ષ્મીનારાયણના દરબારમાં લીંબડાના વૃક્ષની હેઠે વેદિ ઉપર ગાદીતકિયા નંખાવીને વિરાજમાન હતા અને સર્વ શ્વેત વસ્ત્ર ધારણ કર્યાં હતાં ને કંઠને વિષે ચમેલીનાં પુષ્પનો હાર વિરાજમાન હતો અને મસ્તક ઉપર રાતા અતલસનું છત્ર વિરાજમાન હતું અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.
+</p>
+<p class="text_gu">
+પછી શ્રીજીમહારાજે પરમહંસને પ્રશ્ન પૂછ્યો જે, “રજોગુણમાંથી કામની ઉત્પત્તિ થાય છે અને તમોગુણમાંથી ક્રોધ ને લોભની ઉત્પત્તિ થાય છે; માટે એ કામાદિકનું બીજ ન રહે એવું એક સાધન ક્યું છે?” પછી શુકમુનિએ કહ્યું જે, “જ્યારે નિર્વિકલ્પ સમાધિ થાય ને જ્યારે આત્મદર્શન થાય ત્યારે જ એના હૃદયમાંથી કામાદિકનું બીજ બળી જાય.” પછી શ્રીજીમહારાજે આશંકા કરી જે, “શિવ, બ્રહ્મા, શૃંગિ ઋષિ, પરાશર, નારદ એમને શું નિર્વિકલ્પ સમાધિ નહોતી જે, કામે કરીને એ સર્વે વિક્ષેપને પામ્યા? માટે એ સર્વે નિર્વિકલ્પ સમાધિવાળા જ હતા, તો પણ ઇન્દ્રિયોની વૃત્તિ અનુલોમ થઈ ત્યારે કામાદિકે કરીને વિક્ષેપને પામ્યા. માટે તમે કહ્યું એવી રીતે એ પ્રશ્નનો ઉત્તર ન થયો. અને જેમ જ્ઞાની નિર્વિકલ્પ સમાધિને વિષે જાય ત્યારે નિર્વિકાર રહે છે, તેમ જ અજ્ઞાની સુષુપ્તિને વિષે નિર્વિકાર રહે છે. અને જ્યારે ઇન્દ્રિયોની વૃત્તિ અનુલોમ થાય છે ત્યારે તો જ્ઞાની ને અજ્ઞાની બેય કામાદિકે કરીને વિક્ષેપને પામે છે; એમાં તો જ્ઞાની-અજ્ઞાનીનો કાંઈ વિશેષ જણાતો નથી. માટે હવે બીજા પરમહંસ ઉત્તર કરો.” પછી તો ગોપાળાનંદ સ્વામી, દેવાનંદ સ્વામી, નિત્યાનંદ સ્વામી, મુક્તાનંદ સ્વામી એ સર્વે મળીને જેવો જેને ભાસ્યો તેવો તેણે ઉત્તર કર્યો, પણ શ્રીજીમહારાજના પ્રશ્નનું કોઈથી સમાધાન થયું નહીં.
+</p>
+<p class="text_gu">
+
+પછી શ્રીજીમહારાજ બોલ્યા જે, “જેમ જનક વિદેહી હતા તે પ્રવૃત્તિમાર્ગમાં હતા તો પણ નિર્વિકાર હતા. અને જ્યારે જનકની સભામાં સુલભા નામે સંન્યાસિની આવી, ત્યારે જનક રાજા સુલભા પ્રત્યે બોલ્યા જે, ‘તું મારા ચિત્તને મોહ પમાડ્યાનું કરે છે પણ મારા ગુરુ જે પંચશિખ ઋષિ તેની કૃપા થકી હું સાંખ્ય ને યોગ એ બે મતને અનુસર્યો છું. માટે મારા અર્ધા શરીરને ચંદન ચર્ચે અને અર્ધું શરીર તલવારે કરીને કાપે એ બેય મારે બરોબર છે અને આ મારી મિથિલાપુરી બળી જાય તો પણ મારું કાંઈ બળતું નથી. એમ હું પ્રવૃત્તિમાં રહ્યો થકો અસંગી ને નિર્વિકાર છું.’ એવી રીતે રાજા જનકે સુલભા પ્રત્યે કહ્યું. અને શુકદેવજીના પણ રાજા જનક ગુરુ કહેવાયા. માટે એ પ્રશ્નનો એ જ ઉત્તર છે જે, ‘ઇન્દ્રિયોની વૃત્તિ અનુલોમપણે વર્તતી હોય અને પ્રવૃત્તિમાર્ગમાં રહ્યો હોય તો પણ જો રાજા જનકની પેઠે જેના હૃદયમાં સમજણની દ્રઢતા થઈ હોય, તો તે કોઈ રીતે વિકારને પામે નહીં.’ અને જેને જેવું જાણ્યું જોઈએ તેવું યથાર્થ જાણ્યું હોય જે, આ તે સાર છે ને આ તે અસાર છે. પછી <b>એક ભગવાનની મૂર્તિ વિના જેટલા માયિક આકાર છે તે સર્વે અતિશય દુઃખદાયક છે ને નાશવંત છે એમ જાણે અને પોતાને દેહ, ઇન્દ્રિયો ને અંતઃકરણ તે થકી નોખો આત્મારૂપે જાણે. પછી એને એવું કોઈ પદાર્થ નથી જે, મોહ પમાડવાને અર્થે સમર્થ થાય;</b> કેમ જે, એ તો સર્વે માયિક આકારને તુચ્છ કરી જાણે છે. અને એવી રીતે જેના અંતરમાં સમજણની ઘેડ્ય બેઠી હોય ને તેનાં ઇન્દ્રિયો પ્રવૃત્તિમાર્ગને વિષે સર્વે અનુલોમપણે વર્તતાં હોય તો પણ તે કામાદિકે કરીને ક્ષોભને ન પામે. એવો જે હરિભક્ત હોય તે ત્યાગી હોય અથવા ગૃહસ્થ હોય પણ તેના હૃદયમાંથી કામાદિકનું બીજ નાશ પામી જાય છે અને એવો જે હોય તે જ સર્વે હરિભક્તમાં શ્રેષ્ઠ વૈષ્ણવ છે. માટે ગૃહી-ત્યાગીનો કાંઈ મેળ નથી, જેની સમજણ મોટી તેને જ સૌથી મોટો હરિભક્ત જાણવો. અને શિવ, બ્રહ્માદિકને વિષે જે ખોટ્ય કહેવાય છે તેનું તો એમ છે જે, કેટલાકને વિષે આવી રીતની સમજણની કસર છે ને કેટલાકને વિષે તો આવી સમજણ હોય તો પણ ભૂંડાં દેશ, કાળ, સંગ, ક્રિયાદિકને યોગે કરીને તેમને કામાદિક વિકારરૂપ ખોટ્ય કહેવાણી છે. માટે આવી સમજણ હોય તો પણ કોઈ પ્રકારે કુસંગ તો કરવો જ નહીં, એ સિદ્ધાંતવાર્તા છે.”
+</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

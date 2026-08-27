@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap"><ul class="reader_tools noselect">
+<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+
+			</ul><div class="vaat_ind" id="vaat1_1">
+			(61) સમાધિથી નિર્ગુણ ન થયા ને જ્ઞાનથી નિર્ગુણ થયા. ત્યારે ચતુર્ભુજદાસજીએ પૂછ્યું જે, ‘સંતને ને ગૃહસ્થને સરખા નિર્ગુણ કેમ કહ્યા ?’ ત્યારે સ્વામીએ ઉત્તર કર્યો જે, ‘એક તો નાગો બાવો હોય તેને સમુદ્ર તરવો હોય ને <a href="#ex1" class="wordMeaning">ઉચાળાવાળા</a> ગૃહસ્થને પણ સમુદ્ર તરવો હોય, તો બેયને (બંનેને) વહાણનું કામ પડે <a href="#ex1" class="wordMeaning">મરને</a> કોપીન પણ ન પહેરતો હોય પણ સમુદ્ર તરાય નહીં. માટે વહાણમાં નાગો બાવો બેસે ને ઉચાળાવાળો ગૃહસ્થ બેસે, તેને તો બાયડી હોય, છોકરાં હોય, ભેંશ હોય, રેંટિયો હોય તે બધુંય સમુદ્ર બરાબર તરે. ને તે વિના તો દ્રવ્યને અડતા ન હોય, અષ્ટ પ્રકારનું બ્રહ્મચર્ય પાળતા હોય ને મહા ત્યાગી હોય પણ ભગવાન ન મળ્યા હોય તો તેનું કલ્યાણ ન થાય ને માયાને ન તરે ને ગૃહસ્થનું કલ્યાણ થાય ને માયાને તરે.’
+ <br/><br/>
+ પછી મધ્યનું 11મું વચનામૃત વંચાવીને વાત કરી જે, ‘ગૃહસ્થમાત્ર આ વચનામૃત સમજે તો અંતરે શાંતિ રહે ને આ વાત અટપટી છે.’ ત્યાં દૃષ્ટાંત દીધું જે, ‘ભગવાનના આશ્રય વગરનો ભોગાવાની રેતમાં ચૈત્ર મહિનાના તાપમાં <a href="#ex1" class="wordMeaning">ઢૂંઢિયો</a> બેઠો હોય તેને દેખીને એમ જાણે જે આનું કલ્યાણ થાશે પણ એનું કલ્યાણ નહિ થાય. ને ગૃહસ્થ હોય તેને બાયડી હોય, આઠ છોકરાં હોય, સોળ હળ હોય, સોળ ભેંશું હોય એ આદિક હોય, તેને દેખીને એમ જાણે જે આનું કલ્યાણ નહિ થાય; પણ તેને ભગવાન મળ્યા છે તો એ બધાયનો મોક્ષ થાશે. આ વાત તો જેમ કોઈકને ઘી ખાધાથી રોગ થયો હોય ને પાછો ઘી ખવરાવીને મટાડે તેવી છે. તે બીજાને સમજાય નહિ, મહારાજને જ સમજાય ને એ પ્રશ્ર્નનો ઉત્તર પણ મહારાજથી જ થાય, બીજાથી થાય નહીં. એના એ રજોગુણ, તમોગુણ ને સત્ત્વગુણ તેથી નરકમાં જવાય ને એના એ ગુણથી મોક્ષ થાય.’ તે ઉપર શ્ર્લોક બોલ્યા જે,
+ <br/><br/>
+
+આમયો યશ્ર્વ ભૂતાનાં જાયતે યેન સુવ્રત  । <br/>
+તદેવ હ્યામયં  દ્રવ્યમ ન પુનાતિ ચિકિત્સિતમ્ ।।<br/>
+
+ (શ્રીમદ્ ભાગવત : 1/5/33)
+ <br/>
+ અર્થ : હે સદાચારી વ્યાસ ! પ્રાણીઓને જે પદાર્થના અયોગ્ય સેવનથી રોગ થાય છે, તે જ પદાર્થ જો શુદ્ધ કરીને યોગ્ય પ્રમાણમાં યોગ્ય રીતે સેવન કરાય તો તે રોગને દૂર કરે છે, તેવી રીતે કર્મ, મનુષ્યોના સંસારનાં કારણ બનતાં હોવા છતાં તે જ કર્મ અનાસક્તભાવે ઈશ્ર્વરાર્પણભાવથી કરાય તો તેની નિવૃત્તિ થઈ શકે છે.
+ <br/><br/>
+ (જુઓ પ્રકરણ 5ની વાત 15)
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 ઉચાળાવાળા= સાંસારિક ઉપાધિવાળા.  <br/>
+2 મરને= ભલેને. <br/>
+3 ઢૂંઢિયો= એક પ્રકારના જૈન સાધુ.<br/>
+
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script>
+</body>
+</html>

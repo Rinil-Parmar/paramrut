@@ -1,0 +1,3891 @@
+
+  [
+    {
+      "VatId": "754",
+      "ChId": "5",
+      "VatName": "Bhagavan malay pachhi",
+      "VatNameGuj": "ભગવાન મળ્યા પછી",
+      "VatFile": "ch05001.txt",
+      "VatNo": "1",
+      "VatNameHindi": "भगवान मिलने के बाद"
+    },
+    {
+      "VatId": "755",
+      "ChId": "5",
+      "VatName": "Bhagavanna tatha ekantikna",
+      "VatNameGuj": "ભગવાનના તથા એકાંતિકના",
+      "VatFile": "ch05002.txt",
+      "VatNo": "2",
+      "VatNameHindi": "भगवान तथा एकान्तिक के निश्"
+    },
+    {
+      "VatId": "756",
+      "ChId": "5",
+      "VatName": "Divyabhav-manushyabhav ek",
+      "VatNameGuj": "દિવ્યભાવ-મનુષ્યભાવ એક",
+      "VatFile": "ch05003.txt",
+      "VatNo": "3",
+      "VatNameHindi": "दिव्यभाव मनुष्यभाव एक समझे"
+    },
+    {
+      "VatId": "757",
+      "ChId": "5",
+      "VatName": "Bhagavan tatha ekantikno sang",
+      "VatNameGuj": "ભગવાન તથા એકાંતિકનો સંગ",
+      "VatFile": "ch05004.txt",
+      "VatNo": "4",
+      "VatNameHindi": "भगवान तथा एकान्तिक का संग "
+    },
+    {
+      "VatId": "758",
+      "ChId": "5",
+      "VatName": "Atyantik moksh thay te j",
+      "VatNameGuj": "આત્યંતિક મોક્ષ થાય તે જ",
+      "VatFile": "ch05005.txt",
+      "VatNo": "5",
+      "VatNameHindi": "आत्यन्तिक मोक्ष को ही मोक्"
+    },
+    {
+      "VatId": "759",
+      "ChId": "5",
+      "VatName": "Chhokarane bik lage tyare",
+      "VatNameGuj": "છોકરાંને બીક લાગે ત્યારે",
+      "VatFile": "ch05006.txt",
+      "VatNo": "6",
+      "VatNameHindi": "बच्चों को डर लगता है, तब म"
+    },
+    {
+      "VatId": "760",
+      "ChId": "5",
+      "VatName": "Gadhadavala thakkar naran",
+      "VatNameGuj": "ગઢડાવાળા ઠક્કર નારણ",
+      "VatFile": "ch05007.txt",
+      "VatNo": "7",
+      "VatNameHindi": "गढ़डावाले ठक्कर नारण प्रधा"
+    },
+    {
+      "VatId": "761",
+      "ChId": "5",
+      "VatName": "Botad madhye harisankarbhaine",
+      "VatNameGuj": "બોટાદ મધ્યે હરિશંકરભાઈને",
+      "VatFile": "ch05008.txt",
+      "VatNo": "8",
+      "VatNameHindi": "बोटाद में हरिशंकरभाई से बा"
+    },
+    {
+      "VatId": "762",
+      "ChId": "5",
+      "VatName": "Shrijimaharaje harisankarbhaine",
+      "VatNameGuj": "શ્રીજીમહારાજે હરિશંકરભાઈને",
+      "VatFile": "ch05009.txt",
+      "VatNo": "9",
+      "VatNameHindi": "श्रीजीमहाराज ने सुरत में ह"
+    },
+    {
+      "VatId": "763",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05010.txt",
+      "VatNo": "10",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, 'प"
+    },
+    {
+      "VatId": "764",
+      "ChId": "5",
+      "VatName": "Ketalak vat em kare chhe",
+      "VatNameGuj": "કેટલાક વાત એમ કરે છે",
+      "VatFile": "ch05011.txt",
+      "VatNo": "11",
+      "VatNameHindi": " कई लोग ऐसी बात करते हैं क"
+    },
+    {
+      "VatId": "765",
+      "ChId": "5",
+      "VatName": "Gam bagadma em vat kari",
+      "VatNameGuj": "ગામ બગડમાં એમ વાત કરી",
+      "VatFile": "ch05012.txt",
+      "VatNo": "12",
+      "VatNameHindi": " गाँव बगड़ में ऐसी बात कही"
+    },
+    {
+      "VatId": "766",
+      "ChId": "5",
+      "VatName": "Bhagavan apani bayadi",
+      "VatNameGuj": "ભગવાન આપણી બાયડી",
+      "VatFile": "ch05013.txt",
+      "VatNo": "13",
+      "VatNameHindi": " भगवान जबरदस्ती अपनी स्त्र"
+    },
+    {
+      "VatId": "767",
+      "ChId": "5",
+      "VatName": "Sukmunie suratma vat",
+      "VatNameGuj": "શુકમુનિયે સુરતમાં વાત",
+      "VatFile": "ch05014.txt",
+      "VatNo": "14",
+      "VatNameHindi": " शुकमुनि ने सूरत में बात क"
+    },
+    {
+      "VatId": "768",
+      "ChId": "5",
+      "VatName": "Bogavane kanthe dhundhiyo",
+      "VatNameGuj": "ભોગાવાને કાંઠે ઢૂંઢિયો",
+      "VatFile": "ch05015.txt",
+      "VatNo": "15",
+      "VatNameHindi": " भोगावा नदी के तट पर ढूंढि"
+    },
+    {
+      "VatId": "769",
+      "ChId": "5",
+      "VatName": "Jhajha shabd sambhale to",
+      "VatNameGuj": "ઝાઝા શબ્દ સાંભળે તો",
+      "VatFile": "ch05016.txt",
+      "VatNo": "16",
+      "VatNameHindi": " अधिक शब्द सुने तो अंग टूट"
+    },
+    {
+      "VatId": "770",
+      "ChId": "5",
+      "VatName": "Nami vina matra namthi",
+      "VatNameGuj": "નામી વિના માત્ર નામથી",
+      "VatFile": "ch05017.txt",
+      "VatNo": "17",
+      "VatNameHindi": " नामी के बिना केवल नाम से "
+    },
+    {
+      "VatId": "771",
+      "ChId": "5",
+      "VatName": "Choki bethi hoy tya koi",
+      "VatNameGuj": "ચોકી બેઠી હોય ત્યાં કોઈ",
+      "VatFile": "ch05018.txt",
+      "VatNo": "18",
+      "VatNameHindi": " चौकी लगी हो, वहाँ कोई आ न"
+    },
+    {
+      "VatId": "772",
+      "ChId": "5",
+      "VatName": "Mota sadhuna samagamthi",
+      "VatNameGuj": "મોટા સાધુના સમાગમથી",
+      "VatFile": "ch05019.txt",
+      "VatNo": "19",
+      "VatNameHindi": " बड़े साधु के समागम से विष"
+    },
+    {
+      "VatId": "773",
+      "ChId": "5",
+      "VatName": "Aa sadhu to bhagavanni",
+      "VatNameGuj": "આ સાધુ તો ભગવાનની",
+      "VatFile": "ch05020.txt",
+      "VatNo": "20",
+      "VatNameHindi": " ये साधु तो भगवान की हजूर "
+    },
+    {
+      "VatId": "774",
+      "ChId": "5",
+      "VatName": "Bhagavannu tatha aa sadhunu",
+      "VatNameGuj": "ભગવાનનું તથા આ સાધુનું",
+      "VatFile": "ch05021.txt",
+      "VatNo": "21",
+      "VatNameHindi": " भगवान का तथा इस साधु का ज"
+    },
+    {
+      "VatId": "775",
+      "ChId": "5",
+      "VatName": "Bhagavanni agnathi pravrutima",
+      "VatNameGuj": "ભગવાનની આજ્ઞાથી પ્રવૃત્તિમા",
+      "VatFile": "ch05022.txt",
+      "VatNo": "22",
+      "VatNameHindi": " भगवान की आज्ञा से प्रवृत्"
+    },
+    {
+      "VatId": "776",
+      "ChId": "5",
+      "VatName": "Nivrutima rahe to",
+      "VatNameGuj": "નિવૃત્તિમાં રહે તો",
+      "VatFile": "ch05023.txt",
+      "VatNo": "23",
+      "VatNameHindi": " निवृत्ति में रहने से इन्द"
+    },
+    {
+      "VatId": "777",
+      "ChId": "5",
+      "VatName": "Pragat bhagavanno sambandh",
+      "VatNameGuj": "પ્રગટ ભગવાનનો સંબંધ",
+      "VatFile": "ch05024.txt",
+      "VatNo": "24",
+      "VatNameHindi": " प्रकट भगवान का सम्बन्ध हो"
+    },
+    {
+      "VatId": "778",
+      "ChId": "5",
+      "VatName": "Swamie vat kari je",
+      "VatNameGuj": "સ્વામીએ વાત કરી જે",
+      "VatFile": "ch05025.txt",
+      "VatNo": "25",
+      "VatNameHindi": " स्वामीजी ने बात कही कि, '"
+    },
+    {
+      "VatId": "779",
+      "ChId": "5",
+      "VatName": "Satsange karine bhagavan",
+      "VatNameGuj": "સત્સંગે કરીને ભગવાન",
+      "VatFile": "ch05026.txt",
+      "VatNo": "26",
+      "VatNameHindi": " सत्संग करने से भगवान वश म"
+    },
+    {
+      "VatId": "780",
+      "ChId": "5",
+      "VatName": "Niskulanandswamine Maharaje",
+      "VatNameGuj": "નિષ્કુળાનંદસ્વામીને મહારાજે",
+      "VatFile": "ch05027.txt",
+      "VatNo": "27",
+      "VatNameHindi": " निष्कुलानंदस्वामी से महार"
+    },
+    {
+      "VatId": "781",
+      "ChId": "5",
+      "VatName": "Gopalanandswamini kaheli vat",
+      "VatNameGuj": "ગોપાળાનંદસ્વામીની કહેલી વાત",
+      "VatFile": "ch05028.txt",
+      "VatNo": "28",
+      "VatNameHindi": " गोपालानंदस्वामी की कही हु"
+    },
+    {
+      "VatId": "782",
+      "ChId": "5",
+      "VatName": "Satsang karata pratham",
+      "VatNameGuj": "સત્સંગ કરતાં પ્રથમ",
+      "VatFile": "ch05029.txt",
+      "VatNo": "29",
+      "VatNameHindi": " सत्संग करने से प्रथम विवे"
+    },
+    {
+      "VatId": "783",
+      "ChId": "5",
+      "VatName": "Jeno samagam malavani",
+      "VatNameGuj": "જેનો સમાગમ મળવાની",
+      "VatFile": "ch05030.txt",
+      "VatNo": "30",
+      "VatNameHindi": " जिनका समागम प्राप्त होने "
+    },
+    {
+      "VatId": "784",
+      "ChId": "5",
+      "VatName": "Panchmahapapno karanaro",
+      "VatNameGuj": "પંચમહાપાપનો કરનારો",
+      "VatFile": "ch05031.txt",
+      "VatNo": "31",
+      "VatNameHindi": " पंचमहापाप\" का करनेवाला हो"
+    },
+    {
+      "VatId": "785",
+      "ChId": "5",
+      "VatName": "Purushottam bhela akshar",
+      "VatNameGuj": "પુરુષોત્તમ ભેળા અક્ષર",
+      "VatFile": "ch05032.txt",
+      "VatNo": "32",
+      "VatNameHindi": " पुरुषोत्तम के साथ अक्षर म"
+    },
+    {
+      "VatId": "786",
+      "ChId": "5",
+      "VatName": "Kotharma harisankarbhaine",
+      "VatNameGuj": "કોઠારમાં હરિશંકરભાઈને",
+      "VatFile": "ch05033.txt",
+      "VatNo": "33",
+      "VatNameHindi": " कोठार में हरिशंकरभाई से ब"
+    },
+    {
+      "VatId": "787",
+      "ChId": "5",
+      "VatName": "Yogeshvardasji tatha",
+      "VatNameGuj": "યોગેશ્ર્વરદાસજી તથા",
+      "VatFile": "ch05034.txt",
+      "VatNo": "34",
+      "VatNameHindi": " योगेश्वरदासजी तथा महापुरु"
+    },
+    {
+      "VatId": "788",
+      "ChId": "5",
+      "VatName": "Sukmunie sadhune Maharajno",
+      "VatNameGuj": "શુકમુનિએ સાધુને મહારાજનો",
+      "VatFile": "ch05035.txt",
+      "VatNo": "35",
+      "VatNameHindi": " शुकमुनि ने साधु को महाराज"
+    },
+    {
+      "VatId": "789",
+      "ChId": "5",
+      "VatName": "Amare to jivne bhagavan",
+      "VatNameGuj": "અમારે તો જીવને ભગવાન",
+      "VatFile": "ch05036.txt",
+      "VatNo": "36",
+      "VatNameHindi": " हमें तो जीव को भगवान के ब"
+    },
+    {
+      "VatId": "790",
+      "ChId": "5",
+      "VatName": "Aa jiv badhay sara chhe",
+      "VatNameGuj": "આ જીવ બધાય સારા છે",
+      "VatFile": "ch05037.txt",
+      "VatNo": "37",
+      "VatNameHindi": " ये सभी जीव अच्छे हैं, परन"
+    },
+    {
+      "VatId": "791",
+      "ChId": "5",
+      "VatName": "Antarajami agal manne",
+      "VatNameGuj": "અંતરજામી આગળ મનને",
+      "VatFile": "ch05038.txt",
+      "VatNo": "38",
+      "VatNameHindi": " अंतर्यामी के सामने मन को "
+    },
+    {
+      "VatId": "792",
+      "ChId": "5",
+      "VatName": "Gondalma harisankarbhaie",
+      "VatNameGuj": "ગોંડળમાં હરિશંકરભાઈએ",
+      "VatFile": "ch05039.txt",
+      "VatNo": "39",
+      "VatNameHindi": " गोंडल में हरिशंकरभाई ने प"
+    },
+    {
+      "VatId": "793",
+      "ChId": "5",
+      "VatName": "Sarve ruda gun abhyasthi",
+      "VatNameGuj": "સર્વે રૂડા ગુણ અભ્યાસથી",
+      "VatFile": "ch05040.txt",
+      "VatNo": "40",
+      "VatNameHindi": " सभी अच्छे गुण, अभ्यास एवं"
+    },
+    {
+      "VatId": "794",
+      "ChId": "5",
+      "VatName": "Purvno sanskar hoy pan",
+      "VatNameGuj": "પૂર્વનો સંસ્કાર હોય પણ",
+      "VatFile": "ch05041.txt",
+      "VatNo": "41",
+      "VatNameHindi": " पूर्व का संस्कार हो परन्त"
+    },
+    {
+      "VatId": "795",
+      "ChId": "5",
+      "VatName": "Motae harek tarehthi",
+      "VatNameGuj": "મોટાએ હરેક તરેહથી",
+      "VatFile": "ch05042.txt",
+      "VatNo": "42",
+      "VatNameHindi": " बड़े सन्त ने हर एक प्रकार"
+    },
+    {
+      "VatId": "796",
+      "ChId": "5",
+      "VatName": "Sukjie parikshitne kahyu",
+      "VatNameGuj": "શુકજીએ પરીક્ષિતને કહ્યું",
+      "VatFile": "ch05043.txt",
+      "VatNo": "43",
+      "VatNameHindi": " शुकजी ने परीक्षित से कहा "
+    },
+    {
+      "VatId": "797",
+      "ChId": "5",
+      "VatName": "Bhagavanna ek var darshan",
+      "VatNameGuj": "ભગવાનનાં એક વાર દર્શન",
+      "VatFile": "ch05044.txt",
+      "VatNo": "44",
+      "VatNameHindi": " भगवान के दर्शन एक बार होत"
+    },
+    {
+      "VatId": "798",
+      "ChId": "5",
+      "VatName": "Aa lok chhe te jode",
+      "VatNameGuj": "આ લોક છે તે જોડે",
+      "VatFile": "ch05045.txt",
+      "VatNo": "45",
+      "VatNameHindi": " यह लोक है, वह तो जूते में"
+    },
+    {
+      "VatId": "799",
+      "ChId": "5",
+      "VatName": "Guru malya pachhi shishyane",
+      "VatNameGuj": "ગુરુ મળ્યા પછી શિષ્યને",
+      "VatFile": "ch05046.txt",
+      "VatNo": "46",
+      "VatNameHindi": " गुरु प्राप्त होने के बाद "
+    },
+    {
+      "VatId": "800",
+      "ChId": "5",
+      "VatName": "Manne dharye bhajan-bhakti",
+      "VatNameGuj": "મનને ધાર્યે ભજન-ભક્તિ",
+      "VatFile": "ch05047.txt",
+      "VatNo": "47",
+      "VatNameHindi": " मनमुखी भजन-भक्ति आदि करता"
+    },
+    {
+      "VatId": "801",
+      "ChId": "5",
+      "VatName": "Hal bhagavanno anugrah",
+      "VatNameGuj": "હાલ ભગવાનનો અનુગ્રહ",
+      "VatFile": "ch05048.txt",
+      "VatNo": "48",
+      "VatNameHindi": " इस समय भगवान का अनुग्रह अ"
+    },
+    {
+      "VatId": "802",
+      "ChId": "5",
+      "VatName": "Aa dehmathi ne lokmathi",
+      "VatNameGuj": "આ દેહમાંથી ને લોકમાંથી",
+      "VatFile": "ch05049.txt",
+      "VatNo": "49",
+      "VatNameHindi": " ऐसे ही समागम करते करते भग"
+    },
+    {
+      "VatId": "803",
+      "ChId": "5",
+      "VatName": "Sparshadik uttam vishay",
+      "VatNameGuj": "સ્પર્શાદિક ઉત્તમ વિષય",
+      "VatFile": "ch05050.txt",
+      "VatNo": "50",
+      "VatNameHindi": " स्पर्श आदि उत्तम विषय पहल"
+    },
+    {
+      "VatId": "804",
+      "ChId": "5",
+      "VatName": "Ghana jive mokshne marage",
+      "VatNameGuj": "ઘણા જીવને મોક્ષને મારગે",
+      "VatFile": "ch05051.txt",
+      "VatNo": "51",
+      "VatNameHindi": " अनेक जीवों को मोक्षमार्ग "
+    },
+    {
+      "VatId": "805",
+      "ChId": "5",
+      "VatName": "Deh Indriyu mayik chhe",
+      "VatNameGuj": "દેહ-ઇન્દ્રિયું માયિક છે",
+      "VatFile": "ch05052.txt",
+      "VatNo": "52",
+      "VatNameHindi": " देह-इन्द्रियाँ मायिक हैं "
+    },
+    {
+      "VatId": "806",
+      "ChId": "5",
+      "VatName": "Arth: satyugma je",
+      "VatNameGuj": "અર્થ : સત્યુગમાં જે",
+      "VatFile": "ch05053.txt",
+      "VatNo": "53",
+      "VatNameHindi": " कृते यद् ध्यायतो विष्णुं "
+    },
+    {
+      "VatId": "807",
+      "ChId": "5",
+      "VatName": "Man Indriyune vagar",
+      "VatNameGuj": "મન-ઇન્દ્રિયુંને વગર",
+      "VatFile": "ch05054.txt",
+      "VatNo": "54",
+      "VatNameHindi": " मन, इन्द्रियों को बिना प्"
+    },
+    {
+      "VatId": "808",
+      "ChId": "5",
+      "VatName": "Sparsh ne jihvama to jiv",
+      "VatNameGuj": "સ્પર્શમાં ને જિહ્વામાં તો જીવ",
+      "VatFile": "ch05055.txt",
+      "VatNo": "55",
+      "VatNameHindi": " स्पर्श में तथा जिह्वा में"
+    },
+    {
+      "VatId": "809",
+      "ChId": "5",
+      "VatName": "Rajane ashare jay tena",
+      "VatNameGuj": "રાજાને આશરે જાય તેના",
+      "VatFile": "ch05056.txt",
+      "VatNo": "56",
+      "VatNameHindi": " राजा की शरण में जाए उसके "
+    },
+    {
+      "VatId": "810",
+      "ChId": "5",
+      "VatName": "Athey pahor evu bhajan",
+      "VatNameGuj": "આઠેય પહોર એવું ભજન",
+      "VatFile": "ch05057.txt",
+      "VatNo": "57",
+      "VatNameHindi": " आठों प्रहर ऐसा भजन करना, "
+    },
+    {
+      "VatId": "811",
+      "ChId": "5",
+      "VatName": "Nijatmanam brahmrupam",
+      "VatNameGuj": "નિજાત્માનં બ્રહ્મરૂપં",
+      "VatFile": "ch05058.txt",
+      "VatNo": "58",
+      "VatNameHindi": " 'निजात्मानं ब्रह्मरूपं दे"
+    },
+    {
+      "VatId": "812",
+      "ChId": "5",
+      "VatName": "Tran dehthi potanu svarup",
+      "VatNameGuj": "ત્રણ દેહથી પોતાનું સ્વરૂપ",
+      "VatFile": "ch05059.txt",
+      "VatNo": "59",
+      "VatNameHindi": " तीन देह से अपना स्वरूप भि"
+    },
+    {
+      "VatId": "813",
+      "ChId": "5",
+      "VatName": "Shivjina galama rahine sape",
+      "VatNameGuj": "શિવજીના ગળામાં રહીને સાપે",
+      "VatFile": "ch05060.txt",
+      "VatNo": "60",
+      "VatNameHindi": " शिवजी के कंठ में रहकर सर्"
+    },
+    {
+      "VatId": "814",
+      "ChId": "5",
+      "VatName": "Indriyadik kshetra thaki koi",
+      "VatNameGuj": "ઇન્દ્રિયાદિક ક્ષેત્ર થકી કોઈ",
+      "VatFile": "ch05061.txt",
+      "VatNo": "61",
+      "VatNameHindi": " इन्द्रियादि क्षेत्र से को"
+    },
+    {
+      "VatId": "815",
+      "ChId": "5",
+      "VatName": "Jene bhagavan bhajava hoy",
+      "VatNameGuj": "જેને ભગવાન ભજવા હોય",
+      "VatFile": "ch05062.txt",
+      "VatNo": "62",
+      "VatNameHindi": " जिसे भगवान का भजन करना हो"
+    },
+    {
+      "VatId": "816",
+      "ChId": "5",
+      "VatName": "Bhagavanna ekantik sadhu",
+      "VatNameGuj": "ભગવાનના એકાંતિક સાધુ",
+      "VatFile": "ch05063.txt",
+      "VatNo": "63",
+      "VatNameHindi": " भगवान के एकान्तिक साधु जि"
+    },
+    {
+      "VatId": "817",
+      "ChId": "5",
+      "VatName": "Sadhuno droh em samajavo",
+      "VatNameGuj": "સાધુનો દ્રોહ એમ સમજવો",
+      "VatFile": "ch05064.txt",
+      "VatNo": "64",
+      "VatNameHindi": " साधु का द्रोह ऐसे समझना, "
+    },
+    {
+      "VatId": "818",
+      "ChId": "5",
+      "VatName": "Manajibhaie vadi madhye",
+      "VatNameGuj": "મનજીભાઈએ વાડી મધ્યે",
+      "VatFile": "ch05065.txt",
+      "VatNo": "65",
+      "VatNameHindi": " मनजीभाई ने वाड़ी में पूछा"
+    },
+    {
+      "VatId": "819",
+      "ChId": "5",
+      "VatName": "Nenne joi nenne joi",
+      "VatNameGuj": "નેણને જોઈ નેણને જોઈ",
+      "VatFile": "ch05066.txt",
+      "VatNo": "66",
+      "VatNameHindi": " 'नेण ने जोई नेण ने जोई'"
+    },
+    {
+      "VatId": "820",
+      "ChId": "5",
+      "VatName": "Koti kalp sudhi bhagavan",
+      "VatNameGuj": "કોટિ કલ્પ સુધી ભગવાન",
+      "VatFile": "ch05067.txt",
+      "VatNo": "67",
+      "VatNameHindi": " भगवान का भजन किए बिना कोट"
+    },
+    {
+      "VatId": "821",
+      "ChId": "5",
+      "VatName": "Jivno moksh karava",
+      "VatNameGuj": "જીવનો મોક્ષ કરવા",
+      "VatFile": "ch05068.txt",
+      "VatNo": "68",
+      "VatNameHindi": " जीव का मोक्ष करने के लिए "
+    },
+    {
+      "VatId": "822",
+      "ChId": "5",
+      "VatName": "Bhagavan akshardhamma chhe",
+      "VatNameGuj": "ભગવાન અક્ષરધામમાં છે",
+      "VatFile": "ch05069.txt",
+      "VatNo": "69",
+      "VatNameHindi": " भगवान अक्षरधाम में हैं, व"
+    },
+    {
+      "VatId": "823",
+      "ChId": "5",
+      "VatName": "Amari to avarada bavis",
+      "VatNameGuj": "અમારી તો આવરદા બાવીસ",
+      "VatFile": "ch05070.txt",
+      "VatNo": "70",
+      "VatNameHindi": " हमारी आयु तो बाईस साल से "
+    },
+    {
+      "VatId": "824",
+      "ChId": "5",
+      "VatName": "Nathu patele vadima puchhyu",
+      "VatNameGuj": "નથુ પટેલે વાડીમાં પૂછ્યું",
+      "VatFile": "ch05071.txt",
+      "VatNo": "71",
+      "VatNameHindi": " नथु पटेल ने वाड़ी में पूछ"
+    },
+    {
+      "VatId": "825",
+      "ChId": "5",
+      "VatName": "Jeth vadi 9mi ne",
+      "VatNameGuj": "જેઠ વદિ 9મી ને",
+      "VatFile": "ch05072.txt",
+      "VatNo": "72",
+      "VatNameHindi": " ज्येष्ठ कृष्ण ९, शनिवार क"
+    },
+    {
+      "VatId": "826",
+      "ChId": "5",
+      "VatName": "Jeth vadi 10mi ne divase",
+      "VatNameGuj": "જેઠ વદિ 10મીને દિવસે",
+      "VatFile": "ch05073.txt",
+      "VatNo": "73",
+      "VatNameHindi": " ज्येष्ठ कृष्ण दशमी के दिन"
+    },
+    {
+      "VatId": "827",
+      "ChId": "5",
+      "VatName": "Ratre vat kari je",
+      "VatNameGuj": "રાત્રે વાત કરી જે",
+      "VatFile": "ch05074.txt",
+      "VatNo": "74",
+      "VatNameHindi": " रात्रि में बात कही कि, 'ग"
+    },
+    {
+      "VatId": "828",
+      "ChId": "5",
+      "VatName": "Vasana chhe te",
+      "VatNameGuj": "વાસના છે તે",
+      "VatFile": "ch05075.txt",
+      "VatNo": "75",
+      "VatNameHindi": " वासना जठराग्नि से नहीं जल"
+    },
+    {
+      "VatId": "829",
+      "ChId": "5",
+      "VatName": "Dharmniyamma fer pade to",
+      "VatNameGuj": "ધર્મનિયમમાં ફેર પડે તો",
+      "VatFile": "ch05076.txt",
+      "VatNo": "76",
+      "VatNameHindi": " धर्म-नियम में फर्क पड़ा त"
+    },
+    {
+      "VatId": "830",
+      "ChId": "5",
+      "VatName": "Bhogavane kanthe tadake",
+      "VatNameGuj": "ભોગાવાને કાંઠે તડકે",
+      "VatFile": "ch05077.txt",
+      "VatNo": "77",
+      "VatNameHindi": " भोगावा नदी के तट पर धूप म"
+    },
+    {
+      "VatId": "831",
+      "ChId": "5",
+      "VatName": "Gandhari ankhe pata bandhi",
+      "VatNameGuj": "ગાંધારી આંખે પાટા બાંધી",
+      "VatFile": "ch05078.txt",
+      "VatNo": "78",
+      "VatNameHindi": " गांधारी आँखो पर पट्टी बाँ"
+    },
+    {
+      "VatId": "832",
+      "ChId": "5",
+      "VatName": "Valine bhaini stri rakhya",
+      "VatNameGuj": "વાલીને ભાઈની સ્ત્રી રાખ્યા",
+      "VatFile": "ch05079.txt",
+      "VatNo": "79",
+      "VatNameHindi": " भाई की स्त्री को रखने के "
+    },
+    {
+      "VatId": "833",
+      "ChId": "5",
+      "VatName": "Vahevarik manasni ne",
+      "VatNameGuj": "વહેવારિક માણસની ને",
+      "VatFile": "ch05080.txt",
+      "VatNo": "80",
+      "VatNameHindi": " व्यावहारिक मनुष्य (सांसार"
+    },
+    {
+      "VatId": "834",
+      "ChId": "5",
+      "VatName": "Pachas hajar rupiya male",
+      "VatNameGuj": "પચાસ હજાર રૂપિયા મળે",
+      "VatFile": "ch05081.txt",
+      "VatNo": "81",
+      "VatNameHindi": " पचास हजार रुपये मिले तो स"
+    },
+    {
+      "VatId": "835",
+      "ChId": "5",
+      "VatName": "Apana satsangni rit",
+      "VatNameGuj": "આપણા સત્સંગની રીત",
+      "VatFile": "ch05082.txt",
+      "VatNo": "82",
+      "VatNameHindi": " अपने सत्संग की रीति समझना"
+    },
+    {
+      "VatId": "836",
+      "ChId": "5",
+      "VatName": "Dhyani, premi e sarvathi",
+      "VatNameGuj": "ધ્યાની, પ્રેમી એ સર્વથી",
+      "VatFile": "ch05083.txt",
+      "VatNo": "83",
+      "VatNameHindi": " ध्यानी, प्रेमी ये सभी से "
+    },
+    {
+      "VatId": "837",
+      "ChId": "5",
+      "VatName": "Buranpurma pote doshione",
+      "VatNameGuj": "બુરાનપુરમાં પોતે ડોશીઓને",
+      "VatFile": "ch05084.txt",
+      "VatNo": "84",
+      "VatNameHindi": " स्वयं बुरहानपुर में महिला"
+    },
+    {
+      "VatId": "838",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05085.txt",
+      "VatNo": "85",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, 'व"
+    },
+    {
+      "VatId": "839",
+      "ChId": "5",
+      "VatName": "Satsang, ekantikpanu ne",
+      "VatNameGuj": "સત્સંગ, એકાંતિકપણું ને",
+      "VatFile": "ch05086.txt",
+      "VatNo": "86",
+      "VatNameHindi": " सत्संग, एकान्तिकभाव और भग"
+    },
+    {
+      "VatId": "840",
+      "ChId": "5",
+      "VatName": "Garib thavani rit batavi",
+      "VatNameGuj": "ગરીબ થાવાની રીત બતાવી",
+      "VatFile": "ch05087.txt",
+      "VatNo": "87",
+      "VatNameHindi": " गरीब होने की रीति बताई कि"
+    },
+    {
+      "VatId": "841",
+      "ChId": "5",
+      "VatName": "Satsangthi bhagavan vash",
+      "VatNameGuj": "સત્સંગથી ભગવાન વશ",
+      "VatFile": "ch05088.txt",
+      "VatNo": "88",
+      "VatNameHindi": " सत्संग से भगवान वश में हो"
+    },
+    {
+      "VatId": "842",
+      "ChId": "5",
+      "VatName": "Ekne antarno kajiyo thay",
+      "VatNameGuj": "એકને અંતરનો કજિયો થાય",
+      "VatFile": "ch05089.txt",
+      "VatNo": "89",
+      "VatNameHindi": " एक को अंतःकरण का कलह होता"
+    },
+    {
+      "VatId": "843",
+      "ChId": "5",
+      "VatName": "Mahuvana haribhakte",
+      "VatNameGuj": "મહુવાના હરિભક્તે",
+      "VatFile": "ch05090.txt",
+      "VatNo": "90",
+      "VatNameHindi": " महुवा के हरिभक्त ने पूछा "
+    },
+    {
+      "VatId": "844",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05091.txt",
+      "VatNo": "91",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, 'प"
+    },
+    {
+      "VatId": "845",
+      "ChId": "5",
+      "VatName": "Varatalnu pahelu vachanamrut",
+      "VatNameGuj": "વરતાલનું પહેલું વચનામૃત",
+      "VatFile": "ch05092.txt",
+      "VatNo": "92",
+      "VatNameHindi": " वरताल का प्रथम वचनामृत तथ"
+    },
+    {
+      "VatId": "846",
+      "ChId": "5",
+      "VatName": "Kariyaninu 8mu vachanamrut",
+      "VatNameGuj": "કારિયાણીનું 8મું વચનામૃત ને મધ",
+      "VatFile": "ch05093.txt",
+      "VatNo": "93",
+      "VatNameHindi": " कारियाणी का ८ वाँ वचनामृत"
+    },
+    {
+      "VatId": "847",
+      "ChId": "5",
+      "VatName": "Gondalna garasiya hathibhai",
+      "VatNameGuj": "ગોંડળના ગરાસિયા હઠીભાઈ",
+      "VatFile": "ch05094.txt",
+      "VatNo": "94",
+      "VatNameHindi": " गोंडल के क्षत्रिय हठीभाई "
+    },
+    {
+      "VatId": "848",
+      "ChId": "5",
+      "VatName": "Avidhyane badhi tarehthi",
+      "VatNameGuj": "અવિદ્યાને બધી તરેહથી",
+      "VatFile": "ch05095.txt",
+      "VatNo": "95",
+      "VatNameHindi": " अविद्या को चारों ओर से मह"
+    },
+    {
+      "VatId": "849",
+      "ChId": "5",
+      "VatName": "Mayanu rup e chhe je",
+      "VatNameGuj": "માયાનું રૂપ એ છે જે",
+      "VatFile": "ch05096.txt",
+      "VatNo": "96",
+      "VatNameHindi": " माया का रूप यह है, कि भगव"
+    },
+    {
+      "VatId": "850",
+      "ChId": "5",
+      "VatName": "Koik manushyma santpanu",
+      "VatNameGuj": "કોઈક મનુષ્યમાં શાંતપણું",
+      "VatFile": "ch05097.txt",
+      "VatNo": "97",
+      "VatNameHindi": " किसी मनुष्य में शांतता हो"
+    },
+    {
+      "VatId": "851",
+      "ChId": "5",
+      "VatName": "Gnanine atma kahyo chhe",
+      "VatNameGuj": "જ્ઞાનીને આત્મા કહ્યો છે",
+      "VatFile": "ch05098.txt",
+      "VatNo": "98",
+      "VatNameHindi": " ज्ञानी को आत्मा कहा है, अ"
+    },
+    {
+      "VatId": "852",
+      "ChId": "5",
+      "VatName": "Manajibhaie puchhyu je",
+      "VatNameGuj": "મનજીભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05099.txt",
+      "VatNo": "99",
+      "VatNameHindi": " मनजीभाई ने पूछा कि, 'ज्ञा"
+    },
+    {
+      "VatId": "853",
+      "ChId": "5",
+      "VatName": "Gruhasthashramma rahine",
+      "VatNameGuj": "ગૃહસ્થાશ્રમમાં રહીને",
+      "VatFile": "ch05100.txt",
+      "VatNo": "100",
+      "VatNameHindi": " गृहस्थाश्रम में रहकर कथा"
+    },
+    {
+      "VatId": "854",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05101.txt",
+      "VatNo": "101",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, '"
+    },
+    {
+      "VatId": "855",
+      "ChId": "5",
+      "VatName": "Gamne gadh hoy tem",
+      "VatNameGuj": "ગામને ગઢ હોય તેમ",
+      "VatFile": "ch05102.txt",
+      "VatNo": "102",
+      "VatNameHindi": " गाँव को गढ़ होता है, उसी"
+    },
+    {
+      "VatId": "856",
+      "ChId": "5",
+      "VatName": "Divyabhav ne manushybhav ek",
+      "VatNameGuj": "દિવ્યભાવ ને મનુષ્યભાવ એક",
+      "VatFile": "ch05103.txt",
+      "VatNo": "103",
+      "VatNameHindi": " दिव्यभाव तथा मनुष्यभाव ए"
+    },
+    {
+      "VatId": "857",
+      "ChId": "5",
+      "VatName": "Samadhima svarup dekhay",
+      "VatNameGuj": "સમાધિમાં સ્વરૂપ દેખાય",
+      "VatFile": "ch05104.txt",
+      "VatNo": "104",
+      "VatNameHindi": " समाधि में स्वरूप दिखाई द"
+    },
+    {
+      "VatId": "858",
+      "ChId": "5",
+      "VatName": "Bhagavan strio bhogavata hoy",
+      "VatNameGuj": "ભગવાન સ્ત્રીઓ ભોગવતા હોય",
+      "VatFile": "ch05105.txt",
+      "VatNo": "105",
+      "VatNameHindi": " भगवान स्त्रियों का संग क"
+    },
+    {
+      "VatId": "859",
+      "ChId": "5",
+      "VatName": "Atmanishtha je",
+      "VatNameGuj": "આત્મનિષ્ઠા જે",
+      "VatFile": "ch05106.txt",
+      "VatNo": "106",
+      "VatNameHindi": " आत्मनिष्ठा अर्थात् में द"
+    },
+    {
+      "VatId": "860",
+      "ChId": "5",
+      "VatName": "Bhajan, bhakti ne kathavartani",
+      "VatNameGuj": "ભજન, ભક્તિ ને કથાવાર્તાની",
+      "VatFile": "ch05107.txt",
+      "VatNo": "107",
+      "VatNameHindi": " महाराज का हार्द (अभिप्रा"
+    },
+    {
+      "VatId": "861",
+      "ChId": "5",
+      "VatName": "Upasana, niyam tatha",
+      "VatNameGuj": "ઉપાસના, નિયમ તથા",
+      "VatFile": "ch05108.txt",
+      "VatNo": "108",
+      "VatNameHindi": " उपासना, नियम और भक्ति मे"
+    },
+    {
+      "VatId": "862",
+      "ChId": "5",
+      "VatName": "Jagatma dan, punya",
+      "VatNameGuj": "જગતમાં દાન, પુણ્ય",
+      "VatFile": "ch05109.txt",
+      "VatNo": "109",
+      "VatNameHindi": " बहुत लोग संसार में दान, "
+    },
+    {
+      "VatId": "863",
+      "ChId": "5",
+      "VatName": "Maharajne jyare dekhie",
+      "VatNameGuj": "મહારાજને જ્યારે દેખીએ",
+      "VatFile": "ch05110.txt",
+      "VatNo": "110",
+      "VatNameHindi": " महाराज को जब देखें तब बा"
+    },
+    {
+      "VatId": "864",
+      "ChId": "5",
+      "VatName": "Laviya darajine strini",
+      "VatNameGuj": "લવિયા દરજીને સ્ત્રીની",
+      "VatFile": "ch05111.txt",
+      "VatNo": "111",
+      "VatNameHindi": " लविया दर्जी को स्त्री की"
+    },
+    {
+      "VatId": "865",
+      "ChId": "5",
+      "VatName": "Maharaj chhata rupiyana",
+      "VatNameGuj": "મહારાજ છતાં રૂપિયાનાં",
+      "VatFile": "ch05112.txt",
+      "VatNo": "112",
+      "VatNameHindi": " महाराज के रहते हुए रूपयो"
+    },
+    {
+      "VatId": "866",
+      "ChId": "5",
+      "VatName": "Khambhalani doshine ena",
+      "VatNameGuj": "ખંભાળાની ડોશીને એના",
+      "VatFile": "ch05113.txt",
+      "VatNo": "113",
+      "VatNameHindi": " खंभाला की रस्त्री का पति"
+    },
+    {
+      "VatId": "867",
+      "ChId": "5",
+      "VatName": "Mavabhaie Maharajne mayanu",
+      "VatNameGuj": "માવાભાઈએ મહારાજને માયાનું",
+      "VatFile": "ch05114.txt",
+      "VatNo": "114",
+      "VatNameHindi": " मावाभाई ने महाराज से 'मा"
+    },
+    {
+      "VatId": "868",
+      "ChId": "5",
+      "VatName": "Pashu, Manushya, Jhad",
+      "VatNameGuj": "પશુ, મનુષ્ય, ઝાડ",
+      "VatFile": "ch05115.txt",
+      "VatNo": "115",
+      "VatNameHindi": " पशु, मनुष्य, वृक्ष सभी म"
+    },
+    {
+      "VatId": "869",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05116.txt",
+      "VatNo": "116",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, '"
+    },
+    {
+      "VatId": "870",
+      "ChId": "5",
+      "VatName": "Chhellanu biju vachanamrut",
+      "VatNameGuj": "છેલ્લાનું બીજું વચનામૃત",
+      "VatFile": "ch05117.txt",
+      "VatNo": "117",
+      "VatNameHindi": " वचनामृत गढ़डा अन्त्य का "
+    },
+    {
+      "VatId": "871",
+      "ChId": "5",
+      "VatName": "Bhagavanna bhakt thaya",
+      "VatNameGuj": "ભગવાનના ભક્ત થયા",
+      "VatFile": "ch05118.txt",
+      "VatNo": "118",
+      "VatNameHindi": " भगवान के भक्त हुए हैं तथ"
+    },
+    {
+      "VatId": "872",
+      "ChId": "5",
+      "VatName": "Pragat bhagavanne janine",
+      "VatNameGuj": "પ્રગટ ભગવાનને જાણીને જે",
+      "VatFile": "ch05119.txt",
+      "VatNo": "119",
+      "VatNameHindi": " प्रकट भगवान को जानकर जो "
+    },
+    {
+      "VatId": "873",
+      "ChId": "5",
+      "VatName": "Chhellanu 35mu vachanamrut",
+      "VatNameGuj": "છેલ્લાનું 35મું વચનામૃત",
+      "VatFile": "ch05120.txt",
+      "VatNo": "120",
+      "VatNameHindi": " वचनामृत गढ़डा अंत्य का ३"
+    },
+    {
+      "VatId": "874",
+      "ChId": "5",
+      "VatName": "Satvagunma em vichar",
+      "VatNameGuj": "સત્ત્વગુણમાં એમ વિચાર",
+      "VatFile": "ch05121.txt",
+      "VatNo": "121",
+      "VatNameHindi": " सत्त्वगुण में ऐसा विचार "
+    },
+    {
+      "VatId": "875",
+      "ChId": "5",
+      "VatName": "Gaja pramane kare tema",
+      "VatNameGuj": "ગજા પ્રમાણે કરે તેમાં",
+      "VatFile": "ch05122.txt",
+      "VatNo": "122",
+      "VatNameHindi": " शक्ति के अनुसार करें, उस"
+    },
+    {
+      "VatId": "876",
+      "ChId": "5",
+      "VatName": "Jivno ne dehno vahevar",
+      "VatNameGuj": "જીવનો ને દેહનો વહેવાર",
+      "VatFile": "ch05123.txt",
+      "VatNo": "123",
+      "VatNameHindi": " जीव का तथा देह का व्यवहा"
+    },
+    {
+      "VatId": "877",
+      "ChId": "5",
+      "VatName": "Ek haribhaktne rog",
+      "VatNameGuj": "એક હરિભક્તને રોગ",
+      "VatFile": "ch05124.txt",
+      "VatNo": "124",
+      "VatNameHindi": " एक हरिभक्त का रोग मिटाने"
+    },
+    {
+      "VatId": "878",
+      "ChId": "5",
+      "VatName": "Harisankarbhaina puchhavathi",
+      "VatNameGuj": "હરિશંકરભાઈના પૂછવાથી",
+      "VatFile": "ch05125.txt",
+      "VatNo": "125",
+      "VatNameHindi": " हरिशंकरभाई के पूछने से क"
+    },
+    {
+      "VatId": "879",
+      "ChId": "5",
+      "VatName": "Agal ek vakhat mare",
+      "VatNameGuj": "આગળ એક વખત મારે",
+      "VatFile": "ch05126.txt",
+      "VatNo": "126",
+      "VatNameHindi": " एक दिन मेरे कान में कोई "
+    },
+    {
+      "VatId": "880",
+      "ChId": "5",
+      "VatName": "Motane koi vat koine",
+      "VatNameGuj": "મોટાને કોઈ વાત કોઈને",
+      "VatFile": "ch05127.txt",
+      "VatNo": "127",
+      "VatNameHindi": " बड़ों को कोई बात किसी को"
+    },
+    {
+      "VatId": "881",
+      "ChId": "5",
+      "VatName": "Arth: bhalene sudhdh hoy",
+      "VatNameGuj": "અર્થ: ભલેને શુદ્ધ હોય",
+      "VatFile": "ch05128.txt",
+      "VatNo": "128",
+      "VatNameHindi": " यद्यपि शुद्ध लोकविरुद्ध"
+    },
+    {
+      "VatId": "882",
+      "ChId": "5",
+      "VatName": "Ayogy ghat thay tyare",
+      "VatNameGuj": "અયોગ્ય ઘાટ થાય ત્યારે",
+      "VatFile": "ch05129.txt",
+      "VatNo": "129",
+      "VatNameHindi": " अयोग्य संकल्प हो तब ऐसा "
+    },
+    {
+      "VatId": "883",
+      "ChId": "5",
+      "VatName": "Panchalanu 7mu vachanamrut",
+      "VatNameGuj": "પંચાળાનું 7મું વચનામૃત",
+      "VatFile": "ch05130.txt",
+      "VatNo": "130",
+      "VatNameHindi": " वचनामृत पंचाला का सात पढ"
+    },
+    {
+      "VatId": "884",
+      "ChId": "5",
+      "VatName": "Samajya vina je je kare",
+      "VatNameGuj": "સમજ્યા વિના જે જે કરે",
+      "VatFile": "ch05131.txt",
+      "VatNo": "131",
+      "VatNameHindi": " समझे बिना जो जो करें, उस"
+    },
+    {
+      "VatId": "885",
+      "ChId": "5",
+      "VatName": "Swaminarayan mantra",
+      "VatNameGuj": "સ્વામિનારાયણ મંત્ર",
+      "VatFile": "ch05132.txt",
+      "VatNo": "132",
+      "VatNameHindi": " स्वामिनारायण मंत्र के जा"
+    },
+    {
+      "VatId": "886",
+      "ChId": "5",
+      "VatName": "Bhagavan tatha santno",
+      "VatNameGuj": "ભગવાનનો તથા સંતનો",
+      "VatFile": "ch05133.txt",
+      "VatNo": "133",
+      "VatNameHindi": " भगवान तथा संत का माहात्म"
+    },
+    {
+      "VatId": "887",
+      "ChId": "5",
+      "VatName": "Harisankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05134.txt",
+      "VatNo": "134",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, '"
+    },
+    {
+      "VatId": "888",
+      "ChId": "5",
+      "VatName": "Mahapujama besati vakhate",
+      "VatNameGuj": "મહાપૂજામાં બેસતી વખતે",
+      "VatFile": "ch05135.txt",
+      "VatNo": "135",
+      "VatNameHindi": " महापूजा में बैठते वक्त ब"
+    },
+    {
+      "VatId": "889",
+      "ChId": "5",
+      "VatName": "Brahmanno dikaro brahman",
+      "VatNameGuj": "બ્રાહ્મણનો દીકરો બ્રાહ્મણ",
+      "VatFile": "ch05136.txt",
+      "VatNo": "136",
+      "VatNameHindi": " ब्राह्मण का पुत्र ब्राह्"
+    },
+    {
+      "VatId": "890",
+      "ChId": "5",
+      "VatName": "Jeva shabd sambhale tevo",
+      "VatNameGuj": "જેવા શબ્દ સાંભળે તેવો જીવ",
+      "VatFile": "ch05137.txt",
+      "VatNo": "137",
+      "VatNameHindi": " जैसे शब्द सुनते हैं, वैस"
+    },
+    {
+      "VatId": "891",
+      "ChId": "5",
+      "VatName": "Chhellanu biju vachanamrut",
+      "VatNameGuj": "છેલ્લાનું બીજું વચનામૃત",
+      "VatFile": "ch05138.txt",
+      "VatNo": "138",
+      "VatNameHindi": " वचनामृत गढ़डा अंत्य का २"
+    },
+    {
+      "VatId": "892",
+      "ChId": "5",
+      "VatName": "Yagnma svarupanandswamine",
+      "VatNameGuj": "યજ્ઞમાં સ્વરૂપાનંદસ્વામીને",
+      "VatFile": "ch05139.txt",
+      "VatNo": "139",
+      "VatNameHindi": " महाराज ने यज्ञ में स्वरू"
+    },
+    {
+      "VatId": "893",
+      "ChId": "5",
+      "VatName": "Svarupanandswamine Maharaje",
+      "VatNameGuj": "સ્વરૂપાનંદસ્વામીને મહારાજે",
+      "VatFile": "ch05140.txt",
+      "VatNo": "140",
+      "VatNameHindi": " महाराज ने स्वरूपानन्दस्व"
+    },
+    {
+      "VatId": "894",
+      "ChId": "5",
+      "VatName": "Svarupanandswamine Maharaje",
+      "VatNameGuj": "સ્વરૂપાનંદસ્વામીને મહારાજે",
+      "VatFile": "ch05141.txt",
+      "VatNo": "141",
+      "VatNameHindi": " महाराज ने स्वरूपानन्दस्व"
+    },
+    {
+      "VatId": "895",
+      "ChId": "5",
+      "VatName": "Svarupanandswamine mandavadma",
+      "VatNameGuj": "સ્વરૂપાનંદસ્વામીને મંદવાડમાં",
+      "VatFile": "ch05142.txt",
+      "VatNo": "142",
+      "VatNameHindi": " स्वरूपानन्दस्वामी से बीम"
+    },
+    {
+      "VatId": "896",
+      "ChId": "5",
+      "VatName": "Maharaj ne aa sadhu",
+      "VatNameGuj": "મહારાજ ને આ સાધુ",
+      "VatFile": "ch05143.txt",
+      "VatNo": "143",
+      "VatNameHindi": " महाराज और यह साधु सब से "
+    },
+    {
+      "VatId": "897",
+      "ChId": "5",
+      "VatName": "Upasanathi moksh chhe",
+      "VatNameGuj": "ઉપાસનાથી મોક્ષ છે",
+      "VatFile": "ch05144.txt",
+      "VatNo": "144",
+      "VatNameHindi": " उपासना से मोक्ष है। अकेल"
+    },
+    {
+      "VatId": "898",
+      "ChId": "5",
+      "VatName": "Motai to Maharajne",
+      "VatNameGuj": "મોટાઈ તો મહારાજને",
+      "VatFile": "ch05145.txt",
+      "VatNo": "145",
+      "VatNameHindi": " महाराज को पुरुषोत्तम जान"
+    },
+    {
+      "VatId": "899",
+      "ChId": "5",
+      "VatName": "Junagadhna to Maharaj",
+      "VatNameGuj": "જૂનાગઢના તો મહારાજ",
+      "VatFile": "ch05146.txt",
+      "VatNo": "146",
+      "VatNameHindi": " जूनागढ़ के तो महाराज जाम"
+    },
+    {
+      "VatId": "900",
+      "ChId": "5",
+      "VatName": "Lakh man lodhani lodhi",
+      "VatNameGuj": "લાખ મણ લોઢાની લોઢી",
+      "VatFile": "ch05147.txt",
+      "VatNo": "147",
+      "VatNameHindi": " लाख मन लोहे का तवा आग मे"
+    },
+    {
+      "VatId": "901",
+      "ChId": "5",
+      "VatName": "Abhinivesh thay tene ved",
+      "VatNameGuj": "અભિનિવેશ થાય તેને વેદ",
+      "VatFile": "ch05148.txt",
+      "VatNo": "148",
+      "VatNameHindi": " अभिनिवेश हुआ हो उसे वेद "
+    },
+    {
+      "VatId": "902",
+      "ChId": "5",
+      "VatName": "Gnan karata karata chhaki",
+      "VatNameGuj": "જ્ઞાન કરતાં કરતાં છકી",
+      "VatFile": "ch05149.txt",
+      "VatNo": "149",
+      "VatNameHindi": " ज्ञान करते करते उन्मत्त "
+    },
+    {
+      "VatId": "903",
+      "ChId": "5",
+      "VatName": "Bhagavan bhajata loknu",
+      "VatNameGuj": "ભગવાન ભજતાં લોકનું",
+      "VatFile": "ch05150.txt",
+      "VatNo": "150",
+      "VatNameHindi": " भगवान का भजन करते हुए लो"
+    },
+    {
+      "VatId": "904",
+      "ChId": "5",
+      "VatName": "Vachanamrutno paratharo",
+      "VatNameGuj": "વચનામૃતનો પરથારો",
+      "VatFile": "ch05151.txt",
+      "VatNo": "151",
+      "VatNameHindi": " 'वचनामृत' की प्रस्तावना "
+    },
+    {
+      "VatId": "905",
+      "ChId": "5",
+      "VatName": "Harishankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05152.txt",
+      "VatNo": "152",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, '"
+    },
+    {
+      "VatId": "906",
+      "ChId": "5",
+      "VatName": "Parvatbhainu nam granthma",
+      "VatNameGuj": "પર્વતભાઈનું નામ ગ્ંરથમાં",
+      "VatFile": "ch05153.txt",
+      "VatNo": "153",
+      "VatNameHindi": " पर्वतभाई का नाम ग्रन्थों"
+    },
+    {
+      "VatId": "907",
+      "ChId": "5",
+      "VatName": "Sarv prakarni vatu",
+      "VatNameGuj": "સર્વ પ્રકારની વાતું",
+      "VatFile": "ch05154.txt",
+      "VatNo": "154",
+      "VatNameHindi": " जिससे हर प्रकार की बातें"
+    },
+    {
+      "VatId": "908",
+      "ChId": "5",
+      "VatName": "Narnarayananandswami adik",
+      "VatNameGuj": "નરનારાયણાનંદસ્વામી આદિક",
+      "VatFile": "ch05155.txt",
+      "VatNo": "155",
+      "VatNameHindi": " नरनारायणानन्दस्वामी आदि "
+    },
+    {
+      "VatId": "909",
+      "ChId": "5",
+      "VatName": "Maharaje vachanamrutma",
+      "VatNameGuj": "મહારાજે વચનામૃતમાં",
+      "VatFile": "ch05156.txt",
+      "VatNo": "156",
+      "VatNameHindi": " महाराज ने वचनामृत में अप"
+    },
+    {
+      "VatId": "910",
+      "ChId": "5",
+      "VatName": "Potani vat kari je",
+      "VatNameGuj": "પોતાની વાત કરી જે",
+      "VatFile": "ch05157.txt",
+      "VatNo": "157",
+      "VatNameHindi": " अपनी बात कही कि, 'हमने स"
+    },
+    {
+      "VatId": "911",
+      "ChId": "5",
+      "VatName": "Dharmsvarupanand brahmcharina",
+      "VatNameGuj": "ધર્મસ્વરૂપાનંદ બ્રહ્મચારીના",
+      "VatFile": "ch05158.txt",
+      "VatNo": "158",
+      "VatNameHindi": " धर्मस्वरूपानंद ब्रह्मचार"
+    },
+    {
+      "VatId": "912",
+      "ChId": "5",
+      "VatName": "Upasana ne agna be rakhava",
+      "VatNameGuj": "ઉપાસના ને આજ્ઞા બે રાખવાં",
+      "VatFile": "ch05159.txt",
+      "VatNo": "159",
+      "VatNameHindi": " उपासना और आज्ञा दो रखना।"
+    },
+    {
+      "VatId": "913",
+      "ChId": "5",
+      "VatName": "Harishankarbhaie puchhyu je",
+      "VatNameGuj": "હરિશંકરભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05160.txt",
+      "VatNo": "160",
+      "VatNameHindi": " हरिशंकरभाई ने पूछा कि, '"
+    },
+    {
+      "VatId": "914",
+      "ChId": "5",
+      "VatName": "Kai joie nahi tene",
+      "VatNameGuj": "કાંઈ જોઈએ નહિ તેને",
+      "VatFile": "ch05161.txt",
+      "VatNo": "161",
+      "VatNameHindi": " कुछ चाहिए नहीं उसे दुःख "
+    },
+    {
+      "VatId": "915",
+      "ChId": "5",
+      "VatName": "Agnama rahe te chhete",
+      "VatNameGuj": "આજ્ઞામાં રહે તે છેટે",
+      "VatFile": "ch05162.txt",
+      "VatNo": "162",
+      "VatNameHindi": " आज्ञा में रहता हो वह दूर"
+    },
+    {
+      "VatId": "916",
+      "ChId": "5",
+      "VatName": "Madhyanu 5mu vachanamrut",
+      "VatNameGuj": "મધ્યનું 5મું વચનામૃત",
+      "VatFile": "ch05163.txt",
+      "VatNo": "163",
+      "VatNameHindi": " वचनामृत गढ़डा मध्य का ५ "
+    },
+    {
+      "VatId": "917",
+      "ChId": "5",
+      "VatName": "Manajibhaie puchhyu je",
+      "VatNameGuj": "મનજીભાઈએ પૂછ્યું જે",
+      "VatFile": "ch05164.txt",
+      "VatNo": "164",
+      "VatNameHindi": " मनजीभाई ने पूछा कि, 'भगव"
+    },
+    {
+      "VatId": "918",
+      "ChId": "5",
+      "VatName": "Avi vatu kyay thati nathi",
+      "VatNameGuj": "આવી વાતું ક્યાંય થાતી નથી",
+      "VatFile": "ch05165.txt",
+      "VatNo": "165",
+      "VatNameHindi": " ऐसी बातें कहीं नहीं होती"
+    },
+    {
+      "VatId": "919",
+      "ChId": "5",
+      "VatName": "Dharm satsangma rakhe",
+      "VatNameGuj": "ધર્મ સત્સંગમાં રાખે",
+      "VatFile": "ch05166.txt",
+      "VatNo": "166",
+      "VatNameHindi": " धर्म सत्संग में रखता है "
+    },
+    {
+      "VatId": "920",
+      "ChId": "5",
+      "VatName": "Antkaran shekhchallina",
+      "VatNameGuj": "અંત:કરણ શેખચલ્લીના",
+      "VatFile": "ch05167.txt",
+      "VatNo": "167",
+      "VatNameHindi": " अन्तःकरण शेखचल्ली के मनस"
+    },
+    {
+      "VatId": "921",
+      "ChId": "5",
+      "VatName": "Atmana gnane karine",
+      "VatNameGuj": "આત્માના જ્ઞાને કરીને",
+      "VatFile": "ch05168.txt",
+      "VatNo": "168",
+      "VatNameHindi": " आत्मज्ञान द्वारा कैवल्या"
+    },
+    {
+      "VatId": "922",
+      "ChId": "5",
+      "VatName": "Be varas vagar varasade",
+      "VatNameGuj": "બે વરસ વગર વરસાદે",
+      "VatFile": "ch05169.txt",
+      "VatNo": "169",
+      "VatNameHindi": " दो साल बिना वर्षा के अन्"
+    },
+    {
+      "VatId": "923",
+      "ChId": "5",
+      "VatName": "Aa sarvee bhagavan",
+      "VatNameGuj": "આ સર્વેએ ભગવાન",
+      "VatFile": "ch05170.txt",
+      "VatNo": "170",
+      "VatNameHindi": " इन सभी ने भगवान का भजन क"
+    },
+    {
+      "VatId": "924",
+      "ChId": "5",
+      "VatName": "Hu kutumbno nathi",
+      "VatNameGuj": "હું કુટુંબનો નથી",
+      "VatFile": "ch05171.txt",
+      "VatNo": "171",
+      "VatNameHindi": " मैं कुटुम्ब का नहीं, सं"
+    },
+    {
+      "VatId": "925",
+      "ChId": "5",
+      "VatName": "Bhajan karata karata",
+      "VatNameGuj": "ભજન કરતાં કરતાં",
+      "VatFile": "ch05172.txt",
+      "VatNo": "172",
+      "VatNameHindi": " भजन करते-करते देह निद्रा"
+    },
+    {
+      "VatId": "926",
+      "ChId": "5",
+      "VatName": "Lakh karod kidio nikali",
+      "VatNameGuj": "લાખ-કરોડ કીડીઓ નીકળી",
+      "VatFile": "ch05173.txt",
+      "VatNo": "173",
+      "VatNameHindi": " लाख करोड़ चींटियाँ निकल "
+    },
+    {
+      "VatId": "927",
+      "ChId": "5",
+      "VatName": "Satya, hit ne priy evu",
+      "VatNameGuj": "સત્ય, હિત ને પ્રિય એવું",
+      "VatFile": "ch05174.txt",
+      "VatNo": "174",
+      "VatNameHindi": " सत्य, हितकारी एवं प्रिय "
+    },
+    {
+      "VatId": "928",
+      "ChId": "5",
+      "VatName": "Arth: Shrihari bhaktimatane",
+      "VatNameGuj": "અર્થ : શ્રીહરિ ભક્તિમાતાને",
+      "VatFile": "ch05175.txt",
+      "VatNo": "175",
+      "VatNameHindi": " आकृतिचितिचापल्यरहिता निष"
+    },
+    {
+      "VatId": "929",
+      "ChId": "5",
+      "VatName": "Maharaj aam besata",
+      "VatNameGuj": "મહારાજ આમ બેસતા",
+      "VatFile": "ch05176.txt",
+      "VatNo": "176",
+      "VatNameHindi": " महाराज इस प्रकार बैठते थ"
+    },
+    {
+      "VatId": "930",
+      "ChId": "5",
+      "VatName": "Satsang char prakarthi",
+      "VatNameGuj": "સત્સંગ ચાર પ્રકારથી",
+      "VatFile": "ch05177.txt",
+      "VatNo": "177",
+      "VatNameHindi": " सत्संग चार प्रकार से है।"
+    },
+    {
+      "VatId": "931",
+      "ChId": "5",
+      "VatName": "Sang thay tena gun ave",
+      "VatNameGuj": "સંગ થાય તેના ગુણ આવે",
+      "VatFile": "ch05178.txt",
+      "VatNo": "178",
+      "VatNameHindi": " संग होता है उसके गुण आते"
+    },
+    {
+      "VatId": "932",
+      "ChId": "5",
+      "VatName": "Krupanandswami vagere",
+      "VatNameGuj": "કૃપાનંદસ્વામી વગેરે",
+      "VatFile": "ch05179.txt",
+      "VatNo": "179",
+      "VatNameHindi": " कृपानन्दस्वामी आदि बड़े "
+    },
+    {
+      "VatId": "933",
+      "ChId": "5",
+      "VatName": "Manne jane sadhan kare",
+      "VatNameGuj": "મનને જાણે સાધન કરે",
+      "VatFile": "ch05180.txt",
+      "VatNo": "180",
+      "VatNameHindi": " मन के अनुसार साधन करता ह"
+    },
+    {
+      "VatId": "934",
+      "ChId": "5",
+      "VatName": "Aa sadhuna sangthi sarve",
+      "VatNameGuj": "આ સાધુના સંગથી સર્વે",
+      "VatFile": "ch05181.txt",
+      "VatNo": "181",
+      "VatNameHindi": " इस साधु के संग से सभी मह"
+    },
+    {
+      "VatId": "935",
+      "ChId": "5",
+      "VatName": "Bhagavan tatha sadhuna",
+      "VatNameGuj": "ભગવાન તથા સાધુના",
+      "VatFile": "ch05182.txt",
+      "VatNo": "182",
+      "VatNameHindi": " भगवान तथा साधु के शब्द द"
+    },
+    {
+      "VatId": "936",
+      "ChId": "5",
+      "VatName": "Swarupnishtha, gnannishtha",
+      "VatNameGuj": "સ્વરૂપનિષ્ઠા, જ્ઞાનનિષ્ઠા",
+      "VatFile": "ch05183.txt",
+      "VatNo": "183",
+      "VatNameHindi": " स्वरूपनिष्ठा, ज्ञाननिष्ठ"
+    },
+    {
+      "VatId": "937",
+      "ChId": "5",
+      "VatName": "Akshardhamnu ek machchhriyu",
+      "VatNameGuj": "અક્ષરધામનું એક મચ્છરિયું",
+      "VatFile": "ch05184.txt",
+      "VatNo": "184",
+      "VatNameHindi": " अक्षरधाम के एक मच्छर ने "
+    },
+    {
+      "VatId": "938",
+      "ChId": "5",
+      "VatName": "Mukt, mumukshu, vishayi",
+      "VatNameGuj": "મુક્ત, મુમુક્ષુ, વિષયી",
+      "VatFile": "ch05185.txt",
+      "VatNo": "185",
+      "VatNameHindi": " मुक्त, मुमुक्षु, विषयी औ"
+    },
+    {
+      "VatId": "939",
+      "ChId": "5",
+      "VatName": "Ajamilne santno samagam",
+      "VatNameGuj": "અજામિલને સંતનો સમાગમ",
+      "VatFile": "ch05186.txt",
+      "VatNo": "186",
+      "VatNameHindi": " अजामिल को सन्त का समागम "
+    },
+    {
+      "VatId": "940",
+      "ChId": "5",
+      "VatName": "Brahmandma dash korato",
+      "VatNameGuj": "બ્રહ્માંડમાં દશ કોરટો",
+      "VatFile": "ch05187.txt",
+      "VatNo": "187",
+      "VatNameHindi": " ब्रह्माण्ड में दस कोर्ट "
+    },
+    {
+      "VatId": "941",
+      "ChId": "5",
+      "VatName": "Aa vatu anant sanshayne",
+      "VatNameGuj": "આ વાતું અનંત સંશયને",
+      "VatFile": "ch05188.txt",
+      "VatNo": "188",
+      "VatNameHindi": " ये बातें तो अनन्त संशयों"
+    },
+    {
+      "VatId": "942",
+      "ChId": "5",
+      "VatName": "Jiv tran sharirma",
+      "VatNameGuj": "જીવ ત્રણ શરીરમાં",
+      "VatFile": "ch05189.txt",
+      "VatNo": "189",
+      "VatNameHindi": " जीव तीन शरीर में व्याप्त"
+    },
+    {
+      "VatId": "943",
+      "ChId": "5",
+      "VatName": "Aa badhi vatu sambhaline",
+      "VatNameGuj": "આ બધી વાતું સાંભળીને",
+      "VatFile": "ch05190.txt",
+      "VatNo": "190",
+      "VatNameHindi": " ये सभी बातें सुनकर इतना "
+    },
+    {
+      "VatId": "944",
+      "ChId": "5",
+      "VatName": "Priyavratne ketalak chhokara",
+      "VatNameGuj": "પ્રિયવ્રતને કેટલાંક છોકરાં",
+      "VatFile": "ch05191.txt",
+      "VatNo": "191",
+      "VatNameHindi": " प्रियव्रत को कई पुत्र हु"
+    },
+    {
+      "VatId": "945",
+      "ChId": "5",
+      "VatName": "Dharm adik karata dhyan",
+      "VatNameGuj": "ધર્મ આદિક કરતાં ધ્યાન",
+      "VatFile": "ch05192.txt",
+      "VatNo": "192",
+      "VatNameHindi": " धर्म आदि से ध्यान करना अ"
+    },
+    {
+      "VatId": "946",
+      "ChId": "5",
+      "VatName": "Prathamna 71ma",
+      "VatNameGuj": "પ્રથમનાં 71માં",
+      "VatFile": "ch05193.txt",
+      "VatNo": "193",
+      "VatNameHindi": " वचनामृत गढ़डा प्रथम के ७"
+    },
+    {
+      "VatId": "947",
+      "ChId": "5",
+      "VatName": "Bhagavan to ghanayne",
+      "VatNameGuj": "ભગવાન તો ઘણાયને",
+      "VatFile": "ch05194.txt",
+      "VatNo": "194",
+      "VatNameHindi": " भगवान तो बहुत लोगों को प"
+    },
+    {
+      "VatId": "948",
+      "ChId": "5",
+      "VatName": "Aa sadhu anadi mulakshar",
+      "VatNameGuj": "આ સાધુ અનાદિ મૂળઅક્ષર",
+      "VatFile": "ch05195.txt",
+      "VatNo": "195",
+      "VatNameHindi": " ये साधु अनादि मूल अक्षर "
+    },
+    {
+      "VatId": "949",
+      "ChId": "5",
+      "VatName": "Maharaje bavis varase",
+      "VatNameGuj": "મહારાજે બાવીસ વરસે",
+      "VatFile": "ch05196.txt",
+      "VatNo": "196",
+      "VatNameHindi": " महाराज ने बाईस साल के बा"
+    },
+    {
+      "VatId": "950",
+      "ChId": "5",
+      "VatName": "Kumbhar handala ghade",
+      "VatNameGuj": "કુંભાર હાંડલાં ઘડે",
+      "VatFile": "ch05197.txt",
+      "VatNo": "197",
+      "VatNameHindi": " कुम्हार घड़ा बनाता है, उ"
+    },
+    {
+      "VatId": "951",
+      "ChId": "5",
+      "VatName": "Bhagavanno mahatmye sahit",
+      "VatNameGuj": "ભગવાનનો માહાત્મ્યે સહિત",
+      "VatFile": "ch05198.txt",
+      "VatNo": "198",
+      "VatNameHindi": " भगवान के माहात्म्य के सा"
+    },
+    {
+      "VatId": "952",
+      "ChId": "5",
+      "VatName": "Prabhu malya chhe te",
+      "VatNameGuj": "પ્રભુ મળ્યા છે તે",
+      "VatFile": "ch05199.txt",
+      "VatNo": "199",
+      "VatNameHindi": " प्रभु प्राप्त हुए हैं, उ"
+    },
+    {
+      "VatId": "953",
+      "ChId": "5",
+      "VatName": "Sankhyavalaney deshkal lage",
+      "VatNameGuj": "સાંખ્યવાળાનેય દેશકાળ લાગે",
+      "VatFile": "ch05200.txt",
+      "VatNo": "200",
+      "VatNameHindi": " सांख्यवाले को भी देशकाल "
+    },
+    {
+      "VatId": "954",
+      "ChId": "5",
+      "VatName": "Bhagavanna bhaktna dosh",
+      "VatNameGuj": "ભગવાનના ભક્તના દોષ",
+      "VatFile": "ch05201.txt",
+      "VatNo": "201",
+      "VatNameHindi": " भगवान के भक्त के दोष का "
+    },
+    {
+      "VatId": "955",
+      "ChId": "5",
+      "VatName": "Padachhayane pugay nahi",
+      "VatNameGuj": "પડછાયાને પુગાય નહિ",
+      "VatFile": "ch05202.txt",
+      "VatNo": "202",
+      "VatNameHindi": " परछाई को पकड़ नहीं सकते "
+    },
+    {
+      "VatId": "956",
+      "ChId": "5",
+      "VatName": "Bhagavan chhe te ekado",
+      "VatNameGuj": "ભગવાન છે તે એકડો",
+      "VatFile": "ch05203.txt",
+      "VatNo": "203",
+      "VatNameHindi": " भगवान एक के स्थान पर है "
+    },
+    {
+      "VatId": "957",
+      "ChId": "5",
+      "VatName": "Agna ne upasana be",
+      "VatNameGuj": "આજ્ઞા ને ઉપાસના બે",
+      "VatFile": "ch05204.txt",
+      "VatNo": "204",
+      "VatNameHindi": " आज्ञा और उपासना दो रखना,"
+    },
+    {
+      "VatId": "958",
+      "ChId": "5",
+      "VatName": "Mandirma darshan karata",
+      "VatNameGuj": "મંદિરમાં દર્શન કરતાં",
+      "VatFile": "ch05205.txt",
+      "VatNo": "205",
+      "VatNameHindi": " मंदिर में दर्शन करते हुए"
+    },
+    {
+      "VatId": "959",
+      "ChId": "5",
+      "VatName": "Sarve ahiya chhe ne",
+      "VatNameGuj": "સર્વે અહીંયાં છે ને",
+      "VatFile": "ch05206.txt",
+      "VatNo": "206",
+      "VatNameHindi": " सभी यहाँ हैं तथा यहाँ जो"
+    },
+    {
+      "VatId": "960",
+      "ChId": "5",
+      "VatName": "Gnanpralay karavo tethi",
+      "VatNameGuj": "જ્ઞાનપ્રલય કરવો તેથી",
+      "VatFile": "ch05207.txt",
+      "VatNo": "207",
+      "VatNameHindi": " ज्ञानप्रलय करना उससे कोई"
+    },
+    {
+      "VatId": "961",
+      "ChId": "5",
+      "VatName": "Bhagavanna bhaktne vishay",
+      "VatNameGuj": "ભગવાનના ભક્તને વિષય",
+      "VatFile": "ch05208.txt",
+      "VatNo": "208",
+      "VatNameHindi": " भगवान के भक्त को विषय नह"
+    },
+    {
+      "VatId": "962",
+      "ChId": "5",
+      "VatName": "Bakarathi te hathi sudhi",
+      "VatNameGuj": "બકરાંથી તે હાથી સુધી",
+      "VatFile": "ch05209.txt",
+      "VatNo": "209",
+      "VatNameHindi": " बकरे से लेकर हाथी तक बड़"
+    },
+    {
+      "VatId": "963",
+      "ChId": "5",
+      "VatName": "Ekthi te lakh bakara bole",
+      "VatNameGuj": "એકથી તે લાખ બકરાં બોલે",
+      "VatFile": "ch05210.txt",
+      "VatNo": "210",
+      "VatNameHindi": " एक से लेकर लाख बकरे बोले"
+    },
+    {
+      "VatId": "964",
+      "ChId": "5",
+      "VatName": "Sankhy ne yog be marg",
+      "VatNameGuj": "સાંખ્ય ને યોગ બે માર્ગ",
+      "VatFile": "ch05211.txt",
+      "VatNo": "211",
+      "VatNameHindi": " सांख्य तथा योग दो मार्ग "
+    },
+    {
+      "VatId": "965",
+      "ChId": "5",
+      "VatName": "Bhagavan ne sadhu be j",
+      "VatNameGuj": "ભગવાન ને સાધુ બે જ",
+      "VatFile": "ch05212.txt",
+      "VatNo": "212",
+      "VatNameHindi": " भगवान और साधु दो ही रखना"
+    },
+    {
+      "VatId": "966",
+      "ChId": "5",
+      "VatName": "Panch guneyukt eva sant",
+      "VatNameGuj": "પાંચ ગુણેયુક્ત એવા સંત",
+      "VatFile": "ch05213.txt",
+      "VatNo": "213",
+      "VatNameHindi": " पाँच गुणों से युक्त ऐसे "
+    },
+    {
+      "VatId": "967",
+      "ChId": "5",
+      "VatName": "Takiyo kadhi nakhine",
+      "VatNameGuj": "તકિયો કાઢી નાખીને",
+      "VatFile": "ch05214.txt",
+      "VatNo": "214",
+      "VatNameHindi": " तकिया निकाल कर कहा कि, '"
+    },
+    {
+      "VatId": "968",
+      "ChId": "5",
+      "VatName": "Tran jan sukhiya",
+      "VatNameGuj": "ત્રણ જણ સુખિયા",
+      "VatFile": "ch05215.txt",
+      "VatNo": "215",
+      "VatNameHindi": " तीन लोग सुखी हैं, एक तो "
+    },
+    {
+      "VatId": "969",
+      "ChId": "5",
+      "VatName": "Je vade aa jakt chhe",
+      "VatNameGuj": "જે વડે આ જક્ત છે",
+      "VatFile": "ch05216.txt",
+      "VatNo": "216",
+      "VatNameHindi": " जे बड़े आ जक्त छे, तेन"
+    },
+    {
+      "VatId": "970",
+      "ChId": "5",
+      "VatName": "Jhadne dehe karine",
+      "VatNameGuj": "ઝાડને દેહે કરીને",
+      "VatFile": "ch05217.txt",
+      "VatNo": "217",
+      "VatNameHindi": " वृक्ष के शरीर द्वारा तथा"
+    },
+    {
+      "VatId": "971",
+      "ChId": "5",
+      "VatName": "Hal to Maharajna darshan",
+      "VatNameGuj": "હાલ તો મહારાજનાં દર્શન",
+      "VatFile": "ch05218.txt",
+      "VatNo": "218",
+      "VatNameHindi": " इस समय तो महाराज के दर्श"
+    },
+    {
+      "VatId": "972",
+      "ChId": "5",
+      "VatName": "Karata hoy so kijiye",
+      "VatNameGuj": "કરતા હોય સો કીજિયે",
+      "VatFile": "ch05219.txt",
+      "VatNo": "219",
+      "VatNameHindi": " करता हो सो कीजिये, और न "
+    },
+    {
+      "VatId": "973",
+      "ChId": "5",
+      "VatName": "Vishay bhogavavano koti",
+      "VatNameGuj": "વિષય ભોગવવાનો કોટિ",
+      "VatFile": "ch05220.txt",
+      "VatNo": "220",
+      "VatNameHindi": " विषय भोगने की कोटि कल्प "
+    },
+    {
+      "VatId": "974",
+      "ChId": "5",
+      "VatName": "Vyasjie ghanu tap karyu",
+      "VatNameGuj": "વ્યાસજીએ ઘણું તપ કર્યું",
+      "VatFile": "ch05221.txt",
+      "VatNo": "221",
+      "VatNameHindi": " व्यासजी ने बहुत तप किया,"
+    },
+    {
+      "VatId": "975",
+      "ChId": "5",
+      "VatName": "Apanne bhagavan tatha",
+      "VatNameGuj": "આપણને ભગવાન તથા",
+      "VatFile": "ch05222.txt",
+      "VatNo": "222",
+      "VatNameHindi": " हमको भगवान और साधु प्राप"
+    },
+    {
+      "VatId": "976",
+      "ChId": "5",
+      "VatName": "Lodhani, lakadani",
+      "VatNameGuj": "લોઢાની, લાકડાની",
+      "VatFile": "ch05223.txt",
+      "VatNo": "223",
+      "VatNameHindi": " लोहे की, काष्ठ की, पत्थर"
+    },
+    {
+      "VatId": "977",
+      "ChId": "5",
+      "VatName": "Vaghakhachare puchhyu je",
+      "VatNameGuj": "વાઘાખાચરે પૂછ્યું જે",
+      "VatFile": "ch05224.txt",
+      "VatNo": "224",
+      "VatNameHindi": " वाघाखाचर ने पूछा कि, 'सम"
+    },
+    {
+      "VatId": "978",
+      "ChId": "5",
+      "VatName": "Tap karine bali jay to",
+      "VatNameGuj": "તપ કરીને બળી જાય તો",
+      "VatFile": "ch05225.txt",
+      "VatNo": "225",
+      "VatNameHindi": " तपस्या करके जल जाएँ तो भ"
+    },
+    {
+      "VatId": "979",
+      "ChId": "5",
+      "VatName": "Koi raline mari jay toy",
+      "VatNameGuj": "કોઈ રળીને મરી જાય તોય",
+      "VatFile": "ch05226.txt",
+      "VatNo": "226",
+      "VatNameHindi": " कोई कमा-कमाकर मर जाता है"
+    },
+    {
+      "VatId": "980",
+      "ChId": "5",
+      "VatName": "Aaj apana tir chale chhe",
+      "VatNameGuj": "આજ આપણાં તીર ચાલે છે",
+      "VatFile": "ch05227.txt",
+      "VatNo": "227",
+      "VatNameHindi": " आज अपने तीर चलते हैं, अत"
+    },
+    {
+      "VatId": "981",
+      "ChId": "5",
+      "VatName": "Chhellanu 13mu vachanamrut",
+      "VatNameGuj": "છેલ્લાનું 13મું વચનામૃત",
+      "VatFile": "ch05228.txt",
+      "VatNo": "228",
+      "VatNameHindi": " गढ़डा अन्त्य का १३ वाँ व"
+    },
+    {
+      "VatId": "982",
+      "ChId": "5",
+      "VatName": "Bhagavan vina bijo",
+      "VatNameGuj": "ભગવાન વિના બીજો",
+      "VatFile": "ch05229.txt",
+      "VatNo": "229",
+      "VatNameHindi": " भगवान के बिना अन्य संकल्"
+    },
+    {
+      "VatId": "983",
+      "ChId": "5",
+      "VatName": "Chhellanu 35mu vachanamrut",
+      "VatNameGuj": "છેલ્લાનું 35મું વચનામૃત",
+      "VatFile": "ch05230.txt",
+      "VatNo": "230",
+      "VatNameHindi": " वचनामृत ग. अं. का ३५ पढ़"
+    },
+    {
+      "VatId": "984",
+      "ChId": "5",
+      "VatName": "Apane dharm palavo",
+      "VatNameGuj": "આપણે ધર્મ પાળવો",
+      "VatFile": "ch05231.txt",
+      "VatNo": "231",
+      "VatNameHindi": " हमें धर्मपालन करना, त्या"
+    },
+    {
+      "VatId": "985",
+      "ChId": "5",
+      "VatName": "Bhagavatna panchamskandhma",
+      "VatNameGuj": "ભાગવતના પંચમસ્કંધમાં",
+      "VatFile": "ch05232.txt",
+      "VatNo": "232",
+      "VatNameHindi": " 'श्रीमद् भागवत' के पंचम "
+    },
+    {
+      "VatId": "986",
+      "ChId": "5",
+      "VatName": "Madhyanu 10mu vachanamrut",
+      "VatNameGuj": "મધ્યનું 10મું વચનામૃત",
+      "VatFile": "ch05233.txt",
+      "VatNo": "233",
+      "VatNameHindi": " वचनामृत ग. म. १० पढ़वाकर"
+    },
+    {
+      "VatId": "987",
+      "ChId": "5",
+      "VatName": "Jhajhu kai karavanu nathi",
+      "VatNameGuj": "ઝાઝું કાંઈ કરવાનું નથી",
+      "VatFile": "ch05234.txt",
+      "VatNo": "234",
+      "VatNameHindi": " ज्यादा कुछ करना नहीं है।"
+    },
+    {
+      "VatId": "988",
+      "ChId": "5",
+      "VatName": "Gnanpralay karavo tethi",
+      "VatNameGuj": "ભગવાન અવતાર ધરે",
+      "VatFile": "ch05235.txt",
+      "VatNo": "235",
+      "VatNameHindi": " भगवान अवतार धारण करते है"
+    },
+    {
+      "VatId": "989",
+      "ChId": "5",
+      "VatName": "Apanama ketalakne",
+      "VatNameGuj": "આપણામાં કેટલાકને",
+      "VatFile": "ch05236.txt",
+      "VatNo": "236",
+      "VatNameHindi": " हम सभी में कितने को ब्रा"
+    },
+    {
+      "VatId": "990",
+      "ChId": "5",
+      "VatName": "Aa samama apano",
+      "VatNameGuj": "આ સમામાં આપણો",
+      "VatFile": "ch05237.txt",
+      "VatNo": "237",
+      "VatNameHindi": " इस समय में अपना अवतार हु"
+    },
+    {
+      "VatId": "991",
+      "ChId": "5",
+      "VatName": "Gadabadgota vale evo",
+      "VatNameGuj": "ગડબડગોટા વાળે એવો",
+      "VatFile": "ch05238.txt",
+      "VatNo": "238",
+      "VatNameHindi": " आचरण में गड़बडीवाले साधु"
+    },
+    {
+      "VatId": "992",
+      "ChId": "5",
+      "VatName": "Bhagavan ne aa sadhu",
+      "VatNameGuj": "ભગવાન ને આ સાધુ",
+      "VatFile": "ch05239.txt",
+      "VatNo": "239",
+      "VatNameHindi": " भगवान तथा यह साधु तो दो "
+    },
+    {
+      "VatId": "993",
+      "ChId": "5",
+      "VatName": "Maharaje kharadama",
+      "VatNameGuj": "મહારાજે ખરડામાં",
+      "VatFile": "ch05240.txt",
+      "VatNo": "240",
+      "VatNameHindi": " महाराज ने पुराने आदेशपत्"
+    },
+    {
+      "VatId": "994",
+      "ChId": "5",
+      "VatName": "Aajno ekadamal karine",
+      "VatNameGuj": "આજનો એકડમલ કરીને",
+      "VatFile": "ch05241.txt",
+      "VatNo": "241",
+      "VatNameHindi": " आज का 'एकडमल' करके बाहर "
+    },
+    {
+      "VatId": "995",
+      "ChId": "5",
+      "VatName": "Dashe dishama ghodo",
+      "VatNameGuj": "દશે દિશામાં ઘોડો",
+      "VatFile": "ch05242.txt",
+      "VatNo": "242",
+      "VatNameHindi": " दसों दिशाओं में घोडा घुम"
+    },
+    {
+      "VatId": "996",
+      "ChId": "5",
+      "VatName": "Vasana to em tale je",
+      "VatNameGuj": "વાસના તો એમ ટળે જે",
+      "VatFile": "ch05243.txt",
+      "VatNo": "243",
+      "VatNameHindi": " वासना तो इस प्रकार मिटती"
+    },
+    {
+      "VatId": "997",
+      "ChId": "5",
+      "VatName": "Agna lopay to prarthana",
+      "VatNameGuj": "આજ્ઞા લોપાય તો પ્રાર્થના",
+      "VatFile": "ch05244.txt",
+      "VatNo": "244",
+      "VatNameHindi": " आज्ञा का उल्लंघन हो जाए "
+    },
+    {
+      "VatId": "998",
+      "ChId": "5",
+      "VatName": "Potani vat kari je",
+      "VatNameGuj": "પોતાની વાત કરી જે",
+      "VatFile": "ch05245.txt",
+      "VatNo": "245",
+      "VatNameHindi": " अपनी बात कही कि, 'मुझे र"
+    },
+    {
+      "VatId": "999",
+      "ChId": "5",
+      "VatName": "Indriyu tatha man",
+      "VatNameGuj": "ઇન્દ્રિયું તથા મન",
+      "VatFile": "ch05246.txt",
+      "VatNo": "246",
+      "VatNameHindi": " इन्द्रियाँ तथा मन सत्संग"
+    },
+    {
+      "VatId": "1000",
+      "ChId": "5",
+      "VatName": "Sacha santna ang",
+      "VatNameGuj": "સાચા સંતનાં અંગ",
+      "VatFile": "ch05247.txt",
+      "VatNo": "247",
+      "VatNameHindi": " साचा संतनां अंग एँधाण रे"
+    },
+    {
+      "VatId": "1001",
+      "ChId": "5",
+      "VatName": "Kaliyugma tap thay",
+      "VatNameGuj": "કળિયુગમાં તપ થાય",
+      "VatFile": "ch05248.txt",
+      "VatNo": "248",
+      "VatNameHindi": " कलियुग में तप कर सके, ऐस"
+    },
+    {
+      "VatId": "1002",
+      "ChId": "5",
+      "VatName": "Satsang kare tene",
+      "VatNameGuj": "સત્સંગ કરે તેને",
+      "VatFile": "ch05249.txt",
+      "VatNo": "249",
+      "VatNameHindi": " सत्संग करनेवाले के सिर स"
+    },
+    {
+      "VatId": "1003",
+      "ChId": "5",
+      "VatName": "Vishayno parabhav to",
+      "VatNameGuj": "વિષયનો પરાભવ તો",
+      "VatFile": "ch05250.txt",
+      "VatNo": "250",
+      "VatNameHindi": " विषय से पराभव (पराजय) तो"
+    },
+    {
+      "VatId": "1004",
+      "ChId": "5",
+      "VatName": "Udhyam tatha kriya kare",
+      "VatNameGuj": "ઉદ્યમ તથા ક્રિયા કરે",
+      "VatFile": "ch05251.txt",
+      "VatNo": "251",
+      "VatNameHindi": " उद्यम तथा क्रिया करने से"
+    },
+    {
+      "VatId": "1005",
+      "ChId": "5",
+      "VatName": "Maharaj hata te divas",
+      "VatNameGuj": "મહારાજ હતા તે દિવસ",
+      "VatFile": "ch05252.txt",
+      "VatNo": "252",
+      "VatNameHindi": " महाराज जैसे थे, वैसे उन "
+    },
+    {
+      "VatId": "1006",
+      "ChId": "5",
+      "VatName": "Satsangi jeva chhe teva",
+      "VatNameGuj": "સત્સંગી જેવા છે તેવા",
+      "VatFile": "ch05253.txt",
+      "VatNo": "253",
+      "VatNameHindi": " सत्संगी जैसे हैं वैसे सम"
+    },
+    {
+      "VatId": "1007",
+      "ChId": "5",
+      "VatName": "Vishayno ant ave tem",
+      "VatNameGuj": "વિષયનો અંત આવે તેમ",
+      "VatFile": "ch05254.txt",
+      "VatNo": "254",
+      "VatNameHindi": " विषयों का तो अन्त आए ऐसा"
+    },
+    {
+      "VatId": "1008",
+      "ChId": "5",
+      "VatName": "Raja tap karava gayo",
+      "VatNameGuj": "રાજા તપ કરવા ગયો",
+      "VatFile": "ch05255.txt",
+      "VatNo": "255",
+      "VatNameHindi": " राजा तप करने गया, उसके ल"
+    },
+    {
+      "VatId": "1009",
+      "ChId": "5",
+      "VatName": "Ek manushyne kahava",
+      "VatNameGuj": "એક મનુષ્યને ખાવા",
+      "VatFile": "ch05256.txt",
+      "VatNo": "256",
+      "VatNameHindi": " एक मनुष्य को खाने के लिए"
+    },
+    {
+      "VatId": "1010",
+      "ChId": "5",
+      "VatName": "Aa jiv chhe te jya sudhi",
+      "VatNameGuj": "આ જીવ છે તે જ્યાં સુધી",
+      "VatFile": "ch05257.txt",
+      "VatNo": "257",
+      "VatNameHindi": " यह जीव जब तक भगवान की शर"
+    },
+    {
+      "VatId": "1011",
+      "ChId": "5",
+      "VatName": "Kotharma harishankarbhaie",
+      "VatNameGuj": "કોઠારમાં હરિશંકરભાઈએ",
+      "VatFile": "ch05258.txt",
+      "VatNo": "258",
+      "VatNameHindi": " कोठार में हरिशंकरभाई ने "
+    },
+    {
+      "VatId": "1012",
+      "ChId": "5",
+      "VatName": "Koi betho bhagavan bhaje",
+      "VatNameGuj": "કોઈ બેઠો ભગવાન ભજે",
+      "VatFile": "ch05259.txt",
+      "VatNo": "259",
+      "VatNameHindi": " कोई बैठकर भगवान का भजन क"
+    },
+    {
+      "VatId": "1013",
+      "ChId": "5",
+      "VatName": "Ghar vechine bhagavan",
+      "VatNameGuj": "ઘર વેચીને ભગવાન",
+      "VatFile": "ch05260.txt",
+      "VatNo": "260",
+      "VatNameHindi": " घर बेचकर भगवान का भजन कर"
+    },
+    {
+      "VatId": "1014",
+      "ChId": "5",
+      "VatName": "Kartikswamie pruthvini",
+      "VatNameGuj": "કાર્તિકસ્વામીએ પૃથ્વીની",
+      "VatFile": "ch05261.txt",
+      "VatNo": "261",
+      "VatNameHindi": " कार्तिकस्वामी ने पृथ्वी "
+    },
+    {
+      "VatId": "1015",
+      "ChId": "5",
+      "VatName": "Madhavji sutarnu nam",
+      "VatNameGuj": "માધવજી સુતારનું નામ",
+      "VatFile": "ch05262.txt",
+      "VatNo": "262",
+      "VatNameHindi": " माधवजी सुतार का नाम लेकर"
+    },
+    {
+      "VatId": "1016",
+      "ChId": "5",
+      "VatName": "Sara manasne varatavama",
+      "VatNameGuj": "સારા માણસને વરતવામાં",
+      "VatFile": "ch05263.txt",
+      "VatNo": "263",
+      "VatNameHindi": " अच्छे आदमी के आचरण में त"
+    },
+    {
+      "VatId": "1017",
+      "ChId": "5",
+      "VatName": "Ghayal thaine farati dolu",
+      "VatNameGuj": "ઘાયલ થઈને ફરતી ડોલું",
+      "VatFile": "ch05264.txt",
+      "VatNo": "264",
+      "VatNameHindi": " घायल थईने फरती डोलूँ, "
+    },
+    {
+      "VatId": "1018",
+      "ChId": "5",
+      "VatName": "Stri hoy te sarv apine",
+      "VatNameGuj": "સ્ત્રી હોય તે સર્વ આપીને",
+      "VatFile": "ch05265.txt",
+      "VatNo": "265",
+      "VatNameHindi": " स्त्री होती है, वह अपना "
+    },
+    {
+      "VatId": "1019",
+      "ChId": "5",
+      "VatName": "Vyasjie kidane tran-char",
+      "VatNameGuj": "વ્યાસજીએ કીડાને ત્રણ-ચાર",
+      "VatFile": "ch05266.txt",
+      "VatNo": "266",
+      "VatNameHindi": " व्यासजी ने कीड़े को तीन-"
+    },
+    {
+      "VatId": "1020",
+      "ChId": "5",
+      "VatName": "Mota lagar pan drashti",
+      "VatNameGuj": "મોટા લગાર પણ દૃષ્ટિ",
+      "VatFile": "ch05267.txt",
+      "VatNo": "267",
+      "VatNameHindi": " बडे (साधु) रंचमात्र भी क"
+    },
+    {
+      "VatId": "1021",
+      "ChId": "5",
+      "VatName": "Upasanana vachanamrut dash",
+      "VatNameGuj": "ઉપાસનાનાં વચનામૃત દશ",
+      "VatFile": "ch05268.txt",
+      "VatNo": "268",
+      "VatNameHindi": " उपासना के दस, बीस, पच्ची"
+    },
+    {
+      "VatId": "1022",
+      "ChId": "5",
+      "VatName": "Bhagavanno dikaro hoy to",
+      "VatNameGuj": "ભગવાનનો દીકરો હોય તો",
+      "VatFile": "ch05269.txt",
+      "VatNo": "269",
+      "VatNameHindi": " भगवान का पुत्र हो, फिर भ"
+    },
+    {
+      "VatId": "1023",
+      "ChId": "5",
+      "VatName": "Uttam nirvikalp nishchay",
+      "VatNameGuj": "ઉત્તમ નિર્વિકલ્પ નિશ્ર્ચય",
+      "VatFile": "ch05270.txt",
+      "VatNo": "270",
+      "VatNameHindi": " उत्तम निर्विकल्प निश्चय "
+    },
+    {
+      "VatId": "1024",
+      "ChId": "5",
+      "VatName": "Vishay thaki to jiv potani",
+      "VatNameGuj": "વિષય થકી તો જીવ પોતાની",
+      "VatFile": "ch05271.txt",
+      "VatNo": "271",
+      "VatNameHindi": " विषय से तो जीव अपने आप अ"
+    },
+    {
+      "VatId": "1025",
+      "ChId": "5",
+      "VatName": "Sankhya vicharvalo hoy",
+      "VatNameGuj": "સાંખ્ય વિચારવાળો હોય",
+      "VatFile": "ch05272.txt",
+      "VatNo": "272",
+      "VatNameHindi": " सांख्यविचारवाला वस्तुमात"
+    },
+    {
+      "VatId": "1026",
+      "ChId": "5",
+      "VatName": "Avi vat potane manma",
+      "VatNameGuj": "આવી વાત પોતાને મનમાં",
+      "VatFile": "ch05273.txt",
+      "VatNo": "273",
+      "VatNameHindi": " ऐसी बात अपने मन में जानक"
+    },
+    {
+      "VatId": "1027",
+      "ChId": "5",
+      "VatName": "Vahevar chhe te karavo",
+      "VatNameGuj": "વહેવાર છે તે કરવો ને",
+      "VatFile": "ch05274.txt",
+      "VatNo": "274",
+      "VatNameHindi": " व्यवहार तो करना और मन द्"
+    },
+    {
+      "VatId": "1028",
+      "ChId": "5",
+      "VatName": "Potanu kalyan karavama",
+      "VatNameGuj": "પોતાનું કલ્યાણ કરવામાં",
+      "VatFile": "ch05275.txt",
+      "VatNo": "275",
+      "VatNameHindi": " अपना कल्याण करने में दृष"
+    },
+    {
+      "VatId": "1029",
+      "ChId": "5",
+      "VatName": "Vidya bhanavi te buddhi",
+      "VatNameGuj": "વિદ્યા ભણવી તે બુદ્ધિ",
+      "VatFile": "ch05276.txt",
+      "VatNo": "276",
+      "VatNameHindi": " विद्याभ्यास करना, वह तो "
+    },
+    {
+      "VatId": "1030",
+      "ChId": "5",
+      "VatName": "Bhagavane karmno ek",
+      "VatNameGuj": "ભગવાને કર્મનો એક",
+      "VatFile": "ch05277.txt",
+      "VatNo": "277",
+      "VatNameHindi": " भगवान ने कर्म का एक कोठा"
+    },
+    {
+      "VatId": "1031",
+      "ChId": "5",
+      "VatName": "Ruparam thakar brahmanne",
+      "VatNameGuj": "રૂપરામ ઠાકર બ્રાહ્મણને",
+      "VatFile": "ch05278.txt",
+      "VatNo": "278",
+      "VatNameHindi": " रूपराम ठाकर ब्राह्मणों क"
+    },
+    {
+      "VatId": "1032",
+      "ChId": "5",
+      "VatName": "Tran deh, tran avastha",
+      "VatNameGuj": "ત્રણ દેહ, ત્રણ અવસ્થા",
+      "VatFile": "ch05279.txt",
+      "VatNo": "279",
+      "VatNameHindi": " तीन देह, तीन अवस्था, तीन"
+    },
+    {
+      "VatId": "1033",
+      "ChId": "5",
+      "VatName": "Apanne satsang malyo chhe",
+      "VatNameGuj": "આપણને સત્સંગ મળ્યો છે",
+      "VatFile": "ch05280.txt",
+      "VatNo": "280",
+      "VatNameHindi": " हममें सत्संग मिला है, वै"
+    },
+    {
+      "VatId": "1034",
+      "ChId": "5",
+      "VatName": "Aa loknu sukh kevu chhe",
+      "VatNameGuj": "આ લોકનું સુખ કેવું છે",
+      "VatFile": "ch05281.txt",
+      "VatNo": "281",
+      "VatNameHindi": " इस लोक का सुख कैसा है तो"
+    },
+    {
+      "VatId": "1035",
+      "ChId": "5",
+      "VatName": "Vadadara jem koine ma",
+      "VatNameGuj": "વડાદરા જેમ કોઈને મા",
+      "VatFile": "ch05282.txt",
+      "VatNo": "282",
+      "VatNameHindi": " वडादरा जैसे किसी को 'माँ"
+    },
+    {
+      "VatId": "1036",
+      "ChId": "5",
+      "VatName": "Upasana e j bhakti chhe",
+      "VatNameGuj": "ઉપાસના એ જ ભક્તિ છે",
+      "VatFile": "ch05283.txt",
+      "VatNo": "283",
+      "VatNameHindi": " उपासना ही भक्ति है। तथा "
+    },
+    {
+      "VatId": "1037",
+      "ChId": "5",
+      "VatName": "Buranpurma doshio pase",
+      "VatNameGuj": "બુરાનપુરમાં ડોશીઓ પાસે",
+      "VatFile": "ch05284.txt",
+      "VatNo": "284",
+      "VatNameHindi": " बुरहानपुर में महिलाओं के"
+    },
+    {
+      "VatId": "1038",
+      "ChId": "5",
+      "VatName": "Panchvishayne talava saru",
+      "VatNameGuj": "પંચવિષયને ટાળવા સારુ",
+      "VatFile": "ch05285.txt",
+      "VatNo": "285",
+      "VatNameHindi": " पंचविषय को मिटाने के लिए"
+    },
+    {
+      "VatId": "1039",
+      "ChId": "5",
+      "VatName": "Kathavarta, kirtan ne",
+      "VatNameGuj": "કથાવાર્તા, કીર્તન ને",
+      "VatFile": "ch05286.txt",
+      "VatNo": "286",
+      "VatNameHindi": " कथावार्ता, कीर्तन और ध्य"
+    },
+    {
+      "VatId": "1040",
+      "ChId": "5",
+      "VatName": "Muktanandswamie Maharajne",
+      "VatNameGuj": "મુક્તાનંદસ્વામીએ મહારાજને",
+      "VatFile": "ch05287.txt",
+      "VatNo": "287",
+      "VatNameHindi": " मुक्तानन्दस्वामी ने महार"
+    },
+    {
+      "VatId": "1041",
+      "ChId": "5",
+      "VatName": "Vatu karava mande",
+      "VatNameGuj": "વાતું કરવા માંડે",
+      "VatFile": "ch05288.txt",
+      "VatNo": "288",
+      "VatNameHindi": " बातें करना आरम्भ करें, त"
+    },
+    {
+      "VatId": "1042",
+      "ChId": "5",
+      "VatName": "Ghanshyamdasji Maharajna",
+      "VatNameGuj": "ઘનશ્યામદાસજી મહારાજના",
+      "VatFile": "ch05289.txt",
+      "VatNo": "289",
+      "VatNameHindi": " घनश्यामदासजी महाराज के स"
+    },
+    {
+      "VatId": "1043",
+      "ChId": "5",
+      "VatName": "Manushyabhav divyabhav",
+      "VatNameGuj": "મનુષ્યભાવ-દિવ્યભાવ",
+      "VatFile": "ch05290.txt",
+      "VatNo": "290",
+      "VatNameHindi": " मनुष्यभाव-दिव्यभाव एक सम"
+    },
+    {
+      "VatId": "1044",
+      "ChId": "5",
+      "VatName": "Deh dharya hata",
+      "VatNameGuj": "દેહ ધર્યા હતા",
+      "VatFile": "ch05291.txt",
+      "VatNo": "291",
+      "VatNameHindi": " देह धारण किया था, परन्तु"
+    },
+    {
+      "VatId": "1045",
+      "ChId": "5",
+      "VatName": "Doshione sadhue vat",
+      "VatNameGuj": "ડોશીઓને સાધુએ વાત",
+      "VatFile": "ch05292.txt",
+      "VatNo": "292",
+      "VatNameHindi": " साधुओं को स्त्रियों से ब"
+    },
+    {
+      "VatId": "1046",
+      "ChId": "5",
+      "VatName": "Varatalma nagabava avya",
+      "VatNameGuj": "વરતાલમાં નાગાબાવા આવ્યા",
+      "VatFile": "ch05293.txt",
+      "VatNo": "293",
+      "VatNameHindi": " वरताल में दिगंबर साधु आए"
+    },
+    {
+      "VatId": "1047",
+      "ChId": "5",
+      "VatName": "Deh potanu nathi ne",
+      "VatNameGuj": "દેહ પોતાનું નથી ને",
+      "VatFile": "ch05294.txt",
+      "VatNo": "294",
+      "VatNameHindi": " देह अपना नहीं है और अपना"
+    },
+    {
+      "VatId": "1048",
+      "ChId": "5",
+      "VatName": "Gruhasthne sobha te",
+      "VatNameGuj": "ગૃહસ્થને શોભા તે",
+      "VatFile": "ch05295.txt",
+      "VatNo": "295",
+      "VatNameHindi": " गृहस्थ को शोभा दे, वह त्"
+    },
+    {
+      "VatId": "1049",
+      "ChId": "5",
+      "VatName": "Jeno kagal avyo hoy",
+      "VatNameGuj": "જેનો કાગળ આવ્યો હોય",
+      "VatFile": "ch05296.txt",
+      "VatNo": "296",
+      "VatNameHindi": " जिसका पत्र आया हो, वही स"
+    },
+    {
+      "VatId": "1050",
+      "ChId": "5",
+      "VatName": "Gnan thayu te kenu",
+      "VatNameGuj": "જ્ઞાન થયું તે કેનું",
+      "VatFile": "ch05297.txt",
+      "VatNo": "297",
+      "VatNameHindi": " ज्ञान हुआ किसे कहा जाएगा"
+    },
+    {
+      "VatId": "1051",
+      "ChId": "5",
+      "VatName": "Bija koine kalyan",
+      "VatNameGuj": "બીજા કોઈને કલ્યાણ",
+      "VatFile": "ch05298.txt",
+      "VatNo": "298",
+      "VatNameHindi": " अन्य किसी को कल्याण करने"
+    },
+    {
+      "VatId": "1052",
+      "ChId": "5",
+      "VatName": "Premi bhagavanma pan",
+      "VatNameGuj": "પ્રેમી ભગવાનમાં પણ",
+      "VatFile": "ch05299.txt",
+      "VatNo": "299",
+      "VatNameHindi": " प्रेमी भगवान में भी संलग"
+    },
+    {
+      "VatId": "1053",
+      "ChId": "5",
+      "VatName": "Aa suryane jem koini",
+      "VatNameGuj": "આ સૂર્યને જેમ કોઈની",
+      "VatFile": "ch05300.txt",
+      "VatNo": "300",
+      "VatNameHindi": " इस सूर्य को जैसे किसी के"
+    },
+    {
+      "VatId": "1054",
+      "ChId": "5",
+      "VatName": "Avo samo fari nahi male",
+      "VatNameGuj": "આવો સમો ફરીને નહિ મળે",
+      "VatFile": "ch05301.txt",
+      "VatNo": "301",
+      "VatNameHindi": " ऐसा अवसर फिर मिलनेवाला न"
+    },
+    {
+      "VatId": "1055",
+      "ChId": "5",
+      "VatName": "Priyavratna drushtantthi",
+      "VatNameGuj": "પ્રિયવ્રતના દૃષ્ટાંતથી",
+      "VatFile": "ch05302.txt",
+      "VatNo": "302",
+      "VatNameHindi": " प्रियव्रत के दृष्टान्त स"
+    },
+    {
+      "VatId": "1056",
+      "ChId": "5",
+      "VatName": "Shikshapatrima sarve",
+      "VatNameGuj": "શિક્ષાપત્રીમાં સર્વે",
+      "VatFile": "ch05303.txt",
+      "VatNo": "303",
+      "VatNameHindi": " शिक्षापत्री में सभी संशय"
+    },
+    {
+      "VatId": "1057",
+      "ChId": "5",
+      "VatName": "Bije sarve thekane",
+      "VatNameGuj": "બીજે સર્વે ઠેકાણે",
+      "VatFile": "ch05304.txt",
+      "VatNo": "304",
+      "VatNameHindi": " अन्य सभी जगह पर माया का "
+    },
+    {
+      "VatId": "1058",
+      "ChId": "5",
+      "VatName": "Ek sadhu kapildev",
+      "VatNameGuj": "એક સાધુ કપિલદેવ",
+      "VatFile": "ch05305.txt",
+      "VatNo": "305",
+      "VatNameHindi": " एक साधु कपिलदेव भगवान के"
+    },
+    {
+      "VatId": "1059",
+      "ChId": "5",
+      "VatName": "Kekalshrungine agnan",
+      "VatNameGuj": "એકલશૃંગીને અજ્ઞાન",
+      "VatFile": "ch05306.txt",
+      "VatNo": "306",
+      "VatNameHindi": " एकलशृंगी को अज्ञान उपशम "
+    },
+    {
+      "VatId": "1060",
+      "ChId": "5",
+      "VatName": "Naradji akshardhamma",
+      "VatNameGuj": "નારદજી અક્ષરધામમાં",
+      "VatFile": "ch05307.txt",
+      "VatNo": "307",
+      "VatNameHindi": " नारदजी अक्षरधाम में गए थ"
+    },
+    {
+      "VatId": "1061",
+      "ChId": "5",
+      "VatName": "Ghanek punye karine aa",
+      "VatNameGuj": "ઘણેક પુણ્યે કરીને આ",
+      "VatFile": "ch05308.txt",
+      "VatNo": "308",
+      "VatNameHindi": " अतिशय पुण्य करने पर यह य"
+    },
+    {
+      "VatId": "1062",
+      "ChId": "5",
+      "VatName": "Deradima kanabine van",
+      "VatNameGuj": "દેરડીમાં કણબીને વણ",
+      "VatFile": "ch05309.txt",
+      "VatNo": "309",
+      "VatNameHindi": " देरडी गाँव में कुनबी से "
+    },
+    {
+      "VatId": "1063",
+      "ChId": "5",
+      "VatName": "Aa sadhune vishe jene",
+      "VatNameGuj": "આ સાધુને વિશે જેને",
+      "VatFile": "ch05310.txt",
+      "VatNo": "310",
+      "VatNameHindi": " इस साधु के प्रति जिसको ज"
+    },
+    {
+      "VatId": "1064",
+      "ChId": "5",
+      "VatName": "Ketalak kahe chhe je",
+      "VatNameGuj": "કેટલાક કહે છે જે",
+      "VatFile": "ch05311.txt",
+      "VatNo": "311",
+      "VatNameHindi": " कई कहते हैं, कि कुछ जानत"
+    },
+    {
+      "VatId": "1065",
+      "ChId": "5",
+      "VatName": "Je koine kalyan karavu",
+      "VatNameGuj": "જે કોઈને કલ્યાણ કરવું",
+      "VatFile": "ch05312.txt",
+      "VatNo": "312",
+      "VatNameHindi": " जिस किसी को कल्याण करना "
+    },
+    {
+      "VatId": "1066",
+      "ChId": "5",
+      "VatName": "Varasad to bhagavn",
+      "VatNameGuj": "વરસાદ તો ભગવાન",
+      "VatFile": "ch05313.txt",
+      "VatNo": "313",
+      "VatNameHindi": " वर्षा तो भगवान बरसाते है"
+    },
+    {
+      "VatId": "1067",
+      "ChId": "5",
+      "VatName": "Rupiyama, gharma, strima",
+      "VatNameGuj": "રૂપિયામાં, ઘરમાં, સ્ત્રીમાં",
+      "VatFile": "ch05314.txt",
+      "VatNo": "314",
+      "VatNameHindi": " रुपये में, घर में, स्वी "
+    },
+    {
+      "VatId": "1068",
+      "ChId": "5",
+      "VatName": "Satsangna niyam na",
+      "VatNameGuj": "સત્સંગના નિયમ ના",
+      "VatFile": "ch05315.txt",
+      "VatNo": "315",
+      "VatNameHindi": " सत्संग के नियम का पालन न"
+    },
+    {
+      "VatId": "1069",
+      "ChId": "5",
+      "VatName": "Aganyotero kal padyo",
+      "VatNameGuj": "અગણ્યોતેરો કાળ પડ્યો",
+      "VatFile": "ch05316.txt",
+      "VatNo": "316",
+      "VatNameHindi": " सं. १८६९ में अकाल पड़ा, "
+    },
+    {
+      "VatId": "1070",
+      "ChId": "5",
+      "VatName": "Vasharam bhaktna",
+      "VatNameGuj": "વશરામ ભક્તના",
+      "VatFile": "ch05317.txt",
+      "VatNo": "317",
+      "VatNameHindi": " वशराम भक्त के फोड़े का '"
+    },
+    {
+      "VatId": "1071",
+      "ChId": "5",
+      "VatName": "Kal padase to satsangi",
+      "VatNameGuj": "કાળ પડશે તો સત્સંગી",
+      "VatFile": "ch05318.txt",
+      "VatNo": "318",
+      "VatNameHindi": " काल आएगा तो सत्संगी दुःख"
+    },
+    {
+      "VatId": "1072",
+      "ChId": "5",
+      "VatName": "Khalakhaliye nahata",
+      "VatNameGuj": "ખળખળિયે નાહતાં",
+      "VatFile": "ch05319.txt",
+      "VatNo": "319",
+      "VatNameHindi": " घेला नदी के 'खलखलिया' झर"
+    },
+    {
+      "VatId": "1073",
+      "ChId": "5",
+      "VatName": "Raghuvirji maharaje deh",
+      "VatNameGuj": "રઘુવીરજી મહારાજે દેહ",
+      "VatFile": "ch05320.txt",
+      "VatNo": "320",
+      "VatNameHindi": " रघुवीरजी महाराज ने देहत्"
+    },
+    {
+      "VatId": "1074",
+      "ChId": "5",
+      "VatName": "Gay raja jevo raja",
+      "VatNameGuj": "ગય રાજા જેવો રાજા",
+      "VatFile": "ch05321.txt",
+      "VatNo": "321",
+      "VatNameHindi": " गय राजा के समान राजा बना"
+    },
+    {
+      "VatId": "1075",
+      "ChId": "5",
+      "VatName": "Prahlade dash hajar",
+      "VatNameGuj": "પ્રહ્લાદે દશ હજાર",
+      "VatFile": "ch05322.txt",
+      "VatNo": "322",
+      "VatNameHindi": " प्रहलाद ने दस हजार साल त"
+    },
+    {
+      "VatId": "1076",
+      "ChId": "5",
+      "VatName": "Bhagavatna panchamskandhma",
+      "VatNameGuj": "ભાગવતના પંચમસ્કંધમાં",
+      "VatFile": "ch05323.txt",
+      "VatNo": "323",
+      "VatNameHindi": " 'भागवत' के पंचम स्कंध मे"
+    },
+    {
+      "VatId": "1077",
+      "ChId": "5",
+      "VatName": "Chhellanu 39mu",
+      "VatNameGuj": "છેલ્લાનું 39મું",
+      "VatFile": "ch05324.txt",
+      "VatNo": "324",
+      "VatNameHindi": " वचनामृत गढ़डा अंत्य ३९ प"
+    },
+    {
+      "VatId": "1078",
+      "ChId": "5",
+      "VatName": "Madhynu 9mu",
+      "VatNameGuj": "મધ્યનું 9મું",
+      "VatFile": "ch05325.txt",
+      "VatNo": "325",
+      "VatNameHindi": " वचनामृत गढ़डा मध्य ९ पढ़"
+    },
+    {
+      "VatId": "1079",
+      "ChId": "5",
+      "VatName": "Pragat murti vina",
+      "VatNameGuj": "પ્રગટ મૂર્તિ વિના",
+      "VatFile": "ch05326.txt",
+      "VatNo": "326",
+      "VatNameHindi": " प्रकट मूर्ति के बिना अन्"
+    },
+    {
+      "VatId": "1080",
+      "ChId": "5",
+      "VatName": "Bhagavanni smruti rakhavi",
+      "VatNameGuj": "ભગવાનની સ્મૃતિ રાખવી",
+      "VatFile": "ch05327.txt",
+      "VatNo": "327",
+      "VatNameHindi": " भगवान की स्मृति रखना यह "
+    },
+    {
+      "VatId": "1081",
+      "ChId": "5",
+      "VatName": "Sudhdh thavane tap",
+      "VatNameGuj": "શુદ્ધ થાવાને તપ",
+      "VatFile": "ch05328.txt",
+      "VatNo": "328",
+      "VatNameHindi": " शुद्ध होने के लिए तप एवम"
+    },
+    {
+      "VatId": "1082",
+      "ChId": "5",
+      "VatName": "Gam mahuvana haribhakt",
+      "VatNameGuj": "ગામ મહુવાના હરિભક્ત",
+      "VatFile": "ch05329.txt",
+      "VatNo": "329",
+      "VatNameHindi": " गाँव महुवा के हरिभक्त डा"
+    },
+    {
+      "VatId": "1083",
+      "ChId": "5",
+      "VatName": "Apanne gnan shikhata",
+      "VatNameGuj": "આપણને જ્ઞાન શીખતાં",
+      "VatFile": "ch05330.txt",
+      "VatNo": "330",
+      "VatNameHindi": " हमें ज्ञान सीखना तो आता "
+    },
+    {
+      "VatId": "1084",
+      "ChId": "5",
+      "VatName": "Navarash hoy tyare",
+      "VatNameGuj": "નવરાશ હોય ત્યારે",
+      "VatFile": "ch05331.txt",
+      "VatNo": "331",
+      "VatNameHindi": " फुर्सत हो तब भगवान की मू"
+    },
+    {
+      "VatId": "1085",
+      "ChId": "5",
+      "VatName": "Deh hoy tya nidra",
+      "VatNameGuj": "દેહ હોય ત્યાં નિદ્રા",
+      "VatFile": "ch05332.txt",
+      "VatNo": "332",
+      "VatNameHindi": " देह होगी, वहाँ निद्रा, क"
+    },
+    {
+      "VatId": "1086",
+      "ChId": "5",
+      "VatName": "Bhagavan bhajavama",
+      "VatNameGuj": "ભગવાન ભજવામાં",
+      "VatFile": "ch05333.txt",
+      "VatNo": "333",
+      "VatNameHindi": " भगवान का भजन करने में ती"
+    },
+    {
+      "VatId": "1087",
+      "ChId": "5",
+      "VatName": "Pandavoe yagn karyo",
+      "VatNameGuj": "પાંડવોએ યજ્ઞ કર્યો",
+      "VatFile": "ch05334.txt",
+      "VatNo": "334",
+      "VatNameHindi": " पाण्डवों ने यज्ञ किया, उ"
+    },
+    {
+      "VatId": "1088",
+      "ChId": "5",
+      "VatName": "Charotarna ek gamna",
+      "VatNameGuj": "ચરોતરના એક ગામના",
+      "VatFile": "ch05335.txt",
+      "VatNo": "335",
+      "VatNameHindi": " चरोतर प्रदेश के एक गाँव "
+    },
+    {
+      "VatId": "1089",
+      "ChId": "5",
+      "VatName": "Vatu karavathi makhimathi",
+      "VatNameGuj": "વાતું કરવાથી માખીમાંથી",
+      "VatFile": "ch05336.txt",
+      "VatNo": "336",
+      "VatNameHindi": " बातें करने से मक्खी में "
+    },
+    {
+      "VatId": "1090",
+      "ChId": "5",
+      "VatName": "Satsang, sadhu ane bhagavan",
+      "VatNameGuj": "સત્સંગ, સાધુ ને ભગવાન",
+      "VatFile": "ch05337.txt",
+      "VatNo": "337",
+      "VatNameHindi": " सत्संग, साधु और भगवान जै"
+    },
+    {
+      "VatId": "1091",
+      "ChId": "5",
+      "VatName": "Pamar to paracha mage",
+      "VatNameGuj": "પામર તો પરચા માગે",
+      "VatFile": "ch05338.txt",
+      "VatNo": "338",
+      "VatNameHindi": " पामर को तो चमत्कार चाहिए"
+    },
+    {
+      "VatId": "1092",
+      "ChId": "5",
+      "VatName": "Satsangma ketalak lambo",
+      "VatNameGuj": "સત્સંગમાં કેટલાક લાંબો",
+      "VatFile": "ch05339.txt",
+      "VatNo": "339",
+      "VatNameHindi": " सत्संग में कई लम्बे पैर "
+    },
+    {
+      "VatId": "1093",
+      "ChId": "5",
+      "VatName": "Mahuvana khumbharne so",
+      "VatNameGuj": "મહુવાના કુંભારને સો",
+      "VatFile": "ch05340.txt",
+      "VatNo": "340",
+      "VatNameHindi": " महुवा के कुम्हार को सौ य"
+    },
+    {
+      "VatId": "1094",
+      "ChId": "5",
+      "VatName": "Mukt hoy te koithi",
+      "VatNameGuj": "મુક્ત હોય તે કોઈથી",
+      "VatFile": "ch05341.txt",
+      "VatNo": "341",
+      "VatNameHindi": " मुक्त हो वह किसी से दब न"
+    },
+    {
+      "VatId": "1095",
+      "ChId": "5",
+      "VatName": "Potpotano deh saro lage",
+      "VatNameGuj": "પોતપોતાનો દેહ સારો લાગે",
+      "VatFile": "ch05342.txt",
+      "VatNo": "342",
+      "VatNameHindi": " अपना अपना शरीर अच्छा लगत"
+    },
+    {
+      "VatId": "1096",
+      "ChId": "5",
+      "VatName": "Ekna mandalma ladavani",
+      "VatNameGuj": "એકના મંડળમાં લાડવાની",
+      "VatFile": "ch05343.txt",
+      "VatNo": "343",
+      "VatNameHindi": " एक के मंडल में लड्डू की "
+    },
+    {
+      "VatId": "1097",
+      "ChId": "5",
+      "VatName": "Gopalanandswamine sath",
+      "VatNameGuj": "ગોપાળાનંદસ્વામીને સાઠ",
+      "VatFile": "ch05344.txt",
+      "VatNo": "344",
+      "VatNameHindi": " गोपालानन्दस्वामी के मण्ड"
+    },
+    {
+      "VatId": "1098",
+      "ChId": "5",
+      "VatName": "Kharekharo jiv sopine",
+      "VatNameGuj": "ખરેખરો જીવ સોંપીને",
+      "VatFile": "ch05345.txt",
+      "VatNo": "345",
+      "VatNameHindi": " सही रूप में जीव सौंपकर उ"
+    },
+    {
+      "VatId": "1099",
+      "ChId": "5",
+      "VatName": "Ek rahenie deh mukavo",
+      "VatNameGuj": "એક રહેણીએ દેહ મૂકવો",
+      "VatFile": "ch05346.txt",
+      "VatNo": "346",
+      "VatNameHindi": " एक ही रहन-सहन रखते हुए द"
+    },
+    {
+      "VatId": "1100",
+      "ChId": "5",
+      "VatName": "Jem chhe tem olakhavu",
+      "VatNameGuj": "જેમ છે તેમ ઓળખવું",
+      "VatFile": "ch05347.txt",
+      "VatNo": "347",
+      "VatNameHindi": " जैसा है, वैसा पहचानना यह"
+    },
+    {
+      "VatId": "1101",
+      "ChId": "5",
+      "VatName": "Jem chhe tem kahie to",
+      "VatNameGuj": "જેમ છે તેમ કહીએ તો",
+      "VatFile": "ch05348.txt",
+      "VatNo": "348",
+      "VatNameHindi": " जैसा है वैसा कहते हैं तो"
+    },
+    {
+      "VatId": "1102",
+      "ChId": "5",
+      "VatName": "Koi kaheshe je",
+      "VatNameGuj": "કોઈ કહેશે જે",
+      "VatFile": "ch05349.txt",
+      "VatNo": "349",
+      "VatNameHindi": " कोई कहेगा कि, 'मुझे जैसा"
+    },
+    {
+      "VatId": "1103",
+      "ChId": "5",
+      "VatName": "Mota samarth hoy te",
+      "VatNameGuj": "મોટા સમર્થ હોય તે",
+      "VatFile": "ch05350.txt",
+      "VatNo": "350",
+      "VatNameHindi": " बड़े समर्थ होते हैं, वे "
+    },
+    {
+      "VatId": "1104",
+      "ChId": "5",
+      "VatName": "Upasana, agna ne sadhu",
+      "VatNameGuj": "ઉપાસના, આજ્ઞા ને સાધુ",
+      "VatFile": "ch05351.txt",
+      "VatNo": "351",
+      "VatNameHindi": " उपासना, आज्ञा और साधु को"
+    },
+    {
+      "VatId": "1105",
+      "ChId": "5",
+      "VatName": "Sadhu sacha chhe tema",
+      "VatNameGuj": "સાધુ સાચા છે તેમાં",
+      "VatFile": "ch05352.txt",
+      "VatNo": "352",
+      "VatNameHindi": " जो सच्चे साधु हैं, उनमें"
+    },
+    {
+      "VatId": "1106",
+      "ChId": "5",
+      "VatName": "Chhellanu 33mu",
+      "VatNameGuj": "છેલ્લાનું 33મું",
+      "VatFile": "ch05353.txt",
+      "VatNo": "353",
+      "VatNameHindi": " वचनामृत गढ़डा अन्त्य का "
+    },
+    {
+      "VatId": "1107",
+      "ChId": "5",
+      "VatName": "Koi vatni antarma",
+      "VatNameGuj": "કોઈ વાતની અંતરમાં",
+      "VatFile": "ch05354.txt",
+      "VatNo": "354",
+      "VatNameHindi": " किसी बात की अन्तर में चि"
+    },
+    {
+      "VatId": "1108",
+      "ChId": "5",
+      "VatName": "Amadavadni langhie badha",
+      "VatNameGuj": "અમદાવાદની લંધીએ બધા",
+      "VatFile": "ch05355.txt",
+      "VatNo": "355",
+      "VatNameHindi": " अहमदाबाद की 'लंघी' (रोने"
+    },
+    {
+      "VatId": "1109",
+      "ChId": "5",
+      "VatName": "Gondalna harijane kahyu",
+      "VatNameGuj": "ગોંડળના હરિજને કહ્યું",
+      "VatFile": "ch05356.txt",
+      "VatNo": "356",
+      "VatNameHindi": " गोंडल के हरिभक्त ने कहा "
+    },
+    {
+      "VatId": "1110",
+      "ChId": "5",
+      "VatName": "Arth: vaishnavjano",
+      "VatNameGuj": "અર્થ : વૈષ્ણવજનો",
+      "VatFile": "ch05357.txt",
+      "VatNo": "357",
+      "VatNameHindi": " भोजने छादने चिन्ता वृथा "
+    },
+    {
+      "VatId": "1111",
+      "ChId": "5",
+      "VatName": "Jherna ladava khata",
+      "VatNameGuj": "ઝેરના લાડવા ખાતાં",
+      "VatFile": "ch05358.txt",
+      "VatNo": "358",
+      "VatNameHindi": " ज़हर के लड्डू खाते हुए अ"
+    },
+    {
+      "VatId": "1112",
+      "ChId": "5",
+      "VatName": "Maranarne shid rado",
+      "VatNameGuj": "મરનારને શીદ રડો",
+      "VatFile": "ch05359.txt",
+      "VatNo": "359",
+      "VatNameHindi": " मरनार ने शीद रडो छो, रड"
+    },
+    {
+      "VatId": "1113",
+      "ChId": "5",
+      "VatName": "Gruhasth chhe te",
+      "VatNameGuj": "ગૃહસ્થ છે તે",
+      "VatFile": "ch05360.txt",
+      "VatNo": "360",
+      "VatNameHindi": " गृहस्थ आत्मा का ज्ञान नह"
+    },
+    {
+      "VatId": "1114",
+      "ChId": "5",
+      "VatName": "Koti koti sadhan kare",
+      "VatNameGuj": "કોટિ કોટિ સાધન કરે",
+      "VatFile": "ch05361.txt",
+      "VatNo": "361",
+      "VatNameHindi": " कोटि कोटि साधन करे, परन्"
+    },
+    {
+      "VatId": "1115",
+      "ChId": "5",
+      "VatName": "Mahima samajay chhe",
+      "VatNameGuj": "મહિમા સમજાય છે",
+      "VatFile": "ch05362.txt",
+      "VatNo": "362",
+      "VatNameHindi": " महिमा समझ में आती है और "
+    },
+    {
+      "VatId": "1116",
+      "ChId": "5",
+      "VatName": "Nidra ave to sui javu",
+      "VatNameGuj": "નિદ્રા આવે તો સૂઈ જવું",
+      "VatFile": "ch05363.txt",
+      "VatNo": "363",
+      "VatNameHindi": " निद्रा आने पर सो जाना। त"
+    },
+    {
+      "VatId": "1117",
+      "ChId": "5",
+      "VatName": "Anek prakarna papi",
+      "VatNameGuj": "અનેક પ્રકારના પાપી",
+      "VatFile": "ch05364.txt",
+      "VatNo": "364",
+      "VatNameHindi": " अनेक प्रकार के पापी जीव "
+    },
+    {
+      "VatId": "1118",
+      "ChId": "5",
+      "VatName": "Madhynu 28mu",
+      "VatNameGuj": "મધ્યનું 28મું",
+      "VatFile": "ch05365.txt",
+      "VatNo": "365",
+      "VatNameHindi": " वचनामृत गढ़डा मध्य का २८"
+    },
+    {
+      "VatId": "1119",
+      "ChId": "5",
+      "VatName": "Bhagavan ane bhagavanna",
+      "VatNameGuj": "ભગવાન અને ભગવાનના",
+      "VatFile": "ch05366.txt",
+      "VatNo": "366",
+      "VatNameHindi": " भगवान एवं भगवान के भक्त "
+    },
+    {
+      "VatId": "1120",
+      "ChId": "5",
+      "VatName": "Mumukshu jivne gnan",
+      "VatNameGuj": "મુમુક્ષુ જીવને જ્ઞાન",
+      "VatFile": "ch05367.txt",
+      "VatNo": "367",
+      "VatNameHindi": " मुमुक्षु जीव को ज्ञान भी"
+    },
+    {
+      "VatId": "1121",
+      "ChId": "5",
+      "VatName": "Baladiyane tantima bandhe",
+      "VatNameGuj": "બળદિયાને તંતીમાં બાંધે",
+      "VatFile": "ch05368.txt",
+      "VatNo": "368",
+      "VatNameHindi": " बैल को चमड़े की रस्सी से"
+    },
+    {
+      "VatId": "1122",
+      "ChId": "5",
+      "VatName": "Junagadhma jetala chhe",
+      "VatNameGuj": "જૂનાગઢમાં જેટલા છે",
+      "VatFile": "ch05369.txt",
+      "VatNo": "369",
+      "VatNameHindi": " जूनागढ़ में जितने हैं, उ"
+    },
+    {
+      "VatId": "1123",
+      "ChId": "5",
+      "VatName": "Sukhi thavana prakar",
+      "VatNameGuj": "સુખી થાવાના પ્રકાર",
+      "VatFile": "ch05370.txt",
+      "VatNo": "370",
+      "VatNameHindi": " सुखी होने के प्रकार, एक "
+    },
+    {
+      "VatId": "1124",
+      "ChId": "5",
+      "VatName": "Bhagavanna akshardham",
+      "VatNameGuj": "ભગવાનના અક્ષરધામ",
+      "VatFile": "ch05371.txt",
+      "VatNo": "371",
+      "VatNameHindi": " भगवान के अक्षरधाम के समक"
+    },
+    {
+      "VatId": "1125",
+      "ChId": "5",
+      "VatName": "Santma jodano hoy tenu",
+      "VatNameGuj": "સંતમાં જોડાણો હોય તેનું",
+      "VatFile": "ch05372.txt",
+      "VatNo": "372",
+      "VatNameHindi": " सन्त में जुड़ा हो, उसका "
+    },
+    {
+      "VatId": "1126",
+      "ChId": "5",
+      "VatName": "Avo samo nahi ave",
+      "VatNameGuj": "આવો સમો નહિ આવે",
+      "VatFile": "ch05373.txt",
+      "VatNo": "373",
+      "VatNameHindi": " ऐसा समय आनेवाला नहीं है,"
+    },
+    {
+      "VatId": "1127",
+      "ChId": "5",
+      "VatName": "kuvama raina dana",
+      "VatNameGuj": "કૂવામાં રાઈના દાણા",
+      "VatFile": "ch05374.txt",
+      "VatNo": "374",
+      "VatNameHindi": " कूएँ को सरसों के दाने से"
+    },
+    {
+      "VatId": "1128",
+      "ChId": "5",
+      "VatName": "Hu mandirma rahu tyare",
+      "VatNameGuj": "હું મંદિરમાં રહું ત્યારે",
+      "VatFile": "ch05375.txt",
+      "VatNo": "375",
+      "VatNameHindi": " मैं मन्दिर में रहता हूँ "
+    },
+    {
+      "VatId": "1129",
+      "ChId": "5",
+      "VatName": "Gadhadama Maharaj pase",
+      "VatNameGuj": "ગઢડામાં મહારાજ પાસે",
+      "VatFile": "ch05376.txt",
+      "VatNo": "376",
+      "VatNameHindi": " महाराज के साथ गढ़पुर में"
+    },
+    {
+      "VatId": "1130",
+      "ChId": "5",
+      "VatName": "Trikamdasji kotharie kahyu",
+      "VatNameGuj": "ત્રિકમદાસજી કોઠારીએ કહ્યું",
+      "VatFile": "ch05377.txt",
+      "VatNo": "377",
+      "VatNameHindi": " त्रिकमदासजी कोठारी ने कह"
+    },
+    {
+      "VatId": "1131",
+      "ChId": "5",
+      "VatName": "Sui raheto hoy",
+      "VatNameGuj": "સૂઈ રહેતો હોય",
+      "VatFile": "ch05378.txt",
+      "VatNo": "378",
+      "VatNameHindi": " सोये रहता हो, परन्तु बहु"
+    },
+    {
+      "VatId": "1132",
+      "ChId": "5",
+      "VatName": "Tu purushottam",
+      "VatNameGuj": "તું પુરુષોત્તમ",
+      "VatFile": "ch05379.txt",
+      "VatNo": "379",
+      "VatNameHindi": " तुं पुरुषोत्तम हुंदो तो "
+    },
+    {
+      "VatId": "1133",
+      "ChId": "5",
+      "VatName": "Brahm agnima balay",
+      "VatNameGuj": "બ્રહ્મ અગ્નિમાં બાળ્યાં",
+      "VatFile": "ch05380.txt",
+      "VatNo": "380",
+      "VatNameHindi": " ब्रह्म अग्निमां बाळ्या ज"
+    },
+    {
+      "VatId": "1134",
+      "ChId": "5",
+      "VatName": "Amane Maharaje kahyu",
+      "VatNameGuj": "અમને મહારાજે કહ્યું",
+      "VatFile": "ch05381.txt",
+      "VatNo": "381",
+      "VatNameHindi": " महाराज ने हमसे पूछा कि, "
+    },
+    {
+      "VatId": "1135",
+      "ChId": "5",
+      "VatName": "Samvat 1919na",
+      "VatNameGuj": "સંવત 1919ના",
+      "VatFile": "ch05382.txt",
+      "VatNo": "382",
+      "VatNameHindi": " संवत् १९१९ के भाद्रपद सु"
+    },
+    {
+      "VatId": "1136",
+      "ChId": "5",
+      "VatName": "Apane brahmarup manavu",
+      "VatNameGuj": "આપણે બ્રહ્મરૂપ માનવું",
+      "VatFile": "ch05383.txt",
+      "VatNo": "383",
+      "VatNameHindi": " स्वयं को ब्रह्मरूप मानना"
+    },
+    {
+      "VatId": "1137",
+      "ChId": "5",
+      "VatName": "Aa jiv dehno golo chhe",
+      "VatNameGuj": "આ જીવ દેહનો ગોલો છે",
+      "VatFile": "ch05384.txt",
+      "VatNo": "384",
+      "VatNameHindi": " यह जीव तो देह का गुलाम ह"
+    },
+    {
+      "VatId": "1138",
+      "ChId": "5",
+      "VatName": "Nirantar aa dehma ne",
+      "VatNameGuj": "નિરંતર આ દેહમાં ને",
+      "VatFile": "ch05385.txt",
+      "VatNo": "385",
+      "VatNameHindi": " यदि इस देह में तथा इस लो"
+    },
+    {
+      "VatId": "1139",
+      "ChId": "5",
+      "VatName": "Hathi upar ambadhi",
+      "VatNameGuj": "હાથી ઉપર અંબાડી",
+      "VatFile": "ch05386.txt",
+      "VatNo": "386",
+      "VatNameHindi": " अँबारी हाथी पर होती है, "
+    },
+    {
+      "VatId": "1140",
+      "ChId": "5",
+      "VatName": "Bhadarava sudi pratipadane",
+      "VatNameGuj": "ભાદરવા સુદિ પ્રતિપદાને",
+      "VatFile": "ch05387.txt",
+      "VatNo": "387",
+      "VatNameHindi": " भाद्रपद सुदी प्रतिपदा के"
+    },
+    {
+      "VatId": "1141",
+      "ChId": "5",
+      "VatName": "Ek divas swami",
+      "VatNameGuj": "એક દિવસ સ્વામી",
+      "VatFile": "ch05388.txt",
+      "VatNo": "388",
+      "VatNameHindi": " एक दिन स्वामीजी महापूजा "
+    },
+    {
+      "VatId": "1142",
+      "ChId": "5",
+      "VatName": "Ek vakhat Maharaj",
+      "VatNameGuj": "એક વખતે મહારાજ",
+      "VatFile": "ch05389.txt",
+      "VatNo": "389",
+      "VatNameHindi": " एक दिन महाराज 'अक्षरकुटि"
+    },
+    {
+      "VatId": "1143",
+      "ChId": "5",
+      "VatName": "Vahevarni vatma ketalak",
+      "VatNameGuj": "વહેવારની વાતમાં કેટલાક",
+      "VatFile": "ch05390.txt",
+      "VatNo": "390",
+      "VatNameHindi": " व्यवहार की बात में कुछ ल"
+    },
+    {
+      "VatId": "1144",
+      "ChId": "5",
+      "VatName": "Bhagavan jane em mota",
+      "VatNameGuj": "ભગવાન જાણે એમ મોટા",
+      "VatFile": "ch05391.txt",
+      "VatNo": "391",
+      "VatNameHindi": " भगवान जानते हैं, उसी प्र"
+    },
+    {
+      "VatId": "1145",
+      "ChId": "5",
+      "VatName": "Aksharnu tej dekhay",
+      "VatNameGuj": "અક્ષરનું તેજ દેખાય",
+      "VatFile": "ch05392.txt",
+      "VatNo": "392",
+      "VatNameHindi": " अक्षर का तेज दिखाई दे उस"
+    },
+    {
+      "VatId": "1146",
+      "ChId": "5",
+      "VatName": "Keshavjivandasjie swamine",
+      "VatNameGuj": "કેશવજીવનદાસજીએ સ્વામીને",
+      "VatFile": "ch05393.txt",
+      "VatNo": "393",
+      "VatNameHindi": " केशवजीवनदासजी ने स्वामीज"
+    },
+    {
+      "VatId": "1147",
+      "ChId": "5",
+      "VatName": "Maharaj swadham",
+      "VatNameGuj": "મહારાજ સ્વધામ",
+      "VatFile": "ch05394.txt",
+      "VatNo": "394",
+      "VatNameHindi": " महाराज स्वधाम पधारनेवाले"
+    },
+    {
+      "VatId": "1148",
+      "ChId": "5",
+      "VatName": "Koike swamine kahyu je",
+      "VatNameGuj": "કોઈકે સ્વામીને કહ્યું જે",
+      "VatFile": "ch05395.txt",
+      "VatNo": "395",
+      "VatNameHindi": " किसी ने स्वामीजी से कहा "
+    },
+    {
+      "VatId": "1149",
+      "ChId": "5",
+      "VatName": "Ama rahine vartaman",
+      "VatNameGuj": "આમાં રહીને વર્તમાન",
+      "VatFile": "ch05396.txt",
+      "VatNo": "396",
+      "VatNameHindi": " ऐसे में रहकर वर्तमान का "
+    },
+    {
+      "VatId": "1150",
+      "ChId": "5",
+      "VatName": "Suratthi Maharaj chalya",
+      "VatNameGuj": "સૂરતથી મહારાજ ચાલ્યા",
+      "VatFile": "ch05397.txt",
+      "VatNo": "397",
+      "VatNameHindi": " सूरत से महाराज निकले और "
+    },
+    {
+      "VatId": "1151",
+      "ChId": "5",
+      "VatName": "Vatu karine bijane",
+      "VatNameGuj": "વાતું કરીને બીજાને",
+      "VatFile": "ch05398.txt",
+      "VatNo": "398",
+      "VatNameHindi": " बातें करके दूसरों को द्र"
+    },
+    {
+      "VatId": "1152",
+      "ChId": "5",
+      "VatName": "Gramyakatha karya kare",
+      "VatNameGuj": "ગ્રામ્યકથા કર્યા કરે",
+      "VatFile": "ch05399.txt",
+      "VatNo": "399",
+      "VatNameHindi": " ग्राम्यकथा करता रहे और उ"
+    },
+    {
+      "VatId": "1153",
+      "ChId": "5",
+      "VatName": "Hrudaygranthi to ek strine",
+      "VatNameGuj": "હૃદયગ્ંરથિ તો એક સ્ત્રીને",
+      "VatFile": "ch05400.txt",
+      "VatNo": "400",
+      "VatNameHindi": " हृदयग्रन्थि तो एक स्त्री"
+    },
+    {
+      "VatId": "1154",
+      "ChId": "5",
+      "VatName": "Be prakarna sadhu",
+      "VatNameGuj": "બે પ્રકારના સાધુ",
+      "VatFile": "ch05401.txt",
+      "VatNo": "401",
+      "VatNameHindi": " दो प्रकार के साधु-सत्संग"
+    },
+    {
+      "VatId": "1155",
+      "ChId": "5",
+      "VatName": "Gherthi ave tyare be",
+      "VatNameGuj": "ઘેરથી આવે ત્યારે બે",
+      "VatFile": "ch05402.txt",
+      "VatNo": "402",
+      "VatNameHindi": " घर से जब आता है तब दो प्"
+    },
+    {
+      "VatId": "1156",
+      "ChId": "5",
+      "VatName": "Tyagi hoy ne be",
+      "VatNameGuj": "ત્યાગી હોય ને બે",
+      "VatFile": "ch05403.txt",
+      "VatNo": "403",
+      "VatNameHindi": " त्यागी हो और दो मास तक स"
+    },
+    {
+      "VatId": "1157",
+      "ChId": "5",
+      "VatName": "Ladava na khava ne",
+      "VatNameGuj": "લાડવા ન ખાવા ને",
+      "VatFile": "ch05404.txt",
+      "VatNo": "404",
+      "VatNameHindi": " लड्डू मत खाना और यदि कहे"
+    },
+    {
+      "VatId": "1158",
+      "ChId": "5",
+      "VatName": "Uparthi bhagavu karyu",
+      "VatNameGuj": "ઉપરથી ભગવું કર્યું",
+      "VatFile": "ch05405.txt",
+      "VatNo": "405",
+      "VatNameHindi": " ऊपर से भगवा पहन लिया, पर"
+    },
+    {
+      "VatId": "1159",
+      "ChId": "5",
+      "VatName": "Vasudev hare shabd",
+      "VatNameGuj": "વાસુદેવ હરે શબ્દ",
+      "VatFile": "ch05406.txt",
+      "VatNo": "406",
+      "VatNameHindi": " 'वासुदेव हरे' शब्द चाहे "
+    },
+    {
+      "VatId": "1160",
+      "ChId": "5",
+      "VatName": "Ek sadhu kahe",
+      "VatNameGuj": "એક સાધુ કહે",
+      "VatFile": "ch05407.txt",
+      "VatNo": "407",
+      "VatNameHindi": " एक साधु ने कहा, 'अपने भा"
+    },
+    {
+      "VatId": "1161",
+      "ChId": "5",
+      "VatName": "Khaine deh jadu karavu",
+      "VatNameGuj": "ખાઈને દેહ જાડું કરવું",
+      "VatFile": "ch05408.txt",
+      "VatNo": "408",
+      "VatNameHindi": " खाकर देह मोटा करना तथा अ"
+    },
+    {
+      "VatId": "1162",
+      "ChId": "5",
+      "VatName": "Bhekhma avya pachhi",
+      "VatNameGuj": "ભેખમાં આવ્યા પછી",
+      "VatFile": "ch05409.txt",
+      "VatNo": "409",
+      "VatNameHindi": " भेष धारण करने के बाद देह"
+    },
+    {
+      "VatId": "1163",
+      "ChId": "5",
+      "VatName": "Gruhasthne rupiyanu bhajan",
+      "VatNameGuj": "ગૃહસ્થને રૂપિયાનું ભજન",
+      "VatFile": "ch05410.txt",
+      "VatNo": "410",
+      "VatNameHindi": " गृहस्थ को रुपयों का भजन "
+    },
+    {
+      "VatId": "1164",
+      "ChId": "5",
+      "VatName": "Dahyo hoy tene",
+      "VatNameGuj": "ડાહ્યો હોય તેને",
+      "VatFile": "ch05411.txt",
+      "VatNo": "411",
+      "VatNameHindi": " 'बुद्धिमान को डाँटते हैं"
+    },
+    {
+      "VatId": "1165",
+      "ChId": "5",
+      "VatName": "Bhagavan tatha ekantik",
+      "VatNameGuj": "ભગવાન તથા એકાંતિક",
+      "VatFile": "ch05412.txt",
+      "VatNo": "412",
+      "VatNameHindi": " भगवान तथा एकान्तिक इन दो"
+    },
+    {
+      "VatId": "1166",
+      "ChId": "5",
+      "VatName": "Mota sathe het thayu",
+      "VatNameGuj": "મોટા સાથે હેત થયું",
+      "VatFile": "ch05413.txt",
+      "VatNo": "413",
+      "VatNameHindi": " बड़ों के साथ स्नेह हुआ ह"
+    },
+    {
+      "VatId": "1167",
+      "ChId": "5",
+      "VatName": "Lakho manasne satsang",
+      "VatNameGuj": "લાખો માણસને સત્સંગ",
+      "VatFile": "ch05414.txt",
+      "VatNo": "414",
+      "VatNameHindi": " लाखों मनुष्य को सत्संग क"
+    },
+    {
+      "VatId": "1168",
+      "ChId": "5",
+      "VatName": "Panchalana pahela",
+      "VatNameGuj": "પંચાળાનાં પહેલાં",
+      "VatFile": "ch05415.txt",
+      "VatNo": "415",
+      "VatNameHindi": " पंचाला के पहले वचनामृत म"
+    },
+    {
+      "VatId": "1169",
+      "ChId": "5",
+      "VatName": "Klesh kem na ave",
+      "VatNameGuj": "ક્લેશ કેમ ન આવે",
+      "VatFile": "ch05416.txt",
+      "VatNo": "416",
+      "VatNameHindi": " क्लेश कैसे नहीं आता? इस "
+    },
+    {
+      "VatId": "1170",
+      "ChId": "5",
+      "VatName": "Sadhutana gun hoy",
+      "VatNameGuj": "સાધુતાના ગુણ હોય",
+      "VatFile": "ch05417.txt",
+      "VatNo": "417",
+      "VatNameHindi": " साधुता के गुण हो, वैसा ग"
+    },
+    {
+      "VatId": "1171",
+      "ChId": "5",
+      "VatName": "Harek vat sambhaline",
+      "VatNameGuj": "હરેક વાત સાંભળીને",
+      "VatFile": "ch05418.txt",
+      "VatNo": "418",
+      "VatNameHindi": " प्रत्येक बात सुनकर तद्रू"
+    },
+    {
+      "VatId": "1172",
+      "ChId": "5",
+      "VatName": "Bolavu to ghate tem",
+      "VatNameGuj": "બોલવું તો ઘટે તેમ",
+      "VatFile": "ch05419.txt",
+      "VatNo": "419",
+      "VatNameHindi": " जितना उचित हो, उतना ही ब"
+    },
+    {
+      "VatId": "1173",
+      "ChId": "5",
+      "VatName": "Koti krushn taha",
+      "VatNameGuj": "કોટિ કૃષ્ણ તહાં",
+      "VatFile": "ch05420.txt",
+      "VatNo": "420",
+      "VatNameHindi": " कोटि कृष्ण तहाँ जोड़े हा"
+    },
+    {
+      "VatId": "1174",
+      "ChId": "5",
+      "VatName": "Satsangijivanma",
+      "VatNameGuj": "સત્સંગિજીવનમાં",
+      "VatFile": "ch05421.txt",
+      "VatNo": "421",
+      "VatNameHindi": " 'सत्संगिजीवन' में पुरुषो"
+    },
+    {
+      "VatId": "1175",
+      "ChId": "5",
+      "VatName": "Janm thaya mor",
+      "VatNameGuj": "જન્મ થયા મોર",
+      "VatFile": "ch05422.txt",
+      "VatNo": "422",
+      "VatNameHindi": " जन्म होने से पहले शादी क"
+    },
+    {
+      "VatId": "1176",
+      "ChId": "5",
+      "VatName": "Maharaj kahe",
+      "VatNameGuj": "મહારાજ કહે",
+      "VatFile": "ch05423.txt",
+      "VatNo": "423",
+      "VatNameHindi": " महाराज ने कहा, 'हम बीमार"
+    },
+    {
+      "VatId": "1177",
+      "ChId": "5",
+      "VatName": "Nivrut maragma tyagi",
+      "VatNameGuj": "નિવૃત્તિ મારગમાં ત્યાગી",
+      "VatFile": "ch05424.txt",
+      "VatNo": "424",
+      "VatNameHindi": " निवृत्ति मार्ग में त्याग"
+    },
+    {
+      "VatId": "1178",
+      "ChId": "5",
+      "VatName": "Ek ek brahmandma",
+      "VatNameGuj": "એક એક બ્રહ્માંડમાં",
+      "VatFile": "ch05425.txt",
+      "VatNo": "425",
+      "VatNameHindi": " एक एक ब्रह्माण्ड में दस-"
+    },
+    {
+      "VatId": "1179",
+      "ChId": "5",
+      "VatName": "Gopalanandswamine dhola",
+      "VatNameGuj": "ગોપાળાનંદસ્વામીને ધોળાં",
+      "VatFile": "ch05426.txt",
+      "VatNo": "426",
+      "VatNameHindi": " गोपालानन्दस्वामी को श्वे"
+    },
+    {
+      "VatId": "1180",
+      "ChId": "5",
+      "VatName": "Swamie kotharma",
+      "VatNameGuj": "સ્વામીએ કોઠારમાં",
+      "VatFile": "ch05427.txt",
+      "VatNo": "427",
+      "VatNameHindi": " स्वामीजी ने कोठार में पु"
+    },
+    {
+      "VatId": "1181",
+      "ChId": "5",
+      "VatName": "Junagadhna sadhu, pala",
+      "VatNameGuj": "જૂનાગઢના સાધુ, પાળા",
+      "VatFile": "ch05428.txt",
+      "VatNo": "428",
+      "VatNameHindi": " जूनागढ़ के साधु, पार्षद "
+    },
+    {
+      "VatId": "1182",
+      "ChId": "5",
+      "VatName": "Shriji padharya swadham",
+      "VatNameGuj": "શ્રીજી પધાર્યા સ્વધામ",
+      "VatFile": "ch05429.txt",
+      "VatNo": "429",
+      "VatNameHindi": " श्रीजी पधार्या स्वधाममां"
+    },
+    {
+      "VatId": "1183",
+      "ChId": "5",
+      "VatName": "Ratrie vat kari je",
+      "VatNameGuj": "રાત્રિએ વાત કરી જે",
+      "VatFile": "ch05430.txt",
+      "VatNo": "430",
+      "VatNameHindi": " रात को बात कही कि, 'व्यव"
+    },
+    {
+      "VatId": "1184",
+      "ChId": "5",
+      "VatName": "Aa lidhu ne aa levu chhe",
+      "VatNameGuj": "આ લીધું ને આ લેવું છે",
+      "VatFile": "ch05431.txt",
+      "VatNo": "431",
+      "VatNameHindi": " यह लिया और यह लेना है, "
+    },
+    {
+      "VatId": "1185",
+      "ChId": "5",
+      "VatName": "Uttam purush sevya hoy",
+      "VatNameGuj": "ઉત્તમ પુરુષ સેવ્યા હોય",
+      "VatFile": "ch05432.txt",
+      "VatNo": "432",
+      "VatNameHindi": " उत्तम पुरुष का सेवन किया"
+    }
+  ]

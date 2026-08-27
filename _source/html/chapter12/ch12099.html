@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+			<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ સંવત 1919ના અષાઢ સુદિ નવમીના દિવસે સ્વામીએ વાત કરી જે, <br/>
+ 
+ (99) ભગવાન ને તેના જન વિના દેહ, લોક, ભોગ ને પક્ષ એમાં ‘હું ને મારું’ થાય એ વાંકું ને નવધા ભક્તિ કરવી ને આજ્ઞા પાળવી એ પાધરું છે. આ સત્સંગ મેલીને હજારો માણસ વહ્યાં ગયાં, માટે ખબર વિના ને વિચાર વિના મળ્યો સત્સંગ મેલી દેવાય; માટે ભગવાન ને તેના જનને વિશે આત્મબુદ્ધિ, એ જીવનું શ્રેય છે ને દેહાદિકને વિશે મમત્વ છે, તે વિપરીત છે. અવિદ્યાનું બળ તો ઘણું છે, પણ જો ભગવાનના ભક્ત સાથે જીવ બાંધ્યો છે તો જય જ થાશે. તે, <br/><br/>
+ 
+ યત્ર યોગેશ્વરઃ કૃષ્ણો યત્ર પાર્થો ધનુર્ધરઃ । <br/>
+તત્ર શ્રીર્વિજયો ભૂતિર્ધ્રૂવા નીતિર્મતિર્મમ ॥ 
+ 
+ <br/>
+ 
+ (ભગવદ્ ગીતા : 18/78)
+ 
+ <br/>
+ 
+ અર્થ :- જ્યાં યોગેશ્ર્વર શ્રીકૃષ્ણ છે અને જ્યાં ધનુર્ધારી અર્જુન છે, ત્યાં લક્ષ્મી, વિજય, ઐશ્ર્વર્ય અને અવિચળ નીતિ છે, એવો મારો મત છે. <br/><br/>
+ 
+ સૌ એક પંગતે જમીએ છીએ ને સૌને ભોંય પથારી છે તો પણ જીવનો સ્વભાવ તો કાંઈક ખોળી કાઢે ને ધોખો કરે. ને અમથો તો માળવણ ગાયની પેઠે પ્રેમ બહુ દેખાડે. તે એક જણ અમારી ભેળો આવ્યો હતો, પણ માળવણ ગાય જેવો, તે જેમ <a href="#ex1" class="wordMeaning">માળવણ ગાય</a> ધ્રોડીને વાછડી પાસે જાય ને હાંહોટા બહુ કરે, પણ દૂધ તો મળે નહિ. તેમ માંહી કાંઈ હોય નહિ તે માળવણ ગાય જેવા. વહાલું હોય તે વરવા જોગ થાય છે તે જો પંચવિષયમાં હેત હોય તો તે વરી જાય ને ભગવાનમાં હેત હોય તો તે વરે. માટે ભગવાનના ભક્તને તો, <br/><br/>
+ 
+ નેણ કુંરંગા નાગરિ, વરું તો વૃજરાજ નીકર રહું કુંવારી.
+ 
+ <br/><br/>
+ 
+ એવો જેનો ઢાળો છે તે ભગવાનને જ ગાય ને ભગવાનને જ સંભારે. આ જીવને ભગવાનને અર્થે કાંઈ કરવું તેમાં આળસ. તે થોડુંઘણું કરે છે, તેમાં પણ, ‘હવે ન કરીએ તો ઠીક.’ એવો આશય રહે છે. ને મોટાની દૃષ્ટિ એમ જે, કેમેય કરતાં સત્સંગમાં પાર પડે ને તેના જીવનું સારું થાય ને જીવને તો ભગવાન ને એકાંતિક સાથે વેર છે. બહુ જન્મની વિપરીત ભાવના થઈ છે તે ભગવાનમાં ન જોડાય ને સંબંધીમાં જોડાઈ જાય, પણ સંબંધી તો કેવા છે ? તે, <br/><br/>
+ 
+ મિલે જો ઠગ જગમાંહીં મિત્ર કરી તાકું માને; <br/>
+ 
+ (મુક્તાનંદ કાવ્ય : મુકુન્દ બાવની-21)
+ 
+ <br/><br/>
+ 
+ ને આ ભેળું રહેવું તેમાં પરસ્પર હેત કરવું ને થોરનાં ડીંડલાં હોય તે પડ્યાં પડ્યાં પાલવે ને આ તો આંબા લીમડાનાં ડાળખાં તે ચોંટે પણ નહિ. ધીરજ ને ધર્મનું પારખ્યું આપત્કાળે ખબર પડે છે. તે ઉપર સાખી બોલ્યા જે, <br/><br/>
+ 
+ ધીરજ, ધર્મ, મિત્ર, અરુ નારી; આપત્કાળ પરખી એહી ચારી. <br/>
+ 
+ (શ્રી રામચરિતમાનસ) <br/><br/>
+ 
+ જે આ સાધુથી નોખો પડશે તે પંડે ઊડશે ને રજોગુણમાં તો બહુ દુ:ખ છે ને સાધુપણું વહેવાર કર્યે કળાય ને ક્રિયાએ કરીને ઓળખાય ને મરજીમાં રહે તે ઉપર સૌને હેત થાય છે, તે ભગવાનને પણ એમ જ ગમે છે ને માયાની મોટપ તો જેમ મડદું ફૂલ્યું તેમ છે.
+ 
+ 
+		</div>
+
+	</div>
+
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 માળવણ ગાય= ઊચી ગયેલ ગાય-દૂધ દેતાં બંધ થયેલ ગાય.
+</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

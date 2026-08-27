@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (102) હવે અમારે દિવાળી સુધી કથા કરાવવી છે ને જેને રહેવું હોય તે રહેજો એમ કહ્યું ને મહારાજે પ્રિયવ્રતનો માર્ગ કાઢ્યો છે; તે ઉપર શિનોરના ગિરધર ભક્તની વાત કરી જે, ઘા લાગ્યો હતો. પછી શીરો ખાધો તે કામ ઉદય થયો. પછી અમને વાત કરી જે, આમાં રહેવાશે નહીં. પછી અમે મહારાજને મુક્તાનંદસ્વામી પાસે કહેવરાવ્યું. પછી પ્રિયવ્રતનો મારગ કાઢ્યો. ગિરધર ભક્ત ચૌદ વરસના હતા ને ત્યાગી થયા. મહી નદીમાં મહારાજ ટીમણ કરવા બેઠા ત્યાં ગિરધરભાઈ ને બીજો સાધુ માથે ઓઢીને રમત કરતા હતા તે મહારાજે બોલાવ્યા ને એકને કાઢી મૂક્યો. બીજાને કહે, આ ગિરધર મુમુક્ષુ છે તેને ભેળો લ્યો. પછી તેનો ભાઈ જોરોભાઈ વીસ ગાઉ છેટે રહેતો તેને વડોદરે બોલાવ્યો ને કહ્યુ જે આને લઈ જા, તો કહે, એને ક્ધયા ન મળે. ત્યારે મહારાજે એક હરિજનને પૂછ્યું તમારે દીકરી છે ? તો કહે, ‘મહારાજ આઠ વરસની છે, પોર પરણાવવી છે.’ પછી મહારાજ કહે, ‘કરો સંબંધ.’ પછી વહેવાઈના હાથ મહારાજે ભેળા કર્યા ને મહારાજ કહે, ‘આજ પ્રિયવ્રતનો મારગ કાઢવો છે.’ પછી કહે, ‘એને ખાવાનું શું ?’ તો કહે, ‘પચાસનો પગાર થાશે.’ પછી વડોદરામાં નોકર રહ્યો ને હજારોને સત્સંગી કર્યા. <br/><br/>
+ 
+ ને કામ, લોભ, સ્વાદ, સ્નેહ ને માન તેને રોકવા, તે તો જેતપરનો ધરો રોકાય તો એ રોકાય ને વાંઢાને બીજો રોગ વધે, તે શું જે સારું સારું વઘારીને ખાય તે રસાસ્વાદ વધે, પછી તેના હૈયામાં ભગવાન રહે નહિ, તે ખાટાં, મીઠાં, ચોપડ્યાં ખાય. માટે કાં તો કોરા તલ ભલા પણ કચરિયું કર્યું તે શા કામમાં આવે? માટે મહારાજે તેરેથી કાગળ લખ્યો હતો જે મહિનો મહિનો વાતું સાંભળશો તો ઠા રહેશે, નહિ તો ઠા રહેશે નહિ ને આ મારગ તો જુદો કાઢ્યો છે. જેમ કહ્યું છે તેમ રહીને પ્રભુ ભજવા ને જેને ભગવાનનું આલંબન નહિ તેનો દિવસ શી રીતે જાય ? માટે ભીડામાં રહેવું ને કથાવાર્તાના ઘસારામાં રહેવું તો ઠીક રહેશે. પછી વિશલ્યકરણીનું <a href="GA-39.html"> છેલ્લાનું 39મું</a> વચનામૃત વંચાવીને વાત કરી જે, આટલી આટલી વાતું મહારાજે કરી છે. જેમ કોઈ આંધળો ધ્રોડ કરે તેમ આપણે આંધળો ધ્રોડ ન કરવો, તે હવે ધોળા મોવાળા આવ્યા ને સંસારના વેગ લગાડવા તે આંધળો ધ્રોડ કહેવાય ને માલ આથમણો ગયો ને ઉગમણો દોડ્યા તે માલ મળે નહિ ને અંત સમે તો જેમાં સ્નેહ રહેશે તે આડું આવીને ઊભું રહેશે. તે જેમ ભરતજીનો મૃગાકાર જીવ થઈ ગયો તેમ. માટે જીવ તો એક ભગવાનમાં જ બાંધવો ને સાધુમાં બાંધવો. ડુંગળી ખાય તેના હૈયામાંથી એલચીનો ઓડકાર ક્યાંથી આવશે ?
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">							<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+				<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૫૮: દેહ, કુસંગ ને પૂર્વ સંસ્કારનું; મોટાને જાણે તેવો થાય</h1>
+			
+			<p class="text_gu">સંવત ૧૮૭૬ના ફાગણ સુદિ ૫ પંચમીને દિવસ સંધ્યા આરતીને સમે સ્વામી શ્રીસહજાનંદજી મહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં જે પરમહંસની જાયગા ત્યાં વિરાજમાન હતા અને સર્વ ધોળાં વસ્ત્ર ધારણ કર્યાં હતાં અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના હરિભક્તની સભા ભરાઈને બેઠી હતી.</p>
+			
+			<p class="text_gu">પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રશ્ન કરો.” પછી મુક્તાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “હે મહારાજ! જ્યારે ભજન-સ્મરણ કરવા બેસે ત્યારે ભગવાનના ભક્તના અંતરમાં રજોગુણ, તમોગુણના વેગ આવે ત્યારે ભજન-સ્મરણનું સુખ આવતું નથી, તે એ ગુણના વેગ કેમ ટળે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “એ ગુણની પ્રવૃત્તિનાં કારણ તો દેહ, કુસંગ અને પૂર્વ સંસ્કાર એ ત્રણ છે; તેમાં દેહને યોગે કરીને જે ગુણ પ્રવર્ત્યા હોય તે તો આત્મા-અનાત્માના વિચારે કરીને ટળી જાય છે અને કુસંગે કરીને પ્રવર્ત્યા હોય તે સંતને સંગે કરીને ટળે છે અને જે રજોગુણ, તમોગુણના વેગ એ બેયે કરીને પણ ન ટળે તે તો કોઈક પૂર્વના ભૂંડા સંસ્કારને યોગે કરીને છે, માટે એ ટળવા ઘણા કઠણ છે.”</p>
+
+		<p  class="text_gu">પછી આનંદાનંદ સ્વામીએ પૂછ્યું જે, “પૂર્વના સંસ્કાર મલિન હોય તે કેમ ટળે?” ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “<b>અતિશય જે મોટાપુરુષ હોય તેનો જે ઉપર રાજીપો થાય તેના ગમે તેવા મલિન સંસ્કાર હોય તો નાશ પામે અને મોટાપુરુષનો રાજીપો થયો હોય તો રાંક હોય તે રાજા થાય અને ગમે તેવાં ભૂંડાં પ્રારબ્ધ હોય તો રૂડાં થાય અને ગમે તેવું તેને માથે વિઘ્ન આવનારું હોય તે નાશ થઈ જાય.</b>”</p>
+
+<p  class="text_gu">પછી વળી આનંદાનંદ સ્વામીએ પૂછ્યું જે, “શો ઉપાય કરે તો મોટાપુરુષ રાજી થાય?” પછી શ્રીજીમહારાજ બોલ્યા જે, “પ્રથમ તો મોટા સંત સાથે નિષ્કપટપણે વર્તે અને કામ, ક્રોધ, લોભ, મોહ, મદ, મત્સર, આશા, તૃષ્ણા, અહંકાર અને ઈર્ષ્યા એ સર્વનો ત્યાગ કરે અને સંતનો ગુલામ થઈને રહે ને અંતરમાં માન ટળેભાવે રહે પણ દેહે કરીને સર્વેને નમતો રહે, તો એની ઉપર મોટા સંત રાજી થાય છે.”</p>
+
+<p  class="text_gu">પછી મહાનુભાવાનંદ સ્વામીએ પૂછ્યું જે, “હે મહારાજ! સત્સંગમાં રહેતે થકે જેટલા અવગુણ હોય તે સર્વે નાશ પામી જાય અને દિનદિન પ્રત્યે ભગવાનની ભક્તિ વૃદ્ધિ પામતી જાય એનો શો ઉપાય છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “મોટાપુરુષનો જેમ જેમ ગુણ ગ્રહણ કરતો જાય તેમ તેમ એની ભક્તિ વૃદ્ધિ પામતી જાય. અને અતિશય જે મોટા હોય તેને જો અતિશય નિષ્કામી જાણે તો પોતે કૂતરા જેવો કામી હોય તે નિષ્કામી થાય અને જો મોટાપુરુષને વિષે કામીપણાનો દોષ પરઠે તો ગમે તેવો નિષ્કામી હોય તોય પણ અતિશય કામી થાય. અને મોટાને વિષે ક્રોધી-લોભીપણું પરઠે તો પોતે ક્રોધી-લોભી થાય. અને <b>જો મોટાપુરુષને અતિશય નિષ્કામી, નિર્લોભી, નિઃસ્વાદી, નિર્માની, નિઃસ્નેહી સમજે તો પોતે પણ એ સર્વ વિકારથી રહિત થઈ જાય અને પાકો હરિભક્ત થાય</b>. તે પાકા હરિભક્તનું શું લક્ષણ છે? તો સારા જે શબ્દ, સ્પર્શ, રૂપ, રસ અને ગંધ એ પંચવિષય તેનો જેમ દુઃખદાયક વસ્તુનો સહજે અભાવ રહે છે તેમ જેને સહજે અભાવ રહે છે અને એક પરમેશ્વરના સ્વરૂપને વિષે અચળ નિષ્ઠા વર્તે છે, તેને પાકો હરિભક્ત જાણવો. તે એવો પાકો હરિભક્ત થયાનો તો એ જ ઉપાય છે જે, પરમેશ્વરના દાસનો ગુલામ થઈને રહે અને એમ જાણે જે, ‘<b>એ સર્વ ભક્ત મોટા છે ને હું તો સર્વથી ન્યૂન છું,’ એમ જાણીને હરિભક્તનો દાસાનુદાસ થઈ રહે. અને એવી રીતે જે વર્તે તેના સર્વ વિકાર નાશ પામે અને તેને દિવસે દિવસે જ્ઞાન, વૈરાગ્ય, ભક્તિ આદિક જે શુભ ગુણ તે વૃદ્ધિ પામતા જાય છે.</b>”</p>
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>
+</html>

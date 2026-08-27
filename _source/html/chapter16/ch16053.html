@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (53) રુચિ પ્રથમ જો સારી સારી બાંધી હોય તો અંતે સારું થાય ને સંગ સારો હોય તો મનને, દેહને, ઈન્દ્રિયુંને ઘસારો લાગે એવા ભેળા રહેવું, તે એક તો ગોપાળાનંદસ્વામી, મુક્તાનંદસ્વામી ભેળા રહે ને એક તો ભજનાનંદ ને હરિહર્યાનંદ ભેળો રહે તેમાં કયો વૃદ્ધિ પામે ? એમ મોકળું મૂકીએ છીએ ત્યાં સુધી ઠીક, પણ જો ઝાલવા માંડીએ તો ઠીક ન પડે ને એવો તો ગોપાળાનંદસ્વામીનો સ્વભાવ હતો ને વચનામૃતમાં કહ્યું જે, બધાની બરોબર વરતવું (<a href="L-6.html">વચ. લોયા 6</a>). રોટલા પડી ગયા તે વાત કરી, જે ભણનારા નાના નાના સાધુઓ નાહી આવ્યા પછી થોડોક દિવસ હશે તે વખતે ભંડારે ટાઢા રોટલા જમતા હતા ત્યાં મુક્તાનંદસ્વામી કાંઈક કામે ગયા. સ્વામીને દેખી તે સાધુના હાથમાંથી રોટલા પડી ગયા. તેથી સ્વામીને તો એમ થયું, ‘સાધુને તો જનની કહ્યા છે ને મને ભાળીને હાથમાંથી રોટલા પડી ગયા ? મને કેવો દેખ્યો હશે ?’ પછી મુક્તાનંદસ્વામીએ ‘ભૂખ લાગી છે, થોડો રોટલો અમને પણ આપો.’ એમ કહ્યું, તે વાત મહારાજ પાસે ગઈ; પછી મહારાજ બહુ રાજી થયા. અમારો સ્વભાવ પ્રથમ એવો જે મારું વચન કોઈ ન માને ત્યારે તેને હું કહું નહિ ને હવે તો હાથ જોડીને કહીએ છીએ જે, ભલો થઈને કરીશ ? નિષ્કુળાનંદસ્વામી, કૃપાનંદસ્વામી એ ભેળા કોઈ રહે જ નહિ, તે તો ઉજ્જડ ગામનો એરંડો એવો રહે ને જ્યારે ઝાઝા મનુષ્યનો નભાવ કરાવવો હોય ત્યારે કોઈનું વૈદું કરીએ, કોઈનાં બીજાં દુ:ખ હોય તે ટાળીએ એમ કરીને સૌ સાથે બનાડીએ છીએ. પણ જેવી મારી પ્રકૃતિ છે તેવી રીતે વર્તાવું તો કોઈ રહી શકે નહિ.
+ 
+ 
+		</div>
+
+	</div>
+	<div class="vaatLb" id="ex1" style="display:none;">
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

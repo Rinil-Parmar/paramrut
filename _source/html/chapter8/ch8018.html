@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (18) એક વખતે સ્વામીએ વાત કરી જે, સનકાદિક ઋષિઓએ સૂતપુરાણીને પૂછ્યું જે, ‘ધર્મના બખ્તરરૂપ એવા જે, ભગવાન તે અંતર્ધ્યાન થયા પછી ધર્મ કેને શરણે  રહ્યો ?’ ત્યારે સૂતપુરાણીએ કહ્યું જે, ‘એ તો ભગવાન ભેળો ગયો.’ ત્યારે ફરીને પૂછ્યું જે, ‘આંહીં ધર્મ રહ્યો કે નહિ?’ ત્યારે કહ્યું જે, ‘ધર્મ તો ભગવાનની મૂર્તિને આશરે રહ્યો છે, માટે જેણે ભગવાનની મૂર્તિ રાખી ત્યાં ધર્મ જે તે પોતાના પરિવાર સહિત અખંડ રહે છે.’ ‘ધર્મામૃત’માં પણ મહારાજે પોતે શ્રીમુખે કહ્યું છે જે, ‘સાક્ષાત્ ભગવાનના સંબંધને પામ્યો એવો જે, એકાંતિક ધર્મ તે તો એ ધર્મને ધારીને રહે એવા જે, સાક્ષાત્ મોટા એકાંતિક સંત જ્યાં હોય ત્યાં તે એકાંતિક ધર્મ જે, તે પ્રગટપણે વરતાય છે અને જ્યારે એવા મોટા એકાંતિક સત્પુરુષ ન હોય ત્યારે એ એકાંતિક ધર્મ જે, તે આ પૃથ્વી ઉપરથી અંતર્ધ્યાન થઈ જાય છે.’ ત્યારે એક હરિજને હાથ જોડીને પૂછ્યું જે, ‘એકાંતિક ધર્મને ધારીને રહે એવા જે, સત્પુરુષ તે કેવા હોય ?’
+ <br/><br/>
+ ત્યારે બોલ્યા જે, ‘પરાત્પર એવા જે સર્વોપરી પુરુષોત્તમ ભગવાન અને તેમને રહ્યાનું ધામ જે મૂળઅક્ષર, તે બેયના પ્રત્યક્ષ સ્વરૂપનો સાક્ષાત્કાર સંબંધ થયો હોય ને એ બેયને જેવા છે તેવા ઇન્દ્રિયું, અંત:કરણ ને અનુભવ એ ત્રણે કરીને જાણ્યા હોય અને પોતે પ્રગટ મૂળઅક્ષર જેને વિશે સાક્ષાત્ પુરુષોત્તમ ભગવાન અખંડ વિરાજી રહ્યા છે, તે અક્ષરનું સાધર્મ્યપણું પામીને એમ માનતા હોય જે, ‘એ અક્ષરબ્રહ્મ જ મારો આત્મા કહેતાં મારું સ્વરૂપ છે ને મારા વિશે પ્રગટ પુરુષોત્તમ ભગવાન શ્રી સહજાનંદસ્વામી સદાય વિરાજમાન છે.’ એવી જ્ઞાનની અતિ દૃઢ સ્થિતિને પામ્યો હોય; અને જે મુમુક્ષુ જીવ પોતાને શરણે આવે તેને એવી સ્થિતિ પમાડે અને પોતે પ્રગટ પુરુષોત્તમ ભગવાનમાં સર્વ પ્રકારે જોડાણા હોય અને બીજાને જોડે ને પોતે ભગવાનની આજ્ઞા પાળે ને બીજાને પળાવે ને પોતે ભગવાનનું વચન કોઈ કાળે લોપે નહિ ને બીજા પાસે લોપાવે નહિ ને પોતે માયા ને માયાનું કાર્યમાત્ર યત્કિંચિત્ જે નામરૂપમાત્ર તેને અસત્ય, નાશવંત ને તુચ્છ જાણે, પણ તેમાં કોઈ કાળે મોહ પામે નહિ અને જે જીવ પોતાને આશરે આવે તેને પણ માયાના કાર્યમાં મોહ પામવા દે નહિ; એવે લક્ષણે યુક્ત જે હોય તેને મોટા એકાંતિક સત્પુરુષ જાણવા.
+ <br/><br/>
+ અને જે મોટા એકાંતિક સત્પુરુષ તેને આશરીને એકાંતિક ધર્મ જે, તે પોતાનો પરિવાર જે, જ્ઞાન, વૈરાગ્ય, ભક્તિ, મહિમા, ઉપાસના, આત્મનિષ્ઠા, અહિંસા, બ્રહ્મચર્ય એ આદિકે સહિત અખંડ નિવાસ કરીને રહે છે; એવા જે, સત્પુરુષ તે તો સૌના મિત્ર છે ને સર્વ જે, જીવપ્રાણીમાત્રના અજ્ઞાનને હરવાને વિશે તો સૂર્ય તુલ્ય કહ્યા છે. તે માટે જે, મુમુક્ષુને એકાંતિક ધર્મ સિદ્ધ કરવો હોય ને સાક્ષાત્ અક્ષરબ્રહ્મના સાધર્મ્યપણાને પામીને સાક્ષાત્ પુરુષોત્તમનારાયણની અખંડ સેવામાં રહેવું હોય તેણે, તેવા સંતમાં સર્વ પ્રકારે અંતરાયે રહિત થઈને જોડાવું, પણ તે વિના પોતાના બુદ્ધિ બળે કરીને શાસ્ત્રમાંથી શીખીને પણ એ એકાંતિક ધર્મ પમાતો નથી. એ તો એકાંતિક થકી જ એકાંતિક ધર્મ પમાય છે, તેમ <a href="GP-60.html">પ્રથમનાં 60</a>માં વચનામૃતમાં કહ્યું છે.’
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			
+			<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+			<li><button  onClick="javascript: window.history.go(-1)" >X</button></li>
+		</ul>
+		<div id="bodytext">
+			<h1 class="title_gu">લોયા ૩: માહાત્મ્યજ્ઞાને સહિત નિશ્ચયવાળાનું</h1>
+ <p class="text_gu">
+
+સંવત ૧૮૭૭ના કાર્તિક વદિ ૧૩ તેરસને દિવસ શ્રીજીમહારાજ ગામ શ્રીલોયા મધ્યે સુરાખાચરના દરબારમાં રાત્રિને સમે ઢોલિયા ઉપર વિરાજમાન હતા ને ધોળી છીંટની ડગલી પહેરી હતી તથા રૂનો ભરેલો ધોળો સુરવાળ પહેર્યો હતો ને મસ્તક ઉપર ધોળો ફેંટો બાંધ્યો હતો તથા ધોળી પછેડી ઓઢી હતી અને પોતાના મુખારવિંદની આગળ મુનિ તથા દેશદેશના સત્સંગીની સભા ભરાઈને બેઠી હતી.
+</p> <p class="text_gu">
+
+તે સમયને વિષે શ્રીજીમહારાજને ભગવદાનંદ સ્વામી તથા શિવાનંદ સ્વામીએ પ્રશ્ન પૂછ્યો જે, “ભગવાન તથા સંત તેનો જેને માહાત્મ્યજ્ઞાને સહિત નિશ્ચય હોય તેનાં શાં લક્ષણ છે?” પછી શ્રીજીમહારાજ બોલ્યા જે, “<b>જેને ભગવાનનો ને સંતનો માહાત્મ્યજ્ઞાને સહિત નિશ્ચય હોય તેથી ભગવાનને અર્થે ને સંતને અર્થે શું ન થાય? એને અર્થે કુટુંબનો ત્યાગ કરે, લોકલાજનો ત્યાગ કરે, રાજ્યનો ત્યાગ કરે, સુખનો ત્યાગ કરે, ધનનો ત્યાગ કરે, સ્ત્રીનો ત્યાગ કરે અને સ્ત્રી હોય તે પુરુષનો ત્યાગ કરે.</b>” એમ કહીને પછી આ સર્વે હરિભક્તની વાર્તાઓ એકબીજા કેડે કરી. ગામ ડડુસરવાળા રજપૂત ગલુજી તથા ધર્મપુરવાળાં કુશળકુંવરબાઈ તથા પર્વતભાઈ તથા રાજબાઈ તથા જીવુબાઈ તથા લાડુબાઈ તથા મોટાં રામબાઈ તથા દાદો ખાચર તથા માંચો ભક્ત તથા મૂળજી બ્રહ્મચારી તથા ભુજવાળાં લાધીબાઈ ને માતાજી તથા મુક્તાનંદ સ્વામી તથા વાળાક દેશનો આહીર પટેલ સામત તથા ગામ માનકૂવાના મૂળજી તથા કૃષ્ણજી તથા વાળાક દેશના ગુંદાળી ગામના બે કાઠી હરિભક્ત ઇત્યાદિક જે સત્સંગી તેમણે ભગવાનને અર્થે ને સંતને અર્થે જે જે કર્યું તેને વિસ્તારીને કહેતા હવા. અને વળી એમ કહ્યું જે, “<b>જેને ભગવાનનો નિશ્ચય માહાત્મ્યજ્ઞાને સહિત હોય તે ભગવાનના વચનમાં ફેર પાડે નહીં ને જેમ કહે તેમ કરે.</b>” તે ઉપર પોતાની વાત કરી જે, “અમારો સ્વભાવ કેવો હતો? તો ગોદોહનમાત્ર એક સ્થાનકમાં રહેવાય પણ વધુ રહેવાય નહીં, એવા ત્યાગી હતા અને વૈરાગ્ય અતિશય હતો ને શ્રીરામાનંદ સ્વામી ઉપર હેત પણ અસાધારણ હતું. તો પણ સ્વામીએ ભુજનગરથી કહી મોકલ્યું જે, ‘જો સત્સંગમાં રહ્યાનો ખપ હોય તો થાંભલાને બાથ લઈને પણ રહેવું પડશે,’ એમ મયારામ ભટ્ટે આવીને કહ્યું ત્યારે અમે થાંભલાને બાથ લીધી. ત્યાર પછી તેમણે કહ્યું જે, ‘મુક્તાનંદ સ્વામીની આજ્ઞામાં રહો.’ પછી અમે સ્વામીનાં દર્શન થયા મોર નવ મહિના સુધી મુક્તાનંદ સ્વામીની આજ્ઞામાં રહ્યા. એવે લક્ષણે કરીને જેને સંતનો ને ભગવાનનો એવો નિશ્ચય હોય તેને જાણીએ.” અને પછી સુંદરજી સુતાર ને ડોસા વાણિયાની વાત કરી. અને વળી, “જેને ભગવાનનો ને સંતનો એવો નિશ્ચય હોય તેને તેની કોરનો કેફ વર્તે,” એમ કહીને રાણા રાજગરની વાર્તા કરી. અને પ્રહ્‌‎લાદની વાર્તા કરી જે, “પ્રહ્‌‎લાદ જે તે નૃસિંહજી પ્રત્યે બોલ્યા જે, ‘હે મહારાજ! હું આ તમારા વિકરાળ રૂપથી નથી બીતો ને તમે જે મારી રક્ષા કરી તેને હું રક્ષા નથી માનતો; ને તમે જ્યારે મારા ઇન્દ્રિયોરૂપ શત્રુના ગણ થકી રક્ષા કરશો ત્યારે હું રક્ષા માનીશ.’ માટે જે ભગવાનનો ભક્ત હોય તે દૈહિક રક્ષા ભગવાન કરે તેણે કરીને હર્ષ ન પામે ને રક્ષા ન કરે તેણે કરીને શોક ન કરે અને અલમસ્ત થકો ભગવાનને ભજે. અને ભગવાન ને સંત તેનું માહાત્મ્ય બહુ જાણે.” તે ઉપર ગામ કઠલાલની ડોસીની વાત કરી. “અને આવી રીતનો જે હરિભક્ત હોય તેનો દેહ પગ ઘસીને પડે, વાઘ ખાઈ જાય, સર્પ કરડે, શસ્ત્ર વાગે, પાણીમાં બૂડી જાય ઇત્યાદિક ગમે તેવી રીતે અપમૃત્યુએ કરીને દેહ પડે તો પણ એમ સમજે જે, ‘ભગવાનના ભક્તની અવળી ગતિ થાય જ નહીં, એ તો ભગવાનના ધામને જ પામે; અને ભગવાનથી વિમુખ હોય તેનો દેહ સૂધી સારી પેઠે પડે ને ચંદનનાં લાકડાંમાં સંસ્કારે યુક્ત બળે તો પણ તે તો નિશ્ચય યમપુરીમાં જાય.’ એ બેની વિક્તિ સારી પેઠે સમજે. એ સર્વે પ્રકારની જેના હૃદયમાં દ્રઢ ગાંઠ પડી જાય તેને ભગવાન ને સંતનો માહાત્મ્યે સહિત નિશ્ચય છે એમ જાણવું. અને એવો નિશ્ચયવાળો જે હોય તે જરૂર બ્રહ્મમહોલમાં જ પૂગે પણ બીજે ક્યાંય કોઈ ધામમાં ઓરો રહે નહીં.”
+</p>
+
+
+
+
+			<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

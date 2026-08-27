@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (208) મહારાજ ભાદરામાં વિરાજતા હતા. ત્યાં મૂળજી બ્રહ્મચારીને મોજડીઓ તેલ ચોપડવા આપીને કહ્યું કે, ‘તમે જ ચોપડજો પણ બીજાને ચોપડવા દેશો નહીં.’ પછી બ્રહ્મચારી ચોપડતા હતા ત્યાં વશરામ ભક્ત આવ્યા. તે કહે, ‘લાવો હું ચોપડું.’ ત્યારે બ્રહ્મચારીએ ના પાડી. પછી પગે લાગી વિનંતી કરી જે, ‘આજ મને કૃપા કરી મોજડીઓ ચોપડવા દો તો બહુ સારું.’ ત્યારે કહે, ‘મહારાજની આજ્ઞા નથી.’ પણ બહુ આગ્રહ કર્યો એટલે આપી ને તે ચોપડવા લાગ્યા. ત્યાં મહારાજ આવ્યા ને કહે, ‘ભગત, તમે કેમ ચોપડો છો ? બ્રહ્મચારી ક્યાં ગયા ?’ ત્યાં તો બ્રહ્મચારી આવ્યા, એટલે મહારાજે ઠપકો દીધો જે, ‘તમે મોજડીઓ કેમ ન ચોપડી? જાઓ, વિમુખ છો, ઘી-ગોળ ખાશો નહિ, જોડા પહેરશો નહિ ને જતા રહો.”
+ <br/><br/>
+ પછી બ્રહ્મચારી કાનમદેશમાં રામદાસજીભાઈ હતા ત્યાં ગયા. રામદાસજી-ભાઈ સાધુ બહુ સારા ને સૌને નભાવે એવા હતા. બ્રહ્મચારીએ બધી વાત કહી, ત્યારે રામદાસજીભાઈ કહે, ‘તમે સુખેથી આંહીં રહો.’ પછી ત્યાં રહ્યા. પણ વૈશાખ માસમાં સાખની કેરીનો ટોપલો સાધુ સારુ આવ્યો, ત્યારે રામદાસજીભાઈ કહે, ‘આ કેરી તો મહારાજ જમે એવી છે ! પણ કોણ ગઢડે લઈ જાય ?’ ત્યારે બ્રહ્મચારી કહે, ‘હું જાઉં.’ તો કહે, ‘બહુ સારું.’ પછી માથે કેરીનો ટોપલો લઈને, એવા ઉનાળામાં અડવાણે પગે ચાલી ગઢડે ગયા ને મહારાજ આગળ ટોપલો મૂક્યો, દંડવત્ કરી પગે લાગ્યા ને જય સ્વામિનારાયણ કહ્યા; પણ મહારાજે તો બોલાવ્યા નહિ ને જય સ્વામિનારાયણ પણ કર્યા નહીં. પછી બ્રહ્મચારી ગામમાં ગયા ત્યાં સુતારની એક ડોશી હરિજન સામાં મળ્યાં. તેણે બ્રહ્મચારીને પૂછ્યું, ‘કેમ દેખાતા નથી ?’ ત્યારે બ્રહ્મચારી કહે, ‘મહારાજે કાઢી મૂક્યો છે. કાનમ દેશથી કેરી લાવ્યો છું, તે મહારાજ આગળ મૂકી, પણ મહારાજે તો બોલાવ્યો નહિ ને નારાયણેય કર્યા નહીં.’
+ <br/><br/>
+ પછી ડોશી પોતાને ઘેર તેડી ગયાં ને પાકું સીધું આપ્યું; પણ બ્રહ્મચારીએ તો લોટનો ભાખરો કરી ખાઈ લીધું ને ઘી-ગોળ પાછું દીધું; ત્યારે ડોશી કહે, ‘ઘી-ગોળ કેમ ન ખાધું ?’ તો કહે, ‘મહારાજે ના પાડી છે. કાનમ દેશથી અડવાણે પગે ચાલી કેરીનો ટોપલો લાવ્યો; પણ નારાયણેય કર્યા નહીં.’ પછી ડોશી મહારાજ પાસે ગયાં ને કહે, ‘મહારાજ ! બ્રહ્મચારીનો શો વાંક છે, તે કાઢી મૂક્યા છે ? ઘી-ગોળ ખાવાની ને જોડા પહેરવાની ના કેમ પાડી છે ? ને આવા તડકામાં અડવાણે પગે કાનમથી કેરીનો ટોપલો લાવ્યા, તોય નારાયણેય કર્યા નહિ, તે શું છે ?’ ત્યારે મહારાજ કહે, ‘ભલે આવે, અમે ક્યાં ના પાડીએ છીએ.’ પછી બ્રહ્મચારી ગયા અને કેરી ઘોળી પાસે મૂકીને બોલ્યા જે, ‘કહો તો રસ કાઢીને જમાડું.’ ત્યારે મહારાજ કહે, ‘અમે ક્યાં ના પાડીએ છીએ ?’ પછી રસ કાઢી મહારાજને જમાડ્યા, એટલે મહારાજ રાજી થયા. પછી તો હંમેશની પેઠે સેવા કરવા માંડી, પણ વગર વાંકે અપમાન કરી કાઢ્યા તો પણ મહારાજને મૂક્યા નહિ, અવગુણ લીધો નહિ ને આજ્ઞા લોપી નહિ; તે જેવા ઈશ્ર્વરમાં ગુણ હોય તેવા બ્રહ્મચારીમાં હતા. એવા થોડા જડે !
+ 
+ 
+		</div>
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

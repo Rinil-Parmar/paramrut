@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<title>Swamini Vato - Haridham</title>
+	<meta content="text/html;charset=UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+//Added function highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("bodytext").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("bodytext").innerHTML=new_text;
+ }
+}
+
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap" >
+		<ul class="reader_tools noselect">						
+		<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li><!-- Added This line -->
+
+		<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+
+		<li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+ 
+		</ul>
+		<div id="bodytext" style="position:relative">
+			<h1 class="title_gu">ગઢડા પ્રથમ ૧૭ - સત્સંગમાં કુસંગનું, મોળી વાત ન કર્યાનું</h1>
+			
+<p class="text_gu">
+સંવત ૧૮૭૬ના માગશર વદિ ૫ પાંચમને દિવસ શ્રીજીમહારાજ શ્રીગઢડા મધ્યે દાદાખાચરના દરબારમાં આથમણે બારણે ઓરડો છે તેમાં કથા વંચાવતા હતા, અને ધોળો ખેસ પહેર્યો હતો તથા ધોળી ચાદર ઓઢી હતી તથા ધોળી પાઘ બાંધી હતી અને પીળાં પુષ્પની માળા પહેરી હતી અને પીળાં પુષ્પનો તોરો પાઘને વિષે ખોસ્યો હતો અને અતિ પ્રસન્ન થકા વિરાજમાન હતા.
+</p>
+<p class="text_gu">
+તે સમયને વિષે મુક્તાનંદ સ્વામી તથા ગોપાળાનંદ સ્વામી આદિક સાધુને તેડાવ્યા અને શ્રીજીમહારાજ તે સર્વે પ્રત્યે બોલ્યા જે, “આપણા સત્સંગમાં થોડોક કુસંગનો ભાગ રહ્યો જાય છે તે આજ કાઢવો છે અને આ પ્રકરણ એવું ચલાવવું છે જે, સર્વ પરમહંસ તથા સાંખ્યયોગી તથા કર્મયોગી સર્વ સત્સંગીમાં પ્રવર્તે. તે સત્સંગમાં કુસંગ તે શું છે? તો જે વાતના કરનારા હિંમત્ય વિનાની વાત કરે છે તે સત્સંગમાં કુસંગ છે. તે કેવી રીતે વાત કરે છે? તો એમ કહે છે જે, ‘ભગવાનનું જે વચન તેને યથાર્થ કોણ પાળી શકે છે? અને વર્તમાનધર્મ પણ યથાર્થ કોણ પાળી શકે છે? માટે જેટલું પળે તેટલું પાળીએ, અને ભગવાન તો અધમઉદ્ધારણ છે તે કલ્યાણ કરશે;’ અને વળી એમ વાત કરે છે જે, ‘ભગવાનનું સ્વરૂપ જે હૃદયમાં ધારવું તે કાંઈ આપણું ધાર્યું ધરાતું નથી, એ તો ભગવાન જેને દયા કરીને ધરાવે છે તેને ધરાય છે.’ એવી રીતની મોળી વાત કરીને ધર્મ, જ્ઞાન, વૈરાગ્ય ને ભક્તિ ઇત્યાદિ જે ભગવાનની પ્રસન્નતાનાં સાધન તેમાંથી બીજાને મોળા પાળે છે. માટે હવે <b>આજ દિનથી આપણા સત્સંગમાં કોઈ પણ એવી હિંમત્યરહિત વાત કરશો નહીં, સદા હિંમત્ય સહિત જ વાત કરજ્યો. અને જે એવી હિંમત્યરહિત વાત કરે તેને તો નપુંસક જાણવો. અને એવી હિંમત્ય વિનાની વાત જે દિવસ થઈ જાય તો તે દિવસ ઉપવાસ કરવો.</b>”
+</p>
+
+		<p class="text_gu" style="text-align:right;">|| ઇતિ વચનામૃતમ્ ||</p>
+		</div>
+	</div>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts1.js"></script>
+</body>
+</html>

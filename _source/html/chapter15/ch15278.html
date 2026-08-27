@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (278) ઋષભદેવની પેઠે પોતાને ન જોઈતું હોય તો પણ બીજાની શિક્ષાને અર્થે જેવું મળે તેવું નિયમ પ્રમાણે રાખવું, પણ નિયમ બહાર કોઈ પદાર્થનું ગ્રહણ કરવું નહિ. દેહને તો જેવે તેવે પદાર્થે રાખવો તે અનોપરામને કાછડી ટૂંકી પડે તો રસ્તામાં ચીંથરું લઈને કાછડીએ બાંધે ને કાછડી પૂરી કરે એવા વૈરાગ્યવાન હતા. આપણે વિષયની ના પાડીએ છીએ તે તો ઉમાભાઈના જેવી છે. તે માંહી માન જોઈએ ને ઉપરથી ના પાડે ને પથારીનું પણ એમ જ. માટે અંતરના અભાવ વિના વગોણા સરખો વૈરાગ્ય કહેવાય. નાના ભગતનું નામ વૈરાગ્યાનંદ પાડ્યું. તે ભાગી ગયો ને જેસાજીને અંતરજામીપણું આપ્યું. માટે અંતરમાં અભાવ ન હોય પણ કોઈ પદાર્થ જ ગ્રહણ ન કરીએ તો માંહીથી લાલચ મૂકી દે. લૂગડાં વણવાં ને ખેતી કરવી તે બેય થાય નહિ; તેમ ભક્તિ કરે ત્યારે ત્યાગ ન રહે ને ઊલટું માન વધતું જાય. માટે ભક્તિ કરવી ને ત્યાગ મોળો પડવા દેવો નહિ ને માન આવવા દેવું નહિ; ને સ્વાદ ને સ્નેહનો ત્યાગ કરવો પણ મીંદડાની પેઠે માન વધી જાય તેમ ન કરવું. તે મીંદડા તથા તપસ્વીની વાત કરી. તેમાં કહ્યું શું ? જે, માન વધવા દેવું નહિ. મોડામાં રણમલજી ભક્ત પાસે અમે ચાર જણા ગયા હતા તે રોટલા આપ્યા પણ ઉપર ઘી હતું. તે અદ્વૈતાનંદસ્વામીએ તો <a href="#ex1" class="wordMeaning">કોપટી</a> કાઢી ને પત્તરમાં ચોળતા તો પણ કહે જે મન ચોળાય છે ને વાત કરતા ત્યારે ધાર છૂટતી. પછી વયા ગયા, પણ કોપટી ઉખાડી નાખી તે કાંઈ અભાવ વિના એમ હોય ? તે દિવસે જાવાનું પણ મનમાં ન હોય પણ નરસાના સંગથી એમ થયું. માટે સંગ પણ સારાનો કરવો.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+1 કોપટી= પોપડી.
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>

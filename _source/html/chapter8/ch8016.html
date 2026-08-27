@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		 <ul class="reader_tools noselect"> 
+   <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (16) સંવત 1886ની સાલમાં જ્યારે શ્રીજીમહારાજ સ્વધામ પધારવાના થયા, ત્યારે આગળથી મંદવાડ ગ્રહણ કર્યો ને અમને કહ્યું જે, ‘તમે જૂનાગઢ જાઓ.’ ત્યારે અમારા મનમાં એમ થયું જે, હવે મહારાજ દેહ નહિ રાખે, એમ જાણી ઉદાસ થઈ ગયા ને આંખોમાં પાણી આવી ગયાં. તે જોઈ મહારાજ બોલ્યા જે, ‘અમારે નાહવા છે તે પાણી ઊનાં કરો.’ પછી પાણી ઊનું કર્યું ને અમે અંગ ચોળીને નવરાવવા માંડ્યા. તેમાં મહારાજે એટલું સુખ આપ્યું ને એટલો રાજીપો જણાવ્યો ને પછી મહારાજ અમારા સામું જોઈને કહે જે, ‘શા સારુ મૂંઝાવ છો ? એ વખત આવશે ત્યારે હું બોલાવી લઈશ, પણ હમણાં જાઓ.’ 
+ <br/><br/>
+ પછી અમે જૂનાગઢ આવ્યા ને જ્યારે વખત આવ્યો ત્યારે મહારાજે બ્રહ્માનંદસ્વામીને કહ્યું જે, ‘તમે જૂનાગઢ જાઓ ને ગુણાતીતાનંદસ્વામીને આંહીં મોકલો.’ એટલે બ્રહ્માનંદસ્વામી જૂનાગઢ આવ્યા ને અમે જેઠ સુદિ છઠને દિવસ ગઢડે સવારમાં ગયા. તે સમે મહારાજે મંદવાડ બહુ જ જણાવ્યો ને કોઈને પાસે જવા દે નહિ, પણ સોમલાખાચરે મહારાજને કહ્યું જે, ‘જૂનાગઢથી ગુણાતીતાનંદસ્વામી આવ્યા છે.’ ત્યારે મહારાજે કહ્યું જે, ‘તેને આંહીં બોલાવો.’ પછી અમે ગયા ને દંડવત્ કરી પગે લાગીને બેઠા ત્યારે મહારાજ બેઠા થઈને મળ્યા ને અમારી સામું બહુ વાર જોઈ રહ્યા. ને બોલ્યા જે,
+ <br/><br/>
+ મીઠા વહાલા કેમ વિસરું મારું, તમથી બાંધેલ તન હો,
+ <br/>
+ તરસ્યાને જેમ પાણીડું વહાલું, ભૂખ્યાને  ભોજન  હો. મીઠા0
+ <br/>
+ (કીર્તન મુક્તાવલિ : 198)
+ <br/><br/>
+ એમ કહીને પૂછ્યું જે, ‘સુખી છો ? સર્વેને વસ્ત્ર-ઘરેણાં પૂરાં થઈ રહ્યાં?’ ત્યારે અમે કહ્યું જે, ‘મહારાજ તમારી દૃષ્ટિથી સૌ સુખી છે પણ સિદ્ધેશ્ર્વરને મુગટ નથી.’ ત્યારે મહારાજે બ્રહ્મચારીને કહ્યું જે, ‘ઓલ્યો ધરમપુરવાળો મુગટ લાવો.’ તે લઈને મહારાજે અમને આપ્યો ને કહે જે, ‘આ સિદ્ધેશ્ર્વરને મુગટ.’ એમ કહીને બ્રહ્મચારી થાળ લાવ્યા, તે જરાક જમ્યા ને અમને પ્રસાદી આપી ને પોઢી ગયા.
+ <br/><br/>
+ પછી બીજે દિવસ અમને ને ગોપાળાનંદસ્વામીને બોલાવ્યા અને ગોપાળાનંદસ્વામીને કહ્યું જે, ‘સ્વામી, તમે પ્રથમથી જ જાણો છો અને આજ પણ કહું છું જે, તમને સર્વેના મોટેરા કર્યા છે, પણ આ અમારે રહ્યાનું ધામ જે ગુણાતીતાનંદસ્વામી તથા રઘુવીરજી એ બેનું વિશેષ રાખજો.’ પછી દશમને દિવસ સ્વેચ્છાથી પોતે સ્વધામ પધાર્યા ને વૈમાનમાં પધરાવી લક્ષ્મીવાડીએ લઈ ગયા; ત્યાં કોઈને ધીરજ રહી નહિ, તે રોકકળ થઈ રહી. પછી ગોપાળાનંદસ્વામીએ અમને કહ્યું જે, ‘આ બધાય તો એમના બાપને મૂઆ દેખે છે, માટે ઊઠો, મહારાજની દેહક્રિયા કરો.’ એટલે રઘુવીરજી મહારાજને આગળ રાખીને મહારાજની દેહક્રિયા સર્વે અમે કીધી.
+ <br/><br/>
+ પછી અમે <a href="#ex1" class="wordMeaning">બહિર્ભૂમિએ ગયા</a>, તે જઈને પાછા વળ્યા, ત્યારે ધોરિયાને કાંઠે લીલી <a href="#ex1" class="wordMeaning">ધ્રોક્ડ ભાળી</a>. તે જોઈને એમ થયું જે, ‘આનું જીવન તો જળ છે, પણ આપણું જીવન તો ગયું !’ એમ થયું ત્યારે દેહની વિસ્મૃતિ થઈ ગઈ ને હાથમાંથી તુંબડી ઊડી પડી ને અમે પણ પૃથ્વી ઉપર પડી ગયા. તે ભેળા મહારાજ આવીને અમને બેઠા કરી બથમાં ઘાલીને મળ્યા ને કહે જે, ‘આ શું? હું ક્યાં ગયો છું ? તમારે વિશે જ અખંડ રહ્યો છું ! અખંડ રહ્યો છું ! અખંડ રહ્યો છું !’ એમ ત્રણ વાર કહ્યું.
+ 
+ 
+		</div>
+
+	</div>
+<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+	1 બહિર્ભૂમિએ ગયા= જાજરૂ ગયા, ખાડે ગયા.  <br/>
+	2 ધ્રોકડ ભાળી= ધ્રો, પવિત્ર ઘાસ-ધરો જોઈ. 
+
+
+		</div>
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script src="js/scripts1.js"></script> 
+</body>
+</html>

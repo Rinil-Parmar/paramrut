@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Swamini Vato - Haridham</title>
+<meta content="text/html;charset=UTF-8" />
+<meta charset="UTF-8"> <!-- Added This line -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	//resize text function 
+function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+}
+
+//Added function 2020-10-08 highlight text
+function highlight_word(search_text)
+{
+ var searchpara=document.getElementById("vaat1_1").innerHTML;
+ searchpara=searchpara.toString();
+ var text=search_text;
+ if(text)
+ {
+  var pattern=new RegExp( text , "ugi");
+  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+  document.getElementById("vaat1_1").innerHTML=new_text;
+ }
+}
+
+	// Added this function
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	//Change font function 
+	var state1 = false
+	var state2 = false
+	function changeFont(n) {
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+
+	
+</script>
+</head>
+<body>
+<div>
+
+	<div class="wrap">
+
+		<ul class="reader_tools noselect"> 
+ <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)"> A+</button></li>
+			 
+ <li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+ </ul>
+		<div class="vaat_ind" id="vaat1_1">
+			
+ 
+ (216) ઉપાસના સમજવી તે તો કોઈકને જ સમજતાં આવડે. બીજા તો નાળ કાપતાં ગળું કાપે એવું કરે. ભાગવત સાંભળે તો અર્ધું વ્યાપક સમજાય પણ, <br/><br/>
+ 
+ જન્મ કર્મ ચ મે દિવ્યમેવં યો વેત્તિ તત્ત્વતઃ ।  <br/>ત્યક્ત્વા દેહં પુનર્જન્મ નૈતિ મામેતિ સોઽર્જુન ॥ <br/>
+ 
+ (શ્રીમદ્ ભગવદ્ગીતા : 4-9) <br/>
+ 
+ અર્થ :- હે અર્જુન ! મારે જન્મ અને કર્મ બન્ને દિવ્ય છે. આ રીતે (મારા જન્મ અને કર્મને) જે માણસ તાત્વિક રીતે જાણી લે છે, એ શરીરનો ત્યાગ કર્યા પછી પુનર્જન્મ નથી પામતો (એ તો) મારી પાસે આવી પહોંચે છે. <br/><br/>
+ 
+ એવું દિવ્ય ન સમજાય ને ચોખી ઉપાસના તો મહારાજે સમજાવી. તે કેટલાં કેટલાં દૃષ્ટાંત દઈને કેટલાંક શાસ્ત્ર ભણાવ્યાં. લાખો રૂપિયા ખરચીને વિદ્યા ભણાવી, તે જીવના હૈયામાંથી નાસ્તિકપણું ને મોરના (પહેલાના) પાસ કાઢવા સારું કર્યું, પણ વચનામૃત ન લખ્યા હોત તો અરધું અજ્ઞાન રહેત. મહારાજે કહ્યું હતું જે, ‘ભગવાનના આકારનું ખંડન કરે તેનો આકાર યોનિબારો ન નીકળે. તે તેને કાપી કાપીને કાઢે.’ તે ઉપર વાત કરી જે, મહારાજે પાંચસે સાધુને પૂછ્યું જે, ‘મોટામાં મોટું પાપ કયું ?’ ત્યારે કોઈ કાંઈ બોલ્યું નહિ. પછી અમને પૂછ્યું ત્યારે અમે કહ્યું જે ‘નિરાકાર સમજે તે પાપ મોટું છે.’ ત્યારે મહારાજ બહુ રાજી થયા ને બોલ્યા જે ‘ઠીક કહ્યું.’ પછી <a href="GM-10.html">મધ્યનું દશમું</a> વચનામૃત વંચાવીને વાત કરી જે, સાકારબ્રહ્મનું પ્રતિપાદન છે, પણ ભક્તિહીન હોય તેને નિરાકાર સમજાય છે. તે ભાગવતમાંથી પણ નિરાકાર સમજાય છે માટે આ જે બ્રહ્મ છે તેને જ સાકાર સમજવા ને નિરાકાર તો આ મૂર્તિનો પ્રકાશ છે, માટે પ્રકાશીને (પ્રકાશમાન મૂર્તિને) સાકાર સમજવા એ જ ઉપાસના કહેવાય.
+ 
+ 
+		</div>
+
+	</div>
+	<div id="ex1" style="display:none;" class="vaatLb">    <!-- Added Class -->
+
+	</div>
+
+</div>
+<script src="js/plugins.js">
+
+</script>
+<script></script>
+<script src="js/scripts1.js">
+
+</script>
+</body>
+</html>
