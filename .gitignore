@@ -1,0 +1,5 @@
+# unpacked APK tree — regenerate with tools/rebuild.sh
+tools/apk/
+__pycache__/
+*.pyc
+.DS_Store
