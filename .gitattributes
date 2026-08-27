@@ -9,3 +9,6 @@
 *.png    binary
 *.jpg    binary
 *.gif    binary
+
+# _source is a verbatim mirror of the app bundle: never normalise it
+_source/** -text
