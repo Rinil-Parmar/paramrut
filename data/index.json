@@ -1,0 +1,64 @@
+{
+ "source": {
+  "app": "Paramrut",
+  "package": "org.hariprabodham.swaminivato",
+  "version": "5.1",
+  "publisher": "HariPrabodham"
+ },
+ "collections": {
+  "swamini_vato": {
+   "vato": 3825,
+   "gujarati": 3825,
+   "hindi": 1547,
+   "english": 343,
+   "prakarans": 16,
+   "topics": 33,
+   "missing_gujarati_text": 0
+  },
+  "vachanamrut": {
+   "vachanamrut": 274,
+   "sections": {
+    "Gadhada Pratham": 78,
+    "Sarangpur": 18,
+    "Kariyani": 12,
+    "Loya": 18,
+    "Panchala": 7,
+    "Gadhada Madhya": 67,
+    "Vartal": 20,
+    "Amadavad": 8,
+    "Gadhada Antya": 39,
+    "Jetalpur": 5,
+    "Kariyani (misc)": 1,
+    "Ashirvad": 1
+   }
+  },
+  "anirdeshi_amrut": {
+   "sabha": 1549,
+   "kalash": [
+    "કળશ - ૧",
+    "કળશ - ૨",
+    "કળશ - ૩"
+   ],
+   "achaman_groups": 13
+  },
+  "shikshapatri": {
+   "shlokas": 212,
+   "selected": 55
+  },
+  "quotes": {
+   "quotes": 541,
+   "gurus": {
+    "ગુરુહરિ પ્રબોધજીવન સ્વામીજી": 361,
+    "ગુરુહરિ હરિપ્રસાદ સ્વામીશ્રી": 171,
+    "unattributed": 9
+   }
+  },
+  "parisishth": {
+   "entries": 83,
+   "with_text": 83
+  },
+  "ashirvad": {
+   "documents": 1
+  }
+ }
+}
