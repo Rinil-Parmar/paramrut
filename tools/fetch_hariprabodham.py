@@ -155,99 +155,141 @@ def clean_hindi(r):
 
 
 # ── markdown rendering ───────────────────────────────────────────────────────
-def md_escape(s):
-    return (s or "").replace("|", "\\|").replace("\n", " ")
+# Paramrut-style reading pages: breadcrumb, H1, a collapsible Contents index, then
+# every discourse as its own `## ` heading with italic metadata, body and links —
+# so the file reads top-to-bottom and the GitHub outline sidebar works.
+MARK = "<!-- nav:generated -->"
+CRUMB = "[← Paramrut](../../README.md) · [Reading the corpus](../README.md) · [Discourse catalogue](README.md)"
 
 
-def crumb():
-    return "[← HariPrabodham corpus](../../README.md) · [Discourse catalogue](README.md)\n"
+def gh_anchor(text, seen):
+    """GitHub heading-anchor slug, matching build_nav.py (keeps Gujarati matras)."""
+    out = []
+    for ch in text.strip().lower():
+        if ch == " ":
+            out.append("-")
+        elif ch in "-_" or unicodedata.category(ch)[0] in ("L", "N", "M"):
+            out.append(ch)
+    a = "".join(out)
+    n = seen[a]; seen[a] += 1
+    return a if n == 0 else f"{a}-{n}"
 
 
-def links_cell(rec):
+def clean_title(t):
+    """Underscore-joined titles from the DB → readable ('Akshar_Vani_1' → 'Akshar Vani 1')."""
+    if not t:
+        return t
+    return re.sub(r"\s+", " ", t.replace("_", " ")).strip()
+
+
+def media_line(rec):
     out = []
     if rec.get("video"):
-        out.append(f"[▶ Watch]({rec['video']})")
+        out.append(f"▶ [Watch on YouTube]({rec['video']})")
     if rec.get("audio"):
         a = rec["audio"]
-        out.append(f"[♪ Audio]({a})" if a.startswith("http") else f"`{md_escape(a)}`")
+        out.append(f"♪ [Audio]({a})" if a.startswith("http") else f"♪ Audio: `{a}`")
     if rec.get("pdf"):
-        out.append(f"[📄 PDF]({rec['pdf']})")
-    return " · ".join(out) or "—"
+        out.append(f"📄 [Open PDF]({rec['pdf']})")
+    return "  ·  ".join(out)
+
+
+def build_page(title, subtitle, entries):
+    """entries: list of (heading_text, [body_line, ...]).  Emits a full page with a
+    collapsible table of contents and one `## ` section per entry."""
+    import collections
+    seen = collections.defaultdict(int)
+    toc, body = [], []
+    for heading, lines in entries:
+        anchor = gh_anchor(heading, seen)
+        toc.append(f"- [{heading}](#{anchor})")
+        body.append(f"\n## {heading}\n")
+        body.extend(lines)
+        body.append("\n---")
+    open_by_default = len(entries) <= 25
+    out = [CRUMB, "", f"# {title}", "", subtitle, "", MARK, "",
+           f'<details{" open" if open_by_default else ""}>',
+           f"<summary><b>Contents</b> — {len(entries)} entries</summary>", "",
+           *toc, "", "</details>", "", "---", *body, ""]
+    return "\n".join(out)
 
 
 def render_series(slug, title, desc, recs):
-    by_year = {}
+    recs = sorted(recs, key=lambda r: (r["date"] or "", r["id"]))
+    yrs = [r["year"] for r in recs if r["year"]]
+    subtitle = f"*{desc}.*  \n**{len(recs)} discourses** · {min(yrs)}–{max(yrs)}."
+    entries = []
     for r in recs:
-        by_year.setdefault(r["year"] or 0, []).append(r)
-    lines = [crumb(), f"\n# {title}\n", f"*{desc}.*  \n**{len(recs)} discourses**, "
-             f"{min(r['year'] for r in recs if r['year'])}–{max(r['year'] for r in recs if r['year'])}.\n"]
-    # year jump bar
-    years = sorted(by_year)
-    lines.append("Jump to year: " + " · ".join(f"[{y}](#{y})" for y in years) + "\n")
-    for y in years:
-        rows = sorted(by_year[y], key=lambda r: (r["date"] or "", r["id"]))
-        lines.append(f"\n## {y}\n")
-        lines.append("| Date | Title | Topic | Place | Media |")
-        lines.append("|---|---|---|---|---|")
-        for r in rows:
-            lines.append("| {date} | {title} | {topic} | {place} | {media} |".format(
-                date=md_escape(r["date"] or ""),
-                title=md_escape(r["title"] or ""),
-                topic=md_escape(r["topic"] or ""),
-                place=md_escape(r["place"] or ""),
-                media=links_cell(r)))
-    return "\n".join(lines) + "\n"
+        head = " · ".join(x for x in [r["date"], clean_title(r["title"])] if x) or f"#{r['id']}"
+        loc = ", ".join(x for x in [r["place"], r["city"]] if x)
+        meta = " · ".join(x for x in [loc, r["pradesh"]] if x)
+        lines = []
+        if meta:
+            lines += [f"_{meta}_", ""]
+        if r.get("topic"):
+            lines += [r["topic"], ""]
+        ml = media_line(r)
+        if ml:
+            lines += [ml]
+        entries.append((head, lines))
+    return build_page(title, subtitle, entries)
 
 
 def render_vicharan(recs):
-    by_year = {}
+    recs = sorted(recs, key=lambda r: (r["date"] or "", r["id"]))
+    yrs = [r["year"] for r in recs if r["year"]]
+    subtitle = ("*Dated darshan and vicharan of Guruhari Prabodhjivan Swamiji, with a Gujarati "
+                f"description of each occasion.*  \n**{len(recs)} entries** · {min(yrs)}–{max(yrs)}.")
+    entries = []
     for r in recs:
-        by_year.setdefault(r["year"] or 0, []).append(r)
-    years = sorted(by_year)
-    lines = [crumb(), "\n# Vicharan\n",
-             "*Dated darshan and vicharan of Guruhari Prabodhjivan Swamiji, with a Gujarati "
-             f"description of each occasion.*  \n**{len(recs)} entries**, {min(years)}–{max(years)}.\n",
-             "Jump to year: " + " · ".join(f"[{y}](#{y})" for y in years) + "\n"]
-    for y in years:
-        rows = sorted(by_year[y], key=lambda r: (r["date"] or "", r["id"]))
-        lines.append(f"\n## {y}\n")
-        lines.append("| Date | Place | Description | Video |")
-        lines.append("|---|---|---|---|")
-        for r in rows:
-            vid = f"[▶ Watch]({r['video']})" if r.get("video") else "—"
-            lines.append("| {d} | {p} | {desc} | {v} |".format(
-                d=md_escape(r["date"] or ""), p=md_escape(r["place"] or ""),
-                desc=md_escape(r["description"] or ""), v=vid))
-    return "\n".join(lines) + "\n"
+        head = " · ".join(x for x in [r["date"], r["place"]] if x) or f"#{r['id']}"
+        lines = []
+        if r.get("description"):
+            lines += [r["description"], ""]
+        ml = media_line(r)
+        if ml:
+            lines += [ml]
+        entries.append((head, lines))
+    return build_page("Vicharan", subtitle, entries)
 
 
 def render_pravachan(recs):
-    lines = [crumb(), "\n# Audio Pravachan\n",
-             "*Audio pravachan of Guruhari Prabodhjivan Swamiji, streamed by the app.*  \n"
-             f"**{len(recs)} recordings.**\n",
-             "| Date | Title | Album | Note | Audio |", "|---|---|---|---|---|"]
-    for r in sorted(recs, key=lambda r: (r["date"] or "", r["id"])):
-        aud = f"[♪ Listen]({r['audio']})" if r.get("audio") else "—"
-        lines.append("| {d} | {t} | {a} | {n} | {au} |".format(
-            d=md_escape(r["date"] or ""), t=md_escape(r["title"] or ""),
-            a=md_escape(r["album"] or ""), n=md_escape(r["text"] or ""), au=aud))
-    return "\n".join(lines) + "\n"
+    recs = sorted(recs, key=lambda r: (r["date"] or "", r["id"]))
+    subtitle = ("*Audio pravachan of Guruhari Prabodhjivan Swamiji, streamed by the app.*  \n"
+                f"**{len(recs)} recordings.**")
+    entries = []
+    for r in recs:
+        head = " · ".join(x for x in [r["date"], clean_title(r["title"])] if x) or f"#{r['id']}"
+        lines = []
+        sub = " · ".join(x for x in [r["album"], r["text"]] if x)
+        if sub:
+            lines += [f"_{sub}_", ""]
+        ml = media_line(r)
+        if ml:
+            lines += [ml]
+        entries.append((head, lines))
+    return build_page("Audio Pravachan", subtitle, entries)
 
 
 def render_hindi(recs):
-    lines = [crumb(), "\n# Hindi Paravani\n",
-             "*Hindi paravani booklets of Swamishri, as PDF.*  \n"
-             f"**{len(recs)} booklets.**\n",
-             "| Title | PDF |", "|---|---|"]
-    for r in sorted(recs, key=lambda r: r["id"]):
-        pdf = f"[📄 Open]({r['pdf']})" if r.get("pdf") else "—"
-        lines.append(f"| {md_escape(r['title'] or '')} | {pdf} |")
-    return "\n".join(lines) + "\n"
+    recs = sorted(recs, key=lambda r: r["id"])
+    subtitle = ("*Hindi paravani booklets of Swamishri, as PDF.*  \n"
+                f"**{len(recs)} booklets.**")
+    entries = []
+    for r in recs:
+        head = clean_title(r["title"]) or f"#{r['id']}"
+        lines = []
+        ml = media_line(r)
+        if ml:
+            lines += [ml]
+        entries.append((head, lines))
+    return build_page("Hindi Paravani", subtitle, entries)
 
 
 def render_index(counts):
     total = sum(counts.values())
-    lines = ["[← HariPrabodham corpus](../../README.md)\n", "\n# Discourse & Darshan Catalogue\n",
+    lines = ["[← Paramrut](../../README.md) · [Reading the corpus](../README.md)\n",
+             "\n# Discourse & Darshan Catalogue\n",
              "A structured index of the discourses, darshan and audio that the "
              "[HariPrabodham app](https://play.google.com/store/apps/details?id=com.hari.patrika.patrika) "
              "lists — dates, places, speakers and direct links to watch or listen.  \n"
@@ -281,14 +323,23 @@ def main():
     for p in (src, data, text):
         p.mkdir(parents=True, exist_ok=True)
 
+    # By default re-render from the verbatim responses already in _source/ (stable
+    # provenance, no network). Pass --refetch to pull fresh from the backend.
+    refetch = "--refetch" in sys.argv
     raw, counts, digests = {}, {}, {}
     for name in ("hariparamrut", "aksharvani", "santvani", "vicharan", "pravachan", "hindipravachan"):
-        blob = fetch(name)
-        (src / f"{name}.json").write_bytes(blob)
+        cached = src / f"{name}.json"
+        if refetch or not cached.exists():
+            blob = fetch(name)
+            cached.write_bytes(blob)
+            tag = "fetched"
+        else:
+            blob = cached.read_bytes()
+            tag = "cached "
         digests[name] = hashlib.sha256(blob).hexdigest()
         raw[name] = json.loads(blob.decode("utf-8-sig"))
         counts[name] = len(raw[name])
-        print(f"  {name:16s} {counts[name]:4d} records  sha256={digests[name][:12]}…")
+        print(f"  {tag} {name:16s} {counts[name]:4d} records  sha256={digests[name][:12]}…")
 
     def dump(slug, recs):
         (data / f"{slug}.json").write_text(

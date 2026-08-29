@@ -1,4 +1,4 @@
-[← HariPrabodham corpus](../../README.md)
+[← Paramrut](../../README.md) · [Reading the corpus](../README.md)
 
 
 # Discourse & Darshan Catalogue
