@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૨૩-૧-૨૦૨૨,  યોગીજીમહારાજ સ્વધામગમન દિન સભા, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+<p>
+ત્રણ ચાર વખત બાપાના દર્શન કરવાનો મોકો મળ્યો હતો. 
+</p><p>
+(૧) દશ અગિયાર વર્ષની ઉંમર હશે. ૧૯૬૩ કે ૬૪ ની સાલ હશે. માણાવદરમાં મંદિરની મૂર્તિપ્રતિષ્ઠા વખતે બાપાના પહેલી વખત દૂરથી દર્શન કરેલા. 
+</p><p>
+(૨) બીજી વખત. ૧૯૬૬માં યોગીજી મહારાજનો અમૃત મહોત્સવ ગોંડલની ધરતી પર ઉજવાયો હતો. એ મહોત્સવમાં જવાની તક મળી હતી. ત્યારે બીજી વખત બાપાના દર્શન થયેલા. 
+</p><p>
+(૩) ૧૯૬૯માં યોગીજી મહારાજ જુનાગઢ પધારેલા. નારાયણદાસ પાવને બંગલે ચોસઠ પદીનું પારાયણ ચાલતું હતું. તે વખતે દર્શન કરવા ગયેલા. તે સમયે અમારી બાળમંડળની સભા ચાલતી હતી. સ્વામીશ્રી પૂર્વાશ્રમના ગામમાં પધારતા હતા. એટલે બાળમંડળની શરૂઆત થયેલી. બાળમંડળની સભામાં ભજનો ગવાતા હોય.
+</p><p> 
+અમને બહાર બેસાડયા. એક ‘હરિપ્રકાશસ્વામી’ નામે સાધુ હતા. તેઓને બાપાએ કહ્યું કે આ છોકરાંઓને ગોષ્ટિ કરો. તે સંતે અડધો પોણો કલાક ટાબોરિયાની રીતે આનંદ કરાવ્યો. પછી બાપા પાસે લઈ ગયા. બાપાએ પૂછ્યું કે કીર્તન આવડે છે ? એ વખતે ગુણાતીત જ્યોતના બહેનોએ ધ્રુવતારક ૧ ને ૨ એમ ભાગમાં ભજનો બહાર પડેલા. એ ભજનો અમે સભામાં ગાતા હતા. અમારી સભા ૩૬૫ દિવસ ચાલતી હતી. અઠવાડિક નહીં. રોજ ભજનો ગવાતા. અમે ‘ખમ્મા મારા યોગીજી મહારાજ..’ એ ભજન ગાયેલું. બાપા રાજી થઈ ગયેલા. બીજા સંતો વિચારતા હતા કે આ ભજન આવ્યું ક્યાંથી ? 
+</p><p>
+બાપાએ ખૂબ આનંદ કરાવ્યો. પછી બાપાએ સંતો પાસે પ્રસાદ મંગાવ્યો. નાનો એલ્યુમિનિયમનો ડબ્બો હતો. બાપાએ જોયું તો લાગ્યું કે પ્રસાદ ખૂટે એવો છે. બાપાએ બધાને એક એક લાડુ આપવાનું ચાલુ કર્યું. બધાને આપવા છતા ત્રણ ચાર  લાડુ વધેલા. પછી બાપાએ કહ્યું કે, ‘લઈ જાવ ગુરુ. જે નથી આવ્યા એ બધાને જમાડજો.’ 
+</p><p>
+એ વખતે ગુણાતીતચરણસ્વામીએ  બાપાને પ્રાર્થના કરેલી કે, ‘બાપા ! અમારે ગામ ના આવો !’
+</p><p>
+બાપાએ કહ્યું કે, ‘આવીએ ને !’ બાપાને કેશોદ જવાનો પ્રોગ્રામ હતો. બાપાએ કહ્યું કે, ‘કેશોદ જતાં વચ્ચે તમને મળીને જઈશ.’ 
+</p><p>
+પ્રોગ્રામ નક્કી થયો. તે વખતે અમારી સભા ૬૦ ટાબોરિયાની થતી. ત્રણ વડીલો હતા. છોકરાઓએ સરસ ડેકોરેશન કરેલું. પટેલ વાડીમાં આખો પ્રોગ્રામ ગોઠવેલો. કેરીની સિઝન. બાપાને કેરી જમાડવાનું પ્લાનિંગ પણ કરેલું.
+</p><p> 
+બાપા પધારવાના હતા એટલે મંડળના વડીલ જમનાદાસભાઈ બાપાને લેવા બસ સ્ટેન્ડ પહોંચેલા. બાપા જૂનાગઢથી નીકળી કેશોદ જતાં હતા. જમનાદાસે હાથ કર્યો. ગાડી ઊભી રહી. ગામમાં આવવા માટે પ્રાર્થના કરી. સાથેના સંતો સેવકોએ બાપાને કહ્યું કે, ‘આપણને મોડું થાય એવું છે. હજુ કેશોદ પહોંચવાનું છે. ત્યાંથી આગળ જવાનું છે.’ બાપાને આવવાની ઈચ્છા ખરી પણ સાથેના સ્ટાફની રુચિ ઓછી હતી. આ વાર્તાલાપ ચાલતો હતો. એવામાં ડ્રાઈવરને શંકા ગઈ કે વ્હીલમાં હવા ઓછી છે. એટેલે તે નીચે ઉતાર્યા. એક વ્હીલમાં પંક્ચર હતું. પંક્ચર રીપેર કરવા માટે વ્હીલ બદલવું પડે. ડેકીમાંથી સ્પેર વ્હીલ કાઢ્યું તો એમાં પણ પંક્ચર હતું. એટલે ડ્રાઇવરે બાપાને કહ્યું કે ‘અડધો કલાક સમય કાઢવો પડશે. બંને વ્હીલમાં પંક્ચર છે.’
+</p><p> 
+જમનાદાસ બુદ્ધિશાળી. એટલે તેમણે બાપાને કહ્યું કે, ‘અડધો કલાક સમય છે તો ગામમાં આવો તો છોકરાઓને દર્શન થઈ જાય.’
+</p><p>
+બાપાએ કહ્યું કે, ‘ગુરુ ! ગાડીમાં પંક્ચર છે આવીએ કઈ રીતે ?’
+</p><p>
+જમનાદાસ કહે કે ટેક્સી કરી લાવું. ગામ નજીક જ હતું પણ જમનાદાસ બાપા માટે ટેક્સી ભાડે કરી લઈ આવ્યા. બાપા પધાર્યા. બાપાએ વ્યવસ્થિત લાભ આપ્યો. બાપાને કેરી જમાડી. એ વખતે હરિપ્રકાશસ્વામી પણ કેરી જમાડવામાં હતા. આ બધી સ્મૃતિ ૬૯ની હતી. 
+</p><p>
+(૪) ૧૯૭૦માં બાપા આફ્રિકા ગયેલા. અફ્રિકાથી બાપા આવ્યા પછી, શરદપુનમનો સમૈયો પૂરો થયો પછી, અમે ગોંડલ ભેગા થઈને ટેક્સી ભાડે કરીને દર્શન કરવા ગયેલા. 
+</p><p>
+શરદપુનમનો સમૈયો થયેલો એટલે પતરાવળા જ્યાં ત્યાં પડેલા. તે વખતે પતરાવળામાં જમાડતા. સરસ મજાનું મંડળને જોયું એટલે એક સાધુએ કહ્યું કે ‘ચાલો સેવા કરી આવીએ.’ પતરાવળા એક જગ્યાએ ભેગા કરવાના ને ઉકરડામાંથી કાઢવાના. એવું પ્લાનિંગ હતું. ઉકરડા ઉપરથી પતરાવળા વીણી લીધા ને જલ્દી સભામાં પહોંચી ગયા. કારણ બાપાના દર્શનની તલપ હતી. સભામંડપમાં બાપા આવવાની તૈયારી હતી. અમે પહોંચી ગયા. અમે સભામંડપમાં  બાપાના દર્શન કરતાં હતા. એ સાધુ અમને શોધતા સભા મંડપમાં આવ્યા. અમને જોયા એટલે બાપાને કહ્યું કે આ છોકરાઓને સેવામાં લઈ જવા છે.
+</p><p>
+બાપા કહે એટલે પૂરું થઈ ગયું. છેક સાંજ સુધી સેવા કરાવડાવી. એ અમારી બાપા સાથેની છેલ્લી સ્મૃતિ હતી. ને ૧૯૭૧માં જાન્યુઆરી માહિનામાં બાપાએ દેહ લીલા સંકેલી લીધી.
+</p><p> 
+આમ અમને ચાર વખત બાપાના દર્શન કરવાનો લાભ મળ્યો હતો. 
+</p><p>
+ વિષય: યોગીબાપાના દર્શનની સ્મૃતિ 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૦૬-૦૪-૨૦૨૨, પૂજામાં આશિષ,  હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+પુસ્તિકા વાંચે છે…
+</p><p>
+કોઈની પણ સાથે પ્રસંગ બને એ વાત બીજા કોઈને તમારે કરવાની નહિ. બે કરોડ વર્ષના ઈતિહાસમાં આ નિયમ કોઈએ પાળ્યો નથી. બે કરોડ વર્ષના ઇતિહાસમાં. આપણે પાળવો છે. કોઈપણ બે વચ્ચે પ્રસંગ બને એ વાત તમે તમારા મિત્રોને કહેવાના જ જ જ. 
+</p><p>
+ઘણી વાતો કરવાની છે, કરોને, ગુણગાન ગાવ, ગાયા જ કરો, કોણ ના પાડે છે ? આટલું કરશો તો આનાથી તમને મોટામાં મોટો ફાયદો શું થશે ? કહી દઉં, કલ્પનામાંય નહીં આવે, તમે ધારી ધારીને શું ધારશો ? આટલું જ કરશો તો સ્ત્રી-પુરુષનો આકાર દેખાતો બંધ થઈ જશે. આશીર્વાદ કેટલા મોટા. સ્ત્રીને પુરુષનો આકાર ને પુરુષને સ્ત્રીનો આકાર દેખાતો બંધ થઈ જશે, કેટલો ફાયદો થઈ જાય, સ્ત્રી-પુરુષનો ભાવ જ ન રહે. 
+</p><p>
+તો આટલું આપણાથી ન થાય? દિલથી રડીને પ્રાર્થના કરીએ. આંસુ જવા જ જોઈએ. કદાચ તમે નાપાસ ન થયા હોય તે દિવસે પણ પ્રાર્થના કરવાનું ચૂકશો નહીં. નાપાસ થઈએ ત્યારે તો પ્રાર્થના કરવાની પણ ન થયા હોય તો પણ પ્રાર્થના કરવાનું ચૂકતા નહીં. તો ૨૦૦૯ ના સમૈયા સુધીમાં 'સ્વામિનારાયણ, સ્વામિનારાયણ..' ભજન કરીને સૂઈ જશો તો ૩૦૦૦ કરોડ વર્ષે જે અક્ષરબ્રહ્મનું શરીર ના બંધાય એ તમને બે વર્ષમાં મહારાજ બાંધી આપે. ૩૦૦૦ કરોડ વર્ષ.
+</p><p>
+એક સેવકને ગોષ્ઠિમાં વાત કરતા કહ્યું ખાનદાન સેવક હોય એ પ્રસંગ બને તો સ્વીકારી લે. ખાનદાનીનું લક્ષણ. આત્મીય સેવક હોય એ પ્રસંગ બને ત્યારે સ્વીકારી લે અને ભૂલી જાય. અને સુહૃદ સેવક હોય પ્રસંગ બને સ્વીકારી લે પોતે તો ભૂલી જાય પણ બીજાને ભૂલાડી દે. પ્રસંગ જીવમાંથી કાઢી નાખે.
+</p><p>
+૧૯૮૭ માં યુ.એસ.એ.માં રજનીભાઈને વાત કરતા કહ્યું અહીંના આહાર નોનવેજવાળા તે તો રજોગુણ, તમોગુણ પ્રગટાવે. પછી રજનીભાઈએ પૂછ્યું ગુણાતીત ગુણ પ્રગટાવવા કયો આહાર જોઈએ? મસ્ત પ્રશ્ન છે.
+</p><p> 
+સ્વામીજી કહે પ્રભુને સંભારીને જમીએ નિર્ગુણ થઈ જાય. જમીએ, સૂઈએ, ફરીએ મહારાજ ગુણ બક્ષીસ આપી દે. સંભારીને જમીએ તો. સંભારીને જમીએ, સંભારીને સૂઈએ, સંભારીને ફરીએ મહારાજ ગુણ બક્ષીસમાં આપી દે. 
+</p><p>
+પથારીમાંથી ઉઠીએ ‘હે મહારાજ ઉઠો.. હે મહારાજ ચાલો.. હે મહારાજ બ્રશ કરવા ચાલો.. હે મહારાજ નોકરીએ ચાલો..’ આવી ટેવ પાડવાથી સહજ આદત બની જાય. ટેવ પાડવી પડે. તો ચારેયકોર એક સ્વામી જ છે એવુ કૃપાએ કરીને એક દિવસ મનાઈ જાય. આ પ્રેક્ટિસ કરો તો. પ્રેક્ટિસ કરવી પડે. મ-૧૩ પ્રમાણે અક્ષરબ્રહ્મનો આત્મા વિશે પ્રકાશ થઈ જશે.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+</p><p>
+વિષય : આશીર્વાદ
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

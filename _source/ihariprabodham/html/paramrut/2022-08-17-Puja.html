@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૭ ઑગસ્ટ, ૨૦૨૨, પૂજા બાદ ગોષ્ટિ, પારસીપની
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+<p>
+પ.પૂ. પ્રબોધજીવનસ્વામીજી
+</p>
+<p>
+	ગુરુહરિ સ્વામીજી કેવાં બાપામાં ડૂબીને જીવ્યા છે ! કાલે પ્લેનમાં જ્યુરીકથી યુ.એસ.એ. આવતા હતા ત્યારે એક પ્રસંગ વાગોળતો હતો. પ્રસંગ વાંચતો હતો. 
+	</p><p>
+	સ્વામીજીએ બાપાને પૂછ્યું, ‘તમારા જીવનનો યાદગાર દિવસ કયો ?’
+	</p><p>
+	આપણને બધાને હોય જ. દરેકને મોટાપુરુષે કોઈક ને કોઈ એવી અલૌકિક સ્મૃતિ આપી હોય એ જીવનનો યાદગાર દિવસ કહેવાય; કે જે સ્મૃતિ જીવનમાં ક્યારેય ભૂલાય જ નહીં.
+	</p><p>
+	સ્વામીજીએ બાપાને પૂછ્યું કે તમારો યાદગાર દિવસ કયો ?
+	</p><p>
+	બાપાએ કહ્યું, ‘જૂનાગઢથી વિજ્ઞાનસ્વામી સાથે અમે નીકળ્યા ને શાસ્ત્રીજીમહારાજના પહેલાં જ દર્શન રાજકોટની ધરતી પર કૃષ્ણજીઅદાના ઘરે થયા. ત્યાં અમે જાતે રસોઈ બનાવી. શાસ્ત્રીજીમહારાજને જમાડ્યા. વિજ્ઞાનસ્વામી અને સંતો હતા એ બધાને જમાડ્યા. કૃષ્ણજી અદાના પરિવાર માટે થાળ મોકલ્યો. બધાને જમાડ્યા પછી સાફસૂફી કરીને વાસણ ઘસ્યા. શાસ્ત્રીજીમહારાજ ભક્તો સાથે બેસીને સહુને આનંદ કરાવતા હતા. પછી શાસ્ત્રીજીમહારાજ પોઢવા ગયા.’
+	</p><p>
+	પછી બાપા કહે, ‘મારી બધી સેવા પૂરી થઈ ગઈ હતી. વાસણ, સાફસૂફી બધું જ પૂરું થઈ ગયું હતું. શાસ્ત્રીજીમહારાજ પોઢવા ગયા. હું શાસ્ત્રીજીમહારાજના દર્શન કરવા રૂમમાં ગયો. બધા જ ચાલીને થાકીને આવ્યા હતા એટલે બધા જ ઘસઘસાટ ઊંઘતા હતા. (એ વખતે ગાડીઓ નહોતી, ચાલતા જવાનું.) વિજ્ઞાનસ્વામી પણ ભર ઊંઘમાં હતા. મને શાસ્ત્રીજીમહારાજના દર્શનની તક મળી. શાસ્ત્રીજીમહારાજની રૂમમાં ગયો ને થોડીવાર થઈને બહાર આવીને જોયું કે કોઈ જાગ્યું નથી ને ! સેવાની પણ એટલી જ તત્પરતા. વિજ્ઞાનસ્વામી જાગ્યા હોત તો સેવા કરી લેવાની એ રીતે ! 
+	</p><p>
+	બાપા કહે, ‘બે કલાક સુધી શાસ્ત્રીજીમહારાજના જે દર્શન કરેલા એ સ્મૃતિ મારી ઈદમ્ છે, એ સ્મૃતિ ભૂલાતી નથી.’
+	</p><p>
+	પછી સ્વામીજી પ્રસંગમાં વર્ણન કરતાં કહે છે,  ‘સ્મૃતિ ઈદમ્ તો રહે... <br/>
+	- એ સ્મૃતિનું મનન કરવું પડે, ચિંતવન કરવું પડે. <br/>
+	- કથાવાર્તા સાંભળી હોય એનું મનન-ચિંતન ન કરીએ અને નિદિધ્યાસ ન કરીએ તો એ કાયમ થાય નહીં.
+	</p><p> 
+	
+	સ્મૃતિનું પણ એવું  જ છે. સ્મૃતિ યાદ ન રાખો તો કાળાંતરે એ સ્મૃતિ પણ ભૂલાઈ જાય.  મોટાપુરુષે જે કાંઈ સ્મૃતિ આપી હોય. સ્વામીજીએ આપણને ખૂબ સ્મૃતિ આપી છે. એ સ્મૃતિને પોતાની બનાવવાની. ભજન કરવા બેસીએ એટલે એ સ્મૃતિને યાદ કરવાની.
+	</p><p>
+	સ્વામીજી કહે કે, અમે ભજન કરતાં ત્યારે પાંચ પ્રકારના વિચારથી ભજન કરતા. બાપાના અંગની સ્મૃતિ કરતા. બાપાની આંખો આવી છે, બાપાના કાન આવા છે, બાપાના ગાલ આવા છે, બાપાનું પેટ આવું છે, બાપાના હાથ આવા છે, બાપાના ચરણારવિંદ આવા છે. 
+	</p><p>
+	આપણામાં કોઈને સ્વામીજીની આંખો ગમી ગઈ હોય, કોઈને હાથ પકડીને તમાચો મારતા હોય એ ગમી ગયું હોય, એવી ઘણાને ઘણી સ્મૃતિ સ્વામીજીએ આપી છે. કોઈને ચાલ ગમી ગઈ હોય. 
+	</p><p>
+	અમારે કાશીકાકા હતા. ચેતનભાઈના ફાધર. મંદિરમાં રહેતા હતા. એ મૂળ કંડારી ગામના. એક વખત સ્વામીજી કંડારીમાં પધરામણીમાં પધાર્યા હતા. કાશીકાકા મૂળ વડતાલ સંપ્રદાયના સત્સંગી. હરિકૃષ્ણમહારાજ એ જ સર્વોપરી એવું માનીને જીવનાર. 
+	</p><p>
+	પોતાના ઘરમાંથી રોડ પર બારી પડતી હતી, ત્યાં બારી પાસે કાશીકાકા બેઠા હતા. એટલામાં સ્વામીજી પધરામણીમાં નીકળ્યા. સ્વામીજી હોય એટલે સાથે નારાયણી સેના હોય. લશ્કર મોટું હોય. દસ-પંદર હરિભક્તો સાથે હોય જ. સ્વામીજી આગળ ચાલે ને ભક્તો પાછળ ચાલે.
+	</p><p>
+	કાશીકાકાએ બારીમાં બેઠા બેઠા સ્વામીજીની ચાલ જોઈ. ચાલ જોઈને તરત જ થઈ ગયું કે ‘આ માનવીની ચાલ નથી.’
+	</p><p> 
+	વડતાલની ધરતી પર હરિકૃષ્ણમહારાજના દર્શન કરવા જતા હતા એટલે સાધુના દર્શન તો કર્યા જ હોય. એમને થયું કે, સાધુ તો ઘણા જોયા છે પણ આ સાધુની ચાલ જુદી છે. આ ચાલ માનવીની નથી. આ નારાયણની ચાલ છે.
+	</p><p> 
+	એમ કોઈને ચાલ ગમી જાય. કોઈને સ્વામીજીની ચાલથી સાક્ષી ભેદાઈ જાય. કોઈને સ્વામીજીની આંખ ગમે. કોઈને સ્વામીજી ગરમી ગ્રહણ કરતા હોય તે ગમતું હોય. એ રીતે દરેકની ચોઈસ અલગ અલગ હોય. એ સ્મૃતિને ઈદમ્ રાખવાની. એ સ્મૃતિને સંભારીને ભજન કરવાનું.
+	</p><p>
+	સ્વામીજી કહે કે, ‘અમે પાંચ એંગલથી ભજન કરતા. <br/>
+	પહેલું : અમે દેહની સ્મૃતિ કરતા. <br/>
+	બીજું : એમના લીલા-ચરિત્રોને સંભારતા. <br/> 
+	ત્રીજું : એમની કથાવાર્તાનું મનન-ચિંતન કરતા. બાપાએ જે કાંઈ ગોષ્ટિ કરી હોય, વાત કરી હોય તેને સંભારીને મનન-ચિંતન કરીએ. <br/>
+	ચોથું : એમના ગુણોનું દર્શન કરતા. એ કોણ અને કેવા ? એનો વિચાર કરતા. <br/>
+	પાંચમું : એમના મહિમામાં ડૂબતા. 
+	</p><p>
+	આવા પાંચ પ્રકારના વિચારે કરીને ભજન કરીએ. દરેક પ્રકારે સાત-સાત મિનિટ ભજન કરીએ તો ૩૫ મિનિટ થઈ જાય. સ્વામીજી જે ૩૦ મિનિટ (નિર્વિકલ્પપણે) ભજનની વાત કરે છે તો તે હસતાં-રમતાં ૩૦ મિનિટનું ભજન કરી શકીએ. 
+	</p><p>
+	 આપણે સ્વામીજીની કથાવાર્તા પણ ખૂબ  સાંભળી છે. આપણને સ્વામીજીએ સ્મૃતિ પણ ખૂબ આપી છે. આપણે સ્વામીજીનો મહિમા પણ સંતો થકી સાંભળ્યો છે. એ બધી વસ્તુનું મનન-ચિંતન કરીએ તો ૩૦ મિનિટના નિર્વિકલ્પપણે ભજનમાં સહેજે જ જતું રહેવાય. 
+	</p><p>
+	જેમ બાપાએ શાસ્ત્રીજીમહારાજની સ્મૃતિ ઈદમ્ રાખી તેમ આપણે પણ સ્વામીજીએ આપણને આપેલી અનેક સ્મૃતિ આપણી પાસે છે એ સ્મૃતિને સંભારી, એમની કથાવાર્તાને સંભારી, એમના મહિમામાં ડૂબી, એમના ગુણોનો વિચાર કરી ભજન કરીએ તો ૩૦ મિનિટના નિર્વિકલ્પ ભજનમાં હસતાં-રમતાં જતું રહેવાય.
+	</p><p>
+	તો આજના દિવસે એટલી જ પ્રાર્થના છે કે હે સ્વામીજી ! આપે રસ્તો તો અમને બતાવ્યો તો એવી સહજતાથી ભજન કરી શકીએ અને સ્મૃતિમાં ડૂબી શકીએ, કથાવાર્તાનાં મનન-ચિંતનમાં ડૂબી શકીએ એવો બુદ્ધિયોગ અમને આપશો, એ જ પ્રાર્થના. 
+	</p><p>
+	સહજાનંદસ્વામી મહારાજની જય.
+	</p><p>
+	વિષય : સ્મૃતિ અને ભજન 
+	</p><p>
+	પ્રસંગ : ૧) સ્વામીશ્રીનો બાપાને પ્રશ્ન ૨) કાશીકાકાને અનુભવ
+	</p>
+	
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

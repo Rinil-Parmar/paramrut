@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૨-૦૯-૨૦૨૧, યોગીધામ, રાજકોટ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+	(પ્રબોધસ્વામીજી સવારે હરિધામથી રાજકોટ જવા પધાર્યા.) 
+	</p><p>
+	અહીના ઘણા પ્રસંગોના સાક્ષી રહેવાની તક મળી છે. 
+	</p><p>
+	કડિયા જ્ઞાતિની હોસ્ટેલના ખાતમુહુરત કરવા સ્વામીશ્રી પધારેલા ત્યારે પણ સેવામાં આવવાની તક મળેલી. રોજની દોઢસો દોઢસો પધરામણી કરતાં હતા ત્યારે પણ સાથે રહેવાની તક મળી છે. કુંવરજી બાપાની ટમ ટમ ગાડી, બ્લૂ કલરની ગાડી. ૨૭ વરસ એ ગાડીનો ઉપયોગ કર્યો હતો સ્વામીશ્રીએ. બાપા જાતે ચલાવતા. 
+	</p><p>
+	અહી તો આનંદ એ થયો કે સ્મૃતિ કરવાની તક મળી. યોગીધામનું કેમ્પસ જોવા સ્વામીશ્રી પધાર્યા ત્યારે પણ આવાની તક મળેલી.  આપણે કેટલા બધા  નસીબદાર કહેવાઈએ કે આ ધરતી પર આપણને બેસવા મળ્યું છે. 
+	</p><p> 
+	સ્વામીશ્રીએ અહી આવીને જે ભીડો વેઠયો છે, જે વિચરણ કર્યું છે, એની પાછળ જે મિશન હતું એનો વિચાર કરવો છે. સ્વામીશ્રીને સુહૃદભાવ ગમતો. 
+	</p><p>
+	વક્તાએ વાત કરીને.. વરસો પહેલા અમે ભેગા થઈને રોટલા જમ્યા  તો એને  સુહૃદભાવ ગણી એનું  દર્શન સ્વામીશ્રીએ પત્રિકામાં અપાવ્યું. સ્વામીશ્રી કેટલા એપ્રિસીએટ કરે છે આપણને. (વકતાના પ્રવચનમાથી)
+	</p><p>
+	તે વખતે નાનું મંડળ હતું. સ્વામીશ્રી મેઘાણી રંગભુવનમાં સભા કરતાં. બે-ત્રણ વખત સભા કરેલી, તે વખતે આવવાવની તક મળેલી. 
+	</p><p>
+	સ્વામીશ્રીના સુહૃદભાવની વાત કરીએ તો.... 
+	</p><p>
+	એક યુવકે પંચ વર્તનમાનની ભૂલ કરેલી. એક વડીલ હરિભક્તે ગોકીરો ચાલુ કર્યો. એ યુવકને ગમે તેમ બોલતા હતા.  સ્વામીશ્રીએ જોયુ કે કઈક કોલાહલ ચાલે છે. ત્યાં સ્વામીશ્રી ગયા. 
+	</p><p>
+	સ્વામીશ્રીએ એ વડીલને બાજુ પર બોલાવ્યા ને કહ્યું કે, ‘ભૂલ એક યોગીજી મહારાજની ના થાય. એને કદાચ ભૂલ કરી. તમારો દીકરો હોય ને ભૂલ કરે તો એને બધાની વચ્ચે લાવવાના છો કે છાવરવાના છો ?(સ્વામીશ્રી એના દીકરાના ચરિત્રને જાણતા હતા. એને સિગારેટ પીવાની ટેવ હતી. તે સ્વામીશ્રીની સૂટકેશમાથી પૈસા ચોરતો હતો.) આ દીકરો યોગીજી મહારાજનો છે,  તો તમારો નથી ? યોગી પરિવારના જે છે એ આપણા છે. એની ભૂલ ને છાવરવાની હોય, પ્રકાશિત ના કરવાની હોય.’ 
+	</p><p>
+	બીજી વાત કરી કે, ‘ગમે તેવો છે પણ યોગીજી મહારાજનો છે. ગ્રહણ તો યોગીજી મહારાજે કર્યો છે. એના સ્વભાવ જોવાનો આપણને અધિકાર નથી. યોગીજી મહારાજ સંકલ્પ કરશે તો એ નિર્દોષ થઈ જશે. ને હું ને તમે જોનારા રહી જઈશું.’
+	</p><p> 
+	આગળ વાત કરી કે, ‘તમે આંખે કરીને જોયું છે ?’ વડીલને બીજા દ્વારા ખબર પડેલી. પછી એ વડીલ શાંત થઈ ગયા. વાતાવરણ શાંત થઈ ગયું. આ સુહૃદભાવનું રહશ્ય.
+	</p><p>
+	સાંજે સ્વામીશ્રી બાપાને સ્નાન કરાવવા ગયા. સ્નાન કરાવતા કરાવતા બાપાએ સ્વામીશ્રીને પાંચ-છ ધબ્બા મારી દીધા. સ્વામીશ્રી વિચાર કરે કે મે એવી કઈ સેવા કરી કે બાપા આટલા બધા રાજી છે. કે કોઈની ભક્તિથી સેવા થઈ છે ? બાપાને કોઈએ વાત નહોતી કરી. અંતર્યામીપણે જાણતા હતા.  
+	</p><p>
+	પછી બાપાએ સામેથી કહ્યું કે, ‘તમે આજે સુહૃદભાવનું મોટું કામ કર્યું છે. એને લઈને અમે તમારી પર રાજી છે.’ 
+	</p><p>
+	સ્વામીશ્રીના ચરણોમાં પ્રાર્થના કરીએ કે, ‘આપણે સુહૃદભાવમાં નવી ઈટ ના મૂકી શકીએ તો વાંધો નહીં, પણ એમાંથી કાંકરી ના ખેરવીએ...’
+	</p><p>
+	વિષય :  સુહૃદભાવ
+	</p><p>
+	પ્રસંગ : ૧) ગોંડલમાં યુવકની ભૂલ ને ઢાંકી સુહૃદભાવનું વાતાવારણ સર્જયું.
+	</p><p>
+	બ્રહ્મ રત્ન : સ્વામીશ્રીના ચરણોમાં પ્રાર્થના કરીએ કે, ‘આપણે સુહૃદભાવમાં નવી ઈટ ના મૂકી શકીએ તો વાંધો નહીં, પણ એમાંથી કાંકરી ના ખેરવીએ...’
+	</p>
+	
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૮ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ.
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+<p>
+બે ભગત : એક પ્રહલાદ અને ભગતજી મહારાજ.
+</p>
+<p> 
+ભગવાને પ્રહલાદની Physically (ફિજીકલી) રક્ષા કરી; પણ ભગતજીની ઇન્દ્રિયો, અંત:કરણ અને આત્માથી રક્ષા કરી.
+</p>
+<p>
+પ્રહલાદના ફોઈ એટલે કે હોલિકા. એ સતી હતા. એને અગ્નિ બાળી શકે નહિ એવું ભગવાનનું વરદાન હતું; તો પણ બળી ગયા.
+</p>
+<p> 
+તો શું ભગવાનના વરદાન ખોટાં ? વરદાન હોવા છતાં બળી ગયા તો ભગવાનના વરદાન ખોટા પડ્યા કહેવાયને !
+</p>
+<p>
+વરદાન કેમ ખોટા પડ્યા? <br/>
+- ભગતને ઓળખ્યા નહિ એટલે. <br/>
+- ઘરમાં જ તીર્થ હોય પણ એનો મહિમા ન સમજાય. 
+</p>
+<p>
+પ્રહલાદ ઘરમાં જ રહેતા હતા પણ ખરેખરા ભગત હતાં; છતાં એનો દ્રોહ થયો, એને મારવા માટે હોલિકા તૈયાર થયા.
+</p>
+<p>
+હોલિકાને એવું હતું કે મારે તો વરદાન છે હું કંઈ બળવાની છું. હું કંઈ મરવાની નથી. એટલે પ્રહલાદને ખોળામાં લઈને અગ્નિની અંદર બેસી ગયા. તો એ સતી હોવા છતાં બળી ગયા ને પ્રહલાદ બચી ગયા.
+</p>
+<p>
+આ દિવસનું એક રહસ્ય એ સમજવાનું કે </p>
+<p>
+ભલે ગમે એવા ભગવાનના આશીર્વાદ હોય પણ ભગતનો દ્રોહ થઈ ગયો તો ભગવાન હાથ ઊંચા કરી દે. એટલે ભગતમાં હાથ નહિ નાખવાનો બસ. ભગતને ઓળખવા પડે.
+</p>
+<p>
+આજના દિવસે એટલી જ પ્રાર્થના કરવી છે :  <br/>
+અમને તમારા ભક્તો ઓળખાય બસ. બીજું કાંઈ જોઈતું નથી. <br/>
+અમને ભક્તો ઓળખાય, એમનો મહિમા સમજાય અને એમની દાસભાવે સેવા થયા કરે. <br/>
+તો એવી કૃપા આજના દિવસે સ્વામીજી આપણા સહુ ઉપર કરે એ જ પ્રાર્થના!
+</p>
+<p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૪ માર્ચ, ૨૦૨૩, તૌરંગા, ન્યુઝીલેન્ડ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		કેનેડા મંડળને ગોષ્ઠી
+	</p>
+
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+		<p>
+હોળીનો દિવસ આવી રહ્યો છે. હોળી એટલે પ્રહલાદનો વિજય દિવસ. બીજો ભગતજી મહારાજનો પ્રાગટ્ય દિવસ. એ હોળીના ઉત્સવને ઉજવવા માટે ભેગા થયા છે. 
+</p><p>
+પ્રહલાજીના જીવનમાં ભક્તિ સિવાય કોઈ ચીજ હતી નહીં. એમના પિતા હિરણ્યકશ્યપુ ને એ ગણતા હતા નહીં. એને ભગવાનનું નામ જપવાનું બંધ કરાવવું હતું પણ પ્રહલાદજીએ ભગવાનનું નામ લેવાનું છોડ્યું નહીં. એને દાટી આપે, ધમકાવે પણ એને ભગવાનનું નામ લેવાનું છોડ્યું નહિ. એને મારી નાખવાના ઘણા પ્રયત્ન કર્યા. તેને પાણીના પ્રવાહમાં તણાઈ જાય એ માટે નદીમાં નાખી દેવામાં આવ્યો. પર્વત પરથી ફેંકી દેવામાં આવ્યો. હાથીના પગ નીચે ડાબીને મારી નાખવાનું પણ કાવતરું કરવામાં આવ્યું.
+</p><p>
+છેલ્લે એને લોખંડનો થાંભલો ગરમ કરીને એને ભેટવાનું કહેવામાં આવ્યું. એ પણ ભેટે છે.  એમાં પણ ભગવાન એની રક્ષા કરી.એક છેલ્લો ઉપાય કરવામાં આવ્યો. પ્રહલાદના ફોઈ હોળીકાજી હતા. એમને વરદાન હતું કે કોઈ પણ અગ્નિ એમને બાળી શકે નહીં. એટલે પ્રહલાદના પિતાજીએ હોળીકાને કહ્યું કે તું પ્રહલાદને લઈને અગ્નિમાં બેસી જા. તને તો વરદાન છે કે અગ્નિ તને બાળી શકશે નહીં. હોળીકાજી તૈયાર થાય છે. એને વિશ્વાસ હોય છે કે, મને કશું થવાનું નથી. 
+</p><p>
+પ્રહલાદ ભગત હતા, એ એમને સમજાયું નહીં. અને પોતાના ભાઈના સંગે કરીને પ્રહલાદને મારવા માટે તૈયાર થયા. ચિતા ગોઠવી દીધી જેને આપણે હોળી કહીએ છીએ. એના પર હોળીકાજી પ્રહલાદને એના ખોળામાં લઈને બેસી ગયા. ચિતા પ્રગટાવવામાં આવી એમાં પ્રહલાદજી બચી ગયા પણ હોળીકાજી બળી ગયા. એ પરથી આપને હોળી ઉત્સવ ઉજવીએ છીએ. 
+</p><p>
+તો હોળીકાજી બળ્યાં કેમ..? એને તો વરદાન હતું કે કોઈ અગ્નિ એને સ્પર્શી ન શકે. છતાં એ બળી ગઈ અને પ્રહલાદની રક્ષા થઈ એનું કારણ શું? ભગવાનના ભગતનો દ્રોહ થાય તો ભગવાન છોડે નહીં. પ્રહલાદ ભગવાનના ભગત હતા. ભગતનો દ્રોહ થાય તો ભગવાને આપેલું વરદાન પણ જતું રહે. 
+</p><p>
+આજના શુભ દિવસે એટલું જ વિચારવાનું કે ભગવાનના ભગતનો દ્રોહ આપણાથી થાય નહીં. કોઈ એવો ખરેખર ભગત હોય, એકાંતિક મુક્ત હોય, તો એની સેવા-ભક્તિ આપણે કરવી પડે. એનો દ્રોહ થઈ જાય તો ભગવાન માફ કરતા નથી. 
+</p><p>
+બીજી વાત કરું. એ પ્રહલાદની ભગવાને પળે પળે રક્ષા કરી પણ એમને શુક્રાચાર્યજીનો સંગ હતો. શુક્રાચાર્યજીએ ભગવાન માટે નેગેટિવ શબ્દ નાખ્યા. એમને કહ્યું  કે, ભગવાને તારી રક્ષા તો કરી પણ તારા બાપને મારી નાખ્યો એ ઠીક ન કર્યું. હિરણ્યકશ્યપુએ પ્રહલાજીને ગરમ ગરમ લોખંડના થાંભલાને બાથ ભીડવાનું કહ્યું તો એ ગરમ ગરમ થાંભલા ને કોઈ બાથ ભીડે તો એ મૃત્યુને ભેટે પણ એ લોખંડના થાંભલા ને ફાડીને પ્રભુ પ્રગટ્યા. ત્યાં આગળ ભગવાને હિરણ્યકશ્યપુનો વધ કર્યો. 
+</p><p>
+ત્યાં શુક્રાચાર્યજીએ વાત કરી કે ભગવાન તો સમર્થ છે. એ ધારે એ કરી શકે. તો તારા બાપને મારવાની શી જરૂર હતી એની બુદ્ધિ બદલવાની જરૂર હતી ને. આ નેગેટીવ શબ્દો એને લાગ્યા. ભગવાને આટલી બધી રક્ષા કરી છતાં પણ એની સામે યુદ્ધ કરવા તૈયાર થયા. ભગવાનને થયું કે બિચારો ભગત શુક્રાચાર્યજીના વાતમાં આવી ગયો છે. 
+</p><p>
+એટલે ભગવાન એક બ્રાહ્મણનું રૂપ ધારણ કર્યું. ભગવાન તો દયાળુ છે. એ જીવની અવળાઈ સામું જોતા નથી. ભગવાન બ્રાહ્મણનું રૂપ લઈને હાથમાં લાકડી લઈને, પ્રહલાદ જ્યાં ભગવાન સામે યુદ્ધ કરવા જતા હતા ત્યાં સામે મળ્યાં અને પૂછ્યું કે પ્રહલાદ ક્યાં જાઓ છો..? પ્રહલાદ કહે કે, ભગવાન સામે યુદ્ધ કરવા જાઉં છું, કારણ કે એને મારા બાપને મારી નાખ્યાં છે. 
+</p><p>
+ત્યારે એ બ્રાહ્મણ લાકડીને કાદવમાં નાખે છે અને પ્રહલાદજીને કહે છે કે, આ લાકડી મને લઈ આપો ને. કાદવમાં ખોપેલી લાકડીને કાઢતા કેટલી વાર લાગે? પ્રહલાદ એ લાકડીને ખેંચવા માટે પ્રયત્ન કરે છે પણ એ લાકડી નીકળતી નથી. ત્યારે બ્રાહ્મણ સ્વરૂપે આવેલા ભગવાન પ્રહલાજીને કહે છે કે, તારાથી આ કાદવમાં ખૂપેલી લાકડી નથી નીકળતી તો ભગવાન સામે તું કેવી રીતે લડીશ? 
+</p><p>
+ત્યારે પ્રહલાદ ને વિચાર આવે છે કે આ બ્રાહ્મણ નથી પણ ભગવાન છે અને ભગવાનની એ માફી માગે છે... 
+</p><p>
+આમાં રહસ્ય એટલું જ છે કે, કોઈના શબ્દ કરીને આપણી બુદ્ધિ ફરી જાય. તો એ નેગેટિવ શબ્દ આપણને ભગવાનથી પણ દૂર લઈ જાય. પ્રહલાદ શુક્રાચાર્યજીના શબ્દોને લઈને ભગવાન સામે યુદ્ધ કરવા તૈયાર થયા. 
+</p><p>
+આજના દિવસે આપણે સંકલ્પ કરવો છે કે કોઈની નેગેટિવ વાત સાંભળવી નથી અને કોઈના અભાવ અવગુણની વાત કરવી નથી. 
+</p><p>
+તો આજે સ્વામીજીના ચરણોમાં પ્રાર્થના કરવી છે કે આજે શુભ દિવસ છે. પ્રહલાદજીનો વિજય દિવસ. તો અમારા જીવનમાં પણ એવી બુદ્ધિ શક્તિ આપજો કે અમે ક્યારેય ભગવાનના ભક્તોનો દ્રોહ ના કરીએ અને કોઈની નેગેટીવ વાત સાંભળીએ નહીં અને ભગવદીના પ્રસંગ કરીને, મૈત્રી કરી, અમારી યાત્રા સ્વામીજી તરફ ચલાવતા રહીએ અને એ યાત્રા માટે સ્વામીજી આપણને સહુને બળ બુદ્ધિ અને શક્તિ આપે એ જ પ્રાર્થના.
+ </p><p>
+સહજાનંદ સ્વામી મહારાજની જય...
+</p><p> 
+વિષય : ભક્તનો દ્રોહ નહીં. 
+</p><p>
+પ્રસંગ : ૧) પ્રહલાદ અને હોળીકાનો પ્રસંગ 
+</p><p>
+બ્રહ્મરત્ન : ભગતનો દ્રોહ થાય તો ભગવાને આપેલું વરદાન પણ જતું રહે.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૦૫-૦૪-૨૦૨૨, પૂજામાં આશિષ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+પુસ્તિકા વાંચે છે.....
+ </p><p>
+સ્વામીજી બાપાનો કેવો મહિમા સમજતા હશે… જેનું નામ કોઈ કૂતરું સાંભળે એની ચોર્યાસી ઉડી જાય. જેનું નામ લઈને આ ઉકાઈ ડેમમાં પ્રસાદ નાંખે તો માછલાનું રૂડું થઈ જાય. એના નામે નાખ્યું હોય તોય. એવા જોગીના આપણે સેવકો છીએ. જો આપણે ખરેખર એના હોઈએ તો એની કક્ષાએ ભલે ન વર્તી શકીએ પણ કોઈના અભાવ-અવગુણમાં તો ન જ પડીએ. એ કક્ષાએ ન વર્તાય કદાચ, કોઈના અભાવ-અવગુણમાં તો ન જ પડીએ.
+</p><p>
+આ પુરુષની એક મિનિટની સેવા એવી છે કે નિષ્કામી બનાવી દે. એક જ મિનિટની સેવા કરી હોય તોય. એનું એક મિનિટનું દર્શન એવું છે કે સુખી થઈ જઈએ. આપણું અંતર તપાસીએ તો આપણને ખબર પડે કે સેવા ખરેખર કયા ધ્યેયથી થાય છે. અંતર તપાસીએ તો ખબર પડે ક્યા ધ્યેયથી સેવા થાય છે. કેવળ 'તું રાજી થા' ના ધ્યેયથી થતી હશે તો પરિવર્તન અને વિકાસ અનુભવી શકીશું. 
+</p><p>
+આટલી બધી સેવા કરીએ પણ પહેલા પ્રકરણની પહેલી અને છેલ્લી વાત પ્રમાણે સ્વાધ્યાય ભજન ન થાય તો અંતઃકરણથી જુદા ન થવાય. હું આત્મા છું બ્રહ્મ છું અક્ષર છું, પહેલા પ્રકરણની છેલ્લી વાત. પહેલી વાત, મહારાજ પોતાનું અક્ષરધામ પાર્ષદ ને સમગ્ર ઐશ્વર્ય લઇને પધાર્યા છે તે એવાને એવા જ છે. એને વ્યાપક સ્વરૂપે જોવા એ પહેલી વાત અને પોતામાં જોવા એ છેલ્લી વાત. વ્યાપક સ્વરૂપે જોવા એ પહેલી વાત, પોતામાં જોવા એ છેલ્લી વાત. એ બે વાત પ્રમાણે આપણે ચાલવાનું છે. 
+</p><p>
+કેવળ 'તું રાજી થા' ના ધ્યેયથી થતી હશે તો પરિવર્તન અને વિકાસ અનુભવીશું. આટલી બધી સેવા કરીએ પણ પહેલા પ્રકરણની પહેલી અને છેલ્લી વાત પ્રમાણે સ્વાધ્યાય ભજન ન થાય તો અંતઃકરણથી જુદા ન થવાય.
+</p><p>
+ગુરૂપૂજનના દિવસે વાત કરે છે, ગુરૂપૂજન કરવામાં વાર નથી લાગતી પણ ઠરાવ કરવામાં વાર લાગે છે. મસ્ત વાક્ય બોલ્યા હેં. 'તારા બળે, તારી રીતે, તારા ગમતામાં જીવવું છે.' એવા ઠરાવ સાથે ગુરૂપૂજન કરવાનું છે. કેટલી મસ્ત વાત કરી દીધી.
+</p><p>
+ગોષ્ઠિમાં વાત કરતા કહ્યું, સંબંધમાં ચાંચ ડૂબી જાય તો અભાવ-અવગુણની પૂર્ણાહુતિ થઈ જાય. સુહ્રદભાવમાં ચાંચ ડૂબી જાય તો સંબંધના સુખની શરૂઆત થઈ જાય. જેમ જેમ સાત્વિકતા ઓછી થતી જાય તેમ તેમ પ્રભુના બળે જીવાતું જાય. જેમ જેમ પ્રભુના બળે જીવાતું જાય, માથે પડીને જીવાતું જાય તેમ તેમ પોતાનું બળ ઓછું થાય, તેમ તેમ નિર્વિકલ્પપણે ભજન તરફ જવાય. 
+</p><p>
+જેમ જેમ સાત્વિકતા ઓછી થતી જાય તેમ તેમ પ્રભુના બળે જીવાતું જવાય. જેમ જેમ પ્રભુના બળે જીવાતું જવાય તેમ માથે પડીને જીવાતું થાય. જેમ જેમ પોતાનું બળ ઓછું થાય તેમ તેમ નિર્વિકલ્પપણે ભજન તરફ જવાય.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+</p><p>
+વિષય : ભગવાનનું બળ
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

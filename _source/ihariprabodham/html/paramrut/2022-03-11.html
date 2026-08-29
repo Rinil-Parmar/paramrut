@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૧ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+<p>
+અમે તો ખાસ પટેલ સાહેબના દર્શન કરવા માટે મુંબઈ ગયા હતા. પટેલસાહેબની તબિયત થોડી વધારે નાજુક છે. ટોટલ બેડરેસ્ટ છે, જમવાનું લેતા નથી. લિક્વીડ એ પણ થોડું બે-પાંચ ચમચી લેતા હશે. વિજુભાઈ એમની સેવામાં છે, જીતુકાકા છે. ભરૂચથી સ્મિતલભાઈ પણ સેવામાં આવ્યા હતા. અમારી સાથે પ્રિયવ્રતભાઈ આવ્યા હતા, એમણે પણ સરસ સેવા કરી.
+</p><p>
+એક સરસ દર્શન એ થયું કે : દેહની આવી નાદુરસ્ત પરિસ્થિતિ હોવા છતાં પણ પટેલ સાહેબની સમજણ જુદી પડી જાય.
+</p><p> 
+ગઈકાલે. બેડમાંથી સંતોને ફોન પર દર્શન આપતા હતા ત્યારે પણ એ એક જ વાત કરતા હતા કે, ‘કૌન મિલા હૈ ! એના કેફમાં રહેવાનું. ‘પૂર્ણ મળ્યા છે અને પૂર્ણ કરીને રહેશે.’ એવા કેફમાં રહેવાનું.’ 
+</p><p>
+દેહની આવી વિપરીત પરિસ્થિતિ હોય એવા સમયે ‘પૂર્ણ મળ્યા છે ને પૂર્ણ કરીને રહેશે’ એ શબ્દ ના નીકળે. એ તો જેનાં શરીર પર (રોગ) આવે ને ત્યારે ખબર પડે. સારા શરીરમાં હોય ત્યારે તો કથા કરી દઈએ.
+</p><p>
+...પણ કેવળ ભગવાનના આકારે થઈને જીવતા હોય અને ‘આ દેહ તે હું નથી’ એવી સમજણથી જીવતા હોય અને ‘મારા હૈયાને વિશે સ્વામીજી અખંડિત બિરાજમાન છે’ એવું માનીને જીવતા હોય તો જ આ વાત નીકળે બાકી નીકળે નહિ.
+</p><p> 
+કથા કરવી સહેલી છે પણ દેહ પર આવે ને ત્યારે કથા વિસરાઈ જાય, કથા શ્રવી જાય. 
+</p><p>
+દેહની આવી પરિસ્થિતિમાં પણ એમની સમજણનું દર્શન ગઈકાલે જે સંતોએ ફોન પર દર્શન કર્યા હતા એમણે સાંભળ્યું હશે. 
+</p><p>
+વિજુભાઈની તબિયત પણ સારી નથી. તેમનાથી પણ છેલ્લા પાંચ-છ દિવસથી ખવાતું નથી. ખોરાક જ નીચે નથી ઉતરતો. અન્નનળી સંકોચાઈ ગઈ છે, છતાં પણ એમના ફેઈસ પર ફ્રેશનેશ એવી ને એવી જ. તેઓ પટેલ સાહેબની સેવામાં ખડેપગે હાજર.
+</p><p>
+ચારે ચાર દિવસ જુહુ મંદિર જ રહ્યા. કોઈ જગ્યાએ પધરામણી કે સભા નથી કરી. જુહુ મંદિરે જે કોઈ ભક્તો આવતા એમનાં દર્શન કરતા હતા.
+</p><p>
+મુંબઈમાં વસઈ, નાલા સોપારા એ બધું તો કેટલું બધું દૂર કહેવાય. ત્યાંથી પણ ભક્તો સવારના પહોરમાં છ વાગ્યામાં જુહુ મંદિરે આવી જતા હતા. સહુનામાં ગરજ દેખાય, બાકી ઓન-લાઈન પણ એ લોકો દર્શન કરી જ શકે, કરવું હોય તો. ઠેઠ ત્યાંસુધી આવવાની કાંઈ જરૂર નહોતી. 
+</p><p>
+પૂજામાં નજીક બેઠા હોય એને દર્શન થાય, પણ દૂર બેઠા હોય એને કંઈ એવા સરસ દર્શન ન થાય. એના માટે તો નજીકથી જુઓ કે દૂરથી જુઓ સરખું જ હોય. છતાંય એટલા ઉમંગથી ઠેઠ ત્યાંથી સંતોના દર્શન માટે હરિભક્તો આવતા હતા. એ સહુની ગરજ જ્યારે જોઈએ ત્યારે ખ્યાલ આવે કે સ્વામીજીએ કેવા અદ્ભુત સમાજનું સર્જન કર્યું છે !
+</p><p>
+રોજ અલગ અલગ મંડળના ભક્તો સંતોના દર્શન માટે આવતા હતા. દરેકનાં ફેઈસ પર સત્સંગ માટેની ભૂખનું દર્શન થાય, ગરજનું દર્શન થાય. ખાલી દર્શનનો લોભ જ એકલો દેખાય એવું નથી. ...પણ સમજણ સહિત જીવનારો સમાજ છે.
+</p><p>
+ત્રણ ત્રણ વર્ષથી સંતોનો યોગ નહિ છતાં આવી સમજણથી જીવવું એ સામાન્ય વસ્તુ નથી. મહારાજની કૃપા કહેવાય ! આવી એક સમજણથી મુંબઈના ભક્તો જીવી રહ્યા છે. સમર્પણની દૃષ્ટિએ જોઈએ તો પણ હરિભક્તોએ પોતાની કોઈ ચીજ વ્હાલી નથી રાખી. બધા એક જ પ્રાર્થના કરે કે, ‘સ્વામી ! મંદિરની સેવામાં હોમાઈ જવું છે.’ દરેકની ભાવના એવી સરસ. દરેકનામાં ઉમંગનું દર્શન થાય.
+</p><p>
+એથી વિશેષ કે દરેક વ્યક્તિ ‘નિમિત્ત થવાની ભાવના સાથેની પ્રાર્થના કરે. ‘હું કરું છું’ એવું દેખાય નહિ. કાર્યકર્તાઓ સેવામાં ખૂબ દોડે છે પણ પ્રાર્થના કરતાં કહે કે 
+</p><p>
+- ‘હું તો નિમિત્ત છું સ્વામીજી મારો ઉપયોગ કરી રહ્યા છે’એવી ભાવનાથી દોડાય. <br/>
+- સ્વામીજી જેમ દરેકના દર્શન કરતા હતા એવા એક મહિમાથી દર્શન કરી શકીએ. <br/>
+- ભક્તોને અર્થે સ્વામીજીએ દેહને ગણ્યું નથી તો ભક્તોની સેવા હોય તો દેહ યાદ ના આવે.’ એવી સહુ ભક્તોની પ્રાર્થના હતી. 
+</p><p>
+વિચાર કરીએ કે સ્વામીજી કેવા દરેકના દિલમાં વસીને દરેકને કેવા જાગ્રત કર્યા છે. આમ જોવા જઈએ તો સ્વામીજીએ તૈયાર કરેલા અદ્ભુત સમાજનું દર્શન કરવા માટે જ પટેલ સાહેબનાં દર્શનનું નિમિત્ત ઊભું કર્યું હોય એવું દર્શન થાય.
+</p><p>
+ચારેય દિવસ ભક્તોના દર્શનનો સરસ લાભ મળ્યો. કાર્યકર્તાઓ બધા સક્રિય છે, સરસ છે. મહિમાથી બધાની સેવાભક્તિ કરે છે. ‘હું દાસાનુદાસ છું એવું માનીને સેવા થાય. આ સેવા મને મળી છે એ મારાં મોટાં ભાગ્ય છે એવું માનીને સેવા કરે છે.’ એવા ભાવ સાથે બધાની ગોવાળી કરે છે. સરસ સમજણેયુક્ત જીવનારો સમાજ છે.
+</p><p> 
+આવા સમાજનાં ભક્તોનાં દર્શન કરવાની તક મળી.  ત્યારે એેવી સમજણ, એવો દર્શનનો મહિમા, એવી ભક્તો પ્રત્યેની પરાભક્તિ અમારામાં પણ સહજ બને એ માટે પ્રાર્થના કરજો.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : મુંબઈના ભક્તોનું દર્શન 
+</p><p>
+બ્રહ્મ રત્ન : કથા કરવી સહેલી છે પણ દેહ પર આવે ને ત્યારે કથા વિસરાઈ જાય, કથા શ્રવી જાય.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

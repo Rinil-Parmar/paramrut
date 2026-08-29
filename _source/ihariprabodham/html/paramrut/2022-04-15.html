@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૫-૦૪-૨૦૨૨, પૂજામાં આશિષ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+પુસ્તિકા વાંચે છે…
+</p>
+<p>
+રમેશમામાએ સ્વામીશ્રીને કહ્યું, ન્યુજર્સીમાં રમેશમામા છે. ભૂષણ સ્વામીના કાકા. હરિભૂષણ સ્વામી.. એમના કાકા થાય. રમેશમામાએ સ્વામીશ્રીને કહ્યું, અમે દાસત્વ સિવાય શું માગીએ છીએ ? બીજું કાંઈ આલોકનું માંગતા હોય તો બરાબર છે. તમે નો આપો. પણ દાસત્વ સિવાય શું માંગીએ છીએ ? એ પણ નથી આપતા. પ્રશ્ન મુદ્દાનો. 
+</p><p>
+સ્વામીશ્રીએ તરત જ કહ્યું, બાપાના દાસત્વનો એક પ્રસંગ વાગોળો, ખાલી એક જ હો.. તો ૨૦૦૯ સુધીમાં દાસત્વનું સુખ લેતા થઈ જવાય. સમૈયો ૨૦૦૯ નો આવતો હતો એ પહેલાની વાત છે. 
+</p><p>
+મફતમાં મળે પણ ગુણાતીત પુરુષોના પ્રસંગોમાં ડૂબી જવું પડે. ખરેખરા દાસ માનીને સેવીએ, અદભૂત દાસત્વથી જીવી ગયા એને સાકાર કરવા મંડી પડીએ તો બુદ્ધિયોગ તો આપી જ દે. એના જીવન તરફ નજર રાખી ને સાકાર કરવા મંડી પડીએ તો બુદ્ધિયોગ તો આપી જ દે. 
+</p><p>
+પછી અશોકભાઈએ કહ્યું કે મામા જ્યારે જ્યારે હરિધામ આવે ત્યારે દેરીએ ભજન જ કરતા. સ્વામીજી કહે, ભજન કરે છે એ માન્ય પણ હું ગોષ્ઠિ કરીશ. દરેક ગુણાતીત પુરુષોના પ્રસંગ કહીશ. એ પશ્ચાતાપ સ્વરૂપે પ્રાર્થના કરવાની કે તમે આવુ વર્ત્યા. 
+</p><p>
+ગુણાતીત પુરુષોના જે પ્રસંગો સ્વામીજીએ કહ્યા હોય એને આપણા જીવનમાં પશ્ચાતાપ સાથે પ્રાર્થના સ્વરૂપે વાગોળવાના. તમે આવું વર્ત્યા. ભલે કદાચ તમે એવું ન વર્તી શકો. 
+</p><p>
+પછી મામાને થોડું એક સંબંધ ખખડાવવાનો અધિકાર કરવાનો સ્વામીજીનો ખરો એટલે સ્વામીજીએ કહ્યું, તારો સ્વભાવ મોટેથી બોલવાનો છે. શું કે? વર્ષોના એ સંસ્કાર છે. બદલવા પડે. ત્યાં બાપાની વાણીના પ્રસંગોનું મનન ચિંતન, સ્વાધ્યાય ભજન કરવું પડે. બાકી ભગવાન સ્વામિનારાયણને નિષ્કામી માનો તો નિષ્કામી અને નિર્માની માનો તો નિર્માની થઈ જ જવાય. કોઈને સ્વાદ-માન-લોભનો રાગ નડે તે વખતે સ્વાધ્યાય-ભજન.
+</p><p>
+વાકળ શિબિર હતી, મોભા સ્કૂલમાં. વાકળ કેળવણી સ્કુલમાં શિબિરમાં સ્વામીજીએ કહ્યું, યોગીજી મહારાજ અહીં આવેલા. આ શિબિર હશે કદાચ ૮૫ ની સાલ કે ૮૪.. ૮૪-૮૫ ની સાલ હશે કદાચ. (નિરંજન સ્વામી: યોગી આશ્રમમાં તમાકુ વાળું હતું એ..) હા બસ એ વખતે. (નિરંજન સ્વામી: યુવા શિબિર.) 
+</p><p>
+સેવક સ્વામીને ઈનામ મળેલું. યુવકમાં હતા એ. વક્તા તરીકે.. બહુ પ્રસાદીની આ ધરતી, અહીંજ બેઠા હતા. સ્વામીજીએ જગ્યા સાથે બતાવ્યું કે અહીંજ બેઠા હતા. ને અહીંજ સભા કરેલી, અહીંજ બધાને દર્શન દીધેલા. 
+</p><p>
+પછી વર્ણન કરે છે. સાકારબ્રહ્મના અવતાર સમાન, ચિદાકાશનું ચિન્મય સ્વરૂપ. એની દાઢી સફેદ ન્હોતી. કેટલા દિવ્યભાવથી સ્વામીજી બાપાના દર્શન કરતા હશે. ઉંમર થાય સફેદ દાઢી હોય, સ્વામીજી કહે એની સફેદ દાઢી ન્હોતી. એનું મોઢું ગોળ ન્હોતુ. એ કઈ બે જણના હાથ પકડીને ચાલતા ન્હોતા. કેવી નિર્દોષબુદ્ધિથી, કેવા દિવ્યભાવથી સેવન કરવું જોઈએ એ સ્વામીજીએ બાપાનું સેવન કઈ રીતે કર્યું એનું આખું દર્શન અહીં કરાવે છે. 
+</p><p>
+એ બે જણના હાથ ઝાલીને ચાલતા ન્હોતા. એ ચિદાકાશનું ચૈતન્ય સ્વરૂપ હતું. ધરતીએ જોયા પણ ઓળખ્યા નહિ. ધરતીને મળ્યા પણ રાખ્યા નહિ. શબ્દ કેવો વાપરે હેં કે. ધરતી પર આવ્યા પણ ધરતીએ સ્વીકાર્યા નહિ. સાહિત્યિક ભાષા કહો ને તમે હેં.. 
+</p><p>
+બહુ ભવ્ય સ્વરૂપ આવી ગયું. અડસઠ તીરથ કરતા પણ જબરજસ્ત પવિત્ર ધરતી આ છે. બાપા આવ્યા એટલે અડસઠ તીરથ કરતા પણ મોભા કેળવણી સ્કૂલની ધરતી પવિત્ર છે. સ્વામી બહુ પ્રેમથી આવેલા. હું સ્વામીની સાથે જ હતો. તમારા જેવું નાનું ટાબોરીયુ, ટપાલ લખતો હતો. (યુવક શિબિર- મોભા, તા.૫-૬-૮૦)
+</p><p>
+હું લાખો માણસો વચ્ચે મનન-ચિંતવન કરી શકતો હતો. કેટલા ? કોઇનોય આકાર ન બંધાય. ગોંડલ લાખો માણસની વચ્ચે શરદપૂર્ણિમાના સમૈયામાં અમે સ્વાધ્યાય ભજન કરીએ. એકધાર્યો સ્વાધ્યાય ચાલુ જ રહે. 
+</p><p>
+તમે વ્યક્તિ, પ્રવૃતિ, સેવા અથવા કોક પ્રોબ્લેમના આકારે થઈ જાઓ. આપણે ક્યાં અટકી જઈએ છીએ એનું દર્શન કરાવ્યું. અમે તમારી સાથે વાત કરીએ છીએ તો પણ અમારું મનન-ચિંતવન ચાલુ હોય. તમે હજુ બાળક છો. તમારો વિષય નથી. (૨૪-૧૦-૯૩)
+
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+</p><p>
+વિષય : ગુણાતીત પુરુષોના પ્રસંગો વાગોળવા
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

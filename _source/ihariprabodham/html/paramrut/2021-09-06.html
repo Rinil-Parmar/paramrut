@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૦૬-૦૯-૨૦૨૧, યજ્ઞ ભોજનાલય, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+આત્મીય સમાજની જય બોલાવી. એક જ શબ્દ સમજીએ (આત્મીયતા) તો વડીલ સંતે જે ગોષ્ઠી કરી, એ ના કરવી પડે. 
+</p><p>
+૧૯૯૪નો સમૈયો હતો. સ્વામીશ્રીના ૫૯ વર્ષ પૂરા થતાં હતા ને ૬૦મુ વર્ષ ચાલુ થતું હતું. એટલે ‘હીરક મહોત્સવની જય..’ બોલાવતા હતા. સ્વામીશ્રીએ અમેરિકાથી એક સંત પર મેસેજ કર્યો કે હીરક શબ્દ ના જોઈએ. પણ આત્મીયતાના બેઇઝ પર સમૈયો કરવાના હોય તો કઈ વાંધો નહીં. પછી ‘આત્મીય મહોત્સવની જય..’ ચાલુ થઈ. અત્યારે આપણે ‘આત્મીય સમાજની જય...’ બોલીએ છીયે.
+</p><p>
+એને વિશ્વાસ છે એટલે આ શબ્દ આપ્યો છે. આત્મીયતાના એટલા બધા અર્થ કર્યા છે. આપણે બધાએ એ ભાવનાથી જીવવું છે.
+</p><p> 
+આપણે એક વખત આત્મીય પર્વ નવસારી ઉજવેલું. ત્યારે ચાર પ્રદેશોએ ભેગા થઈને એ સમૈયો કરેલો. શ્રીહરિ પ્રદેશ, ધર્મભક્તિ પ્રદેશ, યોગીજી પ્રદેશ, સુનૃત પ્રદેશ. બધા પ્રાદેશિક સંતોએ ભેગા મળીને સમૈયો ઉજવેલો. સ્વામીશ્રી ખૂબ રાજી થયેલા.  
+</p><p>
+એક વખત દશેરાનો સમૈયો હતો. હરિસ્મૃતિનો ગાર્ડન છે ત્યાં કરેલો. અત્યારે ગ્રીનહાઉસ કરેલું છે. એ વખતે સહજ સ્વામી (સહજભાઈ મિરાની) હતા. પૂર્વ તૈયારીઓ ચાલતી હતી. પુજા ગાર્ડનમાં ગોઠવેલી. બધા ભેગા મળીને સેવા કરતાં હતા. સ્વામીશ્રી પધાર્યા. સ્વામીશ્રીને બધી ધમાલ ના ગમે.  
+</p><p>
+સ્વામીશ્રીએ સહજ સ્વામીને સહેજ કડક થઈને પુછ્યું, ‘શું ચાલે છે ?’ 
+</p><p>
+એને તરત કહ્યું, ‘આત્મીયતાથી હાં હાં ગડથલ કરીયે છીએ.’ (એને ભગવાને પ્રેરણા કરી.)
+</p><p>
+સ્વામીશ્રી કહે, ‘તો કરવાની છૂટ.’ 
+</p><p>
+એ પ્રસંગની આપણને ખબર છે. 
+</p><p>
+સ્વામીશ્રી ગયા નથી ને એમનું મિશન પણ ગયું નથી. સ્વામીશ્રી આપણી સાથે છે. ને એનું મિશન આત્મીયતા ને સુહૃદભાવનું મિશન પણ આપણી સાથે છે. 
+</p><p>
+આપણને સ્વામીશ્રીએ ગ્રહણ કર્યા છે. આપણે  સિલેકટેડ (selected) છે. ચોઝેન વન (chosen one) છીએ. ને સ્વામીજીને રાજી કરવા ભેગા થયા છીએ. સ્વામીશ્રી રાજી કઈ રીતે થાય ? સ્વામીશ્રીને ગમતો સુહૃદભાવ. 
+</p><p>
+એક વખત ગૌશાળાની બે-ચાર ગાયો ધામમાં ગયેલી. એક બે જનની ભૂલ હોય, બધાની ના હોય. સ્વામીશ્રીએ સડી છસોને અલગ અલગ નિયમ આપેલા, એક મહિના સુધી.  કોઈને ઘી બંધ કરાવ્યુ.. કોઈને મીઠું બંધ કરાવ્યુ.. કોઈને તેલ બંધુ કરાવ્યુ.. કોઈને મરચું બંધ કરાવ્યુ.... સ્વામીશ્રી બતાવતા હતા એક ની ભૂલ એટલે બધાની ભૂલ. એ સુહૃદભાવનું દર્શન કરાવતા હતા.
+</p><p>    
+આપણે એક થઈને જીવવું છે. એક થઈને જીવીએ એજ પ્રાર્થના. 
+</p><p>
+વિષય : આત્મીયતા 
+</p><p>
+પ્રસંગ : ૧) દશેરાનો પ્રસંગ 
+ </p>
+ <p>
+ બ્રહ્મ રત્ન : સ્વામીશ્રી બતાવતા હતા એક ની ભૂલ એટલે બધાની ભૂલ. એ સુહૃદભાવનું દર્શન કરાવતા હતા.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

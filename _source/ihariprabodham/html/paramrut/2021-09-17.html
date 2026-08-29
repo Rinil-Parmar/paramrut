@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૭-૦૯-૨૦૨૧, જળઝીલણી ઉત્સવ, અંબરીષ હોલ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+ભક્તિ ઉત્સવ, સ્વામીશ્રીને સહુથી વધારે કોઈ વસ્તુ ગમતી હોય તે ભક્તિ. સ્વામીશ્રીના જીવનમાં આપણે ડોકિયું કરીએ તો નિરંતર ભક્તિનું દર્શન થાય, ભક્તિ ને પરાભક્તિ બંનેનું દર્શન થાય.
+</p><p>
+ભક્તિ દર્શન :
+</p><p>
+કોઈ સંત હાર પોરવતા હોય ત્યાં આવે તો સ્વામીશ્રી કહે, ‘મને તો અહીં જ ગમે, મને ખોટો ગાદીએ બેસાડી દીધો છે.’ એ ભક્તિને વશ છે.
+</p><p>
+સ્વામીશ્રી મંદિરે ઠાકોરજીના દર્શન કરવા પધારે ત્યારે સ્વામીશ્રી કહે, ‘મારે પૂજારીમાં રહેવું છે.’ સ્વામીશ્રી કહે, ‘હું પૂજારીમાં રહીશ પણ ઉપરથી નીચે નહીં ઉતરૂ. થાળ બોલીશ ને નવરો પડીશ ત્યારે ભજન કરીશ. ઠાકોરજી પાસે બેસવાનું એ આપણા જીવનમાં ક્યાંથી હોય !’ સ્વામીશ્રીની પળેપળની એક એક ક્રિયાઓ ભક્તિમય હતી અને ભક્તિમય ક્રિયાઓથી એ ખૂબ રાજી થાય.
+</p><p>
+પ્રસંગઃ ઍટલાન્ટાની ધરતી પર જલઝીળણીનો ઉત્સવ હતો. બપોરે સ્વામીશ્રી થાળ કરતા હતા. અમને એવો કોઈ વિચાર પણ ન હતો આવ્યો. 
+</p><p>
+થાળ કરતાં કરતાં સ્વામીશ્રીએ કહ્યું, ‘આપણે અહીં જલઝીળણીનો ઉત્સવ કરવો હોય તો થાય ?’ બપોરે જમવાના સમયે સ્વામીશ્રી કહે છે. 
+</p><p>
+સંત ભક્તિનું સ્વરૂપ. એમને તરત જ પડતો બોલ ઝીલ્યો અને કહે, ‘થઈ જાય ને !’ 
+</p><p>
+પરદેશની ધરતી પર કરવાનું, વ્યવસ્થા કરવાની ને વિચારવાનું. એ બહુ અઘરો જોબ કહેવાય છતાંય ભક્તિનો વિચાર ઝીલ્યો એટલે સ્વામીશ્રી ભળે જ.
+</p><p>
+સ્વામીશ્રીને જમાડયા પછી હું ને એ સંત તબ બાથ લેવા માટે મૉલમાં નિકળ્યા. એક જગ્યાએ સ્વામીશ્રી સ્વીમીંગ કરે એવો મોટો ચાર ફુટનો તબ ગમી ગયો. પછી ત્યાંથી લીધો ને સીધી ખરીદવાની જ વાત કરી અને ત્યાંથી લાવી ઍર કૉમ્પ્રેસરથી હવા ભરી તૈયાર કર્યો. હવે એમાં પાણી ભરવાનું. નાનો બાથ તબ હોય તો બરાબર પણ ઘરમાં જેટલા નળ હતા એ બધા જ ચાલું કર્યા. મહારાજના સંકલ્પે બાથ ભરાય ગયો.
+</p><p>
+સંધ્યા સમયે સ્વામીશ્રીએ એ આખો પ્રોગ્રામ કર્યો ત્યારે સ્વામીશ્રી બહુ જ રાજી થયા હતા. એમ સ્વામીશ્રીને ભક્તિની ક્રિયાયોગો ખૂબ જ ગમે. 
+</p><p>
+સંતે વાત કરી કે ‘ઍરર્પોટ પર પણ સ્વામીશ્રી દંડવત્ કરે.’ આપણને સંકોચ થાય.
+</p><p>
+પ્રસંગ : કાકાજી જ્યારે પહેલી વખત પરદેશની ધરતી પર ગયા અને પાછા ઈન્ડિયાની ધરતી પર આવતા હતા. તે વખતે આપણે ઠાકોરજી બેસાડયા ન હતા એટલે એ ૧૯૮૧ પહેલાની વાત છે.
+</p><p>
+સ્વામીશ્રી જૂના મંદિરે રહેતા હતા ત્યાંથી બધા જ સંતોને લઈને મુંબઈ ગયેલા. કાકાજી સવારે પધારવાના હતા પણ મોડુ થતાં થતાં બપોર થઈ ગયેલું. એમનો ટાઈમ નિશ્ચિંત ન હતો કે ક્યારે આવે.
+</p><p>
+સ્વામીશ્રી કહે, ‘આપણે થાળ કરી આવીએ. એટલે રાયસિંહબાપાને ત્યાં થાળ કરવા ગયા. પછી થાળ કરીને પાછા તરત જ ઍરર્પોટ પર આવ્યાં. બપોરે સાડા ત્રણ વાગ્યા તો પણ કાકાજીનું પ્લેન આવેલું નહીં.
+</p><p>
+સાડા ત્રણ વાગ્યા એટલે ઠાકોરજીને જગાડવાનો સમય થયો. પછી હું સ્વામીશ્રી સાથે સેવામાં હતો એટલે પાણીની ચોખ્ખી બોટલ મંગાવી અને મૉલમાંથી ડ્રાઈફ્રુટ મંગાવ્યું.
+</p><p>
+આપણે ઠાકોરજીને જગાડી લઈએ. પછી ઠાકોરજીને પાણી ધરાવીને જગાડતો હતો. હજી ઠાકોરજીને બહાર કાઢીને પાણી ધરાવું છું. ને મનમાં વિચાર કરતો હતો કે,  ‘ઍરર્પોટ પર તો ઠાકોરજીને દંડવત્ કરવાનું ન ફાવે. ઘરે જઈને દંડવત્ કરીશું.’
+</p><p> 
+હજી વિચાર કરીને ઠાકોરજીને પાણી ધરાવતો હતો. પછી પ્રસાદ ધરાવવા માટે મેં ડિશ લીધી. પાછળ જોયું તો સ્વામીશ્રીના દંડવત્ કરવાનાં ચાલું હતા. સ્વામીશ્રી આપણને આજ વસ્તુ કરાવવા માંગે છે.
+</p><p>
+સ્વામીશ્રીનું ભક્તિનું દર્શન છે. એ સ્વામીશ્રી નિરંતર ભક્તિ કરે છે અને આપણને એવી ભક્તિ કરવવા માટે સ્વામીશ્રીનો સંકલ્પ છે. તો સ્વામીશ્રીને ગમતી ભક્તિ આપણે નિરંતર કરતા રહીએ.
+</p><p>
+ભક્તિથી વધે પરાભક્તિ.
+</p><p>
+પરાભક્તિ દર્શન :
+</p><p>  
+પ્રસંગ : સ્વામીશ્રી હરિસ્મૃતિમાં રહેતા હતા. ત્યારે મુંબઈથી પોપટભાઈ ને રાયસિંહભાઈને બધા આવવાના હતા. મને કહેલું કે ભાઈને લેવા માટે ગાડીની વ્યવસ્થા કરી દેજો. રાત્રે આરામમાં જતા પહેલા કહેલું.
+</p><p>
+એટલે મેં ઓજસભાઈને કહેલું કે, ‘સ્વામીશ્રીએ કહ્યું છે કે ભાઈ ને બધા આવે છે,  સવારે દેરાદૂનમાં આવવાના છે.’  ઓજસભાઈ કહે, ‘રાજાભાઈને જણાવી દેજો.’ એટલે રાજાભાઈને રાતે જ જણાવી દીધું.
+</p><p>
+સવારે ભાઈને બધા આવ્યા એટલે સ્વામીશ્રીએ મને પૂછ્યું, ‘બધાને ચા-નાસ્તો કરાવી દીધો.’ 
+</p><p>
+હું વિચાર કરતો હતો ને મને કહે, ‘ભાઈને કોફી ફાવે.’ શું કહે ? ભાઈને કોફી ફાવે એ સ્વામીશ્રીને ખબર. ને કહે, ‘ભાઈને કોફી ફાવે. એમને ગરમ ગરમ કોફી પીવડાવીએ તો આપણને અંતરની હાશ મળી જાય.’ 
+</p><p>
+પછી કહે, ‘નાસ્તામાં શું છે? મેં કહ્યું, ‘તપાસ કરું.’
+</p><p>
+મને કહે, ‘કંઈ ન હોય તો ઠાકોરજીની પૂરી લઈ આવો.’ રાત્રે ઠાકોરજીના થાળમાં પૂરી હોય જ, એ સ્વામીશ્રીને ખબર.  કહે, ‘ભાઈને મીઠા-મચરાં વાળી પૂરી ફાવે.’
+</p><p>
+પછી બીજી વાત કરી કે, ‘રાયસિંહબાપાને મોઢામાં દાંત નથી. તો એમાંથી પોચી પોચી પૂરી શોધી રાયસિંહબાપાને નાસ્તો કરાવજો.’
+</p><p>
+વિચાર કરીએ કે સ્વામીશ્રી કેવી ભક્તિ ને પરાભક્તિમાં ડૂબેલા છે. તો આપણે પણ એવી ભક્તિ ને પરાભક્તિ આપણા જીવનમાં સાકાર થાય એ માટે આજે આપણે બધા સ્વામીશ્રીના ચરણોમાં પ્રાર્થના કરીયે. 
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય…
+</p><p>
+ વિષય : સ્વામીશ્રીની  ભક્તિ અને પરાભક્તિનું દર્શન 
+</p><p>
+પ્રસંગ :  ૧)  એરપોર્ટ પર સ્વામીશ્રી દંડવત કરે છે. 
+</p>
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

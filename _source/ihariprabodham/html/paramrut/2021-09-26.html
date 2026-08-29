@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨૬-૦૯-૨૦૨૧, યોગી આશ્રમ, હરિધામ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p> 
+પ્રબોધસ્વામીજી બપોરે થાળ બાદ રૂમ નંબર ૪૩ માં પધાર્યા. 
+</p><p>
+ગોષ્ઠી કરતાં કહ્યું કે..
+</p><p> 
+“Less luggage, most comfortable.” 
+</p><p>
+‘રોટલો ને છાશ ખાવા છે.’ એ રીતે સ્વામીજીએ એ સૂત્રને સાકાર કર્યું. મંદિરની પથારી (ઓટલા પર), રૂમાલનુ ઓશીકું. ગાદલું લેવા ગયા નથી. (આંખમાં આંસુ સાથે સ્વામીશ્રીના ભીડાનું વર્ણન કરતા હતા.) 
+</p><p>  
+જ્યાં અપેક્ષા હોય ત્યાં અભાવ હોય, ત્યાં અરુચિ હોય, ત્યાં મનદુખ હોય. એ બધી વસ્તુ અપેક્ષાથી હોય. સંબંધ બાંધવો હોય તો અપેક્ષા રાખશો નહીં. 
+</p><p>
+એવા નિરપેક્ષભાવે સ્વામીજી જીવી ગયા. સ્વામીશ્રી આપણી પાસે એટલી જ અપેક્ષા રાખે છે કે એવા નિરપેક્ષભાવે જીવીએ. સ્વામીશ્રીને બીજી કોઈ અપેક્ષા નથી.
+</p><p>
+સ્વામીજીએ બાપા પાસે હતા ત્યારે નહીં પ્રસાદીની અપેક્ષા, નહીં ફોટોગ્રાફીની અપેક્ષા, નહીં ગાદલાંની અપેક્ષા. સ્વામીજીને કોણો અભાવ આવે ! એની મસ્તી જુદી. એની ચાલ મસ્તીવાળી એનું કારણ. રાજાધીરાજ ચાલ. બ્રહ્માન્ડનો ભાર ના રહ્યો. આપણને મસ્તીમાં રહેવા માટેનો માર્ગ બતાવ્યો.      
+</p><p>
+એના ભીડાનો વિચાર કરીયે. બાપાના વખતથી જીવી ગયા છે. એ વિચારથી બોલી શકતો નથી. (થોડી થોડી વારે પાણી પીવે છે, ક્યારેક આંખમાં ઝરઝરીયા આવી જાય છે. ક્યારેક હસતાં હસતાં આંખમાં પાણી આવી જાય છે.)
+</p><p>
+આપણા બધાની એક જ સાધના છે – એના તરફ નજર. એનું અનુસંધાન જવા દેવું નથી. આઠ-આઠ સદગુરુ વચ્ચે કામ કર્યું. દરેકની સાથે મર્યાદા રાખીને જીવ્યા છે. આગળ રાખીને જીવ્યા છે. અસ્તિત્વ ખોઈને જીવ્યા છે.
+</p><p>  
+જમીને તરત સુવાનું ઓછું ફાવે. થોડું વાંચું... પહેલા અમે ત્રણ બેઠા હતા... એના તરફ નજર રહે એટલું જ કરવું છે.  
+</p><p>
+પવિત્રભાઈ :  સ્વામીજી ! પ્રભુના બળની ખબર હોય, પણ એના બળે કેવી રીતે જીવાય ?
+</p><p>
+પ્રબોધસ્વામીજી : એના તરફ નજર રાખીએ તો એ જીવ્યા છે એમાંથી બળ મળે. એનું જીવન આદર્શ. બળ પામવાનું એક જ સાધન ગુણાતીત પુરુષોના જીવન તરફ નજર અને ભજન. 
+</p><p>
+પુરુષ પ્રયત્નથી બળ ના મળે. કથાવાર્તામાં ક્યાં બાકી રાખ્યું છે ! 
+</p><p>
+જેટલી વાતો કરી છે, એને પોતે જીવીને બતાવ્યુ છે. આત્મીયતાની વાતો હોય, દાસના દાસની વાત હોય, ભૂલકુની વાત હોય, સુહૃદભાવની વાત હોય, સરળતાની વાત હોય, સહજતાની વાત હોય. એને પહેલા જીવીને દર્શન કરાવ્યુ છે. પછી આપણને એ કહ્યું છે.
+</p><p>
+સ્વામીશ્રીએ બાપાને પૂછ્યું, ‘આવું શા માટે વરત્યા ?’
+</p><p>
+બાપા કહેતા કે, ‘તમારા માટે !’   
+</p><p>
+તમારા માટે.. એ આપણા માટે સ્વાધ્યાયની વાત છે. 
+</p><p>
+સ્વામીજી કહે, ‘મે એ (તમારા માટે) શબ્દ પર ૬-૬ કલાક સ્વાધ્યાય કર્યો.’
+</p><p>
+ને આપણે એ વાક્યને ખબર છે, સંભાળ્યું છે, ફટાક દઈને બાયપાસ કરી દઈએ. (આંખમાં આંસુ) 
+</p><p>  
+સ્વામીશ્રી કહે કે, ‘જો મોટપુરુષ ના વર્તે તો સાક્ષી ના ભેદાય. વર્તવું પડે જ. કથાવાર્તાથી સાક્ષી ના ભેદાય.’ 
+</p><p>
+અત્યારે એમનામાં ડૂબવાની ખરેખર સુવર્ણ તક છે. સંબંધ બાંધવાની. ખરેખર સુવર્ણ તક છે. (આંખમાં આસું)
+</p><p>
+સુહૃદસ્વામી : આજ મનાય. તમે સુવર્ણ એટલે બધી તક સુવર્ણ.      
+</p><p>
+આ બધા છોકરાઓ રિયલ સાધક છે. વાતને પકડી શકે, સમજી શકે, વિચારી શકે એવા. 
+પછી પ્રબોધસ્વામીજી ભક્તિસ્વામી, આનંદસાગરસ્વામી, સુહૃદસ્વામી, પવિત્રભાઈ વગેરે જોડે બેઠા.
+વચ્ચે ગોષ્ઠી કરતાં કરતાં કહ્યું કે, ‘હું સ્વામીજીને યાદ કરું છુ ને આંસુ આવી જાય છે.’
+</p><p>
+વિષય :  સ્વામીશ્રીનો નિરપેક્ષભાવ
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

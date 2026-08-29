@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨૩ સપ્ટેમ્બર, ૨૦૨૨, કોલંબસ, અમેરિકા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+<p>
+પ.પૂ. પ્રબોધજીવનસ્વામીજી
+</p>
+<p>
+	ગુરુહરિ સ્વામીજી કહે, ‘વાસણાની ધરતીના કૂતરાને પણ યોગીજીમહારાજ તેડવા આવશે. વાસણાનાં કૂતરા હોય, ગાય હોય કે ભેંસ હોય...બધાને સાગમટે યોગીજીમહારાજ ધામમાં તેડવા જશે.’
+	</p><p>
+	વિચારીએ કે…  કૂતરાએ શું પુણ્ય કર્યા હશે ? સંતો પસાર થયા હશે તો ભસ્યું હશે ! સંતો પસાર થયા હશે તો એ કાંઈ પગે નહિ લાગ્યું હોય ? છતાં એને બાપા તેડવા જાય. તો એની સાધના કઈ ? તો યોગીજીમહારાજનો સંબંધ ! એ ધરતીને યોગીજીમહારાજે ગ્રહણ કરી એટલાં જ એના પુણ્ય. એ ધરતી પર યોગીજીમહારાજ ફર્યા ને એ ધરતી પર ભેંસ કે ગાય ને કે માણસોને રહેવા મળ્યું. એટલા સંબંધે એમને અંતઅવસ્થાએ ભગવાન તેડવા જાય.
+	</p><p>
+	તો... આપણે બધા બેઠા છીએ એને તેડવા નહીં આવે ?  આપણે એમની ગોદમાં બેઠા છીએ. એમનાં હાથનો ધબ્બો ખાધો છે. એમની વાત સાંભળી છે. એમનાં દર્શન કર્યા છે. આપણને અંબરીષ બનાવ્યા છે. એટલે આપણે સિક્યોર થઈ ગયા છીએ. કેવા ? સિક્યોર. અંતઅવસ્થાએ સ્વામીજી આપણને લેવા આવવાના એમાં બે મત નથી.
+	</p><p>
+	...પણ સ્વામીજીએ જે મહિમાની વાત એટલી બધી કરી એ શું કહેવા માંગે છે ? યોગીજીમહારાજે સંપનો અર્થ કર્યો છે : ‘સંપ એટલે એકબીજામાં મનુષ્યભાવ નહીં.’ એ વાતનું દર્શન કરાવતાં સ્વામીજી કહે છે કે ‘બધા અક્ષરધામના છીએ.’ ‘સ્વામીજીના સંબંધે કરીને આપણે બધા અક્ષરધામના છીએ.’ એ મનાય એનું નામ મનુષ્યભાવ નહીં.
+	</p><p>
+	....કારણ એ તેડવા આવવાના. તેડવા કોણ આવવાના ? એ આવવાના. શું આપણને એકલાને જ તેડવા આવશે ? બધાને જ આવવાના. ...તો પણ જે અક્ષરધામના છે એને વિશે આપણને સંકલ્પ ઊઠે. 
+	</p><p>
+	સ્વામીજી આપણને એ વાત કહેવા માંગે છે : વાસણાની ધરતીના કૂતરાને યોગીજીમહારાજ તેડવા જવાના હોય તો આ કોઈને વિશે મનુષ્યભાવ લેવાય નહીં. ‘બધા જ દિવ્ય. દિવ્ય કરતાં પણ બધા જ અક્ષરધામના છે.’ એવું માનીને જીવીએ એ સંબંધ કર્યો કહેવાય. 
+	</p><p>
+	સ્વામીજીએ આપણને એવા સંબંધે જીવડાવવા છે. કોઈના સ્વભાવ-પ્રકૃતિ જોવાના છે જ નહીં. સ્વામીજીએ વાસણાની ધરતીના કૂતરાના સ્વભાવ જોયા નહીં. બાકી અક્ષરધામમાં યોગીજીમહારાજ તેડવા આવશે એ વાત કરત નહીં. કૂતરાનો સ્વભાવ એ કૂતરાનો જ સ્વભાવ. એ કાંઈ થોડો બદલાઈ જવાનો ? છતાંય સ્વામીજીએ કહ્યું કે યોગીજીમહારાજના સંબંધે કરીને તેડવા જવાના; એ મહિમાનું દર્શન આ વાતમાં કરાવ્યું. 
+	</p><p>
+	આપણે એવી (સંબંધના મહિમાની) દૃષ્ટિથી જીવવાનું એનું નામ સત્સંગ. ગમે-તેવો હોય પણ સ્વામીજીએ ગ્રહણ કર્યો છે ને ! એનું જોવાનો અધિકાર આપણને નથી. સ્વામીજી બેઠાં બેઠાં જોયા કરશે. જેની જવાબદારી છે એ (સ્વભાવ-પ્રકૃતિ-દોષ-ભૂલ) જોતા નથી અને જેની જવાબદારી નથી એ જોયા કરે છે. જેને આત્માનું કલ્યાણ કરવાનું છે એ જોતા નથી ને આપણે કોઈનું કલ્યાણ કરવાના નથી છતાં આપણે કરી નાંખીએ.
+	</p><p>
+	‘સંબંધ જોવો એટલી જ સાધના છે.’ કઈ સાધના ? સંબંધ જોવો. સ્વામીજીએ સંબંધ જ જોયો અને આપણને એ માર્ગે લઈ જઈ રહ્યા છે કે ‘સંબંધ જોતા શીખો.’ બીજું કાંઈ કરવું નથી.
+	</p><p> 
+	એમની જે પરાવાણી છે; એ પરાવાણીને યથાર્થ સમજતા થઈએ. ...અને એ પ્રમાણે જીવવા માટે હાં હાં ગડથલ અને પ્રાર્થના કરીએ કે ‘હે સ્વામીજી, તમે આ રીતે જીવ્યા છો. તમને કોઈનાય સ્વભાવ દેખાયા નથી.’
+	</p><p>
+	સ્વામીજીએ આપણા સ્વભાવ દેખ્યા હોત તો હેત થાત ? એમણે સ્વભાવ જોયા હોત તો અમને સાધુ ન બનાવત અને તમને અંબરીષ ન બનાવેત. આપણી લાયકાત કેટલી ? વિચાર કરીએ કે આપણી કોઈ લાયકાત ખરી કે સ્વામીજીની સામે ઊભા રહી શકીએ ?
+	</p><p>
+	આપણા બધાની એમની સામે ઊભા રહેવાની કેટલી લાયકાત ? છતાંય એમણે ગ્રહણ કર્યા,  કોઈ સ્વભાવ ન જોયા, કોઈ પ્રકૃતિ ન જોયા સિવાય બધાને ગ્રહણ કર્યા. એ (સ્વભાવ-પ્રકૃતિ) નથી જોતા તો આપણે શું કામ જોઈએ છીએ ?
+	</p><p> 
+	આપણને (સ્વભાવ-પ્રકૃતિ) દેખાય છે; તો એ કરોડો જન્મના હેવા છે એટલે દેખાય છે. ન દેખાય એવું નથી. દેખાય અને દેખાવાનુ. શાથી ? ઢાળ જ એવો છે. (સ્વભાવ-પ્રકૃતિ) દેખાય ત્યારે કરવાનું શું ? તો ભજન. ભજન કરી લઈએ એટલે આપણે નિર્દોષ. સ્વાધ્યાય-ભજન કરી લઈએ એટલે આપણે નિર્દોષ.
+	</p><p>
+	આપણે એમના જેવા પૂર્ણ નથી. એમને કાંઈ ન દેખાય. આપણને બધું જ દેખાય, શાથી ? આપણી ચામડાંની આંખ છે. એમની દિવ્ય આંખ છે. આપણી કઈ આંખ છે ? ચામડાંની આંખ છે એટલે આપણને ચામડું જ દેખાય. એમની દિવ્ય આંખ છે એટલે એ આપણને બધાને જ દિવ્ય દેખે છે. 
+	</p><p>
+	ચામડાંની આંખને દિવ્ય કરવાની છે. શું કરવાનું છે ? ચામડાંની આંખને દિવ્ય કરવાની છે. ચામડાંની આંખને દિવ્ય કરવાની આપણી સાધના છે. સંબંધ જોઈએ તો ચામડાંની આંખ દિવ્ય થાય. 
+	</p><p>
+	એ સંબંધ જોવા માટેની દૃષ્ટિ ગુરુહરિ આપણને સહુનેય આપે એ જ પ્રાર્થના.
+	</p><p>
+	સહજાનંદસ્વામી મહારાજની જય.
+	</p><p>
+	વિષય : સંબંધ જુવો છે. 
+	</p><p>
+	બ્રહ્મ રત્ન :  <br/>
+	૧) ‘સ્વામીજીના સંબંધે કરીને આપણે બધા અક્ષરધામના છીએ.’ એ મનાય એનું નામ મનુષ્યભાવ નહીં. <br/>
+	૨) ‘બધા જ દિવ્ય. દિવ્ય કરતાં પણ બધા જ અક્ષરધામના છે.’ એવું માનીને જીવીએ એ સંબંધ કર્યો કહેવાય. <br/>
+	૩) ‘સંબંધ જોવો એટલી જ સાધના છે.’ કઈ સાધના ? સંબંધ જોવો.		
+	</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૨૦ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+“મારામાં કદાચ અનંત દોષ હશે પણ એક ગુણ એેટલો સરસ છે કે ભગવાન સ્વામિનારાયણથી માંડીને ગુણાતીતપુરુષો સુધી કોઈના વચનમાં અવિશ્વાસ પ્રગટયો નથી.” “યોગીજીમહારાજ કહે આ સૂર્ય નથી પણ ચંદ્ર છે તો એક જ સેકન્ડમાં દિમાગમાં બેસી જાય. ફરી કથા કરવી ન પડે.”
+</p><p>
+આમ લૌકિક દૃષ્ટિએ જોઈએ તો સ્વામીજી વિચક્ષણ બુદ્ધિવાળા પુરુષ હતા. આપણને બુદ્ધિ નથી આપી તોય વિશ્વાસ ન બેસે. સ્વામીજી તો બુદ્ધિના દાતા હતાં છતાંય એ જે વિશ્વાસની વાત કરે છે. 
+</p><p>
+“દિવસ હોય ને બાપા કહે કે અત્યારે રાત થઈ ગઈ છે. તો એક જ સેકન્ડમાં દિમાગમાં બેસી જાય. કથા કરવી ન પડે.” એટલે કે ફરી સમજાવવું ન પડે. આ તો આપણે કદાચ મનને સમજાવીએ. “બપોરનો ધોમ-ધખતો તાપ હોય અને યોગીજીમહારાજ કહે કે આ ચંદ્ર છે તો અમે ધોમધખતા તાપમાં પણ ચંદ્રમાની શીતળતાનો અનુભવ કરીએ.” 
+</p><p>
+એ વિશ્વાસ જુદો. કદાચ મન-બુદ્ધિને પરાણે કહીએ કે ‘સ્વામી બોલ્યા છે એટલે એમાં બુદ્ધિ લગાડીશ નહિ, લગાડીશ નહિ’ એમ કરીને મનને ગાળો દઈએ કદાચ. ...પણ જે શીતળતાનો અનુભવ કરવો એ વસ્તુ જુદી છે. 
+</p><p>
+“ભેંસ હોય અને યોગીજીમહારાજ કહે કે પેલી ગાય છે તો એક સેકન્ડમાં દિમાગમાં બેસી જાય.” એ કદાચ આપણે સમજણથી માનીએ કે ‘ગયા જન્મે ગાયનો આત્મા હશે’ એવું કરીને મન બુદ્ધિને સમજાવી દઈએ. 
+</p><p>
+“કોઈ લૂંટારું છે, નીચ ને હલકટ છે. દુનિયાની ૬૦૦ કરોડની જનતામાં નીચ, જનતા જેને નીચ કહેતી હોય એવી વ્યક્તિને બાપા એકદમ હસતા હસતા કહે, ‘હાંશ ! આ તો મારા પ્રાણથી પણ પ્યારો છે.’ તો એક જ સેકન્ડમાં મનાઈ જાય. સંકલ્પ જ ઉઠે નહીં. દિમાગ બંધ થઈ જાય. આ એક ગુણ મારામાં સારો છે. એટલું જ તમે માનશો તો તમારી સાધના પૂરી થઈ જશે.” આપણે માટે આા કરુણાનું વાક્ય છે.
+</p><p>
+આટલો એક જ ગુણ સ્વામીજી સારો ગ્રહણ કરીને ધરતી પર આવ્યા હતા. એવું માનીશું તો પણ આપણે કોઈ સાધના કરવાની રહેશે નહિ.
+</p><p>
+કોઈ દિવસ પોતે પોતાની વાત ન કરે છતાંય કરે છે : “હું લેટ્રિન રોકીને તમારી સેવા કરું છું. દસ-દસ કલાક લઘુ રોકી ખાનગી કરું છું. સવારનો ખાનગીમાં બેસું તે બપોરના અઢી વાગી જાય. ખાનગી પતે ત્યારે ખબર પડે કે લઘુ જવાનું બાકી છે, ખાડે જવાનું બાકી છે, જમવાનું બાકી છે. ભક્તોની સેવા હોય ત્યારે મને કશું જ યાદ ન આવે.”
+</p><p>
+ચોવીસ કલાકની હરેક સેકન્ડ ભક્તોના આકારે જીવનારા પુરુષની આપણને ગોદ મળી છે. તો એ ગોદમાં રહી અને આપણે પણ ભક્તોની સેવામાં મહિમાથી ભક્તોની સેવા કરી શકીએ એ જ એમના ચરણોમાં અંતરની પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : વિશ્વાસ, કરુણા
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

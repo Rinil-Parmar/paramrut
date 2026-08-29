@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૨૮-૧-૨૦૨૨, પૂજામાં ગોષ્ટિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+<p>
+સ્વામીજી કહે, ‘હું ભજનને પાંચ ભાગમાં વહેંચી નાંખુ.’ ૩૦ મિનિટ સહેજે સહેજે પૂરી થાય.
+</p><p>
+(૧) દેહની સ્મૃતિ:
+</p><p> 
+કોઈને ભાલ(કપાળ) ગમતું હોય, કોઈને આંખો ગમતી હોય, કોઈને મૂછ કે દાઢી, કોઈને કાન, કોઈને પેટ ગમતું હોય, કોઈને કૂણા કૂણા હાથ, આંગળીઓ કે ચરણારવિંદ ગમતાં હોય.
+</p><p>
+સ્વામીજી કહે, અમને બાપાની પેલી સર્પે દંશેલી આંગળી હતી એ ગમતી. એ સંભારતો. આપણા માટે કંઈકને કંઈક દરેકને હોય. આખું યાદ ન આવે પણ જેટલું યાદ આવે એટલું. માથામાં વાળની કટ બ્રહ્મવિહારીસ્વામીની છે ને એવી સ્વામીજીને માથામાં કટ પડતી એ યાદ આવે.
+</p><p>
+(૨) લીલાચરિત્ર:
+</p><p>
+કેરી જમતા હોય ને ગોટલો છટકે, કેરી જમતા હોય ને ફટાક દઈને ગાતરીયું બગડે, પલળે, ઓશીકાંથી મોઢું લૂંછી કાઢે. એવા એમના ચરિત્ર એક્ચ્યુલી આપણા માટે છે. કંઈક યાદ આવે એવી સ્મૃતિ કરવાની. 
+</p><p>
+એક વખત નિરન્નમુક્તસ્વામીએ સ્વામીજીને ડ્રાયફ્રુટસ ધર્યું.. ગાડીમાં કે મીનીબસમાં ટ્રાવેલીંગમાં હતા. સ્વામીજીએ ના પાડી. ફરી ધર્યું, ફરી ના પાડી. ફરી ડીસ ધરી તો સ્વામીજીએ નીચેથી હાથ માર્યો તો પ્રસાદનો વરસાદ થઈ ગયો.જ
+</p><p>
+પછી નિરંનમુક્તસ્વામીએ કહ્યું કે, ‘જો પ્રસાદ લઈ લીધો હોત તો મને યાદ ન રહેત. અત્યારે પણ એ સ્મૃતિ ભૂલાતી નથી.’ એ લીલા-ચરિત્ર. 
+</p><p>
+(૩) કથાવાર્તા:
+</p><p>
+સ્વામીજી કહે, બાપાએ કઈ જગ્યાએ શું વાત કરી છે એ બધી અમને ઈદમ યાદ છે. જેટલી યાદ આવે એટલી યાદ કરવાની.
+</p><p>
+નિરંજનસ્વામીને ભગવાને બુદ્ધિયોગ સરસ આપ્યો છે. જે શબ્દ... કથાવાર્તાનું મનન-ચિંતન કરવાનું. 
+</p><p>
+(૪) ગુણોનું દર્શન:
+</p><p>
+એમની સાધુતા, સરળતા, દાસત્વ, ભક્તિ, પરાભક્તિ એમનું બધું દર્શન આપણને છે. 
+</p><p>
+(૫) મહિમા:
+</p><p>
+કેવા પુરુષ મળ્યા છે ! એમણે યોગીજી મહારાજનું સેવન કેવી રીતે કર્યું. પૂર્ણ પુરુષોત્તમ હોવા છતાં દાસના દાસ થઈને જીવ્યા. એ જે એમનો મહિમા છે, એનું ચિંતવન કરીએ. 
+</p><p>
+ખાલી પાંચ પાંચ મિનિટ કરીએ તો પણ ૨૫ મિનિટ થઈ ગઈ.
+</p><p>
+વિચારે કરીને સ્મૃતિ કરતાં મનથી કલ્પના કરવાની. કદાચ મૂર્તિ યાદ ન આવી. સ્મૃતિ એક ભજન જ છે. કદાચ મૂર્તિ ન દેખાય તો વિચારે કરીને સ્મૃતિ કરવાની. 
+</p><p>
+- સ્વામી અહીં બેસીને દાતણ કરતાં હતા. 
+- સ્વામીજીએ અહીં બેસીને થાળ લીધો. 
+- સ્વામીજી બહાર ઝરૂખામાં આમ ઉભા રહેતા. 
+</p><p>
+કદાચ મૂર્તિ સામે ન આવી તો પણ મનથી કલ્પનાએ કરીને... આ સ્મૃતિ જ છે. એ રીતે કરીએ તો પણ ચાલે. 
+</p><p>
+એમની સ્મૃતિ છે એ જ આપણું ભજન છે. એમણે આપણને ખૂબ સ્મૃતિઓ આપી છે. 
+</p><p>
+આપણે સ્મૃતિમાં ગરકાવ થઈ જવાનું. બસ (તો) ૩૦ મિનિટ ખબર જ નહિ પડે. આપણે કરવું છે બસ... ધીરે ધીરે થાય. એ પ્રમાણે હાં હાં ગડથલ કરવી છે. પ્રયત્ન કરીએ. 
+</p><p>
+મન છે એ સ્મૃતિ કરતાં કરતાં ભાગીને જતું રહે... ભજન કરવા બેસીએ ત્યારે મન છે એ ભાગે, ખબરેય ન પડે. પછી થાય કે ઓ હો... સ્મૃતિ તો સાઈડમાં રહી ગઈ આપણે તો બહાર આવી ગયા. ...પણ ખબર પડે એટલે મનને પાછું લાવવા માટેનો પ્રયત્ન કરવાનો. આપણે પ્રયત્ન કરવાનો, એ બળ આપે.
+</p><p> 
+પાંચ પ્રકારે ભજન કરવાની સ્વામીજીએ સરસ ટેકનિક આપી. એ ટેકનિક પ્રમાણે ભજન કરીએ તો સહેજે સહેજે ૩૦ મિનિટનું ભજન થઈ જાય. તો એ પાંચ ભાવના સાકાર થાય. આપણે પ્રયત્ન કરવાનો તો એ બુદ્ધિયોગ આપશે. 
+</p><p>
+તો આજે એટલી પ્રાર્થના કરીએ: હે સ્વામી ! આપે અમને ૩૦ મિનિટ ભજનમાં લઈ જવા છે તો આપે જે રસ્તો બતાવ્યો એ રસ્તે સહેજે સહેજે ચાલી અમારા મનની વૃત્તિ તમારામાં જોડી રાખીએ એવું કરી આપો. એ જ પ્રાર્થના
+</p><p>
+બીજું કાંઈ જોઈતું નથી. ૩૦ મિનિટ નિર્વિકલ્પપણે ભજનમાં જવું છે તો એવું બધાને કરી આપો એવી અંતરની પ્રાર્થના.
+</p><p> 
+સહજાનંદસ્વામી મહારાજની જય
+ </p><p>
+વિષય: ૩૦ મિનિટ નિર્વિકલ્પપણે ભજન અંગે
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

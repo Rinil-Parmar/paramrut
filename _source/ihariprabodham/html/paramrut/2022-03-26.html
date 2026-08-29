@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૨૬ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+બે દિવસથી સ્વામીજીનાં પ્રવચનની ગોષ્ઠિ સાંભળીએ છીએ તેમાં સ્વામીજી જૂની સ્મૃતિઓ કરાવે છે. ગઈકાલે ગોષ્ઠિમાં વડોદરા મંડળને સંભારેલા. ભગતજી, સતુભાઈ ને જૂના જૂનાં બધાં ભક્તોને ખૂબ સંભાર્યા.
+</p><p>
+આજે સ્વામીજીએ ગોષ્ઠિમાં કહ્યું કે અમે જૂનામંદિરે આવ્યા ત્યારે વાસણા ચાલીને જતા. વાસણાનાં બાબુભાઈએ મને કહ્યું કે ‘જમીન નવરી જ પડી છે. ખેડો ને ખાવ.’
+</p><p>
+અત્યારે તો વાસણાફાર્મ પર કંઈક લેવલ જમીન છે. એ વખતે પાંચ વીઘાનો ટુકડો પણ લેવલ નહોતો.
+</p><p>
+સ્વામીજી કહે, ‘અમે સવારના પ્હોરમાં ૬:૦૦ વાગ્યે નીકળીએ. ટાઢકે જવાનું ને સાંજે ટાઢકે આવવાનું અને તાપમાં કામ કરવાનું.’ 
+</p><p>
+વિચાર કરજો કે પાંચ કિલોમીટર ચાલ્યા પછી સેવા કરવાનું મન થાય? પાંચ કિલોમીટર ચાલ્યા પછી આપણી તો એનર્જી ત્યાં જ પૂરી થઈ જાય. આ તો ત્યાં ચાલીને ગયા પછી આખો દિવસ કામ કરવાનું. તાપ લાગે એ જોવાનું નહીં. અત્યારે જેટલાં ઝાડ છે એટલા ત્યારે નહોતા. કોતરમાં ઝાડ હતા પણ વ્યવસ્થિત લેવલ જગ્યામાં ઝાડ હોય એવું નહોતું.
+</p><p>
+એ વખતે તો કોતરોમાં વાઘ રહેતા હતા એટલે કોતરમાં એકદમ જલ્દી જવાય પણ નહીં. અત્યારે તો ખાલી રોજા છે, વાઘ નથી.
+</p><p>
+સ્વામીજી પ્રસંગ કહે છે કે : એકવાર હું અને કોઠારીસ્વામી કોતરમાંથી પસાર થતાં હતા અને સામે વાઘ આવ્યો હતો. આપણી સામે વાઘ આવે તો શું થાય ? ઝાડા પેશાબ થઈ જાય ! ...પણ એ પરિસ્થિતિમાં સ્વામીજી રોજ વાસણા ને સાંકરદા ચાલીને જતાં અને આવતા હતા.
+</p><p>
+અત્યારે ફાર્મ પર જે ટ્યુબવેલ છે ત્યાં પાણીનો ખાડો હતો. એમાં વાપરવા માટે પાણી ભરી રાખતા. પોતાનો બોર પણ નહોતો. ધારિયો કરેલો તેમાં મોતીકાકાના કૂવેથી પાણી આવે ને ખાડો ભરી દેવાનો. અઠવાડિયું પાણી વાપરવાનું. ફરી બીજું અઠવાડિયું થાય એટલે નવું પાણી એમાં ભરી દેવાનું. 
+</p><p>
+એ વખતે ત્યાં એક નાનો ટેન્ટ બનાવ્યો હતો.  ટેન્ટમાં અંદર રહેવાનું અને જ્યાં ખાડો બનાવ્યો હતો. ત્યાં રાત્રે વાઘ પણ પાણી પીવા આવે. ટેન્ટમાં તો શું સેફ્ટી હોય ? 
+</p><p>
+એકવખત ફાર્મના બે સેવકો કંઈક સાંકરદા ગયા હશે. રાત્રે મોડા પાછાં આવવાના હતા એટલે કહ્યું હતું કે અમે આટલા વાગ્યે આવીશું તમે ફાનસ લઈને સામે આવજો. એ વખતે ફોન નહોતા કે ફોન કરી દઈએ કે આવી જજો.
+</p><p>
+પેલા તો ગયા અને રાત્રે પાછા આવવાના સમયે નદીના સામે કિનારે આ બાજુથી કોઈ લેવા આવે તેની રાહ જોયા કરે. આ બાજુ બે સેવકો થાકી ગયા હશે તે એ તો ટેન્ટમાં સૂઈ ગયેલા, એમનાંથી ઉઠાયું નહીં. 
+</p><p>
+પેલા બે સેવકો નદીનાં સામેનાં કિનારે રાહ જુએ. પછી ત્યાંથી બૂમો પાડ્યા કરે. અંધારામાં બૂમ પણ સંભળાય પણ આ લોકોને સંભળાઈ નહિ હોય તે ઉઠ્યા નહીં. થોડીવારમાં એ સેવકોને કોઈ ફાનસ લઈને આવતું દેખાયું. નદીને આ કિનારે ફાનસવાળા અને પેલી બાજુ પેલા લોકો. એ લોકોને થયું કે, ‘આપણને લેવા આવી ગયા છે તો ચાલો જઈએ.’ 
+</p><p>
+એક જણ ફાનસ લઈને આગળ ચાલે અને પેલા બંને પાછળ પાછળ ચાલે. એ બંને સેવકોએ ફાનસવાળા ભાઈને કહે, ‘ઊભા તો રહો. આપણે સાથે ચાલીએ.’ ...પણ એ તો ઊભા જ ન રહ્યા. ૧૫-૨૦ ફૂટ આગળ આગળ ચાલ્યા કરે. ટેન્ટ ન આવ્યો ત્યાં સુધી આગળ આગળ ચાલ્યા. 
+</p><p>
+પેલાં ભાઈ તો ફાનસ લઈને ટેન્ટમાં જતા રહ્યા. પછી પેલા બંને  ટેન્ટમાં આવ્યા ને જોયું તો ન ફાનસ દેખાય કે ન તો ફાનસનો પ્રકાશ દેખાય. જેમને લેવા આવવાનું કહ્યું હતું એ બંને તો મસ્તીથી ઘસઘસાટ ઊંઘતા હતા. 
+</p><p>
+આ લોકોને થયું કે ‘આ બંને બનાવટ કરે છે !’ એટલે એમણે ગોદો માર્યો ને કહ્યું, ‘કેમ સૂઈ ગયા છો ? ઊભા થાવ.’ ત્યારે જે લોકો સૂઈ ગયા હતા તેમને ખબર પડી કે ‘આપણે તો આ લોકોને સામે લેવા જવાનું હતું પણ આપણે તો સૂઈ ગયા હતા !’
+</p><p>
+તો લેવા કોણ ગયું હતું ? સ્વામીજી સેવક સ્વરૂપે ફાનસ લઈને ત્યાં લેવા માટે પહોંચી ગયેલા !  આ લોકો તો મસ્તીથી ઊંઘતા હતા, એમને તો ખબરેય નહોતી કે આ લોકો પાછા આવી ગયા ! 
+</p><p>
+...પણ સ્વામીજી પેલાં સેવકનું રૂપ લઈને લેવા પહોંચી ગયા અને આગળ આગળ ફાનસ લઈને ચાલ્યા ! આમ, ભગવાન આપણી ભેળા જ હોય. 
+</p><p>
+આવા તો ઘણાં પ્રસંગો છે કે જેમાં સ્વામીજીએ સાથે રહીને આનંદ કરાવ્યો હોય. સ્વામીજીએ ખૂબ કરુણા કરીને આવી દિવ્ય અનુભૂતિ એક યા બીજી રીતે બધાને કરાવી છે એટલે આપણે તો એ સ્મૃતિમાં જ ડૂબેલા રહેવાનું. 
+</p><p>
+આપણે તો કરવાનું એક જ છે સ્વામીજીનાં લીલા-ચરિત્રોને યાદ કરી, સ્મૃતિ કરી અને એમાં ગરકાવ રહેવાનું છે. 
+</p><p>
+તો એ સ્મૃતિ અને લીલા-ચરિત્રોમાં ડૂબીને ગુરુહરિ તરફની આપણી યાત્રા કરતા રહીએ એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : સ્મૃતિમાં ગરકાવ રહેવાનુ. 
+</p><p>
+બ્રહ્મ રત્ન : આપણે તો કરવાનું એક જ છે સ્વામીજીનાં લીલા-ચરિત્રોને યાદ કરી, સ્મૃતિ કરી અને એમાં ગરકાવ રહેવાનું છે. 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

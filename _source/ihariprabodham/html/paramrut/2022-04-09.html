@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૦૯-૦૪-૨૦૨૨, પૂજામાં આશિષ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+પુસ્તિકા વાંચે છે…
+</p>
+<p>
+૧૯૮૭માં યુ.એસ.એ.માં રજનીભાઈને વાત કરતા કહ્યું અહીંના આહાર નોનવેજવાળા તે તો રજોગુણ, તમોગુણ પ્રગટાવે. પછી રજનીભાઈએ પૂછ્યું ગુણાતીત ગુણ પ્રગટાવવા માટે કયો આહાર જોઈએ?  મસ્ત પ્રશ્ન છે. 
+</p><p>
+સ્વામીજી કહે પ્રભુને સંભારીને જમીએ નિર્ગુણ થઈ જાય. એકદમ સરસ.. જમીએ, સૂઈએ, ફરીએ મહારાજ ગુણ બક્ષીસ આપી દે. ભગવાનને સંભારીને જમીએ કે સૂઈ જઈએ કે ફરીએ મહારાજ ગુણ બક્ષીસમાં આપી દે. 
+</p><p>
+પથારીમાંથી ઉઠીએ ‘હે મહારાજ ઉઠો.. હે મહારાજ ચાલો.. હે મહારાજ બ્રશ કરવા ચાલો.. હે મહારાજ નોકરીએ ચાલો..’ આવી ટેવ પાડવાથી સહજ આદત બની જાય છે. તો ચારેયકોર એક સ્વામી સ્વામી જ રહે. ટેવ પાડવી પડે. એવુ પ્રભુકૃપાએ એક દિવસ મનાઈ જાય. મ-૧૩ અક્ષરબ્રહ્મનો આત્માને વિશે પ્રકાશ થઈ જશે.
+</p><p>
+ન્યુજર્સી સહિષ્ણુ શિબિરમાં ગોષ્ઠિ કરતા કહ્યું તમે ૨૪ કલાક માળા ફેરવો પણ પ્ર.૧૮ પ્રમાણે આંખ-કાન-જીભનો આહાર યોગ્ય ન રાખો તો યાત્રા આગળ ન ચાલે. અમે બાપા સાથે ૧૦ વર્ષ રહ્યા પણ માત્ર ૧૦ દિવસ જેવા લાગ્યા. કારણ અમારા આંખ-કાન-જીભ, મન બધા જ બાપામાં ડૂબેલા રહેતા હતા. અમારાથી વર્તાય ન વર્તાય, ભયંકર પરિસ્થિતી ઊભી થાય પણ બાપાનું વચન આવે તો વચનને અમે નીચે પડવા દેતા નહોતા.
+</p><p>
+ભગવાન સ્વામિનારાયણ કોણ અને કેવા ? એ વિચારીએ તો માનના ભુક્કા ઉડી જાય.
+ </p><p>
+પેલો પ્રસંગ છે ને.. ગઢડાની બજારમાં એક છોકરો થુંક્યો. કાઠીનો છોકરો. કોઈને ઉડ્યું નહોતું પણ જૈન પ્રણાલિકાના સેવકોએ મહારાજને વિરોધ કરવા માટે ઉભુ કર્યું કે છોકરો અમને થુંક્યો માથે. અને એ લોકોને તો વિરોધ વધારે ન આવડે હડતાલ પડતા આવડે. વાણિયા લોકોને. શું કરે? હડતાલ પાડી. ગામ આખું બંધ, બજારો બંધ. એ વાત ફરતી ફરતી ફરતી મહારાજ પાસે આવી. 
+</p><p>
+મહારાજ સભા કરીને બેઠા હતા. કોઈએ કહ્યું કે આપડા સત્સંગી દીકરાએ થુક્યું ને છાંટા ઉડ્યા ને આ લોકો ભેગા થયા છે અને આપણો વિરોધ કરે છે. મહારાજ સભા કરતા હતા બેઠા હતા ત્યાંથી ઊભા થઈ ગયા. બધાને કહે હું આવું છું હમણાં બે મિનિટમાં કે. 
+</p><p>
+એમ કરીને ઉભા થયા અને સીધા જ જ્યાં એ ટોળું ભેગુ થયું હતું ત્યાં વચ્ચે પહોંચી ગયા. દૂરથી દંડવત કર્યા. પછી નજીક જઈને કહે અમારા ભગતની કંઈ ભૂલ થઈ ગઈ હોય તો એની માફી મને આપો કે. 
+</p><p>
+પેલા બધાએ કલ્પના નહોતી કરી કે ભગવાન સ્વામિનારાયણ આ કક્ષાએ અમારી પાસે આવી ને અમારી માફી માંગશે. પેલા બધા ગળગળા થઈ ગયા. બધા ભગવાન સ્વામિનારાયણના પગમાં પડી ગયા. એટલે આપણા ભગવાન નિર્માની છે. આપણા ભગવાન નિર્માની છે. 
+</p><p>
+ભગવાન સ્વામિનારાયણ કોણ અને કેવા?  સ્વામીજી કેવા?  નિર્માની નહિ? કેટલા અપમાનો થયા. અમુકમાં તો આપણે સાક્ષી. મેહળાવની ધરતી પર. બરાબર. એમાંતો આમાંથી બધા સાક્ષી હશે કદાચ. 
+</p><p>
+બસ એક જ વાત, કોણ અને કેવા? એની સુપ્રીમસી સંકલ્પ કરે તો ના થઈ જાય? દરવાજા ખુલી જાય. ના શું ખૂલે. પણ એક દાસત્વનું દર્શન આપણને થાય એના જીવનમાં ડુબાય એટલા માટે એવું જીવ્યા. 
+
+</p><p>
+એ વિચારીએ તો માનના ભુક્કા ઉડી જાય. કોઈ આત્મીય બને કે ને બને એ સૂત્ર તરફ અખંડ નજર હોય તો માનના ભુક્કા ઉડી જાય. 
+</p><p>
+અન્યક્ષેત્રે કૃતં પાપમ્.. એ શ્લોક તરફ નજર હોય તો માનના ભુક્કા ઉડી જાય. નિજાત્માનં અને દાસના દાસ થઈને વળી.. એ સૂત્ર તરફ નજર હોય તો માનના ભુક્કા ઉડી જાય. 
+</p><p>
+ગુણાતીતપુરુષોના જીવનમાં ડૂબી ગયા હોઈએ તો માનના ભુક્કા ઉડી જાય.
+</p><p>
+ગુણાતીતપુરુષોના જીવનમાં ડૂબવાની દૃષ્ટિ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+</p><p>
+વિષય : માનના ભુક્કા ઉડી જાય 
+</p><p>
+પ્રસંગ : ૧) ભગવાન સ્વામિનારાયણ માફી માંગે છે.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

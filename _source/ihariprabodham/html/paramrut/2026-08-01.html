@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧ ઓગસ્ટ, ૨૦૨૬, સવારે, સેરેટોન, ફિલાડેલ્ફિયા, અમેરિકા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	
+	<p>
+(પાટોત્સવ દિને પ્રાર્થના)
+</p><p>
+શુભ મંગલકારી, મંગલકારી શુભ દિવસ.
+</p><p>
+૧લી ઑગસ્ટ. આજે ઠાકોરજીનો ચોથો પાટોત્સવ છે. સ્વામીશ્રીએ દેહલીલા સંકેલી તેને પાંચ વર્ષ પૂરાં થયાં.
+</p><p>
+૨૬ (જુલાઈ) થી ૧લી (ઓગસ્ટ, ૨૦૨૧) સુધી પધારેલા દર્શનાર્થીઓ, ૧લી તારીખે સ્થૂળ દેહનું સમર્પણ કરી દીધું.
+</p><p>
+સ્વામીજીએ પોતાની કોઈ ચીજ વહાલી નથી રાખી. લોહીનું એક-એક બુંદ ઠાકોરજીને અર્થે અને આપણા અર્થે સમર્પિત કરી દીધું. ઠાકોરજીની ભક્તિમાં ક્યારેય ઊણપ આવવા નથી દીધી.
+</p><p>
+પાટોત્સવ નિમિત્તે સ્વામીજીએ ખૂબ પ્રાર્થનાઓ કરી છે. પહેલો પાટોત્સવ સ્વામીજીએ બેલગામ (કર્ણાટક)ની ધરતી પર ઊજવેલો. હૈયું હચમચાવી દે એવી પ્રાર્થના સ્વામીજીએ કરેલી.
+</p><p>
+ઠાકોરજીની સેવામાં તો સંતો હોય. ગાફલાઈ રહી હોય તો અમારી સંતોની રહી હોય, પણ એની માફી સ્વામીજી માગે - તમને વહેલા-મોડા ઉઠાડ્યા હોય, ટાઇમે થાળ કર્યા હોય કે ન કર્યા હોય, ટાઇમે પોઢાડ્યા હોય કે ન પોઢાડ્યા હોય, ટ્રાવેલિંગમાં આપનું સચવાયું કે ન સચવાયું હોય, ગાડીમાં આપને ખૂબ ધક્કા લાગ્યા હોય, વિચરણમાં, પધરામણીમાં ફરતા ઊંચકનારની ભક્તિની કચાશને લઈને ચાલવામાં હેલા લાગ્યા હોય, એ બધી માફી સ્વામીજીએ માગી.
+</p><p>
+ઘણી વખત તો અમારી ગાફલાઈને કારણે ઠાકોરજી પડી પણ ગયા. એ બધાની માફી સ્વામીજી માગતા.
+</p><p>
+આજના દિવસે એવી પ્રાર્થના છે – અમારી આવી ગાફલાઈ ન રહે. અમારું જીવન ભક્તિપ્રધાન બને. ‘તારે લઈને અમે છીએ’, એ જાણપણું ૨૪ કલાકની હરેક સેકન્ડે રહે. સાક્ષીભાવે જીવવાની સૂઝ આવે. ‘તું નિરંતર મને જોઈ રહ્યો છે, તારાથી કોઈ વસ્તુ અજ્ઞાત - અજાણ નથી’, એવા જાણપણે જીવાય.
+</p><p>
+‘મારી હરેક સેવાને તું જ અંગીકાર કરી રહ્યો છે.’ એ ભક્તોમાં રહીને કરતો હોય કે મૂર્તિમાં રહીને કરતો હોય, પણ સેવા-ભક્તિને અંગીકાર કરનાર તું જ છે. એવું જાણપણું નિરંતર રહે.
+</p><p>
+આપના વિશે ક્યારેય સ્થૂળભાવ ન આવે. ‘આપ પ્રત્યક્ષ રસઘન મૂર્તિ છો. અમારી સેવાને અંગીકાર કરી રહ્યા છો’, એવું નિરંતર માનીને જીવીએ.
+</p><p>
+જેમ આપ રસઘન મૂર્તિ છો, તેમ આપના સંબંધને પામેલા ભક્તો પણ દિવ્ય મનાય. એ ભક્તોના વિશે ક્યારેય જાતિભાવ ન પ્રગટે, એવી જાગ્રતતા આપજો. દરેકની સેવા આપના ભાવથી થયા કરે. વ્યક્તિ ન દેખાય, સ્વભાવ-પ્રકૃતિ ન દેખાય, (કેવળ) એક સંબંધ જ દેખાય, એવી કરુણા વરસાવજો.
+</p><p>
+આપે આપના જીવનમાં સંબંધ સિવાય કોઈ ચીજ જોઈ નથી. અમારી લાયકાત જોઈ નથી, છતાં આપે ગ્રહણ કર્યા. અમારે આપના ગમતામાં વર્તવાનું હોય, અમારે આપને રાજી કરવાના હોય, અમારે ગરજ રાખવાની હોય; એની જગ્યાએ આપ ગરજુ બન્યા. અમને સુખી કરવા માટે આપે દાખડો કર્યો. આપની એ ગરજ અને કરુણામાં ડૂબેલા રહીએ એવો બુદ્ધિયોગ આપજો.
+</p><p>
+આપે સરસ આત્મીય સમાજનું સર્જન કર્યું છે; તો દરેકમાંથી કંઈક સારું લેવાની દૃષ્ટિ આપજો. આપે આપના જીવનના પ્રસંગનું દર્શન કરાવ્યું છે.
+</p><p>
+આપ બાપાની (યોગીજીમહારાજની) સાથે હતા. ગોંડલની ધરતી પર રાયણના ઝાડ નીચે બેસી આપે ને આપના મિત્રએ સંકલ્પ કર્યો, ‘અહીંથી જે પસાર થાય, એ દરેકના ગુણ વિચારવા છે.’ સળંગ ત્રણ કલાક સુધી ભક્તોના ગુણનું મનન-ચિંતન કર્યું.
+</p><p>
+એ પ્રસંગ ખબર છે, આપના સ્વમુખે હજારો વખત સાંભળ્યો છે, એ પ્રસંગમાં ડૂબીને અમારી યાત્રા કરતા રહીએ, એવો બુદ્ધિયોગ આપજો.
+</p><p>
+દાસભાવે દરેકમાં ખોવાયેલા રહીએ. આપ નિરંતર ખોવાયેલા રહ્યા છો. આજે આપે આપનું સર્વસ્વનું બલિદાન અમારે અર્થે આપી દીધું.
+</p><p>
+અમે અમારું કંઈ વહાલું ન રાખીએ. અમારાં મન-બુદ્ધિને વહાલાં ન રાખીએ. ભક્તોની સેવામાં દેહ પણ આડો ન આવે, એવી જાગ્રતતા પ્રગટાવજો.
+</p><p>
+આપની પાસે નહીં માગીએ તો કોની પાસે માગીશું? અમ સહુ સેવકો પર કરુણા કરજો, બસ. સંબંધ સિવાય કોઈ ચીજ જોઈતી નથી. સંબંધ સિવાય કંઈ જોવું નથી, એવો બુદ્ધિયોગ આપજો.
+</p><p>
+કેવો સરસ સંતોનો સમાજ આપે આપ્યો છે! કેવા સરસ સહિષ્ણુ દીકરાઓ છે! સાધક દીકરાઓ મંદિરમાં સરસ રહે છે. કેવો સરસ અંબરીષ સમાજ છે! કેવો મરણિયો યુવકોનો સમાજ છે! એ સમાજ વચ્ચે રહેવા મળ્યું છે.
+</p><p>
+(તો) અરસપરસ એક તાંતણે ગૂંથાઈ આપના તરફની યાત્રા કરતા રહીએ. કોઈનાય સ્વભાવ-પ્રકૃતિ જોવા નથી. દરેકની ભાવના જોઈએ, બસ. સ્વભાવ-પ્રકૃતિ જોઈને બીજાથી દૂર ન જઈએ. સ્વભાવ તો આપ કાઢવાના છો જ. અમને કોઈનો સ્વભાવ જોવાનો અધિકાર નથી, બસ સંબંધ જોઈએ. એકબીજાના દર્શને આનંદ થાય એવી ભૂમિકામાં લઈ જવા માટે આપ ધરતી પર પધાર્યા છો.
+</p><p>
+આજના દિવસે એટલી જ પ્રાર્થના છે કે, "સ્વામીજી, અમારે કાંઈ જોઈતું નથી. આપને (અમારી પાસે) જે કરાવવું છે એટલું જ કરવું છે. એકબીજાના દર્શને આનંદ કરવો છે, બસ." તો આપ આજના દિવસે કરુણા વરસાવો.
+</p><p>
+એકબીજાને જોઈને હૈયા... હમણાં એક વક્તાએ વાત કરી હતી: "ચાર મિલે ને બત્રીસ ખિલે" 
+</p><p>
+(ચાર મિલે ને બત્રીસ ખિલે, ચોસઠ ચમકે અંગ; <br/>
+હરિજન સે હરિજન મિલે, તો હરખે ચોગણું અંગ.)
+</p><p>
+બે જણની ચાર આંખો ભેગી થાય અને હૈયામાં આનંદનું મોજું ઉછળે, એ ભૂમિકા પર જવું છે. કૃપા કરજો, આશિષ વરસાવજો. એ જ આજના શુભ દિવસે આપના શ્રીચરણોમાં અંતરની પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય: પ્રાર્થના
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

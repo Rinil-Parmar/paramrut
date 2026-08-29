@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૨૦-૧-૨૦૨૨, પુજા બાદ ગોષ્ઠી, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+<p>
+સંત ૧ : સતુ પપ્પાએ સ્વામીશ્રી સાથે ઘણી ગોષ્ઠી કરી, જેમાં કોઈ પ્રશ્ન અપિલિંગ હોય તે કહો. 
+</p><p>
+ પ્રબોધસ્વામીજી : યાદ કરાવો તો શેર કરીએ. 
+</p><p>
+ સંત ૨ : સ્વામીશ્રી એવું કહે છે કે ઘણું બધું સારું છે પણ હજુ સાત્વિકતાની ગાંઠો રહી ગઈ છે. તો એ સાત્વિકતાની ગાંઠો કેવી રીતે ટળે ? 
+</p><p>
+ પ્રબોધસ્વામીજી : સાત્વિકતાની ગાંઠો... તમને અંદર કોઈ જવાબ વિચાર આવ્યો હશે ને...? તમે કહો પછી... કોઈ પણ માણસ પ્રશ્ન પૂછે એની પાસે જવાબ હોય. તમે જવાબ આપો પછી મહારાજ જે પ્રેરણા કરશે તે કહીશું.
+</p><p> 
+ સંત ૨ : સ્વામીજી એક વખત એવું બોલેલા કે સાત્વિકતા ઘટાડવા માટે મ.૩૭ એક જ ઉપાય છે. 
+</p><p>
+ પ્રબોધસ્વામીજી : અધિકાર. 
+</p><p>
+ સંત ૨ : ભગવદી તમારા પર અધિકાર કરે. એવી વાત કરી કે ગુણાતીતાનંદસ્વામીને બ્રહ્માનંદસ્વામી જોડે ના ફાવે કારણ કે એ વઢે ટોકે નહીં પણ કૃપાનંદસ્વામી જોડે ફાવે. કારણ કે એ વઢતા, ટોકતા એટલે એમની જોડે ફાવે. રજોગુણ, તમોગુણ તો અમને દેખાય છે. પણ સત્વગુણ દેખાતો નથી. એ દેખાય અને ટળે એના માટેનો પ્રશ્ન છે.
+</p><p> 
+ પ્રબોધસ્વામીજી : મને તમે જે વાત કરી તેના પરથી જે વિચાર આવ્યો તે શેર કરું છું. 
+</p><p>
+સત્વગુણ છે તે જાણપણું છે. ‘હું સાચો, હું સારો, હું સમજું, હું બુદ્ધિશાળી.’ એ ચાર વસ્તુનું જાણપણું એનું નામ સત્વગુણ.. એ તો ‘હું’ નીકળીને ‘તું’ થાય ને તો જ ટળે. જ્યાં ‘હું’ છે ત્યાં સત્વગુણ રહેવાનો જ. ‘હું ને મારું’, અહંતા ને મમતા એ જ સત્વગુણ છે. એને કાઢવાનો આ પ્રોસેસ છે. ‘હું કાંઈ નથી.’ હું અને તમે ભૂંસી નાંખવાના છે. ‘તમને જે આપ્યું છે એ મેં (સ્વામીશ્રીએ) આપ્યું છે ?’ આપનાર કોણ ? બુદ્ધિ આપી કોણે ? બુદ્ધિ, શક્તિ, સમજણના પ્રદાતા એક જ છે. ત્યાંથી જ આવી છે. એ જ્યાં સુધી ના મનાય ત્યાં સુધી સત્વગુણ રહેવાનો. કર્તાહર્તાપણું સ્વામીશ્રીનું જ છે. ૧૦૦% એવું માનીને જીવીએ, પ્રયત્ન કરીએ, હાં હાં ગડથલ કરીએ તો સત્વગુણ જાય. 
+</p><p>
+આપણે ભજન ગાયું ને ! ‘ઓ અનુપમ અમ આધાર..., બોલ્યા શ્રીહરિ રે...’  ઓ અનુપમ અમ...એ આખું ભજન કર્તાહર્તા પરનું છે. વ્યક્તિ સાથે પ્રસંગ બને એ વ્યક્તિ નથી એ તો બંસરી છે. એમાં રહેલો સુર એ તારો છે. એ માનવા માટેની તમારી ગરજ કે તત્પરતા છે. એ કર્તાહર્તા જ્યાં સુધી ન મનાય ત્યાં સુધી તમારી સાત્વિકતાનું પોષણ થયા કરવાનું. એ આ સ્વામીશ્રીની વાત ઉપરથી લાગે. જ્યાં સુધી હું કર્તા છું. પોતાની જાતને કર્તા માનીએ, એટલે સાત્વિકતાનું પોષણ જ છે.
+</p><p> 
+ જે કાંઈ આવ્યું કે જે આવશે કે જે આવી રહ્યું છે... એ બધાનો સોર્સ એક જ છે, બીજો કોઈ સોર્સ જ નથી. એ જાણપણાથી જીવવું જ પડે. તો સાત્વિકતા જાય.
+</p><p>
+મારા માટે પ્રાર્થના કરજો કે જાણીએ છીએ પણ જીવવા માટે જે ખટકો જોઈએ એ ખટકા માટે ભજન અનિવાર્ય છે. માંગવું પડે. બધાને ખબર છે. સ્વામીશ્રીએ સૂઝ બધાને આપી જ છે. પણ કોક પોતાની પેટર્ન, કાં રીત એ આપણે છોડી શકતા નથી. ત્યાં ભજન કરીને માંગવું પડે. એ છોડાવ્યા વગર રહેવાના નથી. છોડાવ્યા વગર રહેવાના નહીં. છોડવાનું તો છે જ, આજે નહિ તો કાલે... છોડવું તો પડશે જ. એટલે ધીરે ધીરે ધીરે વિચારને પામી ભજન કરીને બળ માંગવાનું બસ. વિચાર તો આપે છે. 
+</p><p>
+ સંત ૩ : સાધક તરીકે સારું થાય છે કે નરસું થાય છે, બાહ્ય જગતમાં કે અંતર જગતમાં એના પ્રેરક નિયામક સ્વામીશ્રી છે એવું માનીને સ્વામીશ્રીને કર્તાહર્તા માનીને, એ સંજોગોમાં ધીરજ રાખીને ભજનમાં એની સ્મૃતિમાં આપણી જાતને જોતરીએ એવું ને ?
+</p><p>
+ પ્રબોધસ્વામીજી : એ જ કરવાનુ છે ને બીજું શું કરવાનું ? 
+</p><p>
+ સંત ૩ : અમે નાના નાના સાધુ થયા ત્યારે સ્વામીશ્રી કહે, જીવનમાં પ્રસંગ બને ત્યારે તમે પાંચ શબ્દો તમે વાગોળજો, મારા જીવનમાં જે પણ કંઈ બને છે એ સારું બને છે, એ હિતકારી બને છે, એ મંગલકારી બને છે, સરસ બને છે અને પ્રગતિકારક બને છે. 
+</p><p>
+ પ્રબોધસ્વામીજી : પહેલું ગોખવું તો પડે ને.. સરસ થાય છે એ કોણ કરે છે ? વિકાસને અર્થે છે. એ જે મનાવું એ કર્તાહર્તાપણું જ છે. એ વગર વિકાસ ન થાય. 
+</p><p>
+ સંત ૩ : પ્રાર્થના એ છે કે આ પાંચ શબ્દો  અમે નાના નાના સાધુ હતા ત્યારે સ્વામીશ્રીએ કહ્યા હતા. પણ જે કક્ષાએ પકડાવવું જોઈએ અને એના માટે ગરજ રાખીને ભજન થવું જોઈએ, પ્રાર્થના થવી જોઈએ એ ઘણું બધું ગાફલાઈમાં જતું રહ્યું છે. 
+</p><p>
+ પ્રબોધસ્વામીજી : જાગ્રતતા રાખવી પડે. બીજી કોઈ સાધના કરવાની નથી. સ્વામીશ્રી કહે, અમે ગોખતા... ‘તું દિવ્ય અને તારા સૌ દિવ્ય.’ બોલીએ તો મનબુદ્ધિની પ્લેટ પર એનો પ્રભાવ તો પડે જ. સ્વામીજી બોલતા હતા. એમ આપણે શીખવાનું છે. આપણે શબ્દસૃષ્ટિનો દેહ બાંધવા આવ્યા છીએ. શબ્દસૃષ્ટિનો દેહ બંધાય પછી બ્રહ્મસૃષ્ટિનો બંધાય  અક્ષરબ્રહ્મનો દેહ બંધાય. 
+ </p><p>
+
+વિષય: સાત્વિકતા
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

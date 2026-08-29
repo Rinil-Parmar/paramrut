@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+૧૪-૦૧-૨૦૨૨, મકર સંક્રાંતિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+<p> 
+મકર સંક્રાંતિ... સ્મૃતિ કરવાનો દિવસ.  
+</p><p>
+પરમ પૂજ્ય સ્વામીશ્રી સાથે ઘણી જગ્યાએ ઉત્તરાયણની ઝોળી માંગવા માટેની તક મળી છે. બે વખત વડોદરા ઝોળી માંગી છે. ઓડમાં પણ ઝોળી માંગી છે. સુરતમાં પણ સ્વામીજી સાથે ઝોળી માંગી છે. સૌરાષ્ટ્રમાં રાજકોટમાં સ્વામીજી સાથે ઝોળી માંગેલી છે. મુંબઈમાં પણ ઝોળી માંગેલી છે.   
+</p><p>
+ઉત્તરાયણ એટલે ઉધ્વગમનનું પર્વ. સાંજે સંધ્યા આરતી વખતે ઠાકોરજીના દર્શન કરવા ગયો હતો. આરતી પછી દરવાજા બંધ થતાં હતા. એક સંત અને સુહૃદસ્વામીએ ગર્ભગૃહમાં હસતાં હસતાં વાત કરી કે આજે ધનુર્માસનો છેલ્લો દિવસ. ઠાકોરજીએ એક મહિનો અભ્યાસ કર્યો. 
+</p><p>
+સુહૃદસ્વામીએ પૂછ્યું કે આજે અમારે શું લેવાનું ? ત્યાં પતંગ લગાવેલી હતી.
+</p><p>
+મે કહ્યું કે દોરી એમના હાથમાં આપી દેવાની. આપણે પતંગ બનવાનું. જેમ ચગાવવી હોય તેમ ચગાવે. સ્થિર રાખવી હોય તો સ્થિર રાખે અને ડોલાવવી હોય તો ડોલાવે. પ્રાર્થના એટલી જ છે કે દોરી એમના હાથમાં આપીએ બસ. સુકાન એ લઈ લે એટલી જ પ્રાર્થના છે.  
+</p><p>
+ઊર્ધ્વગમનનો દિવસ એટલે આગળ વધવાનો દિવસ. અધોગતિ ને ઊર્ધ્વગતિ બે ગતિ છે. સ્વામીજી કહે કે વ્યક્તિ કાં ઉપર જાય કાં નીચે જાય. બે માર્ગ છે. ચઢે કાં પડે. 
+</p><p>
+ચઢવાનો માર્ગ કયો ? નિરંતર મહિમાના વિચારમાં રહીએ એ ચઢવાનો માર્ગ. સંબંધ વધારવા માટેનો માર્ગ છે. 
+</p><p>
+પડવાનો માર્ગ કયો ? અભાવ-અવગુણ-ભાવફેરમાં પડીએ એ પડવાનો માર્ગ છે. 
+</p><p>
+નિરંતર ઊર્ધ્વગતિને પામવું છે. કોઈ નેગેટીવિટીનો વિચાર કર્યા વગર કેવળ મહિમાનાં વિચારથી આગળ ચાલવું છે. 
+</p><p>
+અમે ભેગા થઈને સાંજની સભા પહેલા રાત્રે જમ્યા પછી સ્વામીની વાતો વાંચીએ છીએ. અડધો કલાક વાતો ભેગા થઈને વાંચીએ. દરેક પોતાનો વિચાર શેર કરે. એટલે મજા આવે. અડધો કલાક વાતો વાંચીએ. આઠ થી સડા આઠ. 
+</p><p>
+આજે એમાં એક વાત આવી. કોઈ સંતે ગુણાતીતાનંદસ્વામીને પૂછ્યું કે મ.૧૩ પ્રમાણેની સ્થિતિ થાય તો પ્રથમ કહ્યા એ સાધન શીખવા પડે કે નહીં ? એ વાત આવી. પછી ગુણાતીતાનંદસ્વામીએ જવાબ આપ્યો કે પર્વતભાઈ જેવી સમજણ થાય તો તેમાં બધા સાધન આવી જાય.  
+</p><p>
+[પર્વતભાઈની સમજણ કેવી હતી ? 
+</p><p>
+સ્વામીજી બાપા સાથે હતા ત્યારે એકવખત યોગીબાપા પંચતીર્થીએ ગયેલા. અગતરાઈ બાપા સાથે ગયા. પ્રસાદી સ્થાનોએ બાપા કો’ક જગ્યાએ બે દંડવત કરે કો’ક જગ્યાએ એક દંડવત કરે. પર્વતભાઇને ઘરે બાપાએ પાંચ દંડવત કરેલા. સ્વામીજીએ એ યાદ રાખેલું. 
+</p><p>
+પછી ખેતરમાં, જ્યાં મહારાજે ચણાનો ઓળો પાળીને બધા પરમહંસોને જમાડેલો એ જગ્યાએ સ્મૃતિ કરવા ગયા ત્યારે સ્વામીજીએ યોગીબાપાને પૂછ્યું, 'બધી જગ્યાએ બાપા એક દંડવત કે બે દંડવત કરો કે અહીં આપે પાંચ દંડવત્‌ કેમ કર્યા ?' પછી મનમાં પ્રાર્થના કરી કે અમને જણાવવાની  જરૂર હોય તો જનાવજો. કેવું દાસત્વ સ્વામીજીનું !  બાપાએ હસતાં હસતાં કહ્યું કે બધા યુવકોને બોલાવો.  સ્વામીજી યુવકોને બોલાવી લાવ્યા.
+</p><p> 
+પછી ધીમે રહીને બાપાએ કહ્યું કે..  પર્વતભાઈ ભક્તિનું સ્વરૂપ હતા. ભક્તોને જુવે તો ઓગળી જતાં હતા. એના અહમનો વિસ્ફોટ થઈ ગયો હતો. જેમ ભક્તિ ને સેવા વધતાં જાય તેમ તેમ અહમ ઓછો થતો જાય. 
+</p><p>
+બીજી વાત કરી બાપાએ.. મને એમનો સ્વધર્મ ખૂબ ગમતો હતો. પર્વતભાઈનો એક જ -  સ્વધર્મ તારા સિવાય કોઈનો નહીં. પોતાના ઘરે પોતાના સગાની દીકરી ત્રણ મહિનાથી રહે તો પણ આંખ કાન જવાને અસમર્થ. હું કેવળ તારો જ છુ. તારા સિવાય કોઈ ચીજ વ્હાલી નહીં. એ અધ્યાત્મિક સ્વધર્મ હતો. આવો જેનો અધ્યાત્મિક સ્વધર્મ હોય તેનો સ્થૂળ ધર્મ ઓટોમેટિક પળાય. 
+</p><p>
+ત્રીજી વાત કરી બાપાએ... અલ્પ સંબંધવાળામા નેચરલ ખોવાઈ જતાં હતા. 
+</p><p>
+બાપાએ પર્વતભાઈના ખેતરમાંથી ચણા ચોરવા ચોર આવેલો એ પ્રસંગ કહ્યો ત્યારે એક યુવકે બાપાને પ્રશ્ન પૂછ્યો કે પર્વતભાઈ ચોર સાથે સુહૃદભાવ કેવી રીતે રાખી શક્યા ?  ત્યારે બાપાએ ધીમે રહીને કહ્યું કે... 'પર્વતભાઈને પોતાનો મહિમા હતો કે મને પુરુષોત્તમનારાયણની પ્રાપ્તિ થઈ છે. પર્વતભાઈને સહેજે એવું હતું કે ભગવાનના સંબંધે હું મોટો ને મારા સંબંધે એ (ચોર) મોટો.'
+</p><p> 
+સ્વામીજીએ આ ત્રણ વાત કરી હતી. એટલે યોગીબાપાએ પાંચ દંડવત કરેલા.]   
+</p><p>
+આપણે ઊર્ધ્વગતિને પામવું છે. પર્વતભાઇ ઊર્ધ્વગતિને પામેલા પુરુષ હતા. પર્વતભાઈના જીવનમાં ત્રણ વિશિષ્ટ ગુણ હતા. (૧) એમને ભગવાન સિવાય કોઈ જગ્યાએ પ્રીતિ નહોતી. (૨) એમને ભક્તોનો દિલથી મહિમા હતો. (૩) સ્વધર્મે સાઉન્ડ હતા. એ ઊર્ધ્વગતિને પામવાના ગુણ છે. એ ગુણ પણ એમના (સ્વામીજી) થકી જ આપણને આવવાના છે.
+</p><p> 
+તો આજે ઉત્તરાયણનો શુભ દિવસ દિવસ છે. આજે માંગવાનો દિવસ છે.  ઝોળીમાં આપવાનો દિવસ છે. આપણાં સ્વભાવ-પ્રકૃતિ છે, એને ઝોળીમાં મૂકી ને મહિમાવાળું જીવન બને એટલી પ્રાર્થના સાથે માંગવાનો દિવસ છે. આજના શુભ દિવસે ગુરુહરિ સ્વામીજી ને વડીલોના ચરણોમાં પ્રાર્થના છે.. આપ જે આપવા ધરતી પર આપવા આવ્યા છો. એ મહિમામાં અમે સ્થિર થઈએ. ભક્તોના દાસના દાસ થઈને જીવી શકીએ એવો બુદ્ધિયોગ આજના શુભ દિવસે પ્રદાન કરો એ જ પ્રાર્થના...  
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય
+ </p><p>
+વિષય: પર્વતભાઈ જેવી સમજણ
+</p><p>
+પ્રસંગ: ૧) બાપાએ કરેલ પર્વતભાઈનું વર્ણન ૨) સુહૃદ સ્વામીની પ્રાર્થના
+</p><p>
+સ્વામીની વાત: પ્રકરણ ૧૩, વાત ૭૧
+</p><p>
+બ્રહ્મરત્ન: ૧) જેમ ભક્તિ ને સેવા વધતાં જાય તેમ તેમ અહમ ઓછો થતો જાય.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

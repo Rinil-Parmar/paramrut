@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨૬ મે, ૨૦૨૫ સવારે પૂજા બાદ, આત્મીય વિદ્યાધામ, બાકરોલ.
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+
+	<p>
+(વિદેશ ધર્મયાત્રા પ્રસ્થાન નિમિત્તે ગોષ્ઠિ)
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય. હરિપ્રસાદસ્વામી મહારાજની જય. આત્મીય સમાજની જય જય જય. દાસના દાસ થવાની જય જય જય.
+</p><p>
+શ્રીજીમહારાજે માઈક આપ્યું. અમાયિક થવા માટે માઈક આપ્યું છે. 
+</p><p>
+અમાયિક એટલે માથે પડીને જીવવું તે. ‘તારે લઈને હું. તું રાજી થા.’ એ સ્વામીજીની પરાવાણીના જે બ્રહ્મસૂત્રો છે; એમાં ડૂબેલા રહીએ બસ. અમાયિક થવું છે. (એના માટે) ‘કરનાર તું છું, કરાવનાર તું છું’ એના જાણપણે જીવવું છે.
+</p><p>
+બાપા વખતે સ્વામીજી એવા જાણપણે જીવતા હતા. અત્યારે તો સંતો-સેવકો સરસ ગોષ્ઠિ કરે છે. એ જમાનામાં એવું આધ્યાત્મિક ભાથું પીરસનાર કોઈ નહોતું. માનિયો-ધાનિયો સત્સંગ હતો. સાચવવા પડે એવી પરિસ્થિતિ હતી છતાંય સ્વામીજી એ વખતે આવી સમજણથી જીવતા હતા.
+</p><p>
+અત્યારે તો આપણા માટે સાકર પાથરેલી છે. જ્યાં હાથ પડે ત્યાં સાકર જ હાથમાં આવે; કહેતાં કે એવા સરસ સમાજની વચ્ચે આપણને મૂક્યા છે. જ્યાં નિરંતર પોઝિટિવ એન્વાયરમેન્ટ મળતું રહે એટલે સાકર પાથરી એમ કહું છું.
+</p><p>
+દરેકમાંથી કંઈક, કંઈક, કંઈક, કંઈક સરસ લેવાનો પ્રયત્ન કરવો છે તો આપણે ભરપૂર થઈ જઈએ.
+</p><p>
+સ્વામીજી એક દ્રષ્ટાંત આપતા હતા:
+</p><p>
+શ્રીજીમહારાજે એકવાર બધા પરમહંસોને પીરસી દીધું. રસોઈ પીરસાઈ ગઈ; પાછળ કઈ વધેલું નહિ. બે પરમહંસો પાછળથી આવ્યા. રસોઈ તો વધી નહોતી એટલે મહારાજે કહ્યું, ‘તમે બંને તમારું પાત્ર લઈ પંગતમાં ફરો.’
+</p><p>
+પંગતમાં બેઠેલા બધા સંતો-પરમહંસોને મહારાજે કહ્યું, ‘તમારામાંથી થોડું થોડું થોડું બધા જ એમના પત્તરમાં આપો. થોડું આપવામાં ઓછું થવાનું નથી. થોડું થોડું લેવામાં ભરપૂર થઈ જવાય.’ ભગવાન સ્વામિનારાયણે આ દ્રષ્ટાંતથી આ શીખ આપણને આપી. 
+</p><p>
+આપણે તો આવા સરસ જીવનમુક્તોની વચ્ચે આપણે રહ્યા છીએ; જે નિરંતર અંતર્‌દૃષ્ટિ કરે છે. આ ત્રણ દિવસની કથાવાર્તા આપણે સાંભળીએ કે આપણી સાધક શિબિરની કથાવાર્તાનું મનન-ચિંતન કરીએ કે વૈશાખ સુદ દશમની કથાવાર્તાનું મનન-ચિંતન કરીએ. તો દરેક સાધકો પ્રાર્થના સ્વરૂપે એકરાર કરીને પોતાનો સંબંધ પ્રભુ તરફ કેમ આગળ વધે? કેમ દૃઢ થાય?’ એજ વાત બધાએ કરી છે. 
+</p><p>
+આપણે પણ એ જ કરવાનું છે કે આપણી યાત્રા પ્રભુ તરફ ચલાવવાની છે. તો એ વક્તાઓએ પોતાનો સ્વાધ્યાય શેર કરીને આપણને સુગમ માર્ગ આપી દીધો છે. તો આ અઠવાડિયાની ગોષ્ઠિ છે, એના આકારે થવું છે.
+</p><p> 
+અમદાવાદમાં બ્રહ્મવિહારી સ્વામીએ ‘જાગ્રતતા’ પર સાત દિવસનું પારાયણ કર્યું. બહુ અદ્‌ભુત ગોષ્ઠિ છે. એ ગોષ્ઠિને પણ આપણે વાગોળવી છે. શાથી? નિરંતર જાગ્રત રહેવાનું છે. એટલે મહારાજે જ બ્રહ્મવિહારીસ્વામીમાં રહીને આપણને સરસ ભાથું પીરસ્યું છે. 
+</p><p>
+અહીં પણ હજુ ભક્તિસ્વામી રોકાવાના છે. સર્વમંગલસ્વામી રોકાવાના છે. વારાફરતી બંને સંતો આપણને કથાવાર્તાનો લાભ આપશે. એમનો વ્યવસ્થિત લાભ લઈએ. 
+</p><p>
+નવરાશના સમયે (નિદિધ્યાસ પુસ્તિકાની) વાતો ગોખવાની. જે નિદિધ્યાસ બુકલેટ છે એ પૂરી ૧૦૨ વાતો છે. કદાચ એ બધી જ વાંચીશું તોય મોંઢે થઈ જશે. કદાચ યાદ ના રહેતી હોય તો પણ વાંચવાની. એને આપણું ધ્યેય બનાવવું છે. 
+</p><p>
+સેવા, ભજન ને કથાવાર્તા એ ત્રણમાં ઓટ નહિ આવવા દેવી. બે ટાઈમ ભજન થાય છે. સવારે ૧૦:૦૦ વાગ્યે અને બપોરે ૩:૩૦ વાગ્યે; બંને ટાઈમ આપણે નિયમિત હાજર રહેવું છે. બે ટાઈમ આરતી થાય છે: સવારે સવા ૭:૧૫ વાગ્યે અને સાંજે ૭:૦૦ વાગ્યે. બંને ટાઈમની આરતીમાં પણ હાજર રહેવું છે. આ બધી ભક્તિ માર્ગની ક્રિયાઓ છે. 
+</p><p>
+ભગવાન સ્વામિનારાયણે કહ્યું છે: ‘ભક્તિ વગર વિદ્વાન હોય તો પણ અધોગતિને પામે.’ ગમેતેવો જ્ઞાની હોય પણ ભક્તિ ના હોય તો જ્ઞાન કામ લાગતું નથી. આપણે આપણા જીવનમાં ભક્તિ પ્રગટાવી છે, દાસત્વ પ્રગટાવવું છે. 
+</p><p>
+પહેલી પ્રભુ તરફની ભક્તિ પ્રગટશે તો ધીરે ધીરે ભક્તો તરફની ભક્તિ મિન્સ પરાભક્તિ પ્રગટે. ભક્તિ અને પરાભક્તિ આપણા જીવનમાં દૃઢ થઈ હશે તો પછી અનવૃત્તિ ભક્તિનો આપણને ખ્યાલ આવશે.
+</p><p>
+સ્વામીજી કહે કે અમે યોગીજીમહારાજનાં અણસારે સમજી જતા હતા. એ અનુવૃત્તિ ભક્તિ. સ્વામીજી કહે કે કોઈ દિવસ યોગીજીમહારાજે અમને સૂચન કરવું નથી પડ્યું. અમે તક આપી જ નથી. તો એ પુરુષ તરફ આપણે નજર રાખવી છે.
+</p><p>
+આપણે પણ ભક્તિમાંથી પરાભક્તિમાં અને પરાભક્તિમાંથી અનુવૃત્તિની ભક્તિમાં જવું છે. તો એ માટે આપણામાં જાગ્રતતા પ્રગટાવે અને ગુણગ્રાહી દૃષ્ટિ પ્રગટાવે એ માટે ગુરુહરિ આપણને સહુનેય બળ, બુદ્ધિ ને શક્તિ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય: ભક્તિ, કથાવાર્તા, નિદિધ્યાસ
+</p><p>
+પ્રસંગ: ૧) બે પરમહંસનો પ્રસંગ
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

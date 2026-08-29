@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૨૭ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+એકવાર સ્વામીજી સોખડા ગામમાં પધરામણીએ ગયા. બસસ્ટેન્ડથી વાસણા બાજુનો રસ્તો તળાવની બાજુમાં એક તમાકુની ખરી (ગોડાઉન) હતું. નામ ખબર નહીં કોની ખરી હતી ? સંધ્યાકાળનો સમય હતો. સાદી ફ્રેમવાળા ઠાકોરજી સાથે હતા. એ વખતે સ્ટીલની ફ્રેમવાળા ઠાકોરજી રાખતા હતા. 
+</p><p>
+ખરીમાં એક પાટ હતી અને એની ઉપર ગાદલું પાથરેલું હતું. મેં પાટ ઉપર ઠાકોરજી મૂક્યા. સ્વામીજી ખરીમાં બધે ફરવા માટે નીકળ્યા. ઘનશ્યામભાઈ સાથે સારથિ તરીકે આવ્યા હતા. સ્વામીજી બધે ખરીમાં ફર્યા પછી પાટ પાસે આવ્યા. 
+</p><p>
+સ્વામીજી ભક્તો સાથે વાતો કરતા હતા. લૌકિક રીતે પાટ ઉપર ઠાકોરજી પધરાવ્યા છે એ ખ્યાલ નહોતો. સ્વામીજી બેસવા ગયા અને ઠાકોરજીનાં સ્ટેન્ડને હાથ લાગ્યો. ફ્રેમવાળા ઠાકોરજીનું પાછળ લાકડાનું સ્ટેન્ડ આવે તે હાથ લાગ્યો ને તે ઠાકોરજી પાટ ઉપરથી નીચે પડી ગયા.
+</p><p>
+આપણે હોઈએ અને આવી રીતે ઠાકોરજી પડી જાય તો આપણે શું કરીએ? આપણે તરત ઠાકોરજી નીચે લઈ લઈએ, પછી લૂછીને પાછા પધરાવી દઈએ. મેં ઠાકોરજીને નીચેથી લીધાને હજુ ગાતરિયાથી લૂછીને પાટ પર ફરી મૂકતો હતો. એટલામાં તો સ્વામીજીએ તરત જ ઠાકોરજીની માફી માંગતા હોય એ રીતે પાંચ દંડવત કર્યા.
+</p><p>
+તમાકુની ખરી તો કેવી હોય ? ચોખ્ખી હોય ? તમાકુનો દળ તો હોય જ. શું હોય? તમાકુનો દળ. ગમે એટલે ચોખ્ખી કરે ને તોય એ તમાકુનો દળ તો ખરીમાં હોય જ. એવી જગ્યાએ પણ સ્વામીજીએ ઠાકોરજીને દંડવત કર્યા.
+</p><p> 
+વિચાર કરીએ ત્યારે ખ્યાલ આવે કે સ્વામીજીની ઠાકોરજી પ્રત્યેની કેવી ભક્તિ છે ! સ્વામીજી તો નિરંતર સાંગોપાંગ ઠાકોરજીને રાખીને જીવે છે છતાંય એક સેકન્ડ પૂરતું પણ ઠાકોરજી પ્રત્યેની ભક્તિનું ખંડન થવા દેતા નથી. 
+</p><p>
+એક સેકન્ડ ઠાકોરજી પ્રત્યેની ભક્તિનું ખંડન ન થવા દે એ એમનું  દાસત્વ, એ ‘તારે લઈને હું.’ હું એવું માનીને જીવ્યા છે.
+</p><p>
+આપણે તો શું વિચારીએ ? સ્ટીલની ફ્રેમ જ છે ને ! એમાં શું ? ...પણ સ્વામીજી એને ફ્રેમ નહોતા માનતા; સાક્ષાત્ ઠાકોરજી માનતા હતા. 
+</p><p>
+મૂર્તિને વિષે પ્રત્યક્ષનો ભાવ રાખવો એ બહુ અઘરો !  સ્વામીની વાતોમાં પણ લખ્યું છે ને વચનામૃતમાં પણ છે.મૂર્તિને વિષે સ્થૂળભાવ નહીં પરઠવાનો અને ભગવાનના ભક્તોને વિશે જાતિભાવ નહીં પરઠવાનો. ‘આ બ્રાહ્મણ છે, આ લુહાણો છે, આ વાણિયો છે, આ પટેલ છે.’ એ જે જાતિભાવ છે એ ભગવાનના ભક્તોને વિશે નહીં કલ્પવાનો. ભગવાનની મૂર્તિ છે એને વિશે સ્થૂળભાવ નહીં. એ રીતે ઠાકોરજીની મર્યાદા રાખવાની.
+</p><p>
+
+સ્વામીજી કેટલી બધી મર્યાદા રાખે. સ્વામીજી ક્યારેય ઠાકોરજીની મર્યાદા ચૂક્યા નથી. આપણે જેમાંથી મેળવવાનું છે, જ્યાંથી આશીર્વાદ લેવાના છે એની મર્યાદા ક્યારેય ચૂકાય નહીં, એની ભક્તિ ક્યારેય ચૂકાય નહીં.
+</p><p> 
+તો એવી ભક્તિ, એવી મર્યાદા, એવો પ્રત્યક્ષભાવ મૂર્તિને વિશે નિરંતર રહે. ભગવાનના ભક્તોને વિશે પણ જાતિનો ભાવ ન રહે. એવી જાગ્રતતા અમારા સૌના જીવનમાં આવે એ જ ગુરુહરિને પ્રાર્થના. 
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+
+વિષય : ભક્તિ 
+</p><p>
+પ્રસંગ :  ગુરુહરિ સ્વામીશ્રીની ઠાકોરજી પ્રત્યેની ભક્તિ 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૭-૦૨-૨૦૨૫, પીપળખેડ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+સહજાનંદ સ્વામી મહારાજની જય.  હરિપ્રસાદ સ્વામી મહારાજની જય. આત્મીય સમાજની જય જય જય. દાસના દાસ થવાની જય જય જય. 
+</p><p>
+એક વર્ષ પછી તમારા બધાના ફરી દર્શન થયા. સરસ સંકલ્પ કર્યો. ૩૫-૩૬ ભક્તો ભેગા થાય છે. ૨૩૬ ભક્તોએ સભામાં આવવાનો સંકલ્પ કર્યો. નિમિત્ત થઈને સેવા ભક્તિ કરતા રહેવું છે. પ્રદેશ ગરીબ છે. ભગવાન આગળ આર્થિક ગરીબી એ ગરીબી નથી. આર્થિક રીતે ગરીબ એ ગરીબ નથી. મન મોટું હોય એ ભગવાન આગળ શાહુકાર છે. મોટાપુરુષ દિલના ભૂખ્યા છે. 
+</p><p>
+કરોડો રૂપિયા હોય એમાંથી કદાચ લાખ રૂપિયા આપે, એ એના લેવલે કાંઈ નથી. તમારી પાસે કંઈ ના હોય પણ પતરવેલીના પાન આપો એ વિશેષ છે. ભગવાન ભક્તિના ભુખ્યા છે. ભક્તિમાં ઓટ નહીં આવવા દેવાની. ભક્તિમાં ઓટ નહીં આવવા દેવાની. 
+</p><p>
+મહારાજ મંદિર બનાવતા હતા. એક બ્રાહ્મણ, દૂબળી ભટ્ટ નામ. એણે સંકલ્પ કર્યો, પ્રભુ મંદિર બનાવે છે તો હું પણ કઈક આપું. પોતાના ઘરમાં શું હોય? ફાટેલી તૂટેલી પાઘ. કેવી? ફાટેલી પાઘ. કપડાય મેલા ઘેલા હતા. ધીરે ધીરે ધીરે ભગવાન પાસે ચાલીને આવ્યા. પહેલા પાઘ ઉતારી. પાઘની અંદર એક છેડે કંઈક બાંધેલું હતું. ખોલતા હતા સાત ગાંઠ. એક ગાંઠ ખોલી, બીજું ખોલી, ત્રીજી ખોલી... પછી આઠ ગાંઠ ખોલ્યા પછી એક દોકડો નીકળ્યો કેટલો? એક દોકડો હતો. ભગવાનના ચરણે મૂક્યો કે પ્રભુ તમે મંદિર બનાવો છો. એક દોકડાએ શું થાય? દોકડો એટલે એક પૈસો ગણોને. એક પૈસામાં શું થાય? પણ ભગવાન રાજી થયા અને ભેટ્યા. એને પોતાનું સર્વસ્વ આપ્યું. 
+</p><p>
+[પ્રસંગ: સ્વામીજી સામેથી નાકની વાળીની સેવા લે છે.]
+</p><p>
+હમણાં એક પ્રસંગ કહ્યો હતો. સ્વામીજીની સુવર્ણતુલા હતી ૯૪માં. કઈ સાલમાં? આત્મીય મહોત્સવ આપણે ઉજવ્યો. સ્વામીજી એક ગામમાં ગયા. સ્વામીજીએ એ ભક્તને સામેથી કહ્યું કે તારી ઘરવાળીને કે... નાકની વાળી હોય કેટલા તોલાની હોય? નાકની વાળીનું વજન કેટલા તોલા હોય? ગ્રામમાંય ન હોય, તોલા નહીં. અડધું ગ્રામેય ન હોય. સ્વામીજી કહે, તારી વાળીનો એક ટુકડો તું સુવર્ણતુલામાં આપ. વાળીનો એક ટુકડો તુલામાં મૂકે તો વજન ખબર પડે? ન મૂકે કે મૂકે કોઈ ફેર ન પડે. માખી બેસે તોય વજન વધારે થાય. કેટલું? માખી બેઠી હોય તો પણ વધારે થાય. મોટાપુરુષ દિલના ભૂખ્યા છે. લક્ષ્મીના ભૂખ્યા નથી. એ પાછા સામેથી માગ્યું. શું કહ્યું?  આજે મારે એનું પ્રારબ્ધ ટાળવું છે. 
+</p><p>
+બીજી બાજુ અમેરિકાથી એક ભગત ફોન કરે છે. પાંચ ફોન ઉપરા ઉપરી આવ્યા કે સ્વામીજીને પૂછો કે હું અમેરિકાથી આવું છું. આ તુલામાં મારે કેટલી સેવા કરવાની છે? પૂછો કે, કિલો સોનું લાવું, બે કિલો લાવું કે કેટલું લાવું? એ કિલોમાં કહે છે. શેમાં કે? કિલોમાં બટાકાની વાત નથી. સોનાની વાત છે. સ્વામી એને ટાઈમ નથી આપતા. સ્વામીજીએ એને ફોન કરીને આંકડો જ ખાલી બોલવાનો હતો, કિલો કે બે કીલો. સ્વામીજીએ એને ટાઈમ ન આપ્યો.  અને પેલા ભગતની પાસે આગ્રહ કરીને કરીને માંગ માંગ કરે. નાકની નાની વાળી છે. ને કહે, થોડો ટુકડો કાપીને મને આપ. એ કરુણાનિધિ પુરુષ છે. (પ્રસંગ પૂર્ણ) 
+</p><p>
+આપણે બધા નસીબદાર છીએ કે સ્વામીજીએ આપણને ગ્રહણ કર્યા, યોગમાં લીધા. સંતો છેક (આત્મીય વિદ્યા ધામ, બાકરોલથી) ત્યાંથી અહીં સુધી આપણને લાભ આપવા માટે આવ્યા. તો આવો સરસનો આપણને યોગ મળ્યો છે. સંતો સાથે દોસ્તી વધારવી છે. 
+</p><p>
+હું ગરીબ છું,  કોઈ સેવા કરી શકતો નથી. કોઈ ચિંતા નહીં, ખાલી સમૈયો ભરાય કે ન ભરાય? ફિઝિકલી સેવા થાય કે ન થાય? 
+</p><p>
+ત્રણ રીતે સેવા થાય - એક આર્થિક રીતે ધનની સેવા. બીજું દેહે કરીને સમૈયો હોય ને આપણે સેવામાં આવીએ એ દેહે કરીને સેવા છે. ખેડૂતોના દીકરા હોય એટલે પાવડો ચાલવાનું ફાવે, ખોદવાનું હોય તો ખોદવાનું ફાવે એ સેવા પણ મોટી છે. હં બીજું દેહ કરીને સેવા. ત્રીજું મને કરીને સેવા. કદાચ કોઈનું દેહબી સારું ન હોય, આર્થિક પરિસ્થિતિ બી સારી ન હોય પણ મનથી પણ સેવા થાય. જે સેવા કરતા હોય એના ગુણ લઈએ ને એ મનની સેવા છે. ધારો કે મારાથી ચલાતું નથી. સેવા કરવી છે પણ દેહ સાથ નથી આપતો. એ વખતે જે સેવા કરતા હોય એનો ગુણ લઈએ તો પણ મોટી સેવા છે તો આપણે બધાએ તનથી, મનથી અને ધનથી સર્વોપરી નિમિત્ત થવું છે. 
+</p><p>
+તો સ્વામીજીએ આપણને ગ્રહણ કર્યા છે. એને આપણે રાજી કરવા છે. બસ. એમના દિકરા થઈને જીવવું છે. તો સરસ આપણા સંતો દાખડો કરે છે. દર વર્ષે આપણને લાભ અપાવે છે. આપણે પણ દર વર્ષે સમૈયામાં અહીંથી જેટલા વધુ ભક્તો આવે એવું આયોજન કરવું છે. એમને પણ સમૈયાના દર્શનનું સુખ મળે. એ માટેનું મહારાજ ખૂબ ખૂબ બળ આપે એ જ પ્રાર્થના. 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય
+</p><p>
+વિષય: સ્વામીજી પ્રારબ્ધ ટાળવા સેવા લે છે.  
+</p><p>
+પ્રસંગ: (૧) સ્વામીજી સામેથી નાકની વાળીની સેવા લે છે. 
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

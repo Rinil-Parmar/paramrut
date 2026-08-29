@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨૬ સપ્ટેમ્બર, ૨૦૨૧, અંબરીષ હોલ, હરિધામ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+ભક્તોને ના કહેવડાવી ને અતિ વરસાદ હોવા છતાં ૩૫૦૦-૪૦૦૦ ની આસપાસ ભક્તો હરિધામ પધારેલા. સાંજે અંબરીષ હોલમાં સભા કરી. પ્રબોધસ્વામીજીએ ટૂકું પ્રવચન કર્યું. પ્રબોધસ્વામીજી ખુરશી આગળ ઊભા રહ્યા. ને સહુ ભક્તો લાઇનમાં શિષ્ટબદ્ધ હાથ જોડીને દર્શન કરતાં કરતાં બહાર ગયા. ને કેટલાક પ્રસાદ લઈને, કેટલાક પ્રસાદ લીધા વગર, પોતાના ગંતવ્ય સ્થાને ગયા.    
+</p><p>
+૦૭:૫૬ વાગ્યે પ્રબોધસ્વામીજીએ તીર્થસ્થાનનો મહિમા સમજાવતા વાત કરી કે.. 
+</p><p>
+ઘણા સમય પછી તમારા બધાના દર્શન થયા. જ્યારે પ્રાગટ્ય ઉત્સવની સભા ન હોય, એવું લાગે છે. 
+</p><p>
+પ્રસંગ : સ્વામીશ્રી યોગીજીમહારાજ સાથે છપૈયાની યાત્રાએ ગયા હતા. સ્વામીશ્રી પૂર્વાશ્રમમાં હતા ને બાપા સાથે સેવામાં હતા ત્યારની વાત છે. આપના જેવા કપડામાં હતા. અમારા જેવા નહીં, તમારા જેવા.
+</p><p>
+બાપા જ્યાં જ્યાં જાય ર્તીથમાં ત્યાં ર્તીથનો મહિમા ગાતા. અયોધ્યામાં સરીયું નદી છે. ત્યાં ભગવાન (આપણે નિલકંઠ વર્ણીના વિડિયોમાં જોયું હશે.) પાણીમાં કૂદકો મારે છે. યોગીજીમહારાજ એવું કહે છે કે સાત દિવસ સુધી પાણીમાં તણાયા હતા. ઉંમર કેટલી ? અગીયાર વર્ષની. ઘરેથી નીકળા ત્યારે ઉંમર કેટલી હતી ? અગીયાર વર્ષ. અને સાત દિવસ સુધી પાણીમાં તણાયા હતા. એ પ્રસંગની વાત કરીને યોગીજીમહારાજ એવું કહેતા હતા કે, ‘નદી કેટલી પ્રસાદીની કહેવાય !’
+</p><p>
+મહિમાની વાત કરતા યોગીજીમહારાજે કહ્યું ને ત્યાં ધૂન કરાવી, સંકલ્પ કર્યો. આવા યુગ પુરુષો પધારતા હોય, એ
+</p><p>
+- અનંત જીવના ઉદ્ધાર માટે પધારતા હોય. <br/>
+- ર્તીથને ર્તીથત્વ આપવા માટે પધારતા હોય.
+</p><p>
+એ જે સંકલ્પ કરે એ સાકાર થાય અને જીવ કલ્યાણને માર્ગે આગળ જાય. ત્યારે બાપાએ સંકલ્પ કર્યો કે કરો ધૂન, ‘આ નદીમાં જે જે જીવ હોય, એ બધાનું આત્યાંતીક કલ્યાણ.’ કલ્યાણ તો બધાનું એ કરવાના છે. એટલે એ બોલી શકે. કલ્યાણ દાતા પુરુષ હતા. એમને સંકલ્પ કર્યો કે આ નદીમાં જેટલા જેટલા જીવ જાય, એ નદીમાં ન્હાય ભૂલેચુકે, એ બધાનું આત્યાંતીક કલ્યાણ. ત્યાંથી છપૈયા ગયા.
+</p><p>
+છપૈયામાં દીકરાઓ પણ સાથે હતા. કોઈ દીકરાએ કહ્યું, ‘કાલે ખીચડી કાચી હતી.’ શું હતું ? આપણે પણ ખાઈએ ને દાણો કડક હોય તો સંકલ્પ સહજ ઊઠે કે આજે થોડી ઊતાવળમાં કાઢી લીધી છે. આપણે કાચી ન બોલીએ પણ વિવેકથી આપણે વાત કરીએ કે ખીચડીમાં ઊતાવળ થઈ ગઈ છે. અમારા જેવા હોય તો એવું કહે, ‘પાણી ઓછું પડ્યું છે.’  પણ સહજ કોમેન્ટ નીકળે. ત્યારે આ કોમેન્ટ દિકરાઓ તરફથી નીકળી કે, ‘ખીચડી કાચી હતી.’
+</p><p>
+સ્વામીશ્રી બાપાના એક એક વાક્ય ને શબ્દનો વિચાર કરી, સ્વાધ્યાય કરી ને પોતાના જીવન સાથે શુસંગત કરનારા પુરુષો હતા. ત્યારે બાપા પરાભાવમાં એક વાક્ય બોલ્યા, ‘કાચી ખીચડી જમે છે તો મહારાજને !’
+</p><p>
+આપણામાં જમણાર કોણ છે ? હરિપ્રસાદસ્વામી મહારાજ છે. જમણાર એ છે ને પચાવનાર પણ એ છે.
+</p><p>
+ત્યારે સ્વામીશ્રી બોલ્યા કે આ વાક્યનો સ્વધ્યાય અમે ત્રણ દિવસ કર્યો. એક જ વાક્યનો સ્વધ્યાય ત્રણ દિવસ કર્યો. આપણે ત્રણ કલાક ન કરી શકીએ. આવું વાક્ય સ્વામીશ્રીનું નીકળું હોય તો આપણે કહીએ ‘આ તો સાંભળેલું છે. આ તો ખ્યાલ છે.’ એવી રીતે કાઢી નાંખીએ. 
+</p><p>
+સ્વામીશ્રી આપણને શીખવાડે છે, મોટા પુરુષનું એક એક વાક્ય પરાભાવનું હોય એ પરાભાવનું વાક્ય તમારા અંતરને ઢંઢોરી નાંખે એવું હોય. એ પરાભાવના વાક્યને આકારે થવાનું તો એ મહિમા તમારા હૈયાને વિષે સ્થિર થાય. (પ્રસંગ પૂર્ણ)
+</p><p>
+સ્વામીશ્રીએ જ્યારે આપણા મંદિરના પાયા ખોડાતા હતા, શરૂઆત થઈ હતી ને જ્યારે ખાતમૂહર્ત થયુ ત્યારે સ્વામીશ્રી બોલેલા, ‘અહીં ઉપરથી પક્ષી પસાર થશે એનું પણ કલ્યાણ.’ 
+</p><p>
+જેવો મહિમા મહારાજના પ્રાગટ્યસ્થાન છપૈયાની ધરતીનો,  જેવો મહિમા ભાદરા ગુણાતીતાનંદસ્વામીના પ્રાગટ્ય સ્થાનનો, જેવો મહિમા મહેળાવ શાસ્ત્રીજીમહારાજના પ્રાગટ્ય સ્થાનનો, જેવો મહિમા ધારી યોગીજીમહારાજના જન્મ સ્થાનનો, એવો મહિમા, એનાથી વિશેષ મહિમા  આસોજની ધરતીનો છે. 
+</p><p>
+જેમ આપણે ઘરે લગનની કંકોત્રી હોય તો જોઈએ કે સગાસંબંધીને ત્યાં મોકલવાની રહી તો નથી ગઈને ! વિચાર કરીએ ને ! એમ આ સેવામાં આપણા સંબંધી જ કોઈ હોય એ પણ રહી ન જાય, તે માટે આપણે બધાએ એવા દાખડો કરવો છે. 
+</p><p>
+સહજાનંદસ્વામીમહારાજની જય.
+</p><p>
+વિષય : મહિમા
+</p><p>
+પ્રસંગ :  ૧) બાપા સાથે સ્વામીશ્રીની છપૈયાની યાત્રાની વાત.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

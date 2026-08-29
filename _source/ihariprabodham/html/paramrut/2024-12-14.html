@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૪-૧૨-૨૦૨૪, શનિવાર, માગશર સુદ ચૌદશ, આત્મીય વિદ્યાધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		વહેલી સવારે યોગિનિદ્રાનો ત્યાગ કરી, નિત્યવિધિ પૂર્ણ કરી, પૂજા પૂર્ણ કરી અને શણગાર આરતીમાં પધાર્યા. 
+		</p><p>
+		પ્રથમ ગુરુવર્ય શાસ્ત્રીજીમહારાજ અને ગુરુવર્ય યોગીજીમહારાજ સન્મુખ બેસી દર્શન કરતાં કરતાં આરતીનું ગાન કર્યું. ત્યાર બાદ દરેક શિખરે દંડવત્‌ કર્યા. અંતે ગુરુહરિ હરિપ્રસાદસ્વામીશ્રીને દંડવત્‌ અર્પણ કરી નજીક જઇ ખૂબ ભાવથી દર્શન કર્યા અને જય બોલી આરતી પૂર્ણ કરી.  
+		</p><p>
+		ત્યાર બાદ લીમડાની વાટે વાટે બે  પ્રદક્ષિણા કરી. નિજ રૂમ આગળ પગથિયાં ચઢી ઓટલા ઉપર ઊભા રહી સંતો ને સેવકોને જય સ્વામિનારાયણ કહી પ્રણામ કર્યા અને લિફ્ટ તરફ પ્રયાણ કર્યું. લિફ્ટમાં બીરજી નિજ રૂમમાં પધાર્યા.
+		</p><p>
+		૧૦ વાગ્યા આસપાસ મંદિરે ધૂન કરવા માટે પધાર્યા. પદ્માસનવાળી, નયનો ખુલ્લા રાખી શ્રી અક્ષરપુરુષોત્તમ મહારાજનાં દર્શન કરતાં કરતાં ધૂન કરી. 
+		</p><p>
+		ધૂન બાદ દેશ-વિદેશના ભક્તોને દર્શન આપ્યા. એક યુવકને મળ્યા ને મૂંઝવણ દૂર કરી હળવો કર્યો. ભક્તોએ હાર અર્પણ કર્યા. નાના બાળકની લટ લીધી.  ત્યાર બાદ મંદિર બહાર પધારી એક હરિભક્તની નવી ગાડીમાં પુષ્પો છાંટ્યા અને એ ગાડીમાં બીરાજી ઉતારે પધાર્યા.
+		</p><p>  
+		બપોરના થાળ માટે ૧૨:૨૦ બાદ બ્રહ્મપ્રસાદમાં પધાર્યા. નીરવસ્વામી ગુરુહરિને જમાડવાની સેવામાં હતા. 
+		</p><p>
+		થાળ કરતાં કરતાં ગુણાતીતાનંદસ્વામીની સાંખ્યની વાત (પ્રકરણ ૫, વાત ૪૦૪) યાદ કરી કહ્યું કે ગુણાતીતાનંદસ્વામીએ કેવી વાતો કરી છે !!  એમ વાત કરતાં કરતાં થાળ પૂર્ણ કર્યો.  
+		</p><p>
+		થાળ બાદ વાત કરી કે, ‘જેને વજન ઉતારવું હોય એને માપનું જમવાનું ને ચાવીને જમવાનું. ચાવી ચાવીને જમે એટલે માપનું જમાય. દરેક વસ્તુ માપનું જમીએ તો નુકશાન ના કરે. જેટલું બટકું લેતા હોય એના ત્રીજા ભાગનું લેવાનું. પછી આનંદ કરતાં કહે, ‘ચાવવામાં ટાઇમ કોણ બગાડે...?’ (જે લોકો પૂરુ ચાવ્યા વગર જમે છે, તેમના માનસિક વલણનું દર્શન કરાવે છે.)
+		</p><p>
+		બીજી ગુણાતીતાનંદસ્વામીની વાત યાદ કરી કહ્યું કે, ‘દોઢ શેર ખાવું ને બે પહોર ઊંઘવું. એક શેર એટલે ૪૫૦ ગ્રામ. એટલે ૭૦૦ ગ્રામ સુધી જમવું. ૮ પહોરનો એક દિવસ. બે પહોર એટલે ૬ કલાક સૂવું. પછી કહ્યું કે, ઊંઘ ને આહાર વધાર્યા વધે ને ઘટાડ્યા ઘટે. ઊંઘ ને આહાર કંટ્રોલમાં રાખીએ તો બોડી મેઇન્ટેન રહે. 
+		</p><p>
+		ભરૂચમાં જૂના હરિભક્ત કાકુજી હતા. તે શ્રાવણ માસમાં દરરોજ એક બટાકુ જ જમતા. બાફેલું નહિ કાચું બટાકું. એટલાથી પણ શરીર ચાલે. ૯૦ વર્ષ કરતાં વધારે જીવ્યા. આપણે પોતાની હેલ્થ કોનસિયસ પોતે રાખવી પડે. ઊંઘ અને આહાર કંટ્રોલમાં રાખે તો બીમારી પણ ના આવે.’
+		</p><p>
+		આગળ કહે કે, ‘વાતો વાંચવાની મજા આવે. પછી બધાને આજ્ઞા કરતા કહે રોજ ૧૦ થી ૧૫ મિનિટ સ્વામીની વાતો વાંચવાની. જેને  લેંગ્વેજનું બેરિયર ના હોય એને તો વાંચવી જ જોઈએ.’
+		</p><p>
+		પછી એક જૂની સ્મૃતિ કરતાં વાત કરી કે, ‘એક સંત સ્વામીની વાતો રોજ વાંચે. તેમણે પુછ્યું કે, ‘મીની પારેવી ને રેવા એ ત્રણેના એક હેવા; ધીરે ધીરે પગલાં ભરે તે પારકો જીવ લેવા.’ આનો અર્થ શું ? (પ્રકરણ ૯, વાત ૬૪) 
+		</p><p>
+		એટલે મેં કહ્યું કે, ‘મીની એટલે બિલાડી, પારેવી એટલે કબૂતરી અને રેવા નામનું પક્ષી છે. એ ત્રણે માંસાહારી. ત્યારે એ સંતે કહ્યું કે પચાસ વરસે આજે ખબર પડી.’
+		</p><p>
+		આગળ વાત કરતાં કહ્યું કે, ‘આપણે બધાએ નિદિધ્યાસની ૫૧ વાતો મોંઢે કરી લેવાની. મોંઢે હોય તો કોક દા’ડો કામ લાગે. એ બધી જ વાતો ગુરુહરિ હરિપ્રસાદસ્વામીજીએ સિલેક્ટ કરેલી છે. આપણા માટે જાતે સિલેક્ટ કરેલી. ૪ વચનામૃત છે. થોડા કીર્તન છે. સમય કાઢીને બધાએ ગોખી નાંખવાની.’
+		</p><p>
+		પાંચ વાતો આજે ગોખી હોય ને હાલતા ચાલતા યાદ કર્યા કરીએ તો યાદ રહી જાય. 
+		</p><p>
+		આગળ કહે, ‘અઠવાડીયે એક વખત આખી નિધિધ્યાસ બોલી જઉં. પહેલા ૧૭ વચનામૃત મોંઢે કરેલા. અત્યારે ત્રણ યાદ છે. પણ મહિનામાં મોંઢે થઈ જાય.’
+		</p><p>
+		પછી કહે, ‘કીર્તન પણ મોંઢે આવડવા જોઈએ. થાળ પણ મોંઢે આવડવા જોઈએ. ચેષ્ટા પણ મોંઢે આવડવી જોઈએ.’
+		</p><p>
+		આગળ કહે, ‘મને સ્વામીજીએ એક વખત પૂછેલું કે કેટલા કીર્તન મોંઢે છે ? મેં કહ્યું કે ૧૫-૨૦ જેટલા આવડે છે. પણ ગળું સારું નહીં એટલે ગાતો નથી. ત્યારે સ્વામીજીએ મને કહ્યું કે, આપણે કોને સંભળાવવું છે ? ગાયા કરવાના. આપણું પાક્કું થાય ને.’
+		</p><p>
+		એમ સ્વામીની વાતોમાં ડૂબાડી બહાર પધાર્યા અને હીંચકે બિરાજ્યાં. યુવકો ને ભક્તોને મળ્યા ને ઉતારે પધાર્યા.
+		</p><p>
+		વિષય : નિદિધ્યાસ મોંઢે કરવી છે.
+		</p>
+		<p> ***** </p>
+		<p>
+		તા. ૧૭ ડિસેમ્બર, ૨૦૨૪, સવારની ૧૦:૦૦ વાગ્યાની ધૂન બાદ
+		</p><p>
+		ધૂન બાદ ગુરુહરિ ભક્તોને દર્શન આપવા હીંચકા પર બિરાજ્યાં. ભક્તોને દર્શન આપ્યા પછી સુહૃદસ્વામી અને થોડા સંતો નજીક ઊભા હતા. થોડા સંતો અને ભક્તો સામે બેઠા હતા.
+		</p><p>
+		ગુરુહરિએ સુહૃદસ્વામીને કહ્યું કે, ‘હું કથાવાર્તા વાંચું ને એમાંથી સૂત્રો અલગ તારવીને આત્મીયસ્વામીને મોકલી આપ્યાં છે.’
+		</p><p>
+		સુહૃદસ્વામી કહે,  ‘એમણે (પ્રબોધ સ્વામીજીએ) ઈમેઇલ કરીને સ્વામીશ્રીના ૪૩ સૂત્રો પોતે લખીને મોકલ્યા છે. તે પણ આપણા માટે બહુ મોટી વસ્તુ છે.’ 
+		</p><p>
+		બ્રહ્મવિહારીસ્વામી કહે, ‘આપે આત્મીયસ્વામીને પૂછ્યું કે ટપાલ મળી કે નહીં.’
+		</p><p>
+		ગુરુહરિ કહે, ‘સ્વીકૃતસ્વામીને ટપાલ નથી મોકલી. એ અહીં નહોતા એટલે. હું બે જગ્યાએ પોસ્ટ કરું. એક અહીંયા (સ્વીકૃત સ્વામીને) કરું.’
+		</p><p>
+		આગળ કહે, ‘પત્રિકાનું હોય... એક પ્રવચન મોકલે, એમાં હું કરેકશન કરીને આપુ.  કરેકશન કરવાનો ટાઇમ મળે જ.’
+		</p><p>
+		આગળ કહે, ‘અત્યારે બધા ભજનિક અને સ્વાધ્યાય કરનારા છે. કથાવાર્તા બહુ અસર કરે. બધા મનન-ચિંતન કરે. સ્વાધ્યાય-ભજન જોઈએ જ, તો જાગ્રતતા આવે.’ 
+		</p><p>
+		‘ચાલો, જઈએ.. કેટલા વાગ્યા ?’ એમ કહી નિજ ઉતારે પધાર્યા. 
+		</p><p>
+		વિષય : આપણી સેવાનો ઉમંગ 
+		</p>
+		
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

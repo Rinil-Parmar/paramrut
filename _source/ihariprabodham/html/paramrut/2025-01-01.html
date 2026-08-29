@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	૧-૧-૨૦૨૫, પૂજામાં આશિષ, આત્મીય વિદ્યા ધામ અને ૩૧-૧૨-૨૦૨૫ આશિષ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+જેનું જેટલું સારું, એટલું મારું. નવા વર્ષના સૌને અંતરના જય સ્વામિનારાયણ...  ૨૦૨૪નું વર્ષ ગયું. ફરી આવવાનું નથી. ગોન ફોરએવર (Gone Forever). એની સાથે ૨૦૨૪ના વર્ષ દરમિયાન કોઈનું કંઈ જોયુ હોય, નોંધ્યું હોય, વિચાર્યું હોય.. એ બધાને પણ વિદાય આપી દેવી છે. 
+</p><p>
+અને ૨૦૨૫નું વર્ષ શરૂઆત થાય છે. આજે પ્રથમ દિવસ છે. તો આજથી આપણે બધા સંકલ્પ કરીએ કે સ્વામીજી તમારા જેવી દ્રષ્ટિ આપજો. દરેકમાંથી કંઈક કંઈક કંઈક નવું લઈએ… જેનું જેટલું સારું એટલું મારું.. એ આપનો સિદ્ધાંત. 
+</p><p>
+આપ એ સિદ્ધાંત ઉપર જીવ્યા છો. અમને પણ એ સિદ્ધાંત પર જિવાડશો. આપે અને આપના મિત્રએ ગોંડલની ધરતી પર રાયણ નીચે બેસી અને સંકલ્પ કર્યો કે અહીંથી જેટલા પસાર થાય એ બધાના ગુણ વિચારવા છે. 
+</p><p>
+એ જમાનામાં તો, આજથી ૭૦ વર્ષ પહેલાં અપેક્ષિત જ સમાજ હતો. એમાંથી પણ આપે ગુણ લીધો તો.. અત્યારે તો સરસનો સમાજ, અંતરદ્રષ્ટિ કરનારો, પોતા તરફ નજર રાખીને જીવનારો સમાજ છે.. એની વચ્ચે આપે અમને રાખ્યા છે. તો એ મોતીનો ચારો ચરી અને ૨૦૨૫ના વર્ષને અમારું બનાવીએ. 
+</p><p>
+એ માટે અમને સૌનેય ખૂબ ખૂબ ખૂબ બળ, બુદ્ધિ, ને શક્તિ આપજો. અમારી એક-એક સેકન્ડ આપના તરફની યાત્રા કરતી રહે એવો બુદ્ધિયોગ આપજો. એ જ આજના શુભ દિવસે અંતરની પ્રાર્થના. 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય.
+<p><p>
+	***
+</p><p>
+૩૧-૧૨-૨૦૨૪, વોકિંગ બાદ આશિષ 
+</p><p>
+રાત્રે વોકિંગ પૂર્ણ કરી, ઓટલા પર પધાર્યા. સામે સંતો, સેવકો ને હોસ્ટેલના યુવકો દર્શન કરતાં હતા. 
+</p><p>
+ભક્તિ સ્વામી: ગઈસાલ એવી વાત કરી હતી કે આપણે બધાએ એકબીજાના દર્શને આનંદ થાય એવું આપ કૃપા કરજો. તો આવા વર્ષે કદાચ એવી પ્રાર્થના કરીએ કે એકબીજામાં આપના જ દર્શન થાય જેથી કરીને અમે ભગવદ ભાવથી જીવતા થઈએ. એવી આપ કૃપા કરો... 
+</p><p>
+ગુરુહરિ: યાદ રાખ્યું, નહીં !!! 
+</p><p>
+ભક્તિ સ્વામી: કોઈએ પ્રવચનમાં કહ્યું. 
+</p><p>
+ગુરુહરિ: ગુજરાતીમાં કહેવત છે ગઈ ગુજરી ભૂલી જવાનું. ગઈ ગુજરી… ૨૦૨૪ દરમિયાન આખા વર્ષ દરમિયાન જે કઈ કોઈની પણ ભૂલ નોટ કરી હોય. નોટ ના કરી હોય (નોટમાં લખતા હોય એવો ઇસરો કરીને) પણ માઇન્ડમાં નોટ કરી હોય… શેમાં? એ આપણે ભૂલી જવું છે. 
+</p><p>
+નવી ઘોડી નવો દાવ. જાગ્યા ત્યાંથી સવાર.. એટલે આપણે જૂનું, ગયા વર્ષનું છે ને જે કઈ યાદ હોય…. આજે પ્રાર્થના કરીને સૂઈ જવાનું કે સ્વામીજી એ વર્ષેય ગયું ને એ વર્ષમાં જેને જેને ભૂલ કરી હોય એ પણ ગઈ… હવે નવી શરૂઆત કરીએ છીએ તો દરેકમાંથી પોઝિટિવ જે કંઈક લેવાનું છે, એ લીધા કરીયે.. બસ… 
+</p><p>
+ભક્તિ સ્વામી: વેલકમ ટુ ૨૦૨૫.. આપ પ્રાર્થના કરજો ડીલીટ થઈ જાય બધું… 
+</p><p>
+ગુરુહરિ: આપ મારા માટે કરજો!! 
+</p><p>
+ભક્તિ સ્વામી: બાય બાય ૨૪.. બાય બાય ૨૪..
+</p><p>
+વિષય : જૂનું ભૂલી જવું છે  
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

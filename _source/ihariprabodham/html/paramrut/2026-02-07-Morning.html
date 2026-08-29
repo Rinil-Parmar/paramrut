@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૭ ફેબ્રુઆરી ૨૦૨૬, સવારે, મૂર્તિ-પ્રતિષ્ઠા ઉત્સવ સભા  
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	
+	<p>
+(હરિસુમિરન કોમ્યુનિટી સેન્ટર, ઓકલેન્ડ, ન્યૂઝીલેન્ડ)
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય. હરિપ્રસાદસ્વામી મહારાજની જય. આત્મીય સમાજની જય, જય, જય. દાસના દાસ થવાની જય, જય, જય.
+</p><p>
+શુભ મંગલકારી દિવસ. આજે આપણી સમક્ષ ઠાકોરજી પ્રત્યક્ષ થયા. પ્રત્યક્ષ થયા એટલે શું? આ મૂર્તિ નથી રહી. આ આરસની મૂર્તિ નથી રહી. એ મૂર્તિમાં રહીને નિરંતર આપણને જોઈ રહ્યા છે. સંતોએ સરસ શાસ્ત્રોક્ત વિધિથી ઠાકોરજીની પ્રાણ-પ્રતિષ્ઠા કરાવી. વચ્ચે છે (અક્ષર પુરષોતમ મહારાજની) એ આરસની મૂર્તિ છે. સ્વામીજી, શાસ્ત્રીજી મહારાજ અને યોગીજી મહારાજની મૂર્તિ છે, એ પેઇન્ટિંગની મૂર્તિ છે. એ પેઇન્ટિંગ નથી, એ આરસ નથી. એને પ્રત્યક્ષ માનીને દર્શન કરવા છે, પ્રત્યક્ષ માનીને થાળ ધરાવવા છે.
+</p><p>
+સર્વમ સ્વામીએ કહ્યું, ‘અતુલભાઈને ઘેર અત્યારે પણ દિવસમાં ત્રણ વખત થાળ થાય છે. સ્વામીજી સ્વધામ પધાર્યા પછી થાળ બંધ કરી દીધા. એટલો પણ માયિક ભાવ હૈયાને વિશે થયો કે, ‘સ્વામી ગયા!’ તો તરત સ્વામીજીએ પ્રગટ થઈને કહ્યું, ‘કેમ થાળ બંધ કરી દીધા?’ ‘કેમ થાળ બંધ કરી દીધા?’ એ નિરંતર આપણો થાળ જમે છે. એ નિરંતર આપણી પ્રાર્થના સાંભળે છે. એવા સાક્ષીભાવે આપણે ભજન કરવું છે.
+</p><p>
+સર્વમ સ્વામીએ કહ્યું, ‘મંદિર તો ધમધમતું હોવું જોઈએ. એમણે હરિધામ મંદિરની વાત કરી. ત્યાં દેરીએ શાસ્ત્રીજી મહારાજ અને યોગીજી મહારાજ પધરાવેલા છે. એક વખત રાત્રે બે વાગ્યે સંતો ભજન કરતા હતા. કેટલા વાગ્યે? બે વાગ્યે! ભજન કરનારા ઊંઘતા નથી. 
+</p><p>
+અમારા તીર્થબાપા છે, અહીં નથી આવ્યા. એ ઉપવાસનો દિવસ હોય તો સવારે પાણીની બોટલ લઈને ઠાકોરજી આગળ બેસી જાય. ક્યારે? સવારે તે રાતની આરતી થાય ત્યાં સુધી ઊઠવાનું નહીં! એને ભજનમાં કેટલો રસ મનાતો હશે! સુખ આવે. આપણને જેમ ખાવામાં રસ મનાય, સ્વાદ છૂટે, એમ ખરેખર જે ભજનિક છે એને ભજનમાં સ્વાદ આવે. આપણે એવો સ્વાદ માણવો છે. ભજનિક થવું છે.
+</p><p>
+ભજનથી મંદિર ધમધમતું હોવું જોઈએ. ભક્તિસ્વામીએ વાત કરી કે, ‘સ્વામીજી, ચોવીસ કલાકમાં શાસ્ત્રીજી મહારાજ ને યોગીજી મહારાજ બે જ કલાક સૂવે છે. આખી રાત બધા ભજન કરે એટલે સૂવા મળતું નથી.’ 
+</p><p>
+ત્યારે સ્વામીજીએ રહસ્યની વાત કરી, ‘બે જ કલાક જ જાગે છે, બાકી આપણે ભજન કરીએ તો નિરાંતે સૂઈ જાય છે.’ આપણે એને સૂવડાવવા હોય, આપણે એને આરામ કરાવવો હોય. આપણે પ્રાર્થના કરીએ, ‘હે સ્વામીજી! તમે આરામ કરજો.’ એનાથી એને આરામ ન થાય. 
+</p><p>
+એને આરામ આપવો હોય તો એનો પોકાર, એનું ભજન, એના આકારે થઈ જઈએ તો એ આરામ કરે. 
+</p><p>
+આપણો બધો ભાર એમના માથે નાખીએ તો એ આરામ કરે, બાકી એ આપણી ચિંતા કર્યા કરે. આપણે આપણો ભાર લઈને ફરીએ તો એ આપણી ચિંતા કરે. આરામ ન મળે કારણ કે ‘ભક્તવત્સલ’ છે. એમને આપણે આરામ આપવો છે.
+</p><p> 
+
+પ્રાર્થનાથી એમની આગળ બધી વાત કરી લેવાની, ‘હે મહારાજ!  તમે પ્રગટ બિરાજમાન છો. આપના ચરણોમાં આટલી જ પ્રાર્થના છે, ‘બળ આપજો, તમારા થઈને રહીએ, તમારા ગમતા પ્રમાણે જીવીએ.’ એ આટલું જ માંગે છે. ખટકો રાખીને જીવીએ, એટલું જ એ માંગે છે. 
+</p><p>
+તો આજે ઠાકોરજી બિરાજી ગયા. નજીકમાં જે રહેતા હોય, દસ-પંદર મિનિટના ડિસ્ટન્સ પર, એ બધાએ દિવસમાં એક વખત તો કમ્પલસરી મંદિરે આવવાનું. એક વખત કમ્પલસરી મંદિરે આવવાનું. ઠાકોરજી આપણી રાહ જોઈને બેઠા હોય હોં. હાજરી પૂરે હોં. આપણે હાજરી પુરાવી દેવાની. બાકી તો અહીંયા વિકલી સભા ને બધું થશે. રેગ્યુલર દિવસમાં ટાઈમ મળતો હોય તો બે વખત અવાય તો બે વખત આવવાનું. પણ મિનિમમ એક વખત તો ઠાકોરજી પાસે આવીને ભજન કરી લેવાનું. તો એમને થાય કે ‘હું એકલો નથી પડ્યો, છે મારી સાથે. હું એકલો નથી.’ એમને પણ એકલપણું લાગે હોં! આપણે એમને એકલા છોડવા નથી. એમને સાથે રાખવા જેવા છે.
+</p><p>
+બાપ સાથે હોય તો છોકરાને ચિંતા રહે? હેં? બાપ સાથે હોય કે મા સાથે હોય તો છોકરું મસ્તીથી હરતું-ફરતું હોય. એકલો જાય તો? બાપનેય ચિંતા રહે, માનેય ચિંતા રહે અને છોકરાનેય ચિંતા થાય. બાપને સાથે રાખવા છે બસ. 
+</p><p>
+એ આપણી રાહ જોવે. આપણે બહાર ગયા હોઈએ. ઘેર કહીને ગયા હોઈએ કે, ‘સાંજે આવી જઈશ.’ અને સાંજે ન પહોંચ્યા, કલાક-બે કલાક, ચાર કલાક મોડું થયું, તો ઘરે બધા રાહ જુએ કે ન જુએ? જુવે? એમ એ ઠાકોરજી રાહ જોવે છે આપણી. એમને રાહ નથી જોવડાવવી, બસ. ભજનથી એમને આપણી સાથે રાખવા છે.
+</p><p>
+બીજું. સર્વમ સ્વામીએ કહ્યું, ‘ભગવદી.’ નિરામય પ્રદેશમાં ભગવદીનો સ્વીકાર સહજ છે. આનંદ છે. પ્રભુના બળે અને ભગવદીના ઈશારે દોડતા રહીએ અને આપણી યાત્રા સ્વામીજી તરફ ચલાવતા રહીએ. એ માટે ગુરુહરિ આપણને સહુનેય ખૂબ, ખૂબ બળ અને બુદ્ધિ અને શક્તિ આપે એવી પ્રાર્થના. 
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય: ઠાકોરજી પ્રત્યક્ષ છે. 
+</p><p>
+બ્રહ્મ રત્ન: (૧) એને (સ્વામીજીને) આરામ આપવો હોય તો એનો પોકાર, એનું ભજન, એના આકારે થઈ જઈએ તો એ આરામ કરે. <br/>
+(૨) પ્રભુના બળે અને ભગવદીના ઈશારે દોડતા રહીએ અને આપણી યાત્રા સ્વામીજી તરફ ચલાવતા રહીએ. <br/>
+(૩) પ્રાર્થનાથી એમની આગળ બધી વાત કરી લેવાની, ‘હે મહારાજ!  તમે પ્રગટ બિરાજમાન છો. આપના ચરણોમાં આટલી જ પ્રાર્થના છે, ‘બળ આપજો, તમારા થઈને રહીએ, તમારા ગમતા પ્રમાણે જીવીએ.’
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

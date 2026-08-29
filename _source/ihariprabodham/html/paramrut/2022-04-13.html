@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૩-૦૪-૨૦૨૨, પૂજામાં આશિષ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+પુસ્તિકા વાંચે છે…
+</p>
+<p>
+૨૦૦૭માં નાણાવટીસાહેબે પ્રાર્થના કરી, આટલા વર્ષો પાણીમાં ગયા. આપણે ઓશીયાળા તો નથી કર્યાને ? સ્વામીજી કહે, ના ના ના ના.. પાણીમા ન જાય. આધ્યાત્મિકતા પ્રગટી છે. વિકાસને પામ્યા. સંબંધના માર્ગે ચાલ્યા. આપણે કેટલા નસીબદાર. અર્જુનને તો વિરાટના દર્શન કરાવવા પડ્યા ત્યારે ઓળખાણ થઈ. જ્યારે આપણને ઓળખાણ થઈ ગઈ.
+</p><p>
+૨૮ ડિસેમ્બર ૨૦૦૭ ગોષ્ઠિ કરતા વાત કરી, વિવેકાનંદજીએ રામકૃષ્ણપરમહંસને મા શારદા અને આશ્રમવાસીઓની ફરિયાદ કરી. આશ્રમમાં આપે હોવું જોઈએ. 
+રામકૃષ્ણપરમહંસે વિવેકાનંદને પ્રશ્ન કર્યો, પવન આવ્યો ? વાદળ આવ્યા ? બે પ્રશ્ન કર્યા કે પવન આવ્યો, વાદળ આવ્યા શું એમ. પછી હસ્યા. પછી કહે પાંદડાને કોણ હલાવતું હશે ? સાત્વિકતાના ડુંગર સમાન વિવેકાનંદને બે શબ્દ કહી દીધા. મને ખબર છે કે આશ્રમમાં શું ચાલી રહ્યું છે. મારા ને તારા પ્રેમ સિવાય આ ભકતોને બળ મળશે નહી. આશ્રમમાં જે ચાલતું હોય એ, આપણે પ્રેમ આપ્યા કરો કે. કેટલું મસ્ત વાક્ય છે.
+</p><p>
+હ્યુસ્ટનમાં કહ્યું, એક વાત બોલું ? તમે બધા રજા આપતા હોય તો વાત કરું. બધા મુકતોએ હાથ જોડયા. પછી બોલ્યા, જેવો બીજાને સમજાવવાનો આગ્રહ છે.. એ વાત બોલ્યા. પછી કહે, કરી-કરીને આ જ કરવાનું છે. આજ સમજો બીજા ૫૦ વર્ષ પછી સમજો કે ૫૦ જન્મ પછી સમજો. જે વ્યકિત, જે સાધક, જે સહિષ્ણુ કે જે સાધુ કે અંબ્રીષ આ પ્રમાણે જીવશે તેની ઉપર મહારાજ સૌથી પહેલા એ કૃપા વરસાવી દેશે કે કેવળ પોતાના આત્માને માટે જ જીવાશે અને આ રીતે જેમ જેમ જીવતો જશે તેમ તેમ મહારાજ તેની બાહ્યદૃષ્ટિનો પ્રલય કરતા જશે. 
+</p><p>
+પોતા તરફ નજર રાખીને જીવશે એની બાહ્યદૃષ્ટિનો પ્રલય થઈ જશે. 
+</p><p>
+પછી સાચા અર્થમાં ભૂલકુંની યાત્રાની શરૂઆત થશે. જે સાધકના જીવનમાં બાહ્યદૃષ્ટિનો પ્રલય ન હોય તેના આત્માને વિશે કયારેય પુણ્ય જમા થતું જ નથી.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+</p><p>
+વિષય : બાહ્યદ્રષ્ટિનો પ્રલય 
+</p><p>
+સ્વામીની વાત : પ્રકરણ ૨, વાત ૬૧
+</p><p>  
+બ્રહ્મ રત્ન : ૧) પોતા તરફ નજર રાખીને જીવશે એની બાહ્યદૃષ્ટિનો પ્રલય થઈ જશે.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

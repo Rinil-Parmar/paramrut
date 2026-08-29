@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨ ઓગસ્ટ, ૨૦૨૪, અંબરીષ શિબિર, પ્રથમ સેશન, હ્યુસ્ટન
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+સહજાનંદસ્વામી મહારાજની જય. હરિપ્રસાદસ્વામી મહારાજની જય. આત્મીયસમાજની જય જય જય. દાસના દાસ થવાની જય જય જય.
+</p><p>
+સુજ્ઞેયસ્વામી, આનંદ(સાગર) સ્વામી અને ભક્તિસ્વામીએ આપણને મહિમા ડૂબાડી દીધા. એ ત્રણે ત્રણ ગોષ્ઠિ આપણે પોતાની બનાવવી છે.
+</p><p>
+સ્વામીજીએ ‘ભાગ્ય જગ્યા રે’ ભજનની વાત (હ્યુસ્ટનમાં) મોટાને ઘેર કરી હતી. એના સાક્ષી છીએ. હું, સુહૃદસ્વામી સાથે જ હતા.  ચેષ્ટામાં ‘પ્રથમ શ્રીહરિને રે... લીલાચરિત્રનાં ૧૦ પદ છે. અંતમાં ધ્યાનના - ધ્યાન ચિંતામણીના આઠ પદ છે.  સ્વામીજીએ એ ચેષ્ટા ગવડાવી. ચેષ્ટા પૂરી થયા પછી સ્વામીજીએ મહિમાની વાત રજૂ કરતા કહ્યું કે આમાં લીલા-ચરિત્રોનું દર્શન તો છે; પણ મહિમા વગર લીલા-ચરિત્ર ગમે એટલા ગઈએ. મહિમા હોય તો લીલા-ચરિત્ર ગવાય. એ વાત સ્વામીજીએ સમજાવી. 
+</p><p>
+ધ્યાન એટલે શું ? ધ્યાન એટલે મહિમાનો વિચાર. એનું નામ ધ્યાન કહેવાય. આંખો બંધ કરીને બેસીને ભગવાનની મૂર્તિ જોવા પ્રયત્ન કરીએ તો અંધારા સિવાય કશું જ દેખાવાનું નથી. શું દેખાય ? અખતરો કરજોને ! ...પણ મહિમાનો વિચાર કોઈ બી વ્યક્તિ કરી શકશે. એટલે ભગવાને આપણને સહેલો માર્ગ બતાવી દીધો કે ધ્યાન કઈ રીતે કરવું? રિયલ સેન્સમાં ધ્યાન કોને કહેવાય ? એ વાત સ્વામીજીએ આપણને સમજાવી.
+</p><p>
+વર્ષો પહેલાં સ્વામીજીએ મારી ડાયરીમાં - કાગળમાં લખી આપ્યું હતું : ‘ધ્યાન એટલે મહિમાનો વિચાર. આપણે નિરંતર મહિમાના વિચારમાં રહેવું.’
+</p><p>
+એ મહિમાના વિચારનો ખ્યાલ આપણને ન આવે એટલે સ્વામીજીએ ચેષ્ટાના માધ્યમથી પોતે કઈ રીતે મહિમામાં રહેવું એ ‘ભાગ્ય જગ્યા રે’ ગાવાનું કહ્યું.
+</p><p>
+‘ભાગ્ય જાગ્યા રે’ની એક એક કડી ખરેખર વિચારવા જેવી છે. ‘અનાથપણાનું મેણું ઉતર્યું, સદા થયા સનાથ’…  અનાથ કોણ ? કોણે આપણું કાંડુ પકડ્યું છે ? તો પછી અનાથ શું કરવાં (માનવાનું ?) કાંડુ પકડનાર કોણ છે ? તો પછી અથાપણાનો વિચાર ક્યાં રહ્યો? 
+</p><p>
+અનાથપણાનું મેણું ઉતર્યું, સદા થયા સનાથ. </br> 
+કાયમ સનાથ છીએ. અનાથ ન..થી... આપણે. </br>  
+ભગવાન સ્વામિનારાયણનું એ બિરુદ શું કહેવા માંગે છે ? એટલો જ વિચાર કરવાનો.
+</p><p>
+રાંકપણું તો રહ્યું નહીં, કોઈમાં કહેશો કંગાલ. </br>
+આપણે કંગાલ નથી હોં. માંગવાનું કઈ રહ્યું નથી. એને જે આપવું છે ને એ આપે જ છે. એ જે આપવા આવ્યા છે, એ આપવાનાં જ છે 
+</p><p>
+એક હરિભગતને સ્વામીજીએ કહ્યું, ‘માંગ. માંગ. માંગ. તું જે માંગું તે આપું.’ આપણાં અમેરિકાની વાત છે, બહારની વાત નથી. પારસપીનીની જ વાત છે એથી બહારની નથી. પેલા હરિભગત પર સ્વામીજીએ સામેથી કરુણા કરીને કહ્યું, ‘માંગ માંગ.’ આપણે વિવેક અને ભક્તિ આપણામાં હોય એ માટે સહજ બોલીએ કે સ્વામી! તમે જે આપો એ.
+</p><p>
+ભક્તિસ્વામીએ કહ્યું ને કે આપણી માંગવાની લિમિટેશન છે પણ એમને આપવાની કોઈ લિમિટેશન નથી. એને જે આપવું છે એ આપવાના જ છે. 
+</p><p>
+પેલા ભગતે કહ્યું, ‘સ્વામીજી ! તમારે જે આપવું હોય એ.’ સ્વામીજી કહે, ‘મારે તો તને ગરીબાઈ આપવી છે.’ આપણે ગરીબાઈનો અર્થ જુદો કરીએ; હોં. આર્થિક રીતે ગરીબાઈમાં આપણે જતાં રહીએ. ના.... એવું નથી. ‘ગુણાતીત ગરીબાઈ આપવાનો સંકલ્પ કરીને એ બેઠા છે. દાસના દાસ બનાવવાનો સંકલ્પ કરીને બેઠા છે.’  એ વસ્તુ એને આપવી છે... એટલે આપણે બધા ફાવી ગયા છીએ.
+</p><p>
+બસ એ જે મહિમાનો વિચાર છે કે ‘અનંત બ્રહ્માંડમાં મારા જેવો કોઈ ભાગ્યશાળી નહીં’ એનું કારણ એટલું છે કે એને જે આપવું છે એ વગર માંગે આપવા એ તત્પર છે.
+</p><p>
+તો આપણે સંકલ્પ એટલો જ કરવો છે કે તારે જેટલું આપવું છે, એટલું જ લેવું છે. અમારી બુદ્ધિની લિમિટેશન છે, અમને માંગતા નહિ આવડે અને જો કંઈક સ્વભાવના પોષણનું માંગી લીધું તો પછી કાઢતા દમ પડી જશે; એટલે આપણે આપણા સ્વભાવનું પોષણ થાય એવું માંગવું નથી. એને જે આપવું છે એટલું જ લઈને આપણી યાત્રા એના તરફની કરતાં રહેવું છે. તો એ માટેનો બુદ્ધિયોગ ગુરુહરિ આપણને સહુનેય આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય  : ભાગ્ય જગ્યા રે 
+</p><p>
+બ્રહ્મરત્ન : ૧) ‘ધ્યાન એટલે મહિમાનો વિચાર. આપણે નિરંતર મહિમાના વિચારમાં રહેવું.’
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

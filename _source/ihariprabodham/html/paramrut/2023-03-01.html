@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧ માર્ચ, ૨૦૨૩, વિનોદભાઈના ઘરે, તીતીરંગી, ઓકલેન્ડ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+ગુણાતીતાનંદ સ્વામીએ એમની વાતમાં કહ્યું છે કે, ભગવાન ભેળા રહ્યાને ખોટ રહી ગઈ. શા કારણે? સાધુના સમાગમ વિના. આપણને વિચાર આવે. બુદ્ધિશાળી છીએ આપણે બધાં જ. ભગવાન ભેળા રહે તો ખોટ રહે ખરી? ભગવાન ભેળા રહ્યા હોય તો ખોટ રહે? તો આ વાત ખોટી પછી? આ વાત ખોટી નથી એ હકીકત છે કારણ કે ગુણાતીતાનંદ સ્વામી બોલ્યા છે. જગતનો કોઈ જીવ બોલ્યો હોત તો કહી શકાય કે આ વાત ખોટી છે. પણ આ ગુણાતીતાનંદ સ્વામીએ કહ્યું. કોન્ટ્રાડીકટરી ઊભી થઈ ગઈ. 
+</p><p>
+ભગવાન ભેળા રહે તો ખોટ રહે જ નહીં. છતાં પણ રહે છે. એ ખોટ કઈ રહે? ભગવાનનો મહિમા સમજવાની જે ખોટ છે એ ભાંગે નહીં. ત્યાં સાધુનો સમાગમ જોઈએ. બીજી વાતમાં કહ્યું છે કે, મહિમા સમજવાનું કારણ તો એવા ભગવદીનો પ્રસંગ છે. એ હોય તો મહિમા સમજાય. ભગવાન સ્વતંત્ર છે. એ સ્વતંત્ર રીતે વર્તતા હોય ત્યારે મનુષ્યભાવ આવે. શું આવે? એને કોઈ બંધન નથી. એ બંધનમાં રહે છે, મર્યાદામાં જીવે છે એનં એક જ કારણ કે આપણં લેવલ નથી એટલે. એને સમજવાનું લેવલ નથી એટલે એને એ રીતે જીવવું પડે. 
+</p><p>
+એકવાર શાસ્ત્રીજી મહારાજે, બહેનનો સંકલ્પ હશે, એટલે એની બાજુ દ્રષ્ટી કરી જોયું. એટલે આપણા જેવા હોય, એને સંકલ્પ થઈ ગયો કે શાસ્ત્રીજી મહારાજ પણ બહેનો તરફ દ્રષ્ટિ કરે છે. શાસ્ત્રીજી મહારાજ તો અંતર્યામી. એને તરત જ બોલાવ્યો. એનો સમય ના બગડે અને એને જાગ્રત કરવા માટે કહ્યું. વચ્ચે કીડીઓની લાઈન જતી હતી. શાની? કીડીઓની લાઈન જતી હતી. એને ઊભો રાખ્યો. જોજો.. એ કીડીઓમાં શું જોવાનું? કહ્યું કે, ‘આમાં કયું મેલ છે અને કયું ફિમેલ છે?’  ખબર પડે કીડીઓમાં? એમાં પણ મેલ અને ફીમેલ બંને વસ્તુ છે. 
+</p><p>
+શાસ્ત્રીજી મહારાજે પૂછ્યું, ‘આમાં કોણ મેલ અને કોણ ફીમેલ કહે જો.’ પેલાએ કીધું કે, ‘સ્વામી એમાં ખ્યાલ ના આવે.’ પછી કહ્યું કે મોટાપુરુષની દ્રષ્ટિએ અનંત બ્રહ્માંડના જીવ આવા છે. કેટલા? એમાં આપણને ખબર નથી પડતી. એના નજરમાં કશું છે જ નહિ કહે. એ દિવ્યભાવની વાત, એ મહિમાની વાત, એને નિર્દોષબુદ્ધિથી સેવન કરવાની વાત એમાં ભગવદી જોઈએ. 
+</p><p>
+એટલે આપણે ખાટી ગયા છીએ. કે જે નિર્દોષબુદ્ધિથી સેવન કર્યું છે. વર્ષો સુધી સ્વામીજીનું એવા અશોકભાઈ અને શાશ્વત સ્વામી. બે પત્રો એવા સરસ છે. 
+</p><p>
+જયારે નિર્દોષબુદ્ધિની વાત આવે તો ૨૦૧૨માં અહીં આવવાનું થયું હતું ત્યારે શાશ્વત સ્વામીજીને સ્વામીજીએ ડે વન થી ઇન્ડિયાથી નીકળ્યા અને ઇન્ડિયા પહોંચતા સુધી એક પણ દિવસ ખાલી નહતો ગયો. એક જ વસ્તુ પૂછે, ‘તું કેમ આવ્યો છે?’ શું કહે? જાતે આવ્યા હતા એવું? પૂછ્યા વગર, સ્વામીની આજ્ઞા વગર અશોકભાઈ વિઝા જ ના કાઢે પહેલી વાત તો એ. કોઈનાય વિઝા કરવાના હોય તો સ્વામીની આજ્ઞા લે પછી જ વિઝા કાઢે. છતાં પણ સ્વામીજી એને પૂછે કે, કોને પૂછીને આવ્યો? કેમ આવ્યો? એક દિવસ કહે, બે દિવસ કહે, ત્રણ દિવસ કહે તો બરાબર. પણ બે મહિનાની પુરેપુરી ટ્રીપ. એમાં એક પણ દિવસ ખાલી નહિ. 
+</p><p>
+સિંગાપુરથી આવ્યા અને સિંગાપુર પાછા પહોંચ્યા ત્યાં સુધી રોજ ઉઠીને... પણ છતાંય એના એ ચરિત્રને ગમાડયું શાશ્વત સ્વામીજીએ. એટલે એવા સરસના પાત્રની વચ્ચે સ્વામીજી આપણને મૂક્યા છે. એટલે નિર્દોષ બુદ્ધિ સહજ સિદ્ધ થઈ જાય. એટલે આપણે બધા ખૂબ નસીબદાર છીએ. 
+</p><p>
+તમારું મંડળ પણ સરસ ગોકુળીયું છે. દરેકમાંથી કંઈક મળે. એવા સરસ સમાજની વચ્ચે સ્વામીજીએ આપણને રાખ્યા છે. તો ભગવદીના સમાગમે અને આત્મીય સમાજની હૂંફે આપણી યાત્રા નિરંતર સ્વામીજી તરફ ચલાવતા રહીએ. એ યાત્રા ચલાવવા માટે ગુરુહરિ ખૂબ બળ આપે એ જ પ્રાર્થના... 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય...
+</p>
+<p>
+વિષય : નિર્દોષબુદ્ધિ 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

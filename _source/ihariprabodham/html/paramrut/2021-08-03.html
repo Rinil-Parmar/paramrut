@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૩ ઓગસ્ટ, ૨૦૨૧, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+	<p>
+આજે પ્રબોધસ્વામીજીએ સહિષ્ણુઆશ્રમની સામેના હિંચકા પર બેસી શ્રીજીચરણસ્વામી, સર્વનિવાસસ્વામી, બ્રહ્મવિહારીસ્વામી, સનાતનસ્વામી, આનંદસાગરસ્વામી, નરેશમામા, પૂર્ણમભાઈ વગેરે સંતો-સેવકોની ઉપસ્થિતિમાં ગોષ્ઠી કરી કે... 
+</p><p>
+ભક્તિમાં સહેજ બી ઓટ કોઇને નહિ આવવી જોઇએ. આપણે જે કાંઇ કરીએ છીએ ભક્તિ જ કરીએ છીએ. ધારો કે આપણને પ્રદેશ લેવલે સેવા સોંપી છે એ ભક્તિ છે આપણી. નાના સંતો હોય એ મંદિરની સેવા છે એ આપણી ભક્તિ જ છે. એમાં ગાફલાય નહિ રાખવાની. ભક્તિ સિવાય ભગવાન વશ થતા નથી. ગોષ્ટી કરવી એ ભક્તિ જ છે. અંગ પ્રમાણે દરેકની ભક્તિ હોય. ભક્તિથી જ ભગવાન ઓગળે. ઓગળે એ જાતે જ. એમને બધુ ઓગાળી નાંખ્યું.
+</p><p>
+કાલે અર્થી પ્રગટાવાનું કરતા હતા ત્યારે વિચાર આવ્યો બધું જ ઓગાળી નાંખ્યું આપણા માટે. કશું જ રાખ્યું નથી. કોઇ ચીજ પણ... દેહ બી વ્હાલો નથી રાખ્યો. એને ઓગાળી નાંખ્યું. હવે આપણે બધાએ ભક્તો આગળ ઓગળી જવું છે. આપણી આગળ ઓગળી ગયા ને એવાયા. એટલું જ ધ્યેય આપણે રાખવાનું બસ.
+</p><p>
+એમાં ગરજ જોઇએ. ગરજ વગર કૃપા ના થાય.
+</p><p>
+મને ખરેખર... ખરેખર આ છોકરાઓને (સર્વનિવાસસ્વામીના ખભા ઉપર હાથ મૂકીને) જોવને તો... હું ડેરીએ બેસીને આ જ વિચાર કર્યા કરું. સ્વામીએ કેવા સમાજ વચ્ચે આપણને મૂક્યાં છે. આજે ધૂન કરતાં કરતાં એ જ વિચાર કર્યો. બીજો કોઇ વિચાર જ નહિ કર્યો.
+</p><p>
+નાના સંતોને સંભારતો તો... એક એકને... એક સંત આવ્યા. સ્વામી મારાથી કોઇ ભક્તોની ઉપેક્ષા થઈ ગઈ હોય તો મને માફ કરજો કે. દિલ કેવું ભગવાને પ્રગટાવ્યું એક એક વ્યક્તિને. સમાજનો વિચાર કરીએ જ્યારે આપણે... મને ત્યાં જ રડું આવી ગયું. મને રડું આવે છે આનંદથી. કે સંતોની ભાવના જોઇ. સંતોના દિલ, સંતોની ભક્તિ બધી જોઇને એટલે રડું આવી જાય. 
+</p><p>
+સ્વામીજી ગયા છે જ નહિ. આપણે મૂકીને રહેવાના ક્યાં એ..! એને આપણા સિવાય ગમતું જ નહિ તો કઈ જવાના એ. બરાબર. એ વિચાર આવતોય નહિ. એક આવે. કેવા સમાજની વચ્ચે મૂક્યાં છે...! એ સમાજના દર્શન કરીએને આનંદ થાય. એ આનંદમાં આંખમાં આંસું આવી જાય. એમ લાગે કે પ્રબોધસ્વામી રડયા કરે છે.
+</p><p>
+ભેગા થઈને રહેવું છે ને બધાએ આનંદ કરવો છે. આનંદ સિવાય કંઈ કરવાનું નથી. મહારાજ આપણી જોડે છે તો મસ્તીથી ના ચાલીએ. એની મસ્તી... એનો કેફ... કોણ મિલા હૈ !!! બસ... પુરષોત્તમનારાયણે કાંડું પકડ્યું છે.
+</p><p>
+સ્વામીજીએ આપણા પર જે કૃપા વરસાવી છે એ કૃપામાં આનંદ માણવાનો બસ. સમાજની વચ્ચે જે આપણને મૂક્યાં છે એના દાસ થવાય. પગે લાગીએ ત્યારે હે મહારાજ..! દાસ થવું છે. મીઠાશથી... તો હૈયાને વિશે ભક્તિ પ્રગટશે. 
+</p><p>
+જય સ્વામિનારાયણ જય સ્વામિનારાયણ જય સ્વામિનારાયણ એવું નહિ. કરીએ છીએ જય સ્વામિનારાયણ... પણ મનથી અંદરથી દાસ થવું છે બસ. 
+</p><p>
+લઈ જવાના છે. સંકલ્પ એમનો છે. આપણે બધા ખાટી ગયા છે. એ પોતે દાસના દાસ થઈને જીવ્યા. 
+</p><p>
+અને છેલ્લું સૂત્ર આપણને આપીને ગયા. દાસના દાસ થઈને તમે રહો બસ. થવું છે. એ ધ્યેય આપણો પાકો હશે તો મહારાજ સોનાના કળશ ઉપર આપણને બેસાડી દેશે.
+</p><p>
+સ્વામીજીએ આપણી મીટીંગો કરી. એમાં કથા શું કરી..? પ્રાદેશીક સંતોની મીટીંગો કરીને સ્વામીએ કથા શું કરી? પ્રેમ સિવાય બીજી વાત કરી..? સ્વામીજી કહે પ્રેમથી તમારા સેન્ટરો પૂરા થઈ જશે ત્યાં સુધીની વાત કરી. તમે પ્રેમ આપ્યા કરશો તો તમારા સેન્ટરો બી પૂરા કરી નાંખશે ભક્તો. દરેક પ્રેમના ભૂખ્યાં છે. એ સિવાય બીજું કંઈ કરાય જ નહિ. 
+ </p>
+
+<p>
+વિષય : કેવો સમાજ !!  
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૨૨-૧૧-૨૦૨૧, પરિવાર સભા, અમદાવાદ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+	<p>
+પ્રગટ ગુરુહરિ પ્રબોધજીવન સ્વામીજી
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય, હરિપ્રસાદસ્વામી મહારાજની જય, 
+આત્મીય સમાજની જય જય જય, દાસના દાસ થવાની જય જય જય
+</p><p>
+પ્રીશિતભાઈએ સૂત્ર આપ્યું, અંગ્રેજીમાં સમજ ના પડી. બ્રહ્મવિહારીસ્વામીએ વર્ણન કર્યું (બ્રહ્મવિહારીસ્વામી ધીમેથી બોલે છે) ‘With Us, Within Us, Around Us’. આપણી સાથે છે, આપણી અંદર છે અને આપણી સરાઉન્ડિંગમાં છે. Ok. સરસ. 
+</p><p>
+[ પ્રસંગ : વર્ષો પહેલાની એક જૂની સ્મૃતિ થઈ આવી. ૭૩-૭૪ ની હશે કદાચ. બ્રહ્મવિહારીસ્વામી પણ યોગમાં નહોતા, સુજ્ઞેયસ્વામી પણ નહોતા. અશોકભાઈ કદાચ હશે. જૂના જોગીમાં બે-ચાર જણા કદાચ હોય તો ખબર નહિ, બાકી આ બધા નીચેવાળા તો કોઈ નહોતા. લંડનવાળા એક નટુભાઈ ડેડી કરીને હતા, સુરેશભાઈના સસરા. પહેલી વખત સ્વામીજીના દર્શન કરવા આવતા હતા. એ વખતે હેત હતું સ્વામીજી સાથે પણ નિષ્ઠા કે નિશ્ચય જેવી વાત નહિ. સતુભાઈ સાથે દોસ્તી, સતુભાઈ એટલે દક્ષા વાળા પપ્પા. કંઈક એના રિલેશનમાં પણ થાય. 
+</p><p>
+વડોદરાથી ગાડીમાં બંને જણા સોખડા જૂના મંદિરે આવ્યા. સ્વામીજીના દર્શન કર્યા. જવાની ઉતાવળમાં હતા, પાછા જવાની. લંડનથી આવેલા ને એટલે થોડું ટાઈમ મેનેજમેન્ટમાં થોડું માનતા હોય. એક એક મિનિટનો ઉપયોગ કરતા હોય એવું. ટાઈમ નથી, ટાઈમ નથી એવું કરેને, પરદેશવાળા. પણ છતાં પણ સ્વામીજીએ એને જમાડ્યા, આનંદ કરાવ્યો. કલાક-દોઢ કલાક તો સ્વામીજીએ રોક્યા હશે, ટાઈમ નહોતો તોય. પછી જવાની ઉતાવળ કરતા હતા. સ્વામીજી કહે, એક કામ કરો, એક ટપાલ લખી આપું છું. એ ટપાલ આસોજ મહેન્દ્રબાપુને આપીને પછી ત્યાંથી તમે ડાયરેક્ટ વડોદરા જતા રહેજો. એટલે કહે, સારું સ્વામીજી. 
+</p><p>
+સ્વામીજીએ ટપાલ લખી આપી. સતુભાઈ અને એ બંને, સોખડાથી આસોજ મંજુસર થઈને જવાય. અત્યારે જે રોડ છે એ નહોતો એ વખતે. એટલે કાચો રસ્તો, નહેર વાળો રસ્તો હતો. ત્યાંથી નીકળ્યા, આસોજ ગયા. સોખડાવાળી નેહરમાંથી આસોજ ગામ જવા માટે વચ્ચે સાવલી રોડ આવે. નટુભાઈ ગાડી ચલાવે. જેવો સોખડાની નહેર પૂરી થઈ, સાવલી રોડ આવ્યો, ક્રોસ કર્યો, ક્રોસ કરી ને આસોજ ગામની ભાગોળ ચાલુ થાય ત્યાંથી જ. (જળ ગ્રહણ કર્યું) ગાડી એ બાજુ વાળી. થોડી ગાડી જવા દીધી. ઉભી કરી દીધી એકદમ, આગળ ચલાવે નહીં. સતુભાઈ કહે નટુભાઈ જવાદો ને કે, કેમ ઊભી રાખી છે? મને કશું દેખાતું નથી કહે. મને કશું દેખાતું નથી. 
+</p><p>
+પપ્પા કહે જવા દો જવા દો કે, આપણે પછી બરોડા જવાનું છે, મોડું થશે, ગામમાં આવી ગયા આપણે. તો કહે, એટલો બધો પ્રકાશ નીકળે છે એટલો બધો પ્રકાશ નીકળે છે, એક એક રજકણમાંથી એટલો બધો પ્રકાશ નીકળે છે, કે સૂર્યનો પ્રકાશ તો એની આગળ ઝાંખો લાગે છે. શું કહે? એક એક રજકણમાંથી અનંત સૂર્યનો પ્રકાશ નીકળતો હોય એવો પ્રકાશ નીકળે છે. એટલે મારાથી ગાડી નહીં ચલાવાય. એમ કરીને ગાડી ત્યાં ઉભી કરી દીધી. થોડીવાર પછી, સતુભાઈને પણ ગાડી આવડે એટલે સતુભાઈએ ગાડી લઈ લીધી. 
+</p><p>
+ગામમાં ગયા. કાગળ આપવાનો હતો, આપ્યો. ત્યાંથી દક્ષામાં જવા માટે નીકળા. રસ્તામાં નટુભાઈએ કહ્યું, આસોજની ધરતી આવી છે એની એક એક રજકણમાંથી આટલો બધો પ્રકાશ નીકળતો હોય, તો ધરતી પર પ્રગટેલા પુરુષ કેવા હશે ! એ પુરુષની આપણને પ્રાપ્તિ થઈ છે. એની ઓળખાણ થાય, એનો મહિમા સમજાય, તો જ આપણી યાત્રા એના તરફ ચાલે. ] 
+</p><p>
+મહિમા સમજવો કઈ રીતે ? તો સ્વામીની પહેલી વાતમાં લખ્યું છે, ‘એવો મહિમા સમજવાનું કારણ તો એવા…’ બોલો. (ઓડીયન્સમાંથી, ભગવદીનો પ્રસંગ છે.) ‘…ભગવદીનો પ્રસંગ છે’. આપણે ખૂબ નસીબદાર છીએ કે, સ્વામીજીએ આપણને બ્રહ્મવિહારીસ્વામીની ગોદ આપણને આપી છે. નિરંતર આપણને સ્વામીજીના એવા મહિમામાં આપણને ડૂબાડેલા રાખે છે. 
+</p><p>
+બાકી અમદાવાદ તો વર્ષોથી અમે આવીએ છીએ. વર્ષોથી, પચાસ વર્ષથી અમદાવાદમાં આવીએ છીએ. પણ અત્યારે જે તમે સ્થિરતાથી બેઠા છો, હૈયાને વિશે જે નિષ્ઠા, નિર્દોષબુદ્ધિ જે દ્રઢ થઈ છે, એનું કારણ મહિમાની વાતો. બાકી અમદાવાદ એટલે કહેવત છે હો, (ડાબા હાથની મુઠ્ઠી પર જમણા હાથની પહેલી આંગળી ઘસીને ઈશારો કરીને સમજાવે છે કે મુઠ્ઠી તોડી નાંખો…) તોડી નાખો પણ નીકળે નહીં. પણ એ અમદાવાદના ભક્તો કોઈપણ વસ્તુ વહાલી રાખ્યા વગર, કેવળ સ્વામીજીને રાજી રાખવા તરફ નજર રાખી અને જીવવાની જે શરુઆત કરી, એ બ્રહ્મવિહારીસ્વામીનો દાખડો છે આપણા માટેનો. 
+</p><p>
+એટલે આપણે બધાએ એકડો પાક્કો રાખવાનો. એકડો શું ? ભગવદી. એકડો પાક્કો હોય તો એનાથી જ મહિમામાં વૃદ્ધિ થાય. અને મહિમા વૃદ્ધિ થાય તો હૈયાને વિશે નિષ્ઠા પાકી થાય અને નિષ્ઠા પાકી થાય પછી  નિર્દોષબુદ્ધિમાં એ લઈ જાય. અને નિષ્ઠા પાકી કરવા માટે ભગવદીનો પ્રસંગ જોઈએ, જોઈએ ને જોઈએ. 
+</p><p>
+સ્વામીજીએ આપણને આવી સરસ ગોદ આપી છે, તો બ્રહ્મવિહારીસ્વામી સાથેની ખરેખરી મૈત્રી બાંધીને આપણી યાત્રા સ્વામીજી તરફ નિરંતર ચલાવતા રહીએ એ માટે ગુરુહરિ આપણને સૌને ખૂબ ખૂબ ખૂબ બળ, બુદ્ધિ ને શક્તિ આપે એ જ પ્રાર્થના. 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય
+</p><p>
+વિષય : સ્વરૂપનિષ્ઠા
+</p><p>
+પ્રસંગ : નટુભાઈને એક એક રજકણમાં સૂર્યના પ્રકાશના દર્શન.
+</p>
+
+	<div class="chend">
+		*****
+	</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

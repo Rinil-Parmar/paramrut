@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૧૩ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+<p>
+‘સ્વીકાર એ જ સંબંધ’ પુસ્તિકમાંથી ગુરુહરિ સ્વામીજીનાં પરાવાણીના મુદ્દાઓનું વાંચન કરતાં પ્રબોધસ્વામીજીએ વાત કરી કે, “દુનિયામાં સત્સંગ વધે કે ઘટે એની મને કોઈ ચિંતા નથી, પરંતુ મારા યોગમાં આવેલા સંતો-મુકતો સ્વાધ્યાય-ભજનિક ક્યારે થાય તેની ચિંતામાં ને ચિંતામાં રાત-દિવસ પસાર કરું છું.”
+</p><p>
+સ્વામીજી આપણી નિરંતર ચિંતા કર્યા કરે છે કારણ એમને આપણા સિવાય કોઈનીય સાથે પ્રીતિ નથી.  એમને આપણા સિવાય કોઈની સાથે ગમતું નથી. આપણે ક્યારે સ્વાધ્યાય-ભજનીક થઈએ એનું જ એ નિરંતર ચિંતન કર્યા કરે છે.
+</p><p>
+આગળ વાંચન કરતાં કહ્યું, “યોગીજી મહારાજ મને ગધેડાની સાધના કરવાનું કહે કોની? ગધેડાની. તો તેની પૂજા કરું. એને નવડાવું, ધોવડાવું, ખવડાવું એની વાતો સાંભળું. ગધેડો તો શું વાત કરે? એ ભુકે તો એનો ગુણ લઉં. એ લાત મારે તો પણ મરતા સુધી એની સેવા કરું. મારી સાધના પૂરી થઈ ગઈ.” 
+</p><p>
+મોટાપુરુષના વચને જીવવું એ જ સાધના. 
+</p><p>
+“મારે લોકોને કે જગતને કે સમાજને કે મારા તંત્રને કોઈ ને રાજી કરવા નથી. જગત પૂછે કે એ કે ગધેડાની પૂજા કરાય ? બાપાએ કહ્યું મેટર ઓવર થઈ ગઈ. ત્યાં આગળ બુદ્ધિ બંધ. ૮૦ વર્ષ સુધી ગધેડાની જોડે બેસી રહું. એક દિવસ નહીં આખી જિંદગી. હું તો સહજ અવસ્થામાં રહું. ગધેડાની આજ્ઞામાં રહેવાનું કહેનાર તો ગધેડા જેવા નથી ને !” 
+</p><p>
+સ્વામીજીએ કેટલી નિર્દોષબુદ્ધિની વાત કરી ! “ગધેડાની આજ્ઞામાં રહેવાનું કહે એ તો ગધેડા જેવા નથી.” સ્વામીજી કેટલી કક્ષાએ એનાલિસિસ કરે.  “મારે તો એટલું જ નક્કી કરવાનું છે કે એ સંપૂર્ણ પુરુષ છે બાકી એ ગધેડું હોય તો પણ મારે માટે મૂર્તિ જ છે. એમાં વિશ્વાસ એના જેવી ધરતી પર કોઈ પ્રીતિ છે જ નહીં.”
+</p><p> 
+આવા વિશ્વાસથી મોટાપુરુષ સાથે સંબંધ બાંધવાનો. 
+</p><p>
+“મને યોગીજી મહારાજ કોઈ પ્રસંગ કહે એ પ્રસંગ જ્યાંસુધી અમે સિદ્ધ ન કરીએ ત્યાંસુધી એ પ્રસંગને ચોવીસ કલાકની હરેક સેકંડે ખાતાં-પીતાં, ઉઠતા-બેસતા, હાલતાં-ચાલતાં, લેટ્રીનમાં કે બાથરૂમમાં, ઊંઘમાં પણ એને વાગોળીએ પણ છોડીએ નહીં.” 
+</p><p>
+“હું કઈ ક્રિયા કરું છું એ મને ખબર જ ન હોય. ક્રિયા તો મશીનની જેમ થયા કરે. હાથ હાથનું કામ કરે, પગ પગનું કામ કરે. હું બાપામાં ડૂબેલો રહું. હું બાપાની કથાવાર્તામાં ડૂબેલો ન રહું. બાપાની ગોષ્ટિ પૂરી થાય અને મારે એ ગોષ્ઠિ વાગોળવાની ચાલુ થાય. મશીનની જેમ હું બાપાની કથાવાર્તામાં ડૂબેલો રહું. મનન, ચિંતન, નિદિધ્યાસ અને સાક્ષાત્કાર કરીને જ જંપીએ, પછી જ સૂવા જઈએ.”
+</p><p>
+પ્રસંગ બને ને તરત કથાવાર્તા, ગોષ્ઠિ કે એમનો પ્રસંગ યાદ આવે એનું નામ સાક્ષાત્કાર. એ કક્ષાએ મનન ચિંતન કરીએ કે જ્યારે જરૂરિયાત હોય ત્યારે પ્રસંગ આવીને ઊભો રહે. એનું નામ સાક્ષાત્કાર. બરાબરને ! 
+</p><p>
+“હું ઊંઘમાં પણ કથાવાર્તા વાગોળું.”  ઊંઘમાં તો આપણે ક્યાંના ક્યાં પહોંચી જઈએ. ઊંઘમાં પણ કથાવાર્તા..  “હું એક પ્રસંગને ૧૨૦૦૦ વખત વાગોળું.”
+</p><p>
+આપણે ખાલી બાર વખત વાગોળીએ તો પણ બહુ થઈ ગયું ! બારની પાછળના ઝીરોનાં ત્રણ મીંડા ઊડાડી દઈએ તો ય સાક્ષાત્કાર થઈ જાય.
+</p><p>
+“એવી ખુમારીથી હું જીવતો હતો. તમારા જેવો ઉધાર નહીં. બાપાની આજ્ઞા હોય એમાં દેહ-ઇન્દ્રિય, અંત:કરણ કશું જ વચ્ચે આવે નહીં. મને પહેલેથી જ મરવાનું ગમે. Do and Die (ડુ એન્ડ ડાય) શું ના થાય?” 
+</p><p>
+બસ એવું મરતા શીખાય એવી કરુણા ગુરુહરિ કરે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : વચન વાગોળવા
+</p><p>
+બ્રહ્મ રત્ન : ૧) મોટાપુરુષના વચને જીવવું એ જ સાધના. ૨) પ્રસંગ બને ને તરત કથાવાર્તા, ગોષ્ઠિ કે એમનો પ્રસંગ યાદ આવે એનું નામ સાક્ષાત્કાર.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

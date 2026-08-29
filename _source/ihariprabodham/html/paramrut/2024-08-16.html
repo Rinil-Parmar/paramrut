@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૬/૦૮/૨૦૨૪, મહાપૂજા, સુહૃદમ્‌ મંદિર, લેસ્ટર, યુ.કે.
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+સહજાનંદસ્વામી મહારાજની જય. હરિપ્રસાદસ્વામી મહારાજની જય. આત્મીયસમાજની જય જય જય. દાસના દાસ થવાની જય જય જય.
+</p><p>
+બ્રહ્મવિહારી સ્વામીએ આ સ્થાનની વાત કરી -૧૮૦ વર્ષ જૂની પ્રોપર્ટી (જગ્યા) છે. એક ભાગ ૧૮૦ વર્ષથી છે. એક ભાગ ૧૨૪ વર્ષથી છે છતાં બધું મર્જ થઈને નવું થઈ ગયું. બધું મર્જ થઈને નવું થઈ ગયું. કોઈને લાગે નહીં કે પેલી ૧૮૦ વર્ષ જૂની છે ને આ ૧૨૪ વર્ષ જૂની પ્રોપર્ટી છે; એમ નવા-જૂનાનો કોઈ મેળ નથી. 
+</p><p>
+નવા - જૂનાનો કોઈ મેળ નથી. આવા સંત મળે તો બધાને એક કરી નાખે. બધાને એક લેવલ પર લાવી દે ત્યાં સંત જોઈએ. બાકી દરેકનું લેવલ દરેક વ્યક્તિ પકડી રાખે - ‘હું જૂનો, મારું લેવલ જુદું’ પણ એ (અજ્ઞાનના) લેવલને ભૂલાવે સંત. 
+</p><p>
+આપણું કયું લેવલ ? અને કોને લઈને આપણું લેવલ છે ? આપણું કયું લેવલ? ને કોને લઈને લેવલ છે ? જે છે એ તો તેમને લઈને છે. સ્વામીજીને લઈને છે. એ ભૂલી જઈએ. ત્યાં આપણા જીવનમાં સંત જોઈએ. સંત હોય તો નાના થતાં શીખવાડે.
+</p><p>
+અમે જીગ્નેશભાઈ મિસ્ત્રીને ઘેર રોકાયા છીએ. આજે સવારે પૂજા પછી પરવારીને વોકિંગ કરવા માટે નીકળ્યો હતો.
+</p><p>
+અમદાવાદથી ભૌમિકભાઈ સમૈયાનો લાભ લેવા માટે સ્પેશ્યલ આવ્યા છે. બ્રહ્મવિહારીસ્વામીનો પ્રદેશ ત્યાં બી (અમદાવાદ પણ) છે - એકલું લંડન નહીં ત્યાંથી પણ ભક્તોને આમંત્રણ આપ્યું છે.
+</p><p>
+સવારે જીગરભાઈને ઘેર બે નાના ટાબોરિયા છે. એક આઠમામાં ભણે છે અને એક દસમામાં છે. ભૌમિકભાઈ એની સાથે વાતો કરતા હશે. કેવા સમાજની વચ્ચે બેઠા છીએ એની આ વાત છે !
+</p><p>
+ભૌમિકભાઈએ પૂછ્યું, ‘પ્રબોધસ્વામી અહીં ઉતર્યા છે !’ તો કહે, ‘હા.’
+</p><p> 
+પછી પેલા ટાબોરિયાએ પૂછ્યું, ‘તમારા ઘરે પ્રબોધસ્વામીનો ઉતારો થાય ?’ શું કહે ? ટાબોરિયાઓએ ભૌમિકભાઈને પૂછ્યું કે તમારા ઘરે સંતોનો ઉતારો થાય ? 
+</p><p>
+તો ભૌમિકભાઈએ કહ્યું, ‘ઘર જ પ્રબોધ સ્વામીનું છે ! મારું નથી.’
+</p><p>
+ભૌમિકભાઈ તો વડીલ છે અને કદાચ એ સમજણથી જીવતા હોય પણ પછી પેલા ટાબોરિયાઓએ જે જવાબ આપ્યો ને એ ઈમ્પોર્ટન્ટ છે.
+</p><p>
+ટાબોરિયા કહે, ‘આપણું ઘર છે ને એ સ્વામીજીનું ઘર અને સ્વામીજીનું મંદિર છે એ આપણું ઘર.’
+</p><p>
+આ ઘર પોતાનું મનાય ને આ મંદિર પોતાનું મનાય. એ આખી ભૂમિકા જુદી છે. તો જ આ મંદિરનો વિકાસ થાય.
+</p><p> 
+પોતાનું ઘર છે એ ઠાકોરજીનું છે એવું મનાય તો ૧૦૦% સમર્પણ થાય. શું થાય ? ૧૦૦% સમર્પણ થાય.
+</p><p>
+‘મારું કંઈ નથી, જે કંઈ છે એ સ્વામીજીનું છે. હું શ્વાસ લઉં છું એ પણ સ્વામીજીને લઈને લઉં છું’ નાના છોકરાઓમાં પણ એ ભાવના અત્યારે પ્રગટી છે. સ્વામીજીએ કેવો સરસ સમાજ આપણને આપ્યો છે ! એ સમાજની વચ્ચે રહેવાનું મળ્યું ! આ સમજણ આવી ક્યાંથી ? સંતોનો સંગ. સંતોની સાથેની દોસ્તી ના હોય તો આ સમજણ આવે નહીં. 
+</p><p>
+અત્યારે તો ઠેર ઠેર જ્યાં જઈએ ત્યાં આવો એક મરણીયો સમાજ સ્વામીજીએ તૈયાર કર્યો છે. ‘હું મંદિરનો ને મંદિર મારું’, ‘હું સ્વામીજીનો ને સ્વામીજી મારા’ એવી સમજણથી જીવનારો આખો સમાજ છે.
+</p><p>
+અમેરિકા હ્યુસ્ટનમાં મંદિર કર્યું ત્યાં પણ એવો સમર્પિત સમાજ છે. ન્યુઝીલેન્ડમાં જગ્યા લીધી છે, એમાં પણ માર્ચ મહિનામાં ઠાકોરજી પધરાવવાના છે. એ બધાએ પણ સંકલ્પ કર્યો છે કે ‘હું મંદિરનો ને મંદિર મારું’  એ ભાવનાથી બધા જીવતા થયા છે. આવા સમાજની વચ્ચે આપણને રહેવા મળ્યું છે.
+</p><p>
+‘પોતાનું ઘર મંદિર માનીને જીવે છે અને મંદિરને પોતાનું ઘર માની જીવે છે.’ એનું મંદિર થતાં વાર ન લાગે.  જે પોતાનું ઘર મંદિર માનીને જીવતો હોય એનું (ચૈતન્ય) મંદિર કરતાં એને (સ્વામીજીને) વાર ન લાગે.
+</p><p>
+આપણે બધા મંદિર કરવા માટે ભેગા થયા છીએ - સ્થૂળ મંદિર નહીં. ચૈતન્ય મંદિર બનાવવાના સંકલ્પથી સ્વામીજી ધરતી ઉપર આવ્યા છે. આવી સરસ ભાવનાથી જીવનારો સમાજ છે, એની વચ્ચે રહેવા મળ્યું છે એટલે આપણા જેવા કોઈ ભાગ્યશાળી નથી.
+</p><p>
+સ્વામીજી કહેતા હતા, ‘આ બ્રહ્માંડમાં મારા જેવો કોઈ ભાગ્યશાળી નથી.’ શા માટે ? આવો સમાજ પહેલા નહોતો. એવા સમાજમાં આપણને રહેવા મળ્યું છે. 
+</p><p>
+દિન દિન પ્રત્યે આપણે વિકાસ થાય. પણ ક્યારે ? તો જેનામાં જેટલું સારું હોય એ લેવાની ભાવના હોય. તો આપણો દિન દિન પ્રત્યે વિકાસ થતો જાય.
+</p><p>
+આ મંદિર થયું. આ મંદિરને પોતાનું માનીને આપણે જીવવું છે. તમારે તો દસ મિનિટના રેડિયસમાં બધાના ઘર છે. કોઈનું ઘર દૂર નથી. રોજ રાત્રે ભેગા થાવ તો પણ ખોટું નથી. રોજ રાત્રે એકાદ કલાક કાઢવાનો. સાંજની આરતીમાં બધાએ ભેગા થવાનું. ભેગા મળીને ભજન કરવાનું - ધૂન કરવાની. સ્વામીજી કે સંતોનાં પ્રવચન કે ગોષ્ઠિ સાંભળવાની. કોઈ મહિમાની વાત કરનાર હોય તો થોડો લાભ લેવાનો.
+</p><p>
+આ મંદિર આપણું ચૈતન્ય મંદિર કરવા માટેનું સ્થાન છે તો નિયમિત આ મંદિરમાં આપણે બધા જ આવતા રહીએ.  આપણા દીકરા-દીકરીઓનાં સંસ્કારોનું જતન થાય તે માટે મંદિર માધ્યમ છે. નિરંતર આપણો સંબંધ સ્વામીજી તરફ થતો જાય. આપણા દીકરા-દીકરાઓના જીવનમાં પણ હૃદયમાં સ્વામીજીનું સ્થાન રહે એ માટે આપણે નિયમિત આ સ્થાનનો આપણે ઉપયોગ કરવો છે.
+</p><p>
+બ્રહ્મવિહારીસ્વામી સાથે ખરેખરી દોસ્તી કરવી છે. એ આપણી પર અધિકાર કરે એવો સંબંધ બાંધવો છે. સંતો સાથેની દોસ્તી એટલા માટે કરવાની કે આપણે બધાનું લેવલ એક રહે. 
+</p><p>
+‘હું જૂનો - હું નવો એવો ભેદ ના રહે. ‘આપણે બધા જ એક’ એવી સમજણથી જીવવાની સૂઝ સંતોના સમાગમથી આવે. 
+</p><p>
+તો સંતોનો નિરંતર સમાગમ કરીને આપણી યાત્રા સ્વામીજી તરફ કરતા રહીએ. એ યાત્રા કરવા માટે ગુરુહરિ આપણને સહુનેય ખૂબ, ખૂબ, ખૂબ બળ, બુદ્ધિ અને શક્તિ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p>
+<p>
+		વિષય : સમર્પિત સમાજ  
+</p>
+<p>
+		બ્રહ્મરત્ન : પોતાનું ઘર છે એ ઠાકોરજીનું છે એવું મનાય તો ૧૦૦% સમર્પણ થાય. 
+</p>
+
+
+
+
+		
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

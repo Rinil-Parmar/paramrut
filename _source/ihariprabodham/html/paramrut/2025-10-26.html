@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૨૬-૧૦-૨૦૨૫, લાભ પાંચમ,  રવિવાર પરિવાર સભા,  આત્મીય વિદ્યાધામ બાકરોલ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+ડોક્ટર સાહેબે (ડો. કેતન ભટ્ટ-મુંબઈ) આપણને સ્વામીજીની અદ્‌ભુત સ્મૃતિ કરાવી. લાઈવ કરી દીધા આપણને. સ્વામીજીની સાથે બેઠા હોઈએ એવું દર્શન કરાવ્યું. 
+</p><p>
+લાભ પાંચમ. આપણે નિરંતર લાભ પાંચમ મનાવવાની છે.
+</p><p>
+યોગીજીમહારાજ કહેતા હતા : ‘આ બ્રહ્માંડમાં આપણા જેવા કોઈ ભાગ્યશાળી નથી ને બીજાને માનવા એ ભૂલ છે.’
+</p><p>
+કેમ ? ભાગ્યશાળી છીએ એ કઈ રીતે ? તો
+</p><p>
+- સ્વામીજીએ કરુણાએ કરીને આપણને ગ્રહણ કર્યા. <br/> 
+- પળે પળે પળે આપણું જતન કર્યું.  <br/>
+- હરેક સેકંડે આપણી સાથે રહ્યા. <br/>
+- પ્રેમ આપ્યો; આશીર્વાદ આપ્યા.
+</p><p>
+એટલા માટે આપણે નસીબદાર છીએ. એ પુરુષની સ્મૃતિ નિરંતર કર્યા કરવી પડે. એમનાં લીલા-ચરિત્રોમાં નિરંતર ડૂબેલા રહેવું પડે.
+</p><p>
+એકવાર મુક્તાનંદસ્વામીએ મહારાજને પૂછ્યું, ‘મહારાજ, શાંતિ થાય એવો ઉપાય બતાવો.’
+</p><p>
+ ત્યારે મહારાજે પોતાના બાળપણનાં સમયમાં જે જે લીલાઓ કરી; એનું દર્શન કરાવ્યું. પોતે નાના હતા ત્યારે ભાભીની વીંટી લઈ જઈ કંદોઈની દુકાનેથી પેંડા ખાધા હતા. કાકડીવાળા (ચીભડાના) ખેતરમાં જઈને કાકડી ખાધી. વેલા બધા ઉખેડી નાંખ્યા, ફરિયાદ થઈ.... એ બધા પ્રસંગોનું વર્ણન કર્યું મહારાજે. 
+</p><p>
+એટલે મુક્તાનંદસ્વામીને થયું કે હું પ્રશ્ન કંઈક જુદો કરું છું અને મહારાજ વાત કંઈક જુદી કરે છે. ફરી મહારાજને કહ્યું, ‘પ્રભુ! અંતરે શાંતિ થાય એવો કાંઈક ઉપાય બતાવો.’
+</p><p>
+એટલે મહારાજે આગળ ચલાવ્યું, ‘અગિયાર વર્ષની ઉંમરે અમે ગૃહ-ત્યાગ કર્યો. સરયુ નદીમાં ઝંપલાવ્યું. પૂરજોષમાં પાણી જતું હતું એમાં ખેંચાયા. સામે કાંઠે ઉતર્યા. ઉઘાડે પગે ફરતાં ફરતાં ફરતાં આઠ વર્ષ સુધી વનવિચરણ કર્યું.’ આ બધી યાત્રા મહારાજની જે અગિયાર થી અઢાર વર્ષની હતી એ આખું મહારાજે ફરી વર્ણન કર્યું.
+</p><p>
+મુક્તાનંદસ્વામીને થયું કે ‘હું પૂછું છું કંઈક ને મહારાજ કંઈક જવાબ જુદો આપે છે. એટલે ફરી પૂછ્યું, ‘મહારાજ! અંતરે શાંતિ થાય એવી વાત કરો.’
+</p><p>
+મહારાજે જોયું કે મારી વાતની સમજ નથી પડી. એટલે મહારાજ કહે કે સારું, એક કામ કરો. તમે વિચરણમાં જાઓ. બે-ત્રણ મહિનાનું વિચરણની કઈક આજ્ઞા કરી દીધી. ‘તમે વિચરણમાં નીકળો.’ 
+</p><p>
+મુક્તાનંદસ્વામીને થયું કે વિચરણમાં જઈશ તો મહારાજ કઈક પ્રેરણા કરશે ત્યાંથી એટલે એ તો આજ્ઞા પાડવા માટે નીકળી ગયા.
+</p><p>
+એ વખતે નિત્યાનંદસ્વામી જોડે બેઠા હતા. મુક્તાનંદસ્વામી ગયા પછી નિત્યાનંદસ્વામી હસ્યા. એમને થયું કે આ કામ વગરના સમય બગાડશે. એમણે પછી મહારાજને કહ્યું, ‘મહારાજ! કૃપા કરો એમની પર. આપ આજ્ઞા આપો તો મુક્તાનંદસ્વામીને મળું.’ મહારાજ કહે, ‘જાવ મળો.’
+</p><p>
+પછી જાય છે ને એક જગ્યાએ ભેગા થાય છે. નિત્યાનંદ સ્વામી તો શાસ્ત્રમાં પારંગત હતા એટલે એમણે કહ્યું, ‘તમને મહારાજની વાતમાં કઈ સમજ ના પડી?’
+</p><p>
+મુક્તાનંદસ્વામી કહે, ‘શું સમજ ન પડી. મહારાજને મેં શાંતિ થાય એની વાત કરી તો એમણે પોતાના બાળપણની વાતો કરી. ફરી શાંતિ માટે પ્રાર્થના કરી તો એમણે પોતાના વનવિચરણની વાતો કરી. મારે જે પ્રશ્નનો જવાબ જોતો હતો એ જવાબ મને મળ્યો નહીં.’
+</p><p>
+ત્યારે નિત્યાનંદસ્વામી કહ્યું, ‘મહારાજ શાંતિના ઉપાયનો જવાબ તમને આપતા હતા.’ પછી મુક્તાનંદસ્વામી કહે, ‘એમાં મને સમજ ના પડી, કઈ રીતે?’ નિત્યાનંદસ્વામીએ કહ્યું, ‘ભગવાનના લીલા-ચરિત્રમાં જેટલી શાંતિ છે એટલી કશામાંય નથી.’ 	
+</p><p>
+ત્યારે મુક્તાનંદસ્વામીને લાઈટ થઈ કે હવે શું કરું? મને તો મહારાજે ફરવા જવાની આજ્ઞા આપી દીધી. હવે મારાથી પાછું વળાય નહીં. તો નિત્યાનંદસ્વામી કહે કે તમે અહી ઊભા રહો. હું મહારાજને પ્રાર્થના કરું છું. મહારાજ તમને પાછા બોલાવશે.
+</p><p>
+પછી નિત્યાનંદ સ્વામી પાછા મહારાજ પાસે આવ્યા ને પ્રાર્થના કરી કે મહારાજ! મુક્તાનંદસ્વામીને વાતની ઘેડ બેસી છે.’ મહારાજ કહે, ‘એવું?’  પછી નિત્યાનંદસ્વામી તો બુદ્ધિશાળી એટલે કહે, ‘મહારાજ! એમનો પ્રશ્ન એવો હતો - એવું કહેતા હતા કે આપના દર્શને શાંતિ તો છે પણ અખંડ શાંતિ કેમ રહે મારે?’ મહારાજ કહે, ‘એવું કહેતા હતા?’ મહારાજ કહે, ‘તો તો બોલાવો.	 આપણે ઊંધું સમજ્યા.’
+</p><p>
+ભગવાન પણ કેવા! આમ ગરીબ થઈ જાય. ડોક્ટર સાહેબે વાત કરીને એવું દર્શન કરાવે... ‘એવું હતું કે આપણે ખોટા વિચરણમાં મોકલી દીધા. સારું એમને પાછા બોલાવો.’ પછી મુક્તાનંદસ્વામીને પાછા બોલાવે છે.
+</p><p>
+કહેવાનું તાત્પર્ય એટલું છે આટલા સરસના સ્વામીજીના લીલા-ચરિત્રો દર્શન કરાવ્યા. લીલા-ચરિત્રો વસ્તુ એવી છે કે એમાં ડૂબેલા રહીએ તો અખંડ શાંતિ રહે ને એજ કરવાનું છે. સ્વામીજી જેવા પુરુષના જીવનમાં એમના પ્રસંગોમાં, એમના લીલા-ચરિત્રોમાં ડૂબેલા રહીએ તો અખંડ લાભ પાંચમ છે.
+</p><p> 
+તો આપણે આજે સરસનો દિવસ છે. લાભ પાંચમનો શુભ દિવસ છે. નિરંતર લાભમાં જ છીએ અને લાભમાં રહેવું છે તો એમના લીલા-ચરિત્રોમાં ડૂબીએ અને સ્વામીજી આપણને જે ભાથું આપવા માંગતા હતા એ ગોષ્ઠિનું - કથાવાર્તાનું મનન-ચિંતન કરી; એમના તરફની યાત્રા કરતા રહીએ. એ (યાત્રા) કરવા માટે ગુરુહરિ આપણને સહુનેય ખૂબ, ખૂબ, ખૂબ બળ, બુદ્ધિ ને શક્તિ આપે એજ પ્રાર્થના. 
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય: અંતરે શાંતિ કેમ રહે?
+</p><p>
+પ્રસંગ: ૧) મુક્તાનંદ સ્વામી મહારાજને પ્રશ્ન કરે છે 
+</p><p>
+બ્રહ્મરત્ન: ૧) લીલા-ચરિત્રો વસ્તુ એવી છે કે એમાં ડૂબેલા રહીએ તો અખંડ શાંતિ રહે ને એજ કરવાનું છે. <br/>
+૨) સ્વામીજી જેવા પુરુષના જીવનમાં એમના પ્રસંગોમાં, એમના લીલા-ચરિત્રોમાં ડૂબેલા રહીએ તો અખંડ લાભ પાંચમ છે.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

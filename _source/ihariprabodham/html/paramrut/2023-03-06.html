@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૬ માર્ચ ૨૦૨૩, સવારે, પૂજામાં ગોષ્ઠિ, વેલીંગ્ટન, ન્યુઝીલેન્ડ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+શુભ દિવસ, હોળી ! આપણા સૌનાય આદર્શ ભગતજીમહારાજનો પ્રાગટ્યદિન ! ૧૯૮૮ની સાલમાં આ દિવસે સ્વામીજીએ ગોષ્ટિ કરેલી. કાલે રાત્રે એ ગોષ્ટિ વાંચતો હતો ! એમાં સ્વામીજીએ વાત કરી છે. 
+</p><p>
+ ‘મહાબળવંત માયા...’ આ પદ ગવડાવ્યું. પછી સ્વામીજીએ વાત કરી કે ગુણાતીતાનંદસ્વામીએ ભગતજીમહારાજ, જાગાસ્વામી અને એ વખતના ટોપ સંતો યોગેશ્વરસ્વામી, બાલમુકુંદસ્વામી, કૃષ્ણચરણસ્વામી એ બધાને બેસાડીને વાત કરી. 
+</p><p>
+ભગતજીને કહ્યું, ‘તું માંગ.’ પહેલાં યોગેશ્વરસ્વામી અને સંતોને કહ્યું. એટલે યોગેશ્વરસ્વામીનું ધ્યાનનું અંગ. શેનું અંગ ? જેનું જે અંગ હોય એ પ્રમાણે પ્રાર્થના કરે, માંગે. એટલે એમણે કદાચ એવું માંગ્યું હશે કે ‘સ્વામી ! તમારી મૂર્તિ અખંડ રહે એવું કરી આપજો.' ખોટું માંગ્યું નથી. મૂર્તિ અખંડ રહે એવું કરી આપજો. 
+</p><p>
+પછી ભગતજીને કહ્યું, 'તું માંગ.’ ભગતજીનો સંબંધ એવો હતો ને, એને ‘તું’ કરીને બોલાવતા. ગુણાતીતાનંદસ્વામી કહે, ‘પ્રાગજી! તું માંગ.' 
+</p><p>
+એટલે પ્રાગજીભગત કહે કે 'સ્વામી, મને કાંઈ માંગતા નથી આવડતું. શું માંગું એ ખબર પડતી નથી પણ તમારા ભક્તોની સેવાથી મને અળગો ના રાખશો.' શું માંગ્યું ? ‘તમારા ભક્તની સેવાથી મને વંચિત્‌ ના રાખશો.' ભગતજીએ આટલી પ્રાર્થના કરી. એટલે ગુણાતીતાનંદસ્વામી ભેટી પડ્યા.
+</p><p>
+યોગેશ્વરસ્વામી વિચક્ષણ બુદ્ધિવાળા એટલે એમને થયું કે મેં મૂર્તિનું સુખ માંગ્યું ને આમણે ભક્તોની સેવા માંગી. પછી યોગેશ્વરસ્વામીએ કહ્યું, 'સ્વામી ! મારું અંગ ધ્યાનનું છે એટલે મેં મૂર્તિ માંગી અને ભગતજીનું અંગ સેવાનું છે એટલે એમણે સેવા માંગી.' અંગ પ્રમાણે બંને સાચા છે.
+</p><p>
+ત્યારે ગુણાતીતાનંદસ્વામી કહે છે કે ‘મૂર્તિને અખંડ રાખવી હોય તો નિર્દોષબુદ્ધિથી ભગવાનના ભક્તોની સેવા કરવી પડે.’
+</p><p>
+એ રહસ્ય આ દિવસે સ્વામીજીએ આપેલું. એટલે આપણે બધા ખૂબ નસીબદાર છીએ. 
+</p><p>
+એ જમાનામાં કોણ એવા ભક્તો હતા ? સંબંધ જોઈને સેવા કરવાની હતી. શું જોઈને ? બધાય ભગતજીની ઉપેક્ષા જ કરતા હતા. માથે અગિયાર મણના ચૂનાના કોથળા નાખે. મહિમા થોડો હતો? કૂતરાને સામે તિલક-ચાંદલો કરીને મોકલે. મહિમાથી મોકલ્યો હતો એવું ? ઉપેક્ષા કરવા માટે મોકલેલો. છતાંય ભગતજીએ સંબંધે સેવા કરી. 
+</p><p>
+‘સંબંધ જોઈને સેવા કરીએ તો મૂર્તિ અખંડ રહે.’ એ રહસ્ય સ્વામીજીએ એ વખતે આપ્યું. 
+</p><p>
+આપણે ખૂબ નસીબદાર છીએ. એ વખતે તો કોઈ એવો સમાજ નહોતો છતાંય ભગતજીએ સંબંધ જોઈને મહિમાથી સેવા કરી. 
+</p><p>
+અત્યારે તો એકને સંભારીએ ને એકને ભૂલીએ, એવા અદ્ભુત સંબંધની વચ્ચે સ્વામીજીએ આપણને બેસાડયા છે.  જેટલું લઈએ એટલું ઓછું, એવો સરસ સમાજ સ્વામીજીએ આપ્યો છે. મોતીનો ચારો ચરી શકાય એવો સમાજ સ્વામીજીએ આપ્યો છે. તો ભગતજીએ જે માંગ્યું એ જ વસ્તુ આપણે પણ માંગવી છે,બસ. 
+</p><p>
+અત્યારે આપણે સ્વામીજીની જે ગોષ્ટિ સાંભળતા હતા એમાં સ્વામીજીએ કહ્યું, ‘સુહૃદભાવ વગર બધું નકામું.' 
+</p><p>
+સુહૃદભાવ કેમ રાખવો ? એનું પણ સ્વામીજીએ દર્શન કરાવતાં કહ્યું કે તમે ખરેખર અંબરીષ છો ? ખરેખર ધામ, ધામી અને મુક્તને અર્થે જીવન જીવવા માંગો છો ? તો તમારા જીવનમાં પ્રથમ સ્થાન ભક્તોનું હોવું જોઈએ. તમારા ઘરે લગ્ન પ્રસંગ આવ્યો હોય તો તમે તમારાં સગાંસંબંધીને આમંત્રણ આપશો. ...પણ જો ખરેખર નિષ્ઠા હોય તો પહેલા ભગત યાદ આવે. ભ'ઈ, ભગતને આમંત્રણ આપો. બધા ભગતો ભેગા થઈને કીર્તનભક્તિ કરીએ, શોભાયાત્રા કાઢીએ.’ 
+</p><p>
+લગ્નમાં શોભાયાત્રા તો કાઢતા જ હોઈએ પણ રેલીસ્વરૂપે કીર્તનભક્તિ કરતાં કરતાં કાઢીએ તો સ્વામીજી કેટલા રાજી થઈ જાય ! એ સ્વામીજીએ આત્મબુદ્ધિ ને પ્રીતિની કેટલીય સૂઝ આપણને સ્વામીજીએ પોતાના પ્રવચનમાં આપી. 
+</p><p>
+તો આપણે પણ ભગવાનના ભક્તનો આવો મહિમા સમજી, અરસપરસ એકબીજામાં ખોવાઈ જઈને આજના દિવસને સારી રીતે ઉજવીએ. એ ઉજવવા માટે ગુરુહરિ આપણને સૌને ખૂબ, ખૂબ, ખૂબ બળ, બુદ્ધિ ને શક્તિ આપે એ જ પ્રાર્થના.
+</p><p>
+વિષય : ભક્તોની સેવા
+</p><p>
+પ્રસંગ: ૧) ગુણાતીતાનંદ સ્વામી પાસે પ્રાગજી આશિષ માંગે છે. 
+</p><p>
+બ્રહ્મરત્ન: ૧) ત્યારે ગુણાતીતાનંદસ્વામી કહે છે કે ‘મૂર્તિને અખંડ રાખવી હોય તો નિર્દોષબુદ્ધિથી ભગવાનના ભક્તોની સેવા કરવી પડે.’
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

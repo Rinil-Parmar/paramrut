@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+૩૦ એપ્રિલ, ૨૦૨૩, વૈશાખ સુદ દશમ, પૂજામાં આશીર્વાદ, ભૌમિકભાઈ શાહના ઘરે
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+<p>
+ગુરૂહરિ પ્રબોધજીવન સ્વામીજી : 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય.. હરિપ્રસાદ સ્વામી મહારાજની જય.. આત્મીય સમાજની જય જય જય..
+</p><p>
+વૈશાખ સુદ દશમ, ૮૯મો પ્રાગટ્ય ઉત્સવ, નાના સ્વામીએ ભજન ગાયું, ‘વૈશાખી વાયરો’. 
+</p><p>
+બપોરે બહાર નીકળે એટલે ખબર પડે કે વૈશાખી વાયરો કેવો હોય, બપોરે ૧૨ થી ૩ની વચ્ચે નીકળે એટલે વૈશાખી વાયરાનો અનુભવ થાય. કાતિલ ગરમી, તે દિવસ પસંદ કર્યો. ગરમી પોતે ગ્રહણ કરી. આપણને હૈયે ઠંડક કરાવવા માટે, ભક્તોના દુઃખ માથે લીધા આપણને સુખી કરવા માટે, પોતે કઢી પીધી અને આપણને દૂધપાક આપ્યો. 
+</p><p>
+આપણને પ્રસંગ ખબર છે, મિત્રએ જમવાનું આઅમંત્રણ આપ્યું. મિત્ર સાથે સ્વામીજી જમવા પધાર્યા. બધાને દૂધપાક પીરસ્યો અને સ્વામીજીને ઈર્ષ્યાએ કરીને કઢી જમાડી. સ્વામી કહે, મસ્તીથી કઢી ખઈ ગયો, દૂધપાકમાં જેવો ટેસ્ટ હોય તેવો ટેસ્ટ માણીને કઢી પી ગયો. 
+</p><p>
+સ્વામીજી કહે મારા જીવનનું ધ્યેય જુદું હતું. કઢી કે દૂધપાક મારા જીવનનું ધ્યેય ન હતું. સ્વામીજી આપણને ધ્યેયની સ્પષ્ટિકરણ કરાવે છે. તમારા જીવનનું ધ્યેય જો પાકું હોય તો તમને કઢી પણ દૂધપાક જેવી લાગે. 
+</p><p>
+પછી બધા મિત્રોને સ્વામીજીએ પોતાના ઘરે જમવા બોલાવ્યાં. જે દીકરાએ સ્વામીજીને કઢી ખવડાવેલી એ દીકરાની સામે બેસીને સ્વામીજીએ ભરપેટ દૂધપાક પીરસ્યો, પેલાને અંતર્દ્રષ્ટિ કરાવી. 
+</p><p>
+તે વખતે બાપાનો યોગ ન હતો, કથાવાર્તાનો યોગ નહિ, આપણને એમ કે બાપાનો યોગ હોય, બાપાના આશીર્વાદ હોય, અને કથાવાર્તાથી કદાચ ઘડતર થયું હોય. આપણે કથાવાર્તાથી ઘડતર કરવું પડે એને કથાવાર્તાની જરૂર નહિ. તે સ્વયં જ્ઞાનમૂર્તિ કહેવાય. સ્વયં જ્ઞાનમૂર્તિ છે, તેમાંથી જ્ઞાન ફૂટે છે. અમે બધા જ્ઞાન કથનારા છે, માઇક લઈને, એ પ્રેરણા કરે તો બોલાય. બાપાનો યોગ ન હતો છતાં પણ સ્વામીજી આ કક્ષાએ જીવતા હતા. 
+</p><p>
+એ એટલું જ કહેવા માંગતા હતા કે, હું કઢી ખઈને તમને દૂધપાક આપીશ. (આંખમાં અશ્રુ સાથે) મારા જીવનની એક એક પળ તમારા માટે હશે. તે એક એક પળ આપણા માટે જીવ્યા, આપણને બધાને અનુભવ છે. 
+</p><p>
+હવે આપણે બધાએ એનું ઋણ વાળવાનું છે, એણે આપણા માટે જે કર્યું તેનું ૧% પણ જો આપણે કરીએ તો પણ તે ૧૦૦% માને તેવા પુરુષ છે. આ અવસર એવો છે, આવો અવસર ફરી મળે નહિ, તે ગુરુભક્તિ અદા કરવાનો અવસર આપણને મળ્યો છે. 
+</p><p>
+તો એ ગુરુભક્તિ અદા કરવા માટે આપણે શું કરવાનું ? તો એને જે ગમે છે, એનું જે મિશન છે, એની જે આપણી પાસે અપેક્ષા છે, એક જ અપેક્ષા છે, બસ, તમે બધા આત્મીય થઈને જીવો. તમે બધા સુહ્રદભાવના કાયદે જીવન જીવો. મોટા પુરુષની રીતેરીત દૃઢ થાય તે રીતે જીવો. 
+</p><p>
+આજે શુભ દિવસ છે, એક જ પ્રાર્થના છે, બસ, હે સ્વામીજી, આપે તો અમારા માટે કોઇ વસ્તુ વહાલી રાખી નથી. સર્વસ્વનો ભોગ આપે અમારા માટે આપ્યો છે, તો આપને ગમે છે, આપને અમારા પ્રત્યે જે અપેક્ષા છે એ અપેક્ષા પ્રમાણે અમે જીવન જીવી અને અમે આપના તરફનું ઋણ નિરંતર અદા કરતા રહીએ. એ ઋણ અદા કરવા માટે ગુરૂહરિ આપણને ખૂબ ખૂબ ખૂબ બળ, બુદ્ધિ અને શક્તિ આપે એ જ પ્રાર્થના. 
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય..
+</p><p>
+વિષય : ગુરૂઋણ અદા કરવું છે. 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

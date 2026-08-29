@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧ ઓગસ્ટ, ૨૦૨૪, હ્યુસ્ટન, અમેરિકા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+ગુરુહરિ પ.પૂ. હરિપ્રસાદસ્વામીજી મહારાજ તૃતીય સ્મૃતિદિન
+</p><p>
+નાના ઠાકોરજીની પ્રાણ-પ્રતિષ્ઠાનો દ્વિતિય પાટોત્સવ દિન
+</p>
+
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+સહજાનંદસ્વામી મહારાજની જય. હરિપ્રસાદસ્વામી મહારાજની જય. આત્મીય સમાજની જય જય જય. દાસના દાસ થવાની જય જય જય.
+</p><p>
+આજે ઠાકોરજીનો પાટોત્સવ. ઠાકોરજીની પ્રતિષ્ઠા કરી તેને બે વર્ષ થયા. 
+</p><p>
+આપ તો સાક્ષાત્ કૈવલ્ય મૂર્તિ છો. આપની સેવા પ્રત્યક્ષના ભાવથી કરવામાં જે કાંઈ ઉણપ રહી ગઈ હોય એની માફી આપજો. આપ સાથે જ છો એવા સાક્ષીભાવથી જો ન જીવાયું હોય તો જાગ્રત આપજો. 
+</p><p>
+આપના ભક્તોમાં પણ આપનાં દર્શન કરવાના હોય; એમાં ક્યારેય ચૂક થઈ ગઈ હોય તો ક્ષમા કરજો.
+</p><p>
+ઘણીવખત આપની સેવામાં ગાફલાઈ રહી ગઈ હોય. થાળમાં વહેલા-મોડું થયું હોય. પોઢાડવામાં વહેલા-મોડું થયું હોય તો એની માફી આપજો. આપને લઈને ફરવામાં, ક્યારેક ઉતાવળે ચાલવામાં આપને જર્ક આવ્યા હોય તો એની માફી આપજો. (ડૂમો ભરાઈ આવ્યો-રુદન)
+</p><p>
+આપ સ્વયં - સ્વામીજી સ્વરૂપે ધરતી પર આવ્યા. ૮૭ વર્ષ બે માસ અને ત્રણ દિવસ અમારી સાથે રહ્યા. આજનો એ પવિત્ર દિવસ. આજના દિવસે આપે આપનો દેહ અમારા માટે કૃષ્ણાર્પણ કર્યો. (ડૂમો ભરાઈ ગયો-રૂદન.) આપે અમારી પર ખૂબ ઋણ ચઢાવ્યું છે.
+</p><p>
+દેહભાવમાં જીવતા અમે સહુ. એમાંથી બહાર કાઢી આપના આકારે કરવા તરફ, બ્રહ્મભાવ તરફ લઈ જવા માટે આપે ખૂબ દાખડો કર્યો છે. ચોવીસ કલાક માનમાં રાચીને અહંકારનું પોષણ કરનાર અમે સહુ. આપે નિર્માણીપણે વર્તી નિર્માણીપણાના પાઠ અમને શીખવ્યા.
+</p><p>
+અમારી એકેય ભૂલને આપે અમારું જતન કરવામાં રંચમાત્ર દેહ પ્રત્યેની કાળજી રાખી નથી. દિવસ હોય કે રાત નિરંતર અમારું જતન કરતા રહ્યા છો. અમે અમારી રીતે જીવ્યા છીએ (તોય) રંચમાત્ર અપેક્ષા રાખી નથી. હવે જાગ્રતતા આપજો.
+</p><p>
+આપની રીતે, આપના ગમતામાં, આપના બળે જીવવાની સૂઝ આપજો. હરેક પળે, હરેક પ્રસંગે આપને જ કર્તાહર્તા માની આપનો સ્વીકાર કરતા થઈએ એવો બુદ્ધિયોગ આપજો.
+</p><p>
+આપનું જીવનસૂત્ર હતું : કોઈ આત્મીય બને કે ના બને મારે આત્મીય બનવું છે.’ એ સૂત્ર પ્રમાણે આત્મીયતાથી જીવન જીવીને આપનાં હૈયે હાશ કરાવવી છે.
+</p><p>
+સ્વાભાવિક પ્રમાણે વર્તી જવાય છે. વાણીએ કરીને ભક્તોની ઉપેક્ષા પણ કરી નાખતા હોઈશું. તો હવે જાગ્રતતા આપજો.
+</p><p>
+આપનો સંકલ્પ છે - બધાને બ્રહ્મભાવે જીવડાવવાનો. નિર્વિકલ્પપણે ભજનમાં લઈ જવાનો. તો એવી જાગ્રતતા આપજો કે આપની સ્મૃતિ સહિત ૩૦ મિનિટ નિર્વિકલ્પ પણે ભજન કરતા થઈએ. આપ જે કરાવવા માંગો છો જાગ્રતતા અને આત્મીયતા સિવાય કોઈ ચીજ કરવી નથી.
+</p><p>
+તારે લઈને હું ની ભાવનાથી જીવવું છે. તો એ માટે બળ આપજો. દાસત્વ એ આપના જીવનનો પ્રાણ હતો. ‘હું કાઈ નહીં, તારે લઈને હું’ એ ભાવથી જીવડાવવાનો સંકલ્પ હતો. ‘હું જે કઈ કરી શકું છું એ તારે લઈને છે; હું તો નિમિત્તમાત્ર છું.’ 
+</p><p>
+ચોવીક કલાકની હરેક સેકન્ડ આવી જાગ્રતતાથી જીવવું છે તો બળ આપજો. હવે સમય નથી બગાડવો. ખૂબ બગાડ્યો છે. જાગ્રતતા આપજો. હૈયાંને વિશે આપના સિવાય કોઈને રાખવા નથી. કોઈની સાથે પ્રીતિ રાખવી નથી. એક તારી સાથે જ પ્રીતિ રાખવી છે. એવી પ્રીતિમાં લઈ જજો. 
+</p><p>
+આજના શુભ દિવસે આપના શ્રીચરણોમાં સર્વે સંતો, સર્વે સહિષ્ણુભાઈઓ, બહેનો, અંબરીષો સહુનાય વતી એટલી જ પ્રાર્થના છે કે - આપે અમને જે દાસત્વમાં લઈ જવા છે. - બ્રહ્મભાવે જીવડાવવા છે. - આત્મીય થઈને જીવડાવવા છે. - અરસપરસ ખોવાઈ જઈને જીવડાવવા છે.
+</p><p> 
+તો એ માટેની હાં હાં ગડથલ કરવા માટે; અમને સહુને બળ, બુદ્ધિ ને શક્તિ આપજો એ જ આજના શુભ દિવસે આપના ચરણે અંતરની પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

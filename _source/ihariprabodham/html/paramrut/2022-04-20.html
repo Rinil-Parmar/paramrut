@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૨૦-૦૪-૨૦૨૨, પૂજામાં આશિષ, હરિધામ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+અમારે ૫૦ વર્ષ પૂરા થશે. વૈશાખ સુદ દશમ, ૫૦ વર્ષ પુરા થશે. ગોદમાં રાખીને ખૂબ આનંદ કરાવ્યો સ્વામીજીએ. બધી રીતનો આનંદ. પોતાના સ્વરૂપનું વિજ્ઞાન પણ કરાવ્યું.
+<p><p>
+૧૯૭૩-૭૪ ની સાલ હશે કદાચ, ૭૨-૭૩. નવે નવા સાધુ થયેલા. સ્વામીજી આનંદ કરાવવા માટે ખેતરમાં ફરવા લઈ જાય. આસોજના રોડ પર, સારા બાપાનું ખેતર. ચાલતા જવાનું, સોખડા મંદિરેથી. ખેતરમાં જવાનું. આનંદ કરવાનો. સ્વામીજીને.. એક ઝુલો બનાવેલો આંબાના ઝાડ નીચે. સ્વામીજીને ઝુલાવવાના. બહુ સ્મૃતિઓ સ્વામીજીએ આપી ત્યાં. ગોષ્ઠિ કરે સ્વામીજી. સોખડાથી અમે જઈએ, આસોજથી હરિભક્તો આવે. થોડું-ઘણું કંઈક બનાવીને લઈ લીધું હોય. કાં સીંગદાણા વઘારીએ. ત્યારે તો કાંઈ હતું નહીં આવું જ હતું. કાં પછી ચીકી બનાવીએ. ત્યાંથી કોથળી ભરીને લઈ લઈએ. ત્યાં સ્વામીજી બધાને પ્રસાદ આપે.
+<p><p>
+એક દિવસ રામનવમી હતી. સ્વામીજીએ ગોષ્ઠિમાં પૂછ્યું, ભગવાન સ્વામિનારાયણનો જન્મ ક્યારે ? આપણે શું જવાબ આપીએ. દુનિયા આખી ને ખબર છે. બધાને ખબર છે. એ ખબર પ્રમાણે આપણે જવાબ આપી દિધો. ચૈત્ર સુદ નોમ, રામનવમી. શું કહ્યું ? ચૈત્ર સુદ.. એ કે નહીં કે. ચૈત્ર સુદ નોમ નહીં કે. આપણને તો આગળ પાછળ કાંઈ ખબર ના હોય. વર્ષોથી ઉજવતા આવ્યા હોઈએ. 
+<p><p>
+સ્વામી કે ચૈત્ર સુદ દશમે મહારાજ આવેલા કે. ચૈત્ર સુદ દશમના આવેલા. પછી કે પરમહંસોએ ચૈત્ર સુદ નોમ એટલે કરી નાખી.. ઉપરા-ઉપરી સમૈયા ના થાય નોમ ને દશમ બે. એટલે ભેગું કરી નાખ્યું કે. નોમ અને બીજે દી દશમ. ના થાય એટલે ભેગું કરી નાખ્યું કે. એ ભગવાન સ્વામિનારાયણનો કેવો સુહૃદભાવ હશે. આખી તિથિ બદલી કાઢી.
+<p><p>
+અને આપણી સ્વામીજીને વૈશાખ સુદ દશમ છે. આપણે બધાએ વૈશાખ સુદ દશમ ઉજવી નથી, ચોથી મે ઉજવતા. એ પણ સ્વામીજીનો ભક્તો સાથેનો સુહૃદભાવ છે. ભક્તો સાથે અને ગુણાતીત સમાજ સાથેનો. મહારાજનો ઈતર સંપ્રદાય સાથેનો સુહદભાવ હતો અને સ્વામીજીનો ગુણાતીત સમાજ સાથેનો સુહૃદભાવ. 
+<p><p>
+કારણ કે બેક ટુ બેક ધારોકે ૨૩મી મે ઉજવે વૈશાખ સુદ દશમ, તારીખ પ્રમાણે ૨૩ મે. ૨૩મી મે ઉજવે તો બેક ટુ બેક અઠવાડિયામાં જ પહેલી જુન આવે. એટલે હરિભક્તોને અઠવાડિયામાં ફરી આવવું ના પડે એટલે આખી તારીખ જ બદલી કાઢી. પાછળ લઈ જાય તો વરસાદની સિઝન આવી જાય. એટલે ઉનાળાના વૈશાખના ભર તાપમાં સ્વામીજીએ ચોથી મે ચાલુ કરાવડાવી. પછી એથી વિશેષ ઉનાળામાં ગરમી ખૂબ હોય. પરદેશના ભક્તોને આવવું હોય તો ન આવી શકે અને ગરમી સહન પણ ન થાય. એ લોકોને સાનુકૂળતા રહે એટલે આખું છ મહિના ઠેલવ્યું. જાન્યુઆરીમાં જે શનિ-રવિ મળે ડેટ ફિક્સ નહીં. પેલી તારીખે, બીજી તારીખે એવું કંઈ નહી. એ સ્વામીજીનો સુહૃદભાવ. સમાજ સાથે, ગુણાતીત પુરૂષો સાથે.. એ દર્શન સ્વામીજીએ આપણને અદભુત કરાવ્યું.
+<p><p>
+એ દર્શનને વાગોળી શકીએ, એમાં ડૂબી શકીએ, એને જે કરાવવું છે એની પાછળની ભાવના એ સમજી શકીએ એવો બુદ્ધિયોગ અમને સૌને આપે એ જ પ્રાર્થના.
+<p><p>
+સહજાનંદસ્વામી મહારાજની જય..!!
+<p><p>
+વિષય : સુહૃદભાવ
+<p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

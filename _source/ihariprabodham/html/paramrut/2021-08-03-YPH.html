@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૩ ઓગસ્ટ, ૨૦૨૧, યોગી પ્રાર્થના હોલ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+આજે રાત્રિ સભામાં પ્રબોધજીવન સ્વામીજીએ ગુરુહરિ સ્વામીશ્રીની સ્મૃતિ કહેતા વાત કરી કે… 
+</p><p>
+અનિર્દેશનમાં વચ્ચે એક લીમડો છે. બધાએ દર્શન કર્યા છે. એ બનાવટી છે. એક દિવસ સવારે લંડનના હરિભક્ત જતીનભાઈ લાલ આવેલા. સ્વામીશ્રી દાતણ કરતાં હતા. સ્વામીશ્રી હીંચકા પર બિરાજમાન હતા. 
+</p><p>
+લાલ સ્વામીશ્રીના ચરણોમાં બેસી ગયા. લાલનું જીવન સાધુ જેવુ છે. એ થોડા ટેન્શનમાં હતા. અમે સ્વામીશ્રીના દર્શન કરવા ગયા હતા. એ વાર્તાલાપ સાંભળતા હતા. 
+</p><p>
+સ્વામીશ્રીએ કહ્યું કે, ‘આ લીમડો જો. આ લીમડો જ્યાં ઊભો છે ત્યાં માટી નથી. જોઈ આવ અંદર માટી નથી. પાણી નથી મળતું.  છતા લીમડો કાચ જેવો  છે. કેટલો ફ્રેશ છે ! એવા ફ્રેશ રહેવાનું.’ 
+</p><p>
+અમે લીમડો ઊભો કરેલો એટલે અમને ખબર કે આ આર્ટિફિશિયલ છે. અમે પાંદડા લગાડતા હતા ત્યારે સ્વામીશ્રી જોતાં હતા. સ્વામીશ્રીને પણ ખબર છે કે આ આર્ટિફિશ્યલ લીમડો છે. છતા સ્વામીશ્રી એને સાચો માનીને જે વર્ણન કરતાં હતા એ અદ્‌ભુત હતું. 
+</p><p>
+સ્વામીશ્રી સાધકને કયા માર્ગે ચાલવું, કઈ રીતે ચાલવું, કરી રીતે ફ્રેશ રહેવું એનું દર્શન કરાવતા હતા. સ્વામીશ્રીનું લેશન આટલું જ હતું કે, નથી પાણી કે નથી જમીન, પણ લીમડો ફ્રેશ રહે છે. એવા આપણે ફ્રેશ રહેવાનુ.
+</p><p> 
+ત્યારબાદ અમે અંતેવાસી સેવકો સાથે ગોષ્ઠી આનંદ કરતાં વાત કરી કે, ‘આ લીમડો છે એવા આપણે બધા છે. આર્ટિફિસિયલ ! કેવા ! પણ સ્વામીશ્રી લીમડાને જેવો માને છે એવા આપણને બધાને યોગીજી મહારાજના ચૈતન્ય સ્વરૂપો માને છે.’
+</p><p>
+આપણે આર્ટિફિસિયલમાંથી સ્વામીશ્રી જેવા માને છે એવા થવાનું છે. પ્રાર્થના એટલી જ કરવી છે કે, એમને આપણને દિવ્ય માન્યા છે. આપણામાં કેટલા આના બરકત છે એ આપણને ખબર છે. છતાંય એમને આપણામાં સંબંધ જોયો છે. 
+</p><p>
+વિશેષ વાત નથી કરવી. સમય બહુ થઈ ગયો છે. એક જ પ્રાર્થના કરવી છે, અમે ગમે તેવા છીએ. જેવા છે એ તારા છીએ. અમારામાં બરકત છે કે નહી,  પણ કાંડું તે પકડ્યું છે. પૂર્ણ મળ્યા છે ને પૂર્ણ કરીને રહેશે એ વિશ્વાસ છે. એ વિશ્વાસની જ્યોત અમારી અખંડ જલતી રહે ને આપના છીએ ને આપના થઈને રહીએ એવો બુદ્ધિયોગ આપી અમારી યાત્રા નિરંતર તમારા તરફ ચલાવતા રહીએ એ જ પ્રાર્થના. સહજાનંદ સ્વામી મહારાજની જય.
+ </p><p>
+વિષય : દિવ્ય સંબંધ
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૪ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+ગઈકાલે એક પ્રસંગ વાંચતો હતો. પેલી ડાયરી ક્યાં ગઈ? ઉપર જ છે. બ્રહ્મવિહારીસ્વામીએ બુક બતાવતાં પૂછ્યું, ‘આ છે?’ પ્રબોધસ્વામીજી કહે, “હાં. આપણો એક જ આધાર.”
+</p><p>
+બુકમાંથી વાંચન કરતાં પ્રબોધસ્વામીજીએ કહ્યું, “સ્વામીજી પોતાના જીવનની વાત કરે છે કે કોઈનામાં ૯૯ અવગુણ હોય. કેટલા? ૯૯ અવગુણ. અને ૧ ગુણ હોય તો અમને ૯૯ અવગુણ દેખાય નહીં.” પછી આગળ વાત કરતાં સ્વામીજી કહે, “એને માટે છ મહિના સુધી રોજ રાત્રે ત્રણ વાગ્યા સુધી જાગી ને ભજન કર્યું છે. એમનેમ આશીર્વાદ મળ્યા નથી. એમનેમ કૃપા થઈ નથી.”
+</p><p>
+ફરીથી વાંચું છું. સ્વામીજી કહે છે, “હું યોગીજીમહારાજના યોગમાં આવ્યો ત્યારથી મારો એક સ્વભાવ હતો. એક ભાવના એવી સરસ રાખી હતી કે કોઈપણ વ્યક્તિનામાં ૯૯ અવગુણ હોય ને એક જ ગુણ હોય તો મને ૯૯ અવગુણ દેખાય જ નહિ. પ્રેક્ટિસ પાડી દીધી હતી કે ૧ ગુણ તો સારો છે ને. આ સમજણ પ્રાપ્ત કરવા માટે છ મહિના સુધી રાત્રે ૩:૦૦ - ૩:૦૦ વાગ્યા સુધી જાગીને સાધના કરી. અમને એમને એમ આશીર્વાદ મળ્યા નહોતા.”
+</p><p>
+સ્વામીજી આપણને ગરજનું દર્શન કરાવે છે.  આપણે બધા મફતવાળા. મફતમાં મળતું હોય તો દાખડો કરવો નહિ. ...પણ જેવી તમારી ગરજ એ પ્રમાણે સંબંધ બંધાય. એટલે ખટકો તો જોઈએ જ.
+</p><p> 
+આપણે ‘સ્વીકાર એ જ સંબંધ’ની દશેરા આપણે ઉજવી હતી ત્યારે નિરંજનસ્વામીએે પ્રાર્થના કરી હતી. એક્ઝેટ શું પ્રાર્થના હતી એ યાદ નથી. પ્રબોધસ્વામીજી કહે, “સારું. યાદ આવશે ત્યારે કહીશું, શેર કરીશું પણ અત્યારે યાદ નથી આવતું. એ વખતે નિરંજનસ્વામીએ બધા વતીની કંઈક પ્રાર્થના કરી હતી.”
+</p><p>
+આપણે ખટકો રાખવો પડે. સ્વામીજીએ તો આપણને આપવું જ છે પણ પાત્રતા ઘડાયા વગર ટકે નહીં. એને માટે આપણે પોતે ખટકો રાખવો પડે. સિંહણનું દૂધ સુવર્ણ પાત્રમાં જ રહે. બીજું વાસણ હોય તો સ્રવી જાય. એમ આ સમજણ, આ જ્ઞાન એ પાત્ર થયા વગર રહે નહીં. 
+</p><p>
+ભગતજીમહારાજે દેહને ગણ્યો નથી, મન-બુદ્ધિની ઉપેક્ષા જોઈ નથી, દરેકને વિશે નિર્દોષબુદ્ધિ રાખી છે. ગુણાતીતાનંદસ્વામીને ભગતજીમહારાજે પ્રાર્થના કરી કે, ‘તમે રાજી થયા હોવ તો મને તમારું ઘર બતાવો એટલે કે અક્ષરધામ બતાવો.’
+</p><p>
+ત્યારે ગુણાતીતાનંદસ્વામીએ કહ્યું હતું, “એને માટે તો સહન કરવુ પડશે. એક બે જણાનું નહીં, ૩૦૦ સાધુનું સહન કરવું પડશે.”  ત્યારે ભગતજી કહે, ‘૩૦૦ નહિ, ૩૦૦૦ નું સહન કરીશ પણ મારે તો તમારું ઘર જોવું છે.’ આવું તો કદાચ આપણેય બોલીએ પણ બોલ્યા પછી ખટકો ન હોય. ભગતજીમહારાજ ખાલી બોલ્યા એટલું જ નહોતું. ...પણ ભગતજીમહારાજે એ રીતે જીવવા માટે ખટકો રાખ્યો તો ગુણાતીતાનંદસ્વામીની દૃષ્ટિ પડી ગઈ અને બ્રહ્મરૂપે જીવતા થયા.
+</p><p>
+દેહભાવ અને દેહાભિમાન એ બે ખતરનાક ચીજ છે. એને તોડવા માટે ઉપેક્ષા સિવાય કોઈ માર્ગ નહીં. દેહભાવ અને દેહાભિમાનમાંથી બહાર કાઢવા માટે ઉપેક્ષા કરે જ. ત્યાં આગળ ભજન કરીને બળ લેવું પડે બસ.
+</p><p>
+બ્રહ્મવિહારીસ્વામીએ પ્રાર્થના કરી કે, ‘અમને ઉપેક્ષા સહન કરવાનું બળ આપજો.’ પ્રબોધસ્વામીજી કહે, “આપણે એ જ માંગવાનું ને બીજું શું માંગવાનું ! માંગવા જેવું એટલું જ છે કે ઉપેક્ષા ઉપેક્ષા લાગે નહીં અને ઉપેક્ષામાં હસતા રહીએ. એ જ આપણી સાધના, બીજી કોઈ સાધના છે નહીં.”
+</p><p>
+ગઈકાલે સભામાં પ્રવચન મૂક્યું હતું. પ્રવચનમાં સ્વામીજીએ સરસ વાત કરી હતી કે, “ગુણાતીતાનંદસ્વામીએ વાતોમાં કહ્યું છે : માન-અપમાનમાં પોતાને અક્ષર માનવું. પોતાની જાતને અક્ષર માને તો એનાથી મોટો કોણ? પછી કોની પાસે માન-અપમાન રાખવું.  મારાથી કોઈ મોટું જ નહિ તો કોણ મને માન આપવાનું છે ? બીજી વ્યક્તિ માન આપી આપીને કેટલું આપશે? એટલે કોઈ પાસે અપેક્ષા માનની રાખવા જઈએ તો મળવાનું નહીં. ...કારણકે અનંત બ્રહ્માંડમાં આપણાથી મોટું કોઈ છે જ નહીં. એટલે સ્વામીની એ વાત પકડીને જીવવું પડે.”
+ </p><p>
+પટેલ સાહેબ સાથે હતા ત્યારે એમણે સંતોને ફોન પર એ જ વાત કરી હતી. તમે હતા ને બ્રહ્મવિહારીસ્વામી? પટેલ સાહેબે શું કહ્યું હતું? સ્વામિનારાયણ સ્વામિનારાયણ.. 
+</p><p>
+બ્રહ્મવિહારીસ્વામીએ કહ્યું, ‘પૂર્ણ મળ્યા છે, પૂર્ણ કરીને રહેશે.’ પ્રબોધસ્વામીજી કહે, “હા. પૂર્ણ મળ્યા છે, તે પૂર્ણ કરીને રહેશે. એ વાત પકડીને જીવવું પડે. ભગતજીમહારાજ એ રીતે જીવતા હતા. ભગતજી મહારાજ એ સહુ સાધકો માટે આદર્શ પાત્ર કહેવાય.”
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : ગરજ, ઉપેક્ષા
+</p><p>
+બ્રહ્મ રત્ન :  <br/>
+૧) દેહભાવ અને દેહાભિમાન એ બે ખતરનાક ચીજ છે. એને તોડવા માટે ઉપેક્ષા સિવાય કોઈ માર્ગ નહીં. <br/> 
+૨) પૂર્ણ મળ્યા છે, તે પૂર્ણ કરીને રહેશે. એ વાત પકડીને જીવવું પડે.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

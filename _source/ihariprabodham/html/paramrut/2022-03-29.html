@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૨૯ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+“યોગીજીમહારાજ કહે કે ભગવાન ચકલી સારું બ્રહ્માંડ ડૂબાડે ને ચકલીને પાણી પાય.” 
+</p><p>
+ચકલી પર્વત ઉપર બેઠી હોય ને એમાંય ઝાડ ઉપર. લૌકિક દૃષ્ટિએ આપણને વિચાર આવે કે શું ચકલી એક જ ભગત હશે ? બ્રહ્માંડમાં બીજું કોઈ ભગત નહીં હોય ? એ આપણી બુદ્ધિ. 
+</p><p>
+...પણ સ્વામીજીની બુદ્ધિ કેવી ? સ્વામીજી તો વિચક્ષણ બુદ્ધિવાળા હતા પણ સ્વામીજી કહે છે કે, “...ત્યાં આગળ ત્યાં બુદ્ધિ બંધ કરી દઈએ!” એ કેવો સંબંધ કર્યો હશે !
+</p><p> 
+“હું એટલું જ વિચારું આ વાત કોણ કરી રહ્યું છે ને હું કોના મુખારવિંદથી સાંભળું છું. એ સાકારબ્રહ્મની પરાવાણી એટલે એ પરમ સત્ય, સનાતન, દિવ્ય વાણી જ મનાય. એમાં જરાય કિંચિત્ મન-બુદ્ધિ સંશય ના કરે. એ જે બોલે તે જ સેકંડે મન-બુદ્ધિમાં સેટ થઈ જાય. પ્રયાસ ન કરવો પડે.” સ્વામીજી કેટલું બધું પોતાનું અસ્તિત્વ મન-બુદ્ધિ સહિત ખોઈને બાપા આગળ જીવતા હશે. 
+</p><p>
+એકબાજુ જોઈએ તો સ્વામીજી પ્રચંડ બુદ્ધિશાળી કહેવાય. બીજી બાજુ આપણે યોગીજીમહારાજને જોયા નથી પણ સ્વામીજી જે રીતે વર્ણન કરે છે એ રીતે વિચારીએ તો બાપા તો સાવ ભલા ભોળા લાગે. એમનાં વચનને વિશે વિશ્વાસ રાખવોને તે અઘરો.
+</p><p>
+કોઈ ૨% આપણા કરતા બુદ્ધિશાળી વધારે હોય અને વિશ્વાસ મૂકવાનો આવે તો મૂકી દઈએ. ...પણ બાપાનું દર્શન જ એવું હોય કે બુદ્ધિતત્ત્વનું સહેજેય દર્શન થવા જ ન દે ને એમાં વિશ્વાસ રાખવાનો એ દાસત્વની પરાકાષ્ટા કહેવાય !
+</p><p>
+“એમાં જરાય કિંચિત્ મન-બુદ્ધિ સંશય ના કરે. એ જે બોલે તે જ સેકંડે મન-બુદ્ધિમાં સેટ થઈ જાય. બોલે કે તરત જ સેટ થાય.” ...ને આપણે ગોખીએ તોય નથી થતું. આપણે પ્રયાસ કરીએ તોય નથી થતું. 
+</p><p>
+પણ પછી સ્વામીજી કહે છે કે, “...એ બાપાની (અમારા પર) કૃપા હતી.” પાછું એમાં પણ માનવાનું કે એ બાપાની કૃપા.  
+</p><p>
+...અને જે દિવસે મોટાપુરુષના વચનમાં અવિશ્વાસ તે દિવસથી સાધકનું ગળું કપાઈ ગયું. માથું ને ધડ જુદું પડી જાય.
+</p><p>
+હું ખૂબ ટેન્શનમાં હતો. ૨૫ દિવસ સુધી યોગીજીમહારાજના દર્શન કરવા નહોતો ગયો. એક દિવસ બાપાએ મને કહ્યું, “ગુરુ ! શાસ્ત્રીજીમહારાજમાં ખૂબ બરકત છે તે આપણામાં પૂરશે. તે વાક્ય સાંભળ્યું તે જ સેકંડે ફ્રેશ થઈ ગયો. એ જ સેકંડે.” યોગીજીમહારાજની પરાવાણીનું વાક્ય પૂરું થાય એ જ સેકંડે ફ્રેશ થઈ જતાં હશે એ સ્વામીજીનો બાપા સાથેનો કેવો સંબંધ હશે !
+</p><p>
+“પછી મન-બુદ્ધિનો વિચાર જ કર્યો નથી. વિચાર જ આવ્યો નથી.” એનું નામ મન-બુદ્ધિથી પારનો વિશ્વાસ.  “પછી તો હું નવરો જ ના રહું. સેવા, વાતુ, ભજન અને મહિમાના વિચારમાં ગરકાવ થઈ જાઉં. સેવા, ભજન અને મહિમાંના વિચારમાં હું ડૂબી જાઉં.”  “બાપાના વખતમાં જ્યારે વિધવિધ પ્રકારના મુક્તો સાથે કામ કરવાનું થાય ત્યારે ‘હું જ્યાં છું ત્યાં ગોંડલના યોગીજીમહારાજ મારી આજુબાજુમાં જ છે’ એવા જાણપણે હું નિરંતર જીવતો હતો. મને કોઈ આકાર જ દેખાતો નહોતો. યોગીજીમહારાજ જ મારી આજુબાજુ છે એવા જાણપણે નિરંતર જીવતો હતો.”
+</p><p>
+તો સ્વામીજીના ચરણોમાં પ્રાર્થના કરીએ કે :  હે સ્વામીજી ! આપે યોગીજીમહારાજ સિવાય કોઈનેય જોયા નથી. તો અમને એવી દૃષ્ટિ આપો. તમે જેમ બાપામાં ખોવાઈ ગયા તેમ અમે આપનામાં ખોવાયેલા રહીએ એટલું કરી આપો એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : વિશ્વાસ
+</p><p>
+બ્રહ્મ રત્ન : ૧)  ...અને જે દિવસે મોટાપુરુષના વચનમાં અવિશ્વાસ તે દિવસથી સાધકનું ગળું કપાઈ ગયું. માથું ને ધડ જુદું પડી જાય.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

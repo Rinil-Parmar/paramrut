@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+૨૦૨૩-૧૦-૨૦, બ્રહ્મ પ્રસાદ, આત્મીય વિદ્યા ધામ, બુદ્ધિયોગ વિશે..
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+<p>
+બપોર ના થાળ ગ્રહણ કર્યા બાદ,  પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજીએ આનંદ કરતા કહ્યું કે, બુદ્ધિનો વિકાસ થાય તેમ માથાનો વિકાસ થાય.. માથું મોટું થાય... સામે  સંતો, સહિષ્ણુઓ ને સેવકો ગુરૂહરિના દર્શન કરી રહ્યા હતા. 
+</p><p>
+એક ભજનિક સંતે પ્રાર્થના કરી કે, બુદ્ધિમાંથી બુદ્ધિયોગ થાય એવા આશીર્વાદ અપજો !!
+</p><p> 
+ગુરૂહરિ એકદમ ધીરે રહીને કહે, મહિમામાં રહેવું  પડે. 
+</p><p>
+પછી કહે, મહિમા ને નિષ્ઠામાં ડૂબીએ તો બુદ્ધિ યોગ મળે... એમ બે વાર કહ્યું. 
+</p><p>
+આગળ વાત કરતા ગુરૂહરિ કહે છે..
+</p><p>
+બુદ્ધિ કેલક્યુંલેશન કરે. નિશાળમાં ભણતા ત્યારે બીજ ગણિત, અંક ગણિત આવતું, એ કેલક્યુલેશન ની વાત  નહી.  આ થીક થાય છે ને આ થીક નથી થતું, એ કેલક્યુલેશન બુદ્ધિ કરાવે. એમાંથી બુદ્ધિયોગમાં જવાનું છે. બધુ થીક થઈ રહ્યું છે એ બુદ્ધિયોગમાં આવે. બધુ થીક થાય છે એ બુદ્ધિયોગમાં આવે, એ બુદ્ધિમાં ના આવે. બુદ્ધિ નો વિકાસ જલ્દી થાય બધાનો, બુદ્ધિયોગ માટે જાગ્રત રહેવાનું.
+</p><p>
+સ્વામીશ્રી ઘણીવાર કહેતા આ થીક થાય છે ને આ થીક નથી થતું એ વિચારવાનું નથી, બધુ થીક થાય છે, મારે થીક રહેવાનું છે.  મારે  જ થીક રહેવાનું છે.  થીક એટલે મહિમામાં તળબોળ રહેવાનું. સંબંધ ક્યાંથી ? સંબંધ વાળા ક્યાંથી ? આવો સમાજ ક્યાંથી ? મહિમાથી, ભગવાનની બુદ્ધિથી જોઈએ એ બુદ્ધિયોગ. 
+</p><p>
+બુદ્ધિ આવે ને ત્યાં, ગ્રૂપ થાય, ગ્રૂપીઝમ થાય, બધુ થાય. પોતાના અસ્તિત્વનું એકઝીબિશન થાય. એ બુદ્ધિ કરાવે.  બુદ્ધિયોગ પોતાના અસ્તિત્વને નીચે લઇ જાય. કયું અસ્તિત્વ ???  સહુના આધાર અક્ષરબ્રહ્મ અસ્તિત્વ રહિત થઈને જીવ્યા. હરિપ્રસાદ સ્વામીશ્રી, સહુના પ્રાણાધાર, અસ્તિત્વ ખોઈને જીવ્યા. એ આપણી  આગળ બુદ્ધિથી નથી જીવ્યા. એમાં (સ્વામીશ્રીમાં) ડૂબીએ એટલે બુદ્ધિયોગ મળે.  તો બુદ્ધિમાંથી બુદ્ધિયોગ થાય. 
+</p><p>
+બધા જાગ્રત છે એટલે સારું છે. ખ્યાલ છે કે બુદ્ધિમાંથી બુદ્ધિયોગમાં જવું છે. કથાવાર્તા ત્યાં જોઈએ સ્વામી, એ ભાગ કંપલસરી થઈ ગયો. સંતે બુદ્ધિયોગની વાત કરી. સરસ છે...  ગુડ... બધા જાગ્રત છે... આવી ને આવી જાગ્રતતા રાખવાની. મહારાજ બુદ્ધિયોગ આપજો !!!
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

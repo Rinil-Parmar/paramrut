@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૦, ઓગસ્ટ, ૨૦૨૧, ભરથાણા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+	સાંજે પ્રબોધજીવન સ્વામીજી ભરથાણા પધારેલા. અહી આત્મીય વિદ્યા મંદિરમાં ગુરુહરિ સ્વામીશ્રીના અસ્થિપુષ્પની પૂજન વિધિ સભાનું આયોજન હતું.
+	</p><p>
+	પ્રબોધસ્વામીજીએ ગોષ્ઠી કરતાં કહ્યું કે... 
+	</p><p>
+	ગુરુહરિ સ્વામીજીએ આપણને શું આપ્યું છે ! એમને આપણી માટે શું કર્યું છે એનો વિચાર કરીએ તો એનું ક્યારેય આપણે ઋણ વાળી શકીએ નહિ. નિરંતર આપણા આત્માનું જતન કરતા આવ્યા છે. 
+	</p><p>
+	પૂ. કોઠારી સ્વામીજી (પુરુષોત્તમચરણ સ્વામીજી) કહેતા હતા કે, એમણે બોલતાં શીખવાડ્યું, ચાલતા શીખવાડ્યું, ખાતા શીખવાડ્યું, જોતા શીખવાડ્યું... આપણી બધી જ વસ્તુનું જતન સ્વામીજીએ કર્યું છે. ગુજરાતીમાં કહીએ તો ભાવડા જેવા જીવને ગ્રહણ કરીને એકાંતિકના માર્ગે ચડાવ્યાં એ સ્વામીજીની કરુણા.
+	</p><p>
+	ગુરુહરિ સ્વામીજી માટે એક જ શબ્દ વપરાય સુહૃદમ સર્વ ભૂતાનામ્... જીવપ્રાણીમાત્રના સુહૃદ.
+	</p><p>
+	એક દિવસ સ્વામીજી યોગી પ્રાર્થના હોલમાં સભા કરતા હતા. કબૂતરાં આમથી ઉડીને આમ જાય.. આમથી ઉડીને આમ જાય.. બહાર નીકળે નહિ. આપણને ડિસ્ટબ થાય એટલે વિચાર કરીએ કે સભા પતે પછી એમને બહાર કાઢવા માટેનું કંઈક પ્લાનીંગ કરીએ.
+	</p><p>
+	સ્વામીજીએ સુહૃદસ્વામીને બોલાવીને કહ્યું, ‘સુહૃદ ! આ કબૂતરાં અંદર અંદર રહે છે.. એને ખાવા ક્યાંથી મળતું હશે ? એ પાણી ક્યાં પીતું હશે ?’ આ વિચાર સ્વામીજીને આવે, આપણને ના આવે. એ એમની કરુણા. જીવપ્રાણીમાત્રના સુહદ કહેવાય ! 
+	</p><p>
+	એ સામાન્ય લક્ષચોર્યાશીના જીવ ઉપર આટલી કરૂણા વરસાવી શકતા હોય... કેવા જીવ..? ચોર્યાશીના જીવ ઉપર આવી કરુણા વરસાવતા હોય તો એમના અર્થે જીવવાનો સંકલ્પ કરીને આપણે બેઠા છીએ તો એ આપણી યાત્રા નહિ ચલાવે ! ૧૦૦% ચલાવે.
+	</p><p>
+	સુવાસીનીભાભીએ ઘનશ્યામ મહારાજને કહ્યું કે ઘનશ્યામ તું અમને છોડીને જતો તો નહિ રહે ને. તું અમને રઝડાવીશ તો નહિ ને ?
+	</p><p>
+	ઘનશ્યામ મહારાજને સુવાસીનીભાભી પૂછે છે કે તું અમને રઝડાવીશ તો નહિ ને. ત્યારે ઘનશ્યામ મહારાજ.. બહુ નાની ઉંમર. ૧૦ વર્ષની ઉંમર હશે. વન-વિચરણ પહેલાની વાત. ૧૧ વર્ષે વન-વિચરણમાં નીકળ્યા હતા. ત્યારે સુવાસીનીભાભીને ઘનશ્યામ મહારાજ કહે છે કે, 'મારા યોગમાં જે કોઈ આવશે અને ક્યારેય રઝડવા દઈશ નહિ.' એ કરુણાનિધિ.
+	</p><p>
+	એ કરુણાનિધિ ધરતી પર આવ્યા. ગયા નથી. આપણે બધા માનીએ છીએ કે એના એ જ ભગવાન સ્વામિનારાયણ સ્વામીજી સ્વરૂપે આપણને મળ્યા. માનતા હતા આપણે દિલથી. તો એ ભગવાન સ્વામિનારાયણ જો આવીને આ વાત બોલતા હોય તો સ્વામીજી આપણને રઝડાવે ખરાં..? ના.. 
+	</p><p>
+	એ ધરતી પર આવ્યા છે. મનુષ્ય દેહ ધારણ કર્યું છે. જ્યારથી ધરતી પર પ્રગટ્યા હોય ત્યારથી તેઓ એક એક સેકન્ડનો પોતાનો પ્રોગ્રામ ફાઈનલ કરીને આવ્યા હોય. કે આ દિવસની આ મિનિટ આ ભગત માટે વાપરવી છે. આ દિવસની આટલી મિનિટ માટે આનંદ કરવો છે. આ દિવસથી આટલી મિનિટ માટે વોકિંગ કરવું છે. આ દિવસની આટલી મિનિટ માટે સ્વીમીંગ કરવું છે. બધો ટાઈમ ફીક્ષ હોય એમનો. ક્યાં કોનો કોન્ટેક્ટ કરવો ? ક્યાં કોને હેત કરવું ? કોને ખખડાવા એ પણ ફાઈનલ હોય.... એ બધો જ ચાર્ટ લઈને આવ્યા હોય. એ ચાર્ટ પ્રમાણે જ એ ચાલતાં હોય.
+	</p><p>
+	આપણને લાગે કે સ્વામીજી, ઓચિંતા જતાં રહ્યા.. ના.. એમને નક્કી કરેલું આયોજન હોય. એ પ્રમાણે એ ચાલતા હોય. એક એમને આપણાં પર વિશ્વાસ હશે. અને બીજી એક વસ્તુ... જ્યાં આપણામાં સ્ટેગનન્સી આવી હોય એને ધક્કો મારી આગળ લેવાની ભાવના હશે... આપણે સ્ટેગનન્ટ રહેવું નથી...
+	</p><p>
+	વિષય : જીવપ્રાણીમાત્રના સુહૃદ.
+	</p><p>
+	પ્રસંગ : ૧) પ્રાથના હોલમાં રહેતા કબૂતર વિશે પુછ્યું. ૨) ઘનશ્યામ મહારાજ અને સુવાસીની ભાભીનો સંવાદ 
+	</p><p>
+	બ્રહ્મરત્ન : ગુરુહરિ સ્વામીજી માટે એક જ શબ્દ વપરાય સુહૃદમ સર્વ ભૂતાનામ્... જીવપ્રાણીમાત્રના સુહૃદ.
+	</p>
+	
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા.  ૨૨ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+“મને નિરંતર એક જ આલોચ રહે છે કે તમારા સહુના આત્માની યાત્રા પરમાત્મા સન્મુખ નિરંતર વધતી રહે.” 
+</p><p>
+સ્વામીજી એક જ આલોચ રાખે છે કે આપણાં બધાની યાત્રા પરમાત્મા સન્મુખ નિરંતર વધતી રહે.
+</p><p>
+“હું યોગમાં આવ્યો ત્યારથી એક જ સ્વભાવ હતો. એક ભાવના એવી સરસ રાખી હતી કે કોઈ વ્યક્તિના ૯૯ અવગુણ હોય ને એક જ ગુણ હોય તો મને ૯૯ અવગુણ દેખાય જ નહિ. પ્રેક્ટિસ પાડી દીધી હતી કે એક ગુણ તો સારો છે ને !” 
+</p><p>
+પ્રેક્ટિસ પાડવી પડે. એમ ને એમ થાય નહિ.
+</p><p>
+“આ સમજણ પ્રાપ્ત કરવા માટે છ મહિના સુધી રાત્રે ૩:૦૦ - ૩:૦૦ વાગ્યા સુધી જાગીને સાધના કરી છે. અમને એમ ને એમ આશીર્વાદ મળ્યા નહોતા.”
+</p><p>
+સ્વામીજીએ ૬ મહિના સુધી રાત્રે ૩-૩ વાગ્યા સુધી જાગીને સાધના કરી.  કઈ સાધના ? ગુણ લેવાની સાધના. કોના માટે સાધના કરી ? આપણને સૂઝ પ્રગટે તે માટે...
+</p><p>
+આપણને સ્વામીજીએ ઘણી વખત કહ્યું છે : દરરોજ પાંચ મુક્તોના ગુણ વિચારીને સૂઈ જવું. ખાલી પાંચ જ.
+</p><p> 
+“દુનિયામાં સત્સંગ વધે કે ઘટે એની મને કોઈ ચિંતા નથી. પરંતુ મારા યોગમાં આવેલા સંતો-મુકતો સ્વાઘ્યાય-ભજનિક ક્યારે થાય એની ચિંતામાંને ચિંતામાં દિવસ-રાત પસાર કરું છું.” </p><p>
+એ આપણી કઈ ચિંતા કર્યા કરે છે ? તો આપણે ક્યારે સ્વાઘ્યાય-ભજનિક થઈએ. સ્વામીજીને આપણાં સિવાય કોઈ વ્યક્તિ વ્હાલી નથી. એનું આ દર્શન છે.
+</p><p>
+આપણે એમનામાં નિરંતર ડૂબતા થઈએ એ એક જ વાતનો ચોવીસ કલાકની હરેક સેકંડ એમને આલોચ છે. 
+</p><p>
+સ્વામીજીની જે આ ગરજ છે, એમની આપણી સાથેની જે પ્રીતિ છે. એ પ્રીતિ અને ગરજનો વિચાર કરીને સ્વાઘ્યાય-ભજન કરીએ તો આપણને સ્વામીજી બળ આપ્યા વગર રહે નહીં. 
+</p><p>
+તો એમની ગરજ અને પ્રીતિને સમજવા આપણને સહુને ગુરુહરિ બુદ્ધિયોગ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદસ્વામી મહારાજની જય.
+</p><p>
+વિષય : ગુણ ગાવા છે
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

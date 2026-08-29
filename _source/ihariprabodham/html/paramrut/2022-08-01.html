@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૦૧-૦૮-૨૦૨૨, સવારે મહાપૂજા, ચલમૂર્તિ પ્રતિષ્ઠામાં પ્રાર્થના, આત્મીય વિદ્યાધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	
+	<p>
+આપણા (ગુરુહરિ હરિપ્રસાદ સ્વામીશ્રી) સંકલ્પથી ચલ મૂર્તિની પ્રતિષ્ઠા વેદોક્ત વિધિથી કરવામાં આવી છે ત્યારે... સ્વયં મૂર્તિ સ્વરૂપે અમારી સમક્ષ છો ત્યારે... સંતો-ભક્તોની પ્રાર્થના સ્વીકારી, એમના દિલના પોકારને સ્વીકારી આપણા ગમતા પ્રમાણે જીવી શકે, એવું બળ આપી સહુને તમારી સાથે ભક્તિથી જોડાયેલા રહીએ. 
+</p><p>
+આપણી સાથે વર્ષો સુધી રહ્યા છીએ. આપણી સેવા-ભક્તિને ખુબ નિહાળી છે. આપણી ઠાકોરજી પ્રત્યે કિંચિત ક્યારેય પણ ભક્તિમાં કચાસ આવા દીધી નથી. આપે પ્રતિષ્ઠા કરી હતી છતાં આપ એમની ખુબ મર્યાદા રાખીને જીવ્યા છો. ઠાકોરજીને ધરાવ્યા વગર કોઈ ચીજ ગ્રહણ કરી નથી. ઠાકોરજીને વિચરણમાં ભીડો પડ્યો હોય તો આપે માફી માંગી છે. પળેપળ ઠાકોરજીનું જતન કર્યું છે. એવી ભક્તિ અમારામાં પ્રગટાવશોજી. 
+</p><p>
+હે સ્વામીજી! મૂર્તિને વિષે કયારેય સ્થૂળભાવ ના આવે. આપ જ બિરાજી રહ્યા છો, આપ જ અમારી સેવા ગ્રહણ કરી રહ્યા છો, આપ જ થાળ ગ્રહણ કરી રહ્યા છો, આપ જ અમારી આરતી સ્વીકારી રહ્યા છો.
+</p><p> 
+સંતો - સેવકો આપણને સ્નાન કરાવે, નવડાવે-ધોવડાવે, થાળ કરે, આરતી કરે એટલું પ્રત્યક્ષભાવથી કરી શકીએ. આપ જ સ્વયં અમારા ભાવને ગ્રહણ કરી રહ્યા છો. એવા પ્રત્યક્ષના ભાવથી અમારી સેવા-ભક્તિ નિરંતર થયા કરે, એવો બુદ્ધિયોગ, એવું બળ આપશોજી. 
+</p><p>
+હે સ્વામીજી! અમારા બધાની પ્રાર્થના નિરંતર સાંભળી રહ્યા છો. એવા પ્રત્યક્ષભાવથી આપની આગળ કાકલુદી થયા કરે, એવું બળ આપશોજી. 
+</p><p>
+હે સ્વામીજી! આપે કરુણા કરીને એવા સરસ જીવન મુકતો આપ્યા છે. એવા સરસ સંતો આપ્યા છે. વડીલ સંતો અમારા ભક્તિપ્રિયસ્વામી, સુહૃદસ્વામી, શ્રીજીચરણસ્વામી, મૈત્રીસ્વામી, નિરંજનસ્વામી, હરિપ્રિયસ્વામી તથા સહુ પ્રાદેશિક સંતો અને નાના સંતો ખૂબ ભક્તિભાવથી આપની સેવા-ભક્તિ કરતા રહીએ. 
+</p><p>
+આપે સરસ સહિષ્ણુભાઈઓ આપ્યા છે. અમારા ભોગીલાલભાઈ, ભાણાભાઈ, અરવિંદભાઈ, અશોકભાઈ, પવિત્રભાઈ, પ્રાણેશભાઈ અને સહુ સહિષ્ણુ સેવકો અને મંદિરમાં સેવા-ભક્તિ કરતા સાધક સેવકો અને આપને શરણે થઈને સમર્પિત થઈને જીવતા એવા અંબરીષ મુકતો તેમજ મરણિયા હરિભક્તો એ બધા વતી એટલી જ પ્રાર્થના છે.
+</p><p>
+હે મહારાજ! હે સ્વામી! આપ મૂર્તિમાન મૂર્તિમાં પ્રતિષ્ઠાપિત થયા છો. એવા ને એવા અમારા હૃદયને વિષે બિરાજમાન રહી અમારી પ્રાર્થના સાંભળતા રહેશોજી. 
+</p><p>
+હે સ્વામીશ્રી! આપે દરેકની ઘેર સરસ મંદિરો બનાવી આપ્યા છીએ. એ મંદિરમાં મૂર્તિઓ પધરાવી છે, એ મૂર્તિઓમાં પણ આપણા વિષે મૂર્તિમાન સ્વરૂપે ભાવ રાખી ને આપની સેવા-ભક્તિ કરતા રહીએ. 
+</p><p>
+સવારે પૂજામાં પણ જે મૂર્તિ પ્રસ્થાપિત કરીએ છીએ, એ મૂર્તિમાં પણ આપ જ બિરાજી રહ્યા છો ને આપ જ અમારી પ્રાર્થના (ગરગરા થઈ ગયા ને આંસુ વહેવા લાગ્યા) સાંભળી રહ્યા છો, એવા ભાવથી (રડતા રડતા પ્રાર્થના) પૂજામાં પણ પોકાર કરી શકીએ એ માટે અમને સહુને ખૂબ, ખૂબ બળ આપશોજી. 
+</p><p>
+(રડતા રડતા કાકલુદી ભરી પ્રાર્થના) 
+</p><p>
+એથી વિશેષ આપણે જે ગમે છે, આપ જે મિશનથી ધરતી પર આવ્યા છો, એ સંપ, સુહૃદભાવ ને એકતાનું મિશન, એ મિશનમાં ખરેખર હોમાઈ જવું છે. આપને ગમે છે એવી આત્મીયતા અંદરો અંદર કેળવીને જીવવું છે.
+</p><p> 
+હે સ્વામીજી! આપ પ્રત્યક્ષપણે પ્રાર્થના સાંભળી રહ્યા છો અમણે બધાને એવું બળ આપી કૃતાર્થ કરશોજી. આપને ગમે છે એવો સુહૃદભાવ, આપને ગમે છે એવી આત્મીયતા અમારા જીવનમાં પ્રસ્થાપિત કરી આપશોજી.
+</p><p> 
+હે સ્વામીજી! કોઈના સ્વભાવ પ્રકૃતિ ના જોઈએ. દરેકનો આપણી સાથેનો સંબંધ નિહાળતા રહીએ, એવો બુદ્ધિયોગ આપશોજી. 
+</p><p>
+સહુ ખુબ મોટા છે... ખુબ મોટા છે... એવું દિલથી મનાય એવી કૃપા કરશોજી. સંતો-ભક્તોને વિષે નિરંતર મહિમા સ્થિર રહે એવું આપ કરાવી આપશોજી. 
+</p><p>
+વિશેષ કઈ પ્રાર્થના નહીં કરવી, બસ તમે સાથે છો... સાથે છો... સાથે જ છો... એવું માનીને જીવતા રહીએ. એવું કરી આપશોજી, એ જ પ્રાર્થના...
+</p><p>
+સહજાનંદસ્વામીમહારાજની જય.
+</p><p>
+વિષય: પ્રાર્થના
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

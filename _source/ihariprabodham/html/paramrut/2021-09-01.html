@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૯ સપ્ટેમ્બર, ૨૦૨૧, યજ્ઞભોજનાલય, હરિધામ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+		<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+
+<p>
+[ પ્રસંગ ૧ :
+સુહૃદસ્વામીએ ભગતજી મહારાજના પ્રસંગનું દર્શન કરાવ્યું. ગુણાતીતાનંદ સ્વામીએ ફગાવા આપ્યા. ધાણી ખલાસ થઈ ગઈ હતી. ગાંગળા રહ્યા હતા. ભગતજી પ્રસાદ લેવા ગયા તો બુદ્ધિશાળી બેઠેલા એ વિચાર કરે કે આ ગાંગળા માટે શું ઉમંગથી જાય છે. પણ ગુણાતીતાનંદ સ્વામી ને ભગતજીનો સંબંધ જુદો હતો. ભગતજી ઉમંગથી ગયા. એક ગાંગળું આપ્યું. ભગતજીએ સંકલ્પ કર્યો કે સ્વામી કામ ગયો ? ગુણાતીતાનંદ સ્વામી કહે કે ગયો. બીજું ગાંગળું આપ્યું. ભગતજી કહે કે ક્રોધ ગયો ! ગુણાતીતાનંદ સ્વામી કહે કે ગયો.  એમ ૬ ગાંગળામાં ૬ દોષ માટે ભગતજીએ પ્રાર્થના કરી. 
+</p><p>
+એક બુધ્ધિશાળી વ્યકિએ જોયું કે ભગતજીએ ૬ ગાંગળામાં ૬ દોષ માટેની પ્રાર્થના કરી લીધી. એને ભગતજીને પુછ્યું કે તમે એવા કયા અધિકારથી ગુણાતીતાનંદ સ્વામી પાસે આવા આશીર્વાદ માંગી શકો છો ? 
+</p><p>
+ભગતજી મહારાજ મસ્તીથી બોલ્યા કે, મારી આંખમાં કોઈ ભેદ દ્રષ્ટિ નથી. હું જેવો ગુણાતીતાનંદ સ્વામીને જોવ છુ એવી જ દ્રષ્ટિથી બધાને જોવ છુ. એટલે આશીર્વાદ માંગી શકું. એવો સંબંધ આપણે બાંધવો છે.] 
+</p><p>
+ભક્તિસ્વામીએ કહ્યું કે, સ્વામીશ્રીને પરોક્ષ માનીશુ તો સુહૃદભાવ નહીં રાખી શકીએ.
+</p><p>
+[ પ્રસંગ ૨ :
+આજે આપણને સ્વામીશ્રીના અસ્થિપુષ્પની પ્રસાદી મળવાની છે. પ્રસાદી પરથી એક પ્રસંગ યાદ આવ્યો.  
+</p><p>
+સ્વામીશ્રી બાપા સાથે યુવકમાં હતા ત્યારે એક વખત ગઢડા દર્શન કરવા પધાર્યા. બાપાએ મંદિરે દર્શન કર્યા. દંડવત કર્યા. હરિકૃષ્ણ મહારાજ આગળ ધૂન કરી. તે વખતે બાપાએ કહ્યું કે આ મુર્તિ બોલે છે. સ્વામીશ્રીએ તરત જ પ્રાર્થના કરી. 
+</p><p>
+ત્યાંથી બાપા અક્ષર ઓરડીએ પધાર્યા. જ્યાં પ્રસાદીની વસ્તુઓ ગોઠવી હતી.  બાપાએ પ્રસાદીની વસ્તુઓને પણ દંડવત કર્યા. 
+</p><p>
+ત્યારે સ્વામીશ્રીએ વિચાર કર્યો કે, બાપા પ્રસાદીની વસ્તુઓનો આટલો મહિમા સમજે છે. મહારાજે સ્થૂળ રીતે ગ્રહણ કરેલી બધી વસ્તુઓ. તો એમને ગ્રહણ કરેલા પ્રત્યક્ષ જીવનમુકતોનો કેટલો મહિમા સમજતા હશે !   
+</p><p>
+આપણે બોલ્યા શ્રી હરિ ભજનમાં બોલીએ છીએ ને કે, ‘મારા લોક ભોગ ને મુક્ત સર્વે દિવ્ય છે.’ સ્વામીશ્રી એ માનતા હતા. સ્વામીશ્રી મુકતોને પણ દિવ્ય માનતા હતા. 
+</p><p>
+સ્વામીશ્રીનો વિરોધ કર્યો, સ્વામીશ્રીને પેઢામાં લાત મારી, એના પ્રત્યે પણ સુહૃદભાવ ઓછો થવા દીધો નથી. એ બાપની ખાનદાની આપણા જીવનમાં પ્રગટાવવી છે. ] (પ્રસંગ પૂર્ણ)
+</p><p>
+સભા પૂર્ણ થયા બાદ ક્રમમાં એક વડીલે અસ્થિપુષ્પની પ્રસાદીની ડબ્બી આપી,  પ્રબોધસ્વામીજીએ લેમીનેશન કરેલી ફુલની પાંદડીઓ આપી ને બીજા એક વડીલે સ્વામીશ્રીના પ્રસંગોની બૂક આપી. પ્રબોધસ્વામી હાસ્ય સાથે, ક્યારેક નામ દઈને બધાને આત્મીય સ્પર્શ આપતા હતા.  
+ </p><p>
+વિષય : મારા લોક ભોગ ને મુક્ત સર્વે દિવ્ય છે
+</p><p>
+પ્રસંગ : ૧) ગુણાતીતાનંદ સ્વામી ભગતજી મહારાજને ફગાવાનો પ્રસાદ આપે છે. ૨) સ્વામીશ્રી બાપા સાથે ગઢડા દર્શન માટે પધારે છે. 
+ </p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

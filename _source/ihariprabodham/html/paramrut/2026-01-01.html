@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧ જાન્યુઆરી, ૨૦૨૬, રાત્રે ૧૨:૦૫ વાગ્યે, આત્મીય વિદ્યા ધામ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	
+	<p>
+(૩૧ ડિસેમ્બર ૨૦૨૫ રાત્રે ને જાન્યુઆરી ૨૦૨૬ના મંગલ પ્રારંભે અનિર્દેશ લિફ્ટ પાસે ચોકમાં સંતો, સેવકો અને હોસ્ટેલના યુવકોને આશિષ.) 
+ </p><p>
+સહજાનંદ સ્વામી મહારાજની જય. હરિપ્રસાદ સ્વામી મહારાજની જય. આત્મીય સમાજની જય, જય, જય. ૨૦૨૬ના વર્ષની જય, જય, જય... 
+</p><p>
+સ્ટાર્ટ થઈ ગયું ને ? ૨૫ ગયું? ગયું. પાંચ મિનિટ પહેલા ૨૫ હતું, નહીં? પાંચ મિનિટ પહેલા ૨૫ હતું અને પાંચ મિનિટમાં જતું રહ્યું. સમજ્યા? ના સમજ્યા. (ટાઇમ એન્ડ ટાઈડ વેઇટ ફોર નન) Time and tide wait for none. સમયને વેડફવા માટે આવ્યા નથી. એક-એક સેકન્ડ આપણી યાત્રા ભગવાન તરફ ચાલે એના માટે વપરાવી જોઈએ. 
+</p><p>
+સુહૃદ સ્વામીએ કહ્યું કે, ૨૦૨૫ નું વર્ષ ગયું, એને ભૂલવાનું નથી. ૨૫ ના વર્ષ દરમિયાન, ૧લી જાન્યુઆરી થી ૩૧મી ડિસેમ્બર દરમિયાન આપણને જે ભાથું મળ્યું છે, સંતોએ આપ્યું હોય કે ભક્તોએ આપ્યું હોય કે આપણા લીડર્સ... એ લોકોએ આપ્યું હોય, એને નિરંતર નોટ કરી રાખવાનું છે. તો એ વર્ષને સાર્થક કર્યું કહેવાય. 
+</p><p>
+આ નવા વર્ષમાં પણ અત્યારથી જ આખા વર્ષ દરમિયાન આપણને જે કંઈ ભાથું મળે, એ વસ્તુને આપણા જીવનનું ધ્યેય બનાવવાનું, તો એ નવા વર્ષને ઉજવ્યું કહેવાય. 
+</p><p>
+આમ તો આપણું સાચું નવું વર્ષ તો કારતક સુદ પડવો (એકમ) છે. આ તો ઠીક છે દુનિયા આખી મનાવે એટલે આપણે... પણ આપણું બેસતું વર્ષ તો દિવાળી પછી જે પહેલો દિવસ આવે ને, અન્નકૂટનો દિવસ, તે દિવસે સાચું બેસતું વર્ષ છે. 
+</p><p>
+હમણાં ૮:૩૦ (સાડા આઠ) વાગ્યે ધવલ કરીને એક દીકરો આવેલો. બે ચાર જણા હતા મારી સાથે ઉપર હોલમાં, સંવાદ વાળા બધા બેઠા હતા. દીકરાએ એક સરસ વાત કરી. અમારી દોસ્તી હતી, એના ઘેર બહુ જતો હું. એ બહુ વખતે દેખાયો, એટલે થોડો અધિકારથી એને કહેતો હતો. પછી મેં કહું કે, ‘આને કાન પકડીને લાવવો પડશે!’ એટલો શબ્દ વાપર્યો. 
+</p><p>
+તો એ છોકરાએ કાન પકડવાનો અર્થ એટલો પોઝિટિવ લીધો. એણે કીધું કે, ‘કાન પકડવો એટલે સંબંધ હોય તો કાન પકડી શકાય. તમે મને તમારો માન્યો ને!’ 
+</p><p>
+એમ આપણે આજે નવા વર્ષે એવો સંકલ્પ કરીએ કે, આપણો કોઈ કાન પકડે એવો સંબંધ આપણે કરવો છે. એવો સંબંધ આનંદ સાગર સ્વામી સાથે કરીએ, ગુરુપ્રસાદ સ્વામી સાથે કરીએ, શરદભાઈ સાથે કરીએ કે જેની સાથે તમને સેટ થતું હોય. જે આપણા જીવનની ભૂલ બતાવી શકે અને આપણને માર્ગે ચઢાવી શકે, આપણો સમય બગડવા ના દે, આવા મિત્રોને આપણે અધિકાર આપીએ એ જ આપણે નવું વર્ષ ઉજવ્યું કહેવાય. 
+</p><p>
+તો આપણે સરસ એવો અધિકાર આપવો છે. અને એ અધિકારની સાથે જો નવા વર્ષને આપણે વધાવીશું તો આપણા જીવનનો પ્રોગ્રેસ કેવો સરસ થશે, એ વર્ષ પછી આપણે અનુભવીશું. 
+</p><p>
+તો આપણે આજના દિવસે સંકલ્પ કરીએ કે એવા બે સંતો અને બે-ત્રણ એવા શરદભાઈ જેવા કાર્યકર્તાઓ સાથે, સી.ડી.(ચિરાગભાઈ ડી. પટેલ) છે, એવા મુક્તો સાથે ખરેખર દોસ્તી કરી અને આપણે આપણું વર્ષને ઉજાગર કરીએ; એ માટે ગુરુહરિ આપણને સહુને ખૂબ બળ આપે એ જ પ્રાર્થના. 
+</p><p>
+(ફરી વાત કરે છે...)
+</p><p>
+સુહૃદ સ્વામીએ મંત્ર દ્વિશતાબ્દીની વાત કરી કે, આજે ૩૧મી ડિસેમ્બર, ભગવાન સ્વામિનારાયણે આ દિવસે ‘સ્વામિનારાયણ’ મંત્રનો ઉદઘોષ કરેલો, કહેતા કે મંત્ર આપેલો. એ મંત્રનો મહિમા બહુ અદભુત છે. 
+</p><p>
+સ્વામીજી કહેતા કે, ‘સર્વે રોગની એક દવા.’ શું કહેતા? ‘સર્વે રોગની એક દવા: ભજન.’
+</p><p>
+તો એવો સરસ મજાનો મંત્ર સ્વામીજીએ આપણને આપ્યો છે. અને સર્વે રોગની દવા - માનસિક રોગ હોય, ફિઝિકલ રોગ હોય, ડિપ્રેશન હોય, એ બધા રોગની દવા ભજનનું બળ લઈએ તો ડિપ્રેશન બી કઈ જતું રહે, ટેન્શન બી કઈ જતું રહે, બધું જ જતું રહે. તો સ્વામીજીએ આપણને આવો મંત્રનો મહિમા સમજાવ્યો છે. 
+</p><p>
+તો મંત્રનું બળ લઈ, એના બળે આપણે સ્વામીજીના બળે જીવતા થઈએ એ આજના શુભ દિવસની અંતરની પ્રાર્થના.
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય.
+</p><p>
+વિષય: અધિકાર, નવા વર્ષને સાર્થક કરીયે, મંત્ર મહિમા
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

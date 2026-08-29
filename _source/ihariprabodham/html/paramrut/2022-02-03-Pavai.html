@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૦૩-૦૨-૨૦૨૨, સવારે ૧૦:૩૦ વાગે, પવઈ 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+<p>
+જન્મ્યા કૌશલ દેશ... દીક્ષા અર્પી અહો.. (શ્લોક ગાન)
+ </p><p>
+સહજાનંદસ્વામી મહારાજની જય. અક્ષર-પુરુષોતમ મહારાજની જય. શાસ્ત્રીજીમહારાજની જય. યોગીજીમહારાજની જય. કાકાજી-પપ્પાજી-સાહેબની જય. હરિપ્રસાદસ્વામી મહારાજની જય જય જય.
+</p><p>
+શુભ દિવસ, ત્રીજી ફેબ્રુઆરી. ભક્તિસ્વામીએ સરસ કાકાજીનું દર્શન આપણને કરાવ્યું. આજે સ્મૃતિ કરવાનો દિવસ છે. સ્વામીજીએ આ દિવસે આપણને કાકાજીના મહિમાનું ખૂબ જ દર્શન કરાવ્યું છે.
+</p><p>
+આપણે સાધક છીએ. સાધકે સ્વરૂપ સાથે કઈ રીતે જોડાવું જોઈએ, એ એંગલથી આપણને જે સ્વરૂપ મળ્યું છે એને સાધકના એંગલથી વિચારીએ તો જ આપણી સાધના સફળ થાય. બાકી સ્વરૂપ માનીને સ્વામીજીના દર્શન કર્યા કરીએ તો આપણામાં બળ ન મળે. મોટાપુરુષ જે જીવ્યા છે એમાંથી આપણને પ્રેરણા મળે, એટલા માટે એમને આપણે સાધકની અદાથી નિહાળવા પડે.
+</p><p> 
+ભક્તિસ્વામીએ કહ્યું કાકાજીની કોઈ સાધના દેખાતી નહોતી,. પણ એ જીવ્યા સાધકની અદાથી, જેથી આપણને પ્રેરણા મળે.
+</p><p>
+યોગીજી મહારાજે આજના દિવસે તેમને સમાધિ કરાવી. 
+</p><p>
+તો સમાધિ કરાવી ક્યારે? તો સ્વામીજી દર્શન કરાવે છે - બાપાના વચને નંદાજીના ઈલેક્શનમાં ઝંપલાવ્યું. એકબાજુ પેલા રાજાની ૧૦૦ ગાડીઓ ફરે અને આ બાજુ ચાર કે પાંચ ગાડીઓ હશે. કલ્પના કરીએ, આપણે ૨૦-૨૫ ગણું વધારે થયું ને! કે ન થયું? તમારે એમાં શું ઉમેરવાનું? લોકની દ્રષ્ટિએ તમે પહોંચી જ ન વળો, તમારી જય થાય જ નહીં. પણ એમને બાપાના વચનમાં વિશ્વાસ હતો. 
+</p><p>
+યોગીજી મહારાજે કહ્યું છે ને કે નક્કી જીતવાના છે. આપણને એવું કહે તો આપણે વિશ્વાસ મૂકી શકીએ? આવી કોઈ વિષમ પરિસ્થિતિ હોય, અને એકબાજુ ચાર-પાંચ ગાડીઓ ફરતી હોય અને બીજી બાજુ સો ગાડીઓ ફરતી હોય, તો આપણે નર્વસ થઈ જઈએ. ભલે એમના માથે આશીર્વાદ રહેતા પણ એ કાર્ય next to impossible જેવું હતું. છતાં પણ સહજ થઈ જાય. એવો વિશ્વાસ મોટા પુરુષના વચન વિશે રાખવો, એ આપણા માટે સાધનાનો પોઈન્ટ છે. જીવન જીવીને આપણને બતાવ્યું કે તમે સાધકો છો તો તમારે મોટાપુરુષના વચને આવો વિશ્વાસ મૂકવો પડે, તો જ મોટાપુરુષનો રાજીપો મળે, બાકી ન મળે.
+</p><p>
+બાપાના આશીર્વાદ હતા લખાણમાં. એટલે નંદાજીની જીત થવાની છે જ જ જ. આપણને લખીને આપે તો પણ વિશ્વાસ ન રહે હોં! આપણને લખીને આપે તો પણ વિશ્વાસ ન રહે અને જો રહે તો એ સંબંધ. 
+</p><p>
+શાસ્ત્રીજી મહારાજ ક્યારે ચંદનથી ભેટ્યા હશે? ચંદનનો લેપ કર્યા પછી બંનેને શાસ્ત્રી મહારાજ ભેટ્યા હતા. એ રાજીપો મફત નથી મળતો. સંબંધ બાંધીએ તો રાજીપો મળે, બાકી નથી મળતો. 
+</p><p>
+ધંધા માટે બનેવીએ પચાસ હજાર રૂપિયા આપેલા, શાસ્ત્રીજી મહારાજ લેવા ગયા કે મારે મંદિર માટે જોઈએ છે. વિચાર નથી કર્યો, તરત સમર્પિત. એ જે સંબંધ છે એ સંબંધ આપણે કરવો છે.
+</p><p> 
+આપણે પણ એ જે શાસ્ત્રીજી મહારાજ અને યોગીજી મહારાજમાં ડૂબી ગયા, એમાં આપણે પણ ડૂબીએ એવો આજે પ્રાર્થના કરવાનો દિવસ છે. માંગવાનો દિવસ છે, સ્મૃતિ કરવાનો દિવસ છે.
+</p><p>
+સ્મૃતિની એક વાત કરું તમને. દાસસ્વામી સંસ્કૃત ભણતા હતા અને તારદેવ રહેતા. ગુરુજી ત્યાં તારદેવથી ભણાવવા માટે આવતા. રામસુખ પાંડેજી આવતા અને ક્યારેક દાસસ્વામી ત્યાં એમની ઓફિસે જતા. હું દાસસ્વામીની સેવામાં હતો. 
+</p><p>
+દાસસ્વામી એક દિવસ બીમાર પડ્યા. તાવ ભયંકર હતો. આપણે આપણી રીતે સેવા કર્યા કરતા હોઈએ; આવા કોઈ સંત હોય, ભક્તિસ્વામી જેવા કોઈ સંત હોય, આપણે સેવા કરતા હોઈએ એ રીતે આપણે જોડના સંત તરીકે દાસસ્વામીની સેવા કરતા. 
+</p><p>
+એ દિવસે કાકાજી હોલમાં બેઠા હતા. દાસસ્વામી તે દિવસે તાવને લીધે કશું જમ્યા  નહોતા. હું તરત જ તારદેવના મંદિરમાં હોલમાં બેસીને ભજન કરવા ગયો. 
+</p><p>
+કાકાજીએ મને બોલાવ્યો. થોડીવાર ધૂન કરી પછી તરત જ મને કહે, ‘સાધુરામ, તમને શીરો બનાવતા આવડે?’ મેં કહ્યું (કીધું), ‘હા કાકાજી. સંતો પાસે શીખ્યા છીએ. અમને શાસ્ત્રીસ્વામી... વડીલો… એમણે શીખવાડેલું એટલે આવડે છે.’ 
+</p><p>
+બાકી તારદેવમાં તો બધા રસોઈયા જ હતા. યોગેશભાઈ છે, પછી હરખચંદ છે, એ બધા રસોઈયા જ હતા ને! છતાં કાકાજીએ મને સેવાની તક આપી કે, ‘તમને શીરો આવડે છે?’ તો મેં કહ્યું, ‘હા.’ તો કહે, ‘રાજા બનાવો.’ કાકાજીનો શબ્દ સ્પેશિયલ. તો કહે, ‘રાજા બનાવો. દાસસ્વામીને જમાડીએ. દાસસ્વામીની તબિયત સારી નથી ને, આપણે દાસસ્વામીને જમાડવો છે.’ 
+</p><p>
+મારી પાસે શીરો બનાવડાવ્યો. શીરો ડિશમાં તૈયાર કરીને લઈ ગયા. કાકાજીએ એક ભક્તિની સૂઝ આપી. વડીલોની ભક્તિ કેવી રીતે કરવી જોઈએ એ શીખવ્યું.
+</p><p> 
+થોડો પ્રસાદ ગ્રહણ કર્યો પછી મને પ્રસાદ આપ્યો. દાસસ્વામીને સાથે બેસીને કાકાજીએ જમાડ્યા. મારા જીવનની એ અદ્‌ભુત સ્મૃતિ છે તારદેવની.
+</p><p>
+સ્મૃતિ કરીને ખૂબ આનંદ થયો. સ્મૃતિ શેર કરવાની તક મને મળી, તો આજના દિવસે એટલી જ પ્રાર્થના છે કે, કાકાજીએ જેવો સંબંધ યોગીજી મહારાજ અને શાસ્ત્રીજી મહારાજ સાથે બનાવ્યો; એવો સંબંધ આપણે બધા જ સ્વામીજી સાથે બાંધી શકીએ એ માટે આપણને સહુનેય બુદ્ધિયોગ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય.
+</p><p>
+વિષય: તારદેવની સ્મૃતિ 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

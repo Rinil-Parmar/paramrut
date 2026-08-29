@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તા. ૧૦ માર્ચ, ૨૦૨૨, પૂજામાં ગોષ્ઠિ, જુહુ મંદિર, મુંબઈ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	<p>
+પ્રગટ ગુરુહરિ પ.પૂ. પ્રબોધજીવનસ્વામીજી :
+</p>
+<p>
+ પટેલ સાહેબનાં દર્શન નિમિત્તે તમારા બધાના દર્શન થયા, ખૂબ આનંદ થયો. પટેલસાહેબ એક આદર્શ પાત્ર. ગૃહસ્થ છતાં સાધુ. રીયલ સાધક.
+</p><p>
+પટેલ સાહેબે પોતાની કોઈ ચીજ વ્હાલી રાખી નથી. દેહ નહિ, દેહના સંબંધી નહિ કે પોતાની મિલકત નહિ. બધું જ કૃષ્ણાર્પણ. અઘરી વસ્તુ છે. બધી વસ્તુ એમણે સમર્પિત કરી. દીકરાઓ તો સમર્પિત. વિજુભાઈ આત્મીય વિદ્યામંદિરમાં સમર્પિત થઈને સેવા આપે છે. બંને દીકરા પરણેલા છે છતાં શુદ્ધ બ્રહ્મચર્ય (શુદ્ધ પવિત્ર જીવન જીવે) પાળે છે. રાજુભાઈના ઘરેય કોઈ પાછળ નથી, વિજુભાઈના ઘરે પણ કોઈ પાછળ નથી. સ્વામીજીને રાજી કરવા માટે પરણ્યા છતાં પવિત્ર જીવન જીવે છે.
+</p><p>
+પટેલસાહેબના મિસિસ ધામમાં ગયા ત્યારે સ્વામીજીએ વિજુભાઈને કહ્યું હતું કે, ‘પટેલસાહેબને કહી દેવાનું કે હવે અમે તમારા (દીકરા) નથી.’ વિજુભાઈએ પટેલસાહેબને કહ્યું ત્યારે પટેલસાહેબે કહ્યું, ‘આ વાત કરવામાં તમે મોડા પડ્યા. આ તો મેં ક્યારથીય પાક્કું કરી રાખ્યું છે.’ સ્વામીજી વિજુભાઈને દર્શન કરાવવા માંગતા હતા કે પટેલસાહેબની સમજણ કેવી છે !
+</p><p>
+આજે આપણે જે ગોષ્ટિ સાંભળી તે ગોષ્ટિ સ્વામીજીએ કાર્યકર્તાઓને કરેલી હતી. એ ગોષ્ઠિમાં સ્વામીજીએ જે વાત કરી એ પટેલસાહેબના જીવનમાં સાકાર દેખાય.
+</p><p>
+પહેલો પ્રસંગ આપણે સાંભળ્યો : વાઇસરોયનાં ઝભ્ભાવાળો. ક્યો પ્રસંગ સંભાળ્યો? વાઇસરોયનો ઝભ્ભો. પટેલ સાહેબ વાઇસરોયનો ઝભ્ભો પહેરીને બેઠા છે. પોતાની જાતને અક્ષરરૂપ માનીને જીવે છે. એમની કથા સાંભળનારા ઘણા આવતા હશે. એ બધાને એક જ વાત કરે : ‘બ્રહ્મરૂપે ભજન કરો, બ્રહ્મભાવે સેવા કરો..’ એ વાઈસરોયનો ઝભ્ભો ન પહેર્યો હોય તો એવી વાત ન નીકળે. આપણા માટે એ આદર્શ પાત્ર છે 
+</p><p>
+બીજો પ્રસંગ સ્વામીજીએ પોતાનો કહ્યો. કાર્યકર્તા છીએ એટલે બોલવાની (ગોષ્ઠિ કરવાની) સેવા આવવાની.
+</p><p>
+સ્વામીજી કહે કે, ‘એકવખત મને બોલવા ઊભો કર્યો એ વખતે અંદર તો પગ થરથરતા હતા. સારું થયું લેંઘો પહેર્યો હતો બાકી તો અંદર પગ થથરતા હતા.’ સ્વામીજીને પગ થથરે એવું હોય ? ના. સ્વામીજી આપણને એક સાધક તરીકેની રીત બતાવે છે કે સાધકનું પોતાનું જીવન કેવું હોવું જોઈએ!  સ્વામીજીએ પોતાનું મિશ લઈને વાત કરવી પડે કે અમે પણ આવી પરિસ્થિતિમાં હતા. જેથી બીજા તમારી પાસે કોઈ વાત કરવા આવે એને બળ મળે. એને બળ મળે એટલે સ્વામીજીએ પોતાની વાત કરી કે અમારા પણ પગ થરથરતા હતા.
+</p><p>
+ પછી સ્વામીજીએ રહસ્યની વાત એ કરી કે યોગીજીમહારાજે મને કહ્યું કે ‘ખુરશી થઈ જવું. ખુરશી થઈને બોલવું, બોલનાર તો શાસ્ત્રીજીમહારાજ છે.’
+</p><p> 
+સ્વામીજી તો ખુરશી બનાવે એવા પુરુષ છે ! તો એમને ખુરશી થવાની વાત ક્યાં રહી ? આપણને બધાને નિમિત્ત બનાવે. ખુરશી થવું એટલે કે નિમિત્ત. અહીં સૂત્ર લખ્યું છે : ‘હું તો નિમિત્ત માત્ર.’ આપણે બધાએ નિમિત્ત થવાનું છે.
+</p><p> 
+આપણને સ્વામીજી એ કહેવા માંગે છે કે ‘તમે ખુરશી થાવ એટલે કે નિમિત્ત થાવ. કર્તાહર્તા તો પ્રભુ છે, મારામાં રહીને બોલનાર, મારામાં રહીને વાત કરનાર પ્રભુ છે.’
+</p><p> 
+પછી સ્વામીજીએ પ્રસંગમાં બીજું વાક્ય કહ્યું, ‘બધા મોટા વડીલો બેઠા હોય તો બોલાય નહિ.’ એમ મર્યાદા રાખવાનું પણ સ્વામીજીએ દર્શન કરાવ્યું. ત્યારે યોગીજીમહારાજે કહ્યું, ‘બધા શાસ્ત્રીજીમહારાજના સ્વરૂપો છે, એમની સાથે હું વાત કરું છું, એવા ભાવથી વાતો કરવાની.’ 
+</p><p>
+સ્વામીજી આપણને કેવું વિઝન આપી રહ્યા છે ! સ્વામીજીનું એક એક સેકંડનું લાઇફ આપણા માટે આદર્શ છે. 
+</p><p>
+સ્વામીજીના જીવન તરફ નજર રાખીએ તો આપણે શું કરવાનું છે એ કોઈનેય કહેવું ના પડે. એટલે સ્વામીજી ઘણી વખત કહે છે કે ‘ગુણાતીતપુરુષના જીવનમાં ડૂબો.’ 
+</p><p>
+સ્વામીજી કહે, ‘અમે બાપા સાથે રહ્યા ત્યારે બાપાને નિહાળવા સિવાય કશું કર્યું નથી.’ ખાલી આમ જોયા નથી કર્યું ! નિહાળ્યા એટલે શું ? એમની રીતી-નીતિને નિહાળી. એમના જીવનને નિહાળ્યું, એ કયા મહિમાથી જીવે છે, એ કયા સંબંધથી જીવે છે ! એ સ્વામીજીએ નિહાળ્યું. 
+</p><p>
+આપણે તો ખાલી જોયા કરીએ. દિવ્યાંગભાઈ બેઠા છે તો આપણે એ કેટલી વખત જોકા મારે છે. એવી રીતે નિહાળીએ. ...પણ સ્વામીજીએ બાપાને નિહાળ્યા અને માણ્યા. 
+</p><p>
+આપણે સ્વામીજીના જીવનમાં ડૂબવું છે. સ્વામીજીએ પોતે પોતાના જીવનનાં જે કાંઈ પ્રસંગોનું દર્શન કરાવ્યું છે, એ પ્રસંગોનું મનન-ચિંતન કરીને સ્વાધ્યાયની એરણ પર આપણે મૂકવા છે ને પછી બ્રહ્મભાવે ભજન કરવું છે.
+</p><p>
+બાપાએ કહ્યું, ‘દરેકમાં શાસ્ત્રીજીમહારાજને જોવા.’ એટલે શું? એ વાત સ્વામીજીએ આપણને કરીને આપણું ડેસ્ટીનેશન ક્લીયર કરી આપ્યું.
+</p><p>
+દરરોજ સવારે આપણે પૂજા કરીએ છીએ. તો પૂજામાં સ્વામીજીના જીવનનું થોડું મનન-ચિંતન કરીને પછી પ્રાર્થના કરવાની કે ‘હે સ્વામીજી ! આપ આવું જીવન જીવી ગયા, એ અમારા માટે જીવ્યા છો. તો આપના જીવન તરફ નજર રાખીએ ને અમારી યાત્રા નિરંતર આપના તરફ ચલાવતા રહીએ એવો બુદ્ધિયોગ આપજો.’ગુરુહરિ આપણને સહુનેય એવો બુદ્ધિયોગ આપે એ જ પ્રાર્થના.
+</p><p>
+સહજાનંદ સ્વામી મહારાજની જય.
+</p><p>
+વિષય : પટેલસાહેબના ગુણનું દર્શન, ગુરુહરિને નિહાળવા
+</p><p>
+પ્રસંગ : ૧) બાપા સ્વામીશ્રીને કહે છે ખુરશી થવું 
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

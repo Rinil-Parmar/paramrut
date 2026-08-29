@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Pravachan</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+
+		//highlight_word('હરિ');
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+	તા. ૧૨ માર્ચ, ૨૦૨૩, લેક ટેકાપો, ન્યુઝીલેન્ડ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+	
+	<p>
+		પ્રગટ ગુરૂહરિ પ્રબોધજીવન સ્વામીજી :
+	</p>
+	<p>
+		આપણે જે સભા કરીએ એવી સભા નથી આ. આ સભા છે સ્મૃતિઓ વાગોળવાની સભા. આમાં જેને પોતાની સ્મૃતિઓ યાદ થઈ આવે એને કહેવાની છૂટ છે. દરેક વ્યક્તિએ પોતાની એકાદ સ્મૃતિ યાદ કરી રાખવાની. પછી દરેક વ્યક્તિએ પોતાની સ્મૃતિ શેર કરવાની. આજની સભામાં પોતાની સ્મૃતિનું દર્શન કરાવવાનું છે. હું એક સ્મૃતિનું દર્શન કરાવું પછી વારાફરતી બધા જ દર્શન કરાવે. સૌથી વધારે સ્મૃતિ જીતુકાકા પાસે છે.
+			 </p><p>
+		૧૯૭૩ની સાલની વાત કરું. ૫૦ વર્ષ. જુના મંદિરે રહેતા હતા. ૩૦x૩૦નો હોલ હતો. સંતો એ વખતે બહુ નહોતા. ૧૧ સંતો વડીલ હતા, યોગીબાપાએ દીક્ષા આપેલા એ અને ૫ સંતો અમે, ખાલી ૧૬ સંતો હતા. બીજા કોઈ સંતો બનાવ્યા નહોતા એ વખતેની વાત છે.
+			</p><p>
+		સ્વામીજી, અમને નાના સંતોને, એક જ વર્ષ થયું હતું સાધુ થયા એને, આનંદ કરાવવા માટે ખેતરમાં લઇ જાય. કઈ જગ્યાએ લઇ જાય? પીકનીક પોઇન્ટ પર નહીં હો. એ અમારો પીકનીક પોઇન્ટ હોય. આસોજ રોડ પર સારા બાપાનું ખેતર. સોખડા અને આસોજની વચ્ચે. ત્યાં લઇ જાય. રોજ સાંજે ફરવા જવાનુ. ચાલતા જવાનુ, ગાડીઓ નહોતી. 
+		</p><p>
+		સ્વામીજી પણ ચાલતા આવે. બે કિલોમીટર ચાલતા જવાનુ. રોજનો પ્રોગ્રામ. રોજ સાંજ પડે એટલે જવાનુ. થોડુંક નાસ્તા જેવું બનાવ્યું હોય એને ભેગું કરીએ, થોડું થોડું ભેગું કરીને લઇ જઈએ. કાચી કેરી હોય તો કાચી કેરી લઇ જઈએ. બિસ્કિટ હોય તો એ લઇ જઈએ. થોડું કઈ બનાવ્યું હોય, ચીકી બનાવી હોય તો એ બધું લઇ જઈએ. થેલો ભરીને... અને બેસીને આનંદ કરીને.. બધા જમીએ...
+		</p><p>
+		એક દિવસ રામનવમીનો દિવસ હતો. અમે તો નવા નવા, એક જ વર્ષથી સાધુ થયા હતા. બીજું કઈ સંપ્રદાયની ઊંડી ખબર નહોતી કોઈને. રામનવમી એટલે ભગવાન સ્વામિનારાયણનો પ્રાગટ્ય દિન. સંતો બેઠા હતા અને આનંદ કરતાં હતા. 
+		</p><p>
+		સ્વામીજીએ પૂછ્યું, ‘ભગવાન સ્વામિનારાયણનો પ્રાગટ્ય દિન ક્યારે?’ આપણે શું કહીએ? રામનવમી. બધા બેઠા હતા. નાના સંતો કહે, રામનવમી. સ્વામીજી કહે, નહીં…. ના પાડી હો. રામનવમી નહીં. ચૈત્ર સુદ દશમ. પ્રાગટ્ય નૌમના દા’ડે નહોતો થયો. દશમના દા’ડે ભગવાન પ્રગટ્યા હતા. 
+		</p><p>
+		પછી સ્વામીજીએ કહ્યું કે, રામનવમી તો આપણે એટલે ઉજવીએ છીએ કે પરમહંસોએ બેક ટુ બેક, બે ઉત્સવ ના કરવા પડે. આગલા દિવસે રામનવમી હોય અને એના પછીના દિવસે ભગવાન સ્વામિનારાયણનો પ્રાગટ્ય દિન. એ બે ભેગું કરી નાખ્યું. એવી રીતે રામનવમી ઉજવીએ છીએ. બાકી ભગવાન સ્વામિનારાયણ પ્રગટ્યા ચૈત્ર સુદ દશમના દા’ડે. કોઈ શાસ્ત્રમાં લખ્યું નથી એ સ્પષ્ટીકરણ સ્વામીજીએ ત્યારે કરાવડાવ્યું હતું. 
+		</p><p>
+		પછી બીજી એક વાત સ્વામીજીએ ત્યાં કરેલી. સ્વામીજી કહે, ‘ભગવાન સ્વામિનારાયણએ આરતીની અંદર અક્ષરપુરુષોત્તમ ઉપાસનાની વાત મુકતાનંદ સ્વામી પાસે લખાવડાવી હતી પ્રેરણા કરીને.’ એમાં તો આપણને ખ્યાલ ના આવે ને! આરતીમાં કઈ રીતે? 
+		</p><p>
+		એક કડી સ્વામીજી બોલ્યા. ‘નારાયણ નરભ્રાતા, દ્વિજકુળ તનુધારી.’ એ કડી બોલ્યા, નર નારાયણ જે ઉપાસનામાં જે છે એ તો ક્ષત્રિય હતા કે. શ્રીકૃષ્ણ અને અર્જુન તે નર નારાયણ કહેતા હોઈએ તો એ બન્ને ક્ષત્રિય હતા. એ બ્રાહ્મણ નહોતા. 
+		</p><p>
+		બ્રાહ્મણ દેહ ધર્યું તો ભગવાન સ્વામિનારાયણ અને ગુણાતીતાનંદ સ્વામીએ. બંને બ્રાહ્મણ દેહમાં આવ્યા. ‘નારાયણ નરભ્રાતા, દ્વિજકુળ તનુધારી.’ એ વાતનું સ્પષ્ટીકરણ સ્વામીજીએ કર્યુ. 
+		</p><p>
+		અમુક વસ્તુ, જે શાસ્ત્રની બહારની વસ્તુ,  જે શાસ્ત્રમાં ના હોય એને સ્વામીજીએ સ્પષ્ટીકરણ કર્યું હોય એવી આ બે વાત સ્વામીજીએ ત્યારે ૧૯૭૩માં કરેલી. એ આ સ્મૃતિ. હવે આપણને અશોકભાઈ પોતાની સ્મૃતિનું દર્શન કરાવશે.
+		</p><p>
+		વિષય : ૧૯૭૩ની સ્મૃતિ
+		</p>
+		
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+
