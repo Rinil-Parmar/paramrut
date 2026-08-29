@@ -1,0 +1,62 @@
+[
+ {
+  "id": 1,
+  "title": "2007-01-13, After Shangar Aarti",
+  "date": "2007-01-13",
+  "year": 2007,
+  "album": "Arati Goshti",
+  "text": "Kartaharata",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/01%202007-01-13%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal01.jpg"
+ },
+ {
+  "id": 2,
+  "title": "2007-04-03, After Shangar Aarti",
+  "date": "2007-04-03",
+  "year": 2007,
+  "album": "Arati Goshti",
+  "text": "Swmini Vat, Bapanu Jivan",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/03%202007-04-03%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal03.jpg"
+ },
+ {
+  "id": 3,
+  "title": "2007-11-30, After Shangar Aarti",
+  "date": "2007-11-30",
+  "year": 2007,
+  "album": "Arati Goshti",
+  "text": "Aksharbrahm Ni Vat",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/07%202007-11-30%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal03.jpg"
+ },
+ {
+  "id": 6,
+  "title": "1981-03-02, Gondal Mandire Prarthana",
+  "date": "1981-03-02",
+  "year": 1981,
+  "album": "Prarthana",
+  "text": "Dwisatabdi Mahotsav Prarthana",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/1-1981-03-02-GondalMandir-Prarthana.mp3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal06.jpg"
+ },
+ {
+  "id": 7,
+  "title": "1984-01-03, Dhabadungari, Prarthana",
+  "date": "1984-01-03",
+  "year": 1984,
+  "album": "Prarthana",
+  "text": "Bhagavadi",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/2-1984-01-03-Dhabadungari-Prarthana.mp3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal07.jpg"
+ },
+ {
+  "id": 8,
+  "title": "1998-02-17, Netrang, Prarthana",
+  "date": "1998-02-17",
+  "year": 1998,
+  "album": "Prarthana",
+  "text": "Aksharbrahm",
+  "audio": "https://akshar.blob.core.windows.net/pravachan/3-1998-02-17-Netrang-Prarthana.MP3",
+  "image": "https://akshar.blob.core.windows.net/wall/cal08.jpg"
+ }
+]

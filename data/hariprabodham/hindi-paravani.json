@@ -1,0 +1,16 @@
+[
+ {
+  "id": 1,
+  "title": "Swamishri Paravani 01",
+  "pdf": "http://prasang.prabodhswamiji.in/swamishriparavanihindi/Swamishri-01.pdf",
+  "image": "http://prasang.prabodhswamiji.in/swamishriparavanihindi/Swamishri-01.jpg",
+  "category": "Hindi"
+ },
+ {
+  "id": 2,
+  "title": "Swadhyay Bhajan",
+  "pdf": "http://prasang.prabodhswamiji.in/swamishriparavanihindi/chapter1.pdf",
+  "image": "http://prasang.prabodhswamiji.in/swamishriparavanihindi/chapter1.jpg",
+  "category": "Hindi"
+ }
+]

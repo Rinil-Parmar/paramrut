@@ -1,0 +1,38 @@
+{
+ "source": {
+  "backend": "http://dbphp.prabodhswamiji.in/",
+  "apps": [
+   "com.hari.patrika.patrika",
+   "org.hariprabodham.swaminivato"
+  ],
+  "publisher": "HariPrabodham",
+  "fetched": "2026-08-29"
+ },
+ "endpoints": {
+  "hariparamrut": {
+   "records": 109,
+   "sha256": "110c97473803925c0ea5de7b4de570120496c98239c3dcc69fbcc331d0efdcbd"
+  },
+  "aksharvani": {
+   "records": 102,
+   "sha256": "49dca1fd84af1a87b2f4cb6cccbf7fe35c3dc84fe0e4d091167ac857d09614e7"
+  },
+  "santvani": {
+   "records": 67,
+   "sha256": "9aabc0c96f6e7bcb6ba89d4583b5e6de38686c210100243febe9576fd7b75328"
+  },
+  "vicharan": {
+   "records": 295,
+   "sha256": "8083f80e74a22e4290a8ceab1b085725077ae28356acd00f6199de5fe6b9a1c4"
+  },
+  "pravachan": {
+   "records": 6,
+   "sha256": "e7f4513d44919ef73cc9454b67b0d49ae078d817961a067783184873148a0238"
+  },
+  "hindipravachan": {
+   "records": 2,
+   "sha256": "4a44d3ca604ce33a87cb4ca1b218019c474d6ea460ca1759867b1270385ee3d7"
+  }
+ },
+ "total_records": 581
+}
