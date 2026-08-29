@@ -400,17 +400,37 @@ def do_prasang(refetch=False):
 
 
 # ── source: Kirtan ───────────────────────────────────────────────────────────
+# Kirtan has no reader-HTML page (those URLs return the SPA shell); the lyric ships
+# inline in the index `content`, prefixed with a collection label ("Bhaktisudha",
+# "HariPrabodham શ્લોકો", …). Peel that label, then restore line breaks on the
+# source's own markers (…. between lines, । danda) — the words themselves are unchanged.
+def _kirtan_split(content):
+    label = ""
+    m = re.match(r"\s*([A-Za-z][A-Za-z ]*?)\s+(?=[^\x00-\x7f])", content)
+    if m:
+        label = m.group(1).strip(); content = content[m.end():]
+    body = content.strip()
+    body = re.sub(r"\.{3,}", "\n", body)          # …. line breaks
+    body = re.sub(r"\s*।\s*", " ।\n", body)        # danda ends a verse line
+    lines = [re.sub(r"[ \t]+", " ", l).strip() for l in body.split("\n")]
+    return label or None, "\n".join(l for l in lines if l)
+
+
 def do_kirtan(refetch=False):
     index = load("kirtan-index.json")
-    files = [r["file"] for r in index]
-    pages = fetch_html_many("kirtan", files, f"{SITE}/data", refetch)
     data, entries = [], []
     for r in index:
-        title, body = html_body(pages.get(r["file"], ""))
-        rec = {"sid": r.get("sid"), "file": r["file"], "title": title, "text": body}
+        label, body = _kirtan_split(r["content"])
+        rec = {"sid": r.get("sid"), "file": r["file"], "collection": label, "text": body}
         data.append(rec)
-        head = title or f"Kirtan {r.get('sid')}"
-        entries.append((head, [body or "_(text unavailable)_"]))
+        first = body.split("\n", 1)[0][:44] if body else ""
+        head = f"{r.get('sid')}. {first}" if first else f"Kirtan {r.get('sid')}"
+        lines = []
+        if label:
+            lines += [f"_{label}_", ""]
+        # render lyric lines as a hard-wrapped block
+        lines.append("  \n".join(body.split("\n")) if body else "_(text unavailable)_")
+        entries.append((head, lines))
     wj(DATA / "kirtan.json", data)
     # chunk into files of 60 for readability
     d = TEXT / "kirtan"; d.mkdir(parents=True, exist_ok=True)
