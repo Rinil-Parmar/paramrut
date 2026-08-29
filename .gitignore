@@ -3,3 +3,5 @@ tools/apk/
 __pycache__/
 *.pyc
 .DS_Store
+tools/probe/
+tools/pm/
