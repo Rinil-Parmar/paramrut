@@ -9,6 +9,10 @@ clean Markdown you can read in the browser and JSON you can query.
 The text is unchanged. What has been added is structure: the app's private markup resolved into
 real headings, footnotes, verse and emphasis — and an index in front of every page.
 
+> **Also here:** the [**iHariPrabodham web corpus**](text/ihariprabodham/README.md) — 9,155 textual
+> records fetched from [ihariprabodham.org](https://www.ihariprabodham.org): Swamini Vato, Vachanamrut,
+> 965 prasang, 514 kirtan, 232 pravachan transcripts, quotes and the full discourse catalogue.
+
 ---
 
 ## Read
