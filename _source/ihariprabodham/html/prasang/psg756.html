@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      એ તો ભગવાનનું ગણિત છે
+    </div>
+    <div class="vaat_ind" id="vaat_file_756">
+      
+      <p>ગુરુહરિ હરિપ્રસાદસ્વામીજી અને ગુરુહરિ પ્રબોધસ્વામીજીની કૃપા અને સંતોનાં સમાગમના ફળસ્વરૂપે અદ્ભુત સમાજનું સર્જન થયું છે જે વિપરીત દેશકાળમાં પણ અદ્ભુત નિષ્ઠાનાં બળે જીવી રહ્યો છે.</p><p>થોડાંસમય પહેલા દક્ષિણ ગુજરાતનાં હરિચરણ પ્રદેશમાં કછોલી ગામના અંબરીષ મુક્તરાજ મહેશભાઈનો દીકરો ગૌરવ એક અકસ્માતથી ધામમાં ગયો ત્યારે એમનો પરિવાર ખૂબ દુઃખી થઈ ગયો હતો. થોડા દિવસો અગાઉ એમના ભાઈ રમેશભાઈના ઋષિપત્ની પણ ધામમાં ગયા હતા. એક જ પરિવારમાં થોડા દિવસોના અંતરે આવા દુઃખદ પ્રસંગ બન્યા હોવાથી પરિવારજનોને સહજ દુઃખ થાય જ. વધુમાં એ દીકરો ઘર, મંડળ અને ગામનો લાડલો હતો ને સત્સંગમાં પણ ખૂબ જ સક્રિય હતો.</p><p>મહેશભાઈને એકવાર વિચાર પણ આવી ગયો હતો કે મહારાજ મારા દીકરાને આટલી યુવાન વયે કેમ ધામમાં લઈ ગયા તો હવે એની ખોટ કેવી રીતે પુરાશે?</p><p>એ દીકરાના અક્ષરધામગમનના બીજા દિવસે ગુરુહરિ પ્રબોધસ્વામીજીએ એમને ફોન પર દર્શન આપ્યા અને ખૂબ બળની વાતો કરી.</p><p>ગુરુહરિએ અંતર્યામીપણે કર્યું, “અમે મહારાજ અને સ્વામીજીને પ્રાર્થના કરીશું કે આપણને આપણા દીકરાની ખોટ નહીં લાગવા દે.” આ સાંભળી મહેશભાઈના હૈયામાં હાશ થઈ ગઈ.</p><p>ગુરુહરિએ ભૂલકાંની સેવાભક્તિને યાદ કરતા કહ્યું, “અમે જ્યારે કછોલી આવ્યા હતા ત્યારે પધરામણી દરમ્યાન એ દીકરો આગળ આગળ દોડીને ઠાકોરજીની સેવા કરતો હતો. એ દૃશ્ય હજુ અમારી આંખ આગળ જ છે.”</p><p>આપણે વિચાર કરીએ કે ગુરુહરિએ એ કછોલી ગામમાં વિચરણ પૂર્ણ કર્યું, ત્યારબાદ દેશ-વિદેશમાં અનેક ગામડાઓ અને શહેરમાં વિચરણ કર્યું. પણ એ દીકરો દોડીને સેવા કરતો હતો એની સેવા-ભક્તિ ગુરુહરિને યાદ હતી.</p><p>મહેશભાઈએ ગુરુહરિને પ્રશ્ન પૂછ્યો, “આવો પ્રસંગ મૂકવા પાછળનું કોઈ આધ્યાત્મિક રહસ્ય ખરું?”</p><p>ત્યારે ગુરુહરિએ ગુણાતીત સમજણ આપતા કહ્યું, “એ તો ભગવાનનું ગણિત છે ભગવાનના ગણિતને ઉંમર સાથે કોઈ બાધ નથી. મોટાપુરુષ ચૈતન્યના માલિક છે. એમનું જે અક્ષરધામનું ગણિત છે એ આપણે ખબર ન પડે.”</p><p>કોઈપણ હરિભગત ધામમાં જાય તો શું મહારાજ એનું અહિત થવા દે? એવું ન હોય. એ ચૈતન્યને મહારાજ એમની ગોદમાં જ બેસાડી દે. પછી એને નવી જગ્યાએ જન્મ આપી એના આત્માની યાત્રાભગવાન તરફ આગળ ચલાવતા રહે.</p><p>ગુરુહરિની બળની વાતોથી મહેશભાઈને હૈયે શાંતિનો અનુભવ થયો. એમણે ભગવનની સાચી નિષ્ઠાની સમજણના બળે જીવન જીવવાનો સંકલ્પ કર્યો. કછોલી અને અમલસાડના બંન્ને મુક્તોએ પ્રાર્થના કરતા કહ્યું કે સ્વામીજી ! આપના યુગકાર્યમાં સર્વોપરી નિમિત બનાવજો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આધ્યાત્મિક સૂઝ<br/>
+      ટેગ: ધામમાં લઈ ગયા, ગણિત, યુવક, પ્રશ્ન<br/>
+      નંબર: ૩૦૬
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

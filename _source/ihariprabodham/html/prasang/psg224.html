@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ધામમાં લઈ જવા માટે આવ્યા છીએ...
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એક વખત નટુભાઈ નિત્યક્રમ પ્રમાણે દુકાનનાં બારણાં અંદરથી બંધ કરીને સૂઈ ગયા. થોડી જ વારમાં અવાજ સંભળાયો : ‘નટુભાઈ, શું કરો છો ?’ 
+</p><p>
+અવાજ સાંભળી તેઓ પથારીમાં એકદમ બેઠા થઈ ગયા. જોયું તો સ્વામીજી પથારીમાં બેઠા હતા. એમણે સ્વામીજીને પૂછ્યું, ‘દયાળુ, અત્યારે રાત્રિના બાર વાગે આપ અહીંયાં પધાર્યા ?’ 
+</p>
+ <p>
+સ્વામીજી બોલ્યા, ‘રમણભાઈના પિતાજી બિમાર છે એટલે એમને ધામમાં લેવા માટે આવ્યા છીએ.’ એમ કહી સ્વામીજી થોડીવાર સુધી બેસી રહ્યા. નટુભાઈ પણ સુધબુધ ખોઈને સ્વામીજીનાં દર્શન કરતા રહ્યા.
+</p><p>
+થોડીવાર પછી સ્વામીજી અંતર્ધાન થઈ ગયા. નટુભાઈ તો જાગ્રત અવસ્થામાં હતા છતાં પણ ઝબકી ગયા. વિચાર આવ્યો કે હું તો નીચે તાળુ મારીને આવ્યો છું તો સ્વામીજી ઉપર કેવી રીતે આવ્યા ? એમ વિચારી તેઓ તો હાફળાંફાફળાં નીચે ગયા. બારણું ખોલીને જોયું તો કોઈ ના મળે. ત્યારે નટુભાઈને ખ્યાલ આવ્યો કે સ્વામીજી દિવ્યદેહે દર્શન આપવા જ પધાર્યા હતા. સવારે ઊઠ્યા ત્યારે ખબર પડી કે રમણભાઈના પિતાજી ધામમાં ગયા છે. ઈ.સ. 1972ની સાલનો ચૈત્ર વદ અમાસનો એ દિવસ હતો.
+</p><p>
+ભક્ત અને ભગવાનનો કેવો અદ્‌ભુત સંબંધ ! મોટાપુરુષ તો અંત અવસ્થાએ પોતાના આશ્રિતને તેડવા આવે જ. એ તો એમનું બિરુદ છે જ, પરંતુ જતાં જતાં એક ભક્તને પણ દર્શન દેતા જાય એ કેવી અલૌકિક વાત થઈ ! ધન્ય હો એવા ભકતને અને ધન્ય હો એવા પ્રભુને ! ધન્ય હો એવા ભગવત્સ્વરૂપ સંતને !
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

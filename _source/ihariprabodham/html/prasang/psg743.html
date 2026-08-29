@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્વામીજીનો ભીડો આપણે ના વધારીએ…
+    </div>
+    <div class="vaat_ind" id="vaat_file_743">
+      
+      <p>ધરતીનો કોઈ સાધક હોય કે જીનીયસ વ્યક્તિ હોય એને પોતાનાં સમયની કિંમત હોય અને એનો સમય બગડે નહીં એ માટે જાગ્રત રહેતો હોય. પણ ગુણાતીત એકદમ જુદા છે કે એમનું ફોકસ તો ભગવાનનો સમય ના બગડે એમાં હોય.</p><p>એવું આપણને ગુરુહરિના જીવન થકી નિરંતર દર્શન થાય છે. સ્વામીજીનો જે દાખડો છે. સ્વામીજીએ જે સમય કાઢ્યો છે એ ફોગટ ના જાય અને એ માટેની નિરંતર જાગ્રતતા કેવી હોવી જોઈએ એવું એમનામાં નિરંતર દર્શન થાય છે.</p><p>ગુરુહરિ પ્રબોધસ્વામીજીએ આપણને બધાને ગ્રહણ કર્યા તો એ જ એંગલથી ગ્રહણ કર્યા છે કે સ્વામીજીએ જે અમારી પાછળ દાખડો કર્યો એ ફોગટ ન જાય. સ્વામીજીનો જે એફર્ટ છે એ ચૂકાઈ ના જાય.</p><p>૨૦૧૦માં ૧૭ ઓગસ્ટનો દિવસ હતો. અમે ન્યુયોર્કની શિબિરની તૈયારી કરતા હતા. પ્રિયવ્રતભાઈએ અમને હિંમત આપી કહ્યું, “ચાલો આપણે ફોન કરીને ગુરુહરિનાં દર્શન કરીએ.”</p><p>ગુરુહરિની કૃપા હશે તો ફોન પર અમને દર્શન થયા. અમારામાંથી એક નાના યુવકે ગુરુહરિને ‘હેપી બર્થ-ડે’ કહ્યું. પછી પ્રાર્થના કરી કે સ્વામી ! આજે અમારા માટે તમે શું પ્રાર્થના કરશો ?</p><p>ત્યારે ગુરુહરિએ જવાબ આપતાં કહ્યું, “સ્વામીજીનો ભીડો આપણે ના વધારીએ એવી આપણે પ્રાર્થના કરવાની.”</p><p>આટલું બોલ્યા એટલે અમે પૂછ્યું, ‘સ્વામી! અમને આ વાત સમજ ના પડી. સ્વામીજીનો ભીડો ના વધારવો એટલે શું ?’</p><p>પ્રબોધસ્વામીજીએ કહ્યું, “ભગવાનને આપણને આગળ લેવા માટે આપણા જીવનમાં પ્રસંગ ઊભા કરવા પડે એ ભગવાનને ભીડો આપ્યો કહેવાય.”</p><p>સ્વામીજીનો જે દાખડો છે એ નજર સમક્ષ રાખનાર પુરુષની સ્વામીજીએ આપણને ભેટ આપી છે. એટલે એક આખો પરસ્પેક્ટીવ જુદો કરી આપ્યો.</p><p>અમને અમારા સમયની કિંમત હતી પણ સ્વામીજીનો સમય ક્યાં ક્યાં જીવનમાં બગાડ્યો છે ? સ્વામીજીએ એકની એક વસ્તુ કેટલી બધી વાર કહેવી પડી હશે કે કેટલો બધો સમય સ્વામીજીનો વેસ્ટ થયો હશે ! એ કો&#x27;ક ગાફલાઈ હશે, એની જાગ્રતતા માટેનો નવો દૃષ્ટિકોણ આપ્યો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: અક્ષર સૂઝ<br/>
+      ટેગ: યુવક, પ્રાર્થના, ભીડો<br/>
+      નંબર: ૩૬૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+યોગીજીમહારાજ :  સુહૃદભાવના મહાસાગર
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+યોગીજીમહારાજના સમગ્ર જીવનને એક વાક્યમાં લખવું હોય તો લખી શકાય કે યોગીજીમહારાજ એટલે સંપ, સુહૃદભાવ, એકતાનો મહાસાગર..
+</p><p>
+અત્યાર સુધીના માનવજાતિના ઈતિહાસમાં બ્રહ્મસ્વરૂપ યોગીજી મહારાજે પોતાના ગુરુ વિજ્ઞાનદાસસ્વામીની ઈર્ષ્યા અને ક્રોધના અગ્નિને કારણે એમની જે ટોકણી ખમી છે, વંગર વાંકે અપમાન, કટુ શબ્દો અને શારીરિક ત્રાસની જે કસણીમાં રહ્યા છે તેનું યથાર્થ વર્ણન તો શક્ય જ નથી. પરંતુ એમણે જે ભીડો સહન ર્ક્યો એની યત્કિંચિત ઝાંખી કરવાતો આ પ્રસંગ નિહાળીએ.
+</p><p>
+એકવખત ઉનાળાના ધોમ ધખતા તાપમાં ગુરુ વિજ્ઞાનદાસજી, યોગીજીમહારાજ અને સાથે અંધ સાધુ ભગવત્સ્વરૂપદાસ જૂનાગઢ નજીક લૂસાળા સ્ટેશને ઉતર્યા. ત્યાંથી દૂર કોઈ ગામડામાં જવાનું હતું. ગુરુની આજ્ઞા મુજબ યોગીજી મહારાજે લૂસાળા સ્ટેશને તેમને લેવા આવવા હરિભક્તોને પત્ર પોસ્ટ તો ર્ક્યો હતો પણ સ્ટેશને કોઈ દેખાયું નહિ એટલે બધો વાંક જોગીનો છે એમ માની ગુરુએ એમના પર અત્યાચાર આચરવાનો શરૂ ર્ક્યો. ઠાકોરજીને પાણી પણ ન પાવા દીધું ને સૌને તરસ્યા રાખી ચાલવાનું શરૂ ર્ક્યું. માથે આગ ઝરતી ગરમી અને ઉઘાડા પગ તેમાં બધા સંતોના પોટલાં ઊંચકીને અંધ સાધુને દોરવાના. આટલી બધી તકલીફમાં પણ ગુરુનાં કુત્સિત વચનોની ઝડી તો વરસતી જ હતી.
+</p><p>
+
+આવી સ્થિતિમાં ભૂખ્યા-તરસ્યા 5-7 ગાઉ ચાલ્યા પછી ગુરુએ યોગીબાપાને પાણી શોધી લાવવા હુકમ છોડ્યો. નજીકના એક ગામમાં કોઈનું મૃત્યું થયું હોવાથી યોગીજી મહારાજને કોઈએ પાણી ન આપ્યું. ઠાકોરજી અને ગુરુ તરસ્યા રહ્યા તેથી યોગીજીમહારાજ આકુળ-વ્યાકુળ થઈ ગયા. આગળ ચાલતા એક કૂવામાંથી પાણી સીંચીને ઠાકોરજી સહિત સહુને તૃપ્ત ર્ક્યા ત્યારે એમના હૈયાને કંઈક ટાઢક વળી.
+</p><p>
+
+આમ લગભગ 32 કિ.મિ. ચાલ્યા પછી રાત્રે 9 વાગે અંધારે અટવાતા - અથડાતા તેઓ માંડ નિર્ધારિત સ્થળે પહોંચ્યા. હરિભક્તોને પૂછ્યું તો જણાવ્યું કે પોસ્ટકાર્ડ મોડો મળ્યો એટલે લેવા માટે ગાડું ન મોકલ્યું. એમના એ અવિચારી નિર્ણયને લઈને સંતોને ને ખાસ તો યોગીજી મહારાજને કેટલું સહન કરવું પડયું !
+</p><p>
+મોડી રાત્રે પણ યોગીબાપાના થાક કે ભીડાનો વિચાર ર્ક્યા વગર વિજ્ઞાનસ્વામીજીએ તેમની પાસે 150 માણસો માટે મોહનથાળ, પૂરી, શાક, દાળ, ભાત જેવી પાકી રસોઈ પરાણે બનાવડાવી. એમ કરતાં રાત્રે 12 વાગી ગયા ને ભક્તોની તાણ હોવા છતાં ન ખાવાના ગુરુના આદેશ મુજબ યોગીબાપાએ ભૂખ્યા રહીને જ સહુને જમાડી વાસણો ઘસ્યાં, ચોકો સાફ ર્ક્યો ને પોતે કેવળ એક કોથળાના આસન પર માળા ફેરવતા બેઠા.
+કેવી અદ્‌ભુત સાધુતા ! ગુરુના ચરિત્રમાં કેવી નિર્દોષબુદ્ધિ ! ભક્તો સાથે કેવો સુહૃદભાવ !
+</p><p>
+
+પોતાને આટલો ત્રાસ આપનાર ગુરુ પ્રત્યે પણ બાપાને તો અખંડ દિવ્યભાવ જ હતો. 
+ઘણાં વર્ષો પછી એકવખત કેટલાક સંતોએ બાપાને પૂછ્યું કે, ‘આપ વિજ્ઞાનસ્વામી સાથે 18 વર્ષ કેમ રહ્યા ? એ તો કેટલો ત્રાસ આપતા ? શાસ્ત્રીજી મહારાજ સાથે રહ્યા હોત તો ?’  બાપાએ એમને અધવચ્ચે જ અટકાવી દઈ કહ્યું, ‘રાખો...ગુરુ..રાખો... વિજ્ઞાનસ્વામીએ તો અમને શાસ્ત્રીજી મહારાજનો મેળાપ કરાવ્યો છે.’
+</p><p>
+એકવાર સોખડા જૂના મંદિરના કૂવાના થાળામાં યોગીબાપા સ્નાન કરી રહ્યા હતા ને રમણભગતે વિજ્ઞાનસ્વામી વિષે મોળા શબ્દો બોલવાનું શરૂ કર્યું. ત્યાં તો તરત જ અટકાવતા અને ઠપકો આપતા બાપા બોલી ઉઠ્યા કે ગુરુ ! તમને એમાં ખબર ન પડે ! વિજ્ઞાનસ્વામી માટે તો જન્મો લેવા પડે તો પણ લઉં ને સેવા કરું ! એમણે મને સમર્થ ગુરુ શાસ્ત્રીજીમહારાજનો ભેટો કરાવ્યો છે !
+</p><p>
+વિજ્ઞાનસ્વામીએ વર્ષો સુધી વગર વાંકે ગરીબ ગાય જેવા યોગીબાપા પર અમાનુષી ત્રાસ ગુજાર્યો. એમને માટે એક પણ ઓરાભાવનો - અમહિમાનો કે ભાવફેરનો શબ્દ બાપા બોલવા દેતા ન હતા. અરે ! વિચારવા પણ ન દેતા. એ તો ઠીક... પણ એમનો અપરંપાર મહિમા સમજાવતા ! કેવો કલ્પનાતીત સુહૃદભાવ !
+</p><p>
+હે યોગીજી મહારાજ ! હે ગુરુહરિ સ્વામિશ્રી  ! અમને ‘સંપ, સુહૃદભાવ અને એકતા’ના માર્ગે ચાલવાનું ખૂબ ખૂબ બળ આપશોજી.
+
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

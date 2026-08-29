@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્વામીશ્રીની આજ્ઞા પહેલા.
+    </div>
+    <div class="vaat_ind" id="vaat_file_703">
+      
+      <p>સ્વામીશ્રીનો એક-એક બોલ પ્રબોધસ્વામીજી માટે અણમોલ. સ્વામીશ્રીના અલ્પવચનને, મરજીને મહત્ માનીને જીવનાર sincere સાધક.</p><p>એક વખત સ્વામીશ્રી સવારે ૧૧:૦૦ વાગે પરાવાણીનો લાભ આપતાં હતા. બધા જ ભક્તોને સમાધાન મળે એવી દિવ્ય પરાવાણી અને પરાત્પર પુરુષનાં દર્શનથી સભામાં દિવ્યાનંદ રેલાતો હતો. સંતો-ભક્તો આ બ્રહ્માનંદમાં ડૂબેલાં હતાં.</p><p>સ્વામીશ્રીએ પરાવાણી વહાવતાં કહ્યું કે, “આજે બધા જ વચનામૃત ગઢડા પ્રથમનું ૭૬ વાંચીને જ જમવા જાય.” સભાની પૂર્ણાહુતિ થતાં બપોરના ૧૨:૪૫ જેવો સમય થઈ ગયો હતો.</p><p>જમવાનો સમય થઈ ગયો હોવા છતાં પ્રબોધસ્વામીજી પોતાની રૂમમાં પધાર્યા, રૂમમાં જઈને વચનામૃત ગઢડા પ્રથમ ૭૬નું વાંચન કર્યું અને પછી જ જમવા પધાર્યા.</p><p>જ્યારે પ્રબોધસ્વામીજી જમવા પધાર્યા ત્યારે એક સંતે આ વાતની નોંધ લઈને પૂછ્યું કે, ‘આપને તો પ્રથમ ૭૬ વચનામૃત મોઢે છે તો પણ આપ કેમ વાંચવા ગયા?’</p><p>ત્યારે પ્રબોધસ્વામીજીએ જવાબ આપતાં કહ્યું કે, “સ્વામીશ્રીની આજ્ઞા પહેલા. સ્વામીશ્રીએ વાંચીને જમવા જવાની આજ્ઞા કરી છે તો એમાં બુદ્ધિ નહીં લગાડવાની.”</p><p>પ્રગટ ભગવાનની અલ્પ આજ્ઞાને તત્કાળ અનુસરવી એ જ સીન્સીયારીટી.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આજ્ઞા પાલન<br/>
+      ટેગ: વાંચન, સભા, ગઢડા પ્રથમ ૭૬, sincere<br/>
+      નંબર: ૪૯૯
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

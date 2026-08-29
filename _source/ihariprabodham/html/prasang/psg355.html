@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+30 મિનિટ નિર્વિકલ્પ ભજન
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રી તા. 25-2-2016ના રોજ સીડ્‌ની, ઑસ્ટ્રેલિયામાં બિરાજમાન હતા. થાળ અને પધરામણી કરીને રાત્રે  અગિયાર વાગ્યે ઉતારે પધાર્યા.
+</p>
+<p>
+ઉતારે પધાર્યા બાદ સ્વામીશ્રી નીચે હૉલમાં બિરાજ્યા. ઘરના માલિક પંજાબી હરિભગત હતા.
+</p>
+<p>
+સ્વામીશ્રીએ એમને જોઈને કહ્યું, ‘આપણે થોડુંક પેટ ઓછું કરવાનું. પેટ વધારે હોય તો સ્થિરતાથી ભજન ના થાય. કોન્સન્ટ્રેશન ના થાય. સહેજ ભજનમાં ડૂબવા જઈએ તો ઊંઘ આવી જાય.’
+</p>
+<p>
+એ પંજાબી હરિભક્તે નિખાલસતાથી જવાબ આપ્યો, ‘સ્વામીજી ! મૈં તો ટૈક્સી ચલાતા હું. આપ કહેતે હો ઐસાં સ્થિરતા સે કભી ભજન હીં નહીં કિયા હૈ.’
+</p>
+<p>
+સ્વામીશ્રી એમની સહજતા અને એમની વાત કરવાની ઢબ જોઈને ખૂબ હસ્યા અને ખૂબ સ્મૃતિ આપી.
+</p>
+<p>
+ત્યારબાદ અશોકભાઈએ સમજાવ્યું કે ‘કોન્સન્ટ્રેશન હોય તો આપણે પ્રભુમાં ડૂબીને ભજન કરી શકીએ. અને ભજન કરી શકીએ તો આપણે આપણા આત્માને સુખી કરી શકીએ.’
+</p>
+<p>
+લગભગ પંદર જેટલા ભક્તો સ્વામીશ્રીના દર્શન કરી રહ્યા હતા. એ બધાને સૂચન કરતાં સ્વામીશ્રીએ કહ્યું, ‘ભજન એટલે પ્રભુમાં લય અવસ્થા. શરીરમાં મેદ ન હોય હોય તો ભજન ખૂબ સારી રીતે થાય. મેદ હોય તો સહેજ ભજનમાં ડૂબવા જઈએ તો ઝોકું આવી જાય, જેથી આપણે જેમ છે એમ પ્રભુમાં ડૂબીને ભજન ન કરી શકીએ. આપણું ધ્યેય તો ત્રીસ મિનિટ નિર્વિકલ્પપણે ભજન કરવાનું છે. ત્રીસ મિનિટ નિર્વિકલ્પપણે ભજન ના કરી શકો તો કોઈ વિકાસ જ ના કહેવાય. 
+</p>
+<p>
+આપણા સત્સંગમાં તો કોઈપણ સાધકના આત્માનો વિકાસ એટલે એનું ત્રીસ મિનિટ નિર્વિકલ્પપણે ભજન થવું જોઈએ. ધરતી પર વ્યવહાર તો ચાલ્યા જ કરવાનો છે પણ નિર્વિકલ્પપણે ભજન ન થાય તો પ્રભુ સાથેનો ખરેખરો સંબંધ દૃઢ થયો ન કહેવાય.’
+</p>
+<p>
+આમ ભક્તોને જોઈને આત્મલક્ષી પંદર-વીસ મિનિટ વાતો કરી સ્વામીશ્રી રૂમમાં પધાર્યા.
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! અમને જે પદાર્થ બંધન કરે, જે પ્રસંગ બંધન કરે, જે સ્થળ  બંધન કરે, જે હેત – માયા – દયા – પ્રીતિ બંધન કરે, જે વ્યક્તિ બંધન કરે, જે લોક બંધન કરે, જે પરિવાર બંધન કરે, જે સમજણ બંધન કરે, જે ઇન્દ્રિય – અંત:કરણ બંધન કરે એ સર્વેનો ત્યાગ કરી 30 મિનિટ નિર્વિકલ્પ ભજન કરી શકીએ એવો રૂડો બુદ્ધિયોગ આપશોજી.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

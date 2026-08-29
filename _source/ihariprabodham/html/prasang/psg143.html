@@ -1,0 +1,82 @@
+<html><head><title>Swaroopyog</title> <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+    <TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        સત્પુરૂષના ગુણ લેતા જઈએ તેમ દાસત્વ આવે.
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+  	સવારે પૂજા પછી બહાર આસન પર બિરાજી પત્રોનું વાંચન કર્યું. હરિભક્તોને વારાફરતી દર્શન આપ્યા. પગની એકસરસાઈઝ કરતાં-કરતાં હરિભક્તો સાથે સુખ દુ:ખથી વાતો કરી. વાતો કરતા કહે, 'લીલા-ચરિત્રો દાસત્વથી ગાવાં જોઈએ.' એક હરિભગતે કહ્યું, 'અમે આખો દિવસ એ જ કર્યા કરીએ છીએ.' સ્વામીજી કહે, 'પણ દાસત્વ ભાવથી નથી ગવાતા.' પછી બહાર પધારી ગાડીમાં બિરાજ્યા ને એક ભગતે પ્રશ્ર્ન પૂછ્યો કે સ્વામી દાસત્વ કેવી રીતે આવે ? સ્વામીજી કહે, 'જેમ જેમ સત્પુરૂષના ગુણ લેતા જઈએ તેમ તેમ દાસત્વ આવે. પણ સત્પુરૂષનો ગુણ અંતરથી લેવો પડે અને જેમ જેમ ગુણ ગાતાં જઈએ તેમ તેમ બધું આવતું જાય. ગુણ ગાય એટલે બધું જ આવી ગયું. બીજું લીલા-ચરિત્રો ગાવાં એ પોતાના કલ્યાણ માટે જ ગાવવાં જોઈએ અને દાસત્વ ભાવથી ગવાવાં જોઈએ.'
+  
+	
+                         <div class="chend">
+                             *****
+                         </div>
+</div></body></html>

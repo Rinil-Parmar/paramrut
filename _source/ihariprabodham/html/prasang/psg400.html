@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+પ્રભુનો દરબાર
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ભગવાન અને સંતનો દરબાર ધરતીના દરેક જીવ માટે હંમેશા ખુલ્લો જ હોય છે. ત્યાં કોઈ નાનું-મોટું નથી. ત્યાં કોઈ અમીર-ગરીબ નથી. ત્યાં કેવળ પ્રભુનો ભાવ છે. ત્યાં કેવળ સંબંધ જ છે અને એ તેમની જીવ પરની કરુણા છે. કારણ તેમના દરવાજા જો બંધ થાય તો જીવના આત્માના કલ્યાણનો માર્ગ બંધ થઈ જાય.
+</p>
+<p>
+હરિધામ મંદિરે પૂનમ ઉપર આજુબાજુના ગામડાંમાંથી ત્રાહિત લોકો જમવા માટે આવી જાય. એમાના ઘણાં તો એવા પણ હોય કે જેઓ મંદિરે દર્શન કરવા પણ ન જતાં હોય. ઘણી વખત અવ્યવસ્થા સર્જાય અને રસોઈ ફરીથી બનાવવી પડે. આવી પરિસ્થિતિ ઘણો સમય સુધી ચાલી એટલે એક વડીલે ગુરુહરિ સ્વામીશ્રીને પ્રાર્થના કરતા કહ્યું, ‘હવે આપણે પાસ સીસ્ટમ કરી દઈએ. નહિ તો આ ત્રાહિત લોકો કાયમ માટે આપણે ત્યાં અવ્યવસ્થા ઉભી કરતા રહેશે.’ 
+</p>
+<p>
+તેમની મંદિર પ્રત્યેની મમતા જોઈને સ્વામીશ્રીએ સૂઝ આપતા કહયું, ‘તમારા ઘરે એ લોકો રોજ જમવા આવે છે ? મહિનામાં એક વખત જ આવે છે તો સારું કરીને જમાડો ને ! આપનાર કોક છે, ખાનાર કો’ક છે. વચ્ચે તમે કેમ ડીસ્ટર્બ થાઓ છો ?  આ તો પ્રભુનો સંકલ્પ છે અને પ્રભુનો દરબાર છે એટલે બધા આવે છે. આપણે તો ભગવાનના ભાવથી તેમની સેવા કરી પૂણ્ય લુંટી લેવાનું.’
+</p>
+<p>
+હે સ્વામીશ્રી ! અમારી દૃષ્ટિ વ્યવહાર પ્રધાન નહિ,  પરંતુ સંબંધવાળી બને તેવી અમ સહુ પર કૃપા કરશોજી !
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

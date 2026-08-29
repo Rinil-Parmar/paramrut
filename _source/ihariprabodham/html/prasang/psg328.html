@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+લીલા ચરિત્રનું નિત્ય ગાન કરવું...
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+શ્રીહરિ વ.ગ.પ્ર.૩માં કહે છે, ‘અમે મોટા મોટા વિષ્ણુયાગ કરીએ છીએ તથા જન્માષ્ટમી અને એકાદશી આદિક વ્રતના વર્ષોવર્ષ ઉત્સવ કરીએ છીએ અને તેમાં બ્રહ્મચારી, સાધુ, સત્સંગીને ભેળા કરીએ છીએ. અને જો કોઈક પાપી જીવ હોય અને તેને પણ જો એમની અંતકાળે સ્મૃતિ થઈ આવે તો તેને ભગવાનના ધામની પ્રાપ્તિ થાય.’
+</p>
+<p>
+વળી, વ.ગ.મ.૩૫માં કહે છે, ‘આ તમે સર્વ છો તે મને ભગવાન જાણો છો. તે અમે જ્યાં જ્યાં ઉત્સવ-સમૈયા કર્યા હોય ને જે ઠેકાણે પરમહંસ, બ્રહ્મચારી તથા હરિભક્ત સત્સંગી બાઈ-ભાઈ સર્વે ભેગાં થયાં હોય ને અમે કીર્તન ગવરાવ્યાં હોય ને વાર્તા કરી હોય ને અમારી પૂજા થઈ હોય, એ આદિક જે અમારાં ચરિત્રલીલા તેને કહેવાં ને સાંભળવાં ને તેનું મનમાં ચિંતવન કરવું. અને જેને એનું ચિંતવન અંતકાળે જો થઈ આવ્યું હોય તો તેનો જીવ ભગવાનના ધામને જરૂર પામે.’
+</p>
+<p>
+એકવાર મહારાજ કુંડળ પધાર્યા. મહાપ્રેમી રાયબામા પ્રેમભીના હૃદયે નિત્ય શ્રીહરિને ઘી, સાકર નાખી રોટલી જમાડે. સાંજ વખતે મહારાજ જમતા હોય ત્યાં એક બાવો આવે. તેણે ઝાઝાં લૂગડાં પહેર્યાં હોય ને પગે ટોકરો બાંધ્યો હોય તે ‘અલખ નિરંજન..ભજી લે રામ..!’ એમ કહીને ઊભો રહે, એટલે મહારાજ કટોરામાંથી રોટલી લઈને ઊંચી કરે, તે ઘીના ટીપા નીચે પડે. 
+</p>
+<p>
+પછી મહારાજ કહે, ‘બાવાજી ! અમને તો આ બાઈ રોજ આવું જમાડે છે.’ 
+</p>
+<p>
+ત્યારે તે બાવો ખિજાઈને બોલે કે, ‘દુનિયા ભોળી હૈ, ભેખકું નહિ ઓળખતી હૈ, સબ કપટીકું જિમાતે હૈ, ઔર હમકું નહિ દેતે હૈ.’ 
+</p>
+<p>
+મહારાજ આવી લીલા કરતા. પછી એક દિવસ મહારાજે તે બાવાને રોટલી આપી એટલે તે ત્યાં ઊભો ઊભો જમી ગયો. આ ચરિત્ર તેને યાદ રહી ગયું. અંત સમયે તે રોટલી આપતા ચરિત્રના માધ્યમે મહારાજ યાદ આવ્યા અને તે બાવાનો ઉદ્ધાર થયો. 
+</p>
+<p>
+મુક્તાનંદ સ્વામીને પણ મહારાજે ચરિત્ર-શ્રવણમાં જ શાંતિ બતાવી હતી. વળી, શ્રીહરિ ગ.પ્ર.૩૮માં કહે છે, ‘મન છે તે જગતની વાસનાએ કરીને વસાણું છે. જેમ ફૂલે કરીને તિલ વસાય છે તેમ મનને ભગવાનનાં જે ચરિત્ર તેનું જે મહિમાએ સહિત નિત્ય સ્મરણ તે રૂપ ફૂલને વિષે વાસવું. અને ભગવાનના ચરિત્રરૂપ જાળાને વિષે મનને ગૂંચવી મેલવું ને ભગવાનના ઘાટ મનમાં કર્યા કરવા. એક શમ્યો ને બીજો કરવો, બીજો શમ્યો ને ત્રીજો કરવો એમ ને એમ મનને નવરું રહેવા દેવું નહીં.’
+</p>
+<p>
+આપણે સહુ પણ દૈનિક ક્રિયાયોગો અને ભજન પ્રત્યક્ષ ભગવાનના  લીલા-ચરિત્રોને સંભારતા સંભારતા કરવાની ટેવ પાડીએ એ જ અભ્યર્થના.
+</p>
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+જેટલું શરીરનું ધ્યાન રાખીએ એટલું શરીર બોદલું થતું જાય
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઇ.સ. ૧૯૯૦નો આ પ્રસંગ છે. 
+</p>
+<p>
+એક વખત ગુરુહરિ સ્વામીશ્રી સાંજે ૪:૩૦ વાગે શ્રી છોટે મોરારીબાપુના પારાયણમાં આશીર્વાદ આપી કરજણ પાછા આવતાં રસ્તામાં વૉકિંગ માટે ગાડીમાંથી નીચે ઉતર્યા.
+</p>
+<p>
+રસ્તો ખરાબ હોવાથી સાથેના સંતો-સેવકોએ કહ્યું, ‘આગળ રસ્તો સારો આવે પછી ચાલીએ.’
+</p>
+<p>
+સેવકોની પ્રાર્થના સ્વીકારી સ્વામીશ્રી ગાડીમાં બેસી ગયા. પરંતુ થોડીવાર પછી સ્વામીશ્રીએ સારથિનો હાથ પકડી ગાડી ઊભી રખાવીને કહ્યું, ‘જેટલું શરીરનું ધ્યાન રાખીએ એટલું શરીર બોદલું થતું જાય. ખાડામાં ચાલવાનું તો મને બહુ જ ફાવે.’
+</p>
+<p>
+પછી ગાડીમાંથી ઉતરી સ્વામીશ્રી વૉકિંગ કરવા પધાર્યા.
+</p>
+<p>
+સ્વામીશ્રીની કેવી સહજ દેહાતીત અવસ્થા ! 
+</p>
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

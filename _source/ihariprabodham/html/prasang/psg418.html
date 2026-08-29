@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Haridham - Sokhada</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સાધુની પરખ  
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગોપાળદાસ અને કાશીબાની સેવાભક્તિની સુવાસ સમાજમાં ચોતરફ પ્રસરેલી હતી. જેથી અનેક સાધુ - સંતો તેમના આંગણે પધારતા. પ્રભુદાસ તેઓની સાધુતાને ક્ષણમાં જ પારખી લેતા. પ્રભુદાસ કોઈની સિદ્ધદશાથી ક્યારેય અંજાતા નહીં.
+</p>
+<p>
+એકવાર પ્રભુદાસ બહારગામ જઈ રહ્યા હતા. એક તપસ્વી સંત ગામના પાદરે જ મળ્યા. એમને લઈને તેઓ પાછા ઘરે આવ્યા. ઘરમાં આસન પાથરીને એમને બેસાડ્યા ને પાણી આપ્યું. એ સાધુ કેફમાં જ બોલી ઊઠ્યા, ‘હું હિમાલયમાં રહું છું. ચારસો વર્ષથી તપ કરું છું. તપસ્યા વખતે હવા અને પાણી એ જ મારો ખોરાક હોય છે. આવું કઠિન તપ કરનાર બહુ ઓછા હોય.’
+</p>
+<p>
+વિચક્ષણ એવા પ્રભુદાસને એમની વાણીમાં પોતાની તપસ્યાના જાણપણાનો અહંકાર દેખાયો. એમને મનોમન દયા આવી કે ભલેને ૪૦૦ વર્ષથી સાધના (તપસ્યા) કરે છે અને કદાચ ૪૦૦૦ વર્ષ સુધી સાધના કરશે પણ અહમ્ ટાળીને દાસ નહીં થવાય તો સર્વોપરી પ્રભુનો આનંદ ક્યાંથી મળશે ? 
+</p>
+<p>
+તપસ્યાથી ઉત્પન્ન થયેલો અહંકાર પ્રભુદાસને રુચ્યો નહીં એટલે તેઓ ત્યાંથી ઊભા થઈને જતા રહ્યા.
+ </p>
+<p>
+આટલી નાની વયમાં અહમની વૃત્તિનું નિરીક્ષણ એ જ પ્રભુદાસની આધ્યાત્મિકતાનું વિશેષ દર્શન હતું. મહાકારણ શરીરમાં રહેલા ગુણ અને અસ્તિત્વના જાણપણાનું દર્શન તો અક્ષરધામના પુરુષને જ ખ્યાલ આવે ને !
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

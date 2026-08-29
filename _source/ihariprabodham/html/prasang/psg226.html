@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+અપરંપાર મહિમા શ્રીજીનો
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+‘સરસ એક સહજાનંદ’ પુસ્તક નવું નવું બહાર પડ્યું હતું. સતુભાઈ એ પુસ્તક જેમ જેમ વાંચતા જાય તેમ તેમ નવા ને નવા વિચારો પ્રગટે. એક દિવસ એમણે સ્વામીજીને કહ્યું, ‘સ્વામીજી, ‘સરસ એક સહજાનંદ’ માં મહારાજના સર્વોપરીપણાનું જે વર્ણન છે એ તો સમજમાં આવી રહ્યું છે પરંતુ મારે એથી વિશેષ મહિમાનાં દર્શન કરવાં છે.’ 
+</p><p>
+ત્યારે જવાબ આપતાં સ્વામીજીએ કહ્યું, ‘સતુભાઈ, ‘સરસ એક સહજાનંદ’માં મહારાજના સુહૃદભાવ અને સર્વોપરીતાનું જે વર્ણન કર્યું છે એ તો માત્ર એક જ ટકો છે. હજુ 99% વર્ણન તો બાકી છે. જો એ વર્ણન થાય તો વાંચનાર પુસ્તકને બાજુ પર મૂકી દે, એટલી બધી એમની સર્વોપરીતા છે.’ 
+</p><p>
+અંગની વાત આવી એટલે સતુભાઈને રસ જાગ્યો. કહે, ‘તો સ્વામીજી આપ એ સુપ્રીમસીની વાત કરો. મહિમાનું વર્ણન કરો.’ સ્વામીજી હસ્યા. વાતને ટાળી. આ રીતે એમણે ઘણીવાર સ્વામીજીને મહિમાની વાત કહેવા પ્રાર્થના કરી પરંતુ સ્વામીજી એ વાતને ટાળ્યા કરે. 
+</p><p>
+એક દિવસ એમણે ખૂબ આગ્રહ રાખ્યો એટલે એમની પ્રાર્થનાને વશ થઈને સ્વામીજીએ મહિમાની વાત માંડી : ‘સતુભાઈ, મોતીપુરામાં આપણે ટ્રેક્ટર ખેડવા મોકલ્યું તે સો વીઘા જમીનમાં કેટલી જીવાતો મરી ગઈ હશે ?’ 
+</p><p>
+‘એ તો ગણત્રી જ ન થઈ શકે !’  <br/>
+‘જો આખી પૃથ્વીની જમીન ખેડવામાં આવે તો કેટલી જીવાતો મરી જાય ?’ <br/>
+‘અધધ.. ગણાય જ નહીં !’ <br/>
+‘એવી જ રીતે તમે એક શ્ર્વાસ લો એમાં લાખો બેક્ટેરિયા મરી જાય છે.’  સતુભાઈ આશ્ર્ચર્યવત્ જોઈ જ રહ્યા. <br/>
+‘એમ આખા બ્રહ્માંડની જમીન ખેડવામાં આવે અને સમગ્ર બ્રહ્માંડના જીવો શ્ર્વાસ લેતા હોય તો કેટલી જીવાતો મરતી હશે ?’ <br/>
+ ‘સ્વામીજી, એ તો ‘નેતિ.. નેતિ..’ જ કહેવાય !’ <br/><br/>
+‘હજુ આગળ સાંભળો.  એક ઘન ચોરસ ફૂટ હવામાં દસ હજાર જેટલા સૂક્ષ્મ જીવો રહેલા છે. તો આપણા ઘરમાં કેટલા જીવો હશે ? પૃથ્વીમાં કેટલા જીવો હશે ? તો બ્રહ્માંડમાં કેટલા જીવો તરતા હશે ?’ <br/>
+ ‘દયાળુ, એના માટે પણ ‘નેતિ.. નેતિ..’ જ કહેવું પડે.’
+</p><p>
+પછી સ્વામીજીએ મહારાજની અપ્રતીમ સુપ્રીમસીનું વર્ણન કરતા કહ્યું, ‘સતુભાઈ, હરેક સેકંડે માં આખા બ્રહ્માંડમાં રહેલા એવા અસંખ્ય જીવો મરતા હશે. એ દરેક જીવને એ જ સમયે એના કર્મ પ્રમાણે એના પાપ અને પુણ્યનો સરવાળો બાદબાકી કરીને જે તે યોનિમાં દેહ આપી દેવો એ મહારાજની સુપ્રીમસી છે. અક્ષરધામમાં બેઠા બેઠા મહારાજ આવું કાર્ય કરી રહ્યા છે. આ કાર્ય બીજા કોઈથી થઈ શકે એમ નથી. છતાં પણ એ કર્તા થકા અકર્તા છે.’
+
+</p><p>
+વિસ્ફારિત નયને તેઓ સ્વામીજી તરફ જોઈ રહ્યા ! કંઈક મહિમામાં સ્વામીજીએ ડૂબાડ્યા એટલે આનંદ પણ ખૂબ થયો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

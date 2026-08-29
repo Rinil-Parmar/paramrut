@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ ‘એના જેવા બનાવી દે...’
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રી ઘણીવખત વાત કરતાં કહ્યું છે - પ્રબોધ અખંડ મહિમામાં રહે. એવા આપણા સહુનાય આદર્શ અને મહિમાનાં સ્વરૂપ એવા પ્રબોધસ્વામીની એવી મહિમાસભર દૃષ્ટિનાં એક પ્રસંગનું દર્શન કરીએ.
+</p> <p>
+ગુરુહરિ સ્વામીશ્રી હરિધામ તીર્થસ્થાને બિરાજમાન હતા. સાંજના સુમારે ગુરુહરિ સ્વામીજી વોકીંગ કરતા કરતા ટ્યુબવેલ પધાર્યા. અહીં ખેતરમાં કામ કરતાં એક મજુર દર્શન કરવા માટે આવ્યા. એમની સાથે નાનું બાળક હતું. એને ઉંચકીને સ્વામીજીના દર્શન કરાવ્યા. 
+</p> <p>
+પછી સ્વામીજીએ બાળકને પૂછ્યુ, ‘તારું નામ શુ ?’ બાળક બોલ્યું, ‘વેદાંત’.  સ્વામીજી કહે, ‘મોટુ નામ છે ને તારું.’ પછી સ્વામીજી અનિર્દેશ પધાર્યા. 
+</p> <p>
+એક નાના સંતે પ્રબોધસ્વામીને પૂછ્યુ, ‘પ્રબોધસ્વામી ! મેં સાંભળ્યુ છે કે ગુણાતીતાનંદસ્વામીના એક વખત દર્શન કરે તો એના પૂણ્યનો સરવાળો થાય નહિ. સ્વામીજીના એ નાના બાળકે દર્શન કર્યા, સ્વામીજીનો સ્પર્શ કર્યો, એનુ ફળ શું ?’
+</p> <p>
+પ્રબોધસ્વામીએ કહ્યું, ‘એમનાં જેવા બનાવી દે...’
+</p> <p>
+વચનામૃત ગઢડા પ્રથમ-૫૮માં કહ્યા પ્રમાણે આપણે જેવા ભગવાન અને સંતને માનીએ તેવા એ બનાવે એવી ઉત્કૃષ્ટ મહિમાસભર અને સંબંધવાળી દૃષ્ટિની સમજણ આપણે પણ કેળવવા પ્રબોધસ્વામીની સાથે ખરેખરી પ્રીતિ દૃઢ કરીએ.
+ </p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

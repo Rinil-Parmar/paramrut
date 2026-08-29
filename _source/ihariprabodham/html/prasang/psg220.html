@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+પ્રાર્થનાનો બુદ્ધિયોગ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+- વચનમાં વિશ્વાસ એનું નામ જ પ્રીતિ. <br/>
+- અણસારે સમજે એનું નામ જ પ્રીતિ. <br/>
+- ગમતામાં વર્તે એનું નામ જ પ્રીતિ. <br/>
+- સત્પુરુષનું ગમાડે એનું નામ જ પ્રીતિ. <br/>
+અને પછી નિર્દોષ થઈ જવાય જ.
+</p><p>
+પણ વચનમાં જ્યાં સુધી વિશ્વાસ નહિ આવે ત્યાં સુધી બુદ્ધિયોગ નહિ આવે. <br/>
+- અને બુદ્ધિયોગ નહિ આવે ત્યાં સુધી સંબંધ દ્રઢ નહિ થાય. <br/>
+- અને સંબંધ દ્રઢ નહિ થાય ત્યાં સુધી ગમતામાં વરતાય નહિ અને એનું ગમાડી શકશો નહિ. <br/>
+- તમે ગમતામાં વર્તી શકશો પછી જ અક્ષરધામનો બુદ્ધિયોગ એ મફતમાં આપી દેશે. પછી એનું ગમશે બાકી શક્ય જ નથી. <br/>
+- અને એનું ગમે પછી સાધના પૂરી થઈ જાય.
+</p><p>
+ગુણાતીતાનંદસ્વામીના દર્શન કરવા કલ્યાણભાઈ, વેલો સથવારો, રામભંડેરી અને પોતાના બધા અંગત સેવકો દર્શન કરવા આવ્યા હતા. સમૈયૌ પૂરો થયો અને બધા હરિભક્તો દર્શનનો લાભ લઈને નીકળતા હતા. રામભંડેરી તો ગધેડાપતિ હતા, ગધેડા જ રાખતા. એવા કોઈ કરોડોપતિ નહોતા પણ એ ગુણાતીતાનંદસ્વામીના હૃદયમાં વસેલું પાત્ર હતું. એટલે ગુણાતીતાનંદસ્વામીએ રામભંડેરીને કહ્યું, ‘દેશકાળ તો સારા છે ને?’ ત્યારે રામ ભંડેરીએ બે હાથ જોડીને બધાની વચ્ચે કહ્યું, ‘સ્વામી ! બધા દેશકાળ સારા છે પણ હૃદયના દેશકાળ સારા રાખજો. આ એક દેશકાળ સારા નહીં હોય ને બાકી બધા દેશકાળ સારા હશે તોપણ અહીંયા ઠંડક નહીં આપે.’
+</p><p>
+પછી હસતા-હસતા ગુણાતીતાનંદ સ્વામીએ કહ્યું, ‘માગતાં આવડ્યું.’ ત્યારે રામભંડેરીએ ગુણાતીતાનંદસ્વામીને કહ્યું, ‘સ્વામી ગરીબ છું ! મારા દેશકાળની તમને ખબર છે. પણ અધિકાર લેવામાં શરમ દાખવતાં નહિ. વેચાઈ જઈશું, આ દેહમાં લોહીનું ટીપું રહેશે ત્યાં સુધી મહેનત કરીશું; પણ જે કંઈ જોઈએ તે માંગી લેજો.’ એમના આત્માનો સંબંધ એવો સરસ હતો કે ગુણાતીતાનંદસ્વામી સહજતાથી એના ઉપર અધિકાર કરી શકતા હતા.
+</p><p>
+- તું મળ્યો પછી દેશકાળ શાનાં ? <br/>
+- તું મળ્યો એટલે હું પૂર્ણ થઈ ગયો. તારા સંબંધે હું પૂર્ણ જ. <br/>
+- મારે કાંઈ કરવાનું બાકી ન રહ્યું. <br/>
+- અમારા હૈયાનાં દેશકાળથી તું રક્ષા કરજે.
+</p><p>
+આ પ્રાર્થના કરી રામભંડેરી ગુણાતીતાનંદસ્વામીને કહેવા માંગતા હતા કે, તમારામાં મનુષ્યભાવ ના આવે, ભાવફેરમાં ના જઈએ, તમારાથી અને તમારા ભકતોથી વિખૂટા ના પડીએ આટલું અમને કરી આપજો. આનું નામ પ્રીતિ કહેવાય ! આનું નામ ગમાડ્યું કહેવાય !
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

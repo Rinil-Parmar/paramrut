@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+કેવી રીતે કથાવાર્તાનું મનન-ચિંતવન કરવું... 
+</div>
+<div class="vaat_ind" id="vaat1_1"><p>
+તા. ૧૬-૦૫-૨૦૦૫, વડોદરા, નગીનભાઈ પંચાલને ત્યાં ગુરુહરિ સ્વામીશ્રી ગોલ્ડ બ્લેડરના દુ:ખાવાની ટ્રીટમેન્ટ નિમિત્તે રોકાયા હતા.
+</p>
+<p>
+ગુરુહરિ સ્વામીશ્રી આખો દિવસ સંતો પાસે શ્રીજીચરિત્ર વિહાર પુસ્તકનું પારાયણ કરાવતા હતા.
+</p>
+<p>
+એક દિવસ બપોરે આરામમાં જતાં પહેલા સેવકે હરિચરિત્રામૃતનું પારાયણ કર્યુ. એમાં ખાનદેશના ભક્તોને ઉપાધિ આવી. મઠના એક સંન્યાસીએ રાજાને કાન ભંભેરણી કરી અને કહ્યું આ સ્વામિનારાયણના સત્સંગીઓને કહો જો એ સાચા હોય તો વરસાદ પાડે નહીં તો એની કંઠી ઉતરાવો. રાજાએ સ્વામિનારાયણના બધા સત્સંગીઓને કેદ કર્યા અને વરસાદ માટે વાત કરી. અઠવાડિયાની મુદત આપી.  ક્યાં ખાનદેશ ને ક્યાં ગઢડા શ્રીહરિને સંદેશો કેમ મોકલવો. ઘોડેશ્વાર જાય તો પણ પાંચ-સાત દિવસે પહોચે. હરિભક્તોએ મૂંઝવણમાં ભજનનો આસરો લીધો, પ્રાર્થના પહોચી રાત્રે જ શ્રીહરિએ પત્ર લખ્યો અને ગોવિંદરામ ભટ્ટને ચાલતા મોકલ્યા. એ પ્રસંગ આવ્યો.
+</p>
+<p>
+વાંચન પૂરું થયા બાદ ગુરુહરિ સ્વામીશ્રી આરામમાં પધાર્યા. સ્વામીશ્રી તો જાણે સૂતા સૂતા પણ એ પ્રસંગને વાગોળી રહ્યા હોય તેમ મનન-ચિંતન કરી રહ્યા હતા. શ્રીજીમહારાજે સંદેશો લઈને કોને મોકલ્યા એ હરિભગતનું નામ યાદ નહોતું આવતું. સ્વામીશ્રી પથારીમાંથી સફાળા બેઠા થઈ ગયા અને સેવક એક્યુપ્રેસર કરતાં હતા એમને પૂછયું, ‘મહારાજે પત્ર લઈને કોને મોકલ્યા ?’  સેવક પાસે જવાબ મેળવી પાછા મનન-ચિંતવન કરતાં પોઢી ગયા. 
+</p>
+<p>
+સ્વામીશ્રીનું સામાન્ય જણાતું આ દર્શન પણ કેટલું બધું સમજાવી જાય છે ! 
+</p>
+<p>
+ગુરુહરિ સ્વામીશ્રી ઘણીવખત આપણને ગોષ્ટિમાં કહે છે કે, અમે યોગીજીમહારાજના વખતમાં હતા ત્યારે યોગીબાપા રોજ સવારે 30 મિનિટ ગોષ્ટિ કરતા. અમે એ જ દિવસે સેવા કરતાં કરતાં એ ગોષ્ટિનું મનન-ચિંતન-સાક્ષાત્કાર કરી લેતા.
+</p>
+<p>
+ગુરુહરિ સ્વામીશ્રી આપણને શીખવી રહ્યા છે કે આપણે આપણા જીવનમાં કથાવાર્તાનું વાંચન અને શ્રવણ જ નથી કરવાનું પણ એ પ્રસંગને યથાર્થ મનન-ચિંતન કરીને સાક્ષાત્કાર કરવાના છે.
+</p>
+<p>
+તો હે સ્વામીશ્રી ! અમને પણ કથાવાર્તાનું મનન-ચિંતન કરવાનો યથાર્થ બુદ્ધિયોગ પ્રદાન કરશોજી.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

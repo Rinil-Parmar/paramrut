@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Haridham - Sokhada</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભક્તોનો વાયરો વાય ને એટલે આનંદ જુદો આવે !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એક વખત હરિધામમાં અંબરીષ શિબિરનું આયોજન હતું. એ સમયે યોગીઆશ્રમથી હરિસ્મૃતિ સુધીના રોડનું કામકાજ ચાલુ હતું.  એક બાજુ ગુરુહરિ સ્વામીજી વોકિંગ કરી શકે તે હેતુથી  એક બાજુનો રોડ સમથળ કર્યો હતો અને બીજી બાજુ થોડાક ખાડા હતા.
+ </p>
+<p>
+લગભગ રાત્રિના અગિયાર - સાડા અગિયાર પછી સ્વામીજી ખાનગીઓ પૂર્ણ કરીને વોકિંગ કરવા પધારેલા. 
+</p>
+<p>
+ભક્તો   હરોળમાં  લીમડાવન બાજુ દર્શન માટે ઊભા હતા. સ્વામીજી વોકિંગ કરતાં આવે ત્યારે આત્મીય કુટીરથી જે બાજુ રસ્તો સારો નહોતો એ બાજુ ચાલે. (લીમડાવન બાજુનો - ભક્તો બાજુનો)  સંતો-સેવકોની ઈચ્છા કે જે વોકિંગ પાથ બનાવ્યો છે તેના પર સ્વામીજી ચાલે. સંતોએ પ્રાર્થના પણ કરી..  સ્વામીજીએ છ પ્રદક્ષિણા કરી.
+</p>
+<p>
+છેલ્લો રાઉન્ડ પૂરો કરી સ્વામીજી મંદિર આગળની બોરસલ્લીના ઝાડ પાસે ઊભા રહ્યા. પછી મૈત્રીસ્વામીને કહે કે મૈત્રી ! સુહૃદને બોલાવ. એટલે સુહૃદસ્વામી ગયા. સ્વામીશ્રી કહે, 'સુહૃદ, જેટલીવાર હું આ રસ્તે ચાલ્યો એટલી વાર તમે વિચારતા હતા કે સ્વામીજી આ રોડે કેમ ચાલે છે ? ' 
+</p>
+<p>
+પછી કહે, 'શું કરું ? મારાથી રહેવાતું નહોતું. ખાડા-ટેકરા તો આવ્યા કરવાના.' 
+</p>
+<p>
+પછી કહે, 'અહીંયાંથી (લીમડાવાન બાજુ ) આમ જઈએ અને હરિભક્તો ઊભા હોય ને એમનો વાયરો વાય ને...  એટલે આનંદ જુદો આવે !'
+</p>
+<p>
+હે સ્વામીજી !  પ્રાણ થકી મુને વૈષ્ણવ વ્હાલા... એ પ્રમાણે અમે પણ ભકતોમાં આપનો સંબંધ નિહાળીએ, એમના સુખે સુખી, દુ:ખે દુ:ખી  રહીએ  એ જ અંતરની પ્રાર્થના !!!
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

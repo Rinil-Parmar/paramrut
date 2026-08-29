@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીતનો અંતરનો રાજીપો
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ચોમાસામાં એક દિવસે ખૂબ વરસાદ પડ્યો હતો. ગુણાતીતાનંદસ્વામી પોતાના કોઠારમાં જઈને કાપડના તાકા ફાડવા લાગ્યા. ત્રિકમદાસ કોઠારી દૂર ઊભા રહીને જોયા કરે. શું ચમત્કાર થયો ? શાથી ફાડતા હશે ? જેણે જિંદગી પર્યત થીંગડાવાળું ગાતરિયું પહેર્યું છે, એ ગુણાતીતસ્વામી તાકા કેમ ફાડતા હશે ?  વિચારમાં પડી ગયા. સ્વામીજીને તો પુછાય નહિ, કેમ ફાડી  રહ્યા છો ?’ ફાડતા જ રહ્યા.
+</p><p>
+
+કોઈને કાંઈ ખબર નહોતી પણ ગુણાતીતની જાણ બહાર કોઈ ચીજ નહોતી. એમને ખબર હતી કે, બોટાદથી સંઘ આવી રહ્યો છે અને એટલો બધો વરસાદ પડી રહ્યો હતો કે ઝાડવાં ડોલે. ઘોર અંધારી રાત. શિવલાલ શેઠનો આખો સંઘ ભીંજાઈ ગયો. શિવલાલ શેઠ, ૨૫ વર્ષનો એ યુવાન દીકરો ગુણાતીતની છાતી પહોળી કરીને એમના હૃદયમાં બેસી ગયેલો. શિવલાલ શેઠ તે જમાનામાં નવ લાખના આસામી હતા.
+</p><p>
+
+૨૫ વષનું એ નાનું ટાબોરિયું. બોટાદથી એક સંઘ લઈને જૂનાગઢની ધરતી પર પ્રવેશ્યા. બધા જ સામાન સાથે ખૂબ ભીંજાઈ ગયેલા. ખૂબ વરસાદની ઝડીઓ. શિવલાલ શેઠે આવીને  ત્રિકમદાસ કોઠારીને પહેલું જ પૂછયું, ‘સ્વામીજી ક્યાં છે ?’ સ્વામીને શોધીને સીધા જ દંડવત શરૂ કર્યા.
+</p><p>
+
+ગુણાતીતાનંદસ્વામી આવીને ભેટી પડ્યા. એમને ખ્યાલ હતો જ કે, વરસાદમાં ભયંકર સ્નાન કરીને આવ્યો છે. એ પોતાનો દેહ ભૂલી ગયા. બસ એક જ ઉમંગ હતો કે આ ભકત મારો
+છે. ભેટીને કહે, ‘જલ્દી કપડાં બદલી નાંખો.’ એમના માટે જ તાકા ફાડતા હતા. કેવું ધ્યાન રાખતા હશે !
+</p><p>
+
+ભગવાન, ભગવતસ્વરૂપનો એક જ સ્વભાવ છે, ‘નિરંતર તમારું ધ્યાન રાખવાનો.’ પણ જે દિવસે તમને આંખ, કાન, ને જીભથી કોઈ ભકત તરફ અરૂચિ ઊભી થઈ ગઈ તે દિવસથી ભગવાન તમારાથી કરોડો માઈલ દૂર. ધ્યાન રાખજો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+આપણી કેટલી ભવ્ય પ્રાપ્તિ! આપણે સૌ કેટલા ભાગ્યશાળી!
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+હાલની હરિધામ મંદિરની જગ્યા વર્ષો પહેલાં મકરાની ‘તલાવડી’ તરીકે ઓળખાતી હતી. સ્વામીશ્રી શાસ્ત્રીજીમહારાજ અને યોગીજીમહારાજની એ પરમ પ્રાસાદિક ભૂમિ છે. મંદિર થયા પહેલાં સ્વામીજી ઘણી વખતે સાંજે દૂરદૂરથી આવતા જુના હરિભક્તોને આ પ્રસાદીની ભૂમિનાં દર્શન કરાવવા લઇ આવતા અને કહેતા કે શાસ્ત્રીજીમહારાજ અને યોગીબાપાના સંકલ્પે અહીં ભવ્ય મંદિર થવાનું છે. 
+</p>
+<p>
+એક વખત આ રીતે સ્વામીજી સાથે પ્રબોધસ્વામી, મુંબઇના અ. નિ. પૂ. પોપટભાઇ તથા અ. નિ. પૂ. રાયશીઅદા હતા. મકરાની તલાવડીને અડીને રોડની ધારે તે વખતે એક ઊંચો ઇલેકટ્રીકનો થાંભલો હતો. ત્યાં જઇ સ્વામીજી અને બધા ઊભા રહ્યા. સ્વામીજી આ બંને મુક્તોને નિર્માણ થનારા મંદિરના આયોજન વિષે સમજાવી રહ્યા હતા. 
+</p>
+<p>
+સંધ્યાકાળનો સમય હતો. એટલામાં તો આકાશમાં પોતાની તરફ ત્રણ મોટા પ્રકાશના ગોળા આવતા સૌએ નિહાળ્યા. સ્વામીજીએ પ્રકાશના ગોળા તરફ દૃષ્ટિ કરીને પોપટભાઇ તથા રાયશીઅદાને કહ્યું કે ભાઇ! તમારા માન્યામાં નહિ આવે પણ દેવતાઓ તમારા જેવા ભક્તોનાં દર્શન કરવા માટે અહીં પધાર્યા છે. ભાઇ અને અદા તો આ સાંભળી કુતૂહલતાથી ત્રણેય પ્રકાશના ગોળા નિહાળવા લાગ્યા. થોડીવારમાં એ ત્રણેય ગોળા આવ્યા હતા તે માર્ગે અદૃશ્ય થઇ ગયા.
+<p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

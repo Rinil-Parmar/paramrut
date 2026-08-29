@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+રાજીપાની  ટૅકનિક
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુણાતીતાનંદસ્વામીના વખતમાં એક ભવાનબાપા હતા. તેઓ બહુ શોખીન હતા. મોટો ચોટલો રાખે, સોનાની કંઠી પહેરે, સોનાનાં કડાં પહેરે, કપડાં ખૂબ ઠાઠથી પહેરતા. એટલે કે એ 
+રજોગુણી હતા. રજોગુણ એટલે શું? ખાવાનું મન થાય, પીવાનું મન થાય, ભોગવવાનું મન થાય. ભવાનબાપા સેવા બહુ કરતા હતા; પણ રજોગુણ એવો ને એવો જ હતો.
+</p><p>
+જૂનાગઢના મંદિરમાં ભવાનબાપા જમવા બેઠા. તેમણે બાલમુકુંદસ્વામીને  કહ્યું, ‘ગુણાતીતાનંદસ્વામીનો પ્રસાદ મને મોકલાવજે. સ્વામીનો પ્રસાદ હું જમીશ.’ એટલે બાલમુકુંદસ્વામી પ્રસાદ લેવા ગયા. ગુણાતીતાનંદસ્વામી અંતર્યામીપણે કહે, ‘ક્યાં જાવ છો ?’ તો કહે, ‘પેલા ભવાનભાઈ ને ઠાકોરજીનો પ્રસાદ જોઈએ છે.’ ત્યારે ગુણાતીતાનંદસ્વામીએ કહેવડાવ્યું કે, ‘ભવાનબાપાને કહો, સ્વામી ઘેર આવશે ત્યારે પ્રસાદ બનાવીને જમાડશે. અહીં તો બધાની સાથે  જે હોય તે જમવાનું છે.’
+</p><p>
+ભવાનબાપાને રોટલા મળ્યા, ખીચડી મળી, પણ બંટાગોળી ન મળી એટલે ખૂબ ગુસ્સે થયા અને જતા રહ્યા. પછી અંતર્દષ્ટિ થઈ, પશ્ચાતાપ થયો, તેથી ગુણાતીત પાસે પાછા આવીને
+ખૂબ રડ્યા. ગુણાતીતાનંદસ્વામી કહે, ‘કેમ પાછા આવ્યા ?’ તો કહે, ‘સ્વામી ! તમને મૂકીને હું ક્યાં જઉં ? પાછું આવવું જ પડે ને ! આપના સિવાય મને કોણ સંઘરે ? પણ મારો રજોગુણ મને તમારાથી દૂર લઈ જાય છે, મને ખાવાની વૃત્તિ પજવી જાય છે. મને પ્રસાદ મળ્યો નહિ એટલે તોબરો ચડયો અને જતો રહ્યો, પણ પછી ગુસ્સો શમી ગયો એટલે પાછો આવ્યો.’ ગુણાતીતાનંદસ્વામી કહે, ‘સમાગમ કરો બસ.’
+</p><p>
+એક દિવસ ભવાનબાપા સંતો માટે પાણી ખેંચતા હતા ત્યારે જાગાસ્વામી ત્યાં ઊભા હતા. રડતા હૃદયે ભવાનબાપાએ કહ્યું, ‘મને પંચવિષય અને કામાદિક દોષ બહુ નડે છે. બહુ ખરાબ સંકલ્પ ઊઠે છે.’ જાગાસ્વામી કહે, ‘એક માર્ગ બતાવું.’
+	</p><p>
+ભગવદી એવા જાગાસ્વામીએ ભવાનબાપાને શિખવાડ્યું કે, ‘રાત્રે ચેષ્ટા પછી સાડાબાર વાગે ગુણાતીતાનંદસ્વામી લઘુ કરવા જાય છે. (તે દિવસે લાઇટો નહોતી.) ગુણાતીતાનંદસ્વામી રાત્રે લઘુ કરીને આવે, ત્યારે અંધારું હોય છે. તું એમને દંડવત કરજે અને તે વખતે ગુણાતીતાનંદ સ્વામી તને પૂછશે, ‘કોણ ?’ ત્યારે કહેજે,  ‘હું તમારો ભવાન’ શું બોલવાનું ? ‘હું તમારો ભવાન.’ ’ 
+</p><p>
+પેલો દોષ-સ્વભાવથી અતિશય પીડાતો હતો. ૧૧ વર્ષ સુધી સેવા કરી હતી પણ કોઈ ભગવદીનો યોગ થયો નહોતો તેથી મુઝવણ ટળી નહોતી. અને રાત્રે જ્યાં દંડવત કર્યા.
+</p><p>
+ગુણાતીતાનંદસ્વામી કહે, ‘કોણ ?’ ‘બાપા ! હું તમારો ભવાન.’ ‘તું મારો !’ ત્યારે કહે, ‘હા બાપા ! હું તમારો ભવાન.’ છાતી પર હાથ ફેરવીને આર્શીવાદ આપતાં બોલ્યા, ‘જા, હવે તને કામાદિક દોષ નડશે નહિ.’ કેવો સુખિયો કરી નાંખ્યો !
+</p><p>
+ભગવદી આપણને ટેકનિક શિખવાડે. ભગવદીની ગોદમાં પડ્યા રહીએ એટલે મોટાપુરુષની નજર આપણા તરફ અખંડ હોય. 
+</p><p>
+ભગવદીના પ્રસંગથી :
+- નિર્વાસનિક થવાય.  <br/>
+- ઇન્દ્રિયો-અંતઃકરણ સાથે લડવાનું બળ મળે. <br/>
+- મનબુદ્ધિ આપણને ક્યારેય પજવી ના શકે. <br/>
+- સરળતા આવે, વિવેક આવે. <br/>
+- મોટાપુરુષનો રાજીપો ૧૦૦ વર્ષે મળવાનો હોય એ ત્રણ વર્ષ મળે.
+</p>
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

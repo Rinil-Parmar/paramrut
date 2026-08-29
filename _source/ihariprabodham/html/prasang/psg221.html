@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીત ખમીરી
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ભગવાન સ્વામિનારાયણ અક્ષર ઓરડીમાં બિરાજમાન હતા. સ્વધામ પધારવાનાં ત્રણ-ચાર દિવસ બાકી હતા ત્યારે ગુણાતીતાનંદસ્વામીને જૂનાગઢથી તેડાવ્યા. એક હરિભક્ત અક્ષર ઓરડીમાં મહારાજના દર્શને પધાર્યા. મહારાજે ગુણાતીતાનંદસ્વામીને કહ્યું, ‘આ હરિભક્તના માથા પર બે હાથ મૂકીને આશીર્વાદ આપો.’ ગુણાતીતાનંદસ્વામી બે હાથ જોડી અનિમેષ નયને મહારાજ સન્મુખ ઊભા રહ્યા. છેવટે પ્રભુને એટલે જ વિનંતી કરી, ‘ક્યાં તમે ને ક્યાં હું !’ મહારાજે ફરી ગુણાતીતને કહ્યું, ‘ગુણાતીત, હાથ મૂકો.’ ના મૂક્યા. હાથ જોડીને નિતરતા વિનમ્રભાવે એટલું જ બોલ્યા, ‘મહારાજ ! સર્વના સ્વામી તો આપ છો. તમારે લઈને તો હું શ્વાસ લઈ રહ્યો છું. મને એવો કયો અધિકાર છે કે હું હાથ મૂકું ?’
+</p><p>
+ગુણાતીતનો સેવકભાવ જોઈ મહારાજ ઊભા થઈ ને ભેટી પડ્યા. પછી મહારાજ કહે, ‘ગુણાતીત, ચાલો આપણે બન્ને હાથ મૂકીએ !’ પછી મહારાજ ગુણાતીતાનંદસ્વામીનો હાથ  નીચે રાખતા હતા. ગુણાતીતાનંદસ્વામી કહે, ‘મહારાજ ! તમારો હાથ નીચે મૂકો, હું તમારી ઉપર મૂકું !’
+</p><p>
+અનંત બ્રહ્માંડમાં - <br/>
+- એવી કઈ ધાતુ નથી, <br/>
+- એવી કોઈ જગ્યા નથી, <br/>
+- એવું કોઈ શરીર નથી, <br/>
+- એવા કોઈ ગુરુ નથી, <br/>
+કે જેમાં રહીને પુરુષોત્તમ નારાયણનું ખમીર પ્રગટી શકે ! એક અને અદ્વિતીય અક્ષરબ્રહ્મ !! મહારાજના ખમીર ને સંપૂર્ણ ધારણ કરનાર એ અક્ષરબ્રહ્મ, મહારાજ ને હાથ જોડીને કહે છે, ‘તારે લઈને હું.’
+</p><p>
+- મારા સારાય તંત્રમાં જોનાર તું, ખાનાર તું, પીનાર તું. <br/>
+- મારા બધા જ પંચમહાભૂતના અણુઓમાં બ્રહ્મપ્રવાહની શક્તિનો સંચાર કરનાર તું, હલનચલન કરનાર તું.
+</p><p>
+ગુણાતીતના આ દાસત્વ ને સમજવા માટે નિરંતર જાગ્રત રહી સ્વાધ્યાય-ભજન કરીએ.  ગુણાતીતપુરુષોના આવા એકાદ પ્રસંગનો સ્વાધ્યાય કરીને  ભજન કરીએ તો મહારાજ આપણને એવા દાસત્વમાં લઈ જાય.
+</p><p>
+ગુણાતીતના દાસત્વનો આનંદ આપણે સ્વાધ્યાય-ભજનથી લૂંટવો છે.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      એક એક જીવનાં રોગ જોઈને વાતો કરી છે.
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_544">
+      તા. ૦૦-૦૦-૨૦૦૩, વાસણા ફાર્મ<br/>
+      <p>વર્ષ ૨૦૦૩. પ્રગટ ગુરુહરિ પ્રબોધસ્વામીજી યોગીફાર્મ, વાસણા- કોતરીયા સેવાભક્તિ અદા કરતાં હતાં.</p><p>દરરોજ બપોરે ભોજન લીધા બાદ સહુ સંતો હરિસુમિરન હોલની બહાર કુટિરમાં પ્રબોધસ્વામીજીનાં સાંનિધ્યમાં મૂળ અક્ષરમૂર્તિ સદ્. ગુણાતીતાનંદસ્વામીની વાતોનું વાંચન કરતાં.</p><p>ઘણીવખત સ્વામીની વાતોનું વાંચન કરતાં કરતાં પ્રબોધસ્વામીજી વાતોમાં વર્ણવેલાં રહસ્યોને પણ ક્યારેય સમજાવતાં.</p><p>એક દિવસ બપોરે સ્વામીની વાતોનું વાંચન કર્યા બાદ પ્રબોધસ્વામીજી કહે, “ગુણાતીતાનંદસ્વામી તો બ્રહ્માંડ ભરાય એટલી વાતો બોલ્યા છે. ગુણાતીતાનંદસ્વામીએ એક એક જીવનાં રોગ જોઈને વાતો કરી છે.”</p><p>પછી કહે, “સ્વામીજીએ આપણને સ્વામીની વાતો મોંઢે કરવાની કહી છે તે કાંઈ એમ જ આજ્ઞા નથી કરી! ગુણાતીતાનંદસ્વામીની એક એક વાત એવી છે કે દુનિયાનાં ગંભીરમાં ગંભીર પ્રશ્રું સમાધાન કોઈપણ ૨૫ સ્વામીની વાતો વાંચીએ તો એમાંથી મળી જાય. એટલી બધી એ અદ્ભુત વાતો છે.”</p><p>હે ગુરુહરિ પ્રબોધસ્વામીજી! અમને મોટીવેશનલ બુક્સ અને આર્ટિકલ્સ વાંચવાનું મન થાય છે, સારાં સારાં મોટીવેશનલ સ્પીકરની સ્પીચ સાંભળવાનું ગમે છે. ....પરંતુ અમારાં આત્માનું સાચું ટ્રાન્સફોર્મેશન તો ભગવાન સ્વામિનારાયણની પરાવાણી-વચનામૃત અને એથીય સરળ ભાષામાં વર્ણવેલી ગુણાતીતાનંદસ્વામીની વાતો, ગુરુહરિ સ્વામીશ્રીની પરાવાણીથી થવાનું છે.</p><p>અમારું સાચું ટ્રાન્સફોર્મેશન તો ગુરુહરિ સ્વામીશ્રી અને આપનાં જીવનમાં ડૂબવાથી થવાનું છે તો અમને એવો બુદ્ધિયોગ આપજો કે અમે ખટકો રાખીને દરરોજ યથાર્થ સ્વાધ્યાય-ભજન કરીએ અને આપની સાથેનો સંબંધ નિરંતર વધારતા રહીએ.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: સ્વામીની વાતો<br/>
+      ટેગ: રોગ, પ્રશ્નો, સમાધાન, વાતો<br/>
+      નંબર: ૪૫૧
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

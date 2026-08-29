@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+એક જ સંકલ્પ છે – સુહૃદભાવેયુક્ત સમાજનું સર્જન
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+
+ઇ. સ. ૧૯૮૫ના અમેરિકાના પહેલા જ વિચરણ દરમ્યાન સ્વામીજી પ્લેનમાં શાર્લોટથી એટલાન્ટા જઇ રહ્યા હતા. સાથે અક્ષરપુરુષસ્વામી, સુહૃદસ્વામી, ફકીરભાઇ અને દવેસાહેબ હતા. એ યાત્રા દરમ્યાન ખૂબ સૂઝવાળા દવેસાહેબે સ્વામીજીને પૂછ્યું કે દરેક યુગપુરુષ એમનું આગવું મિશન લઇને જ ધરતી પર આવતા હોય છે, તો આપ એવું કયું મિશન લઇને ધરતી પર આવ્યા છો ? આ સાંભળી સ્વામીજી એકદમ સહજાવસ્થામાં બોલી ઊઠ્યા, ‘સુહૃદભાવનો સમાજ સ્થાપવા.’
+</p>
+<p>
+
+પછી કોણ જાણે શું થયું તે સ્વામીશ્રીની આંખમાંથી એકદમ ટપટપ આંસુ ટપકી રહ્યાં. સુહૃદસ્વામીએ સહજ જ ગાતડીયું ધર્યું એટલે ગાતડીયાથી સ્વામીજીએ આંસુ લૂછી તો લીધાં પણ આંસુ બંધ ન થાય. થોડીવાર પછી સ્વસ્થ થઇને સ્વામીજીએ ફકીરભાઇ અને દવેસાહેબને ઉ‌દે‌‌‌શીને કહ્યું કે ‘તમને બંનેને એ યોજનામાં ભેળવવા છે એટલે દાખડો કરું છું. આખા સમાજને એ આકારે કરવો છે માટે ભીડો વેઠું છું.’ એમ કહી ધબ્બો મારી આશીર્વાદ આપ્યા. 
+</p>
+<p>
+
+હે સ્વામીજી ! અમે સૌ પણ આપની ‘સુહૃદભાવના પ્રવર્તન’ની યોજનામાં ખરેખરા દિલથી અને ઉમંગથી ભળી જઇએ એ જ અમારી અંતરની પ્રાર્થના અને સુરુચિ બની રહો...!
+<p>
+
+    <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

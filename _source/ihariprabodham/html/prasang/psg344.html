@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+બ્રહ્મભાવે ભજનથી પ્રત્યેક ક્રિયાને યોગ બનાવીએ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઈ.સ. ૨૦૦૪ માં ગુરુહરિ સ્વામીશ્રી યુ.કે.ની ધર્મયાત્રાએ પધાર્યા હતા. એકદિવસ ગુરુહરિ સ્વામીશ્રી લંડનમાં પ.ભ. સુદાનભાઈના ઘરે બિરાજમાન હતા.
+</p>
+<p>
+સ્વામીશ્રી સવારે યોગા-પ્રાણાયામ કરી રહ્યા હતા. સ્વામીશ્રીએ સેવકને કહ્યું, ‘સુદાનભાઈને બોલાવી લાવો.’
+</p>
+<p>
+સેવકે કહ્યું, ‘તેઓ નાસ્તો કરવા બેઠા છે.’ 
+</p>
+<p>
+સ્વામીશ્રીએ સેવકને કહ્યું, ‘નાસ્તો મૂકીને આવી જાય.’ 
+</p>
+<p>
+તેઓને રૂમમાં સામે બેસાડી પોતાની હાજરીમાં પૂ. બ્રહ્મવિહારીસ્વામી પાસેથી પ્રાણાયામ શીખવાડ્યા. સાથે પ.ભ. જે. જે. , પ.ભ. ભીમજીભાઈને પણ રૂમમાં બોલાવ્યા. રૂમમાં જાણે યોગાના ક્લાસ ચાલતા હોય તેવું જ દ્રશ્ય ખડું થઈ ગયું.
+</p>
+<p>
+સ્વામીશ્રી પ્રાણાયામ કરતા હતા ત્યારે શ્વાસોશ્વાસનો અવાજ સ્પષ્ટ સંભળાતો હતો. પરંતુ સુદાનભાઈ અને અન્ય મુક્તો પ્રાણાયામ કરતા હતા તેમનો અવાજ નહોતો સંભળાતો. તેથી તેમણે સ્વામીશ્રીને કહ્યું, ‘સ્વામિજી ! આપના શ્વાસનો અવાજ તો એકદમ સ્પષ્ટ ધમણ જેવો સંભળાય છે.’
+</p>
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘કદાચ તમારા શ્ર્વાસોચ્છવાસનો અવાજ ધમણ જેવો સંભળાતો હશે. અમારા શ્વાસમાં તો કેવળ ‘હું સ્વામી, તું નારાયણ..’ નો જ અવાજ હોય. તમારા જેવું ઉધાર નહિ.’
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપ કહો છો કે આપણે આપણી દરેક ક્રિયાને યોગ બનાવવાની છે. અમે સહુ ‘હું સ્વામિ, તું નારાયણ’ના ભાવથી ભજન કરતાં કરતાં પ્રત્યેક ક્રિયાયોગો કરી શકીએ એવી જાગ્રતતા પ્રગટાવશોજી.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+ભગવાનતો ભક્તની નિરંતર રક્ષામાં જ છે..
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+સોખડાના મુક્તરાજ ચંદુભાઇ દાજી પૂર્વાશ્રમથી સ્વામીજીના પરમ સખા અને સેવક હતા અને સ્વામીજી સાથે યોગીબાપાએ જ દૃઢ પ્રીતિના તાંતણે જોડ્યા હતા. ૧૯૮૯માં સ્વામીજી અમેરિકા પધાર્યા તે પહેલાં ચંદુભાઇ દાજી ન્યુયોર્ક એમના દીકરા ઘનશ્યામને ત્યાં રહેતા હતા. એક દિવસ અચાનક એમને જોરદાર હાર્ટએટેક આવ્યો. ઘનશ્યામે હાંફળા-ફાંફળા થઇ જઇને તરત જ ત્યાંની બુશ મેમોરીયલ હૉસ્પિટલમાં દાખલ કર્યા. પરિસ્થિતિ ઘણી ગંભીર અને નાજુક હતી એટલે ત્રણ-ચાર ડૉકટરોએ ઇન્ટેન્સીવ કેરમાં અંતિમકક્ષાની સારવાર શરૂ કરી દીધી. બ્લડપ્રેશર અને ડાયાબિટીસ-બંનેનું પ્રમાણ ભયજનક સપાટી કરતાં ઘણું જ ઊંચુ હતું તેથી દાજીના બચાવની કોઇ આશા ન હતી.
+
+</p>
+<p>
+
+ દાજી મૂર્છિત અવસ્થામાં હતા છતાં અંતરમાં સ્વામીજીની સ્મૃતિ સતત ચાલુ જ હતી. બ્લડ ટ્રાન્સફ્યૂઝનની ખૂબજ કોમ્પ્લીકેટેડ સારવાર ચાલતી હતી; તેવામાં તો ભારતમાં હજારો માઇલ દૂર રહેલા સ્વામીજીએ દાજીને દિવ્યસ્વરૂપે અદ્‌ભુત દર્શન આપ્યાં. આવીને પલંગ પર બેસી ગયા. દાજીની છાતી પર હાથ ફેરવવા લાગ્યા. સાથે કોઠારીસ્વામી, દાસસ્વામી વિ. સંતો પણ ઉપસ્થિત હતા. દાજી એકદમ ભાનમાં આવી ગયા અને પોતાની સમક્ષ સ્વામીજીને જોઇને ગદ્‌ગદ્‌ થઇ ગયા. 
+
+</p>
+
+
+<p>
+    આ બન્યું તે પહેલાં થોડા દિવસ અગાઉ સ્વામીજીને પણ હાર્ટના બ્લડ સરક્યુલેશનના બ્લોકેજ માટે મુંબઇ ખાતે હિંદુજા હૉસ્પિટલમાં એન્જીઓગ્રાફીની ટ્રીટમેન્ટ કરાવી હતી. પરંતુ એમાં મહારાજની દયાથી કોઇ સિરિયસ પ્રોબ્લેમ નીકળ્યો ન હતો. એટલે આના અનુસંધાનમાં સ્વામીજીએ દિવ્યસ્વરૂપે દાજી પાસે બિરાજી હાથ ફેરવતાં કહ્યું “દાજી! મને હાર્ટમાં કાંઇ નીકળ્યું નથી, બધું નોર્મલ જ છે. તેમ તમને પણ કંઇ થશે નહિ. માટે કોઇ ચિંતા કરશો નહિ.’’ એમ સતત પોણો કલાક અદ્‌ભુત અનુભૂતિમાં ગરકાવ કરી નિશ્ચિંત કરી દીધા. ત્રીજે દિવસે સ્વામીજીનો વડોદરાથી ફોન આવ્યો ત્યારે ફોનમાં પણ દાજીને સ્વામીજીએ ઉપરોક્ત જ શબ્દો કહ્યા. દાજી તો જીવનમાં થયેલી આ સર્વોત્કૃષ્ટ પ્રતીતિથી ખૂબ ધન્ય થઇ ગયા.
+</p>
+
+    
+
+
+    
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

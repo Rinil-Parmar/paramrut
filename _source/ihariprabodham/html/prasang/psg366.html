@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+દાસના દાસ થઈને
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+તા. ૧૨ ફેબ્રુઆરી ૨૦૨૧ ના રોજ સાંજે ૫:૦૦ વાગ્યા પછી અનિર્દેશની અગાસીમાં ગુરુહરિ સ્વામીશ્રી પ્રદક્ષિણા કરી રહ્યા હતા. થોડીવાર બાદ સ્વામીશ્રી મંદિરની દિશામાં ઊભા રહ્યા. નીચે સંતો સ્વામીશ્રીના દર્શન કરી રહ્યા હતા. સંતોએ દંડવત્‌ પ્રણામ કર્યા.  સ્વામીશ્રીએ નમન કર્યા. 
+</p>
+<p>
+પછી સ્વામીશ્રી સંતોને ઉદ્દેશીને બે વાર ભગવાન સ્વામિનારાયણનું  સૂત્ર બોલ્યા :
+</p>
+<p>
+દાસના દાસ થઈને વળી રહે જે સત્સંગમાં, <br/>
+ભક્તિ તેની ભલી મનીશ, રાચીશ તેના રંગમાં. 
+</p>
+<p>
+હે સ્વામીશ્રી ! અમે દાસના દાસ થવા માટે નિયમિત ને ખટકાથી  સ્વાધ્યાય – ભજન કરીયે એજ પ્રાર્થના. 
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

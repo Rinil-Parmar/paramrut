@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+સંત એ માં સમાન છે 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+તા. ૨૩/૧/૨૦૧૫ ના રોજ પ.પૂ. સ્વામીશ્રી સાથે છાણી ગામના ત્રણ યુવકોએ થાળ લીધો. થાળ લીધા પછી પ.પૂ. સ્વામીશ્રી એ જ આસને બેસી રહ્યા. પવિત્રભાઈ એક યુવકને લઈને પ.પૂ. સ્વામીશ્રી પાસે આશીર્વાદ લેવા આવ્યા. એ યુવકના મમ્મી ૨ દિવસ પહેલા મૃત્યુ પામ્યા હતા. 
+ </p>
+<p>
+પવિત્રભાઈએ કહ્યું કે ઘરના બધા આપને પ્રાર્થના કરે છે કે આપ એમના સારા માટે જ કર્યું છે પણ અચાનક નાની ઉમરમાં (૪૩ વર્ષની) દુર થઇ જવાથી ખુબ દુ:ખ થાય છે તો બળ આપશોજી. આ પ્રાર્થના ચાલુ જ હતી ને યુવકના આંખમાંથી અશ્રુ વહેવા લાગ્યા. યુવકનું માથું પ.પૂ. સ્વામીશ્રીના ખોળામાં હતું. પ.પૂ. સ્વામીશ્રી એના બરડે હાથ ફેરવતા રહ્યા. 
+</p>
+
+<p>
+પ.પૂ. સ્વામીશ્રીએ હાથ ફેરવતા ફેરવતા કહ્યું, ‘દુ:ખ તો અમને પણ થાય. પણ એ આત્મા ભગવાનના ખોળામાં છે. જો બીજે ગયો હોત તો દુ:ખ થાત પરંતુ મહારાજની પાસે છે એટલે દુ:ખ નહિ લગાડવાનું.’
+</p>
+
+<p>
+પછી પ.પૂ. સ્વામીશ્રી એ ઘરમાં કોણ કોણ છે એ પૂછ્યું ને ઘરે આવાનો કોલ આપ્યો ને કહ્યુ કે આજથી હું તારો મિત્ર. ઘરે આવી ગોષ્ઠી કરીશ.
+</p>
+
+
+<p>
+યુવકની આંખમાં આંસુ હતા જ.  ત્યારે સ્વામીશ્રી એ કહ્યું,‘ભગવાન સ્વામીનારાયણ આપણા દુશ્મન નથી  ને ક્યારેય આપણું અહિત ના કરે એ વાત પાકી કરતા જવાની.’
+</p>
+
+<p>
+પછી યુવકની પ્રાર્થના સાંભળી ને ધબ્બા માર્યા. અને છેલ્લે આશીર્વાદ આપતા કહ્યું  કે, ‘બહુ સુખિયો થઇ જઈશ.’
+</p>
+
+<p>
+એના મિત્ર પણ આવ્યા હતા એ પણ પ.પૂ. સ્વામીશ્રીને રડતા રડતા પ્રાર્થના કરી કે મારા મમ્મી પણ ૧૨ વરસ પહેલા મૃત્યુ પામ્યા છે તો આશીર્વાદ આપો. ત્યારે પ.પૂ. સ્વામીશ્રીએ આશીર્વાદ આપતા કહ્યું, ‘સંત એ માં સમાન છે. સંતને માં માની એની સાથે દોસ્તી કરવાની.’ 
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

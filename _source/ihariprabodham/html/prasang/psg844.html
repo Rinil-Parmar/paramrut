@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્વામીજીના મહિમાના વિચારમાં ડૂબી જશો…
+    </div>
+    <div class="vaat_ind" id="vaat_file_844">
+      
+      <p>જુલાઈ-૨૦૨૪માં ગુરુહરિ પ્રબોધસ્વામીજી કેનેડા પધાર્યા હતા. એક યુવકનાં ઘરે ગુરુહરિ પધરામણીમાં પધાર્યા. સંતોએ યુવકે લખેલો પ્રાર્થનાપત્ર આપ્યો. યુવકે પત્રમાં લખ્યું હતું:</p><p>“આપના દર્શનની તક આજે ચૂકી ગયો છું, પણ મારા જય સ્વામિનારાયણ સ્વીકારજો. લૌકિક અને આધ્યાત્મિક જીવનયાત્રામાં ખૂબ “ચેલેન્જીસ” આવે છે. મારાથી પ્રથમ ૧૮ પળાતું નથી. નાપાસ થઈ જવાય ત્યારે ખ્યાલ તો આવે છે પણ જાગ્રત રહેવાતું નથી. આપે મને કહેલું કે ભજન કરજો પણ એ આજ્ઞા પણ પળાતી નથી. લૌકિક જીવનમાં પ્રોગ્રેસ થતી નથી તો આપ કૃપા કરો કે એમાં સફળ થવાય. મને સાત્ત્વિક બુદ્ધિ ખૂબ નડે છે.</p><p>હે પ્રબોધસ્વામીજી ! આધ્યાત્મિકતા સાથે લૌકિક જીવનમાં આગળ વધવા શું કરું ? આપ એક કે બે એવી આજ્ઞા આપો કે જે હું પાળું ને જેનાથી આપના તરફની મારી યાત્રા આગળ વધે. આપની મારા માટેની આજ્ઞા....”</p><p>એમ કરીને એ પેજમાં જગ્યા ખાલી રાખી હતી.</p><p>ગુરુહરિ જાણે પ્રત્યક્ષ જ એ યુવક સાથે બેઠા હોય ને સરળતાથી એ યુવકની આજ્ઞા પાળતા હોય તેમ નીચે રહેલી ખાલી જગ્યામાં લખ્યું:</p><p>“(૧) આપણે સ્વામીજીને ગમે છે એવા સ્વધર્મેયુક્ત જીવન જીવવું છે. ફીજીકલી નાપાસ ન થવાય એવી જાગ્રતતા રાખશોજી.</p><p>(૨) સ્વામીજીના મહિમાના વિચારમાં ડૂબી જશો જેથી સ્વધર્મયુક્ત જીવન જીવવાનું બળ મળશે.</p><p>(૩) પૂ. સુહૃદસ્વામી અહીં (કેનેડામાં) આવે છે, એમની સાથે ખુલ્લા દિલનો સંબંધ કરવો જ છે. તો જાગ્રતતા રાખશો.”</p><p>ગુણાતીતાનંદસ્વામીએ કહ્યું છે, “માયા તો અક્ષરધામમાં સોપારી જેટલા પ્રદેશમાં લીન થઈ જાય છે તો એ માયા અમારા ભક્તોને કેવી રીતે પજવી શકે ?” એનો એ જ સુગમમાર્ગ ગુરુહરિએ બતાવ્યો કે સ્વામીજીના મહિમાના વિચારમાં રહીએ તો સ્વધર્મેયુક્ત જીવવાનું બળ મળે !</p><p>(પત્રિકા અંક: ૨૦૨૫-૦૫-૦૧)</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આધ્યાત્મિક સૂઝ<br/>
+      ટેગ: <br/>
+      નંબર: ૧૯૪
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

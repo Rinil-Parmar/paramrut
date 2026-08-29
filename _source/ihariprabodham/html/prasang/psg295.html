@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+મારી જાતને સનાથ માનું છું
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+તા.૧૭/૧૨/૨૦૦૫ ના રોજ ગુરુહરિ સ્વામીશ્રી મુંબઈ જુહુ મંદિરે - પટેલ સાહેબના ઘરે બિરાજમાન હતા. વીઝા માટેની તેમની રીપોર્ટસ્ ફાઈલ કોન્સ્યુલેટમાં આપવાની હતી તેથી રિપોર્ટસ્ કરાવવાના હતા.
+</p><p>
+સ્વામીશ્રીને ભીડો ન પડે, હોસ્પિટલમાં રીપોર્ટ કઢાવવા ન જવું પડે તેથી સેવકોએ સ્વામીશ્રીના ઉતારે જ ડૉક્ટરને બોલાવી લેવાની ગોઠવણ કરી હતી.
+</p><p>
+ડૉક્ટર સ્વામીશ્રીના ખૂબ પરિચયમાં હતા, સત્સંગી હતા તેથી મશીનો લઈને સ્વામીશ્રીનો કાર્ડયોગ્રામ કઢાવવા પટેલ સાહેબની ઘરે આવી ગયાં.
+</p><p>
+સ્વામીશ્રી રૂમમાં બિરાજમાન હતા. સેવકે કહ્યું, ‘સ્વામીશ્રી ! ડૉકટર આવી ગયા છે.’  <br/>
+સ્વામીશ્રી કહે, ‘કેમ ? ’ સેવક કહે, ‘બધા રીપોર્ટ કોન્સ્યુલેટમાં આપવાના છે તેથી.’ <br/>
+</p><p>
+સ્વામીશ્રી બહાર હૉલમાં પધાર્યા. ડૉકટરે જ્ય સ્વામિનારાયણ કહ્યા. <br/>
+સ્વામીશ્રી કહે, ‘કેમ આવવાનું થયું ? ’ <br/>
+ડૉકટરે આનંદ કરતા કહ્યું, ‘તમારું દિલ કેવું છે એ જોવા આવ્યા છીએ. ’
+</p><p>
+સ્વામીશ્રીએ એમની અસલી અદામાં કહ્યું, ‘આ બ્રહ્માંડમાં મારા દિલને કોઈ સમજે એવું છે જ નહીં. સમજવા માટે અસમર્થ છે.’ એમ કહી સ્વામીશ્રી અંદર રૂમમાં પધાર્યા. સ્વામીશ્રીનો કાર્ડિયોગ્રામ કઢાવ્યો. રીપોર્ટ નોર્મલ હતો. 
+</p><p>
+એટલે ડૉકટર બોલ્યા, ‘સ્વામીશ્રી ! રીપોર્ટ મોસ્ટ નોર્મલ છે.’
+</p><p>
+સ્વામીશ્રીએ કહ્યું, ‘હું તો બાપાને માથે પડીને જીવું છું એટલે સારા આવે.’ પછી તરત જ બીજું વાક્ય બોલ્યા, ‘જગતના લોકો પોતાની જાતને અનાથ માને છે પણ હું મારી જાતને સનાથ માનું છું. ’
+</p><p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપ તો અક્ષરધામના પુરુષ છો. આપનું પ્રત્યેક દર્શન આત્મના ઉત્થાન માટે હોય છે. અમે સહુ ભૂલકાંઓ અમારા સમગ્ર તંત્રનો ભાર આપને માથે નાંખીને સ્વરૂપનિષ્ઠા અને મહિમાથી જીવતા થઈએ એવી કૃપા વરસાવજો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આપણને કશું થવાનું નથી
+
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ભગવાન પોતાના ભક્તની રક્ષા કરવામાં જ બેઠા છે. તે કેની પેઠે, તો જેમ પાંપણ આંખની રક્ષા કરે છે ને હાથ કંઠની રક્ષા કરે છે ને માવતર છોકરાંની રક્ષા કરે છે ને રાજા પ્રજાની રક્ષામાં છે, તેમ જ ભગવાન આપણી રક્ષામાં છે. (પ્રકરણ ૧, વાત ૨૨) 
+<p><p>
+પ.ભ. ઉત્કર્ષભાઈ પટેલ, ઈસ્ટ લંડન, યુ.કે. અંબરીશ ભક્ત, એની તબિયત બહુ સારી રહેતી નહોતી. (લગભગ જૂન ૨૦૨૪માં) એક દિવસે ઝાડા ઉલ્ટી થઈ ગયા હતા. રાત્રે પોણા બે વાગ્યે ટોયલેટમાં એ ઉલ્ટી કરવા ગયા હતા અને તાજી હવા લેવા માટે બારી પાસે ગયા, બારી એકદમ નીચી અને પહોળી અને કમર સુધી આવે એવી હતી. તે વખતે ત્યાં આગળ તેઓને ઊબકો આવ્યો અને પોતાનું બેલેન્સ ગુમાવી બેસે છે અને ત્રણ માળ ઉપરથી નીચે જમીન પર પછડાય છે. નીચે કોંક્રિટનો ફ્લોર હતો. ત્રણ માળથી પડ્યા એટેલે નીચે લોહીનું ખાબોચિયું ભરાઇ ગયું હતું.
+ <p><p>
+વિશાલભાઈ ચોકસીએ ચિરાગભાઇ મેહતાને વિડીયો ફોન કર્યો. એમણે જોયું તો ખબર પડી કે ખૂબ વાગ્યું છે. ઉત્કર્ષભાઈ તો બેભાન અવસ્થામાં હતા અને કણસતા હતા. ઉત્કર્ષભાઈને રાત્રે જ હોસ્પિટલ લઈ ગયા. 
+<p><p>
+બીજે દિવસે ડોક્ટર આવીને મળ્યા અને ડોક્ટરે કહ્યું કે, એને બ્રેઇનમાં ખૂબ વાગ્યું છે, સ્કલ તૂટી ગયુ છે, સોલ્ડરના અને પેલવીસના હાડકાઓ ભાંગી ગયા છે, સ્પાઇન ફાટી ગઈ છે, લીવર પણ ફાટી ગયું છે. લંગ્સ આખા કોલેપ્સ થઈ ગયા છે. એવી રીતે છ અલગ અલગ મોટા ઓર્ગનને ઇન્જરી થઈ છે. જેને કરીને એની રિકવરીની કોઈ શક્યતા દેખાતી નથી. કાં તો મૃત્યુ થઈ શકે છે અથવા બચી જાય તો કેર હોમમાં રહીને જીવન વ્યથિત કરવું પડે અથવા તો કાયમ માટે કોમામાં જઈ શકે છે. કદાચ એવું પણ થાય કે જો રિકવર થાય તો લાઈફ ટાઈમ પેશાબ અને ટોઇલેટની બેગ પોતાની સાથે રાખવી પડે. કદાચ ચાલી ન શકે, કદાચ બોલી ન શકે. 
+<p><p>
+પરિસ્થિતિ એવી હતી કે સાત ડોકટરોની પેનલે ભેગા મળીને આગલા દિવસે સાત કલાક સર્જરી કરી હતી. પછી હોસ્પિટલના બેડ પર જ ડોકટરોએ સાડા ત્રણ કલાક બીજી સર્જરી કરવી પડી અને ઓપરેશન થિયેટર સુધી પણ લઈ જઈ શકે એવી પરિસ્થિતિ નહોતી. 
+<p><p>
+ગુરુહરિના ફોન પર દર્શન થયા. એક જ દિવસમાં ત્રણવાર ગુરુહરિએ દર્શન આપ્યા અને દરેક વખતે ગુરુહરિ એવું કહ્યું કે, ‘આપણે ચિંતા કરવાની જરૂર નથી. આપણને કશું થવાનું નથી. આપણે બધા ભજન કરો. એમના પરિવારને કહો ભજન કરે. મંડળને કહો ભજન કરે.’ 
+<p><p>
+બધા દીકરાઓ અને આખું ઈસ્ટ લંડન મંડળ ભેગા મળીને સામુહિક રીતે રોજ એક કલાક ધુન કરે. ગુરુહરિ દરરોજ ફોન પર દર્શન આપીને રિપોર્ટ લેતા હતા. ચાર દિવસ સુધી ગુરુહરિએ રિપોર્ટિંગ લીધું. ચિરાગભાઈ મેહતા હ્યુસ્ટન, યુ.એસ.એ. ગયા હતા ત્યાં આગળ પણ ગુરુહરિ એ ઉત્કર્ષભાઈની તબિયતના સમાચાર પૂછ્યા. અને ત્યારે પણ કહ્યું કે, ‘આપણને કશું થવાનું નથી અને બધું સરસ થઈ જવાનું છે.’
+<p><p>
+થોડા દીવસ પછી બ્રહ્મવિહારી સ્વામી એ દીકરાને મળવા હોસ્પિટલ  જાય છે. 
+<p><p>
+ગુરુહરિના આશીર્વાદથી એ દીકરો મંત્ર લેખન કરી શકે છે, વાત કરી શકે છે, બોલી શકે છે, ચાલવા માટે ફિઝિયો ટ્રીટમેન્ટ ચાલી રહી છે એટલે ઉભા પણ થઈ શકે છે.  (ઓગસ્ટ, ૨૦૨૪માં)
+<p><p>
+ડોક્ટરે તો રિકવરી જોઈને કહ્યું કે, આ તો મિરેકલ જ કહેવાય. (ઓગસ્ટ  માહિનામાં) અત્યારે જે પણ હરિભક્તો મળવા જાય ત્યારે ઉત્કર્ષભાઈ એવું કહે, તમે ભક્તિ ઉત્સવ માટે રજીસ્ટર થયા હોવ તો જ મને મળવા આવજો બાકી મને મળવા નહિ આવતા. એવી ખુમારીથી એ બધાને ઉત્સવમાં રજીસ્ટર થાય એના માટેની એ વાત મૂકતો હતો. (ઓગસ્ટ ૧૭,૧૮,૧૯, ૨૦૨૪ ભક્તિ ઉત્સવ ઉજવાયો હતો.) 
+<p><p>
+એ દીકરો એવું કહે છે કે, પ્રબોધ સ્વામીજી એ જ મને બીજો જન્મ આપ્યો છે. મારૂ આખું જીવન પ્રબોધ સ્વામીજીની સેવામાં સમર્પિત છે. નિરંતર આખા દિવસ દરમિયાન ત્રણ વાર પ્રબોધ સ્વામીજીએ દર્શન આપીને તબિયત પૂછી. યુવકો અને અંબરિષો માટે કેટલી પ્રીતિ ગુરુહરિને છે એનું દર્શન થયું.
+ <p><p>
+ઉત્કર્ષભાઈ ત્રીજે માળથી પડ્યા હોવાથી એ ઘરમાં જે બીજા યુવકો રહેતા હતા એ બધા દીકરાઓને પોલીશ સ્ટેશનમાં ઇન્વેસ્ટિગેશનમાં લઈ ગયા. પોલીસ સ્ટેશનમાં વારાફરથી પૂછપરછ કરી એમાંથી એક દીકરો ખૂબ ગભરાતો હતો. એટલે એને સામેથી કહ્યું નહીં કે હું ઘરમાં રહું છું. 
+<p><p>
+ગુરુહરિને વાત જણાવી કે, જો પોલીસને ખબર પડે કે એ યુવક આજ ઘરમાં રહે છે તો પ્રોબ્લેમ થાય એવું છે. આ પરિસ્થિતી કેવી રીતે હેન્ડલ કરવી એ ગુરુહરિને પૂછ્યું ત્યારે ગુરુહરિએ કહ્યું કે, ‘બે દિવસ પછી સામેથી જઈને મળી આવાવનું એટલે કોઈ તકલીફ ન થાય. ભવિષ્યમાં એના પરિવારને પણ કઈ તકલીફ ના થાય અને પોલીસને પણ એવું થાય કે સામેથી આવીને વાત કરી.’ 
+<p><p>
+ગુરુહરિએ એ દીકરાને એટલું બધુ બળ આપ્યું અને દીકરાને પણ દર્શન આપ્યા, જેથી કરીને દીકરાને બળ મળ્યું. પોલીસે બધાને થોડું બોલ્યા અને ક્લીન ચિટ આપી અને બધાને કેસમાથી છૂટા કર્યા. 
+<p><p>
+જ્યાં મેડિકલ સાયન્સ પૂરું થાય છે, ત્યાંથી ભગવાનની શક્તિની શરૂઆત થાય છે. 
+<p><p>
+આખા પ્રસંગ દરમ્યાન ગુરુહરિ પ્રબોધ સ્વામીજીએ પોતે દર્શન આપ્યા, પોતે જ બળ આપ્યું અને ભગવાનના ભજનનો અને ભગવાનનું બળ કેવી રીતે લેવું એ પણ પોતે શીખવ્યું. 
+<p><p>
+વિષય: રક્ષા
+<p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

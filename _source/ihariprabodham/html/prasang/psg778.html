@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સાધક પોતાનું બળ છોડી દે તો...
+    </div>
+    <div class="vaat_ind" id="vaat_file_778">
+      
+      <p>સાલ ૨૦૨૨માં અમેરિકાથી ભક્તરાજ રજનીભાઈ બાકરોલ મંદિરે દર્શનાર્થે આવેલા. તેઓ ૧૯૮૫થી ગુરુહરિ સ્વામીશ્રી અને પ્રગટ ગુરુહરિ પ્રબોધસ્વામીજી સાથે પ્રીતિથી જોડાયેલા અંબરીષ ભક્તરાજ છે.</p><p>રજનીભાઈએ ગુરુહરિને પ્રાર્થના કરતા કહ્યું, “હવે આપ અમારા માટે સ્વામીશ્રીના સ્થાને બિરાજો છો. તો આપના ચરણે પ્રાર્થના છે કે, સ્વામીજી ! હવે આપ ઐશ્વર્ય વાપરો. આપની મુઠ્ઠી છોડી દો.”</p><p>ત્યારે ગુરુહરિ બોલ્યા, “અમે તો સેવક છીએ, પણ જો સાધક પોતાનું બળ છોડી દે તો ભગવાન તેને નિરંતર પોતાના ઐશ્વર્યનો અનુભવ કરાવે. બધાનું ઐશ્વર્ય પૂરું થાય પછી ભગવાન પોતાનું ઐશ્વર્ય બતાવશે.”</p><p>સ્વાધ્યાય : પ્રબોધસ્વામીજીએ રહસ્ય આપ્યું કે આપણે પોતાનું બળ છોડીશું તો પ્રભુના બળની અનુભૂતિ થશે. મહારાજના અનંત ઐશ્વર્ય આપણી સાથે જ છે.</p><p>પ્રાર્થનાઃ હે ગુરુહરિ ! અમારા બળ અને શક્તિ છોડાવીને કેવળ આપના બળે આપના ગમતામાં જીવાડજો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આધ્યાત્મિક સૂઝ, પ્રભુનું બળ<br/>
+      ટેગ: <br/>
+      નંબર: ૨૭૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

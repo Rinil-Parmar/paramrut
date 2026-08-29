@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ રોગ મિત્ર છે
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+શ્રીજી મહારાજના વખતમાં એક વડીલ સદગુરુને રોગ આવ્યો. એ રોગ બહુ લાંબા સમય સુધી ચાલ્યો. 
+</p>
+ <p>
+ગુરુહરી સ્વામીશ્રી આ પ્રસંગને સમજાવતા કહે છે, ‘એ સદગુરુ પરોક્ષ દેવમાં ખૂબ ડૂબેલા હતા. એના ચોથા ભાગમાં પણ સહજાનંદ સ્વામિમાં ડૂબેલા નોહતા. મહારાજે નિષ્ઠા પાકી કરાવવા રોગ મૂક્યો હતો. સાત્વિકતાના મૂળિયાં આત્મામાથી ઉખેડી નાખવા રોગ મૂક્યો હતો. તુહી તુહીના પોકાર સાથે ભજન કરાવવા રોગ મૂક્યો હતો.’
+</p>
+ <p>
+હે સ્વામીશ્રી ! અમે ભગવદીના પ્રસંગમાં રહી નિષ્ઠા પાકી કરતાં રહીએ એ જ પ્રાર્થના.
+</p>
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->         
+ 
+
+</BODY>
+
+</HTML>
+

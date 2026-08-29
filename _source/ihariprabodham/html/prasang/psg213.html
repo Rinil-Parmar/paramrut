@@ -1,0 +1,160 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+ ભજન કરતાં કરતાં સેવા
+</div>
+
+
+ <div class="vaat_ind" id="vaat1_1">
+<p>
+ગુણાતીતાનંદસ્વામીએ વાતુમાં લખ્યું છે કે, ‘ભજન કરતાં કરતાં ક્રિયા કરીએ તો અંતરમાં
+ટાઢું રહે. ને અંતરમાં ટાઢું જોઈને મોટા સાધુ રાજી થાય, ને જેની ઉપર સાધુ રાજી થાય તેનો જીવ
+સુખિયો થઈ જાય.’
+</p>
+<p>
+જુનાગઢ મંદિરમાં જાગાસ્વામી પથ્થર ઘડવાની સેવા કરતા હતા.
+
+</p>
+
+<p>
+એક દિવસ ગુણાતીતાનંદ સ્વામી ત્યાં પહોંચી ગયા. જાગાસ્વામી પથ્થર ઘડવામાં એટલા તલ્લીન હતા કે, ગુણાતીત આવીને ઊભા રહ્યા એ ખબર જ ન પડી. ગુણાતીતાનંદસ્વામીએ કહ્યું, ‘જાગાભગત, ભજન કરતાં કરતાં સેવા કરવી, ભલે સેવા થોડી ઓછી થાય તો ચાલશે; પણ આપણે આ ટેવ પાડી દેવાની.’
+
+</p>
+
+<p>
+જાગાભગતે ભજન કરતાં કરતાં પથરા ઘડવાનું શરૂ કર્યું. અભ્યાસ નહિ હોવાથી થોડું થાય ને પાછા ભૂલી જાય, થોડું થાય ને પાછા ભૂલી જાય. જાગાસ્વામીએ જેમ જેમ ભજન શરૂ કર્યું, તેમ તેમ ખરાબ વિચારો ઊઠવા લાગ્યા.
+
+ 
+</p>
+<p>
+છ મહિના પછી ગુણાતીતાનંદસ્વામી કહે, ‘જાગાસ્વામી, ભજન કરો છો ?’ ‘સ્વામી !  ભજન કરું છું પણ બહુ ખરાબ ઘાટ ઉઠે છે.’ ‘ગભરાશો નહિ, ભજન એક વલોણું છે, ખરાબ ઘાટ ક્યાં સાફ થઈ જશે, ખબર નહિ પડે; પણ તમે ભજન નહિ છોડતા.’
+
+</p>
+<p>
+બીજા છ મહિના પછી ગુણાતીતાનંદસ્વામીએ ફરી જઈને પૂછ્યું, ‘જાગાસ્વામી ! હવે ભજન થાય છે ?’ તો કહે, ‘હા, હવે ખરાબ ઘાટ ઊઠતા નથી, સાફ થઈ ગયા. નિરાંતે ભજન કરતાં કરતાં સેવા કરી શકું છું.’
+
+</p>
+<p>
+બધા જ પ્રકારના રસ છોડીને આપણે બ્રહ્મરસમાં, ભજનના રસમાં જવાનું છે. અને તે માટે ભજન કરતાં કરતાં સેવા.
+
+</p>
+<p>
+ભજન કરતાં કરતાં સેવા કરીએ તો બહુ મોટા ફાયદા એ થાય કે :
+
+</p>
+<p>
+- એકાવધાની થઈ જવાય. <br/>
+- વૃત્તિ પ્રભુમાં સ્થિર થાય. <br/>
+- અને પ્રભુ આકારે થઈ જવાય.
+
+
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

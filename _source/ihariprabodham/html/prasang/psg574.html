@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      આશીર્વાદથી બન્યું અશક્યનું શક્ય
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_574">
+      July 20, 2023, Cherry Hill, NJ<br/>
+      <p>અંબરીષ હરિભક્ત ડૉ. રામકૃષ્ણભાઈ અને તેમના ધર્મપત્ની ર૦૧૭થી પોતાની Diagnostic Laboratory ખોલવાનો પ્રયત્ન કરી રહ્યા હતા, પરંતુ તેમાં ઘણી બધી મુશ્કેલીઓ આવતી હતી. ગુરુહરિ પ્રબોધસ્વામીજી જ્યારે ૨૦૨૨માં વિચરણ માટે યુ.એસ.એ. પધાર્યા હતા, ત્યારે ડૉ. રામકૃષ્ણભાઈએ આ અંગે ગુરુહરિને પ્રાર્થના કરી હતી, અને ગુરુહરિએ આશીર્વાદ પણ આપ્યા હતા.</p><p>બ્લડ રિપોર્ટ કઢાવવાનું નિમિત્ત ઉભું કરી, ગુરુહરિ સવારે સહુ પ્રથમ ડૉ. રામકૃષ્ણ ભાઈની WelCare Diagnostics Laboratory પર પધાર્યા. ડૉ. રામકૃષ્ણભાઈએ શ્રી ઠાકોરજી અને ગુરુહરિનું પૂજન કર્યું.</p><p>ત્યારબાદ, ડૉ. રામકૃષ્ણભાઈએ આગલા વર્ષની સ્મૃતિ કરતા ગુરુહરિને કહ્યું, “આપે ગયા વર્ષે આશીર્વાદ આપ્યા હતા કે અમે જ્યારે આવતા વર્ષે આવીશું ત્યાં સુધીમાં Laboratory તૈયાર થઈ જશે. થોડા દિવસો પહેલા ફાઇનાન્સનું કે Laboratory ની જગ્યાનું, કંઈ જ નક્કી નહોતું. અહીંના ધારા ધોરણો પ્રમાણે લેબોરેટરીની પરવાનગી મળવી અને બધા ઉપકરણો મળવા, એ વાત એક વર્ષના સમયગાળામાં અશક્ય લાગતી હતી, પરંતુ આપના સંકલ્પે આ શક્ય બન્યું અને આજે આ પધરામણી શક્ય થઈ.”</p><p>ત્યારબાદ ગુરુહરિએ દરેક ઉપકરણ પર શ્રીહરિ લખી પૂજન કર્યું અને આશીર્વાદ આપ્યા, “મહારાજ આપણી Laboratory સરસ ચલાવશે.” આમ અશક્ય લગતા સંજોગો પણ ગુરુહરિના આશીર્વાદથી શક્ય બન્યા.</p><p>“અમે જે સંકલ્પ કરીએ તે મહારાજ ચોક્કસ પૂર્ણ કરે છે” તેની પ્રતીતિ આ પ્રસંગ દ્વારા કરાવી.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: આશીર્વાદ<br/>
+      ટેગ: આશિષ, પ્રાર્થના, બ્લડ રિપોર્ટ, લેબોરેટરી<br/>
+      નંબર: ૪૦૮
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

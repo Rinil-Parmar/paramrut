@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સહજ સ્મૃતિ
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_617">
+      July 5, 2023, Columbus, OH<br/>
+      <p>ગુરુહરિ પ્રબોધસ્વામીજી અંબરીષ હરિભક્ત દેવેશભાઈના ઘરે રાત્રે ૧૨:૪૦ વાગ્યે સ્મૃતિ આપવા પોતાના રૂમમાંથી બહાર પધાર્યા. સહુ ડાઇનિંગ રૂમમાં આનંદ કરી રહ્યા હતા એટલે ગુરુહરિ ત્યાં પધાર્યા. ગુરુહરિ ખુરશી ખેંચીને બેસવા જતા હતા, એટલે પૂ. સુનૃતસ્વામીએ તરત જ આવીને ખુરશીને ટેકો આપ્યો. ગુરુહરિએ એમની સામું જોયું, એટલે સુનૃતસ્વામીએ કહ્યું, “ખુરશી થોડી ભારે છે એટલે ટેકો આપ્યો.”</p><p>ફક્ત ‘ભારે’ શબ્દ સાંભળીને તરત જ ગુરુહરિએ કહ્યું, “હું તમને ભગવાન સ્વામિનારાયણનો એક પ્રસંગ કહું.”</p><p>એમ કહીને ગુરુહરિએ વર્ણવ્યું કે ભગવાન સ્વામિનારાયણના વખતે એક હરિભગત હતા, એમને એવો સંશય હતો કે સહજાનંદ સ્વામીને બધા ભગવાન કહે છે, તો એ ભગવાન હશે કે નહિ હોય? થોડા દિવસ પછી એ હરિભગત દાદાખાચરના દરબારમાં હતા ત્યારે એક હરિભગત મહારાજ માટે બળદગાડામાં ૨૦-મણનું મોટું ઓશીકું લઈને આવ્યા. તે જ વખતે ભગવાન સ્વામિનારાયણ અક્ષરઓરડીમાંથી બહાર પધાર્યા અને પેલા બળદગાડા પાસે પહોંચી ગયા. પછી મહારાજે પોતે જ બળદગાડામાંથી ૨૦-મણનું ઓશીકું ઊંચકીને એક આંગળી ઉપર ગોળ ફેરવ્યું! આ દર્શન કરીને જે હરિભગતને સંશય હતો એ અચંભામાં જ પડી ગયા. પછી ભગવાન સ્વામિનારાયણે એ ૨૦-મણનું ઓશીકું સભામંડપ તરફ ફગાવી દીધું અને એ ઓશીકું સીધું જ મહારાજના આસાન પર યોગ્ય સ્થાને પડ્યું. આ દર્શન કરીને પેલા ભગતનો સંશય ટળી ગયો અને મહારાજના ભગવાનપણાનો નિશ્ચય થયો. આ રીતે ગુરુહરિએ સહુને મહારાજના લીલા-ચરિત્રોમાં ગરકાવ કર્યા.</p><p>રાતના પોણા એક વાગે, ખુરશી ખસેડવા જેવી નાની ક્રિયાનું મિષ લઈને પણ ગુરુહરિ સહજ પ્રભુની સ્મૃતિમાં તલ્લીન રહે છે. સાધકે કઈ કક્ષાએ મોટાપુરુષના જીવનમાં ડૂબવું એનો આ સ્મૃતિ આદર્શ પૂરો પાડે છે.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: સ્મૃતિ<br/>
+      ટેગ: લીલા ચરિત્ર, રાત્રે, ભારે, સ્વામિનારાયણ, મહારાજ<br/>
+      નંબર: ૩૪૨
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

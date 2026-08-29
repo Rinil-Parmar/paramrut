@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+કરુણાએ કરીને આ સેવા મળી છે !!!
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+ઇ.સ. 1992 માં ઉજવાયેલ યોગી શતાબ્દી મહોત્સવમાં પરદેશના એક હરિભક્તે ખૂબ મોટી નાણાકીય સેવા કરેલી. તેમના મનમાં ઉંડે ઉંડે એમ ગુંજ્યા કરતું હતું કે તેમણે ખૂબ મોટી સેવા કરી છે. તેઓ મહોત્સવ શરુ થતા પહેલા હરિધામ સેવા કરવા આવી ગયેલા.
+</p>
+<p>
+મહોત્સવની આગલી રાતે દક્ષિણ ગુજરાતના સદ્‌ભાવવાળા હરિભક્ત શ્રી લલ્લુભાઇ  પ.પૂ. સ્વામીશ્રીને મળવા આવ્યા. તેમને પ.પૂ. સ્વામીશ્રી સાથે થાળ લીધો અને ખાનગી કરી. તેઓ વિદાય લેતા હતા ત્યારે પ.પૂ. સ્વામીશ્રીએ અશોકભાઇ તથા પરદેશના હરિભક્તને કહ્યું કે આમને ગાડી સુધી મુકી આવો. 
+</p>
+
+<p>
+પછી ત્રણેય જણ મહોત્સવના મુખ્ય દ્વાર આગળ એમની ગાડી સુધી પહોંચ્યા. શ્રી લલ્લુભાઇ કહ્યું કે આ મહોત્સવની સંપૂર્ણ રોકડ સેવા આપવા માટે આવેલો પણ પ.પૂ. સ્વામીશ્રીએ એ સ્વીકારી નહીં. 
+</p>
+<p>
+પરદેશના હરિભક્તને જેમને સેવા કર્યાનો થોડો અહંકાર હતો તે ઉતરી ગયો ને તેમના અંતરમાં મનાઇ ગયું કે પ.પૂ. સ્વામીશ્રી કરુણા કરીને આત્માને સુખી કરવા સેવા આપે છે. ને મારું અતિ મોટુ ભાગ્ય કે આ સેવા કરવાની તક મને મળી.  
+</p>
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

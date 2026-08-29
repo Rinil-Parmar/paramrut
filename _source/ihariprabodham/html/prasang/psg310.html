@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+મારે પોતાનું જ કરી લેવું છે
+</div>
+
+<p>
+ઓક્ટોબર, ૨૦૦૯માં ગુરુહરિ સ્વામીશ્રી પંજાબ વિચરણમાં પધાર્યા હતા. તા. 5-10-2009ના રોજ સાંજે ગુરુહરિ સ્વામીશ્રી સાંજે લુધિયાણામાં વૉકિંગ કરી રહ્યા હતા. સ્વામીશ્રીની સાથે સેવક પાર્થભાઈ વોકિંગ કરી રહ્યા હતા. 
+</p>
+<p>
+સ્વામીશ્રીના ઉતારાની બાજુમાં રોડ પર એક મકાનનું કન્સ્ટ્રક્શન વર્ક ચાલી રહ્યું હતું. ત્યાં બે કડિયાઓ બેઠા બેઠા અરસ-પરસ વાતો કરતા હતા કે ‘ગવર્મેન્ટ ઐસી હૈ, ઈનકો યે કરના ચાહિયે, વો કરના ચાહિયે.’
+</p>
+<p>
+સ્વામીશ્રીએ એ બંનેનો સંવાદ સાંભળ્યો. સ્વામીશ્રી હસ્યા પરંતુ કાંઈ બોલ્યા નહીં. થોડા આગળ જઈ પાર્થભાઈ તરફ નજર કરી કહ્યું, ‘દરેક વ્યક્તિ બીજાની જ ચિંતા કરે છે. પોતાની કોઈ ચિંતા કરતું જ નથી. અક્ષરધામની યાત્રા કરનારાઓને તો ‘મારે પોતાનું જ કરી લેવું છે’ એ વાક્ય રોજ ઘૂંટવું પડે. મારી ભૂલકુંની યાત્રા કેટલી થાય છે - એનો વિચાર નિરંતર કરવો પડે.’
+</p>
+<p>
+ભગવાન સ્વામિનારાયણે કહ્યું છે કે, ‘ભગવાન ભજવા જેવી બીજી કોઈ મોટી વાત નથી, કાં જે ભગવાનનું કર્યું સર્વે થાય છે.’ હે મહારાજ! હે સ્વામીજી ! આપનું જ ધાર્યું સર્વે થાય છે તો અમે કેવળ અમારા પોતાના જ આત્મા તરફ નજર રાખીને જીવી શકીએ એવો બુદ્ધિયોગ આપશોજી.’
+
+</div>
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

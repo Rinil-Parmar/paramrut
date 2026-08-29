@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+કલ્પનાતીત ગરજ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+પૂ. કોઠારીસ્વામીજીએ એક પ્રસંગે ગુરુહરિ સ્વામીશ્રીની અપ્રતિમ ગરજનું દર્શન કર્યું. સ્વામીશ્રીએ એક સાધકને મળવું હતું એટલે એમને બોલાવ્યા. અંતરમાં ઘમસાણ યુદ્ધ ચાલી રહ્યું હોવાથી એ સાધક ન આવી શક્યા. સ્વામીજીએ ફરી બોલાવ્યા તો પણ તેઓ ન આવી શક્યા.
+</p>
+<p>
+કોઠારીસ્વામીજીએ સ્વામીશ્રીને આ સમાચાર આપ્યા ત્યારે સ્વામીશ્રીએ ગરજનું દર્શન કરાવતાં કહ્યું, ‘એ ભલે ન આવ્યા પણ હું એમને સામેથી મળવા જઈશ.’ 
+</p>
+<p>
+કોઠારીસ્વામીજીએ પ્રાર્થના કરતાં કહ્યું, ‘દયાળુ, આપ ન જશો, હું એમને ફરીથી મળીને બોલાવી લાવું છું.’
+</p>
+<p>
+ત્યારે સ્વામીશ્રીએ કહ્યું, ‘ના, હું જ સામેથી એમને મળવા જઈશ.’ એમ કરીને સ્વામીશ્રી સામેથી એ સાધકને મળવા પધાર્યા. એ સાધકને મળીને અને હેત કરીને એમની સાથે સુખ-દુ:ખની વાતો કરીને એમની મૂંઝવણ ટાળી દીધી. 
+</p>
+<p>
+એકતરફ પોતાની આજ્ઞામાં ઉત્કૃષ્ટ સરળતાથી વર્તનાર પૂ. કોઠારીસ્વામીજી અને બીજી તરફ સરળતાનું કિંચિત્ દર્શન ન કરાવનાર સાધકો તરફ ગરજ અને નિર્વ્યાજ પ્રેમ ! 
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! અમે સહુ આપના ભૂલકાંઓ આપ અને આપના સંબંધવાળા ભક્તો પાસે ખૂબ ગરજુ થઈને સેવાભક્તિ કરી શકીએ એવી કૃપા વરસાવશોજી.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

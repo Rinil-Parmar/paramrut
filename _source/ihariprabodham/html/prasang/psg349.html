@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સરળ થવામાં સુખ છે ભાઇ !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+તા. 20-03-1987ના રોજ સાંજે અમદાવાદમાં એક મહારાષ્ટ્રીયનભાઈને ત્યાં ઠાકોરજીના થાળ હતા. 
+</p>
+<p>
+થાળ ગ્રહણ કર્યા પછી ફોટોગ્રાફરભાઈ સ્વામીશ્રીના ફોટા પાડવા આવ્યા. એમને સ્વામીશ્રી કેવા મોટાપુરુષ છે અને એમની કેવી મર્યાદા રાખવી જોઈએ એનો કાંઈ ખ્યાલ નહોતો. એટલે એમણે સ્વામીશ્રીને કહ્યું, ‘મહારાજ ! તમે આ બાજુ બેસો.’  એમ કહી જગ્યા બદલાવી. સ્વામીશ્રી તરત જ એ પ્રમાણે જગ્યા બદલી બેસી ગયા. છતાંય સંતોષ ન થયો એટલે એમણે સ્વામીશ્રીને ફરીથી કહ્યું, ‘મહારાજ ! તમે આમ બેસો.’ એટલે સ્વામીશ્રીએ તો ફરી જગ્યા બદલી કાઢી.
+</p>
+<p>
+ફોટોગ્રાફરે વારાફરતી કુલ પાંચ વખત સ્વામીશ્રીની જગ્યા બદલી અને દરેક વખત ખૂબ સરળતાથી એમણે જેમ કહ્યું તેમ સ્વામીશ્રી બેઠા પણ ખરા. સ્વામીશ્રી તો જેમ પેલા ભાઇ કહે એમ કરતા જ હતા. 
+</p>
+<p>
+નીલકંઠવર્ણીને જૂનાગઢના હાટકેશ્વરના મંદિરમાં સત્તર વખત જમતા જમતા ઊભા કર્યા તો પણ સહજ સરળ વર્ત્યા તે પ્રસંગની સહજ સ્મૃતિ થઈ આવે એવું જ કાંઈક આ દર્શન હતું !
+</p>
+<p>
+આ જોઈ એક હરિભગતને થયું કે આવી રીતે સ્વામીશ્રીને એક ફોટો પાડવા માટે વારંવાર ઊઠ-બેસ ન કરાવવી જોઈએ. તેઓ પેલા ફોટોગ્રાફરભાઇને કાંઇ જાણપણું આપવા જતા.
+</p>
+<p>
+સ્વામીશ્રી તરત જ એમના ભાવોને કળી ગયા અને તરત બોલ્યા,  ‘સરળ થવામાં સુખ છે ભાઇ ! કોઇ વડીલ જેમ કહે તેમ સરળ થઇએ તો કોઇ દિવસ દુ:ખ આવે જ નહિ.’
+</p>
+<p>
+અલ્પસંબંધવાળા મુક્ત પાસે જો સ્વામીશ્રી આટલું સરળ વર્તતા હોય તો એમને કેવી સરળતા ગમતી હશે !
+</p>
+<p>
+હે સ્વામીશ્રી ! સરળ વર્તવામાં દેહ, ઈન્દ્રિયો અને અંત:કરણ આડા ન આવે તેવી શૂરવીરતા અમ સહુમાં પ્રગટાવશોજી.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

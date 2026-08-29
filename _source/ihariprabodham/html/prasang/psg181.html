@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+ભજનનાં આગ્રહી ગુણાતીત અને ખટકાનું સ્વરુપ સમા ભગતજી - સર્વે ક્રિયામાં ’સ્વામિનારાયણ...સ્વામિનારાયણ.....’
+
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+સંવત ૧૯૨૦માં ગુણાતીતાનંદસ્વામી વરતાલથી સમૈયો કરી ધોલેરા થઈ કારિયાણી પધાર્યા.  અહીંના ભક્તરાજ નથુ પટેલે સ્વામી અને સંતોને કંસાર-રોટલીની રસોઇ જમાડી.... જમ્યા પછી સ્વામી સભા કરી કથા વંચાવતા હતા અને ભગતજીમહારાજ તથા પાર્ષદો વાસણો ઉટકતા હતા. કંસારના એક મોતા કઢાયામાં ચોંટી ગયેલા કંસારને બહુ બળે ઊખેડાતાં- ઊખેડાતાં ભગતજીમહારાજનું, ભજનનું તાન તથા સ્વામીની મૂર્તિમાં જે વૃત્તિ અખંડ હતી, તે તૂટી ગયાં.
+</p>
+<p>
+...પરંતુ એમની એ એકાદ ક્ષણ માટેની મૂર્તિની વિસ્મૃતિ પણ ગુરુ ગુણાતીતને માન્ય ન હતી ! તેઓ તરત જ સભામંડપમાંથી ભગતજીમહારાજની પાસે પહોંચી ગયા અને એમની સાથેના અધિકારના અને પ્રીતિના દાવે ઠપકો આપતાં કહ્યું , “ આમ ગોબરાની જેમ મૂર્તિ ભૂલીને કેમ સેવા કરે છે ?” 
+</p>
+<p>
+
+આ સાંભળી ભગતજીમહારાજે અંતરથી સ્વામીની ક્ષમા માગી અને ફરીથી ગુણાતીતાનંદસ્વામીએ પોતાનો અંગત માનીને કરેલા આવા અધિકારના આનંદ સાથે ફરીથી વૃત્તિ ભજનમાં જોડી દીધી. 
+</p>
+<p>
+
+અહોહો ! ભગતજીમહારાજની કેવી શ્રદ્ધા ને ગરજ ! બે વર્ષ પહેલા પોતે ચૂનાની ભઠ્ઠી ભરી રહ્યા હતા, ત્યારે સ્વામીએ એમને રહસ્યવાર્તા કરી હતી કે ‘ નેત્રદ્વારા મહારાજની મૂર્તિમાં અખંડ વૃત્તિ રહે અને અંતરમા નિરંતર ભજનનો દોર ચાલુ જ રહે, તો સ્થૂળ, સૂક્ષ્મ ને કારણ એ ત્રણેય દેહ બળીને ભસ્મ થઈ જાય ! ' તે ક્ષણથી જ ભગતજીમહારાજે ભજનનો વેગ તો લગાડી જ દીધો હતો, તે છેક બે વર્ષે કંસાર ઉખાડવા જતાં ભજનનું અનુસંધાન તૂટ્યું ત્યારે સ્વામીની ટકોર સાંભળીને તરત જ એ વૃત્તિ પાછી ભગવાનમાં સાંધી લીધી. ગુરુના વચને પ્રભુના ભજનમાં જ ચોવીસે કલાકની પળેપળ સમગ્રપણે હોમાઈ જવાની કેવી જબરી તત્પરતા !
+</p>
+<p>
+
+ગુણાતીતાનંદસ્વામીએ કહ્યું છે : ‘ભજન કરતાં કરતાં ક્રિયા કરીએ તો અંતરમાં ટાઢું રહે. ને અંતરમાં ટાઢું જોઈને મોટા સાધુ રાજી થાય ને જેની પર મોટા સાધુ રાજી થાય એટલે જીવ સુખિયો થઈ જાય.’ ભગતજીમહારાજે ગુણાતીતાનંદસ્વામીનું એવું સેવન કર્યું હતું કે એમની મીઠી દૃષ્ટિ નિરંતર ભગતજી તરફ રહેતી હતી !
+</p>
+<p>
+
+ગુરુહરિ સ્વામીશ્રી પણ આપણા સહુનીય પાસે આવી જ ભજન કરતાં કરતાં ક્રિયા કરાવવાની ટેવ પાડવા માટે આગ્રહ રાખી રહ્યા છે ત્યારે ભગતજીમહારાજના આ પ્રસંગને વાગોળતા વાગોળતા ખટકો રાખીને ભજનિક બનીએ.
+
+</p>
+
+
+
+
+
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

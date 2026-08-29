@@ -1,0 +1,140 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ અક્ષરધામનું ભાથું
+</div>
+<div class="vaat_ind" id="vaat1_1">
+  <p>
+
+        ભગવાન સ્વામિનારાયણના વખતમાં જનસમાજનો સત્સંગ માટે ખૂબ વિરોધ હતો. સંપ્રદાયની શુદ્ધતાનો અને મહાપ્રભુની દિવ્યતાનો કોઈનેય ખ્યાલ નહોતો. પ્રભુને ખૂબ થોડા સમયમાં ઘણું કાર્ય કરવું હતું. મનવારો ભરાય એટલા જીવનું કલ્યાણ કરવું હતું. સત્સંગના વિકાસનું કામ ખૂબ કઠિન હતું. આ કાર્ય સુલભ બને એના માટે મહારાજે ૨૭ પરમહંસોને અંતર્યામી શક્તિ આપી હતી.
+</p><p>
+
+     એમાંથી એક પરમહંસને મહારાજે બોલાવીને કહ્યું. 'તું ધ્યાન રાખજે. અંતર્યામી શક્તિનો ઉપયોગ ભગવાનની સેવા માટે કરજે, સત્સંગના વિકાસને માટે કરજે, પણ આ શક્તિના કેફને લઈને તારા થકી કોઈની ઉપેક્ષા ના થાય  એ ધ્યાન રાખજે. કોઈના અભાવ-અવગુણમાં પડતો નહિ. તારા હૃદયમાંથી કોઈની મર્યાદા તૂટી જાય એવું કરતો નહિ. આ તો કૃપા કરીને તને નિમિત્ત બનાવવા અંતર્યામી શક્તિ આપું છું.'
+</p><p>
+
+  એ સાધુએ સત્સંગનો વિકાસ કર્યો; પણ 'પ્રભુએ કેવળ મારા આત્માના વિકાસને અર્થે જ આ શક્તિ આપી છે,' એવો તેમને ખ્યાલ ના રહ્યો અને એક વડીલ સંતની મર્યાદા લોપી નાખી. વિવેક ચુકી ગયા, ભાર ના રહ્યો, અભાવ આવ્યો, ભાવફેર થઈ ગયો. મહારાજે અંતર્યામી શક્તિ લઈ લીધી. એમના આત્માનું રૂડું કરવા મહારાજે એમને ત્રણ મહિના સાથે રાખી ને સૂઝ આપી. પ્રભુની કરુણાનો પાર નથી, જીવની અવળાઈનો કોઈ પાર નથી. શિષ્યો સાથેના હેતે કરીને પ્રભુના હેતને પિછાણી ના શક્યા અને સત્સંગ છોડી દીધો !
+</p><p>
+
+  'નિમિત્ત' બનવા માટે આપેલી અંતર્યામી શક્તિ એ સાધુ પચાવી શક્યા નહિ. મહારાજે એને ટોક્યો પણ માન્યો નહિ અને પ્રભુએ આપેલી સુવર્ણ તકને વર્ષો સુધી ગુમાવી દીધી; કારણ 'અભાવ'
+</p><p>
+
+     અભાવ એટલે શું? <br/>
+          - વ્યક્તિને જોઈએ ને એની પ્રકૃતિ દેખાય. <br/>
+          - ટીકાચર્ચામાં જતું રહેવાય, <br/>
+          - સંબંધ ના દેખાય <br/>
+      માટે આપણે બે હાથ જોડીને બધાનું પુણ્ય લઈ લેવું છે.
+</p><p>
+
+     આપણે આપણી જાતને તપાસીએ, એવો કયો દોષ છે ? એવી કઈ વૃત્તિ છે ? એવો કયો જડ સ્વભાવ છે ? કે જેને લઈને હું ભક્તોનો અભાવ લઉં છું. મર્યાદા રાખતો નથી. એ સાધુએ સ્વાધ્યાય કર્યો હોત તો આવી કરુણ હાલત ન થાત !
+</p><p>
+
+   આપણા દોષનું દર્શન થાય તે માટે સ્વાધ્યાય-ભજન કરીએ.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

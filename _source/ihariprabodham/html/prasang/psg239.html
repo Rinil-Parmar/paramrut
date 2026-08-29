@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+બાળપ્રભુ ઘનશ્યામની રુચિ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+  <p>
+
+       'પુત્રનાં લક્ષણ પારણમાંથી.' લૌકિક જગતમાં આ ઉક્તિ ખૂબ પ્રચલિત છે. જ્યારે પૂર્ણ પરુષોત્તમ નારાયણ નરદેહ ધારણ કરીને સહુનુંય આત્યંતિક કલ્યાણ કરવાના પરમ હેતુથી ધરતી પર પધારે ત્યારે તેમની એક એક લીલાની પાછળ અનંત ચૈતન્યોનો ઉદ્ધાર સમાયેલો હોય છે.
+</p><p>
+
+      એક વખત પિતાશ્રી ધર્મદેવ બાળ ઘનશ્યામના હૃદયને જાણવા માટે એક પાટલા ઉપર તલવાર, ચાંદીનો સિક્કો અને ગીતા મૂકી. ધર્મદેવે વિચાર્યું હતું કે, ભવિષ્યમાં આ રાજા થવાનો હશે તો તલવાર લેશે, ધનિક થવાના હશે તો લક્ષ્મી લેશે અને કોઈ સમર્થ જ્ઞાનીગુરુ થવાના હશે તો ગીતા લેશે. નાનકડા પગે પ્રભુ ગોઠણીયાભેર ચાલી તરત જ ગીતા લઈને બાજુમાં બેસી ગયા.
+</p><p>
+
+       પ્રભુ હજુ ખૂબ નાના હતા. ચાલતાં શીખ્યા નહોતા. ઢીંચણથી ચાલતા હતા. પુસ્તકોના ઢગલમાંથી ભક્તિપ્રધાન પુસ્તકો ભાગવત, ગીતા લઈને જાણે વાંચવાની ઢબથી બેસી જતા અને એ જ અદામાં અંદર જોયા કરે.
+</p><p>
+
+        ધર્મપ્રિય પિતાશ્રી બાલ ઘનશ્યામની સુરુચી જોઈને ખૂબ રાજી થાય. એમને સંતોષ થતો હતો કે 'હાશ ! દીકરાની કેવી સરસ રુચિ છે ! હજુ ચાલતાંય શીખ્યો નથી ને આવી સરસ રુચિ !' પછી ધર્મદેવ નક્કી કરી નાખ્યું કે કોઈ પણ ભોગે આ દીકરાને ભણાવવો છે.
+</p><p>
+
+       અયોધ્યા ગયા તોપણ ભક્તિમાતાને સવારના પહોરમાં આંગળી પકડીને મંદિરે લઈ જ જાય. હરિકીર્તન, હરિસ્મરણ, હરિદર્શન પ્રભુનો સહજ સ્વભાવ હતો.
+</p><p>
+
+       અયોધ્યાની ધરતી ઉપર ભગવાન સ્વામિનારાયણ રહ્યા અને એકેય દિવસ મંદિરે ન ગયા હોય એવું બન્યું નથી. કેવું એ ભક્તિનું સ્વરૂપ હશે ! કેવો એમનો પ્રભુ સાથેનો સ્વામીસેવકભાવ હશે ! સ્વયં હોવા છતાંય પણ ભક્તિ કેવી ! રામકિશનની મૂર્તિ આગળ કેટલી ભક્તિથી ઓતપ્રોત થાય ! જન્માષ્ટમી ઉજવે, રામનવમી ઉજવે. એમાં ઘનશ્યામપ્રભુ ઓગળી જતા.
+</p><p>
+
+      હરિદર્શન, હરિકીર્તન, હરિસ્મરણ, હરિકથા પ્રભુને સહજ ગમતાં અને આપણને પણ આવી રુચિ રાખવા માટેનો જાણે આદેશ આપ્યો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

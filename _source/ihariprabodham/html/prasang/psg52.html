@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+દાસના દાસ બનાવવા 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+એક વખત હરિધામમાં જ્ઞાનયજ્ઞહૉલમાં સભા પૂરી થયા પછી પછી સ્વામીજીએ વારાફરતી ત્રણ-ચાર સંતોને ઊભા કર્યા અને પોતપોતાના અંગ અને રુચિ પ્રમાણે કીર્તનો કે ભજનની પંક્તિઓ  ગાવા જણાવ્યું. દરેક પોતાની રુચિ પ્રમાણે કીર્તનો ગાયાં. પછી સ્વામીજીએ સહજ પોતાની રુચિનું દર્શન કરાવતાં કહ્યું કે ‘દાસના દાસ બનાવવા તેં માંડ્યો તેં આ રાસ’ એ કડી અને એ કીર્તન મને ખૂબ ગમે.
+</p>
+<p>
+ઘણીવખત સ્વામીજી સ્નાન કરતા હોય ત્યારે અથવા કારમાં બેસી વિચરણ કરતા હોય ત્યારે અથવા ટપાલ લખતાં લખતાં વચ્ચે સમય મળે ત્યારે ‘બોલ્યા શ્રીહરિ રે સાંભળો નરનારી હરિજન...’ એ આખુંયે પદ ખૂબ મસ્તીથી ગાતા હોય છે.
+</p>
+<p>
+ આમ સ્વામીજીએ દાસત્વભાવની દૃઢતા અને મહારાજે કરુણાએ કરીને આપણને આપેલા ભવ્ય સંબંધની પ્રાપ્તિ જેવું હાર્દ ખૂબ ગમે છે... એ સહજ સ્પષ્ટ થાય.
+</p>
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+સરળતા સાધુ તણો શણગાર...
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એક દિવસ ગોંડલ મંદિરે બિરાજમાન યોગીજીમહારાજે પ્રભુદાસભાઈને વહેલી સવારે બોલાવીને કહ્યું, ‘આપણા પાછળના ખેતરમાં જઈને સાથીને (ખેતરમાં કામ કરનાર મજૂરને) જઈને કહી આવો કે આજે બાજરો લણે નહીં ને વાઢે નહીં.’ તેઓ ખેતરમાં જઈને સાથીને કહી આવ્યા કે બાપાએ કહ્યું છે કે આજે બાજરો લણશો નહીં ને વાઢશો નહીં. તેઓ સંદેશો કહીને પાછા આવ્યા એટલે બાપાએ ફરી કહ્યું કે તમે સાથીને ફરી કહી આવો, નહીં તો એ ભૂલી જશે. પ્રભુદાસભાઈ ફરીથી ગયા અને સાથીને કહીને પાછા આવ્યા. ફરીથી બાપાએ તેમને કહ્યું કે તમે સાથીને કહી આવો કે આજે બાજરો લણે નહીં અને વાઢે નહીં. 
+</p>
+<p>
+
+પ્રભુદાસભાઈને થયું કે કોઈ અકળ લીલાની શરૂઆત થઈ ગઈ છે. પણ હું તો ચિઠ્ઠીનો ચાકર છું ! એમ વિચારી તેઓ સાથી પાસે પહોંચી ગયા. જઈને સાથીને જ્યાં કહેવા લાગ્યા ત્યાં તે ગરમ થઈ ગયો અને બોલ્યો, ‘મને વારે વારે કહેવા કેમ આવે છે ? હું શું બહેરો છું ? હવે જો ફરી ડહાપણ કરવા આવ્યો તો પરસાદી આપીશ!’ પ્રભુદાસભાઈએ કોઈ ખુલાસો ન કર્યો. એમના અંતરમાં એ પાકું હતું કે બાપાની આજ્ઞા આપણા માટે હિતકારી ને મંગલકારી જ હોય.
+</p>
+<p>
+બાપાએ ચોથીવાર બોલાવીને એ જ આજ્ઞા આપી ! પ્રભુદાસભાઈને ખ્યાલ આવી ગયો કે બાપાને સાથી જોડે કે બાજરી વાઢવા કે લણવા જોડે કોઈ સંબંધ નથી. હું કેવો સરળ થઈને વર્તું છું એ જ તેઓ નિહાળ્યા કરે છે. બાપાને મારી સાત્વિકતા વાઢવી છે ને અહમને લણવું છે. એવી જાગ્રતતા સાથે તેઓ ચોથીવાર પણ સાથી પાસે પહોંચી ગયા. સાથી તો ખૂબ ગુસ્સે થઈ ગયો ને ગાળોનો વરસાદ વરસાવીને ન બોલવાનું કેટલું ય બોલ્યો. પ્રભુદાસભાઈ બાપાને કર્તાહર્તા માનીને મૌન રહ્યા. બાપાએ પભુદાસભાઈને જેટલીવાર મોકલ્યા એટલીવાર સાથી ગુસ્સે થતો ને કોઈવાર મારતો પણ ખરો. યોગીબાપાએ જ્યારે બાવીસમી વખત પણ એ જ સંદેશો કહેવા પ્રભુદાસભાઈને મોકલ્યા ત્યારે પ્રભુદાસભાઈએ અંતરમાં ખૂબ ભજન કરીને બળ માંગ્યું. તેઓ સાથી પાસે ગયા અને વિનમ્રતાથી એ જ સંદેશો આપ્યો.
+</p>
+<p>
+બાપાના સંકલ્પે સાથી ઓગળી ગયો હોય એમ બોલી ઊઠ્યો, ‘આમાં તારો કે મારો કોઈ વાંક નથી પણ મંદિરમાં બેઠેલા પેલા ડોહલાએ (યોગીબાપાએ) આ લીલા આદરી છે. ધન્ય છે તને !’ એટલું કહીને તેણે પ્રભુદાસભાઈની માફી માંગી.
+</p>
+<p>
+ગુરુની પ્રત્યેક આજ્ઞામાં દેહ રમતો રહે અને એમના પ્રત્યેક વિચાર અનુસાર જ મન વિહાર કરતું રહે એનું નામ સરળતા. પ્રભુદાસભાઈએ એવી મન-બુદ્ધિ પરની સરળતાનું દર્શન કરાવીને યોગીબાપાની અંતરની પ્રસન્નતા પ્રાપ્ત કરી.
+<p>
+
+    <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

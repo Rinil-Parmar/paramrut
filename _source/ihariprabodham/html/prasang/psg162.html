@@ -1,0 +1,89 @@
+<html><head><title>Swaroopyog</title> <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+<TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        મારામાં કેટલું પરિવર્તન થયું હશે.
+        
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+ 
+ સ્વામીજી લંડનમાં વિરાજમાન હતા. ઈન્ડિયાથી આવેલ એવીએમનો રીપોર્ટ સ્વામીજીએ વાંચ્યો. તેમાં એવું લખ્યું હતું કે બાળકો વેકેશનમાં ઘરે ગયા ત્યારે ઘણાં બધાં બાળકો મમ્મી-પપ્પાને પગે લાગતાં થયાં છે. ઘણાં બધાં બાળકોએ ટી.વી. જોવાનું બંધ કર્યું. બાળકોમાં ખૂબ જ પરિવર્તન આવ્યું છે. એ વાંચી ખૂબ જ પ્રસન્નતા બતાવી. ચાર વખત આંખમાં આંસુ આવી ગયા. સ્વામીજી વિચારોમાં જતાં રહ્યા. પછી કહે, 'એક બે અઠવાડિયાના પ્રેમથી બાળકોમાં આટલું પરિવર્તન આવ્યું. મને યોગીજી મહારાજે ૧૧ વર્ષ પ્રેમ કર્યો. મારામાં કેટલું પરિવર્તન થયું હશે.'
+<br/> <br/> 
+ જેના યોગમાં આવવાથી લાખો લોકોનું પરિવર્તન થયું છે. છતાંપણ પોતાની જાતને આટલી નીચે મૂકી દેતા વાર નથી લાગતી એ સ્વામીજીનું દાસત્વ છે.
+ 
+ 
+	
+                         <div class="chend">
+                             *****
+                         </div>
+                         </div>
+                         </div>
+</div></body></html>

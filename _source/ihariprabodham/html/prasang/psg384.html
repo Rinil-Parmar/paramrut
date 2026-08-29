@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+પ્રસંગ યોજી અનંત રીતે રક્ષા તું કરનારો
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+મૂળ અક્ષરમૂર્તિ સદ્. ગુણાતીતાનંદસ્વામીએ કહ્યું છે, ‘ભગવાન પોતાના ભક્તની રક્ષા કરવામાં જ બેઠા છે. તે કેની પેઠે, તો જેમ પાંપણ આંખની રક્ષા કરે છે ને હાથ કંઠની રક્ષા કરે છે ને માવતર છોકરાંની રક્ષા કરે છે ને રાજા પ્રજાની રક્ષામાં છે, તેમ જ ભગવાન આપણી રક્ષામાં છે.’ (પ્રકરણ ૧, વાત ૨૨)
+</p>
+<p>
+પ.ભ. રાજલભાઈ સુરતમાં રહેનાર ભગવાન શ્રી સ્વામિનારાયણના સત્સંગી હતા. સત્સંગી ભક્ત હસુમામાને ત્યાં રોજ સવારે વહેલા ઊઠીને મોટર ચાલુ કરીને પાણી ભરવું એ રાજલભાઈની સેવા. એક સવારે મોટરની સ્વીચ ચાલુ કરતાં હાથમાં જોરદાર કરન્ટ લાગ્યો. તેમણે મોટેથી બૂમો પાડી. એટલામાં ગુરુહરિ સ્વામીશ્રીનું સ્મરણ થઈ આવ્યું. આજુબાજુથી કોઈ મદદે આવે એ પહેલાં તો સ્વામીશ્રી દિવ્ય દેહે પધારી ગયા. સ્વામીશ્રીનાં દર્શન કરીને રાજલભાઈથી બોલાઈ જવાયું, ‘ઓ સ્વામિજી ! મને બચાવો.’
+</p>
+<p>
+તરત જ સ્વામીશ્રીએ હાથ છોડાવી દીધો. એકબાજુ દર્દ અને બીજી બાજુ દિવ્ય દર્શન થઈ રહ્યું હતું. દર્શન કરવામાં પળવાર દર્દ ભૂલાઈ ગયું અને તેઓ સ્વસ્થ થાય એટલી વારમાં તો સ્વામીશ્રી અદૃશ્ય થઈ ગયા.
+</p>
+<p>
+કરન્ટ એવો લાગ્યો હતો કે એમનો હાથ લાકડા જેવો કડક થઈ ગયો. તાત્કાલિક નજીકના ડૉક્ટર પાસે લઈ ગયા. ડૉક્ટરે તપાસીને કહ્યું કે હાથના લોહી પર અસર થઈ છે અને બધી નસો પણ ખેંચાઈ ગઈ છે.
+</p>
+<p>
+ખાસ પ્રકારનું ઈજેક્શન તાત્કાલિક મંગાવવામાં આવ્યું. જો સમયસર સારવાર ન થાય તો કાયમ માટે હાથ કડક જ રહે એમ હતું. એટલી વારમાં તો હસુમામા મહાપૂજાનું જળ લઈ આવ્યા. રાજલભાઈના હાથ પર એ જળથી મસાજ કરીને ધૂન કરવા લાગ્યા. એ વખતે રાજલભાઈને દર્શન થયા કે સ્વામીશ્રી જ એમના હાથે મસાજ કરી રહ્યા છે અને મંદ મંદ સ્મિત કરી રહ્યા છે ! ગુરુહરિ સ્વામીશ્રીના એ દિવ્ય સ્પર્શથી થોડા જ સમયમાં એમનો હાથ સારો થઈ ગયો. 
+</p>
+<p>
+
+હે ગુરુહરિ સ્વામીશ્રી ! અમે આપને સંભારીએ કે ના સંભારીએ તો પણ આપ અમારી રક્ષા પળે પળ કરી  રહ્યા છો. પ્રતિકૂળ સંજોગોમાં તો કદાચ અમે આપને સંભારીએ છીએ. પરંતુ સાનુકૂળ સંજોગોમાં ભૂલી જઈએ છીએ કે આપ જ સર્વે સરસ કરી રહ્યા છો. તો હે સ્વામીશ્રી ! આપ અમને એવો બુદ્ધિયોગ પ્રદાન કરો, જેના ફળસ્વરૂપે અમે આપને ભૂલીને ક્યારેય કોઈ ક્રિયા ના કરીએ.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

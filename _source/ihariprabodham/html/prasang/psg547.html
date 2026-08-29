@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      મળ્યા પ્રત્યક્ષ ભગવાન
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_547">
+      તા. ૦૦-૦૨-૨૦૨૨, હરિધામ<br/>
+      <p>ફેબ્રુઆરી-૨૦૨૨. રાત્રિનાં ૮:૦૦ વાગ્યાનો સમય હતો. ગુરુહરિ પ્રબોધસ્વામીજી યોગીઆશ્રમ રસોડેથી થાળ કરીને અનિર્દેશ તરફ જઈ રહ્યા હતા. રસોડાની બહાર નીકળ્યા બાદ પ્રબોધસ્વામીજીએ કીર્તનની કંડિકા ગાવાની શરૂઆત કરી :</p><p>બળિયા પાસે રાંક બનીને, રાજી કરી લઉં એને,</p><p>સાક્ષાત્કાર મહિમાનો કરાવી નિર્દોષ બુદ્ધિ દે છે (૨)</p><p>એની પાસે મૂકી દઉં ઠરાવ, દિવ્ય છે જે જે બને તે બનાવ,</p><p>મૂકાવી દે મૂંઝવતા સ્વભાવ (૨) મળ્યા પ્રત્યક્ષ ભગવાન.</p><p>પ્રબોધસ્વામીજીની કીર્તન ગાતા હોય ત્યારે હાથની એક્શનની એક આગવી રીત છે. પછી બીજી કંડિકા ગાઈ:</p><p>પૂર્ણ મળ્યા છે તેનો આનંદ, પૂર્ણ કરીને મૂકશે,</p><p>પ્રારબ્ધની શુદ્ધિ કરવામાં ક્યારેક જરી મૂંઝવશે (૨)</p><p>ત્યારે હારું નહીં હું હામ, માનું રાજી થયા છે ઘનશ્યામ,</p><p>સાધનમાં લઉં તારું નામ (૨), મળ્યા પ્રત્યક્ષ ભગવાન...</p><p>શબ્દોનાં તાલની સાથોસાથ તેજીલી આંખો કરુણામય અમીથી શોભી રહી હતી.</p><p>બીજા ઉપાયો મૂકી દઈને, એક તુજને સંભારું,</p><p>ચોવીસ કલાકની એક પળ પણ, ના તુજને વિસારું રે (૨)</p><p>તેથી અખંડ રહું જાગ્રત, કે મન મારું બીજે ન થાય પ્રવર્ત,</p><p>કે રહેવું છે મૂરતિમાં રત (૨), મળ્યા પ્રત્યક્ષ ભગવાન...</p><p>અંબરીષ હોલથી આગળ પહોચ્યાં. કીર્તનની એક લાઈનમાં શબ્દ ગાવામાં ભૂલ પડતી હતી. સાથેના સંતે મોબાઈલમાંથી કીર્તન શોધીને સૂર પૂરાવ્યો.</p><p>કીર્તન પૂરું થયા પછી સાથેનાં સંતને કહ્યું, “આ કીર્તન લખી આપજે. આ ભજન મોંઢે હતું પણ ભૂલ પડી એટલે ફરી મોંઢે કરી દેવું છે. આપણાં ભજનોનાં શબ્દો પણ બળમાં અને આનંદમાં રહેવાય એવા છે. પ્રાર્થનાના શબ્દો કેટલાં સરસ છે! ફરી મોંઢે કરી દેવું છે.’’ એમ કહીને ફરીથી એ સંતને કીર્તન રાત્રે જ લખીને મોકલી આપવા કહ્યું.</p><p>એ સંતે કીર્તન મોકલી આપ્યું ત્યારે પ્રત્યુત્તરમાં કહ્યું હતું, “થેન્ક-યુ.”</p><p>હે પ્રબોધસ્વામીજી! કાતિલ અપમાન-ઉપેક્ષાની વણઝારની વચ્ચે પણ આપનું આ દર્શન અમ સહુનુંય આદર્શ બની રહે તેવી કૃપા વરસાવશોજી.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: પ્રભુનું બળ<br/>
+      ટેગ: નિષ્ઠા, સ્વરૂપનિષ્ઠા, કીર્તન, અપમાન, મોઢે કરવું<br/>
+      નંબર: ૪૪૮
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

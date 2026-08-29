@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સ્વામીજી આપણી સાથે જ છે. એવું માનીને જીવવું છે
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_953">
+      May 29, 2024, Jersey City, NJ<br/>
+      <p>ગુરુહરિ પ્રબોધસ્વામીજી શ્રી ઠાકોરજી સાથે અંબરીષ ભગત ગૌરાંગભાઈના ઘરે પધાર્યા. ગૌરાંગભાઈએ શ્રી ઠાકોરજી અને ગુરુહરિનું સ્વાગત અને પૂજન કર્યું. ત્યારબાદ ગૌરાંગભાઈએ પ્રાર્થના કરતા કહ્યું, “તમે મને અલગથી એક સૂત્ર લખીને આશીર્વાદરૂપે આપો જેથી હું એનું દરરોજ સવારે પૂજા કરતી વખતે દર્શન કરું. હું હરિપ્રસાદસ્વામીજીને એક જ વખત મળ્યો છું, એમને મને જે આશીર્વાદ આપ્યા હતા અને એ ગાલ પરનો ટચ હજુ પણ એકદમ યાદ છે.”</p><p>ગુરુહરિએ પૂછ્યું કે, “શું વાત કરી હતી?” ગૌરાંગભાઈએ કહ્યું, “ત્યારે પણ મારે વિઝાનો પ્રોબ્લેમ હતો અને સ્વામીજીએ આશીર્વાદ આપતા કહ્યું હતું કે ચિંતા ના કર બધું ગોઠવાઈ જશે. જ્યારે પણ મને નાની મોટી કોઈપણ તકલીફ આવે ત્યારે આ સ્વામીજીનું વાક્ય યાદ આવે અને બળ મળે. અને મહારાજે તો રમતા-રમતા અત્યાર સુધીની પ્રોસેસ પતાવી દીધી છે. હવે મારે એક સૂત્ર કે એક વાક્ય તમારા તરફથી પણ જોઈએ છે.”</p><p>ગુરુહરિ હસી પડ્યા અને કહ્યું, “સ્વામીજી આપણી સાથે જ છે. એવું માનીને જીવવું છે, બરાબર? એ સાથે હોય એટલે પછી કોઈ પ્રશ્ન રહે? આપણને સ્વામીજીએ ગ્રહણ કર્યા છે, અને અંબરીષ બનાવ્યા છે એટલે આપણી જોડે જ છે. એવી સમજણથી આપણે જીવવું છે. એની માટે ભજન કરવાનું કે આવું માનીને જીવાય. ભજન તો ગાઈએ છીએ આપણે ‘જોડે છો મહારાજ’ પણ એ માનીને જીવવું છે તો હવે બળ આપજો.”</p><p>પ્રભુ જ જો આપણી રક્ષામાં હોય તો ચિંતા શેની? પ્રભુ નિરંતર આપણી સાથે જ હોય, તો પછી અખંડ આનંદ જ હોયને? આવા વિશ્વાસ અને અનુભવમાં જવા માટે ગુરુહરિએ એક અનોખી કૂંચી આપી: પ્રભુને કાકલુદી ભરી પ્રાર્થના કર્યા કરવી કે આપ નિરંતર અમારી જોડે જ છો એવું આપ અમને અંતરથી મનાવી આપજો!</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: ભજન<br/>
+      ટેગ: ભજન, બળ, નિષ્ઠા, અક્ષર સૂઝ, સૂત્ર<br/>
+      નંબર: ૬૧૮
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

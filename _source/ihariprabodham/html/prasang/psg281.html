@@ -1,0 +1,134 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+કેવળ ગુણગ્રાહી દૃષ્ટિ
+</div>
+
+<p>
+ભગવાન શ્રી સ્વામિનારાયણ અને ગુરુહરિ સ્વામીજી પોતાના સંકલ્પે અત્યંત અલ્પસમયમાં ધરતીમાત્રના દરેક મુમુક્ષુ જીવને બ્રહ્મરૂપ કરવાની સામર્થી ધરાવે છે; છતાં પણ તેઓ પળેપળ સાધક અવસ્થાએ વર્તીને આપણને ગુણગ્રાહી દૃષ્ટિ રાખતા અને દરેકના ગુણ ગાતાં શીખવાડે છે!
+</p>
+<p>
+એકવખત ગુરુહરિ વિચરણમાં પધરામણી કરી રહ્યા હતા તે સમયે એક ડુક્કર ત્યાંથી પસાર થયું. જરત જ ગુરુહરિએ સાથેના સેવકને કહ્યું કે ‘જો, કેવું નીચું નમીને જાય છે!, એની જરા સરખી પણ નજર બીજા તરફ નથી, એમ આપણે પણ નિરંતર નમતાં શીખવું.’
+</p>
+<p>
+ગુરુહરિનો આ પ્રસંગ જણાય તો સામાન્ય; પરંતુ દાસત્વનું ગૂઢતમ રહસ્ય આપી જાય છે!
+</p>
+<p>
+એક બીજા પ્રસંગમાં પણ ગુરુહરિની કેવળ ગુણગ્રાહી દૃષ્ટિ આપણને અદ્‌ભુત સૂઝ આપી જાય છે. 
+</p>
+<p>
+એક ભગત કોઈ બીજી સંસ્થામાં જઈને આવ્યા હતા. તેમણે ગુરુહરિ આગળ ખુલ્લા દિલથી તે સંસ્થાની જે કોઈ બાબત પોતાને નહોતી ગમી એ બધી રજૂ કરી. 
+ગુરુહરિએ તેમને સૂઝ આપવા એ સંસ્થાની એવી ઘણી બધી પોઝીટીવ વાતો ભગતને કહી અને સાથે સાથે એ સંસ્થા માટે કોઈ નેગેટીવ ભાવ કાયમ હૃદયને વિષે સ્થિર ન થઈ જાય તે માટે કહ્યું કે ‘તમે બીજી સંસ્થાની વાત કરી અને મેં સાંભળી તો આપણે બન્નેએ હવે ભગવાન સ્વામિનારાયણ અને  યોગીજીમહારાજ આગળ પ્રાયશ્ર્ચિત સ્વરૂપે ભજન-પ્રાર્થના કરીને માફી માંગવી પડે.’ એમ કહીને એ ભગતને પોતાની રૂમમાં બેસાડીને ગુરુહરિએ તેમની સાથે રાત્રે એક વાગ્યા પછી 30 મિનિટ ભજન કર્યુ અને કાયમ માટે તે ભગતને દરેક વ્યક્તિ, પદાર્થ કે પ્રસંગ  તેમાંથી કેવળ ગુણ જ લેવાની દૃષ્ટિ  અને વિચાર બક્ષિસ આપ્યા!
+</p>
+<p>
+આવા પ્રસંગોનું આપણે પણ  મનન-ચિંતન કરીએ તો આપણને ખબર પડે કે  આપણા જીવનમાં જાણે-અજાણે આપણે કેટલી નેગેટીવીટી ભેગી કરતા હોઈએ છીએ, જેને લઈને કોઈનો ગુણ હૃદયને વિષે સ્થિર થઈ શકતો નથી.
+ </p>
+<p>
+તો આપણે ગુરુહરિના ચરણોમાં આજીજી કરીએ કે આપણાં મન-બુદ્ધિને એટલાં નિર્મળ બનાવે કે દરેકમાંથી કેવળ અને કેવળ ગુણ જ દેખાય તેવી ગુણગ્રાહી દૃષ્ટિ અને કેવળ ગુણ ગાવાની વાણી આપણને બક્ષિસ આપે!
+</div>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

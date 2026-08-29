@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      હરિ સ્મૃતિ
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_598">
+      તા. ૩-૨-૨૦૨૫ ના રોજ સાંજે ગુરુહરિ પામોલ પધારતા હતા. રસ્તામાં ગાડીમાં ગુરુહરિએ વાત કરતાં કહ્યું, “અહીંના બધા ગામડામાં સ્વામીજી બહુ આવ્યા.”<br/>
+      <p>થોડે આગળ ગાડી ગઈ ત્યારે ગુરુહરિ કહે,“શ્રીજીચરણસ્વામીના મોસાળમાં સ્વામીજી ખેતરના રસ્તે ચાલીને જતા ને શેરડી ગ્રહણ કરતા.”</p><p>પામોલ પહોંચતા સુધી ગુરુહરિ સ્વામીશ્રીની ઘણી સ્મૃતિઓનું દર્શન કરાવ્યું.</p><p>તા. ૧-૩-૨૦૨૫ ના રોજ રાત્રે  મોઢલા, છોટાઉદેપુરથી સભા પૂર્ણ કરીને રાત્રે ૧૦:૩૦ વાગ્યે - આત્મીય વિદ્યામંદિર પધારવા નીકળતા હતા.</p><p>મુખ્ય રસ્તા પર ગાડી આવતા ગુરુહરિએ સારથિભાઈને “કરીએ સ્મૃતિના ગાન” વગાડવાનું કહ્યું. આત્મીય વિદ્યાધામ આવતા સુધી ગુરુહરિએ પણ ઓડિયોની સાથે ગાન કર્યું.</p><p>ગઢડા મધ્ય ૧૩ માં કહ્યું છે જે, “…અને આ જે હું ઉપર થકી કોઈક પદાર્થને વખાણું છું ને કોઈક પદાર્થને કુવખાણું છું તે તો જાણી-જાણીને કરું છું. અને જે જે પદાર્થને વિષે ઇન્દ્રિયોની વૃત્તિને બળાત્કારે જોડું છું તે માંડ માંડ તે પદાર્થ સન્મુખ રહે છે અને જ્યારે ઢીલી મેલું છું ત્યારે તરત પાછી વળી આવે છે. જેમ આકાશને વિષે પથરો ફગાવીએ તે જ્યાં સુધી હાથને જોરે કરીને ઠેલાય ત્યાં સુધી જ આકાશને વિષે રહે ને પછી પાછો પૃથ્વીને વિષે આવીને પડે છે; અને જેમ પૂંછલેલ ઢોર હોય તેને માણસ બળાત્કારે કરીને જ્યાં સુધી ઊંચું ઝાલી રાખે ત્યાં સુધી રહે ને જ્યારે મૂકી દે ત્યારે ધબ લઈને પડી જાય; અને જેમ કોઈક પુરુષ સૂઝે એટલો બળિયો હોય ને દાંતે કરીને આખી સોપારી ભાંગી નાંખતો હોય અને તે પુરુષને દસ-વીસ કાગદી લીંબુ ચુસાવ્યાં હોય પછી તે શેકેલા ચણા પણ માંડ માંડ ચાવે; તેમ વિષય સન્મુખ બળાત્કારે વૃત્તિને જોડીએ છીએ તો માંડ માંડ જોડાય છે.”</p><p>જેના હૃદયમાં હરિ ને જેનું હૃદય પણ હરિ એવા ગુરુહરિમાં આપણે સહુ નિત્ય ડૂબેલા રહીએ એવી એમના શ્રીચરણોમાં પ્રાર્થના!!</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: બ્રહ્મવિદ્યા<br/>
+      ટેગ: સ્વરૂપનિષ્ઠા, ગઢડા મધ્ય ૧૩<br/>
+      નંબર: ૩૭૩
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

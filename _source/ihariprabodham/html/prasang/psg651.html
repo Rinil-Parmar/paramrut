@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સેવકભાવ
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_651">
+      તા. ૫ ફેબ્રુઆરી, ૨૦૨૫<br/>
+      <p>આજે ગુરુહરિ અમદાવાદ થી બેંગ્લોર વિમાન દ્વારા ૭:૩૫ વાગ્યે પધાર્યા. ત્યારબાદ થાળ કરી ૧૧:૦૦ વાગ્યે ઉતારે પહોંચ્યા. યુવકોને આનંદ કરાવી વોકિંગ કર્યું અને નિજ રૂમ માં પધાર્યા. આજે ટ્રાવેલિંગે ઘણું થયું હતું.</p><p>ઉતારે સેવામાં આશિષભાઇ અને મેહુલભાઈ હતા. ગુરુહરિની રૂમમાં ભક્તોએ Portable ACની વ્યવસ્થા કરી હતી. એ AC જ્યારે ચાલુ હતું ત્યારે એમાંથી પાણીના ટીપા પડ્યા હતા જેના કારણે Floor ભીનો થયો હતો. ગુરુહરિની ત્યાં નજર પડી. એમને ખબર હતી કે અંતેવાસી સેવક વિજયભાઈ એ જ રૂમમાં પથારીમાં નીચે સુવાના છે.</p><p>ગુરુહરિ તરત જ રસોડામાં જઈને પોતું શોધવા લાગ્યા અને જેવી એમની નજર પોતા પર પડી અને પોતું લેવા ગયા એ જ સમયે મેહુલભાઈએ આશિષભાઇને ઈશારો કરીને પોતું લઇ લેવાનું કીધું.</p><p>આશિષભાઇએ પોતુ પોતાના હાથમાં લીધું કે તરત જ ગુરુહરિએ સ્મૃતિ આપતા કહ્યું કે તમે પોતું લઇ તો લીધું પણ તમને ખબર છે કે પોતું ક્યાં કરવાનું છે?</p><p>ત્યાં હાજર મેહુલભાઈને યાદ આવી ગયું કે નક્કી ગુરુહરિ એમની રૂમમાં Portable AC ના કારણે પાણી  ફ્લોર પર પડ્યું છે અને વિજયભાઈને નીચે સુવામાં તકલીફ ના પડે એના માટે પોતું કરવા માંગે છે. મેહુલભાઈએ કહ્યું, હા.</p><p>આશિષભાઇ ગુરુહરિની રૂમમાં પોતું કરવા ગયા ત્યારે પોતું કઈ રીતે કરવું ને ક્યાં કરવું એની સૂઝ ગુરુહરિએ પ્રેમથી એમને આપી. વિજયભાઈને સુવામાં તકલીફ ના પડે એવી સાફસૂફી કરાવી.</p><p>હજારો ભક્તોના ગુરુપદે હોવા છતાં ભક્તોની કે અંતેવાસી સેવકોની સેવા કરવાનો એક પણ મોકો ગુરુહરિ જવા દેતા નથી. ગુરુહરિ કોઈ સેવકને કહીને પણ પોતુ કરાવી શકત પરંતુ પોતે જ પોતુ કરવાની રુચિ બતાવીને નિરપેક્ષભાવે સેવા, અનુપમ દાસત્વ અને પરાભક્તિનું દર્શન કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: દાસના દાસ, સેવકભાવ, પરાભક્તિ<br/>
+      ટેગ: <br/>
+      નંબર: ૨૩૦
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

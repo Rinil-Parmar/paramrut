@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીતની રુચિ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+મહારાજે સત્સંગના વિકાસને અર્થે વિચરણ કરવા માટે ૬૦-૬૦ સંતોનાં મંડળ બાંધી આપ્યા હતા. દરેક મંડળમાં એક વડીલ સંતની નિમણૂક કરી હતી. વડતાલની ધરતી પર ભગવાન સ્વામિનારાયણે ગુણાતીતાનંદસ્વામીને પૂછયું, ‘હમણાં તમે કૃપાનંદસ્વામીની જોડમાં જઈને આવ્યા?’ ગુણાતીત કહે, ‘હા મહારાજ !’
+</p><p>
+મહારાજે ગુણાતીતાનંદસ્વામીને પૂછયું, ‘હવે તમને કોની જોડમાં મૂકીએ ? બ્રહ્માનંદસ્વામીની જોડમાં મૂકીએ ?’ ત્યારે ત્યાગ-વૈરાગ્યના આગ્રહી ગુણાતીતાનંદસ્વામી ધીમે રહીને કહે, ‘મહારાજ ! એ તો રાજાધિરાજ છે, જ્યાં બ્રહ્માનંદસ્વામી હોય ત્યાં દૂધપાક જ હોય ને મિષ્ટાન્નના ઢગલા હોય. મારી ઇચ્છા છે કે જ્યાં ત્યાગ-વૈરાગ્યનું પોષણ થાય એવા મંડળમાં મને મૂકો તો ?’
+</p><p>
+મહારાજ જ જેનું જીવન હતા. મહારાજની આંખ ફરકે અને ગુણાતીતનો દેહ ફરકે એવા અનુપમ સંબંધે જીવનાર ગુણાતીત, મહારાજ આજ્ઞા કરે એટલે જાય જ; પણ પોતાની રુચિ દેખાડી દીધી.
+</p><p>
+બ્રહ્માનંદસ્વામી તો કેવા યતિ જેવા સાધુ કહેવાય છતાં ગુણાતીતાનંદસ્વામી કહે, ‘મહારાજ ! એ તો રાજદરબારી સાધુ.’ ગુણાતીતાનંદસ્વામી ત્યાગ-વૈરાગ્યનું સ્વરૂપ કહેવાય, વિવેકનું સ્વરૂપ કહેવાય, હંમેશાં પોતાની સાધુતા સાચવે.
+</p><p>
+ગુણાતીતાનંદસ્વામીની રુચિ જોઈને ભગવાન સ્વામિનારાયણ રાજી થઈ ગયા. પછી ભગવાન સ્વામિનારાયણ કહે, ‘તમારી રુચિ જોતાં એવું લાગે છે કે, તમે નિષ્કુળાનંદસ્વામી, કૃપાનંદસ્વામી અગર મુક્તાનંદસ્વામીની સાથે જ જવાનું પસંદ કરશો.’ પછી મહારાજે કહ્યું, ‘કૃપાનંદસ્વામીની જોડમાં ફરી જાવ.’
+</p><p>
+ફરી બે મહિના બાદ ગઢડામાં જોડ બદલાતી હતી. ગુણાતીતાનંદસ્વામીને મહારાજે પૂછયું, ‘સ્વામી, હવે કઈ જોડમાં જશો ? સચ્ચિદાનંદસ્વામીની જોડમાં રાખું કે આત્માનંદસ્વામીની ?’ ગુણાતીત બોલ્યા જ નહીં મહારાજ કહે, ‘કેમ તમારી ઇચ્છા ઓછી છે ?’ તો કહે, ‘હા, આત્માનંદસ્વામી આત્માની જ વાત કરે, આત્મા સત્ય છે, નિર્દોષ છે, પવિત્ર છે; પણ પ્રભુની વાત જ ન આવે, એટલે ન ગમે. અને સચ્ચિદાનંદસ્વામી પ્રેમની જ વાતો કરે, એમાં સાચા બ્રહ્મનો ખ્યાલ ના આવે, એટલે ન ગમે.’ ભગવાન સ્વામિનારાયણ હસી પડ્યા. પછી કહે, ‘કૃપાનંદસ્વામીની જોડ માં ફરી જાવ.’ કૃપાનંદસ્વામીની  ત્રણે ત્રણ વસ્તુ ખૂબ પાકી હતી. સમજણ, સ્વરૂપનિષ્ઠા, ત્યાગ-વૈરાગ્ય અને શિક્ષાપત્રી પ્રમાણેનું વર્તન. ગુણાતીતાનંદસ્વામી ત્રણેય વખત એમની જ જોડ પસંદ કરી અને મહારાજને પ્રાર્થના કરતાં કહે, ‘એવા સંતના યોગમાં મને મૂકો જ્યાં મારું ઘડતર જલદી થાય તો મને એમાં બહુ આનંદ થાય ને તમારી મૂર્તિનું સુખ આવે.’
+</p><p>
+ગુણાતીતાનંદસ્વામી એવા સાધુ ધરતી પર આવ્યા, જે પંપાળે, હેત કરે, જમાડે એના સંગમાં ન રહે; પણ જે ટોકે, વઢે, ધગે, એના જ સંગમાં રહે. એમણે વચ. ગ.મ.-૩૭ પહેલેથી જ આપણને શિખવાડેલું.
+</p>
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

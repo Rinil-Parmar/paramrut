@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+'સર્વસ્વ હરિનું સંત છે, હરિ સંત માંહી'
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+સર્વસ્વ હરિનું સંત છે, હરિ સંત માંહી
+</p> <p>
+આ પંક્તિ પ્રમાણેની દિવ્ય અનુભૂતિનું દર્શન કરીએ.
+</p> <p>
+કાળીડોળીમાં નિર્માણ થઈ રહેલા પ્રાર્થના હોલના કન્સ્ટ્રક્સન  ડિપાર્ટમેન્ટમાં પર્વતભાઇ અંબરીશ ભક્તરાજ પંકજભાઈની મિત્રતાના દાવે સેવા કરે છે. ગુરુહરિ સ્વામીશ્રી જ્યારે કાચની ગાડીમાં હરિધામ પરિસરમાં દર્શન આપવા પધારતા હતા ત્યારે પર્વતભાઈએ એકવાર સ્વામીશ્રીના દર્શન કર્યા હતા. 
+</p> <p>
+સ્વામીશ્રી સ્વધામ પધાર્યા પછી તા. ૧૦-૧૦-૨૦૨૧, રવિવારે રાત્રે ૩:૩૦ વાગ્યે પર્વતભાઈને સ્વામીશ્રી દિવ્ય દેહે દર્શન આપ્યાં  ને જમણા હાથની અંગૂઠાથી પેહલી અને  બીજી આંગળી પકડી ખેચી. પર્વતભાઈને એમ કે કોઇ ઉંદર કે બિલાડી હશે એટલે તેઓ હટ કરીને ભગાડતા. એવું કરતા કરતા સ્વામીશ્રીએ છ વાર ખેંચીને જગાડ્યા ત્યારે જાગ્યા. આંખ ઉઘાડીને જોયું તો સ્વામીશ્રી બિરાજમાન હતા.
+</p> <p>  
+પછી સ્વામીશ્રી કહે કે  ચિંતા નહીં કરવાની...  આ વાર્તાલાપ દરમ્યાન તેઓએ સ્વામીશ્રીની પાછળ ઉભેલા એક સંતના દર્શન કર્યા. તેઓ પગની આંટી મરીને એક હાથ બીજા હાથમાં પોરવીને ઉભા હતા. 
+</p> <p>
+સ્વામીશ્રી કહે કે  આ અમારા નાના દેખાય એવા સંત સાથે દોસ્તી કરી લેવાની... 
+</p> <p>
+તા. ૧૯-૧૧-૨૦૨૧, દેવદિવાળીના રોજ કાળીડોળી અન્નકુટનો ઉત્સવ હતો. ત્યારે પ.પૂ. પ્રબોધજીવન સ્વામીજી પધાર્યા હતા. પર્વતભાઈ તો પહેલી વખત જ પ્રત્યક્ષ રીતે પ્રબોધસ્વામીજીના દર્શન કર્યા. તે સમયે તેઓને સ્વામીશ્રીએ દિવ્ય દેહે દર્શન આપ્યા હતા તે યાદ આવ્યું.  પર્વતભાઈને ત્યાં જ ખાત્રી થઈ કે સ્વપ્નમાં જે પાછળ પગની આટી મારીને જે સંત ઊભા હતા એ આ જ પ્રબોધસ્વામીજી હતા. 
+</p> <p>
+પરવતભાઇ તો અહોભાવથી પ્રબોધસ્વામીના દર્શન કરીને ગળગળા થઈ ગયા !
+</p> <p>
+
+(વિષય : પ્રાગટ્ય છે હરિનું અહીં ) 
+</p> 
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

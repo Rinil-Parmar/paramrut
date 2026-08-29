@@ -1,0 +1,178 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+સંબંધ તમારો મળ્યો છે સહજમાં...
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+ઇ.સ.૧૯૬૨-૬૩ ના અરસામાં સ્વામીશ્રી યોગીજીમહારાજ મુંબઈના ભક્તરાજ ભવાનભાઇ રાજાભાઇની ‘રાજાવાડી’ ના પ્રાંગણમાં એક પારાયણ પ્રસંગે પધાર્યા. યોગીબાપાની સેવામાં યુવકો તરીકે પ્રભુદાસભાઈ, કિશોરભાઇ દવે તથા તેમના સાથી મિત્રો સાથે હતા. 
+ </p>
+
+<p>
+એક દિવસ સવારના સત્રમાં પારાયણના પ્રારંભ થવાને થોડો સમય બાકી હતો ત્યારે યોગીબાપા વહેલા વહેલા ઉતારેથી પારાયણ-સ્થાનમાં પધાર્યા ને પ્રભુદાસભાઇ તથા યુવકોને પોતાના આસનની ખૂબ જ નજીક બોલાવી સહુના મહિમાનું દર્શન કરાવતી એક વાત કરી.
+</p>
+
+<p>
+“આજે વહેલી સવારે મંગલ પ્રભાતે શાસ્ત્રીજીમહારાજે મને ખૂબ અદ્‌ભુત દર્શન કરાવ્યું ! તમે સહુ આજ રીતે મારા ઢોલિયાની બંને બાજુ મારી સામે બેઠા હતા. હું તમારાં દર્શન કરતો હતો ને તમારા એક એકના શરીરમાંથી જાણે કોટી કોટી સૂર્યનો પ્રકાશ નીકળી રહ્યો હોય એવાં ભવ્ય ને પ્રકાશિન સ્વરૂપ તમારા દરેકનાં હતાં ! હું તો તમારાં દર્શન કર્યા જ કરું... કર્યા જ કરું ! તમારાં દરેકનાં આવાં ભવ્ય દર્શન થયાં એના આનંદમાં ને આનંદમાં ઊંઘ પણ ઊડી ગઈ. બહુ બળ મળી ગયું. આ રીતે શાસ્ત્રીજીમહારાજે મને ન્યાલ કરી દીધો...!” 
+
+</p>
+
+<p>
+આપણા ઇષ્ટદેવ શ્રીજીમહારાજ અને ગુરુહરિ શાસ્ત્રીજીમહારાજના સંબંધનો કેવો અદ્‌ભુત  પ્રતાપ છે એ એક જ વિચાર કરી આપણે સહુએ નિરંતર આનંદમાં રહેવું ને બળમાં રેહવું.
+
+</p>
+
+<p>
+એમ કહી યોગીબાપાએ બધાનાં મસ્તક ખૂબ વહાલપૂર્વક પોતાના ખોળામાં ખેંચી લઇને પોતની લાક્ષણિક ઢબે સહુને ધબ્બા મારી આશીર્વાદ આપી દીધા.
+
+</p>
+
+<p>
+ગુરુહરિ સ્વામીશ્રી આ પ્રસંગ પર ગોષ્ઠિ કરતા ઘણીવાર કહે છે કે ચિદકાશના સ્વરૂપને જાગૃત-સ્વપ્ન –સુષુપ્ત અવસ્થા જ નથી. પરંતુ...
+
+</p>
+
+<p>
+
+બાપા આપણને એ દર્શન કરાવવા અને સમજાવવા માંગતા હતા કે –
+</p>
+
+<p>
+<ul>
+<li>સંબંધે હું તમને આવા દિવ્ય માનું છું !</li>
+<li>કોઇએ પોતાના દોષ- સ્વભાવમાં બેસી રહેવાની જરૂર નથી પણ સ્વાધ્યાય-ભજન કરીને સંબંધ વધારતા જાવ.</li>
+<li>તમે ખૂબ મોટા છો, તમે અરસપરસ મહિમાદષ્ટિ કેળવતા થાવ.</li>
+</ul>
+
+</p>
+
+<p>
+બાપાને જો સૌ પ્રકાશેયુક્ત દેખાતા હોય તો આપણે કોઇનાય દોષ-સ્વભાવ જોઇને ટીકા-ચર્ચા કે અભાવ-અવગુણમાં પડવાની જરૂર ખરી ?
+
+</p>
+
+<p>
+
+તમને એવી અદ્‌ભુત પ્રાપ્તિ થઈ છે અને તમે એવા પુરુષની ગોદમાં બેઠા છો કે તમારા મૂળ શરીરને  અક્ષરબ્રહ્મના શરીરને પ્રાપ્ત કરવાની આ ઉત્તમ તક છે. માટે ખૂબ જ શ્રદ્ધા અને વિશ્વાસથી ભજન કરજો. 
+</p>
+
+
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

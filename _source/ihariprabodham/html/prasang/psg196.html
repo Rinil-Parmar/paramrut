@@ -1,0 +1,181 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+દિવ્યતાના દાતા સહજાનંદ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+  
+<p>
+
+              મહારાજની 17 વર્ષની ઉંમર હતી. વિચરણના છેલ્લા દિવસોમાં નક્કી કર્યું હતું કે, હવે હિમાલય છોડી ભારતભરમાં વિચરણ કરીએ. જ્યાં જ્યાં તીર્થો હતાં, પ્રભુ ત્યાં રાત રહ્યા. આસામ બાજુથી હિમાલય ઊતરતા હતા ત્યાં એક સાધુને ચીંથરેહાલ રોગી અવસ્થામાં જોયો. પ્રભુ એની નજીક પહોંચી ગયા. એ સાધુને પોતાની દ્રષ્ટિ પર વિશ્વાસ ન આવતાં આંખ બરોબર સાફ કરીને પ્રભુ સામું જોયું.
+</p>
+ <p>
+
+           ગોપાળયોગીના કહેવાથી નીલકંઠે સાત લાખ યોગીઓને સાત લાખ સ્વરૂપે દર્શન દીધાં હતાં. એ દર્શનને યાદ કરીને સાધુ એ પૂછયું, 'તમે એ જ છો કે, જેણે મને દર્શન દીધાં હતાં ?' મહારાજ કહે, "હાં" એ સાધુ રડતા હૃદયે પ્રાર્થના કરતાં કહે, 'મહારાજ ! બહુ દુઃખી છું. દેહે કરીને રોગી છું, મને કરીને રોગી છું. ૫૦ વર્ષથી આ ધરતી પર કઠિન તપશ્ચર્યા કરી રહ્યો છું છતાંય કામ-ક્રોધની વરાળ શાંત થઇ નથી. જગત જોયું નથી. જગતને છોડીને હિમાલયની ગોદમાં આવી ગયો છું. સંસાર શું ચીજ છે એ આજે પણ ખબર નથી. એક ખબર છે,  હિમાલયની ગોદમાં ક્યાંક શાંતિ છે. પણ ક્યાં છે એની ખબર નથી. બસ શાંતિ માટે અહીં આવ્યો છું.'
+</p>
+ <p>
+
+              પ્રભુ એક ફળમાંથી થોડું જમ્યા અને પ્રસાદીનું એંઠું ફળ એને આપ્યું. 
+</p>
+ <p>
+
+              મહારાજ કહે, "તને મારુ એંઠું ફળ ફાવશે ?" એની આંખમાં  આંસુ આવી ગયાં. પ્રભુએ પૂછ્યું, "કેમ રડે છે ?" 'મહારાજ ! ભગવાન જે ફળને ગ્રહણ કરે એ ઝાડનું પણ મોટું પુણ્ય ઉદય થઇ જાય. <br/>
+
+             - જે પ્રભુનો પ્રસાદ જમે એ નિ:સ્વાદી થાય. <br/>
+             - જે પ્રભુના દર્શન કરે એ નિષ્કામી થાય. <br/>
+             - જે પ્રભુની ચરણરજમાં આળોટે એ નિષ્ક્રોધી થાય.<br/>
+    તમ જેવા સનાતન દિવ્ય પુરુષની ગોદમાં જયારે બેઠો છું તો હવે મારે શું બાકી રહ્યું ? પૂરું થઇ ગયું.'
+</p>
+ <p>
+
+            પછી એ સાધુ ચરણરજમાં આળોટયા. નારાયણ બેસી રહ્યા હતા. એ મહિમાથી આળોટે. કોઈએ કહેલું નહિ, સાંભળેલુંય નહિ પણ અંતરમાં જ ભક્તિ ઉદય થઇ હતી. થાકેલો માણસ હતો. પ્રભુનાં દર્શનની ઇચ્છાવાળી એ વ્યક્તિ હતી. જેની શોધ માટે મંડ્યો હતો, એ પુરુષ એની પાસે હતા; એને કેટલો બધો આનંદ થઇ જાય !
+</p>
+ <p>
+
+            ભગવાનની આંખમાં આંસુ આવી ગયા. એક વાર એ સાધુની આંખમાં આંસુ હતાં દર્દનાં, હવે ભગવાનની આંખમાં આંસુ હતાં હર્ષના. એટલે પ્રભુની આંખમાં આંસુ જોઈને તરત જ એ સાધુએ પૂછ્યું,  'પ્રભુ ! તમારી આંખમાં આંસુ કેમ ? '  "બસ, તારા જેવા ભગતનાં દર્શન ક્યાંથી. જે સમજણ તારામાં સિદ્ધ કરાવવાની હતી, તે ભગવાને પ્રગટાવી દીધી."
+</p>
+ <p>
+
+              પછી પ્રભુએ દ્રષ્ટિ કરી. પછી એના શરીરમાંથી એક રાક્ષસ નીકળ્યો. પેલો જુએ. પ્રભુએ પૂછ્યું, "તને ખબર પડી તારા શરીરમાંથી આ કોણ જાય છે ? તારા આત્મા પર આ ક્રોધરૂપી રાક્ષસ અનંત જન્મોથી ચોંટેલો હતો એ હવે નીકળી ગયો."
+</p>
+ <p>
+
+             પછી વારાફરતી એવા કદરૂપા રાક્ષસોની જાણે વણઝાર નીકળી. મહારાજ એને કહેતા જાય કે, "જુઓ કામ, લોભ, મોહ નીકળી રહ્યા છે. હવે તને પ્રભુની સહજ સ્મૃતિ રહેશે."
+</p>
+ <p>
+
+             મુક્તાનંદસ્વામીને ગઢડાની ધરતી પર જયારે નારાયણે આ પ્રસાદીની વાત કરી ત્યારે મુક્તાનંદસ્વામીએ પ્રશ્ન પૂછયો, 'એણે એવું શું સાધન કર્યું કે, એ સેવકના આત્મા પરથી કામ-ક્રોધ-લોભ-મોહ કાઢી નાંખ્યાં ?'
+</p>
+ <p>
+
+            ત્યારે પ્રભુ એટલું જ બોલ્યા, "મારો પ્રસાદ એણે મહિમાથી ખાધો. મારા ચરણોમાં એ મહિમાથી આળોટ્યો. એનામાં મારાં ગમે તેવાં ચરિત્રો સહજ ગમે એવી સમજણ હતી. ચરણરજમાં અળોટવાથી માન નીકળી ગયું. વાર જ ન લાગી. છાતી હલકીફૂલ થઇ ગઈ." મહારાજે છેલ્લે એટલું જ કહ્યું, "હે મુક્તાનંદસ્વામી, નિર્દોષબુદ્ધિ જેવી કોઈ સેવા નહિ."
+</p>
+ <p>
+
+            હિમાલયના વૃદ્ધ સાધુ પાસેથી પ્રભુ જયારે ઉભા થઈને જતા હતા ત્યારે એણે પ્રાર્થના કરી, 'હે મહારાજ ! તમારા સંબંધમાં અખંડ ટકી રહેવાય એવા આશીર્વાદ આપજો.' ત્યારે મહારાજ કહે, "એ માટે તો સમાગમ કરવો પડે."
+</p>
+ <p>
+
+         પ્રભુ આપણને આ રહસ્ય સમજાવવા માગે છે કે, :-  <br/>
+               - સંબંધ એટલે પ્રભુની સન્મુખ રહેવું, <br/>
+               - સંબંધ એટલે પ્રભુને સ્વીકારવા, <br/>
+               - સંબંધ એટલે પ્રભુને યથાર્થ ઓળખવા અને વ્યાપક સ્વરૂપે જોવા. <br/>
+               > આવા દિવ્ય સંબંધમાં જવા માટે સમાગમ અનિવાર્ય છે.
+
+</p>
+ 
+
+
+
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભગવદીની અનિવાર્યતા
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+પ્રેમાનંદ સ્વામીએ 'વંદુ સહજાનંદ' સ્વરૂપે અષ્ટક બનાવેલું, મહારાજ એટલા બધા રાજી થઇ ગયા હતા.
+</p><p>
+ભગવાનમાં એટલા બધા ડુબેલા કે મહારાજના કાનમાં કેટલા તલ છે અને બરડામાં કેટલા તલ છે ? એટલું સરસ વર્ણન કરેલું કે બધાને સ્પર્શે.
+</p><p>
+એમણે જયારે ગાઈ લીધું ત્યારે મહારાજ એટલા બધા રાજી થઈને કહે, આવો પ્રેમાનંદ સ્વામી આવો. આપણે આટલું જ કરવાનું છે.
+</p><p>
+ગુણાતીતાનંદ સ્વામી ખૂણામાં બેઠેલા હતા. પ્રેમાનંદ સ્વામી એ જઈને ગુણાતીતાનંદ સ્વામીને કીધું મહારાજ બધાને સંગીત શીખવાડે છે પણ તમને કેમ નથી શીખવાડતા ?
+</p><p>
+કારણ કે ગુણાતીતાનંદ સ્વામીને ૩૦૦ કીર્તન મોઢે હતા.
+</p><p>
+પ્રેમાનંદ સ્વામીને એમ કે હું ગુણાતીતાનંદ સ્વામીને સંગીત શીખવાનું કહું તો મારી જેમ એમને પણ મહારાજના આશીર્વાદ મળે. 
+</p><p>
+
+પ્રેમાનંદ સ્વામીની વાત સાંભળીને ગુણાતીતાનંદ સ્વામીની આંખમાં આંસુ આવી ગયા.
+</p><p>
+ પ્રેમાનંદ સ્વામી એકદમ સૂન મારી ગયા, ડરી ગયા, મારાથી કોઈ ભૂલ થઇ ગઈ ? પછી એમને પૂછયું કે સ્વામી શું થઇ ગયું ?
+</p><p>
+ગુણાતીતાનંદ સ્વામીએ કીધું, આપણા થી મહારાજ આગળ ડહાપણ ના થાય ? આંખનો મટકો ભરે એટલી વાર માટે પણ અમે મહારાજનું અણગમતું કર્યું નથી ભગવાનનો અભિપ્રાય તોડયો નથી.
+</p><p>
+પ્રેમાનંદ સ્વામી સુન મારી ગયા, અમે તો આવું કોઈ દિવસ જીવ્યા જ નથી અમને તો આવી ખબર જ નથી. પ્રેમાનંદ સ્વામીને દર્દ થયું .આ તો મારો માર્ગ જ નથી. 
+</p><p>
+એક બાજુ મહારાજ કહે આવો આવો આપણે આટલું જ કરવાનું છે બીજી બાજુ ગુણાતીતાનંદ સ્વામી એ એવું દર્શન કરાવ્યું કે તમે કોઈક જુદા રસ્તે છો.
+</p><p>
+ભગવદીની અનિવાર્યતા, ગુણાતીત જેવા સાધુની અનિવાર્યતા. ભગવાનને આપણે કયા માર્ગે ચાલીએ છીએ તે ખબર હોય અને હું આને હમણા કહીશ તો આને ખબર પડવાની નથી પણ ભગવદી હોય તો આપણને સાચો રસ્તો દેખાડે, ભગવદી આપણું ધ્યેય સ્પષ્ટ કરાવે. કેટલા જન્મોનું અંતર કપાઇ જાય
+</p>
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

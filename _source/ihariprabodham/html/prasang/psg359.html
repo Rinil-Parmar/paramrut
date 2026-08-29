@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આપણે શું થવાનું છે ? - દાસના દાસ.
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+૦૯ ફેબ્રઆરી, ૨૦૧૮ ના રોજ ગુરુહરિ સ્વામીશ્રી બપોરે ૩:૧૫ વાગ્યે જ્ઞાનયજ્ઞ ડેરીએ ધૂનમાં પધાર્યા. એક સેવક ધૂન કરતા હતા. એ સેવક રોજની બે થી અઢી કલાક ધૂન કરે.  
+</p>
+<p>
+એ સેવકને સ્વામીશ્રીએ કહ્યું, ‘આપણે ખાલી સ્વામિનારાયણ સ્વામિનારાયણ ભજન નહીં કરવાનું.  અંતરમાં ‘હું સ્વામી તું નારાયણ’ ભાવ રાખી ભજન કરવાનું.  બહાર ભલે મોટેથી સ્વામિનારાયણ સ્વામિનારાયણ ભજન કરો પરંતુ મનમાં ‘હું સ્વામિ તું નારાયણ’ એ ભાવથી ભજન કરવાનું.
+</p>
+<p>
+પછી સ્વામીશ્રી ધૂનમાં બિરાજયા. સ્વામીશ્રીના દર્શન ને ધૂન માટે ઘણા સંતો અને સેવકો સામે બેઠેલા હતા. ધૂન પૂર્ણ થયા પછી સ્વામીશ્રીએ ગોષ્ઠિ કરતાં કહ્યું, 
+</p>
+<p>
+‘વર્ષોથી હું કહું છું કે આપણે બધાએ હુંહાટાથી સેવા નહીં કરવાની... હુંહાટા વગર બોલવાનું... હુંહાટા વગર ચાલવાનું... ડોળ, દંભ, દેખાવ એ ત્રણ શબ્દો જીવનમાં વધવા ના જોઈએ. તો આપણી જિંદગી સફળ થઈ જાય. જેમ જેમ દિવસો પસાર થતાં જાય તેમ તેમ ગરીબાઈ વધતી જાય. વિનમ્રતા વધતી જાય. ભક્તિ વધતી જાય. દાસત્વ વધતું જાય.
+</p>
+<p>
+આ બધા જ સ્વરૂપો - ભગતજીમહારાજ, જાગાસ્વામીજી, કૃષ્ણજી અદા, શાસ્ત્રીજીમહારજ, યોગીજીમહારાજ - દાસના દાસના દાસના દાસ થઈને વરત્યા છે. એમના દર્શન ભક્તિથી કરવાના. જોઈને જતું નહીં રહેવાનુ. 
+</p>
+<p>
+જેમ જેમ દાસત્વ વધતું જશે તેમ તેમ આનંદ વધતો જશે. સુખ શાંતિ આનંદ પ્રગટાવવાના છે. સત્‌ ચિત્‌ આનંદ પ્રગટાવવાના છે. એટલે પટલાઈ નહીં કરતાં. ઘરમાં નહીં. રૂમમાં નહીં. મંડળમાં પટલાઈ નહીં કરવાની.
+</p>
+<p>
+ભગવાન સ્વામિનારાયણે હિમાલયની ગોદમાં વન-વિચરણ વખતે સંતોની ખૂબ સેવા કરેલી. ગુણાતીતાનંદસ્વામી અને ગોપાળાનંદસ્વામીએ પણ મહારાજના વખતમાં ખૂબ દાસના દાસ થઈને સેવા કરેલી. તેઓ દાસના દાસ થયા પછી આપણને ખ્યાલ આવ્યો કે આપણે દાસત્વથી જીવવાનું છે.
+</p>
+<p>
+આપણે શું થવાનું છે ? - દાસના દાસ. પટલ થવાનું નથી... આપણે શા માટે ભજન કરીએ છીએ ? – દાસના દાસ થવા.’ 
+</p>
+<p>
+સ્વામીશ્રીએ સહુ ભક્તોને ઉદેશીને કહ્યું, ‘ઘરવાળા આગળ ગરમ નહીં થવાનું. મિઠાશથી વાત કરવાની. ભક્તિથી વાત કરવાની. પટલાઈથી વાત નહીં કરવાની. મંડળમાં પટલાઈથી વાત નહીં કરવાની. દીકરા-દીકરી ઉપર સમજાવવા ગરમ થવાય પણ માનના અભિનિવેશથી ગરમ નહીં થવાનું.’
+</p>
+<p>
+હે સ્વામીજી ! જેમ જેમ સત્સંગમાં સમય પસાર થાય તેમ તેમ અમારું દાસત્વ નિરંતર વધતું રહે, આપની સાથેનો સંબંધ વધતો રહે એવી કૃપા વરસાવશોજી.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

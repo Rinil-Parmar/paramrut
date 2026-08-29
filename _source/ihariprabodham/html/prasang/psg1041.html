@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      પછી મિટિંગ કરીશું…
+    </div>
+    <div class="vaat_ind" id="vaat_file_1041">
+      
+      <p>ભગવદ્ ગીતામાં ભગવાન શ્રીકૃષ્ણ ગુણાતીતપુરુષના લક્ષણ સમજાવતાં કહે છે,</p><p>સમદુ:ખસુખ: સ્વસ્થ: સમલોષ્ટાશ્મકાંચન: ।</p><p>તુલ્યપ્રિયાપ્રિયો ધીરસ્તુલ્યનિન્દાત્મસંસ્તુતિ: ॥</p><p>માનાપમાનયોસ્તુલ્યસ્તુલ્યો મિત્રારિપક્ષયો: ।</p><p>સર્વારમ્ભપરિત્યાગી ગુણાતીત: સ ઉચ્યતે ॥</p><p>અર્થ : જે સુખ-દુ:ખમાં સમ વર્તે છે, અખંડ સ્વસ્વરૂપમાં જ રહે છે, કચરો અને કાંચન જેને સરખું જ છે, પ્રિય-અપ્રિયનો સંયોગ પણ જેને તુલ્ય જ ભાસે છે, સદાય ધીરજ રાખનાર છે, નિંદા અને શ્લાઘા પણ જેને સરખી જ લાગે છે, જે માન-અપમાનમાં પણ સમાન રહે છે, મિત્રપક્ષમાં અને પ્રતિપક્ષમાં પણ જે સમાન વર્તે છે, સર્વ આરંભ માત્રનો પરિત્યાગ કરનારો જે છે તે પુરુષ ગુણાતીત એવા નામે કહેવાય છે. (ભગવદ્ગીતા ૧૫/૨૪ અને ૨૫)</p><p>એક દિવસ ભરબપોરે અઢીથી પોણાત્રણના સુમારે એક સેવકે પ્રબોધસ્વામીજીની રૂમનું બારણું ખખડાવ્યું. પ્રબોધસ્વામીજી સવા બે વાગે જ આરામમાં પધાર્યા હતા અને આરામમાંથી ઊઠી બારણું ખોલ્યું ત્યારે સેવકે કહ્યું કે ‘અત્યારે ને અત્યારે જ તમને મિટિંગ માટે બોલાવે છે.’</p><p>પ્રબોધસ્વામીજી તરત જ એ સેવકની સાથે રીક્ષામાં બેસીને મિટિંગમાં જવા નીકળી ગયા.</p><p>પ્રબોધસ્વામીજી મિટિંગની રૂમમાં પહોંચ્યા ત્યારે તેમને પૂછવામાં આવ્યું કે ‘ઓહો! આરામમાંથી ઊઠીને આવ્યા ? સારુ, જાવ, પછી મિટિંગ કરીશું.’</p><p>જેટલી સહજતાથી પ્રબોધસ્વામીજી અંદર પધાર્યા હતા એટલી જ સહજતાથી બહાર આવી ગયા અને બહાર આવીને ચાલતાં ચાલતાં મંદિરે આવીને ધૂન-પ્રદક્ષિણામાં ડૂબી ગયા.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: સ્થિરતા<br/>
+      ટેગ: મીટિંગ, બપોર, ધૂન<br/>
+      નંબર: ૫૬૬
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

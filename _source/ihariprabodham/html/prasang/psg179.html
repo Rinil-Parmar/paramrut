@@ -1,0 +1,176 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+એક એક સેકંડ  અબજો રૂપિયા કરતાં કિંમતી છે 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+2008ની સાલમાં ગુરુહરિ સ્વામીશ્રી અમેરિકામાં કોલંબિયામાં બિરાજમાન હતા. સ્વામીશ્રી સાંજે વૉકિંગ કરવા માટે નજીકના પાર્કમાં પધાર્યા. સ્વામીશ્રી વૉકિંગનું તો એક નિમિત્ત ઊભું કરે પણ એના અનુસંધાને એમના પ્રાણાધાર પુરુષના અનુસંધાનને કેન્દ્રસ્થાને રાખી આપણું આધ્યાત્મિક જતન કરી આપણા કેન્દ્રસ્થાને પણ એ જ અનુસંધાન રહે એવો એમનો અવિરત પ્રયત્ન હોય છે. 
+ </p>
+
+<p>
+કોલંબિયાની સ્ટેટ ઑફિસના બિલ્ડીંગને ફરતે સ્વામીશ્રી વૉકિંગ કરી રહ્યા હતા. આત્મીય યુવાભક્તો શૈલેષભાઈ, ઋષિભાઈ, કમલેશભાઈ સ્વામીશ્રીની સાથે વૉકિંગ કરી રહ્યા હતા. 
+</p>
+
+<p>
+સ્વામીશ્રીએ શૈલેષભાઈને પૂછ્યું કે, ‘એક રાઉન્ડ લગાવતાં કેટલી મિનિટ થાય?’ 
+
+</p>
+
+<p>
+શૈલેષભાઈ કહે, ‘ચાર મિનિટ થતી હશે.’ 
+
+</p>
+
+<p>
+સ્વામીજી કહે, ‘એમ નહિ. તમારી ઘડિયાળમાં જોઈને જણાવો કે કેટલી મિનિટ અને કેટલી સેકંડ થાય?’ 
+
+</p>
+
+<p>
+શૈલેષભાઈ કહે, ‘સ્વામીજી! મારી ઘડિયાળમાં સેકંડ કાંટો નથી.’ 
+
+</p>
+
+<p>
+
+સ્વામીશ્રીએ સ્મૃતિ આપતાં ટપલી મારી કહ્યું, ‘એવું ના ચાલે. આપણે પરફેક્ટ થવાનું.’ 
+</p>
+
+<p>
+
+પછી બીજા રાઉન્ડ વખતે શૈલેષભાઈ અને ઋષિભાઈએ મોબાઈલ ફોનથી ગણતરી કરી કે કેટલી મિનિટ અને કેટલી સેકંડ થઈ. પછી સ્વામીજીને જણાવ્યું કે, ‘ચાર મિનિટ અને એક સેકંડ થઈ.’ 
+
+
+</p>
+
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘હા... હવે બરોબર. યોગીજીમહારાજ અમારી પાસે મિનિટ નહીં પણ ફ્રેક્શન ઓફ સેકંડનો હિસાબ રખાવતા! ભગવાન અને સંતના યોગમાં આવ્યા પછી આપણી એક એક સેકંડ અબજો રૂપિયા કરતાં વધુ કિંમતી છે!’ 
+
+</p>
+
+<p>
+
+હે ગુરુહરિ સ્વામીશ્રી! અમારું પળેપળનું અનુસંધાન કેવળ આપ જ રહો. આપને ગમતો સ્વધર્મ રહો. આપને ગમતાં સંપસુહૃદભાવ-એકતા રહો. આપને ગમતી દાસત્વભક્તિ રહો, આપે આપેલા ભગવદીનો સમ્યક્ સ્વીકાર રહો અને એ રીતે અમારી પળે પળ આપમય, આપ માન્ય, આપ પ્રેરિત બને એ જ અંતરની પ્રાર્થના સ્વીકારશોજી!
+</p>
+
+
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      જેટલી જાગ્રતતા અને જેટલું ભજન, એટલી યાત્રા smooth ચાલવાની
+    </div>
+    <div class="vaat_ind" id="vaat_file_1017">
+      
+      <p>May 2024 (Bensalem, PA)</p><p>શ્રી ઠાકોરજીના સાંજના થાળ માટે એક અંબરીષ હરિભક્તના ઘરમંદિરે ગુરુહરિ પ્રબોધસ્વામીજી પધાર્યા હતા. થાળ બાદ ગુરુહરિ ઘરના લિવિંગ રૂમમાં સોફા પર બિરાજમાન હતા ત્યારે તેમણે ગુરુહરિને એક આત્મલક્ષી પ્રાર્થના કરી, “પ્રસંગ બને ત્યારે ભક્તોનું જોવાઈ જાય છે. બુદ્ધિથી વિચાર બહુ કરું છું, ખોટી જગ્યાએ લગાડી દઉં છું. મારે તો સ્વામીજીના જીવનમાં ડૂબવું છે. સ્વામીજીના જીવનને અનુસંધાન રાખી શકું અને ભક્તોનું દેખાઈ જાય ત્યારે તેમના દોષનું મનન-ચિંતન ના કરું એવું કાંઈક આપ કરી આપોને?”</p><p>આવી આધ્યાત્મિક પ્રાર્થના સાંભળી, ગુરુહરિએ મુદ્દાસર ઉત્તર આપતા કહ્યું, “ભગવાને બુદ્ધિ આપી છે, એ આપણી યાત્રા એમની તરફ ચાલે એના માટે. શેના માટે? યાત્રા આગળ ચલાવવા માટે, પાછળ ચલાવવા માટે નહિ. Negative વિચાર કરીએ એટલે ગાડી reverse ચાલે. આપણે જાગ્રત રહીને ભજન કરવાનું કે ‘હે સ્વામીજી! તમે આપેલી બુદ્ધિ છે, તમારી રીતે સેવામાં નિમિત્ત બનાય, તમારા અને ભક્તોના ગુણ વિચારીએ, તમારો સંબંધ વિચારીએ.’ તેના માટે બુદ્ધિ કામમાં આવે તેવી પ્રાર્થના કરવાની. બરાબર?”</p><p>પછી આગળ ગુરુહરિ કહે, “આંખ છે એટલે દેખાવાનું. બુદ્ધિ છે એટલે વિચારવાની. પણ આપણી ફરજ છે ભજન કરીને તેનાથી છૂટા પડવાની. જેટલી આપણી જાગ્રતતા, જેટલું આપણું ભજન, એટલી આપણી યાત્રા smooth ચાલવાની.”</p><p>એમ, ગુરુહરિએ ખૂબ માર્મિક અને મનનીય વાત કરી. અઘરામાં અઘરી ભૂલકું યાત્રા, સરળ કેવી રીતે બનાવવી એનું રહસ્ય બે મિનિટમાં ગુરુહરિએ જીવમાં ઉતારી દીધું. પ્રભુએ આપેલી બુદ્ધિ જો પ્રભુના ગમતામાં વપરાય તો પ્રભુ સહજે પ્રસન્ન થઈ જાય.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: ભજન<br/>
+      ટેગ: ભજન, જાગ્રતતા, સંબંધ, ગુણ<br/>
+      નંબર: ૫૯૧
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

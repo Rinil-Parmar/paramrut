@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+વર્તન વાતુ કરે
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+વર્ષો પહેલા લૉસએન્જેલસ શહેરમાં ડૉ.પ્રકાશભાઈ તલાટીને ત્યાં સ્વામીજીનો ઊતારો હતો. એકાદશીના ઉપવાસ પછી બારસનો દિવસ હતો. સવારે આઠ વાગે નીચે ડાઈનીંગ ટેબલ પર બેસી સ્વામીશ્રી હરિભક્તોની સાથે ફોન પર વાત કરી રહ્યા હતા. ફોનનો વાયર ઉપલે માળે જતા દાદરાની બાજુના ભાગમાં પ્લગમાં કનેક્ટેડ હતો. પ્રકાશભાઈની નાની બેબી એકાએક ઊંઘમાંથી જાગીને દાદરો ઊતરી, પાછળના ભાગમાં રસોડામાં જતી રહી. સ્વામીજીની સામે ઊભેલા સેવકોને તો આ વાતનો ખ્યાલ પણ ન હતો. છતાં ખૂબ જ ચબરાક એવા સ્વામીજીની નજરમાં આ નોંધાઈ ગયું. જે જગ્યાએથી બેબી પસાર થઈ એ જગ્યા ડાઈનીંગ ટેબલથી તો દૂર જ હતી અને બેબી ફોનના વાયરને અડી કે ન અડી એની પણ ખાતરી ન હતી છતાં સ્વામીજીએ ફોન પૂરો થયા પછી તરત જ કહી દીધું કે આજે મારે ઉપવાસ કરવાનો છે.
+</p>
+<p>
+‘એકાદશીના ઉપવાસ પછીના તરત બારસના દિવસે ફરી ઉપવાસ કરવાનું સ્વામીજી શા માટે જણાવે છે?’..... એનો કોઈને ખ્યાલ ન આવ્યો એટલે સ્વામીજીએ સ્પષ્ટતા કરી, ‘નાની બેબી ત્યાંથી પસાર થઈ એટલે આપણે આજે ઉપવાસ કરવો જ પડે.’ સ્વામીજીનો આ નિર્ણય જાણી પ્રકાશભાઈ, પરિવારના સભ્યો અને સેવકો ખૂબ દુ:ખી થઈ ગયા. ઘણા વખતે માંડ માંડ સ્વામીજીનો પોતાને ત્યાં કાર્યક્રમ ગોઠવાયો અને એમાંય ત્રણ દિવસના રોકાણમાંથી બે દિવસ સતત ઉપવાસના જ જાય તો પછી સેવાનો લાભ તો જતો જ રહ્યો ને ! એટલે પ્રકાશભાઈએ ખૂબ આજીજી કરી પણ સ્વામીજીએ તે દિવસે કશું ન લીધું તે ન જ લીધું !
+</p>
+<p>
+સ્વામીજીનું આવું કડીતોડ વર્તન આપણાને કેવી સચોટ પ્રેરણા આપે છે ! 
+<p>
+
+
+  <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

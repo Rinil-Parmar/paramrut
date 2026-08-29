@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+રવિવારની સભામાં ખાસ જજો
+</div>
+
+ <div class="vaat_ind" id="vaat1_1">
+ <p>
+વડોદરાના એક નિષ્ઠાવાન ભક્તરાજ હરિધામ આવ્યા. અનિર્દેશમાં આવી સ્વામીશ્રીનાં દર્શન કર્યાં. સ્વામીશ્રીના હાથમાં બે-ત્રણ પુસ્તક આપ્યાં. સ્વામીશ્રીએ બધાં જ પુસ્તકોને માથે ચઢાવ્યાં. તેમાં એક પુસ્તક 'યોગીજીમહારાજની બોધકથાઓ'નું પણ હતું. 
+</p>
+ <p>
+સ્વામીશ્રીએ પુસ્તકમાં નજર કરી. પછી એ ભક્તરાજને કહ્યું, "તમે અમારી બહુ મોટી સેવા કરી." પછી યોગીજીમહારાજની બોધકથાઓનું પુસ્તક હાથમાં રાખી કહ્યું, "આજે તો મારી સાધના પૂરી થઈ ગઈ."
+</p>
+ <p>
+ 	
+હે સ્વામીજી! આપ દરેક સેકંડે કેવું અદ્‌ભુત દર્શન કરાવો છો. આપ આ દર્શન કરાવી અમને એક જ પ્રેરણા આપી રહ્યા છો કે અમારે સહુએ આપના જીવનમાં કેટલું બધું ડૂબવાનું છે. 
+
+</p>
+ 
+<p>
+
+થોડીવાર પછી સ્વામીશ્રીએ ખૂબ જ મીઠાશથી વાત કરતાં તેમને કહ્યું, "તમે રવિવારની સભામાં જજો."
+
+</p>
+
+<p>
+
+ત્યારે એ ભક્તરાજે કહ્યુ કે, 'સ્વામીજી! હું 'આત્મીયધામ' માંજલપુરની સભામાં જાઉં છું.'  
+
+</p>
+
+<p>
+સ્વામીજી કહે, "એમ ! તમે સભામાં જાવ છો એ બહુ સરસ વાત કરી, તમે અહીં મારી પાસે નહીં આવો તો ચાલશે. પણ ત્યાં વડોદરામાં અમારા સુચેતનસ્વામી બહુ ખાનદાન સાધુ છે. તમે ત્યાં ખાસ જજો. સમય મળે તો અહીંયાં પણ આવજો પણ ત્યાં માંજલપુર સભામાં ખાસ જજો."
+</p>
+
+<p>
+હે સ્વામીજી ! આપ આપના જીવન થકી અમને નિરંતર સમજાવો છો કે અમારા જીવનમાં જેટલી ભગવાનની જરૂર છે એટલી જ અમારા જીવનમાં સાધુની જરૂર છે, તો એવા બે સારા સાધુ અને ચાર સારા હરિભક્તો સાથે અમારો જીવ બંધાય એવા આશીર્વાદ આપજો. 
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

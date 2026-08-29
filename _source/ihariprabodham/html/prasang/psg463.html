@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીત સ્પર્શ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+ 
+ <p>
+ગુણાતીતાનંદસ્વામીએ વાતોમાં કહ્યું છે કે, અમને તો એક જન્મ-મરણનો રોગ ટાળતાં આવડે છે, બીજું કાંઈ આવડતું નથી. જેમને જન્મ-મરણનો રોગ ટાળતાં આવડતો હોય તેવા પ્રગટ ગુણાતીત સંત માટે આ લોકનાં રોગનું દર્દ ટાળવામાં કેટલી વાર લાગે ! 
+</p> <p>
+એવા જ એક ગુણાતીત સ્પર્શનું દર્શન કરાવતાં એક પ્રસંગ નિહાળીએ :
+</p> <p>
+ગુરુહરિ સ્વામીશ્રી સ્વધામ પધાર્યા પછી એક સંતને કમરનો દુખાવો  રહેતો હતો. 
+</p> <p>
+એક દિવસ બપોરે પ્રબોધસ્વામીજી થાળ લેવા રસોડે પધાર્યા. એ સંતને પ્રબોધસ્વામીજી ભેટ્યા, બરડામાં હાથ ફેરવ્યો ને કહ્યું કે આ સાધુ હરિધામ આવ્યો ત્યારનો મને ગમે છે. એ સંતની આંખમાં આંસુ આવી ગયા.
+</p> <p>
+પ્રબોધસ્વામીજીએ બાજુમાં ઉભેલા સંતને 3 વખત પૂછ્યું કે આ કેમ રડે છે ? ત્યારે સંતે કહ્યું કે ઘણાં સમયથી આવો પ્રેમ મળ્યો નથી એટલે રડાય ગયું. હર્ષના આંસુ છે. પણ તે સંત કાંઇ બોલ્યા નહીં ને અશ્રુધારા વહી રહી.
+</p> <p> 
+તે સંતે બે - ત્રણ દિવસ પછી સાથે ઉભેલા સંતને કહ્યું કે મને છેલ્લા એક-દોઢ મહિનાથી કમરનો દુખાવો રહેતો હતો. જેવા પ્રબોધસ્વામીજી ભેટ્યા કે તરત જ ને કમરનો દુખાવો  મટી ગયો. 
+</p> <p>
+(વિષય : પ્રાગટ્ય છે હરિનું અહીં, સમય : ૨૦૨૧) 
+</p> 
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

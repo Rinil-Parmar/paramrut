@@ -1,0 +1,146 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+અકારણ કરુણા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+વરસો પહેલા પ.પૂ. સ્વામીશ્રી અમેરિકા વિચરણ કરી રહ્યા હતા. એક વખત રાતના સમયે એક શહેરમાથી બીજા શહેરમા જઇ રહ્યા હતા.
+</p>
+
+
+<p>
+
+રસ્તામા એક મોટેલ આગળ પ.પૂ. સ્વામીશ્રીએ ગાડી ઉભી રખાવી. મોટેલની પાછળની જગ્યામા લઘુ કરવા પધાર્યા. લઘુ કર્યા પછી એક છોડ પર સરસ ફુલ ખીલેલુ હતું. પ.પૂ. સ્વામીશ્રીએ જાતે ફુલને તોડ્યુ ને સુંઘતા સુંઘતા ગાડીમા બેઠા. 
+</p>
+
+ 
+<p>
+    સેવકે પુછ્યું, ‘આ ફુલનો આત્મા કેવો પુણ્યશાળી કે આપ આટલે દુરથી આવી એની સેવા ગ્રહણ કરી ?’
+</p>
+<p>
+    પ.પૂ. સ્વામીશ્રીએ કહ્યું, ‘હું કહીશ પણ તને સાચુ નહી મનાય. આ ફુલે 100 જન્મ સુધી શુધ્ધ બ્રહ્મચર્ય પાળ્યુ છે. આજે એની સેવા ગ્રહણ કરી.’
+
+</p>
+
+   <p>
+
+       હે સ્વામીજી ! અમે આપની કરુણાનો વિચાર કરીએ.   
+</p>
+
+ 
+ 
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

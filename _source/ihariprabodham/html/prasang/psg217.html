@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીતને વડીલોનો મહિમા
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+ગુણાતીતાનંદસ્વામીના વખતમાં ૧૨ વડીલ સંતોમાં બાલમુકુંદસ્વામી આગળ પડતા સાધુ કહેવાય. બાલમુકુંદસ્વામી એવા સાધુ હતા કે, એની આગળ કોઈ અભાવ-અવગુણની વાત કરી ન શકે.
+</p><p>
+દર વર્ષે ભગવાન સ્વામિનારાયણની આજ્ઞા પ્રમાણે ગોપાળાનંદસ્વામી, મુક્તાનંદસ્વામી, બ્રહ્માનંદસ્વામી વગેરે પરમહંસો ગુણાતીતાનંદસ્વામીનો સમાગમ કરવા જાય. ગોપાળાનંદસ્વામી પૃથ્વી ઉપર રહ્યા ત્યાં સુધી એમણે મહારાજની આજ્ઞા સારધાર પાળી હતી.
+</p><p>
+ગોપાળાનંદસ્વામી સમાગમ માટે જૂનાગઢ આવ્યા. બાલમુકુંદસ્વામી ગૌશાળામાં સેવા કરાવતા હતા. ગુણાતીતાનંદસ્વામીએ ત્યાં સંદેશો કહેવડાવ્યો, ‘ગોપાળાનંદસ્વામી આવી ગયા છે, તમે જલ્દી આવી જાવ.’
+</p><p>
+જેને કોઈનો અભાવ નહિ, કોઈના અભાવની વાત સાંભળે નહિ એવા બાલમુકુંદસ્વામીથી અજાણતાં બોલાઈ ગયું કે, ‘આ ધરતી જ એવી છે કે બધા સાધુ અહીં આવે જ.’ બાલમુકુંદસ્વામી સેવા પતાવી ૧૦ મિનિટ મોડા પહોંચ્યા.
+</p><p>
+ગોપાળાનંદસ્વામી જેવા વડીલ સાધુની થોડી કંઈક ઉપેક્ષા થવાથી ગુણાતીતાનંદસ્વામી એક મહિના સુધી બાલમુકુંદસ્વામી સાથે બોલ્યા નહિ અને સામું જોયું નહિ. એક મહિનાના સમાગમ બાદ ગોપાળાનંદસ્વામી જૂનાગઢથી વિદાય લેતા ગુણાતીતાનંદસ્વામીને કહ્યું, ‘સ્વામી ! હું જઉં છું, તમે અમારી બહુ સેવા કરી હવે અમે ગામડે ફરીશું.’ ગુણાતીતાનંદસ્વામીએ બાલમુકુંદસ્વામીના આત્માની રક્ષા માટે ગોપાળાનંદસ્વામીને પ્રાર્થના કરી, ‘આજે રોકાઇ જાવ.’ બાલમુકુંદસ્વામીને બોલાવ્યા અને ગોપાળાનંદસ્વામીને કહ્યું, ‘આ સાધુને પ્રાયશ્ચિત આપવાનું છે.’
+</p><p>
+આ સાંભળતાની સાથે દાસત્વભક્તિને વરેલા ગોપાળાનંદસ્વામી, બાલમુકુંદસ્વામીને દંડવત કરવા લાગ્યા કે, ‘આવા રુડા સાધુને મારાથી પ્રાયશ્ચિત કેમ અપાય ?’ આટલું બોલતા બોલતામાં ગોપાળાનંદસ્વામી ગળગળા થઈ ગયા. ગુણાતીતાનંદસ્વામી બાલમુકુંદસ્વામીને કહે, ‘તમને આમના જેવો વિવેક ક્યારે આવડશે ?’
+</p><p>
+ગુણાતીતાનંદસ્વામી ગોપાળાનંદસ્વામીને કહ્યું, ‘તમે જે દિવસે આવ્યા તે દિવસે બાલમુકુંદ સ્વામીને મેં બોલાવવા મોકલ્યા તો કહે, ‘આ ધરતી જ સાધુની છે; બધા અહીં આવતા જ રહે.’ થોડી તમારી ઉપેક્ષા કરી એટલે એક મહિનો એની સાથે હું બોલ્યો નથી, એની સામું જોયું નથી, હવે તમે સંકલ્પ કરી એના માથા પર હાથ મૂકે તો એ પાપમાંથી મુક્ત થાય; તમારા સિવાય એ પાપ કોઈ કાઢી શકશે નહિ.’ ત્યારે ગોપાળાનંદસ્વામીએ રાજી થકા હાથ મૂક્યો. ગુણાતીતાનંદસ્વામી આનંદ થકી કહે, ‘હાશ, અમારા સાધુનું કામ થઇ ગયું, તમે આર્શીવાદ ન આપ્યા હોત તો એનું ગાડું ત્યાં ને ત્યાં રહેત. હવે તમને જવાની છૂટ છે.’
+</p><p>
+વડીલ સંત તરફની થોડી કંઈક અરુચિ સાધકને એની સાધના માર્ગમાં પાછળ પાડી દે છે.
+</p><p>
+ભગવદી સાધુની જ્યારે ઉપેક્ષા થઈ જાય ત્યારે સ્વાધ્યાય-ભજન મસ્ટ... મસ્ટ... મસ્ટ... ટોકે, વઢે, ધખે એવા બે સારા સાધુ સાથે મૈત્રી રાખીએ તો આપણા સાધના માર્ગમાં ક્યારેય રૂકાવટ ન આવે.
+</p><p>
+સાચી મૈત્રી એટલે <br/>
+- જેમાં મન-બુદ્ધિ નું વિસ્મરણ છે. <br/>
+- કેવળ સંબંધ નું જ સ્મરણ છે. <br/>
+- અને કુરબાની સહજ છે. 
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

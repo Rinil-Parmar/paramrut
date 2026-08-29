@@ -1,0 +1,144 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+हरि आपकी अलौकिकता अमृत तुल्यम्
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+શિયાળાનો દિવસ હતો. ઠંડી પણ ખૂબ જ હતી. સ્વામીશ્રી સવારના ૬.૪૦ મિનિટે અનિર્દેશથી નીકળી મંદિર તરફ આવી રહ્યા હતા. શણગાર આરતીમાં આવતા સંતો-ભક્તો સ્વામીશ્રીનાં દર્શન કરી રહ્યા હતા. કોઈ ચરણસ્પર્શ કરતું તો કોઈ દૂરથી દર્શન કરી સ્મૃતિસભર થઈ રહ્યા હતા. એટલામાં અનિર્દેશથી એક સેવકે દોડતા આવીને ગરમ ટોપી આપી. સ્વામીશ્રીએ તે ટોપી ધારણ કરી. ખભા ઉપર ગરમ શાલ પણ ધારણ કરી પ્રકૃતિ અને વાતાવરણ સાથે આત્મીય બન્યા.
+</p>
+<p>
+ધીરે ધીરે પગથિયાં ચઢતા ચઢતા લીમડા તરફ દૃષ્ટિ કરી રહ્યા હતા. સ્વામીશ્રી દ્વાર પાસે આવીને ઊભા હતા. સહુ ભક્તો નીચે બેસી ઠાકોરજીનાં દ્વાર ખૂલવાની પ્રતીક્ષા કરી રહ્યા હતા અને સ્વામીશ્રીની ઠાકોરજીનાં દર્શન કરવાની તાલાવેલીનાં દર્શન કરી કૃતકૃત્ય થઈ રહ્યા હતા. સ્વામીશ્રી ઘનશ્યામ મહારાજના દ્વાર પાસે બે હાથ જોડી આંખો બંધ કરી ઊભા હતા. આમ તો આપણાથી ન પૂછાય પણ કોણ જાણે કેમ અંતરમાં જેવું સ્ફુરી આવ્યું તેવું પૂછી નંખાયું. 
+</p>
+<p>
+સ્વામીશ્રીને પૂછ્યું કે, ‘સ્વામીજી ! આપનામાંથી સંપૂર્ણ સેવકભાવનું દર્શન થઈ રહ્યું છે. ગદ્‌ગદ્‌ ભાવ મુખારવિંદ ઉપર સહજ દર્શિત થઈ રહ્યો છે. એટલે એક પ્રશ્ર્ન ઊઠે છે કે કોણ કોનાં દર્શન ઈચ્છતું હશે ? આપનું દર્શન તો સહજ જ એવું થાય છે કે ક્યારે દ્વાર ખૂલે અને ક્યારે દર્શન કરી લઉં ! આપ તો અખંડ શ્રીજીને ધારીને વિચરો છો. છતાં આપની તાલાવેલી કંઈક અલગ જ આભા પ્રસારી જાય છે. ઘનશ્યામ મહારાજ પણ આજ વિચારતા હશે કે ક્યારે દ્વાર ખૂલે ને કયારે તમારાં દર્શન કરી લઉં ?’
+</p>
+<p>
+સ્વામીશ્રી આ સાંભળી થોડા ગંભીર બન્યા અને સંપૂર્ણ દાસત્વથી ભરપૂર આત્મીય સ્મિત પણ અર્પ્યું. પછી કહે, ‘એવું નથી. હું તો એમનામાં સમાવા ઊભો છું.  હું તો એક જ  પ્રાર્થના કરી રહ્યો છું. હે ઘનશ્યામ મહારાજ ! દર્શન આપો ! દર્શન આપો ! હે પ્રભુ ! સહુમાં આપનાં જ દર્શન કરી આપના સુહૃદભાવને સમજવાનો પ્રયત્ન કરીએ.’
+</p>
+<p>
+એટલામાં પૂજારી સંતોએ દ્વાર ખોલ્યાં અને શણગાર આરતી શરૂ થઈ. સ્વામીશ્રી ઠાકોરજીના દર્શનમાં મગ્ન બની ગયા. 
+</p>
+<p>
+મૂર્તિ સ્વરૂપે સ્વયં તું છે, તોય મૂર્તિ તારા પ્રાણ છે. <br/>
+      એથી ય અદકા ભક્તો વ્હાલા, એમાં તું ગુલતાન છે.<br/></br>
+હે સ્વામિજી ! આપ ખરેખર અલૌકિક પુરુષ છો.
+
+<p>
+
+
+  <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

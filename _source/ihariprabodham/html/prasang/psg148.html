@@ -1,0 +1,84 @@
+<html><head><title>Swaroopyog</title> <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+    <TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        સ્વાધ્યાય કરતાં બાપાને પ્રાર્થના 
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+ 
+એક વખત સ્વામીજી રાત્રીના ૧.૩૦ વાગ્યે પથારીમાં બેઠા હતા. સુહૃદસ્વામી નજીક જઈને બેઠા. એટલે સ્વામીજીએ અંતર્યામીપણે કહ્યું,  (૧) હું સ્વાધ્યાય કરતાં-કરતાં બાપાને પ્રાર્થના કરતો હતો કે બધાની સેવા દાસના દાસ બનીને તો થઈ છે ને ? (૨) આજના દિવસે કોઈનું ઋણ ચૂકવવાનું તો બાકી નથી રહી ગયું ને ? (૩) કોઈના અંતરનો પોકાર-પ્રાર્થનાનો જવાબ આપવાનો તો બાકી નથી રહી ગયો ને ?
+ 
+ 
+	
+                         <div class="chend">
+                             *****
+                         </div>
+</div></body></html>

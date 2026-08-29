@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+અંબરીષ શર્ટ કાઢવું નહિ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+ 
+  <p>
+જાગ્રતભાઈ કેનેડામાં આવ્યા બાદ સત્સંગમાં આવ્યા. વર્ષ ૨૦૧૮ માં સ્વામીજીએ તેમને અંબરીષ દિક્ષા આપી.
+</p> <p>
+જૂન ૮, ૨૦૨૨ ના રોજ ગુરુહરિ પ્રબોધસ્વામીજીએ રાત્રે એમને સ્વપ્નામાં દર્શન આપ્યા. એમાં દર્શન કરાવ્યુ કે ગુરુહરિ પ્રબોધસ્વામીજી કેનેડા પધાર્યા છે. ભવ્ય શિબિરનું આયોજન થયું છે. બધા ભક્તોની સાથે જાગ્રતભાઈ પણ શિબિરનો લાભ લઈ રહ્યા હોય છે.
+</p> <p>
+શિબિર દરમિયાન ગરમી થતાં જાગ્રતભાઈ પોતાનું શર્ટ કાઢીને ખુરશી પર મૂકે-છે. ત્યારે જ સ્ટેજ પર હારવિધિ માટે જાગ્રતભાઈનું નામ એનાઉન્સ થાય છે.
+</p> <p>
+બીજા કોઈ જાગ્રતભાઈ હશે એવું વિચારીને તેઓ ઊભા થતા નથી. પણ બીજીવાર જાગ્રતભાઈ-hamilton તરીકે નામ એનાઉન્સ થતાં તેઓ સ્ટેજ પર જવા માટે પોતાનો શર્ટ શોધે છે પણ શર્ટ મળતું નથી. એટલે તેઓ વ્હાઈટ હાફ સ્લીવ બંડીમાં જ સ્ટેજ પર હારવિધિમાં જાય છે.
+</p> <p>
+જાગ્રતભાઈ હાર પહેરાવી આશીર્વાદ લે છે ત્યારે ગુરુહરિ પ્રબોધસ્વામીજી વિવેકની સુંદર સૂઝ આપતા કહે છે, “અંબરીષ શર્ટ એ સ્વામીજીની શોભા છે. આ ડ્રેસ સ્વામીજીને ગમે છે. એટલે આપણે કોઈપણ જગ્યાએ હોઈએ ત્યારે અંબરીષ શર્ટ કાઢવું નહીં.”
+</p> <p>
+સ્વપ્નનું દર્શન પૂરું થતા જાગ્રતભાઈને વિચાર આવ્યો કે તેઓ રવિવાર સભા માટે મંદિરે આવતા ત્યારે ગાડીમાં બેસતા પહેલા પોતાનો અંબરીષ શર્ટ ડ્રાઈવિંગ સીટની પાછળ ભેરવી દેતા અને મંદિરે આવીને પહેરી લેતા.
+</p> <p>
+આમ, અંબરીષ ડ્રેસનો ખરેખરો મહિમા સમજાવવા માટે હારવિધિનું નિમિત્ત ઊભું કર્યું. સુઝ આપીને જતન કર્યું.
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

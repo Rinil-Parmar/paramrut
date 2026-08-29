@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+સમર્થ એક સહજાનંદ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+૧૩ વર્ષ ની ઉંમરે ભગવાન સ્વામિનારાયણ ઝાડ નીચે બેઠા હતા. પ્રફુલ્લિત વદને, મીઠાશથી, નિશ્ચિંતતાથી, આનંદસભર હૈયે પ્રભુ બેસીને ધ્યાન કરતા હતા. ત્યાં શિવજી પધાર્યા. શિવજી અતિપ્રસન્ન વદનવાળા નારાયણને જોઇને એકદમ બોલ્યા, 'પ્રભુ ! આજે આપ ખૂબ આનંદમાં દેખાઓ છો.' પ્રભુ કાંઈ બોલ્યા નહીં.
+</p>
+ <p>
+ કૈલાશ, ગોલોક, વૈકુંઠ, બદરિકાશ્રમ, ઘણી  બધી આવાંતરની ભૂમિકાઓ છોડીને નારાયણ અક્ષરધામમાંથી પૃથ્વી પર પધાર્યા. શિવજીએ ફરી કહ્યું કે, 'આ પૃથ્વી અને આ ઝાડનું એવું કયું પુણ્ય કે, આ ધરતીને પસંદ કરીને આપ અહીં બેઠા ?'
+</p>
+<p>
+મહારાજ હસ્યા. નિલકંઠવર્ણી સ્વરૂપે પ્રભુ હસતાં હસતાં એટલું જ બોલ્યા,"ધરતીનું અને કોઈનુંય એવું પુણ્ય નથી જેના ફળસ્વરૂપે આ દર્શન થાય પણ અનંતનું અકારણ રૂડું કરવાના હેતુથી હું ધરતી પર આવ્યો છું. આ ઝાડનું કોઈ પુણ્ય નથી." પછી એ ઝાડના આત્માને બાજુમાં દેખાડ્યો. ભ્રષ્ટાચારી એ આત્માએ પશુ જોડે વ્યભિચાર કરેલો. એવા ભયંકર કામી અને ગંદકીથી ખરડાયેલો એ આત્માને દેખાડીને નીલકંઠ એટલું બોલ્યા, "નર્યા પાપ જ કર્યા છે, પુણ્યની ક્યાં વાત છે ?"
+</p>
+<p>
+વિશ્વાસપૂર્વક વાગોળવાની આ વાત છે. પ્રભુએ કહ્યું, "હવે અમારા સંબંધમાં આવ્યા પછીનું આ એ જ આત્માનું દર્શન કરો." સેંકડો સૂર્યના પ્રકાશેયુક્ત એવા શરીરનું, દિવ્ય જ્યોતિર્મય સ્વરૂપે એ જ આત્માનું દર્શન પ્રભુએ કરાવ્યું.
+</p>
+<p>
+શિવજીની આંખમાં હર્ષના આંસુ આવી ગયાં. ખૂબ રાજી થયા. પ્રભુ કહે, "આ અમારો સંબંધ છે બસ. માખીમાંથી સૂર્ય !" સંબંધની કેટલી મોટી અદ્‌ભુત પ્રાપ્તિ ! 
+</p>
+<p>
+ના દેખી ના સાંભળી એવી રીત પુનિત પ્રગટાવી, <br/>
+પુણ્યશાળી કે પાપી, અધર્મી, અમીદ્રષ્ટિ વરસાવી, <br/>
+સહુમાં રસબસ થઈને પ્રીતસાગરમાં ઝબોડ્યા,<br/>
+દિવ્ય સંબંધમાં સઘળું લૂંટાવ્યું, આ સહજનંદ છે ન્યારા !
+</p>
+ 
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

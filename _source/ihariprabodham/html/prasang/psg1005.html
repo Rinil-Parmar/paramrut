@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્માઈલ કંઈ મફતમાં નથી મળતી!
+    </div>
+    <div class="vaat_ind" id="vaat_file_1005">
+      
+      <p>એક દિવસ ગુરુહરિ મંદિરની જગ્યા પર સેવાઓ ચાલતી હતી ત્યાં પધાર્યા. વારાફરતી અલગ અલગ ડિપાર્ટમેન્ટનાં સેવકો સાથે સ્મૃતિ ફોટોગ્રાફ પડાવતા હતા.</p><p>ડેકોરેશન વિભાગનાં સેવકોનો વારો આવ્યો ત્યારે સંબંધસ્વામી બધાને કહે, “સ્માઈલ સ્માઈલ.”</p><p>ગુરુહરિ તરત જ બોલ્યા, “સ્માઈલ કંઈ મફતમાં નથી મળતી!”</p><p>એ સમયે તો વાત હસવામાં નીકળી ગઈ હશે, પણ પછી ખ્યાલ આવ્યો કે ગુરુહરિનું દર્શન દુર્લભ છે, એમનું સાંનિધ્ય દુર્લભ છે, એમની યોજનામાં હોમાવવા મળે એ કેટલું બધું દુર્લભ છે.</p><p>ગુરુહરિ સ્વામીજીએ અનેક વખત અક્ષરબ્રહ્મ અને મહારાજની પ્રાપ્તિની દુર્લભતાની ગોષ્ઠિમાં વાત કરી જ છે. જો પ્રાપ્તિ જ દુર્લભ હોય તો સ્માઈલ તો ક્યાંથી મફતમાં મળવાની ? ગમે તેટલા સાધન કરીએ કે સેવા કરીએ છતાંય એમનું સાંનિધ્ય ન મળે; છતાંય એ પુરુષ આપણને દર્શન આપે, સ્મૃતિ આપે અને સેવા આપે છે, આપણાં હૈયાના ભાવ સ્વીકારે છે તેનું દર્શન થયું.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: મહિમા<br/>
+      ટેગ: દુર્લભ, સ્મૃતિ, સ્માઈલ, હસ્ય<br/>
+      નંબર: ૬૨૬
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

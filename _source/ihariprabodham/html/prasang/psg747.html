@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      દર્શન કરવાની રીત
+    </div>
+    <div class="vaat_ind" id="vaat_file_747">
+      
+      <p>એકવખત ગુરુહરિ હરિપ્રસાદસ્વામીજી વિચરણમાંથી મોડી રાત્રે મંદિરે પધાર્યા. એક વડીલ સહિષ્ણુ સેવકનો જન્મ દિવસ હતો તેથી તે પૂજન માટે રાહ જોઈને બેઠા હતા. અશોકભાઈએ કહ્યું, ‘સ્વામિજી ! આ સહિષ્ણુ સેવકનો જન્મ દિવસ છે.’</p><p>સ્વામીજી કહે, “લાવો, પૂજન કરીએ.”</p><p>રૂમમાં ચાર સંતો-સેવકો હતા એ દરેકનું વારાફરથી સ્વામીજીએ પૂજન કર્યું અને દરેકને કોઈક આધ્યાત્મિક સૂચન કર્યું.</p><p>છેલ્લે સહિષ્ણુ સેવક સુજ્ઞેયભાઈ હતા. સ્વામીજીએ એમનું પૂજન કર્યું પણ કોઈ આજ્ઞા કરી નહીં. તેથી એમણે પૂછ્યું, “સ્વામીજી ! મારે શું કરવાનું ? મારા માટે શું આજ્ઞા?”</p><p>સ્વામીજી કહે, “કાંઈ નહીં કરવાનું. ખાલી દર્શન.”</p><p>સુજ્ઞેયભાઈ તો રાજી થઈ ગયા કારણ બીજા બધાને સ્વામીજીએ ખૂબ મોટી આધ્યાત્મિક આજ્ઞાઓ આપી હતી ને પોતાને તો કાંઈ જ નહીં કરવાનું ને ખાલી દર્શન જ કરવાનું કહ્યું.</p><p>એમણે તરત એ સૂત્ર પોતાની કથાવાર્તાની ડાયરીમાં પહેલા જ પેઈજ પર લખી દીધું.</p><p>એકદિવસ સવારની આરતી પહેલા સુજ્ઞેયભાઈ ડાયરી વાંચતા હતા. એટલામાં ગુરુહરિ પ્રબોધસ્વામીજી આવ્યા અને એમની બાજુમાં બેસી ગયા. પ્રબોધસ્વામીજીએ પૂછ્યું, “શું વાંચો છો ?”</p><p>સુજ્ઞેયભાઈએ ડાયરી આપી, એના પહેલાં પેજ પર સૂત્ર લખ્યું હતું, “કાંઈ નહીં કરવાનું. ખાલી દર્શન.”</p><p>સુજ્ઞેયભાઈએ આખા પ્રસંગની સ્મૃતિનું વિગતે વર્ણન કર્યા પછી કહ્યું, ‘પ્રબોધસ્વામી, મારે તો શાંતિ. કશું જ કરવાનું નહીં. ખાલી દર્શન કરવાના એમાં બધું પૂરું થઈ ગયું.’</p><p>પ્રબોધસ્વામીજી કહે, “લ્યો, તમે તો ફાવી ગયા.”</p><p>પછી ધીમે રહીને પૂછ્યું, “તમને ખબર છે કે આ સૂત્રમાં સ્વામીજી શું કહેવા માંગે છે ?”</p><p>આગળ સૂઝ આપતાં પ્રબોધસ્વામીજીએ કહ્યું, “સ્વામીજી પધારે ત્યારે આપણને દર્શન કરવાનો કેવો ઉમંગ હોય છે! સ્વામીજીની કોઈપણ સેવા કેવા ઉમંગથી દોડી દોડીને કરીએ છીએ. સ્વામીજીની સેવામાં ક્યારેય થાક લાગતો નથી. એવી જ રીતે સ્વામીજીના કોઈપણ સંબંધવાળા હરિભગત આવે ત્યારે એમનાં દર્શન અને એમની સેવા માટે સ્વામીજીનાં જેવા જ ભાવથી સેવા કરવાનો ઉમંગ અને ખટકો રહે એનું નામ દર્શન કર્યું કહેવાય.</p><p>‘દર્શન’ એ અંતિમ કક્ષાનું લેશન છે. જીવનનાં અંતિમ શ્વાસ સુધીનું આ લેશન છે. જાગ્રત ન રહીએ તો ધામમાં જતા સુધી પૂરુ ન થાય એવું આ લેસન છે.”</p><p>આમ, પ્રબોધસ્વામીજીએ ‘દર્શન’ની આજ્ઞા પાછળનાં અનુપમ રહસ્યની સૂઝ આપી અક્ષરજતન કર્યું</p><p>સ્વાધ્યાય: ગુરુહરિએ દર્શન કરવાની અલૌકિક સૂઝ આપી.</p><p>પ્રાર્થના: હે ગુરુહરિ ! અમે પણ ભક્તોમાં પણ આપના જ દર્શન કરીને આપને વ્યાપકપણે સ્વીકારી આપની સાથેનો સંબંધ વધારતાં જ રહીએ એવો બુદ્ધિયોગ પ્રદાન કરશોજી.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: અક્ષર સૂઝ<br/>
+      ટેગ: સાધક, યુવક, દર્શન, અંતિમ કક્ષાનું લેશન, <br/>
+      નંબર: ૩૩૧
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

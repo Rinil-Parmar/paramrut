@@ -1,0 +1,93 @@
+<html><head><title>Swaroopyog</title>
+          <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+    
+  <TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        જેટલી સુરૂચી ટોપ એટલી કૃપા વહેલી
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+ 
+ તા. ૦૫/૭/૨૦૦૮ કેનેડા, રાત્રે ૧૧:૪૦ વાગે સ્વામીજી એક હરિભગતના ઘરે પધાર્યા. ઘરના પ્રવેશદ્વારમાં જ ભક્તોએ સરસ મજાના દીવડાઓનું ડેકોરેશન કર્યું હતું. 'We For 2009' વંચાય તે રીતે દીવડાઓ ગોઠવ્યાં હતા. સ્વામીજી ત્યાં ઊભા રહયાં. 
+ <br/><br />
+ એક હરિભગતના દિકરાએ પ્રાર્થના કરી, હે સ્વામીજી, આત્મીય અમૃત મહોત્સવ સુધીમાં અમારા અંતરમાં આત્મીયતાના દીવડા અખંડ પ્રજવલિત કરી આપજો. આટલું કહી દિકરો સ્વામીજી સામે હાથ જોડી ઊભો રહ્યો. બાજુમાં અન્ય યુવકો આ દર્શન કરી રહ્યા હતા. સ્વામીજીએ આજુબાજુ ઊભેલા સહુ તરફ દૃષ્ટિ કરી. દીવડાઓ ઉપર નજર કરી. પછી દીવડાઓ તરફ આંગળી બતાવતાં કહ્યું, 'આત્મીય અમૃત મહોત્સવ - આ સમૈયાને આપણે આપણો બનાવવો પડે. આપણો બનાવવો હોય તો મરી જવું પડે. મરી જવું એટલે દાસના દાસ થઈને જીવી લેવું પડે. દાસના દાસ થઈને જેટલું જીવતા જઈશું એટલો સમૈયો આપણો બનશે, આપણો બનતો જશે.'
+              <br /><br />
+ આટલા પ્રાસાદિક વાક્યો ઉચ્ચારી સ્વામીજી પોતાના કક્ષમાં પધાર્યા. દિકરો સ્વામીજીની પાછળ પાછળ આવ્યો. સ્વામીજી પાટ પર બિરાજમાન હતા અને દિકરાએ પૂછ્યું, સ્વામીજી, દાસના દાસ થવાની આપે જે વાત કરી તે વાત કેવળ કૃપાથી જ સાકાર થાય કે સાધના કરવી પડે ?
+              <br /><br />
+ સ્વામીજીએ તરત જ જવાબ આપતા કહ્યું, '૫૦-૫૦ ટકા બન્નેની જરૂર પડે. કૃપા વગર શક્ય નથી. પણ કૃપા મહારાજ તો વરસાવે જ્યારે સાધક એકધારી સુરૂચિથી અખંડ મંડ્યો રહે. જેટલી સુરૂચી ટોપ એટલી કૃપા વહેલી.'
+ 
+ 
+
+
+                         <div class="chend">
+                             *****
+                         </div>
+</div></body></html>

@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+ભક્તવત્સલ સહજાનંદ
+</div>
+
+
+ <div class="vaat_ind" id="vaat1_1">
+<p>
+કાઠિયાવાડમાં સારંગપુર નજીક કુંડળગામ છે. ત્યાં મામૈયા પટગર નામના મહારાજના અનન્ય ભક્ત રહેતા હતા. તેમને મહારાજ સાથે ખૂબ જ હેત હતું જેથી તેમની વૃત્તિ મહારાજની મૂર્તિમાં સહજ રહેતી હતી. દિવસભરની બધી જ ક્રિયાઓમાં પ્રભુનું અનુસંધાન તેઓને રહેતું હતું. રાત્રે પણ લઘુ કરવા ઊઠે ત્યારે 'સ્વામીનારાયણ.. સ્વામીનારાયણ..' એવું રટણ થયા કરતું. 
+</p>
+<p>
+ભગવાનને આધીન સૃષ્ટિ છે અને ભગવાન મંત્રને આધિન છે. મંત્રથી પ્રભુ બંધાઈ જાય છે.
+</p>
+<p>
+એક દિવસ અડધી રાત્રિના સુમારે મહારાજે મૂળજી બ્રહ્મચારી ને કહ્યું કે, 'ચાલો ઘોડી તૈયાર કરો, આપણે અત્યારે જ કુંડળ જવું છે.' બ્રહ્મચારી જાણતા હતા કે મહારાજની કોઈ ક્રિયા હેતુ વગરની હોય જ નહીં, તેઓ જે કરે તે પરમસત્ય ને દિવ્ય જ હોય. તેથી તેઓ બધી જ તૈયારી કરીને મહારાજની સાથે ચાલી નીકળ્યા.
+</p>
+<p>
+સવારમાં ચાર વાગે મામૈયા પટગરની ડેલી ખખડી. ભગતે 'સ્વામીનારાયણ.. સ્વામીનારાયણ..' એમ બોલતા બોલતા ઉઠીને ડેલી ઉઘાડી. તેને તો સ્વપનામાંય કલ્પના ન હતી કે દ્વાર પર પ્રભુ પધાર્યા છે. તે આભા બની ગયા અને કહે, 'પ્રભુ ! અડધી રાત્રીએ કષ્ટ વેઠીને કાં પધાર્યા ?' ભક્તવત્સલ પ્રભુ બોલ્યા કે, 'મામૈયા ! તું સ્વામીનારાયણ એમ બોલતો હતો. મને સંભાળતો હતો ને ! મારાથી રહેવાયું નહીં તે અહીં આવી ગયો.'
+</p>
+<p>
+મામૈયાએ આશ્ચર્ય સહિત કહ્યું કે, 'દયાળુ !  સંભાળવાનો તો મારો સ્વભાવ છે. ત્યારે કરુણાનિધિના મુખેથી અમૃત વચન સરી પડ્યા કે, 'જ્યાં કોઈ સંભારે ત્યાં પહોંચી જવાનો અમારો સ્વભાવ છે !'
+</p>
+<p>
+પણ જ્યાં તમારું ભજન ત્યાં પ્રભુ હોય, હોય ને હોય જ ! પ્રભુની આ વાણી પરમ સત્ય વાણી છે. એમાં - 
+</p>
+<p>
+- જેટલો વિશ્વાસ એટલો જ આપણો સંબંધ.. <br/>
+- જેટલો વિશ્વાસ તેટલી જ આપણી નિશ્ચિંતતા.. <br/>
+- જેટલો વિશ્વાસ એટલું જ આપણું ભજન..
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

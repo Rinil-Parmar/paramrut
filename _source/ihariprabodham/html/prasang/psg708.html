@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્વામીજી સ્વામીજીનું કામ કરશે જ.
+    </div>
+    <div class="vaat_ind" id="vaat_file_708">
+      
+      <p>સ્વામીશ્રીનો કેટલો વિશાળ આત્મીય સમાજ... સાધક સમાજ... સ્વામીશ્રીએ કેટલાંના મન સાચવ્યાં, કેટલાંને નભાવ્યાં! પરંતુ સ્વામીશ્રીને સ્વપ્નમાં પણ પ્રબોધસ્વામીજીના મનની માવજત કરવી પડી નથી, બુદ્ધિની ગાંઠો છોડવી પડી નથી, એમની હાજરીની કે અસ્તિત્વની નોંધ લેવી પડી નથી. પ્રબોધસ્વામીજી પીસાયા, કચડાયા પણ સરળતા છોડી નથી.</p><p>પ્રબોધસ્વામીજી એક વડીલ સંત હોવા છતાં કોઈપણ સેવાનું આયોજન કરે, એ પછી પુસ્તક પબ્લીકેશનનું હોય, પ્રસાદીની વસ્તુનું exhibitionનું હોય, પણ વડીલોને પૂછીને, વડીલોને આગળ રાખીને જ કરે એવી એમની સહજ દાસત્વની રીત છે. એવું કરવામાં આદરેલું કાર્ય પાછું ઠેલાય તો પણ ક્યારેય ઉતાવળા થઈને, કોઈના માટે કિંચિત્ ઓરાભાવમાં જાય જ નહીં કે ચર્ચા કરે નહીં.</p><p>સ્વામીશ્રીના જીવન પર પ્રબોધસ્વામીજીએ એક સ્મૃતિ કાવ્ય ‘કરીએ સ્મૃતિના ગાન’ની રચના કરી હતી. એનો video પણ તૈયાર થઈ ગયો હતો. ફક્ત વડીલોની અનુમતિ મળે એટલે release કરવાની જ વાર હતી. પ્રબોધસ્વામીએ જે સંતો આ સેવામાં નિમિત બન્યા હતા એમને વડીલોની સંમતિ લઈને પછી જ video release કરવાની આજ્ઞા કરી.</p><p>પરંતુ સમયના અભાવે વડીલો ભેગા થઈ શકે નહીં અને નિર્ણય લેવાય નહીં, છતાંય પ્રબોધસ્વામીજીએ આગ્રહ રાખ્યો કે વડીલોની અનુમતિ મળે પછી જ release કરીશું. અનેકવાર પ્રયત્ન કર્યો, પણ કાર્ય આગળ વધે નહીં.</p><p>આથી સંતો નાસીપાસ થઈ ગયા અને પ્રબોધસ્વામીજી પાસે જઈને એ અંગે પ્રાર્થના કરી. ત્યારે પણ પ્રબોધસ્વામીજીએ કહ્યું, “આપણે ભજન કરો. અનુમતિ મળે પછી જ release કરીશું.”</p><p>પ્રબોધસ્વામીજીની આજ્ઞાથી video teamના સંતો ફરી વડીલો પાસે ગયા અને પ્રાર્થના કરી. ત્યારે વડીલોએ ઘણી બધી સ્મૃતિઓ videoમાંથી બાદ કરવાની આજ્ઞા કરી. સંતોએ વિચાર્યુ કે આ બધી સ્મૃતિ કાઢી નાંખીશું તો મૂકવા જેવું કાંઈ રહેશે જ નહીં.</p><p>મિટિંગ બાદ સંતોએ પ્રબોધસ્વામીજીને વાત કરી ત્યારે પણ વડીલો પ્રત્યે કોઈ અણગમો નહીં કે પકડ નહીં.</p><p>સરળ હૃદય એટલે સ્વીકારની પરાકાષ્ઠા. પ્રબોધસ્વામીજીએ સરળહૃદયથી કહ્યું, “વડીલોના સૂચનો મુજબ આપણે ફેરફાર કરી દઈએ.” સંતોએ કહ્યું કે, ‘જો એમ કરીએ તો સ્વામીશ્રીની ઘણી બધી સ્મૃતિઓ ઓછી થઈ જશે.’</p><p>ત્યારે પ્રબોધસ્વામીજીએ વચલો માર્ગ કાઢીને સમાધાન આપ્યું, જેનાથી વડીલો સહમત થયા અને એ પ્રમાણે સંપૂર્ણ video તૈયાર થઈ ગયો. પ્રબોધસ્વામીજીએ video જોઈને રાજીપો બતાવ્યો. ત્યારબાદ ફરીથી પ્રબોધસ્વામીજીએ સંતોને વડીલો પાસે મોકલ્યા.</p><p>પાંચ મહિનાના માનસિક સંઘર્ષ પછી પણ એમણે વડીલોના સ્વીકારનો આગ્રહ રાખ્યો! એમની આ અવિચલ સાધુતાને કોટિ નમન!</p><p>ત્યારબાદ વડીલોએ અનુમતિ આપી અને પ્રબોધસ્વામીજીની ગુરુભક્તિથી સજાયેલું એ અદ્ભુત નજરાણું અંતે ૨૦૧૩માં ‘કરીએ સ્મૃતિના ગાન’ના રૂપમાં સમાજને ઉપલબ્ધ થયું.</p><p>પ્રબોધસ્વામીજીની ભીડા-ભક્તિ અને વિનમ્રતા જોઈને સંતોની આંખો ભીની થઈ ગઈ.</p><p>આ સેવા અમુક ગણતરીના દિવસો કે મહિનાઓની નહોતી. એ ધીરજથી ધરબાયેલી દીર્ઘ યાત્રા હતી. જેમાં પ્રબોધસ્વામીજીએ દિન-રાત કરેલી પરિશ્રમરૂપી ભક્તિ હતી. સ્વામીશ્રી સાથેના અતૂટ સંબંધની એ કૃતિ હતી.</p><p>એમણે સંપાદિત કરેલી સ્મૃતિઓનું મૂળ લખાણ તો એટલું વિસ્તૃત હતું કે music directors કહેતાં કે આ અમારાથી નહીં થઈ શકે. આમાં ખૂબ વિવિધતા છે અને ઘણું લાંબુ છે. ત્યારબાદ એને થોડું ટૂકું કરવામાં આવ્યું.</p><p>૨૦૦૪માં એનો audio release કરવામાં આવ્યો અને એના ૧૦ વર્ષના લાંબાગાળા પછી video release થયો.</p><p>પ્રબોધસ્વામીજીની જગ્યાએ અન્ય કોઈ હોય તો ધીરજ ખૂટી જાય. અભાવ અને અરુચિ ઊભી થઈ જાય. આંટી પડી જાય. કર્તુત્ત્વના જાણપણાનો વિસ્ફોટ થઈ જાય.</p><p>વડીલોને બતાવ્યા વગર પણ એનું પ્રકાશન થઈ શક્યું હોત, પણ ગુરુહરિ પ્રબોધસ્વામીજીએ એ ન થવા દીધું. સંતો ઉદાસ થઈને એમની પાસે આવતા ત્યારે તેઓ બળની વાતો કરીને કહેતા, “આપણે સ્વામીજી તરફ નજર રાખવાની. સ્વામીશ્રીનો મહિમા બહાર આવે એના માટે દાખડો કરવાનો. એમનું બળ લેવાનું. બાકી સ્વામીજી સ્વામીજીનું કામ કરશે જ.”</p><p>અક્ષરધામના પુરુષની કેવી અલૌકિક દૃષ્ટિ !</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: વડીલોનો સ્વીકાર<br/>
+      ટેગ: ધીરજ, સંતો, વિડિયો ટીમ, પ્રભુનું બળ, મહિમા, દાસત્વ, અભાવ, સ્વીકાર<br/>
+      નંબર: ૪૯૧
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

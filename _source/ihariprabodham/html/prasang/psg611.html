@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      તમને ગુજરાતી આવડે છે, એટલે આનંદ થયો
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_611">
+      July 13, 2023, Chantilly, VA<br/>
+      <p>અંબરીષ હરિભક્ત પરીક્ષિતભાઈએ એમના ઘરે શ્રી ઠાકોરજી અને ગુરુહરિ પ્રબોધસ્વામીજીના થાળનું આયોજન કર્યું હતું. અંબરીષ હરિભક્ત જીગરભાઈ એમના દીકરા સાર્થકભાઈને લઇને ગુરુહરિના દર્શને આવ્યા. ગુરુહરિ ૨૦૨૨માં જીગરભાઈને ત્યાં થાળ માટે પધાર્યા હતા, ત્યારે સાર્થકભાઈને ગુજરાતી શીખવાની આજ્ઞા કરી હતી.</p><p>એટલે આ વર્ષે સાર્થકભાઈ સામેથી ગુરુહરિ પાસે આવીને કહે, “મને ગુજરાતી આવડે છે, મે ગુજરાતીની exam પાસ કરી છે.” આ સાંભળી રાજી થકા ગુરુહરિ કહે, “તમને ગુજરાતી આવડે છે, એટલે આનંદ થયો.”</p><p>ત્યારબાદ સાર્થકભાઈએ એમને બનાવેલ પ્રાર્થના કાર્ડ વાંચ્યું, “હે સ્વામીજી અને પ્રબોધસ્વામીજી! મને તમારું ભૂલકું થવું છે, મારે તમારા ગમતામાં રહેવું છે.” જ્યાં જ્યાં પ્રાર્થના વાંચતા સાર્થકભાઈ અટક્યા ત્યાં ત્યાં ગુરુહરિએ પોતે સાર્થકભાઈને મદદ કરી. પછી સાર્થકભાઈએ english માં બાકીની પ્રાથના વાંચી.</p><p>ત્યારબાદ પોતાના પ્રાર્થના કાર્ડમાં ગુરુહરિના આશીર્વાદ મેળવવા માટે સાર્થકભાઈએ કહ્યું, “Autograph please!” આ સાંભળીને બધા હસી પડ્યા.</p><p>ગુરુહરિએ સાર્થકભાઈને પૂછ્યું, “તમને ગુજરાતી વાંચતા આવડશે?” એટલે સાર્થકભાઈએ કહ્યું, “હા, આવડશે.”</p><p>એટલે ગુરુહરિએ સાર્થકભાઈના પ્રાર્થના કાર્ડમાં ગુજરાતીમાં આશીર્વાદ લખવાની શરૂઆત કરી. એક લીટી લખીને ગુરુહરિએ સાર્થકભાઈને પૂછ્યું, “શું લખ્યું છે?”</p><p>ત્યારબાદ ગુરુહરિએ જાતે જ સાર્થકભાઈને ગુજરાતી શીખવાડતા હોય એ રીતે એમની સાથે ગુજરાતી વાંચવાની શરુઆત કરી. પછી ગુરુહરિએ આગળ આશિષ વચન લખ્યા અને ફરીથી સાર્થકભાઈ જોડે ગુજરાતીમાં આશીર્વાદ વાંચ્યા. ભૂલકું સાર્થકભાઈને ગુજરાતી શીખવાડતા હતા અને સાથે સાથે વાંચવામાં મદદરૂપ પણ થતા હતા.</p><p>ભૂલકું સાર્થકભાઈએ ગુરુહરિની ગુજરાતી શીખવાની આજ્ઞા પાડવાની હાહાગડથલ કરી તો ગુરુહરિ રાજી થઈ ગયા. જેમ કોઈ માવતર આંગળી પકડીને બાળકને ચાલતા શીખવે એમ ગુરુહરિએ સાર્થકભાઈને ખુબ જ પ્રેમ અને ધીરજથી જાતે જ ગુજરાતી શીખવ્યું અને સહુને અનોખી સ્મૃતિ આપી.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અક્ષર સ્પર્શ<br/>
+      ટેગ: બાળક, બાળ પ્રવૃત્તિ, મા, જનની, ગુજરાતી, અભ્યાસ<br/>
+      નંબર: ૩૪૮
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

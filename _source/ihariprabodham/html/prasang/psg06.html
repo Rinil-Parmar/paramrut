@@ -1,0 +1,127 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+ભારતિય સંસ્કૃતિના સાચા રક્ષક
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>વર્ષો પહેલા સ્વામીજી એક વાર પેન્સીલવેનિયા થી ન્યુ જર્સી તરફ જઈ રહ્યા હતા ત્યાં વચ્ચે સ્વામીજી એક સદ્‌ભાવવાળા યુવકનાં ઘરે ગયા. સ્વામીજી જ્યારે તેના ઘરે પધાર્યા તે વખતે તેના ઘરે ડીનર પાર્ટી ચાલી રહી હતી જેમાં નોનવેજ અને ડ્રીંક રાખ્યું હતું. સ્વામીજીને અચનક પધારેલા જોઇને બધું ઢાંકી દીધું. તેઓ અમેરિકાના એક સમાજના આગેવાન હતા. તેના ઘરમાં સિંહનું મોટું પુતળું હતું તેની બાજુમાં જઈને સ્વામીજી તે યુવકને હેત કરવા લાગ્યા ને પછી તે યુવકને કહ્યું કે, ‘અહોહો ! સિંહ જેવો હોય એના ઘરમાં સિંહ હોય.’ એમ કહીને આનંદ કરાવ્યો.</p>
+<p>આવાં સમયે સ્વામીજી પોતાને ઘરે પધાર્યા તેથી તેમને ક્ષોભ થયો. આખા ઘરમાં ફરી જ્યારે સ્વામીજી એક ટેબલ પાસે આવ્યા કે જ્યાં નોનવેજ ફૂડ અને ડ્રીંક રાખ્યું હતું તેમાંથી ખરાબ સ્મેલ આવતી હતી. તે ટેબલને જોઈને કહે, ‘અહીં આ શું છે?’ તે યુવકે શરમાઈને કહ્યું, ‘સ્વામીજી, આ અમારો કોન્ટીનેન્ટેલ બ્રેકફાસ્ટ છે.’ સ્વામીજી કહે, ‘એ શું કહેવાય?’ ત્યારે તે યુવકે હાથ જોડીને કીધું, ‘સ્વામીજી, આ બધું નોનવેજ છે.’ ત્યારે સ્વામીજી કહે, ‘કપડું ઢાંકી દો, આની પર કપડું ઢાંકી દો.’ એમ તે ટેબલ પર ચાદર નંખાવીને સ્વામીજી એ બધાં પાસે ધૂન કરાવી.</p>
+<p>૨-૩ મિનિટ બાદ ધૂન કરાવ્યા પછી સ્વામીજીએ જ્યારે તે કપડું ઉપાડી લેવાનું કહ્યું ત્યારે તે ટેબલ પર પડેલા એ બધાં જ નોનવેજ ફૂડની જગ્યાએ ટોટલ વેજીટેરિયન ફૂડ હતું. પછી સ્વામીજી તે દારૂની બોટલો અને ભરેલા ગ્લાસ ને જોઈને પૂછે છે કે, ‘આમાં શું છે?’ ત્યારે તે યુવકે કહ્યું કે, ‘સ્વામીજી! આ કોન્ટીનેન્ટલ જ્યુસ છે.’ સ્વામીજી કહે, ‘એ જ્યુસની બોટલ ખોલો તો ખરા.’ તે યુવક કહે, ‘સ્વામીજી આ તો હું રોજ પીઉં છું.’ સ્વામીજી કહે, ‘પણ આજે તું એ પી.’ તે એ બોટલ ખોલીને પીવા જતો હતો ત્યારે તેને તે બોટલમાં લોહીની વાસ આવી. તેણે તે જ ઘડીએ તે બોટલ ને બધું જ ગાર્બેજમાં ફેંકી દીધું અને તે દિવસથી એણે નોનવેજ ને દારુ છોડી દીધો.</p>
+<p>આ જોઈને સાથેના સંતોએ સ્વામીજીને કહ્યું કે, ‘આ જાંગડ અને જડ જેવી વ્યક્તિને આપે સુધાર્યો.’ ત્યારે સ્વામીજીએ જવાબ આપતાં કહ્યુ કે, ‘આ એક સમાજના આગેવાન છે. જો આજે મહારાજે એેમને આવો અનુભવ ના કરાવ્યો હોત તો એ કેટલાય યુવકોને ઉંધે રવાડે ચડાવી દેત અને કેટલાયના સંસ્કારોનું મૃત્યુ કરાવી દેત.’ પછી સ્વામીજીએ રહસ્યની વાત કરતાં કહ્યું, ‘આપણે નોનવેજનું વેજ કરવા માટે ધરતી પર નથી આવ્યા. પણ આવાં જે ભગવાનના માર્ગે ચાલી જ ન શકે એવા ભ્રષ્ટ આત્માઓને પણ શુદ્ધ-પવિત્ર બનાવી અને ભગવાનનાં ધામમાં લઈ જવા માટે આ ધરતી પર આવ્યા છીએ.’</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,93 @@
+<html><head><title>Swaroopyog</title> <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+    <TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        આપણે સેવક થવું છે
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+ 
+એક યુવકનો આજે જન્મ દિવસ હતો તેથી પૂજન કરાવી કહે, 'આપણે આજે શું નિયમ લેશો ?' પછી કહ્યું, 'દાસના દુશ્મન હરિ કે’દી હોય નહીં. એ આપણે નિયમ લો. આપણે બધા બાપ થઈએ ત્યારે તકલીફ થાય છે. ઘરના વડીલોને કહેજો કે હું સૌનાય દાસ થઈ સૌનીય સાથે મીઠાશથી વાત કરું એવાં આર્શીવાદ આપો.' 
+              <br /><br />
+    યુવક કહે, 'વાણીમાં મિઠાશ નથી રહેતી. ગરમ થઈ જવાય છે.' 
+     સ્વામીજી કહે, 'એવું થાય ત્યારે ઉપવાસ કરવાનો અને ભજન કરી લેવાનું.' 
+              <br /><br />
+ બપોરે યુવકને સાથે જમવા બેસાડ્યા. સ્વામીજી કહે, 'શેઠને બેસાડો.' 
+        યુવક કહે, 'સ્વામીજી તમે મને શેઠ શા માટે કહો છો ? શેઠ તો તમે છો.' સ્વામીજી કહે, 'પછી સમજાવીશ.' 
+              <br /><br />
+    ભોજન લીધા પછી બધાને મળ્યા પછી ૨ વાગ્યે આરામમાં જવા પધારતા હતા. ત્યારે પેલા યુવકે પૂછ્યું સ્વામીજી, 'તમે મને શેઠ શા માટે કહો છો ?' સ્વામીજી કહે, 'આખી દુનિયા શેઠ છે. તું એકલો નહીં. જે ભગવાનને માથે પડીને ન જીવે એ બધાં જ શેઠ જ છે. ખોટી પટલાઈ કરે તે બધા શેઠ છે પણ આપણે સેવક થવું છે. એટલું પાકું રાખવાનું છે.'
+ 
+ 
+	
+
+                         <div class="chend">
+                             *****
+                         </div>
+</div></body></html>

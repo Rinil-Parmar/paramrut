@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આપણે તો આત્માઓની સેવા કરવાની ને !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એક વખત અમેરિકાના  વિચરણ દરમિયાન ગુરુહરિ સ્વામીશ્રી એડિસન પ. ભ. ચંદ્રકાન્તભાઈના ઘરે પધાર્યા. છેલ્લા ત્રણ દિવસથી અતિ વ્યસ્ત પધરામણી અને ખાનગીને કારણે સ્વામીશ્રી રાત્રે ખૂબ મોડા આરામમાં પધાર્યા હતા. તે વાત સ્થાનિક ભક્તોએ જાણી તેથી અહીંયાના મુકતોએ  સુંદર પ્રાર્થનાપત્ર મોકલ્યો. 
+</p>
+<p>
+સ્વામીશ્રીએ દૂરનાં ચશ્મા ધારણ કર્યા હતા. તેથી સાથેના સેવકને કહે, ‘તું મોટેથી વાંચ...’ 
+</p>
+<p>
+એડીસન મંડળના બધા ભક્તો ત્યાં હાજર જ હતા. સેવક હજુ કશું બોલે તે પહેલા સ્વામીશ્રી ફરી બોલ્યા, ‘મારા કાનમાં નજીકથી વાંચી લે ને !’  પછી કહે, ‘નાં મોટેથી જ વાંચ.. બધા સાંભળે ને !’ 
+</p>
+<p>
+પત્રમાં લખ્યું હતું -  ‘હે સ્વામીજી ! આપની સાથે જે ઠાકોરજી રાખો છો તે ઠાકોરજીની સાથે આપ પણ જાગી જાવ છો, ઠાકોરજીની સાથે આપ થાળ ગ્રહણ કરો છો. તેવી જ રીતે આપ ઠાકોરજીની સાથે સમયસર પોઢી જાવ તો કેવું સારું ! આપ પણ ઠાકોરજીની સાથે જ પોઢી જાવ તેવા દર્શન અમારે કરવા છે. અમારી પ્રાર્થના ના સ્વીકારો !’ 
+</p>
+<p>
+ભક્તોની આવી દિલદાર નિર્દોષબુદ્ધિથી ભરેલી પ્રાર્થના સાંભળી પ. પૂ. સ્વામીશ્રી રાજી થયા.
+</p>
+<p>
+પરંતુ આપણા સૌના આત્માનો સાક્ષી નિરંતર ભેદાતો રહે અને આપણને સ્વામીસેવક ભાવની સૂઝ પ્રાપ્ત થાય તે માટે દાસત્વનું દર્શન કરાવતા સ્વામીશ્રી બોલ્યા, ‘ઠાકોરજીને સયમસર પોઢાડી દેવા એ આપણી ભક્તિ છે. પરંતુ યોગીજીમહારાજ તો રાત્રિના 12:30 વાગ્યા પછી જ આરામમાં પધારતાં હતા. ’
+</p>
+<p>
+આમ તરત જ યોગીજીમહારાજની સ્મૃતિ કરી સેવકોને ગુરુભક્તિ શીખવાડી. પછી કહે, ‘આપણે તો બાપાએ સોંપેલા આત્માઓની સેવા કરવાની ને !’ 
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપ પ્રત્યેક આત્માની સેવા હરેક પળે કરી રહ્યા છો, અમારું જીવન એવું કરજો કે જેથી આપને અમે ક્યારેય ઓશિયાળા ના કરીએ અને આપણે હૈયે હાશ થાય એવો બુદ્ધિયોગ આપજો.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

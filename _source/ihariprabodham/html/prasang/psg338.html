@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+પ્રભુભક્તિની પ્યાસ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રીનાં જીવનની પ્રત્યેક પળ પ્રભુભક્તિથી સભર છે. દેહમાં ગમે તેવી બીમારી હોય, પરંતુ ઠાકોરજીના દર્શન કરવાનું ક્યારેય ચૂકે નહિ જ. 
+</p>
+<p>
+વર્ષો પહેલાં એક વખત ગુરુહરિ સ્વામીશ્રીએ પગમાં મચકોડ ગ્રહણ કર્યો હતો. તેથી ડોક્ટરોએ ચાલવાની તેમજ દંડવત્ કરવાની ના કહી હતી. જેથી પગ ઉપર વજન ન આવે. 
+</p>
+<p>
+થોડા દિવસ બાદ સ્વામીશ્રી રાજકોટ યોગીધામ પધાર્યા. આજે તેમને પગે સારું જણાતા ડોક્ટરોએ દંડવત્ કરવાની રજા આપી હતી. તેથી ઠાકોરજી આગળ દંડવત્ કરતા જાય અને હસતાં જાય. પછી હાશ અનુભવતા કહે, ‘હાશ ! આજે કેટલા દિવસે ઠાકોરજીને દંડવત્ કરવા મળ્યા !’
+</p>
+<p>
+ત્યાર બાદ ઉકાળો ગ્રહણ કરવા બિરાજ્યા. સ્વામીશ્રીના આનંદસભર મુખારવિંદના દર્શન કરીને પ.ભ. કુંવરજીબાપા તેમજ પ.ભ. કૌશિકભાઈએ સ્વામીશ્રીને પૂછ્યું કે, ‘આજે આપના દર્શન સરસ થાય છે આપ ફ્રેશ મુદ્રાનું દર્શન કરાવો છો.’
+</p>
+<p>
+તરત જ સ્વામીશ્રી બોલ્યા કે, ‘આજે ઠાકોરજીને દંડવત્ કરવાના મળ્યા એટલે ફ્રેશ થઈ ગયો.’
+</p>
+<p>
+પ્રભુ જેમનાથી એક પળ જેટલા પણ છેટા નથી એવા ગુરુહરિનું જીવન પળેપળ પ્રભુભક્તિથી ભરેલું છે. આપણે પણ તેમના જેવી પ્રભુભક્તિ પ્રગટાવી જીવન જીવી શકીએ એવી ઠાકોરજી તેમજ ગુરુહરિના ચરણોમાં પ્રાર્થના.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

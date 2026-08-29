@@ -1,0 +1,129 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સમર્થ થકા જરણા 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+    શાસ્ત્રીજીમહારાજ સયાજીપુરામાં બિરાજમાન હતા. એક હરિભક્તે અટલાદરા મંદિરની સેવાઓ માટે એક ભેંસ આપી. શાસ્ત્રીજીમહારાજ ભેંસ લઈને અટલાદરા તરફ જતા હતા. એમની સાથે જોડમાં નાના એક સંત (અડધીયા સાધુ) અને મોતીકાકાના ભત્રીજા સેવક તરીકે સાથે હતા. થોડું ચાલ્યા હશે ને રસ્તામાં ભેંસ વિયાણી.
+</p><p>
+    સાથેના સેવકને વિચાર આવ્યો કે, 'રસ્તામાં ભેંસ વિયાણી ! તો હવે શું કરીશું ?' સગુણ અને નિર્ગુણ સ્વરૂપને ધારણ કરનાર એવા શાસ્ત્રીજીમહારાજ એક સેકન્ડનો વિલંબ કર્યા વિના લાળવાળા જ એ તાજા જ જન્મેલા બચ્ચા ને ખભા પર ઊંચકીને અટલાદરા તરફ ચાલવા માંડ્યા અને સાથેના સેવકે ભેંસને દોરી.
+</p><p>
+    શાસ્ત્રીજીમહારાજની જ્ઞાનગરીબી જોઈ નાનકડા સાધુ શાસ્ત્રીજીમહારાજ ને કહે, 'લાવો હું ઊંચકી લઉં.' નાનકડો સાધુ બચ્ચાને કેવી રીતે ઊંચકી શકે ? તેથી શાસ્ત્રીજીમહારાજ કહે, “તારાથી નહિ ઉપાડાય.”
+</p><p>
+    અટલાદરા આવવાને થોડીવાર હતી ને ભેંસનું બચ્ચું જોડના સાધુને આપ્યું. તે ૧૦-૧૫ ડગલાં માંડ ચાલ્યો, ને થાકી ગયો. શાસ્ત્રીજી મહારાજ કહે, “એ તો હું જ એક એવો છું કે આ ભાર ઉપાડી શકું !”
+</p><p>
+    શું શાસ્ત્રીજીમહારાજ અસમર્થ હતાં ? એમણે ધાર્યું હોત તો ભેંસ અટલાદરા જઈને જ વિયાત. કાળ, કર્મ ને માયા એ ત્રણેયનું જેટલું ચાલવા દેવું હોય એટલું જ ચાલવા દે એવું એ પરાત્પર સ્વરૂપ ! અને આ ચરિત્ર કર્યું એની પાછળનું કારણ સમર્થ થકા જરણા કરવાની રીતનું આપણને દર્શન કરાવવું હતું.
+</p><p>
+    લાળવાળું એ ભેંસનું બચ્ચું ઊંચકીને અટલાદરા પહોંચવું એ પરાભક્તિ કલ્પનાતિત છે ! આટલા બધા અસમર્થ થઈને જીવવું એ કલ્યાણદાતા પુરુષનું જ કામ છે. જેનામાં રહીને ૨૪ કલાક પ્રભુ કલ્યાણ કરતા હોય એ પુરુષ જ આટલી ગરીબાઈથી વર્તી શકે.
+</p><p>
+    પરાત્પર પુરુષ કેવા રાંક થઈને વર્ત્યા !
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

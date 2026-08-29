@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ફગવાનો પ્રસાદ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+અનાદિ મહામુક્ત ભગતજી મહારાજ અ.મૂ.અ.મૂ.સદ્. ગુણાતીતાનંદસ્વામીના સર્વોત્કૃષ્ટ રાજીપાના સુવર્ણપાત્ર હતા. અપ્રતીમ ભીડો, અથાક સેવા, અસહ્ય અપમાન અને ઉપેક્ષા, કેવળ કર્તાહર્તાપણાની ભાવનાથી અખંડ આનંદ, અદ્‌ભુત ગુરુભક્તિ, ભક્તોનું અનુપમ માહાત્મય અને સંબંધની દૃષ્ટિ વિગેરે કેટલીય વિરલ લાક્ષણિકતાઓની હરતીફરતી મૂર્તિ એટલે ભગતજી મહારાજ.
+</p><p>
+એકવાર ગુણાતીતાનંદસ્વામી સભા પછી સંતો-હરિભક્તોને ફગવાનો પ્રસાદ આપી રહ્યા હતા. ભગતજી મહારાજ સેવામાં પ્રવૃત્ત હોવાથી મોડા પડ્યા અને પ્રસાદ લેવા ગયા ત્યારે ધાણીના થોડાં ગાંગડા જ રહ્યા હતા. ભગતજીનાં અંતરમાં તો સ્થૂળ પ્રસાદ નહીં પણ દૃષ્ટિપ્રસાદની તલપ હતી. તેથી તેમણે શ્રદ્ધા અને મહિમાથી તે લીધા. એક ગાંગડો મોઢામાં મૂકી ગુણાતીતાનંદસ્વામીને પૂછ્યું, ‘બીજા ભક્તોએ તેમની મશ્કરી કરી ત્યારે તેમણે સહજભાવે હસતાં હસતાં સ્વામીને પૂછ્યું કે આપના અંતરના રાજીપાનો આ પ્રસાદ છે ?’
+</p><p>
+ત્યારે સ્વામીએ કહ્યું, ‘અતિ રાજીપાનો છે.’
+</p><p>
+એટલે ભગતજીએ પુછ્યું, ‘કામ ગયો ?’ સ્વામી કહે, ‘ગયો !’ પાછો બીજો ગાંગડો લઈ ભગતજીએ પૂછ્યું, ‘ક્રોધ ગયો ?’ સ્વામી હસતાં હસતાં પણ સચોટતાથી કહે ગયો ! એમ એક-એક ગાંગડો પ્રસાદરૂપે લઈ ભગતજીએ બધા જ દોષની નિવૃત્તિના આશિષ લઈ લીધા.
+</p><p>
+મોટા સાધુનો જેમ જેમ મહિમા સમજાય તેમ મુક્તની સ્થિતિ થતી જાય અને એવી સ્થિતિ થતાં સુધીમાં રાજીપાની પ્રસાદી જમે, કે વચન ઝીલે તો નિર્ગુણભાવને પામી જાય.
+</p><p>
+ભગતજીએ મશ્કરી કરનાર હરિભક્ત પ્રત્યે રંચમાત્ર ઓરાભાવ ન રાખ્યો ને ગુણાતીતાનંદસ્વામીની સામર્થિમાં અપ્રતીમ શ્રધ્ધા ને વિશ્ર્વાસ રાખ્યા તો સ્વામીએ તેમને અંતરે સુખિયા કરી દીધા. એમણે એવો દિવ્ય સંબંધ કર્યો તો જીવન ધન્ય થઈ ગયું. આપણે પણ જો આપણા ગુરુહરિની અનુવૃત્તિ મુજબ સેવામાં પ્રવૃત્ત થઈ જઈએ તો તેમની દૃષ્ટિ અને અંતરના રાજીપાથી આપણે પણ અંતરે સુખિયા થઈ જ જઈએ ને !
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

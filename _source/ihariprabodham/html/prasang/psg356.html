@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આજે એમના નસીબ ખૂલી ગયા
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઇ.સ. 2013 માં અમેરીકાના વિચરણ દરમ્યાન ગુરુહરિ સ્વામીશ્રી પારસીપની, ન્યુજર્સી બિરાજમાન હતા. સ્વામીશ્રીના થાળ એડિસનમાં હતા. ન્યુજર્સીથી એડિસન પહોંચતા 35 મિનિટ જેટલો સમય લાગે. 
+</p>
+<p>
+સ્વામીશ્રી બાર વાગે પારસીપની મંદિરે ઠાકોરજીના દર્શન કરવા પધાર્યા. ત્યારબાદ ભક્તોને મળવા આસને બિરાજ્યાં. સ્વામીશ્રીની દ્રષ્ટિ બે અંગત જૂના હરિભક્તો પર પડી. 
+</p>
+<p>
+સ્વામીશ્રીએ એ બંને ભક્તોને નજીક બોલાવ્યા, બેસાડયા ને ગોષ્ઠી શરૂ કરી.  
+</p>
+<p>
+સ્વામીશ્રીએ તેમને સૂઝ આપતાં કહયું, ‘તમે હસો છો, પણ તમારા હાસ્યમાં 50% માનનું પોષણ થાય છે. આપણા હસવામાં પણ પ્રેમ અને પવિત્રતા હોવી જોઈએ. તમે હસો એની હું ના નથી પાડતો, પણ હાસ્યમાં પ્રદર્શન નહીં કરવાનું. કોઈની ભૂલ થાય અને આપણે હસી પડીએ તો આપણે અધર્મી છીએ.’
+</p>
+<p>
+આગળ સ્વામીશ્રીએ વાત કરતાં કહ્યું, ‘તમને અમારી સાથે હેત હોય અને તમારા સ્વભાવનું પોષણ થાય તો અમને પાપ લાગે !’
+</p>
+<p>
+થાળમાં પહોંચવાનું મોડું થાય તેમ હતું એટલે સેવકોએ સ્વામીશ્રીને પ્રાર્થના કરી કે, ‘સ્વામીજી ! આપણે બીજી સીટીમાં થાળ માટે જવાનું છે.’
+</p>
+<p>
+સ્વામીશ્રી બોલ્યા, ‘બેસી જાવ બધા. મારે તમારા હેતની મારે જરૂર નથી. આજે આમનું રૂડું કરવું છે.’
+</p>
+<p>
+સ્વામીશ્રીએ ફરી વાત કરતાં કહ્યું, ‘આપણી વાણી એવી હોવી જોઈએ કે કોઈને આપણી પાસે બેસવાનું મન થાય. આપણે અંદરનો (આત્મામાં રહેલા પ્રભુનો) અવાજ સાંભળવાનો છે. આપણે હુંહાટાથી બોલી બોલીને આત્માનું અહિત નથી કરવાનું. આજે આમનો ઉજળો દિવસ છે. દસ વર્ષથી હું તમને આ વાત કહેવાનો વિચાર કરતો હતો, પણ આજે એમના નસીબ ખૂલી ગયા.’
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપણે ગમે એવી અમારી વાણી અને હાસ્ય આપની સાથેનો નિરંતર સંબંધ વધારે તેવાં બને એ જ અંતરની પ્રાથના !!
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સભામેં રેગ્યુલર રહેના, miss મત કરના !
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_950">
+      May 31, 2024, Orange, Connecticut<br/>
+      <p>યુવક નિહાલભાઈ છેલ્લા દોઢ વર્ષથી સભા ભરે છે, પરંતુ આ વર્ષે ગુરુહરિ પ્રબોધસ્વામીજી કનેક્ટીકટ પધાર્યા ત્યારે તેમને પહેલી વાર ગુરુહરિ સાથે ખાનગી કરવાની તક મળી. ગુરુહરિના દર્શને આવ્યા ત્યારે હાથ જોડી સહજતાથી પ્રાર્થના કરી, “બહોત સારી ઇચ્છાએ હૈ. ઇતની સારી હૈ કી માંગને લગુંગા તો દિન પુરા હો જાયેગા. આપ સારી ઇચ્છાએ પુરી કર દીજીએ.” પ્રાર્થના સાંભળી ગુરુહરિ એ હાસ્યનું દર્શન કરાવ્યું અને કહે, “એનો અંત જ નથી.”</p><p>નિહાલભાઈ વતી મંડળના કાર્યકર્તાએ ગુરુહરિને પ્રાર્થના કરી કે નિહાલભાઈ Data Science માં માસ્ટર્સ કરવા માટે નેપાળથી અમેરિકા આવ્યા હતા. માસ્ટર્સ બાદ તેઓ જ્યાં જોબ કરતા હતા ત્યાંથી તેમને ૩-૪ મહિનાનો પગાર નથી આપ્યો. તેમને બીજી જોબ તો મળી ગઈ છે પણ જૂની જોબ પાસેથી ઘણી મોટી રકમ લેવાની થાય છે. સાથે સાથે એમને સારી જોબ મળે તેવી પણ પ્રાર્થના છે.</p><p>ગુરુહરિએ government માં employer સામે complaint કરી શકાય તે તપાસ કરવા કહ્યું અને સારી જોબ માટે પણ પ્રયત્ન ચાલુ રાખવા કહ્યું. ત્યારબાદ આશીર્વાદ આપતા કહ્યું, “પ્રાર્થના કરેંગે. આપ ભજન કરતે રહેના. સભામેં રેગ્યુલર રહેના, miss મત કરના!”</p><p>મંડળના કાર્યકર્તાઓની મદદથી તેમણે લગભગ આઠ મહિના પહેલા Labor Department માં complaint કરી હતી પણ કોઈ response નહોતો આવ્યો. ગુરુહરિના વચને નિહાલભાઈએ ભજન કરવાનો અને સભા નિયમિત ભરવાનો ખટકો રાખ્યો તો જે employer દસ મહિનાથી કોઈ જવાબ નહોતા આપતા તેમણે સામેથી નિહાલભાઈને e-mail કરી જેટલો પગાર બાકી હતો તે બધો જ આપી દીધો!</p><p>જીવનમાં નિયમિત ભજન અને સભા હોય તો મહારાજ આપણા સમગ્ર તંત્રની જવાબદારી લે એવું આ સ્મૃતિ દ્વારા દર્શન કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: આશીર્વાદ<br/>
+      ટેગ: ભજન, આશીર્વાદ, સભા, હિન્દી<br/>
+      નંબર: ૬૨૨
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

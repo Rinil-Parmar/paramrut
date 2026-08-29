@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સંતસ્વરૂપ આજે પોતે આવીને અમને મળ્યા હરિ...
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઇસ. ૧૯૮૬ નું વર્ષ ચાલી રહ્યું હતું. વડોદરાની મહેતાપોળમાં રહેતા પ.ભ. જગદીશભાઇ દવેનાં પત્નીની તબિયત ઘણા વખતથી સારી રહેતી નહોતી. આ અંગે જગદીશભાઈના બનેવી પ.ભ. દવે સાહેબે સ્વામીશ્રીને જણાવેલું અને સ્વામીશ્રીએ કહેલું કે થોડા વખતમાં મહારાજ તેમને ધામમાં લઇ જશે. 
+</p>
+<p>
+તા. ૨૫/૧/૧૯૮૬ ના રોજ સ્વામીશ્રી દિવ્ય સ્વરૂપે જગદીશભાઇના પત્નીને ધામમાં લેવા આવ્યા હોય એવાં દર્શન થયાં. તે વખતે એમનાં સાસુ ત્યાં હાજર હતાં. એમના મનમાં થયું કે દીકરા-દીકરી હજુ તો નાનાં છે તેથી મહારાજ એમને થોડી વધારે આવરદા આપે તો સારું. તેથી એમણે તે વખતે સ્વામીશ્રીની મૂર્તિ સમક્ષ ધુન કરી આ સંકલ્પ પ્રાર્થના સ્વરૂપે મૂક્યો. જાણે સ્વામીશ્રીએ તેમની પ્રાર્થના સાંભળી લીધી હોય તેમ તે વખતે સ્વામીશ્રી અદૃશ્ય થઇ ગયા.
+</p>
+<p>
+ત્યારબાદ જગદીશભાઇના પત્નીની તબિયત એકદમ કથળી અને એમને હોસ્પિટલમાં દાખલ કરવાં પડયાં. ડૉકટરોએ તમામ પ્રકારની સારવાર કરી છતાં કોઇ ફેર પડયો નહિ. 
+</p>
+<p>
+પોતાના પત્નીની આવી પરિસ્થિતિ નિહાળી દર્દભર્યા હૈયે જગદીશભાઈએ સ્વામીશ્રીને પ્રાર્થના કરી કે હવે આપ એમને ધામમાં લઇ જાવ તો સારું. ત્યારે સ્વામીશ્રીએ જણાવ્યું કે જ્યારે ઘરનાં બધાં રજા આપશે એટલે મહારાજ તરત જ તેમને ધામમાં લઇ જશે.
+</p>
+<p>
+વડીલોની સમજાવટથી ઘરનાં બધાં પાત્રોએ એ માટે સંમતિ દર્શાવી એટલે જગદીશભાઈએ ફરીથી સ્વામીશ્રીને પ્રાર્થના કરી કે હવે તો આને વહેલી તકે ધામમાં લઇ જાવ. ત્યારે સ્વામીશ્રીએ ચોક્કસ દિવસ અને સમય જણાવતાં કહ્યું કે પરમદિવસે રાત્રે અગિયાર અને બારની વચ્ચે મહારાજ એમને ધામમાં લઇ જશે. 
+</p>
+<p>
+જગદીશભાઈને તો સ્વામીશ્રીમાં ખૂબ વિશ્વાસ. એમણે તરત જ સગાંવહાલાંઓને આ અંગેની જાણ કરી દીધી.
+</p>
+<p>
+સ્વામીશ્રીએ કહેલા દિવસે સવારથી સંબંધીઓની ભીડ જગદીશભાઈના ત્યાં થવા લાગી. તે દિવસે બપોરે જગદીશભાઇના પત્નીએ  ભાખરી-શાક વગેરે ભોજન પણ બરાબર લીધું. આવી રીતે વ્યવસ્થિતપણે જમતી વ્યક્તિ આજે ને આજે રાત્રે અગિયાર વાગે કેવી રીતે ધામમાં જશે ? એ જ પ્રશ્ન સહુના ચહેરા પર અને હૈયામાં સળવળતો હતો. જીવનમાં કયારેય નહિ જોયેલું કે સાંભળેલું કૌતુક નિહાળવા ભેગાં થયેલાં બધાંની ઉત્સુકતા વધતી ચાલી. 
+</p>
+<p>
+રાત્રે અગિયાર વાગ્યા પછી જગદીશભાઈ, દવેસાહેબ અને ઉપસ્થિત રહેલાં સહુએ સ્વામિનારાયણ મહામંત્રની ધૂન શરૂ કરી અને ઉપસ્થિત રહેલી આઠસોથી નવસો વ્યક્તિઓએ નજરોનજર જોયું કે નામ-રટણની ધૂનમાં ગુલતાન થયેલાં જગદીશભાઇના પત્નીએ બરોબર સાડા અગિયારના ટકોરે દેહ છોડી દીધો. સ્વામીશ્રીએ આપેલા કૉલની આવી દૃઢ પ્રતીતિથી સહુ કોઇ આશ્ચર્યમાં ગરકાવ થઇ ગયા.
+</p>
+<p>
+તે જ સમયે ફર્ટીલાઇઝરનગરના રોડ પર વૉકિંગ કરતા સ્વામીશ્રીએ સાથે ચાલતા પ.ભ. નાણાવટીભાઈને સમય પૂછયો. તેમણે કહ્યું કે સાડા અગિયાર. એટલે સ્વામીશ્રી સહજ જ બોલી ઊઠયા કે જગદીશભાઈનાં ઘરવાળાને મહારાજ અત્યારે ધામમાં લઇ ગયા. 
+</p>
+<p>
+ભગવાન શ્રી સ્વામિનારાયણે આશીર્વાદ આપેલા છે કે અમે અંતકાળે દર્શન દઈ અમારા હરિભક્તને અમારા ધામમાં લઈ જઇશું.  
+</p>
+<p>
+ભગવાન સ્વામિનારાયણની ચેતનાને ધારણ કરનાર એવા ગુરુહરિ સ્વામીશ્રીના સામર્થ્યની શું કલ્પના કરીશું !!!
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

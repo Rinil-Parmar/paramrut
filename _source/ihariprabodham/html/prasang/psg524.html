@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      યોગીજીમહારાજ જ આવવાના છે
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_524">
+      July 24, 2023, Edison, NJ<br/>
+      <p>યુવક સિદ્ધાર્થભાઈની પ્રાર્થના સ્વીકારીને ગુરુહરિ પ્રબોધસ્વામીજી એમના ઘરે બપોરે પધરામણીએ પધાર્યા. સિદ્ધાર્થભાઈ અને એમના સસરાએ શ્રી ઠાકોરજી અને ગુરુહરિનું પૂજન કર્યું. ત્યારબાદ, સિદ્ધાર્થભાઈએ ગુરુહરિને પોતાની મૂંઝવણની વાત કરતા કહ્યું, “ગુરુવારે અમારા ઘરે બેબીની ડિલિવરી છે. પણ બીજી બાજુ, મારા પપ્પા ઇન્ડિયામાં હોસ્પિટલમાં છે...” આમ કહી રડી પડ્યા અને આગળ કાંઈ બોલી ન શક્યા.</p><p>ગુરુહરિએ એમના સસરાને પૂછ્યું, “વેવાઈને શું થયું છે? સિદ્ધાર્થભાઈના સસરાએ કહ્યું, “એમને જઠરમાં લાસ્ટ સ્ટેજનું કેન્સર છે.” સિદ્ધાર્થભાઈ બોલ્યા, “એક બાજુ સારું થઈ રહ્યું છે અને બીજી બાજુ આવું...રોજ એ વિચાર આવ્યા કરે છે.”</p><p>ગુરુહરિએ કહ્યું, “જો, એ ઈન્ડિયા છે અને આપણે અહીંયા છે. આપણે વિચાર કર્યા કરીએ એનાથી કાંઈ થવાનું નથી. એના કરતા ભજન કરવું કે ‘હે મહારાજ! એમના આત્માના હિતમાં જે હોય એવું તમે કરજો.’ માવતર છે એટલે (દુઃખ) થાય, લાગણી થાય. આપણે ભજન કર્યા કરવાનું કે ‘હે મહારાજ અને હે સ્વામીજી! પપ્પાના હિતમાં જે હોય એવું</p><p>તમે કરજો.’ પ્રાર્થના કરવાની, બરોબર? આપણે nervous નહીં થવાનું. ઠાકોરજી ક્યારે અહિત ના કરે.”</p><p>મંડળના કાર્યકર્તાએ કહ્યું, “એમના પપ્પાએ યોગીજીમહારાજના દર્શન કરેલા છે.”</p><p>ગુરુહરિએ કહ્યું, “બસ તો, લેવા યોગીજીમહારાજ જ આવવાના છે ને! આવશે તો યોગીજીમહારાજ જ આવશેને.”</p><p>ગુરુહરિ સાથેના આ વાર્તાલાભથી સિદ્ધાર્થભાઈને બળ તો મળ્યું, પણ પપ્પા સાથે ખુબ લાગણી હોવાથી તેઓ ગુરુહરિના કહેવા છતાં લગભગ એક મહિના સુધી પ્રાર્થના કરતા ખચકાયા. થોડા દિવસ બાદ પપ્પાની તબિયત વધુ ગંભીર થઈ ત્યારે સિદ્ધાર્થભાઈથી એમનું દુઃખ જોવાતું નહતું. સિદ્ધાર્થભાઈએ ગુરુહરિએ કહ્યું હતું તે મુજબ પ્રાર્થના કરી. આ રીતે, ગુરુહરિના આશીર્વાદથી અને ભગવાન સ્વામિનારાયણના વરદાન અનુસાર, સિદ્ધાર્થભાઈએ પ્રાર્થના કર્યાના માત્ર ત્રણ જ દિવસમાં એમના પપ્પાને મહારાજ ધામમાં તેડી ગયા.</p><p>ભગવાન શ્રી સ્વામિનારાયણે આપેલું બિરુદ, કે અંત કાળે હું દર્શન દઈને મારા ધામમાં તેડી જઈશ, એ આજે ગુરુહરિ દ્વારા પૂર્ણ થઈ રહ્યું છે.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: વરદાન<br/>
+      ટેગ: ધામમાં લઈ જવા, સંત દ્વારા પ્રગટ, આશીર્વાદ, પ્રાર્થના<br/>
+      નંબર: ૪૭૪
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

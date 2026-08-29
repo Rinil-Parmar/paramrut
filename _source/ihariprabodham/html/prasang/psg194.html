@@ -1,0 +1,171 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+
+	સુપ્રીમ એક સહજાનંદ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>        
+બ્રહ્માનંદસ્વામી અને પ્રેમલમહારાજ સૌરાષ્ટ્રના રાજદરબારોમાં રાજકવિ તરીકેની અદ્‌ભુત  ખ્યાતિ પામ્યા હતા. એ લોકો ગાય ત્યારે વાતાવરણ શાંત-પ્રશાંત થઈ જતું અને સાંભળનાર સૌ આનંદમાં તરબોળ થઈ જતા.
+</p>
+ <p>
+            બ્રહ્માનંદસ્વામી મહારાજને જ્યારે પ્રથમ વખત મળવા આવ્યા ત્યારે એમના શરીર પર પાંચ કિલો સોનું હતું. બ્રહ્માનંદસ્વામી કોઈ દિવસ સાધુ થાય એ શક્ય હતું જ નહીં. જેઓ મહારાજની અલૌકિક મહિમાની વાતો સાંભળી ને પોતાના મનમાં ત્રણ સંકલ્પ કરીને મહારાજ પાસે આવ્યા હતા. મહારાજે એમના સંકલ્પો પૂરા કર્યા અને એ સાધુ થયા.
+</p>
+ <p>
+
+          બ્રહ્માનંદસ્વામીના સાધુ થયા બાદ પ્રેમલમહારાજને એમ થયું કે, 'આ સ્વામિનારાયણે મારા મિત્રને ભૂરકી નાખીને સાધુ બનાવી દીધો લાગે છે.'  પ્રેમલમહારાજને એમ કે, 'મારો ભાઈબંધ કોઈ દિવસ છેતરાય નહીં ને છેતરાઈ ગયો ! ચાલો પાછો લઈ આવું.'  આવું વિચારીને બ્રહ્માનંદસ્વામીને લેવા માટે પ્રેમલમહારાજ આવ્યા. ગઢડાની નજીક એક કિલોમીટર દૂરથી બ્રહ્માનંદસ્વામી પર ચિઠ્ઠી લખી કે, 'સ્વામિનારાયણે તારા પર ભૂરકી નાખી છે. હું તને લેવા માટે આવ્યો છું. મિત્રતાના દાવે તું મને મળવા માટે આવી જા.'
+</p>
+ <p>
+
+             બ્રહ્માનંદસ્વામીએ ચિઠ્ઠી મહારાજને આપી. મહારાજ કહે, "એમને મળવા જાવ અને અહીં લઈ આવો." બ્રહ્માનંદસ્વામીએ કહ્યું, 'પણ એ અહીં નહીં આવે.'  મહારાજ કહે, "પ્રયત્ન કરજો, એ આવશે." બ્રહ્માનંદસ્વામી પ્રેમલમહારાજ પાસે પહોંચ્યા.
+</p>
+ <p>
+
+        બ્રહ્માનંદસ્વામીના ભગવા કપડા. શરીર પર સોનુ દેખાય નહીં. આવું દર્શન કરીને પ્રેમલમહારાજ આશ્ચર્યચકિત થઇ કહે, 'તું આટલો મોટો રાજકવિ, બાવો કેવી રીતે થઈ ગયો ?'  પછી બ્રહ્માનંદસ્વામીએ ધીમે રહીને મહારાજના મહિમાની વાત મૂકી કે, 'હું જેની જોડે બેઠો છું એ કોઈ સામાન્ય માણસ નથી; કોઈ દેવ નથી, કોઈ સિદ્ધ સંત નથી. તારે અંતરથી સુખી થવું હોય તો આ પુરુષ પાસે આવ્યા વિના છૂટકો જ નથી.'  એમ એક કલાક મહિમાની ગોષ્ઠી કરી તો પ્રેમલમહારાજનું મન બદલાઈ ગયું.
+</p>
+ <p>
+
+            પ્રેમલમહારાજ કહે, 'હું એને ભગવાન તો જ કહું જો મને એ મારા નામથી બોલાવે.' બ્રહ્માનંદ સ્વામી અને જોબનપગીની જેમ પ્રેમલ મહારાજે પણ સંકલ્પ કર્યો કે, 'મહારાજ મારું નામ દઈને બોલાવે.'  એ બ્રહ્માનંદસ્વામીને કહે, 'પણ બ્રહ્માનંદ ! તું પાછળ બેસ જે, કાનમાં જઈને કહી નહિ દેતો.' બ્રહ્માનંદ સ્વામી કહે, 'હું છેલ્લો જ બેસીશ. તું આગળ બેસજે એટલે તને મારા માટે શંકા ના જાય.'
+</p>
+ <p>
+
+           પછી બ્રહ્માનંદસ્વામી એમને મહારાજ પાસે લઈ આવ્યા. મહારાજ કહે,  એમણે આગળ બેસાડો. બ્રહ્માનંદ ! તમે પાછળ બેસી જાવ." મહારાજે એમણે નજીક બેસાડ્યા. મહારાજ ગોષ્ઠિ કરતા કરતા આનંદ કરાવતા હતા. પછી ધીમે રહીને કહે, "અહીં આવો." પ્રેમલમહારાજ ઊભા થઈ ભગવાન સ્વામિનારાયણની નજીક પહોંચ્યા.
+</p>
+ <p>
+
+           પ્રેમલમહારાજે સંકલ્પ કર્યો હતો કે, 'મારું નામ લઇ ને મને બોલાવે.'  અને મહારાજે લીલા કરી કે, "તમારું નામ શું ?" 
+</p>
+ <p>
+
+         દૂર બેઠેલા બ્રહ્માનંદસ્વામીને થયું કે, 'બફાઈ ગયું, બધું બફાઈ ગયું.'  ભગવાન સ્વામિનારાયણે એક વાર, બે વાર, ત્રીજી વાર પૂછ્યું, "તમારું નામ શું ?"  એકવાર તો બ્રહ્માનંદસ્વામી નાપાસ થઈ ગયા. એમને થયું કે, આ તો સંકલ્પ કરીને આવ્યો હતો અને પ્રભુ તો સામેથી પૂછે છે કે, "તમારું નામ શું ?" હવે એ સત્સંગી થશે કે, નહી થાય ?
+</p>
+ <p>
+
+          મહારાજે ત્રણ વાર પૂછ્યું એટલે બ્રહ્માનંદસ્વામીએ પાછળથી એક ટપલી મારીને કહ્યું, 'મહારાજ પૂછતા હોય ત્યારે કહી દેવાનું.' ત્યારે પ્રેમલમહારાજ કહે, 'પણ મારું નામ જ ભૂલી ગયો છું ! પ્રયત્ન કરવા છતાય યાદ નથી આવતું.'
+</p>
+ <p>
+
+        <strong>  એ પ્રભુની સુપ્રીમસી કેવી ! પ્રેમલમહારાજને પોતાનું નામ ભુલાવી દીધું.</strong>
+</p>
+ <p>
+
+          પ્રેમલમહારાજ પોતાનું નામ યાદ કરવા ફાફા મારવા લાગ્યા. એક મિનિટ સુધી વિચાર્યા જ કર્યું. પછી શ્રીજીમહારાજ કહે, "પ્રેમલમહારાજ ! આવો ભેટીએ." ઊભા થઇને ભેટી પડ્યા. મહારાજે જ્યારે કહ્યું કે, " પ્રેમલમહારાજ !" ત્યારે તો એમને યાદ આવ્યું કે, 'મારું નામ પ્રેમલમહારાજ છે.'  પ્રેમલમહારાજ ની આંખમાં આંસુ આવી ગયા. પછી આનંદસભર હૈયે કહે, 'હવે તું ભગવાન સાચો હો.' પગમાં પડી ગયા.
+</p>
+ <p>
+
+             પણ પહેલા તો ભુલાવી દીધું, ને પછી યાદ કરાવી દીધુ. પછી પગે જ પડે ને ! <strong>આપણા ૧૪ અબજ જ્ઞાનતંતુઓને બ્લેન્ક કરી નાખે એનું નામ સહજાનંદ ! સહજમાં આનંદ પ્રગટાવી દે એનું નામ સહજાનંદ !</strong>
+</p>
+ <p>
+
+            પ. પૂ. સ્વામીશ્રી પરાવાણી  ઉચ્ચારતા બોલ્યા હતા કે, <strong>"હું આ પ્રસંગ કાયમ યાદ કરું છું. આ મારા સ્વાધ્યાયનો પ્રસંગ છે. આ પ્રસંગ દુનિયાની કોઈપણ વ્યક્તિએ યાદ રાખવા જેવો છે. ૬૪૦ કરોડ જે અત્યારે છે અને હવે પછી જન્મ લેશે તેમણે પણ, જ્યાં સુધી બ્રહ્માંડનો પ્રલય ન થાય ત્યાં સુધી બધાએ પ્રેમલમહારાજની વાત તો યાદ રાખવાની છે જ... જ... જ."</strong>
+
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

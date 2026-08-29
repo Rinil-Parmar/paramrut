@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      Past is Passed
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_944">
+      May 31, 2024, Orange, Connecticut<br/>
+      <p>કનેક્ટીકટ સભામાં આવતા એક યુવક ગુરુહરિના દર્શને આવ્યા. પોતે ત્રણ અઠવાડિયા પહેલા જ ગ્રજ્યુએટ થયા છે અને જોબ એપ્લિકેશન કરી રહ્યા છે. તેમને કોઈ જગ્યાએથી કોઈ રિસ્પોન્સ ના આવતા ખૂબ depressed થઈ ગયા હતા. હજી યુવક કંઈક કહે તે પહેલા ગુરુહરિએ અંતર્યામીપણે કહ્યું, “Interview માં જાઓ તો ગભરાવાનું નહિ. જે આવડે છે એનો તમે કોન્ફિડન્સથી જવાબ આપો એનો ફેર પડે. સ્વામીને સંભારીને જવાનું interview માં.”</p><p>યુવકે ગુરુહરિને વાત કરતા કહ્યું કે હું બહુ જ નાની નાની વસ્તુમાં હતાશ થઈ જવું છું. કોઈ વસ્તુ પકડીને મારે જે કરવું છે તે નથી કરી શકતો. રાત્રે ઘણી વાર જાગી જાઉં તો ઊંઘ નથી આવતી. એવું જ લાગે કે નહિ થાય. એવી પરિસ્થિતિમાંથી પસાર થઈ રહ્યો છું. મારુ મન પણ અમુક જગ્યાએ ભટકી ગયું છું તો તમે...</p><p>ગુરુહરિ એમને અટકાવીને કહે, “અત્યારે stable છેને?” યુવક કહે, “હા, અત્યારે stable છે”</p><p>ગુરુહરિ કહે, “બસ તો પછી ભટકી ગયું છે એનો વિચાર નહિ કરવાનો. એનો વિચાર કરીને tension માં નહિ જવાનું. Past is passed. જે થયું એ ભૂતકાળ થઈ ગયું. એને યાદ નહિ રાખવાનું. એ વિચાર કરી દુઃખી નહિ થવાનું.”</p><p>યુવકે ફરી કહ્યું, “મન નથી થતું application કરવાનું. એવું જ થાય છે કે કાલે જેવો response આવ્યો એવો જ આજે આવશે તો? આમ પણ કોઈ ફાયદો છે નહિ, તો શું ફાયદો application કરવાનો ?”</p><p>ગુરુહરિ બળ આપતા કહે, “દીકરાઓ બે-બે હજાર application કરે છે એમને આદર્શ રાખવાના, ચિંતા નહિ કરવાની. એ બધા ચિંતા નથી કરતા. આપણે સ્વામીજીના માથે પડીને ઇન્ટરવ્યૂ આપવાના. અત્યારે જોબની crisis બધે જ છે છતાં પ્રયત્ન કરે તો મહારાજ ભળે. ગભરાવાનું બિલકુલ નહિ. નાસીપાસ થવાની જરૂર નથી. પ્રાર્થના કરીને જવાનું. Application નાખવાની જ.”</p><p>ગુરુહરિ દરેક વ્યક્તિના પ્રશ્નને ઊંડાણથી સમજીને, જ્યાં સુધી તેમને સંપૂર્ણ સમાધાન અને સંતોષ ન થાય ત્યાં સુધી સમય ફાળવીને તેમની વાત સાંભળે છે. તેમની સાથેની પાંચ મિનિટની અંગત વાતચીત પણ વર્ષો સુધી શાંતિ અને નિરાંત આપનારી હોય છે. આ તો કેવળ એક યુવક સાથેના ગુરુહરિના સંવાદનું દર્શન છે, પરંતુ આ જ પ્રકારનું જતન ગુરુહરિ તેમના સંપર્કમાં આવતા પ્રત્યેક ભક્ત માટે નિરંતર કરી રહ્યા છે.</p><p>વિષય : અક્ષર જતન</p><p>ટેગ: બળ, વિચારો, હતાશા, પ્રાર્થના, યુવા પ્રવૃત્તિ</p><p>(વ્હાલા તારી સ્મૃતિના સહારે, ૨૦૨૪ - ૫૧)</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: <br/>
+      ટેગ: <br/>
+      નંબર: ૬૩૨
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

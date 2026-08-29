@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+અલ્પસંબંધના તવ આભાસે....
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રીનું જીવન એટલે... <br/>
+અલ્પસંબંધના તવ આભાસે, મુજ અસ્તિત્વ વિલીન બનો.
+</p>
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રી યોગીફાર્મ, વાસણા પધાર્યા હતા. સ્વામીશ્રીની તબીયત નાદુરસ્ત હતી તેથી કોઈપણ હરિભક્તો દર્શન કે ખાનગી માટે ન પધારે તેવી ડોક્ટરોની આજ્ઞા હતી.
+</p>
+<p>
+આ દરમ્યાન એકદિવસ પરોક્ષના સંપ્રદાયના એક સંન્યાસી-પાર્ષદ હરિધામ સ્વામીશ્રીના દર્શન માટે આવ્યા હતા. પરંતુ સ્વામીશ્રી હરિધામ નથી તે જાણી તેઓ ઉદાસ થઈ ગયા. હરિધામ મંદિરે કોઈના પરિચયમાં પણ નહીં. તેઓ જ્ઞાનયજ્ઞ દેરીએ બેસીને માળા ફેરવી રહ્યા હતા. 
+</p>
+<p>
+તેમના અંતરમાં સ્વામીશ્રીના દર્શનની ખૂબ ઉત્કંઠા હતી. તેઓ તો ચાલતા ચાલતા વાસણાના માર્ગે નીકળી ગયા.
+</p>
+<p>
+ધરતીમાત્રના સાધકોના અંતરના પ્રત્યેક આર્તનાદને અહર્નિશ જાણનારા અને જવાબ આપનારા સ્વામીશ્રીથી શું અજાણ્યું હોય ? સ્વામીશ્રીએ પોતાના સેવકને કહ્યું, ‘એક સંન્યાસી-પાર્ષદ હરિધામથી વાસણા ચાલતાં ચાલતાં આવે છે. તેઓને લેવા માટે આપણી ગાડી લેવા માટે જલ્દી મોકલો.’
+</p>
+<p>
+એ સંન્યાસી-પાર્ષદ તો સ્વામીશ્રીની દિવ્યતા અને પરાભક્તિના દર્શન કરીને ખૂબ જ ભાવવિભોર થઈ ગયા ! નાદુરસ્ત તબિયતને બાજુમાં રાખીને સ્વામીશ્રી તેમને મળ્યા અને તેમને પોતાના પ્રેમના કરુણાના અસ્ખલિત ધોધમાં ડૂબાડીને આનંદ કરાવ્યો.
+</p>
+<p>
+હે સ્વામીશ્રી ! આપ તો અલ્પ સંબંધવાળાની સેવા પ્રભુના ભાવથી કરો છો. તો અમને એવા આશીર્વાદ આપો કે અમે આપના અલ્પ સંબંધવાળા મુક્તોનું ક્યારેય અયોગ્ય ન જોઈએ, ન બોલીએ કે ન સાંભળીએ અને તેમની અહોહોભાવે સેવા કરતા જ રહીએ.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

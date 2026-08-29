@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સ્વામીજી સર્વોપરી ભળશે.
+    </div>
+    <div class="vaat_ind" id="vaat_file_744">
+      
+      <p>તારીખ ૬ ઓક્ટોબર ૨૦૨૫ ના શરદ પૂનમના દિને હરિપ્રબોધમ ત્રિવેણી મહોત્સવ ઉજવાયો.</p><p>અનાદિ મૂળ અક્ષરમૂર્તિ શ્રી ગુણાતીતાનંદ સ્વામીનો ૨૪૧ મો પ્રાગટ્ય પર્વ, ગુરુહરિ હરિપ્રસાદ સ્વામીજી મહારાજનો હીરક દીક્ષા પર્વ તથાહરિપ્રબોધમ ધામનો ખાતમુહુર્ત પર્વ - આ ત્રિવેણી મહોત્સવ વડોદરા શહેર નજીક આવેલા ગણેશપુરા ગામે ભક્તિભાવ અને ભવ્યતાથી ઉજવાયો.</p><p>ખાતમુહૂર્તવિધિનો અનુપમ અને ઐતિહાસિક લાભ લેવા દેશ-વિદેશના ૨૫ હજાર જેટલા ભક્તો થનગની રહ્યા હતા. તો બીજી તરફ મેઘરાજા અનરાધાર વરસી રહ્યા હતા.</p><p>૬ ઓક્ટોબર ૨૦૨૫ ના રોજ સમૈયો હતો અને ૨ ઓક્ટોબર સુધી મેઘરાજાનું વાજતે ગાજતે આવાગમન ચાલુ હતું.</p><p>પાણીનો ભરાવો રોકવા મેદાનમાં પ્લાસ્ટિક પાથરવામાં આવ્યું હતું. આખા મેદાનમાં પાણી પાણી થઈ ગયું. વડોદરા અને આજુબાજુના ગામોના ભક્તોએ ડોલથી, ડબલાથી, સ્પોન્ઝથી પાણી ઉલેચવા લાગ્યા.</p><p>આવી પરિસ્થિતિમાં ન રસોડું કરી શકાય, ન સ્ટેજ ઊભું કરી શકાય કે ન એલ.ઈ.ડી. ગોઠવી શકાય એમ હતું. એવી વિપરીત પરિસ્થિતિ હતી. પણ બધા સંતો અને સેવકોનો ખૂબ ઉમંગ હતો. અને બધાનો મરણિયો પ્રયાસ હતો.</p><p>સંતો ભક્તોએ ગુરુહરિના ચરણોમાં પ્રાર્થના કરી કે આપ કૃપા કરો તો સમૈયો સરસ થઈ જાય. ત્યારે ગુરુહરિએ ભજન કરવા અને આત્મીયતાથી દોડવા કહ્યું.</p><p>પછી ગુરુહરિએ એમનો વિશ્વાસ દોહરાવતા કહ્યું કે ભલે વરસાદ પડે પણ સ્વામીજી સર્વોપરી ભળશે.</p><p>આથી સંતો ભક્તોને ખૂબ બળ મળ્યું અને સહુ મરણિયા થયા.</p><p>ગુરુહરિના સંકલ્પે તારીખ ૩, ૪, ૫ અને ૬ એ એવો તાપ નીકળ્યો કે ઘણું ખરું મેદાન સુકાઈ ગયું. એટલે સ્ટેજ પણ ઊભું થઈ ગયું. મહાપૂજા વિધિમાં બેસનારા ૩૧૦૦ જેટલા ભક્તોની સરસ વ્યવસ્થા થઈ. ખાતુમુહૂર્તનું સ્થાન પણ ઓછા સમયમાં ભવ્યતાથી સુશોભિત કરવામાં આવ્યું. ભક્તોને પ્રસાદ આપવા માટે ફૂડ પેકેટની વ્યવસ્થા કરવામાં આવી. દરેક ડિપાર્ટમેન્ટના સંતો અને સેવકોએ ઓછા સમયમાં બધી જ સેવા પૂર્ણ કરી.</p><p>સમૈયાના દિવસે તારીખ ૬ ના રોજ ગુરુહરિ પ્રબોધજીવન સ્વામીજી સાંજે પોણા પાંચ વાગ્યે મહોત્સવના સ્થળે પધાર્યા. સાંજે પાંચ ને અગિયાર મિનિટે ગુરુહરિ મહાપૂજામાં પધાર્યા. સાંજે છ ને ચૌદ મિનિટે મહાપૂજા પૂર્ણ થઈ. ત્યારબાદ ગુરુહરિ ખાતમુહૂર્તના સ્થળે પધાર્યા. સાંજે છ ને છત્રીસ મિનિટે ગુરુહરિએ ત્રિકમથી ભૂમિ પર ટચકો માર્યો. ત્યારબાદ બ્રાહ્મણોના વેદોક્ત મંત્રગાન દ્વારા ખાતમુહૂર્ત વિધિ સંપન્ન થઈ. વિધિના અંતે ગુરુહરિએ કળશ અને ઈંટો ભૂમિમાં પધરાવ્યા.</p><p>સાંજે સાત વાગ્યે ગુરુહરિ સભામાં પધાર્યા. પ્રથમ સર્વમમંગલ સ્વામીએ ગોષ્ઠિનો લાભ આપ્યો. ત્યારબાદ ગુરુહરિએ સ્ટેજની સામે આસન પર બિરાજી ભક્તિનૃત્ય નિહાળ્યું. ભક્તિનૃત્ય બાદ ગુરુહરિ સ્ટેજ પર પધાર્યા.ભક્તિપ્રિયસ્વામીએ પ્રાસંગિક લાભ આપ્યો. ત્યાર બાદ ભક્તોએ અને મહાનુભાવોએ ગુરુહરિને હાર અર્પણ કર્યા. સાંજે આઠ ને ચાલીશ મિનિટે ગુરુહરિએ ૨૧ મિનિટ આશિષ આપ્યા. ત્યાર બાદ મહાઆરતી કરવામાં આવી.</p><p>રાત્રે સાડા નવ વાગ્યે ગુરુહરિ સભા પૂર્ણ કરીને થાળ માટે પધાર્યા. ત્યારબાદ આત્મીય વિદ્યાધામ પધાર્યા.</p><p>સમૈયો પૂરો થયો પછી જ ધીમે ધીમે મેઘરાજાનું આગમન થયું. ભક્તોએ વિના વિઘ્ને વાહનોમાં પોતપોતાના ગંતવ્ય સ્થાન તરફ પ્રસ્થાન કર્યું.</p><p>જાણે એમના સંકલ્પે જ વરસાદ પડ્યો ને વરસાદ અટક્યો.</p><p>આમ, ગુરુહરિના સંકલ્પે અને આશિષથી પ્રતિકૂળ પરિસ્થિતિમાં સમૈયો ઉજવાયો. સહુએ પ્રતિકૂળતાને પ્રસાદ માન્યો.</p><p>એટલું જ કહી શકાય કે ગુરુહરિનો સમૈયો ગુરુહરિએ જ કર્યો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: સામર્થ્ય<br/>
+      ટેગ: મહોત્સવ, ઐશ્વર્ય, વરસાદ, વિશ્વાસ, ગઢડા પ્રથમ ૨૭<br/>
+      નંબર: ૩૫૬
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભગવદીની અનિવાર્યતા
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+મૂળ અક્ષરમૂર્તિ ગુણાતીતાનંદસ્વામીએ ભગવદીની અનિવાર્યતા સમજાવતાં કહ્યું છે કે આટલી વાત તો સો જન્મે પણ ન સમજાય માટે આ વાત સૌ રાખજો - બે સારા સાધુ અને ને ત્રણ સારા હરિભક્ત તેમની સાથે જીવ બાંધવો તો સત્સંગમાંથી ન પડાય. 
+</p>
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રીનાં બાળપણનાં મિત્ર દાસભાઈ સ્વામીજીનાં દર્શન કરવા માટે આવ્યા. એમણે સ્વામીજીને પૂછ્યું કે જીવનમાં ભગવદીની શી જરૂર છે ?
+</p>
+<p>
+ત્યારે સૂઝ આપતાં સ્વામીજીએ કહ્યું, ‘દાસ ! જીવનમાં ભગવદી તો જોઈએ જ.’ <br/>
+પછી  પૂછ્યું, ‘અનંત કોટિ બ્રહ્માંડમાં આ એક પૃથ્વી કેવી લાગે ?’ <br/>
+દાસભાઈ કહે, ‘ગોળા (નાનકડા ટપકાં) જેવડી લાગે.’ <br/>
+સ્વામીજી કહે, ‘આ પૃથ્વીમાં હિન્દુસ્તાન કેવડો દેખાય ?’ <br/>
+દાસભાઈ કહે, ‘ટપકાં જેવડો. (એકદમ નાનકડો)’ <br/>
+</p>
+<p>
+સ્વામીજી કહે, ‘એમાંય વળી ગુજરાત કેટલું લાગે ?’ <br/>
+દાસભાઈ કહે, ‘સ્વામી ! એકદમ તો જડેય નહીં.’ તો કહે, ‘એમાંય વડોદરા જીલ્લો કેટલો લાગે ?’ <br/>
+દાસભાઈ કાંઈ ના બોલ્યા. સ્વામીજી બોલ્યા જતા હતા કે એમાંય તમારું ગામ કેટલું દેખાય ? દાસભાઈ કહે, ‘ના દેખાય.’ <br/>
+સ્વામીજી કહે, ‘તો તું દેખાય ?’ દાસભાઈ કહે, ‘ના દેખાઉં.’ 
+</p>
+<p>
+પછી સ્વામીજી બોલ્યા, ‘દાસ ! જેમ હથેળીમાં જળનું ટીપું રાખી મૂક્યું હોય એમ મહારાજની ને બાપાની કૃપાથી અમે જોઈ રહ્યા છીએ છતાંય પણ હું કહું છું કે ભગવદીની જરૂર છે.’ 
+</p>
+<p>
+હે સ્વામીશ્રી ! આપની અંતરની અનુવૃત્તિ પ્રમાણે અમે સહુ બે સારા સાધુ અને ચાર સારા હરિભક્તો સાથે જીવ બાંધીને સ્વરૂપનિષ્ઠા અને મહિમાની દૃઢતા કરતા જ રહીએ તેવી કૃપા વરસાવશોજી.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,140 @@
+﻿<DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ઠાકોરજી પ્રત્યેના મમત્વની અનોખી સૂઝ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+વર્ષો પહેલાં ગુરુહરિ સ્વામીશ્રી સંતો-સેવકો સાથે મધ્યપ્રદેશથી વિચરણ કરીને ત્રણ દિવસ પછી મહારાષ્ટ્રમાં આવ્યા. વિચરણમાં મહિનો થઇ ગયો હતો. સાંજના સાડા છ-સાત વાગી ગયા હતા. 
+</p>
+<p>
+સ્વામીશ્રી કહે, ‘ગાડી ઉભી રાખો, ઠાકોરજીનો થાળ કરવો છે.’ થાળ કરવા ગાડી ઉભી રાખી. એક સેવકને કહ્યું, ‘ઠાકોરજીના દૂધ માટે શું કરીશું?’ એમણે કહ્યું, ‘સ્વામીજી ! પેલા મહારાષ્ટ્રીયનો ગાયો દોહે છે.’ સ્વામીશ્રી કહે, ‘એમની પાસેથી ઠાકોરજી માટે દૂધ લઈ આવો.’ 
+</p>
+<p>
+સેવકે સાદા કપડાં પહેર્યા હતા તે દૂધ લેવા ગયા. ભરવાડને કહ્યું, ‘એક લોટી દૂધ ભરી આપ..’ ને  પૂછયું, ‘કેટલા પૈસા ?’ તો કહે, ‘બે રૂપિયા..’ સેવક પૈસા આપીને દૂધ લઈ આવ્યા. ઠાકોરજીને ધરાવ્યું. 
+</p>
+<p>
+સ્વામીશ્રીએ પૂછ્યું, ‘કેટલા પૈસા આપ્યા ?’ સેવકે કહ્યું, ‘બે રૂપિયા..’
+</p>
+<p>
+સ્વામીશ્રીએ એ સેવકને કહ્યું, ‘ઠાકોરજી માટેનું દૂધ સેવામાં લઈ આવવું જોઈએ ને ?’
+</p>
+<p>
+સેવક કહે, ‘બે રૂપિયા મેં મારામાંથી આપ્યા છે, ઠાકોરજીના નથી વાપર્યા.’
+</p>
+<p>
+એ સાંભળીને સ્વામીશ્રી હસ્યા, પરંતુ કાંઈ ના બોલ્યા. 
+</p>
+<p>
+પછી રાત્રે એ ગાડીમાં સાથે હતા ત્યારે સ્વામીશ્રીએ સેવકને કહ્યું, ‘તું મારી વાત સાંભળ.. બે રૂપિયાનો સવાલ નથી. તમને તો મરાઠી આવડે છે. તમે એ ભરવાડને મરાઠીમાં વાત કરીને મિઠાશથી સમજાવ્યું હોત કે આ દૂધ તો અમારે ઠાકોરજી માટે વાપરવાનું છે, એમ કરીને ઠાકોરજીનો મહિમા ગાયો હોત અને એ ભરવાડ પાસેથી સેવામાં દૂધ લાવ્યા હોત તો એ ભરવાડનું કેટલું બધું પુણ્ય ઉદય થાત ને છેલ્લો જન્મ થાત. ઠાકોરજી માટે દૂધ લાવ્યા હોત તો એ ગાયની પણ લક્ષચોર્યાસી ઉડી જાત. ને તમે પણ કેટલા મોટા પુણ્યના ભાગીદાર બનત ! હવેથી આપણે આવું ધ્યાન રાખવું.’ 
+</p>
+<p>
+આમ, ગુરુહરિ સ્વામીશ્રીએ ઠાકોરજી પ્રત્યેના મમત્વ અને ભક્તિની સૂઝ અર્પી.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

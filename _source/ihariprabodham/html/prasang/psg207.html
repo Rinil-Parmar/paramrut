@@ -1,0 +1,146 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+ઐતિહાસિક દાસત્વ
+</div>
+
+
+ <div class="vaat_ind" id="vaat1_1">
+<p> 	
+ભગવાન સ્વામિનારાયણ માણકી ઘોડી પર બિરાજમાન હતા. મહારાજના દર્શન એ જ તેમના જીવનનો આનંદ એવા ગુણાતીતાનંદ સ્વામી એક સાધુ ને કહે, "મારા ભાગનો લાડુ તને આપીશ, તું મારી સાથે આવીશ ?"  ગુણાતીતાનંદ સ્વામીએ પોતાના ભાગનો લાડુ પેલા સાધુને આપી દીધો. "હાશ ! લાડુ મળ્યો !" પેલા સંત રાજી થઈ ગયા. એ સાધુ ગુણાતીતાનંદ સ્વામી ને કહે, "મારે શું કરવાનું તે કહો ?" ગુણાતીતાનંદ સ્વામી કહે, "તારે મારી જોડ સાચવવાની. તું મારી સાથે આવીશ ને?" તો કહે, "આવીશ." એટલે જ્યારે મહારાજ ઘોડી પર જતા હતા ત્યારે એમની જોડ સાથે મહારાજના દર્શન કરવા ગુણાતીત પાછલા પગે દોડ્યા ! 
+</p>
+<p>
+મહારાજ તો કેવા ?  <br/>
+- સર્વ સુખમય મૂર્તિ <br/>
+- સર્વ રસમય મૂર્તિ <br/>
+- સર્વ ઉપાસ્ય મૂર્તિ <br/>
+- સર્વ ગુણોના મહોદધિ <br/>
+- સર્વ સરસતાના મહાસાગર સમ મૂર્તિ
+</p>
+<p>
+આવા મહારાજ પાસે તો ગુણાતીત પોતાનું અસ્તિત્વ ભૂલી જ જાય ને !
+</p>
+<p>
+ધરતીના ઇતિહાસમાં દાસત્વ ને પ્રીતિનું આ અજોડ દ્રષ્ટાંત છે. ગુણાતીત પાછલા પગે ૩-૪ કિલોમીટર સુધી દોડતા જ રહ્યા, દોડતા જ રહ્યા. મહારાજ કહે, "રાખો ગુણાતીત, હવે જાવ."
+</p>
+<p>
+- અનંત બ્રહ્માંડો જેને લઇને ચેતન ! <br/>
+- અનંત બ્રહ્માંડો જેના ભૃકુટી વિલાસના આભાસે ઉત્પન્ન થાય ને લય થાય ! <br/>
+- જેની સહેજ દૃષ્ટિ પડે તો અનંત બ્રહ્માંડો ગંધાઈ ઊઠે ! <br/>
+- સગુણ અને નિર્ગુણ સ્વરૂપ અક્ષરબ્રહ્મ ! <br/>
+- પુરુષોત્તમ નારાયણના ખમીરને સંપૂર્ણ ધારણ કરનાર એવા અક્ષરબ્રહ્મ !
+</p>
+<p>
+અને એ ગુણાતીત સમગ્ર શક્તિને ભૂલીને નારાયણ ના દર્શન કરવા પાછા પગે દોડે, એ ગુણાતીતની પરાભક્તિ કેવી !!
+</p>
+ 
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

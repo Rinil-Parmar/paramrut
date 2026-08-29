@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+યુવકો મારું સર્વશ્વ છે
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+    વડોદરા શહેરના એક પૈસાપાત્ર પરિવારના સદ્‌ગ્રહસ્થ એમના દીકરાને લઈને હરિધામ સ્વામીશ્રીના દર્શને આવ્યા. પ્રથમ મિલને જ દીકરાને સ્વામીશ્રી ખૂબ ગમી ગયા!
+
+</p>
+
+<p>
+
+...પરંતુ આ જમાનાના અનેક ચિત્રવિચિત્ર રંગોથી રંગાએલ એ યુવાન-એવા જ છેલબટાઉ મિત્રોના સંગે મદિરાપાનની લતે ચઢી ગયેલો. હરિધામ આવે, સ્વામીશ્રીની અને સંતો-સહિષ્ણુમુક્તોની ગોષ્ઠિ સાંભળે એટલે થોડા દિવસ એ લતમાંથી મુક્ત થઈ જાય, પરંતુ ઘરે આવ્યા પછી ફરી એ મિત્રોના સંગે ભાન ભૂલી જાય.
+</p>
+
+ <p>
+    પરિસ્થિતિ એવી આવી કે એકવખત દારૂના નશામાં અર્ધબેભાન અવસ્થામાં એણે એક વિચિત્ર આગ્રહ રાખ્યો કે ‘મને મળવા હરિપ્રસાદસ્વામી મારે ઘરે જ આવે.’ તે વખતે સ્વામીશ્રીના પણ વ્યસ્ત વિચરણના કાર્યક્રમને લીધે તથા એમના સ્વાસ્થ્યની ટ્રીટમેન્ટ ચાલુ હોવાને કારણે તે શક્ય નહોતું તેથી અંતેવાસી સંતે બે વડીલ સંતોને ને એક વડીલ સહિષ્ણુસેવકને એને ઘેર મોકલ્યા, પરંતુ બે કલાકની સમજાવટ પછી પણ એણે તો, ‘સ્વામીજી જ ઘરે પધારે ને મારી ખબર પૂછે’ એવો આગ્રહ ચાલુ જ રાખ્યો.
+</p>
+ 
+  <p>
+    સ્વામીશ્રીને એનો અણસાર આવી ગયો. પૂ. મૈત્રીસ્વામીને લઈને કોઈનેય જણાવ્યા વગર એની પાસે પહોંચી ગયા ને લગભગ બેભાન અવસ્થામાં દુર્ગંધ મારતા મોઢે એ યુવાન સ્વામીજીના ખોળામાં માથું મૂકીને સૂઈ જ રહ્યો... ને કોઈપણ જાતના ટેકા વગર પોતાની કેડ ને શરીર ખૂબ દુ:ખતા હોવા છતાં લગભગ દોઢ કલાક સુધી સ્વામીશ્રી એના માથા પર પોતાના કરુણાભીના હાથ પ્રસરાવતા જ રહ્યા!         
+   </p>
+
+ <p>
+સાથેના સંત ને સેવકો સ્વામીશ્રીની આ અપરંપાર દેહાતીત ને કલ્પનાતીત ધીરજ, વાત્સલ્ય ને કરુણાને નિહાળતા જ રહ્યા! હરિધામ સ્વામીશ્રી પધાર્યા ત્યારે બે જણાનો ટેકો લઈને માંડ માંડ સ્વામીશ્રી આસનસ્થ થયા! પોતાના નિરપેક્ષ પ્રેમના ધોધમાં એ યુવાનને ઝબોળવા છતાં સામેપક્ષે કિંચિત્ પ્રતિભાવ ન દેખાયો પરંતુ સ્વામીશ્રીના વાત્સલ્યમાં કિંચિત્ ઓટ ન આવી!
+
+</p>
+
+<p>
+
+સંજોગોવશાત્ પેલો યુવાન તો થોડાસમય પછી પ્રભુના ધામમાં પહોંચી ગયો, પરંતુ એમના પિતાશ્રી આજે પણ સ્વામીશ્રી ઘરે પધારેલા એ દૃશ્યને ભૂલી શકતા નથી ને હૃદયના ઊંડાણથી બોલી ઊઠે છે કે સ્વામીજી એ સ્વામીજી! બ્રહ્માંડમાં એમની કરુણાની, એમના પ્રેમની કોઈ સીમા જ નથી! છોરુ કછોરુ થાય પણ કરુણાનિધિ માવતર સ્વામીશ્રીની એ નિ:સ્વાર્થ ને નિરપેક્ષ કરુણાનો જોટો નહિ જડે!
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

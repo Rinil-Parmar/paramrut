@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીત પરંપરા જીવંત છે... 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ ‘કીર્તિ, કંચન ને કામિનીના રસ ને રાગ રહિતના ગુણાતીત સંત થકી પૃથ્વીના પટાંગણ પર હું અખંડિત રહીશ !’ -  એવું અભય વરદાન ભગવાન સ્વામિનારાયણે સમગ્ર માનવજાતિને બક્ષી સદાને માટે સનાથ  બનાવી. 
+</p>
+<p>
+તા. ૨૩ જાન્યુઆરી ૧૯૭૧ ના દિવસે બ્રહ્મસ્વરૂપ યોગીજી મહારાજ  સ્વધામ પધાર્યા. બાપાનાં અંતિમ દર્શન કરવા માટે ગુરહરિ સ્વામીશ્રી અને સંતો બસમાં ગોંડલ પહોંચ્યા. સોખડા ગામનાં ઘનશ્યામભાઈ સારથી તરીકે સેવામાં સાથે હતા. સભામંડપમાં બાપાનાં પાર્થિવ દેહસ્વરૂપે દર્શન થઈ રહ્યાં હતાં. વારાફરતી સહુએ દર્શન-પૂજન કર્યા. સ્વામીશ્રીએ સૌ સંતો વતી બાપાને હાર પહેરાવ્યો અને બાપાનાં ચરણોમાં ગદ્‌ગદ્‌ કંઠે પ્રાર્થના કરી.
+</p>
+<p>
+અગ્નિસંસ્કાર વિધિ થઈ એ વખતે ઘનશ્યામભાઈએ એક અલૌકિક દશ્ય નિહાળ્યું. યોગીબાપાના એ પ્રજ્વલિત દેહમાંથી એક ઝળહળતી જ્યોત નીકળી અને સ્વામીશ્રીમાં આવીને સમાઈ ગઈ ! ઘનશ્યામભાઈએ આભા બની આ અભૂતપૂર્વદર્શનને ક્ષણમાં માણી લીધું. આજુબાજુ જોયું તો બીજા એક વડીલ સંતને પણ આવું જ દર્શન થયુ. તેઓ આ અંગે અન્ય સંતો સાથે ચર્ચા કરી રહ્યા હતા તે ઘનશ્યામભાઈએ સાંભળી એટલે એમને પાકી ખાતરી થઈ ગઈ. આ દર્શનથી ઘનશ્યામભાઈના નિશ્ચયમાં વધુ દૃઢતા થઈ કે યોગીબાપા ધરતી પરથી ગયા નથી, પરંતુ સ્વામીશ્રીમાં અખંડ રહ્યા છે.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

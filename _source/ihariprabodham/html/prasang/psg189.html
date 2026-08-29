@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+હું અક્ષરસ્વરૂપ છું એમ માનીને દેરીએ પ્રદક્ષિણા કરજો.
+
+
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+એક યુવકને ખૂબ મૂંઝવણ હતી. સામાન્ય વ્યક્તિ નહોતી. ખૂબ જાગ્રત, શું ન થાય ! કેમ ન થાય ! એવી યુદ્ધ ખેલનારી વ્યક્તિ ! ખૂબ બુદ્ધિપ્રધાન વ્યક્તિ ! એને એટલી બધી મૂંઝવણ તે રહેવાય નહીં.
+</p>
+<p>
+
+એ યુવકે યોગીજીમહારાજને રડતા હૃદયે પોતાની મૂંઝવણની વાત કરી. <br/>
+યોગીજીમહારાજે એમને પ્રસાદ આપીને ખૂબ હસતાં હસતાં આશીર્વાદ આપતાં કહ્યું, ‘ગુરુ ! કોઈ ચિંતા કરતા નહીં. આપણે અક્ષરધામના છીએ. એમ માનીને પ્રદક્ષિણા કરજો.’
+
+
+</p>
+<p>
+
+અંતરમાં યુદ્ધ ચાલતું હોય, બધી હૈયાંમાં રહેલા રજોગુણ, તમોગુણની વરાળો નીકળતી હોય ત્યારે બાપાની વાણી ક્યાંથી સાચી મનાય ’
+</p>
+<p>
+છતાંય બાપાએ એમને ફરી નજીક બોલાવીને ફરી કહ્યું, ‘અહીંયા આવો ગુરુ ! હું અક્ષરસ્વરૂપ છું એમ માનીને દેરીએ પ્રદક્ષિણા કરજો.’
+</p>
+<p>
+વચનામૃત ગઢડા પ્રથમ-16માં ભગવાન સ્વામિનારાયણે કહ્યું છે, ‘સંત કહે જે તું ઈન્દ્રિયો, મન, પ્રાણ થકી જુદો છું અને એનો જાણનારો છું... દેહાદિક સર્વ અસત્ય છે તેમ વચન કહે તેને પરમ સત્ય કરીને માને પણ તેમાં સંશય કરે નહીં.’
+</p>
+<p>
+
+ગુરુહરિ સ્વામીશ્રીએ આ પ્રસંગ સમજાવતા કહ્યું હતું, ‘સ્થૂળ, દેહ, પૃથ્વી, જળ, તેજ, વાયુ, આકાશનો સુક્ષ્મ શરીર ઈન્દ્રિયોના દેવતાઓ મન - બુદ્ધિ પ્રાણ બાકીના 19 તત્ત્વોવાળું સુક્ષ્મ શરીર એને અને આપણે કોઈ સંબંધ નથી... આપણે ગુણાતીત જ છીએ.’
+
+</p>
+
+<p>
+
+
+આપણે એ ભગવાન સ્વામિનારાયણની વાણી અને ભગવત્‌સ્વરૂપ સંતની વાણીમાં ક્યારેય સંશય નહીં કરવાનો. એમણે કહ્યું એટલે પરમ સત્ય !  આ આપણો મેઈન બેઈઝ છે : ‘આપણે અક્ષરબ્રહ્મ જ છીએ.’ 
+
+
+
+</p>
+
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

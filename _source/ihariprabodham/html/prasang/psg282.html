@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આજ પ્રગટ્યા પૂરણબ્રહ્મ રે...
+</div>
+
+<p>
+એકવાર શ્રીજીમહારાજના થાળ ભાદરામાં મૂળજી શર્મા (ગુણાતીતાનંદસ્વામી)ને ત્યાં ગોઠવાયા. મહારાજ તો વશરામભાઈ, ડોસાભાઈ, માવજીભાઈ, રત્નાભાઈ વગેરે હરિભક્તોને લઈને વહેલા મૂળજી ભક્તના ઘરે પધાર્યા. મૂળજી ભક્ત સવારથી ખેતરે ગયા હતા. સાકરબા રસોઈ કરતાં કરતાં રસોડામાંથી બહાર આવ્યાં અને મહારાજને માટે સાંગામાંચી ઢાળી તે ઉપર બેવડું ગોદડું પાથરી દીધું. મહારાજ માંચી ઉપર બિરાજ્યા. 
+</p>
+<p>
+મહારાજે સાકરબાને પૂછ્યું, ‘મા ! તમારા મૂળજી અમને કોઈ દિ યાદ કરે છે? ’ 
+</p>
+<p>
+સાકરબા કહે, ‘મહારાજ ! એ તો આખો દિ તમારું જ રટણ કર્યા કરે છે. તમને એક ઘડી પણ વિસારતા નથી. મૂળજી છેક બાળક હતા ત્યારથી આપનું નામ રટ્યા જ કરે છે. અયોધ્યામાં આપનો જનોઈ ઉત્સવ ઉજવાતો હતો ત્યારે મૂળજીએ મને કીધું હતું, ‘મા, મા, આજે જનોઈનાં ગીત ગાવ. મહારાજને જનોઈ દેવાય છે.’ આપ વનમાં ગયા ત્યારે તેણે મને કહ્યું હતું, ‘મા, આજે ધામના ધણી વનમાં પધાર્યા છે.’ વનમાં આપે કરેલી એક એક લીલાનું આબેહૂબ વર્ણન મૂળજીએ મારી આગળ કર્યું હતું. આપ જ્યારે લોજમાં પધાર્યા ત્યારે તેણે મને કહ્યું હતું, ‘મા, આજે મહારાજ લોજમાં પધાર્યા છે અને થોડા વખતમાં તારા હાથનો થાળ જમવા અહીં પધારશે.’ મહારાજ! આપે મૂળજીનું એ વચન આજે સાકાર કર્યું છે.’ 
+</p>
+<p>
+મહારાજ બોલ્યા, ‘જેમ મૂળજી અમને સંભારે છે તેમ અમે પણ મૂળજીને રોજ સંભારીએ છીએ. અમારું હેત અનાદિનું અને બંધન અતૂટ છે. મા ! તમને નહીં સમજાય પણ તમારા પુત્ર મૂળજી તો અમારે રહેવાનું સાક્ષાત્ અક્ષરધામ છે. ગર્ભમાં આવ્યા ત્યારે અને ગર્ભમાં આવ્યા પહેલાં મૂળજી અમને અખંડ દેખતા. એ તો એટલા મોટા છે કે મૂળ માયા, મૂળપુરુષ એ સર્વેના એ ઈશ્ર્વર છે. એ મૂળ અક્ષરબ્રહ્મ-તમારે ઘરે પુત્રરૂપે પ્રગટ થયા છે. ’ 
+</p>
+<p>
+
+‘મા ! તમારા મૂળજી તો વ્યાપક છે, અને સર્વના કારણ અને આધાર છે. અમે તેમના દ્વારા જ સઘળું કાર્ય કરીએ છીએ. અમે તેમના વિના એક ક્ષણ પણ રહી શકતા નથી. જીવ, ઈશ્ર્વર કે મોટા અવતારો પણ મૂળજીના સંબંધથી બ્રહ્મરૂપ થાય ત્યારે જ આત્યંતિક મુક્તિને પામે છે, કારણ કે મૂળજી શુદ્ધ ચૈતન્ય બ્રહ્મ છે. એ અમારા એવા ભક્ત છે તેથી અમે તેમનાયે ભક્ત બનવાને ઈચ્છીએ છીએ. ’
+</p>
+<p>
+..જ્ઞાનની મોટી વાત તો સાકરબા કદાચ ન સમજી શક્યાં પણ સ્વયં મહારાજના મુખે પોતાના લાડકા પુત્ર-મૂળજીનો મહિમા સાંભળી આનંદવિભોર થઈ ગયાં !
+</div>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,158 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+‘કરોડ વિંછીનું દુ:ખ મને આવો પણ મારા હરિભક્તને નહીં..’ કરુણાનિધિ શ્રીહરિ !
+
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+એકવાર મહારાજ વિસનગર બિરાજમાન હતા. એકાએક તેમણે મુકુંદ બ્રહ્મચારીને કહ્યું કે ‘હાલ ને હાલ આપણે અહીંથી નીકળી જવું પડશે. નાજા જોગિયાને દુ:ખ આવ્યું છે. તેમની રક્ષા કરવા અમારે વહેલી તકે પહોંચવું જોઈએ.’ એમ કહી બ્રહ્મચારીને લઈને મહારાજ વઢવાણ પધાર્યા, પણ ભોગાવો નદીમાં તો ભયંકર પૂર હતું, એટલે બ્રહ્મચારીને નદીને કાંઠે બેસાડીને મહારાજે તો પૂરપાટ વહી જતા પાણીના પ્રવાહમાં ઝંપલાવ્યું. સડસડાટ સામે કિનારે વઢવાણ પહોંચી ગયા.
+</p>
+<p>
+
+આ બાજુ જસદણ પાસેના ભોંયરા ગામના કાઠી દરબાર વાસુર ખાચર સ્વામિનારાયણના ને સત્સંગના ખૂબ જ દ્વેષી ને વિરોધી હતા. તેમણે નાજા જોગિયાને બોલાવીને કહ્યું, ‘તારા સ્વામિનારાયણ જો ભગવાન હોય તો કાલે સવારે અહીં હાજર થઈ જવા જોઈએ. નહીં તો અમે તારા ઢીંચણ ભાંગી નાંખીશું.’
+</p>
+<p>
+
+આ સાંભળી નાજા જોગિયા ધ્રુજી ગયા. તેને થયું કે મહારાજ તો વિસનગર બિરાજે છે ને સવારે અહીં કેવી રીતે પધારે? અને આ અસુર વાસુર ખાચર જરૂર મારા ઢીંચણ ભાંગશે. ભજન સિવાય બીજો કોઈ સહારો નથી એમ જાણી તેમણે તો સ્વામિનારાયણ મહામંત્રની આહલેક જગાવી.
+</p>
+<p>
+
+વઢવાણમાં ભાણજી મહેતાનો થાળ ઉતાવળે જમીને મહારાજ પવનવેગે ઉપાડ્યા ! રસ્તામાં ભાદર નદી આવી. બે કાંઠે વહેતી ભાદર નદીના સામાપુરમાં તરી મહારાજ વહેલી સવારે ભોંયરા પહોંચી ગયા. ભોંયરાના પાદરમાં એક ચારણ મળ્યો. તેની જોડે સંદેશો કહેવડાવ્યો કે દરબારને કહેજો, ‘નાજા જોગિયાના ભગવાન આવી ગયા છે !’
+</p>
+<p>
+
+અહીં તો નાજાએ આખી રાત ખાટલામાં બેસી અખંડ ભજન કર્યું હતું. તેના મનમાં એમ હતું કે મહારાજ તો સ્વતંત્ર છે, તેઓ તો ચાહે સો કરે...તેઓ અહીં આવે કે ન પણ આવે, ને મારી રક્ષા કરે કે ના પણ કરે ! તેથી મારે માટે તો ભજન સિવાય બીજો કોઈ જ ઉપાય નથી.
+</p>
+<p>
+
+એટલામાં મહારાજે નાજાની ડેલીનાં કમાડ ખખડાવ્યા અને બહારથી જ સાદ દીધો, ‘નાજા ! અમે તારા ભજનનો સાદ સાંભળીને દોડતા આવ્યા છીએ !’ નાજો જોગિયો દોડીને ડેલી ઉઘાડીને મહારાજના પગમાં પડી ગયો અને ગદ્ગદ્ થઈ રડવા લાગ્યો. તેને બાથમાં લઈ ભેટીને પ્રભુએ કહ્યું, ‘નાજા ! તારા ભજનની કડેડાટી બ્રહ્માંડો ભેદીને અમારે કાને પહોંચી એટલે અમે દોડી આવ્યા.’
+</p>
+<p>
+
+ત્યારબાદ સ્નાનાદિકથી પરવારી મહારાજ બેઠા. પછી નાજાને કહ્યું, ‘આખી રાત અડવાણે પગે અમે લગભગ દોડતા જ આવ્યા છીએ તો હળવેથી બધા કાંટા પગમાંથી કાઢી નાખો.’ નાજાએ પ્રભુના ચરણારવિંદ ખોળામાં લીધા ને એનું અંતર દ્રવી ગયું. એ બોલી ઉઠ્યો કે ‘પ્રભુ ! મારા જેવા એક સામાન્ય ભગત માટે આપે કેટલું બધું દુ:ખ સહન કર્યું ! કદાચ મારો દેહ પડી જાત તો આપ જ મને ધામમાં લઈ જાત. તો પછી આટલું કષ્ટ શા માટે લીધું ?’
+</p>
+<p>
+
+ત્યારે કરુણાભીના સાદે શ્રીજી બોલી ઉઠ્યા કે “અમારું તો અનાદિ નું બિરુદ છે. ભક્તોના દુ:ખે દુ:ખિયા થવાનું વરદાન તો અમે અમારા ગુરુ રામાનંદસ્વામીજી પાસે સામેથી માંગી લીધું છે. અમે ભક્તો માટે જ દેહ ધરીએ છીએ ને તમારી જેમ જે ભક્ત ભજનનો જ આધાર લે છે તેની પાસે દોડી જઈને સર્વે પ્રકારની રક્ષા કરવી એને અમે ભક્તિ માનીએ છીએ.” આંખોમાં વહેતી અશ્રુધારા સાથે ગદ્‌ગદ્‌  હૈયે નાજો પ્રભુની આ કરુણા ને ઝીલી રહ્યો. સાચા હ્રદયના પોકારપૂર્વક થયેલા મહામંત્રના ભજનનો કેવો અદ્‌ભુત  પ્રતાપ ! પ્રભુની કેવી કલ્પનાતીત કરુણા !
+
+</p>
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

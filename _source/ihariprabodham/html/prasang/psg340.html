@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભક્તિ કરતા ભૂધર ભક્તો કેરી અનેરી ... 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+સ્વામી તમારો ભીડો કેવો... અમ સહુથી એ દેખી ના શકાએ, તારો ભીડો. <br/>
+સુખમાં તમે, દુ:ખમાં તમે, સહુના બન્યા... પરને અર્થે જીવન અર્પ્યું...<br/>
+વ્હાલું કદી રાખ્યું ન કાંઈ, ભીડો એવો વેઠ્યો આપે. <br/>
+</p>
+<p>
+ભક્તોની સેવા કરવાની તક હોય ત્યારે ગુરુહરિ સ્વામીશ્રી પોતાનાં દેહના ભાવને કિંચિત જણાવા ન દે. પોતાની સામે આવનાર દરેક આત્મા યોગીજી મહારાજનું સ્વરૂપ છે એવા ભાવથી નિરંતર સ્વામીશ્રી તેમની સેવાભક્તિ અદા કરી રહ્યા છે. 
+</p>
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રી દિલ્હી વિચરણમાં પધાર્યા હતા. સ્વામિનારાયણ ફાર્મ પર સ્વામીશ્રીનો ઉતારો હતો. આખો દિવસ સ્વામીશ્રીને ખૂબ જ ભીડો રહ્યો હતો. સ્વામીશ્રીના મુખારવિંદ પર થાકનું દર્શન પણ થતું હતું. એટલામાં એક હરિભગતે રાત્રે પોણા એક વાગ્યે સ્વામીશ્રીને પ્રાર્થના કરી, ‘સ્વામીજી મારે તમારી સાથે ખાનગીમાં બેસવું છે.’ 
+</p>
+<p>
+સ્વામીશ્રી તે હરિભક્ત સાથે સાથે ખાનગીમાં બિરાજ્યા. ખાનગી પૂરી થાય અને સ્વામીશ્રી આરામમાં પધારે એની રાહ જોઈને સાથેના સેવક સંત પૂ. પ્રભુપ્રિયસ્વામી અને પૂ. અશોકભાઈ રૂમની બહાર બેઠા હતા. પરંતુ ખાનગી મોડે સુધી ચાલી તે રાહ જોતા જોતા પ્રભુપ્રિયસ્વામી અને અશોકભાઈ બહારના સોફા પર જ સૂઈ ગયા. 
+</p>
+<p>
+ખાનગી પૂરી થયા પછી સ્વામીશ્રી રૂમની બહાર આવ્યા અને સેવકોને ઉઠાડીને કહે, ‘ચાલો, હવે સૂઈ જઈએ.’ 
+</p>
+<p>
+બંને મુક્તોએ પ્રાર્થના કરતા કહ્યું, ‘દયાળુ, સવારના પોણા ચાર વાગી ગયા ?’ 
+</p>
+<p>
+ત્યારે સ્વામીશ્રીએ કહ્યું, ‘મને તો ખબર જ ન પડી કે પોણાચાર થઈ ગયા !’
+</p>
+<p>
+પછી કહે, ‘બાપાની સેવા થઈ ગઈ ને ! સૂવાનું તો કાયમ છે જ ને ?’ 
+</p>
+<p>
+ચૈતન્ય મંદિરોનું નિર્માણ કરવા માટે ગુરુહરિ સ્વામીશ્રી સ્થળ-સંજોગ, દિન-રાત જોયા વિના અપાર ભીડો વેઠીને યોગીજીમહારાજ પ્રત્યેનું ગુરુભક્તિનું દર્શન કરાવી રહ્યા છે, આવા ગુરુહરિ સ્વામીશ્રીનું આપણે શું ઋણ વાળી શકીશું !
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

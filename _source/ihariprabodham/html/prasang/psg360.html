@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+દર્શન કરવાં એ પણ એક લ્હાવો છે - તે માટે સ્વાધ્યાય-ભજન જોઈએ.
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રી મુંબઈ, ગોરગાંવ એક હરિભક્તના ઘરે પધાર્યા. રાત્રિના 8:30 વાગ્યાનો સમય હતો. એ પરિવારના ત્રણ ભાઈઓ સ્વામીશ્રીની સામે બેઠા હતા. ત્રણેય ભાઈઓ નિષ્ઠાવાન. સ્વામીશ્રી કહે, ‘હું તમારા સહુનાંય દર્શન કરવા આવ્યો છું.’
+</p>
+<p>
+એ ત્રણેય ભાઈઓને સૂઝ આપતાં સ્વામીશ્રી કહે, ‘દર્શન કરવા એ પણ એક લ્હાવો છે; પણ દર્શન કરતાં આવડવું જોઈએ.’
+</p>
+<p>
+સ્વામીશ્રીએ તરત જ યોગીબાપાની સ્મૃતિ કરતાં કહ્યું : 
+</p>
+<p>
+એકવખત યોગીબાપા ગોંડલ અક્ષરમંદિરે બિરાજમાન હતા. બપોરનો સમય હતો. ‘વાસુદેવ હરે’નો સાદ પડ્યો. યોગીબાપા ક્યારેય જમવા ચાલો એવું બોલે નહીં. ...પણ એ દિવસે બાપાએ યુવકોને કહ્યું, ‘આજે તો આપણે બધાએ રસ-રોટલી જમવાના છે.’ બાપાએ ફરી કહ્યું, ‘ચાલો, ચાલો જમવા.’
+</p>
+<p>
+નગાસર ગામનો એક યુવક શિવલાલ પણ ત્યાં હાજર હતો. તેણે બાપાને કહ્યું, ‘બાપા, તમે પણ આજે થોડો કેરીનો રસ ગ્રહણ કરજો.’
+</p>
+<p>
+બાપા કહે, ‘ના, ના. મને કેરીનો રસ ભારે પડે, પચે નહીં. હું તો કેરી ચૂસીશ.’
+</p>
+<p>
+એટલામાં નિર્ગુણસ્વામી આવ્યા. તેમણે બાપાને કહ્યું, ‘બાપા, તમને શેમાં સ્વાદ આવે ?’
+</p>
+<p>
+બાપાએ સહજભાવે કહ્યું, ‘અમને પ્રકૃતિપુરુષ પર્યંત કશાયમાં સ્વાદ ન આવે.... પણ મને ભક્તોનાં દર્શનમાં સ્વાદ આવે.’
+</p>
+<p>
+અમારા બધામાં એક યુવક ચંચળ અને ઉતાવળિયો હતો. તેણે બાપાને પૂછ્યું, ‘બાપા, તમને અમારા દર્શનમાં શેનો આનંદ આવે ?’
+</p>
+<p>
+યોગીબાપા બોલ્યા, ‘હું તમારા સહુમાંય શાસ્ત્રીજીમહારાજના દર્શન કરું છું એટલે મને તમારા દર્શનમાં આનંદ આવે છે.’
+</p>
+<p>
+આ પ્રસંગનું દર્શન કરાવ્યા બાદ ગુરુહરિ સ્વામીશ્રીએ કહ્યું કે, ‘આવો દર્શનનો લ્હાવો માણવા માટે સ્વાધ્યાય-ભજન ફરજીયાત કરવું પડે. ’
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! અમે સહુ સ્વાધ્યાય-ભજન કરી વચનામૃત પંચાળા ૧, ૪, ૭ પ્રમાણે આપના દર્શન કરી શકીએ એવા આશીર્વાદ આપશોજી !!!
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

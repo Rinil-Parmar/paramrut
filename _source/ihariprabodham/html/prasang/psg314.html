@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+એવી સ્થિતિ કરવી હોય તો સહન કરવું પડે !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રી મુંબઈ બિરાજમાન હતા. સ્વામીશ્રી રાત્રે ન્યાસ લેતા હતા. 
+</p><p>
+ડૉ. ઉપેનભાઈ બેઠા હતા. તેમણે પ્રાર્થના કરતાં કહ્યું, ‘સ્વામીજી, આપને કાયમ શરદી રહે છે. હવે તો શરદી મૂકો... કેટલા વર્ષથી છે ! રોજ રોજ ન્યાસ લેવાનો ! આ બધું હવે મૂકી દો.’ 
+</p><p>
+સ્વામીશ્રી કહે, ‘સાચું કહું ઉપેન ! હું ક્યારે શું કરું છું... ક્યારે જમું છું... ક્યારે ન્યાસ લઉ છું મને ખબર જ નથી હોતી.’ પછી આગળ સ્વામીશ્રી કહે, ‘એ પણ એક સ્થિતિ કહેવાય.’  
+</p><p>
+અશોકભાઈએ પ્રાર્થના કરતાં કહ્યું, ‘આવી સ્થિતિ અમારે કરવી હોય તો શું કરવું પડે ?’
+</p><p>
+સ્વામીશ્રી કહે, ‘એવી સ્થિતિ કરવી હોય તો સહન કરવું પડે.’
+</p><p>
+હે સ્વામીજી ! આપ તો સંપૂર્ણ છો અને અમને સંપૂર્ણ બનાવવા આવ્યા છો તો અમે અમારા આત્માને સુખી કરવા માટે ભગવદી સંતો-મુક્તોનું હસતા થકા સહન કરી શકીએ તેવી કૃપા કરશોજી.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

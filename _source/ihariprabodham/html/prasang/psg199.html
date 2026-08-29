@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+સ્વાધ્યાય-ભજન આત્માનો ખોરાક છે
+</div>
+
+ <div class="vaat_ind" id="vaat1_1">
+ <p>
+ગુરુહરિ સ્વામીશ્રીના જીવનની પ્રત્યેક પળ મુમુક્ષુઓ માટે પથદર્શક અને સુખાકારી હોય છે. તા. 26-12-2013ના રોજ સાંજે 4:00 વાગ્યે સ્વામીશ્રી જ્ઞાનયજ્ઞ દેરીએ બિરાજમાન હતા. ધૂન્ય બાદ અમદાવાદના એક યુવક પોતાના લગ્ન નિમિત્તે સમગ્ર પરિવાર સાથે હરિધામ શ્રીઠાકોરજીનાં દર્શન કરવા આવ્યા હતા.
+</p>
+ <p>
+તેમણે સ્વામીશ્રીને હાર અર્પણ કરી સફળ લગ્નજીવન માટે અને આત્મીયતાથી તથા દાસના દાસ થઈને જીવી શકાય તે માટે પ્રાર્થના કરી. 
+</p>
+ <p>
+ 	
+સ્વામીશ્રી કહે, "લગ્ન એટલે માંગલિક ઉત્સવ. આત્મીયતાથી ઘરમાં ઉઠાવ લેવાનો. પ્રસંગો બને ત્યારે ગમ ખાઈને જીવી લેવાનું. ઘરમાં ઘરવાળા આગળ નાપાસ નહીં થવાનું. ગૃહસ્થ ઘરમાં નાપાસ ન થાય તો બધી જ સાધના પૂરી થઈ જાય. ગૃહસ્થ પોતાની ઘરવાળી આગળ નાપાસ ન થાય એનું નામ અક્ષરધામમાં રહ્યા કહેવાય. ઘરમાં કોઈનેય ‘તું’ નહીં કહેવાનું.
+
+</p>
+ 
+<p>
+
+રોજ રાત્રે ગમેતેવા થાક્યા હોઈએ તો પણ થોડીક વાતો, વચનામૃત અથવા પ્રીતે ત્રણમાંથી એકનાં બે પાન વાંચીને જ સૂવાનો નિયમ રાખવાનો. બે પેઈજ વાંચીએ, વિચારીએ ને પ્રાર્થના કરી, ભજન કરીએ. હું એક પેરેગ્રાફ વાંચી ને પછી વિચારું ને મહારાજને પ્રાર્થના કરું. એમ તમારે પણ આજથી આ એક નિયમ લઈ લેવાનો, તો આત્માને ખોરાક મળી જાય. આત્માનો ખોરાક લાડવા નથી. સ્વાધ્યાય ને ભજન એ આત્માનો ખોરાક છે. જે વ્યક્તિ આત્માને ખોરાક ન આપે એ વ્યક્તિને પૃથ્વી પર પાછા આવવાનું છે જ જ જ જ."
+
+</p>
+
+<p>
+
+એ યુવકે ફરી પ્રાર્થના કરી કે, ‘સ્વામીજી, આશીર્વાદ આપજો કે હું દાસનો દાસ થઈને જીવી શકું.’ 
+
+</p>
+
+<p>
+સ્વામીશ્રી કહે, "જ્યાંસુધી ભગવાનને કર્તાહર્તા ન માનીએ ને પોતાની બુદ્ધિના ડોળથી જીવીએ ને સંબંધે ન જીવીએ એટલા નાપાસ થયા કહેવાય. નિષ્ઠા પાકી રાખજો. જેટલી નિષ્ઠા પાકી હોય એટલા જ દાસના દાસ થવાય. જાગ્રત ચૈતન્યના ભગવાન છે. રાત્રે ખટકો રાખીને ત્રણ ગ્રંથનું થોડું વાંચન કરી, સ્વાધ્યાય-ભજન કરીને પછી જ સૂવાનું."
+</p>
+
+<p>
+કર્તાહર્તા માનીને ભજન-પ્રાર્થના કરતા જઈશું અને આત્મીયતાથી જીવન જીવતા જઈશું તો ગમેતેવા પ્રસંગોમાં પણ આપણે સારધાર પાર ઉતારીને સુંદર સુખમય જીવન જીવી શકીશું."
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

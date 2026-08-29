@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Haridham - Sokhada</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+મળ્યા શ્રીહરિ સાક્ષાત્ !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+1974માં ગુરુહરિ સ્વામીશ્રીની જન્મજયંતી નિમિત્તે પ.ભ. સતુભાઈએ પ.ભ. નવનીતભાઈ જે પૂર્વાશ્રમના પૂ. પ્રેમબહેનના ભાઈ થાય; એમને આમંત્રણ પાઠવતો પત્ર મોકલ્યો હતો. એ દરમ્યાન પૂ. પ્રેમબહેનને ખૂબ અનુભવો કરાવ્યા હતા, અંતરમાં સાધુ થવાની લગની લાગી હતી. તેથી તેમણે સ્વામીશ્રીનાં પ્રત્યક્ષ દર્શન થતાં પહેલા જ પત્ર મોકલ્યો હતો. 
+</p>
+<p>
+એકબાજુ દક્ષામંદિરમાં ટપાલીએ સતુભાઈને હાથમાં પત્ર આપ્યો, બીજી બાજુ ગુરુહરિ સ્વામીશ્રી દક્ષામંદિરમાં પધારી સોફામાં બિરાજ્યા. પૂ. પ્રેમબહેને પ્રથમ વાર ગુરુહરિ સ્વામીશ્રી માટે ‘પ્રત્યક્ષ પ્રભુજી’નું સંબોધન કર્યું હતુ. બે ત્રણ લીટી વાંચતાં જ સતુભાઈ ખૂબ પ્રભાવિત થઈને બોલી ઉઠયા, ‘સ્વામીજી ! જુઓ જુઓ, આણે તો હજુ તમારાં દર્શનેય નથી કર્યા; ને તમને ક્યાંથી ઓળખી લીધા ?’ એમ કરીને પ.પૂ.સ્વામીશ્રીના હાથમાં પત્ર આપ્યો. 
+</p>
+<p>
+પ.પૂ. સ્વામીજીએ પત્ર વાંચીને એ ચૈતન્યનો પૂર્વજન્મ બતાવતાં કહ્યું, ‘સતુભાઈ ! 25 જન્મથી સાધુ થતી આવી છે, અને છેલ્લા ચાર જન્મથી આપણા સંપ્રદાયમાં મહારાજ એમની જોડે જ રાખે છે. શ્રીજીમહારાજના વખતે એ ઉદેપુરના રાજાની રાણી ઝમકુબા હતાં.’
+</p>
+<p>
+વચનામૃત ગઢડા અંત્ય-૨ માં શ્રીજીમહારાજે આ વાર્તા તો અતિ ઝીણી છે ને બીજાને તો સમજ્યામાં પણ આવે નહીં એમ કહ્યું છે. તો એ કઈ વાત ? તો ‘શ્રુતિમાં કહ્યું છે જે, ‘જેવી પરોક્ષ દેવને વિષે જીવને પ્રતીતિ છે તેવી જો પ્રત્યક્ષ ગુરુરૂપ હરિને વિષે આવે, તો જેટલા અર્થ પ્રાપ્ત થવાના કહ્યા છે તેટલા સર્વે અર્થ તેને પ્રાપ્ત થાય છે.’ અને જ્યારે આવો સંત-સમાગમ પ્રાપ્ત થયો ત્યારે દેહ મૂકીને જેને પામવા હતા તે તો દેહ છતાં જ મળ્યા છે; માટે જેને પરમ પદ કહીએ, મોક્ષ કહીએ તેને છતે દેહે જ પામ્યો છે.’
+</p>
+<p>
+આવા પ્રત્યક્ષ પ્રમાણ પ્રભુજીની આપણને પ્રાપ્તિ થઈ ! એમની ગોદમાં ઉછરવાનું સૌભાગ્ય પ્રાપ્ત થયું. ! તો યોગીજીમહારાજે કહ્યું છે તેમ આપણા જેવા અનંત બ્રહ્માંડમાં કોઈ ભાગ્યશાળી નથી !
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

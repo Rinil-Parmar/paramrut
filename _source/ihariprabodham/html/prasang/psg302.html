@@ -1,0 +1,128 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+અડઘ ધ્યેયનિષ્ઠ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+અમારે (પ્રભુદાસભાઈ અને યુવકો) ગોંડલથી રાજકોટના વડીલ મુક્તરાજ નારણભાઈ શેઠના ઘરે ઘણીવખત જવાનું થાય. વર્ષમાં પાંચ વખત ગુરુહરિ યોગીજીમહારાજનો ઉતારો શેઠને ત્યાં હોય. જ્યારે પણ બાપા ત્યાં પધારે ત્યારે બે-ત્રણ દિવસ ત્યાં રોકાય. ઉત્તરાયણની ઝોળી વખતે બાપા ત્યાં હોય, કૃષ્ણજીઅદાના જન્મ દિવસે બાપા ત્યાં હોય,  દિવાળીના દિવસોમાં પણ બાપા ત્યાં હોય જ. 
+</p><p>
+મારે તો બાપા  સાથે કાયમ જોડે જવાનું થતું છતાં પણ કોઈ દિવસ એ ઘરની બહેન-દીકરીઓ તરફ મારી નજર નથી ગઈ. 
+</p><p>
+અમારી નજર એ તરફ જઈ ના શકી એનું કારણ એટલું જ હતું : <br/>
+- અમારો એ વિષય જ ન હતો. <br/>
+- અમે અમારી દુનિયામાં જ રહેતા હતાં. <br/>
+- અમે અંતઃદૃષ્ટિ કરીને જીવતા હતાં. <br/>
+- અમારી નજર કેવળ યોગીજીમહારાજ તરફ હતી. <br/>
+- અમને વચ.ગ.પ્ર. ૧૮નું ભાન હતું.
+</p><p>
+અમે યોગીજીમહારાજ સાથે દસ વર્ષ રહ્યાં પણ એક સાધુ કે એક સેવક બરાબર વર્તે છે કે નથી વર્તતા એ તરફ નજર નથી જવા દીધી કે મન નથી જવા દીધું.
+</p><p>
+હે સ્વામીજી ! અમને પણ આપના જેવા સ્વધર્મ અને ધ્યેયનિષ્ઠ બનાવશોજી.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

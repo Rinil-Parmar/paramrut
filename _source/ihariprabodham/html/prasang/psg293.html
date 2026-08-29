@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સંબંધનો મહિમા 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રીએ કમરના દુ:ખાવાની બિમારી ગ્રહણ કરી હતી. ડૉક્ટરોએ ધીમેથી ચાલવાની, બેસવાની-ઉઠવાની તેમજ બને તેટલો આરામ કરવાનું કહ્યું હતું.
+</p><p>
+તે વખતે હરિધામ મંદિરમાં હરિભક્તોની સભા હતી. સ્વામીશ્રી બધાને દર્શન આપવા પધાર્યા. દરવાજા આગળ હરિભક્તોના બૂટ-ચંપલ ઉતારેલા હતા. એક પણ બૂટ કે ચંપલ પર પગ ન પડે તેવી રીતે કાળજીપૂર્વક ચાલવા માટે સ્વામીશ્રી લાંબા - લાંબા ડગ ભરવા લાગ્યા. 
+</p><p>
+સાથેના સેવક સંતે કહ્યું કે, ‘દયાળુ ! આપને કમરનો દુ:ખાવો છે માટે ડૉક્ટરે લાંબા ડગ ભરવાની મનાઇ કરી છે.’
+</p><p>
+મહિમાનું દર્શન કરાવતાં સ્વામીશ્રી બોલ્યા, ‘કમરનો દુઃખાવો વધી જાય તે ચાલે પરંતું સંબંધવાળાના બૂટ કે ચંપલ પર પગ ન દેવાય.’
+</p><p>
+ભક્તોનાં સંબંધવાળા ચંપલનું આટલું માહાત્મ્ય સમજતા હોય તે ગુરુહરિ સ્વામીશ્રીને મન પણ આપણું કેટલું માહાત્મ્ય હશે!
+</p><p>
+હે સ્વામીશ્રી ! અમે આપના સંબંધવાળા ભક્તોનો મહિમા સમજીએ. એ ભક્તોનાં દોષ-સ્વભાવ ન જોઈએ પરંતુ કેવળ આપનો સંબંધ નિહાળી શકીએ એવી કૃપા વરસાવશોજી.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

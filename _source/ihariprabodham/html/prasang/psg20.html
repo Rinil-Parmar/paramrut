@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+અંતર્યામી અને સર્વજ્ઞ એવા સ્વામીજીનું યોગીબાપા સાથેનું કેવું ઐક્ય!
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+વાસણા કોતરીયાના મુક્તરાજ અંબાલાલભાઇ પંડ્યા ખૂબ જુના સત્સંગી અને પવિત્ર બ્રાહ્મણ. વર્ષો પહેલાં એમણે યોગીબાપાને પ્રાર્થના કરેલી કે બાપા, ગૃહસ્થાશ્રમ માંડ્યે ઘણો વખત થયો પણ મહારાજે હજી કાંઇ દીકારા દીધા નથી. ત્યારે યોગીબાપાએ કૃપાદૃષ્ટિ કરી કહ્યું હતું કે અંબાલાલ, મહારાજ દયા કરશે અને મુકતો આપશે પણ એમાંથી એક દીકરો અમારો અને અમે એને સાધુ બનાવશું. અંબાલાલે રાજી થઇ સંમતિ આપી.
+</p>
+<p>
+આ વાતને ઘણો સમય વીતી ગયો. મહારાજની કૃપાથી એેમને સંતાનપ્રાપ્તિ થઇ. એમાં ઇ.સ. ૧૯૭૧માં યોગીબાપા તો સ્વધામ પધારી ગયા અને અંબાલાલને પણ બાપાને આપેલું વચન ખાસ કાંઇ યાદ રહ્યું નહિ.
+</p>
+<p>
+
+ઇ.સ. ૧૯૭૪ પછી એમના ચિ. હર્ષદને એમણે સોખડા સ્કૂલમાં ભણવા મૂક્યો. તે નિર્દોષ અને નમણો કિશોર, કુટૂંબના સત્સંગના વારસાના હિસાબે સોખડા જુના મંદિરે નિવાસ કરી રહેલા સ્વામીજી અને સંતોના યોગમાં આવ્યો. ચૈતન્ય પારખનાર સ્વામીજીએ પોતે તો મનોમન એને દિક્ષા આપી સાધુ બનાવવાનું નક્કી કરી દીધું હશે. ચિ. હર્ષદને દીક્ષા આપવાના થોડા સમય પહેલાં સ્વામીજી સામેથી વાસણા અંબાલાલભાઇને ઘરે ગયા. ઓચિંતા પધાર્યા એટલે બધા ખૂબ આનંદમાં આવી ગયા. 
+</p>
+<p>
+ત્યારે સ્વામીજીએ અંબાલાલભાઇને કહ્યું કે તમારી પાસે એક દીકરો સાધુ બનાવવા માટે યોગીબાપાએ માંગેલો તે તમને યાદ છે? થોડી સ્મૃતિ સતેજ થતાં અંબાલાલભાઇને એ પ્રસંગ યાદ આવી ગયો. પરંતુ એમને એ વાતનું આશ્ર્ચર્ય થયું કે જે વાત પોતે અને યોગીબાપા જ જાણતા હતા તે વાત સ્વામીજી કેવી રીતે જાણી ગયા? આ અંગે અંબાલાલભાઇ કાંઇ પૂછે એ પહેલાં જ સ્વામીજીએ જણાવ્યુ, તમારા હર્ષદને અમે સાધુ બનાવીશું, તમારે રાજીખૂશીથી રજા આપવી પડશે. અંબાલાલભાઇના મનમાં આનંદ છવાઇ ગયો. જાણે સાક્ષાત્ યોગીબાપા જ દીકરો માંગી રહ્યા હોય તેવું તમને લાગ્યું એટલે સ્વામીજીની વાત એમણે અને પરિવારના મુકતોએ સહર્ષ સ્વીકારી લીધી. 
+</p>
+<p>
+
+આજે નિર્દોષ અને પવિત્ર એવા આનંદવિહારીસ્વામી બાપાએ માંગેલા કોલના અને અંબાલાલે આપેલા વચનના મૂર્તિમાન સાક્ષી છે!
+<p>
+
+    <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

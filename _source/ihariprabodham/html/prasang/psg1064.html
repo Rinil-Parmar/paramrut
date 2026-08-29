@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      આત્મીયતાથી ભેગા મળીને દોડજો.
+    </div>
+    <div class="vaat_ind" id="vaat_file_1064">
+      
+      <p>જ્યારે બધા પ્લાનિંગ શરૂ થયા, ત્યારે બધા કાર્યકરો ભેગા થયા હતા. અશોકભાઈ  અને શાશ્વત સ્વામી પણ સાથે હતા.</p><p>ભેગા થઈને વાત કરી કે હવે ભક્તિ ઉત્સવનું એનાઉન્સ તો થયું છે પણ એનું આપણે પ્લાનિંગ કરવું પડશે. પહોંચી કઈ રીતના વળાશે? કારણ કે જે બધા દીકરાઓ સેવામાં નિમિત્ત બને છે, એ બધા બિઝનેસવાળા છે, કોઈ એવી બહુ મોટી જોબવાળા નહીં.</p><p>એ વખતે પરિસ્થિતિ  એવી હતી કે,  એક તો રિસેસનનું એનાઉન્સ થયું હતું, બીજું જે ધંધાવાળા છે એ બધાના ધંધા ૩૦-૪૦% ઓછા ચાલતા હતા અને બેંકનો ઇન્ટરેસ્ટ રેટ હાઈ હતો.</p><p>વિડિયો કોલ પર ગુરુહરિએ દર્શન આપ્યા. અમે  પ્રાર્થના કરી કે આ ત્રણ વસ્તુ છે, એમાં ઇન્ટરેસ્ટ રેટ ડાઉન થાય, ધંધો અપ થાય અને રિસેસન ડાઉન થાય, તો  ભક્તિ ઉત્સવમાં સહુ નિમિત્ત બની શકે.</p><p>ગુરુહરિએ એટલું જ કહ્યું કે, “ભલે ગમે એવી કન્ડિશન હોય, પણ આત્મીયતાથી ભેગા મળીને દોડજો. બીજું, ઉમંગ રાખજો અને ત્રીજું, નિમિત્ત બનીને દોડજો. એટલે મહારાજ ગમે એવી પરિસ્થિતિમાં પણ સમૈયો સરસ કરશે.”</p><p>એ  પ્રમાણે  બધા દીકરાઓ, કાર્યકર્તાઓ અને વડીલો ભેગા થઈને એક રુચિએ, એક દિલથી દોડ્યા તો મહારાજ ભળ્યા અને સરસ સામૈયા થયા.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: અક્ષર સૂઝ<br/>
+      ટેગ: ભક્તિ ઉત્સવ, સેવા, આત્મીયતા, ઉમંગ<br/>
+      નંબર: ૫૧૮
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

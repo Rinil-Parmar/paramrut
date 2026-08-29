@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      અંબરીષે તો હોમાવાનું જ હોય ને!
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_981">
+      May 17, 2024, Parsippany, NJ<br/>
+      <p>સાંજે ગુરુહરિ પ્રબોધસ્વામીજીના સાંનિધ્યમાં યુવકોની સભાનું આયોજન કરવામાં આવ્યું હતું. સભાની શરૂઆતમાં અગાઉ યોજાયેલી વોલીબોલ ટુર્નામેન્ટનો પુરસ્કાર સમારોહ રાખવામાં આવ્યો હતો. અંતે જ્યારે MVP એવોર્ડ જાહેર થયો ત્યારે અંબરીષ હરિભક્ત રોશનભાઈનું નામ ડિક્લેર થયું.</p><p>તેઓ ગુરુહરિના હસ્તે એવોર્ડ લેવા પધાર્યા ત્યારે ત્યાંના કાર્યકર્તાએ રોશનભાઈના ગુણોના દર્શન કરાવતાં કહ્યું કે, “તેઓ મંદિર અને યુવકોની અનેક સેવાઓ કરે છે અને દરેક સેવામાં હંમેશા તત્પર રહે છે.”</p><p>આ સાંભળી ગુરુહરિએ આત્માનું જતન કરતા કહ્યું કે, “એ તો અંબરીષ છે. અંબરીષે તો હોમાવાનું જ હોય ને! અંબરીષે મરી જવું પડે, એમાં પ્રશ્ન જ ક્યાં છે!”</p><p>ગુણગાન ગવાય અને વળી તે ગુરુહરિની પાસે ગવાય તો સહજ ગુલગુલિયું થાય પણ જાગ્રત સેવક માટે ગુરુહરિ આટલો પણ સમય બગડવા ના દે. ગુરુહરિએ આત્માનું જતન કરી સુઝ આપી કે આપણે કેવા વિચારથી સ્વામીશ્રી ને ગુરુહરિ સાથેનો સંબંધ નિરંતર વધારતા રહેવું છે. એમ અંબરીષ ભક્તોની શું જવાબદારી છે અને કઈ કક્ષાએ જાગ્રત રહી હોમાવાનું છે, એનું દર્શન ગુરુહરિએ કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અક્ષર સૂઝ<br/>
+      ટેગ: અંબરીષ, અંબરીશ, સેવા<br/>
+      નંબર: ૫૫૫
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

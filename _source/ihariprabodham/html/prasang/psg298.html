@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સૂર્યના રથમાં અંધારું હોય જ નહિ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુરુહરિ સ્વામીશ્રી યોગીજી મહારાજ સાથે સેક્રેટરી તરીકેની સેવામાં હતા. તે દિવસોમાં સ્વામીશ્રીના પોર્ટફોલીયામાંથી હિસાબના પૈસા કોઈએ ચોર્યા. પૈસા ચોરનાર સેવક ચોવીસ કલાક જોડે જ સેવામાં રહે. પાછો એજ સેવકે ગોકીરો કર્યો. ઉપરથી સ્વામીશ્રીએ અબુધ બનીને એને જ પૈસા શોધવાનું કહ્યું.
+</p><p>
+ચંદુભાઈ દાજીથી રહેવાયું નહિ. એ પેલાને મારવા માટે તૈયાર થઈ ગયા. ત્યારે સ્વામીશ્રીએ હાથ પકડી લીધો અને કહ્યું, ‘દાજી..! આપણે એના દાસ થવાનું છે. આપણને તો એના એક સ્વભાવની ખબર પડી, એની એક ટેવની ખબર પડી. આપણી અનંત કુટેવો.. આપણા અનંત સ્વભાવ-પ્રકૃતિ યોગીજી મહારાજે વર્ષોથી ગમાડયા છે. અને ઉપરથી એમનો પ્રેમ, એમની કરૂણા ઓછા થયા નથી. તમે એને મારશો અને કાઢી મૂકશો તો એ બાપાના સમાગમમાંથી જશે. તો શું તમારામાં એને સુધારવાની તાકાત છે ? એ જ્યાં જશે ત્યાં એના આત્માનું જતન કરવાની તાકાત છે ? જો એ તાકાત તમારામાં નથી તો એને એક શબ્દ બોલવાનો પણ તમને અધિકાર નથી.’ સ્વામીશ્રીને સંબંધનો મહિમા કેવો હશે...!
+</p><p>
+સૂર્યના રથમાં અંધારું હોય જ નહિ. એમ હે સ્વામીજી ! આપ તો અખંડ યોગીજીમહારાજના અલ્પસંબંધવાળાના પણ દાસના દાસ થઈને નિરંતર વર્તી રહ્યા છો તો અમે સહુ ભૂલકાંઓ પણ એવી સંબંધવાળી દૃષ્ટિથી અરસપરસ દાસના દાસ થઈને ખોવાઈ જઈએ એવો બુદ્ધિયોગ આપજો.
+</p>
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

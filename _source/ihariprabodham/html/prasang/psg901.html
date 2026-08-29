@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+     ‘ધ્યેય તરફની એકધારી દોટ માટેની કરુણા…’
+    </div>
+    <div class="vaat_ind" id="vaat_file_901">
+      <p>આ વાત છે - ૧૫ ફેબ્રુઆરી ૨૦૨૪ની.</p> 
+      <p>આત્મીય વિદ્યા ધામની પાછળ આવેલા ખેતરમાં નજર કરતાં દેખાય છે, સુરજ ઢળવાની તૈયારીમાં છે. આ સમયે નિત્યક્રમ પ્રમાણે ગુરુહરિ સંધ્યા આરતીમાં પધાર્યા. શ્રીઠાકોરજીને દંડવત કર્યા. ત્યાર બાદ પગરખાં ધારણ કરી પરિસરમાં લીમડાની વાટે વોકિંગ કર્યું.</p><p>ત્યાર બાદ ગુરુહરિ સંત નિવાસ આગળ આવેલ ઝુલા પર બિરાજમાન થયા. સુરજ ઢળી ગયો હતો. ઝુલા ને લીમડાની વચ્ચે નાના નાના બલ્બથી એ જગ્યા ઝગમગતી હતી. ગુરુહરિની સામે ભક્તો નીચે બેસીને દર્શન કરી રહ્યા હતા. જમણી બાજુ બાકડાં પર વડીલ ભક્તો ને સંતો બેઠા હતા. ને જમણી બાજુ બગીચાની પાળી પર બેસી સંતો સેવકો દર્શન કરી રહ્યા હતા.</p><p>ગુરુહરિએ ફોન પર ભક્તોને દર્શન આપ્યા. ત્યાર બાદ જયભાઈ,  કઠલાલ ગામના એક સત્સંગી હરિભક્ત અને એમના દીકરા માહીનને લઈને દર્શને આવ્યા. જયભાઈ એ કહ્યું કે આમનો આજે આત્મીયદિન છે. હરિભક્તે પ્રાર્થના કરી. એમના દીકરાએ પણ પ્રણામ કર્યા. દીકરો પાંચમાં - છઠ્ઠામાં અભ્યાસ કરતો હશે.</p><p>ભગતે એના દીકરા તરફ દ્રષ્ટિ કરી કહ્યું કે, સ્વામીજી, આને ક્રિકેટનો બહુ શોખ છે.</p><p>ગુરુહરિએ તરત કહ્યું કે, ક્રિકેટ રમવાની છૂટ. પણ પહેલા ભણવાનું.</p><p>આગળ ગુરુહરિએ પ્રશ્ન પૂછ્યો કે, કેટલા ટકા આવે છે?</p><p>દીકરાએ કહ્યું કે, ૮૦ ટકા આવ્યા છે.</p><p>ગુરુહરિએ કહ્યું કે, ૮૫ ટકા આવે એવી મહેનત કરવાની.</p><p>દીકરાએ કહ્યું કે, છેલ્લી પરીક્ષામાં ૮૫ ટકા આવેલા.</p><p>ગુરુહરિએ એકદમ પ્રેમથી ને ધીરેથી કહ્યું  કે, થોડા વધારે આવે એવી મહેનત કરવાની.</p><p>ત્યાર બાદ બીજા ભક્તોને ગુરુહરિએ દર્શન આપ્યા.</p><p>ગુરુહરિ પ્રબોધસ્વામીજીને એ બાળકના રિઝલ્ટથી આનંદ નહોતો એવું નહોતું, પરંતુ એને ક્રિકેટ કરતાં અભ્યાસમાં વધારે રુચી રહે તે માટે એને કહ્યું કે આપણે હજુ વધુ ટકા લાવવા મહેનત કરવાની.</p><p>ગુરુહરિ હરિપ્રસાદ સ્વામીશ્રીએ પરાવાણીમાં ઘણીવાર કહ્યું છેકે જેના ૭૦% માર્ક્સ આવતા હોય તેણે ૮૦% માર્ક્સવાળા તરફ નજર રાખવી. ૮૦% વાળાએ ૯૦% ને ૯૦% વાળાએ ૯૫%વાળા તરફ નજર રાખવી.</p><p>આ ટૂંકો આત્મીય સ્પર્શ દર્શાવે છે કે,  તેઓને આપણી સહુની પ્રગતિ થાય; અભ્યાસની રીતે, વ્યાવહારિક રીતે ને આધ્યાત્મિક રીતે... એનો એમનો નિત્ય પ્રયત્ન રહે છે.</p><p>વિષય : સૂઝ</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: <br/>
+      ટેગ: <br/>
+      નંબર: ૧૧૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

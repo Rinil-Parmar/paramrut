@@ -1,0 +1,157 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+પ.પૂ. સ્વામીશ્રી – અષ્ટાવરણ પારના પુરુષ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઈ.સ. ૧૯૭૩ની સાલમાં સ્વામીશ્રી હરિદ્વાર પધારેલા. કૈલાસ આશ્રમમાં ઉતારો હતો. સ્વામીશ્રી અને સંતો ઉતારે પહોંચી ગયા પછી ઘનશ્યામભાઈ બહાર નીકળ્યા. રસ્તામાં તેમણે એક તપસ્વી જેવા સાધુને બેઠેલા જોયા. ઘણા ભક્તો તેમની નજીક બેઠા હતા અને વારાફરતી એમને પગે લાગતા હતા.
+</p>
+<p>
+ઘનશ્યામભાઈ પણ કુતૂહલવશ ત્યાં જઈને પગે લાગીને એમની સામે બેઠા. સાધુએ પૂછ્યું, ‘कुछ पूछना हैं, बच्चा ?’ 
+</p>
+<p>
+એટલે ઘનશ્યામભાઈએ પૂછ્યું, ‘बाबा, मैं तो आप के दर्शन करने के लिये आया हुँ | मैं आप को क्या पूछुं ? आप ही कुछ बतलाइए |’
+</p>
+<p>
+સાધુ કાંઈ બોલ્યા નહીં પરંતુ બાજુમાં એક પથ્થર પડ્યો હતો તેને મુઠ્ઠીમાં લઈ લીધો. મુઠ્ઠી ખોલી ત્યાં તો જીવડું બની ગયું હતું !
+</p>
+<p>
+ઘનશ્યામભાઈના માનસ પર આ પરચાનો વિશેષ પ્રભાવ ન પડ્યો !
+</p>
+<p>
+એમણે પૂછ્યું, ‘बाबा, मानवदेह में प्रभु का दर्शन हो सकता हैं ?’
+</p>
+<p>
+પેલા સાધુ પહેલાં તો એકદમ ગરમ થઈ ગયા. પછી તરત જ અંતરદૃષ્ટિ કરીને પોતાની સિદ્ધદશાની મર્યાદાની કબૂલાત કરતાં એમણે કહ્યું, ‘मैंने पंचमहाभूत पर विजय पाया है | पृथ्वी, जल, तेज, वायु और आकाश इन सभी पर मैंने विजय पायी है | लेकिन तुम्हारे जो गुरुजी हैं वे आठों आवरण से परे है | पंचभूत के साथ-साथ  मन, बुद्धि और अहंकार के भी वो स्वामी है |’
+</p>
+<p>
+ઘનશ્યામભાઈ કહે, ‘अगर आप मेरे गुरुजी के बारे में इतना कुछ जानते हो तो उनके दर्शन के लिये आओगे ?’
+</p>
+<p>
+સાધુએ સંમતિ આપતાં કહ્યું, ‘हां, हां, क्युं नहीं ? जरूर आयेंगे|’
+</p>
+<p>
+પછી તેઓ સ્વામીશ્રીનાં દર્શન કરવા માટે ઘનશ્યામભાઈ સાથે ઉતારા પર આવ્યા. સ્વામીશ્રીએ એમને જોયા. તરત જ આસન પરથી ઊભા થઈને પંચાગે પ્રણામ કર્યા. થોડીવાર વાતો કર્યા પછી તેઓ ઘનશ્યામભાઈ સાથે પાછા ફર્યા.
+</p>
+<p>
+ત્યારે એ સાધુએ ઘનશ્યામભાઈને કહ્યું, ‘मुज में और तुम्हारे गुरुजी में क्या अंतर है वो तुमने देखा ? आध्यात्मिक मार्ग में वो मुझ से बहुत बडे हैं, मैं तो उनके आगे कुछ नहीं हूँ | अपनी सिद्धदशा के अहंकार के कारण मैं झूक नहीं पाया लेकिन वे बडी ही सहजता से झूक गये | ये सेवकभाव ही उनकी महानता हैं |’
+</p>
+<p>
+ઘનશ્યામભાઈ વિચારવા લાગ્યા કે પંચમહાભૂત જીત્યાં હોય તો પણ સ્વામીશ્રી જેવા પુરુષનાં દર્શન શક્ય નથી તો હું કેટલો નસીબદાર છું કે મને સ્વામીશ્રીના સારથી તરીકેની સેવા મળી ! જેઓ મારી બાજુમાં બેસે છે; મારી સાથે વાતો કરે છે; મારી સાથે આનંદ કરે છે; મારું પળેપળ ધ્યાન રાખે છે, પરંતુ આ પુરુષનો સાચો મહિમા આપણને આવા પ્રસંગો દ્વારા સમજાય છે કે આપણે જે પુરુષની ગોદમાં બેઠા છીએ એ સાક્ષાત્ અક્ષરધામના પુરુષ છે.
+<p>
+
+
+  <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

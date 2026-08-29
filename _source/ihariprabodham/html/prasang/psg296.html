@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ઇદમ્‌ સ્મૃતિની ટેકનિક 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+૧૯૯૯માં ગુરુહરિ સ્વામીશ્રી લંડન પધાર્યા હતા. ભારત અને ત્યાંના સમયમાં ઘણો ફેરફાર હોવાથી સ્વામીશ્રીને સૂવાનું સાનુકુળ નહોતું થતું. રાતના આઠ - સાડા આઠ વાગ્યાથી જ સ્વામીશ્રીને બગાસા શરૂ થાય એટલે મોડામાં મોડા ૧૦ વાગે સ્વામીશ્રીને પોઢાડી દેવા એવું સેવકોએ નક્કી કર્યું હતું. પણ સંજોગોને આધીન રાતના ૧ વાગ્યા સુધી સ્વામીશ્રી જાગ્યા, ખાનગીઓ કરી. પછી પોઢવા ગયા ને બે કલાક પછી તો ભારતમાં સવાર થઈ ગઈ એટલે જાગી ગયા. આવું ૮-૧૦ દિવસ ચાલ્યું એટલે આરામ બહુ જ નહિવત્ હતો ને શરીરમાં થાકનું દર્શન થતું હતું.
+</p><p>
+એક દિવસ સતીષભાઈની રોલ્સરોયસમાં બેસીને રાજુભાઈ સોખડાના ઘરે પધરામણીમાં જતા હતા. સંતો સેવકો સાથે જ હતા. 
+</p><p>
+સ્વામીશ્રીએ કારના ડેસ્કબોર્ડ પર પગ મૂકી દીધો. એટલો બધો થાક મુખારવિંદ પર દેખાતો હતો. સેવકોને મનમાં એમ કે બે-ચાર મિનિટમાં સ્વામીશ્રી આરામમાં  જશે.
+</p><p>
+એટલામાં સતીષભાઈએ ડ્રાઈવરને સી.ડી. મૂકવા કહ્યું, ને શ્રી યોગીજી મહારાજની હાજી ભલા સાધુ... ભજન વાળી સી.ડી. ચાલુ કરી. જેવી સી.ડી ચાલુ થઈ અને એમાં યોગીજી મહારાજનો અવાજ સાંભળ્યો એટલે સ્વામીશ્રી એકદમ જાગ્રત થઈ ગયા. બે-ત્રણ મિનિટમાં તો સ્વામીશ્રીએ એટલી બધી ફ્રેશનેશનું દર્શન કરાવ્યું ! 
+</p><p>
+વચ્ચે ગાડીમાં થોડો સમય મળ્યો એટલે સાથે આવેલા એક સાધકે તરત જ સ્વામીશ્રીને પૂછયું કે, ‘સ્વામીજી ! તમને બાપાની ઇદમ્‌ સ્મૃતિ થાય ?’ 
+</p><p>
+સ્વામીશ્રી કહે, ‘ઇદમ્‌ થાય. મેં બાપાની પરાવાણીની આ કેસેટ સાંભળી એટલે પરાવાણીમાં ડૂબી ગયો.’  પછી કહે, ‘હું બાપા સાથે ૧૦ વર્ષ રહ્યો એ એક એક મિનિટની સ્મૃતિ મને ઇદમ્‌ છે. ’
+</p><p>
+એટલે એ સાધકે પ્રશ્ર્ન પૂછયો કે, ‘સ્વામીજી ! અમારે એવી ઇદમ્‌ સ્મૃતિ કરવી હોય તો કેવી રીતે થાય ?’
+</p><p>
+સ્વામીશ્રી તેમનો પ્રશ્ન સાંભળીને હસ્યા. 
+</p><p>
+એટલામાં રોડ સાંકડો હતો ને સામેથી એક ગાડી સ્પીડથી પસાર થઈ એટલે એ સાધકની સહેજ નજર એના તરફ ગઈ. 
+</p><p>
+એટલે સ્વામીશ્રીએ પુછ્યું કે, ‘આ ગાડી પસાર થઈ તે તમે જોઈ?’  <br/>
+સાધકે કહ્યું, ‘હા..’ <br/>
+ત્યારે સ્વામીશ્રીએ એ સાધકને કહ્યું, ‘આટલી પણ બાહ્મદૃષ્ટિ આ માર્ગમા ના ચાલે. તારું પુણ્ય કંઈક જમા થાય છે પણ એ આવી રીતે ડાફોરિયા મારવામાં જતું રહે છે, એટલે સ્મૃતિ ઇદમ્‌ રહેતી નથી.'
+</p><p>
+હે સ્વામીશ્રી ! અમે બાહ્યદૃષ્ટિ મૂકીને આપની સ્મૃતિમાં જ ડૂબેલા રહીએ એવી કૃપા વરસાવજો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

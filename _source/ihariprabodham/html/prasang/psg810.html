@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      પવિત્રતા રાખશો તો બધું સરસ થઈ જશે
+    </div>
+    <div class="vaat_ind" id="vaat_file_810">
+      
+      <p>એક પ્રાદેશિક સંત એક યુવકને લઈને ગુરૂહરિ પાસે આવ્યા અને યુવક માટે પ્રાર્થના કરતા કહ્યું, &#x27;યુવકનું માઈન્ડ વિવરીંગ થઈ ગયું છે. કુરિયર સર્વિસમાં જોબ કરે છે. પાર્સલ આપવા જાય તો સરનામું ભૂલી જાય છે. પોતાનું બાઈક ક્યાં પાર્ક કર્યું એ પણ ભૂલી જાય છે. રાત્રે સૂતી વખતે શરીરમાં ધ્રુજારી છૂટે છે. આખી રાત ઊંઘ નથી આવતી. પૂજા કરવામાં પણ બરકત નથી આવતી. જોબમાં મન લાગતું નથી.&#x27;</p><p>ગુરુહરિએ યુવકને સામો પ્રશ્ન પૂછ્યો, “આવું કેમ થાય છે ? તને શું કારણ લાગે છે !!”</p><p>પુવક કહે, &#x27;આ જે કાંઈ થાય છે, એ મારા પ્રારબ્ધને લઈને થાય છે. પ્રારબ્ધ ભોગવવાનું આવ્યું છે.&#x27;</p><p>ગુરુહરિ કહે, “આ પ્રારબ્ધ નથી.”</p><p>ગુરુહરિએ ફરી કહ્યું. “આ તમારું પ્રારબ્ધ નથી. આપણા જીવનમાં પવિત્રતા નથી એટલે આવું થાય છે. આપણું જીવન પવિત્ર હોય તો આ વસ્તુ ના થાય.”</p><p>ગુરુહરિની વાત કબૂલતા પુવકે રડતાં રડતાં કહ્યું. &#x27;હા, સ્વામી ! મારું જીવન પવિત્ર નથી. મારાથી સ્વધર્મ પળાતો નથી. મારો આહાર-વિહાર પોગ્ય નથી. મારાથી ગઢડા પ્રથમ ૧૬ ને ૧૮ પ્રમાણે જીવાતું નથી.&#x27;</p><p>ગુરુહરિએ કહ્યું, “આપણે પવિત્રતા રાખવાની. જ્યાં નપાસ થઈએ ત્યાં ભજન કરી લેવાનું. બધું સરસ થઈ જશે.”</p><p>પ્રાર્થના:</p><p>હે ગુરુહરિ ! આંખથી યોગ્ય જોઈએ, કાનથી યોગ્ય સાંભળીએ, જીભથી યોગ્ય બોલીએ અને જમીએ એવું બળ આપજો. પ્રસંગે સવળા જ વિચારને ગ્રહણ કરીએ એવો બુદ્ધિયોગ આપજો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: સ્વધર્મ, પ્રથમ ૧૮<br/>
+      ટેગ: <br/>
+      નંબર: ૨૩૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

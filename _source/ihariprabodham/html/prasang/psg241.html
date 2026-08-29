@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સંબંધની સમજણ 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+  <p>
+       ભગવાન સ્વામિનારાયણની માળાનો પહેલો મણકો એટલે પર્વતભાઈ. પોતે ખેતી કરે અને કરાવે. પર્વતભાઈ સહૃદયી ભક્તરાજ હતા. મહારાજ તરફની નિષ્ઠા એમના જીવમાં વણાયેલી હતી. 'અન્ન એવો ઓડકાર' એ ઉક્તિ પ્રમાણે પર્વતભાઈ પોતાના કામ કરનાર નોકરોની સાથે રહીને ખેતીનું કામ કરતા જાય, હળ હાંકતા જાય, ખેતરમાં અનાજ ઓરતા જાય અને મહારાજ અને સત્સંગની વાતો કરતા જાય. એક વર્ષ વાતો કરે ને પેલાને ખૂબ વૈરાગ્ય ઉત્પન્ન થઈ જાય, ભક્તિના રંગે રંગાતો જાય અને પછી એ મહારાજ પાસે સાધુ થઈ જાય. પર્વતભાઈની નિષ્ઠા અને નોકરોની સાથેની રસબસતાને લઈને ૧૨ નોકરો સાધુ થયા હતા.
+</p><p>
+     નોકરો સાધુ થવા મહારાજ પાસે જાય ત્યારે પર્વતભાઈ આત્મીયતાના દાવે શીખ આપતાં કહે, 'મહારાજના સંબંધવાળા સંતો-મુકતો મહારાજના સ્વરૂપ સમાન છે, એમનું કાંઈ જોવાનું નહિ. અભાવ-અવગુણમાં પડવાનું નહિ, નહિ તો ભૂતયોનીને પામી જવાય.'
+</p><p>
+       પર્વતભાઈ જ્યારે ગઢડા જાય ત્યારે તેઓને પૂછે - <br/>
+            - કોઈની ટિકચર્ચા કરતા નથી ને ? <br/>
+            - માથાકૂતમાં પડતા નથી ને ? <br/>
+            - સેવા કરો છો ને ? <br/>
+            - ભજન કરો છો ને ?
+</p><p>   
+ પોતે મોકલેલા સાધુઓમાંથી એક સાધુને પર્વતભાઈએ પૂછ્યું કે, 'ક્યાં સાધુના સમાગમમાં રહો છો?' સાધુનો જવાબ સાંભળી ક્યારેય કોઈનીય વાત પોતાના મુખ થકી ના કાઢે એવા જાગ્રત ભક્તરાજ બોલી ઊઠ્યા, 'ભગવાનના ભાવથી એ સાધુના દર્શન કરજે, એને જમાડજે પણ ઊઠક-બેઠક રાખીશ નહિ.'
+</p><p>
+     આત્મીયતાના દાવે પર્વતભાઈએ ત્રણ-ચાર વખત એ સાધુને ટકોર કરી પણ એને સૂઝ ન પડી, સંગ ન છોડ્યો. જેના ફળસ્વરૂપે પ્રભુને તો એના આત્માનું રૂડું કરવું જ હતું પણ જીવ તે જીવ ! એ તક ખોઈ નાંખી.
+</p><p>
+       શ્રીજીમહારાજે પોતાની પારદર્શક દ્રષ્ટિથી ૭૧ વચનામૃતમાં અભાવ અવગુણની વાતોનો નિષેધ કર્યો છે.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

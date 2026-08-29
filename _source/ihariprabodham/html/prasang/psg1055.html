@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      પ્રબોધસ્વામી ગુણ-અવગુણ, પાસ-નપાસથી પર છે
+    </div>
+    <div class="vaat_ind" id="vaat_file_1055">
+      
+      <p>એક દિવસ ગુરુહરિ સ્વામીજીએ “મારા અંતર મહોલના...” એ કીર્તન સમજાવતા હરિધામ સ્ટાફના મુક્તોને ગોષ્ઠિ કરી હતી.</p><p>ગોષ્ઠિમાં સ્વામીજીએ કહ્યું, “તમે સહુ ભૂલનો એકરાર કરી શકો એવા બનાવવા છે, તો તમે અનાદી મહામુક્તો છો.” આમ કહી સ્વામીજીએ ઘણા સાધકોની ભૂલ-કસર બતાવી હતી.</p><p>જ્યારે સ્વામીજી વડોદરા પધાર્યા ત્યારે અશોકભાઈએ પૂછ્યું, “સ્વામિજી! આપે બધાની ભૂલો બતાવી પણ પ્રબોધસ્વામીની ભૂલ ન બતાવી.”</p><p>ત્યારે સ્વામીજી બોલ્યા, “પ્રબોધસ્વામી ગુણ-અવગુણ, પાસ- નાપાસથી પર છે.”</p><p>આમ, સ્વામીજીએ પ્રબોધસ્વામીજીની નિર્ગુણ સ્થિતિનું , ગુણાતીત સ્થિતિનું  દર્શન કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: ગુણાતીત<br/>
+      ટેગ: નિર્ગુણ, ગુણાતીત, સાધુતા<br/>
+      નંબર: ૫૨૭
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

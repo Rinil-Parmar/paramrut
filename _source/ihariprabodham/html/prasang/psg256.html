@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સભા ભરતાં યુવકની બધી જ જવાબદારી બાપાની !
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+નિયમિત અઠવાડિક સભા ભરતાં રાજકોટના એક યુવક સાથે સ્વામીશ્રી ખાનગી કરી રહ્યા હતા. જોબની ઈનસ્ટેબીલીટીને લઈને એ યુવક ખૂબ ચિંતામાં રહેતો હતો. તેણે પોતાની બધી વ્યથા કહી.
+</p><p>
+સ્વામીશ્રીએ તેની બધી વાત સાંભળી પછી કહ્યું, ‘‘સભા ભરતાં યુવકની બધી જ જવાબદારી યોગીજી મહારાજની. સભા ભરતા યુવકની બધી જ ચિંતા યોગીજીમહારાજ કરે.
+</p><p>
+આપણે હવે બે જ કામ કરવાના. 30 મિનિટનું ભજન નહીં છોડવાનું. સ્વામીની વાતુ, વચનામૃત કે પુરુષોત્તમ બોલ્યા પ્રીતે આ ત્રણ ગ્રંથમાંથી કોઈપણ એક ગ્રંથના બે પાનનું વાંચન અને ચિંતન દરરોજ કરવું. બીજી મોસ્ટ ઈમ્પોર્ટન્ટ વાત - ઘરમાં, સત્સંગમાં કે મિત્રો વચ્ચે ક્યારેય કોઈનાય અભાવ-અવગુણ કે મોળી વાત કરવાની નહીં કે સાંભળવાની નહીં. આટલું કરીશ તો બાપા તારા બધા જ વ્યવહારમાં સર્વાગી ભળશે.’’
+</p><p>
+માંડ ત્રણ ધોરણ પાસ થયેલા યુવાનને આ અઠવાડિક સભાનો મહિમા સમજાવી, નિષ્ઠાના બળે બ્રહ્મવિદ્યાના પાઠ ભણતો કરવાની સ્વામીશ્રીની આ વાત આપણને સહુને કેટલું બધું આપી જાય છે !
+</p>
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

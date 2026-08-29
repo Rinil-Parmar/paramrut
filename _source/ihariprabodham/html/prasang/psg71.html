@@ -1,0 +1,149 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+અંતર્યામીપણે ઠાકોરજીની ભક્તી
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+ઇ.સ. ૧૯૮૯માં દશેરાના મંગલ અવસરે અમેરિકાના પેન્સિલવેનીયા રાજ્યના ‘વ્રજભૂમિ’ નામના તીર્થસ્થળે યોગીપરિવારના આત્મીય સેવકોની એક શિબિર સ્વામીજીના સાંનિધ્યમાં યોજાઇ હતી. એ શિબિરની પૂર્વતૈયારીની સેવામાં સ્વામીજીએ સુહૃદસ્વામી અને પ્રબોધસ્વામીને ન્યુયોર્કથી ત્રણ દિવસ પહેલાં વ્રજભૂમિ મોકલ્યા હતા. 
+</p>
+
+<p>
+
+સ્વામીજી સાથે સેવામાં રહેલા દાસસ્વામીને એમ કે શિબિરની તૈયારીમાં વહેલા ગયેલા સંતો ઠાકોરજી અને સ્વામીજી માટેની રોજની જરૂરિયાતની વસ્તુઓની ગોઠવણ કરી લેશે. એટલે એમણે શિબિર દરમ્યાન ત્રણ દિવસ રોજ સવારે ઠાકોરજીને જે મગસ ધરાવવાનો હોય તે અંગેની કાંઇ તજવીજ કરી નહિ. 
+
+</p>
+
+
+<p>
+ઠાકોરજીને મગસ ધરાવવા માટે દાસસ્વામીને પૂછ્યું. મગસ તો હતો નહિ એટલે બંને વિચારમાં પડ્યા. ત્યાં વગડામાં, ધરાવ્યા વગરનું ચોખ્ખું મિષ્ટાન્ન તાત્કાલિક કયાંથી લાવવું? ત્યાં તો સામે જ ટોરોન્ટોના મુકતરાજ જયંતિભાઇ મળ્યા. તેઓ મોડી રાત્રે મોટરરસ્તે કેનેડાથી આવ્યા હતા. સંતોએ સહજ જ પૂછ્યું કે, 'તમારી પાસે ઠાકોરજીને ધરાવવા જેવું કાંઇ મિષ્ટાન્ન છે?' 
+
+</p>
+
+<p>
+આ સાંભળી જયંતિભાઇ એકદમ મોટેથી હસી પડ્યા અને ખૂશ થતાં કહે, 'બે દિવસ પહેલાં જ સ્વામીજીએ મને ફોનમાં કહેલું કે ઠાકોરજી માટે સરસ મગસ બનાવી લઇ આવજો, તે હું આપવા માટે તમને જ શોધતો હતો.' 
+
+</p>
+
+<p>
+આ સાંભળી સંતો તો આશ્ર્ચર્યચકિત થઇ ગયા કે ઠાકોરજીની સેવામાં આપણી આવી ભૂલ થવાની હશે તે જાણીને અંતર્યામીપણે સ્વામીજીએ અગાઉથી જ મગસ લાવવા માટે આજ્ઞા કરી દીધી અને સમયસર પહેલો ભેટો પણ આપણને જયંતિભાઇનો જ કરાવ્યો!  
+
+</p>
+
+ 
+
+    
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

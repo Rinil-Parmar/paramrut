@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સ્વામીશ્રીની મૂર્તિમાં શ્રીજીમહારાજના દર્શન... 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+સુરેશભાઇ પૂજરા સાહેબનું મૂળ વતન ધોલેરા. જ્યાં શ્રીજીમહારાજ દ્વારા નિર્મિત સુંદર મંદિર દ્રશ્યમાન થાય છે. એ મંદિરની બાજુમાં જ તેમનો ૨૪ રૂમનો વિશાળ બંગલો હતો. એમના દાદાજી ત્યાં રહેતા હતા.
+</p>
+<p>
+સ્વામીશ્રીની ૪૦મી જન્મજયંતિ નિમિત્તે એક મૂર્તિ પ્રકાશિત થયેલી. લંડનવાળા નટુભાઈ દ્વારા એ મૂર્તિ પૂજારા સાહેબને પણ ભેટમાં મળેલી. એમણે એ મૂર્તિ ઘરે લાવી દીવાલ પર લગાડી.
+</p>
+<p>
+દાદાજી સ્વામિનારાયણ ભગવાનના ચુસ્ત સત્સંગી હતા. એમણે આ જોયું અને કહ્યું, ‘અહીંયાં શ્રીજીમહારાજ સિવાય કોઈનો ફોટો ન જોઈએ.’
+</p>
+<p>
+એમણે દાદાજીને સમજાવવા પ્રયત્ન કર્યો. કહ્યું, ‘હમણાં ભલે રહ્યો પછી ઉતારી લઈશું.’ પણ દાદાજીને આ વાત મગજમાં ન બેઠી.
+</p>
+<p>
+થોડા દિવસ પછી દાદાજીએ પૂજારા સાહેબને પૂછ્યું, ‘તારા સ્વામીજી ક્યારે આવવાના છે ?’ પછી કહે, ‘તારી પાસે તારા સ્વામીનો ફોટો હોય તો મને આપ.’
+
+પૂજારા સાહેબને આશ્ચર્ય થયું કે દાદાજી તો વિરોધ કરતા હતા ને હવે ફોટો માગે છે ! આમ અચાનક જ પરિવર્તન કેવી રીતે આવી ગયું ?
+</p>
+<p>
+એમણે હોંશે હોંશે સ્વામીજીનો ફોટો દાદાજીને આપ્યો. દાદાજીએ ફોટો પૂજામાં પધરાવ્યો અને આરતી ઉતારવા લાગ્યા. પૂજારા સાહેબના આશ્ચર્યની સીમા ન રહી.
+</p>
+<p>
+એમણે આનું કારણ પૂછયું તો દાદાજી કહે, ‘દિવાલ પર જે સ્વામીજીની મૂર્તિ છે એમાં મને અખંડ શ્રીજીમહારાજનાં દર્શન થાય છે. જ્યારે જ્યારે મારી નજર જાય છે ત્યારે શ્રીજીમહારાજનાં જ દર્શન થાય છે. બીજું કાંઈ દેખાતું નથી. તારા સ્વામીજીમાં શ્રીજીમહારાજનો વાસ છે. એટલે મેં પૂજામાં સ્વામીજીનો ફોટો મૂક્યો.’
+આરતી પૂરી થઈ એટલે પ્રસાદ પણ દાદાજીએ ધરાવ્યો.
+</p>
+<p>
+
+પછીતો દાદાજીને ગુરુહરિ સ્વામીજીનાં પ્રત્યક્ષ દર્શનની તાલાવેલી જાગી. સ્વામીજી રાજકોટમાં પધાર્યા એટલે તેઓ સામેથી દર્શન કરવા પધાર્યા. તે વખતે એમની ઉંમર ૧૦૦ વર્ષની હતી. તેઓ સ્વામીજીનાં ચરણસ્પર્શ કરવા નીચે નમ્યા એટલે
+સ્વામીજીએ એમનો હાથ પકડી લીધો અને વિનમ્રભાવે કહ્યું, ‘દાદાજી, મારે તમને પગે લાગવું જોઈએ. તમે આમ ન કરશો.’
+</p>
+<p>
+દાદાજી અહોહોભાવે સ્વામીજીનાં દર્શન કરી રહ્યા હતા. ગદ્‌ગદ્‌ કંઠે બોલ્યા, ‘સ્વામિજી, આપે મને અને મારા દીકરાને ન્યાલ કરી દીધો. હવે મારે આપની પાસે એક વચન જોઈએ છે.’ સ્વામીજી કાંઈ ન બોલ્યા.
+</p>
+<p>
+દાદાજી કહે, ‘સ્વામીજી, શ્રીજીમહારાજે તો વચન આપ્યું છે કે અંતસમયે અમે તેડવા આવીશું એટલે મહારાજ તો મને તેડવા આવવાના જ છે. પણ શ્રીજીમહારાજની જોડે આપ પણ મને તેડવા આવજો અને ચાર દિવસ પહેલાં મને જાણ કરજો. એ વચન મને આજે આપો.’
+</p>
+<p>
+સ્વામીજી દાસત્વનું દર્શન કરાવતાં બોલ્યા, ‘તમે તો શ્રીજીમહારાજના છો એટલે મહારાજ તમારા સંકલ્પ પૂરા કરે જ ને !’
+</p>
+<p>
+દાદાજી કહે, ‘એમ નહિ. આપ વચન આપો કે હું તેડવા આવીશ.’ સ્વામીજી હસવા લાગ્યા. દાદાજીની પ્રાર્થના અને ભક્તિ જોઈ સ્વામીજી એમના ખભા પર હાથ મૂકીને ધીમેથી બોલ્યા, ‘જાવ, શ્રીજીમહારાજ જોડે અમે આવીશું.’
+</p>
+<p>
+સમય જતાં ક્યાં વાર લાગે છે ! દાદાજીના અક્ષરધામગમનનો સમય આવી ગયો. ઘરના સભ્યોને જાણ કરી કે હું માગશર સુદ ચોથના દિવસે ધામમાં જવાનો છું એટલે બધાને જાણ કરી દોકે અહીં આવી જાય.
+</p>
+<p>
+તે દિવસે દાદાજી વહેલા ઊઠી ગયા. ઠાકોરજીને દૂધ અને ભાખરીનો થાળ ધરાવ્યો. પછી પોતે જ ગૌમુત્રથી લીંપણ કર્યું. કંઠી, માળા, શિક્ષાપત્રી બધું બાજુમાં મૂકી ત્યાં જ સૂઈ ગયા.
+</p>
+<p>
+પૂજારા સાહેબને બોલાવીને કહે, ‘જો સુરેશ, શ્રીજીમહારાજ મને લેવા આવ્યા છે. સાથે સ્વામીજી પણ છે. પરમહંસો અને સંતો પણ છે. સૌને મારા જય સ્વામિનારાયણ...’ એમ કહીને દાદાજીએ સદાને માટે આંખો મીંચી વિદાય લીધી.
+</p>
+<p>
+આમ, ‘અંત અવસ્થાએ હું મારા ભક્તજનને દર્શન દઈને તેડી જઈશ.’ એ વચન સાકાર થયું.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

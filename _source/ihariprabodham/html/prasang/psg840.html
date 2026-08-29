@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      દાસના દાસ બનાવવા માટે તો સ્વામીજી આપણને ધરતી ઉપર લાવ્યા છે
+    </div>
+    <div class="vaat_ind" id="vaat_file_840">
+      
+      <p>એક, નિશ્ચયમાં અનિશ્ચયના ઘાટ થતા હોય તો. મીન્સ મનુષ્યભાવ. બીજું, ટાળ્યા દોષ ન ટળતા હોય તો નિષ્કપટ થવું પડે. અને ત્રીજું, કોઈનો અભાવ આવ્યો હોય ને ખસતો ના હોય ત્યારે ભગવાનને કહેવું પડે. ગુરુહરિ પ્રબોધસ્વામીજી એવા સમર્થ છે.</p><p>અમારે એવીડીમાં એક સેવક છે. એને પહેલાંના વડીલો સાથે એટલા બધા પ્રસંગો થયા કે એણે મનમાં નક્કી કરી નાખ્યું કે, એકાદ વખત તો વડીલોને કંઈક પાઠ ભણાવી દેવો, પણ પછી અમે તો થોડાક જ દિવસોમાં એવીડી આવી ગયા. પણ હૈયું શાંત નહોતું રહેતું.</p><p>સુરતની ધરતી ઉપર ૪થી મે ઉજવી ત્યારે એનું નામ બોલાયું અને એણે ગુરુહરિ પ્રબોધસ્વામીજીને હાર પહેરાવ્યો અને પ્રબોધસ્વામીજીને પ્રાર્થના કરી કે, પ્રબોધસ્વામીજી! મને દાસના દાસ બનાવજો.</p><p>પ્રબોધસ્વામીજી એક જ વાક્ય બોલ્યા કે, “દાસના દાસ બનાવવા માટે તો સ્વામીજી આપણને ધરતી ઉપર લાવ્યા છે.”</p><p>પણ એ પ્રાર્થના કરતો હતો ત્યારે પ્રબોધસ્વામીજીનો હાથ એના બરડા ઉપર ફરતો હતો. અને એ સેવકે એના ભગવદી સંત ને એવું કહ્યું કે, હું સ્ટેજ ઉપરથી નીચે ઉતર્યો ને જે વડીલોને પાઠ ભણાવવાનું મને મન થતું હતું, એ વડીલોને દંડવત્ કરવાનું મને મન થવા માંડ્યું. એ પ્રબોધસ્વામીજી !</p><p>આપણે સૂક્ષ્મશરીર બદલવું હોય તો પ્રબોધસ્વામીજી સિવાય કોઈ માર્ગ નથી.</p><p>(પત્રિકા અંક: ૨૦૨૪-૧૧-૦૧)</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આધ્યાત્મિક સૂઝ, પરિવર્તન<br/>
+      ટેગ: <br/>
+      નંબર: ૧૯૮
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

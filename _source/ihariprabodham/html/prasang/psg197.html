@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+
+ગુણાતીતાનંદસ્વામીનું એકાવધાનીપણું
+</div>
+
+ <div class="vaat_ind" id="vaat1_1">
+ <p>
+મુક્તાનંદસ્વામી પોતાના મંડળ સાથે સુરતમાં એક ધર્મશાળામાં છ મહિનાની છાવણી નાખીને બેઠા હતા. મંડળના સૌ સંતો ભેગા મળીને ગોષ્ઠિ કરતા હતા. ગુણાતીતાનંદસ્વામી પણ એ સભામાં મુક્તાનંદસ્વામીની કથા સાંભળતા હતા. ઝાડ ઉપર એક તોફાની વાંદરું કૂદાકૂદ કરતું હતું. બધાની નજર એ ઝાડ તરફ વારંવાર જતી હતી.
+</p>
+ <p>
+છ મહિના વીતી ગયા બાદ, મુક્તાનંદસ્વામીએ બધાને બેસાડીને પૂછ્યું, 'ઝાડ પરના કૂદતા વાંદરા તરફ જેની નજર ના ગઈ હોય તે આંગળી ઊંચી કરે.'
+</p>
+ <p>
+સૌ સંતોમાં ગુણાતીતાનંદસ્વામી એક જ એવા હતા કે, જમણે ધીમે રહીને થોડીક આંગળી ઊંચી કરી વધારે નહિં. પણ થોડીક જ આંગળી ઊંચી કરવા પાછળનો હેતુ એટલો જ હતો કે, સાથેના સંતોને ક્ષોભ ન થાય. ત્યારે મુક્તાનંદ સ્વામી બોલ્યા, 'આમને મહારાજને રાજી કરવાનો કેવો ખપ છે!'
+</p>
+ <p>
+બહાર દૂર ઝાડ હોય તો નજર ના જાય પણ માનવી કરતાં હજારગણું ચંચળ તોફાની વાંદરુ એ જ ધર્મશાળામાં છ મહિનાથી કૂદાકૂદ કરતું હતું છતાંય, એક સેકન્ડ માટે ગુણાતીતની નજર એ વાંદરા તરફ ન જાય એ કેવા એકાવધાની કહેવાય ! પ્રભુની સ્મૃતિમાં કેવા ડૂબેલા હશે !
+</p>
+ <p>
+ગુણાતીતાનંદસ્વામીના આ પ્રસંગનો સ્વાધ્યાય કરીએ ત્યારે આપણને ખ્યાલ આવે કે, ગુણાતીતાનંદસ્વામીને તો સર્વત્ર મહારાજનું જ દર્શન હતું. એમના મન, બુદ્ધિ, ઇન્દ્રિયો, અંતઃકરણમાં સર્વ પ્રકારે પ્રભુનો જ નિવાસ હતો. વળી એવા પવિત્ર સાધુની દ્રષ્ટિ જેના પર પડે એ ચિન્મય થઈ જાય. એવા ગુણાતીતાનંદસ્વામી એમના આ પ્રસંગ દ્વારા આપણને એકાવધાનીપણાની અદ્‌ભુત સૂઝ આપી જાય છે. દરરોજ પ્રાર્થના કરીએ, 'હે પ્રભુ ! અમે પણ ગુણાતીતની જેમ અમારી સમગ્ર ઇન્દ્રિયોને આપના આકારે જ રાખીએ'
+
+</p>
+
+
+
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

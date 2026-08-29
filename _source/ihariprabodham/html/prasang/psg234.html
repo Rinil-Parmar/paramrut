@@ -1,0 +1,124 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+કર્તાહર્તા એક તું
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+    વડતાલની ધરતી પર ભગતજીમહારાજનું ભયંકર અપમાન થયું. વિરોધીઓએ એ કક્ષાએ માર માર્યો હતો કે, ભગતજીમહારાજ  ઊભા પણ નહોતા થઈ શકતા. નડિયાદથી ઝવેરભાઈ ગાડું લઈને એમ ને તેડવા આવ્યા. ઊંચકીને ગાડામાં બેસાડ્યા. 
+    </p><p>
+    હજુ ઝવેરભાઈ ગાડું લઈને વડતાલની ભાગોળ સુધી પણ પહોંચ્યા નહોતા અને ભગતજીમહારાજની આ દશા જોઈને એમના તરફની પ્રીતિના દેવે ઉશ્કેરાટ થી બોલ્યા, ‘વડતાલના સંતો આમ...’ બસ, આટલું જ બોલ્યા.
+    </p><p>
+     ભગતજીમહારાજ  વડતાલથી ઠેઠ ડભાણ સુધી ઝવેરભાઈને ગોષ્ઠિ કરી એમાં એક જ સૂર હતો, ‘અનંત બ્રહ્માંડમાં મહારાજ સિવાય કોઈનુંય ધાર્યું થતું જ નથી. તું મહારાજને સંભાર.’ તે દિવસે ઘરે જઈને પણ ઝવેરભાઈને જમવા ન દીધા અને ત્રણ કલાક ભજન કરાવડાવ્યું. ભગતજીમહારાજે  કેવો ખટકો રખાવ્યો ! 
+    </p><p>
+    વાંક તો સંતોનો હતો જ. માર સારો એવો માર્યો હતો. ઝવેરભાઈ ખોટા નહોતા. છતાંય ભગતજીમહારાજે  ઝવેરભાઈની મહોબ્બત ન રાખી કે, ‘આ મારો અંગત સેવક છે અને મને આ પરિસ્થિતિમાં ઊંચકીને ગાડામાં લઈ જાય છે.’  સ્પષ્ટ સંભળાવી દીધું, ‘વડતાલના સંતોએ તારો શું બાપ માર્યો છે ?’ એનું નામ સંબંધે જીવ્યા કહેવાય. આનું નામ જ ગુણાતીતનું ભૂલકું બનીને જીવ્યા કહેવાય. 
+    </p><p>
+    ભૂલકુંને કોઈ અધિકાર નથી, બીજા વિચારમાં જવાનો, ભાવફેરમાં જવાનો, ઉપેક્ષા કરવાનો. ભૂલકુંને એક જ અધિકાર છે, પ્રસંગ બને ત્યારે પ્રભુનું બળ અને આધાર લઈને ભજન કરવાનો.
+</p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

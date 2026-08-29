@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+
+	દાસના દાસ સહજાનંદ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+
+ <p>
+
+            મન, વાણીથી અગોચર એવું ભગવાનનું ભવ્ય સ્વરૂપ સહજાનંદ ! સમ્રાટનાય સમ્રાટ સહજાનંદ મહાપ્રભુ વચ. ગ. મ. - ૨૮ માં કહે છે કે, "હું મારા ભક્તનો ભક્ત છું એ જ મારું ભગવાનપણું છે." 
+</p>
+ <p>
+             
+              મહારાજ પોતાની સાથે વીરાભગતને નિરંતર રાખતા હતા. અને દરેક ક્રિયા એમને પૂછીને કરતા હતા. દૈનિક ક્રિયાયોગોમાં મહારાજ એમની સલાહ લે તે સમજી શકાય એવું છે; પણ મહારાજ કોઈને ધામમાં લેવા જાય ત્યારે પણ વીરાભગતને પૂછે કે, "વીરાભગત, આ સેવકને ધામમાં લઈ જઈશું ?" ભોળાભાવે વીરાભગત મહારાજ ને સલાહ આપી દે કે,  'મહારાજ ! આ સેવકની ઉંમર તો ખૂબ નાની છે, એને હમણાં ધામમાં નહીં લેતા.' 
+</p>
+ <p>
+
+             ધામમાં લઈ જવાની પ્રક્રિયા તો ખૂબ ઊંચી કહેવાય ! છતાં પણ વીરાભગતના વચને મહારાજ પોતાનું આયોજન પણ બદલી નાખે. આ લીલા અઢી વર્ષ સુધી ચાલુ રહી હતી.
+</p>
+ <p>
+
+             મુક્તાનંદસ્વામી સુઝવાળા, બુદ્ધિપ્રધાન સાધુ. તેઓ મનમાં વિચાર કરે કે, 'મહારાજ કોઈનેય નથી પૂછતા અને આ એવો કેવો નસીબદાર આત્મા આવ્યો હશે !'  એટલે મહારાજને પૂછ્યું, 'મહારાજ ! આ વીરાભગતનો આત્મા એવો કેવો બલિષ્ઠ છે કે, તમે એની સાથે દરરોજ વાતો કરો છો ?  તમે એને પૂછીને બધું કરો છો તે મને કહો તો ખરા કે એ કોણ છે ?'
+
+</p>
+ <p>
+
+
+  
+          મહારાજ કહે, "બહુ સમજવા જેવું નથી." એટલે મુક્તાનંદસ્વામીએ ફરી પૂછ્યું. મહારાજે જવાબ ન આપ્યો એટલે ત્રીજી વખત પૂછ્યું. મહારાજ કહે, "મુક્તાનંદસ્વામી, અમે લક્ષ્મીવાડીએ લઘુ કરવા જતા હતા ને ડાંગરનું લીલું થૂમડું અમારા પગમાં અથડાઈ ને ઉખડી ગયું; અને એ આત્માની ઉપર અમારી દ્રષ્ટિ પડી ગઈ ને એ જ આ વીરાભગત છે."
+</p>
+ <p>
+
+           પ્રભુ વીરાભગતને પૂછે એમાં, :- <br/>
+             
+               - પ્રભુનું દાસત્વ, <br/>
+               - પ્રભુની ખાનદાની, <br/>
+               - પ્રભુને નાનામાં નાના ભક્તોનો અપરંપાર મહિમા<br/>
+               - પ્રભુને અલ્પ સંબંધવળાનો ખુબ મહિમા, <br/>
+               - પ્રભુની એની સાથેની અપ્રતિમ પ્રીતિનું દર્શન છે.
+</p>
+ <p>
+
+                એથી આગળ પ્રભુએ એના આત્મા ઉપર કરુણા વરસાવી દીધી અને પોતાના યોગમાં લઈ લીધો. એમાં કરુણા આવી ગઈ, મહિમા આવી ગયો, દાસત્વ આવી ગયું, પ્રીતિ આવી ગઈ. આ એક આત્મા માટે પ્રભુએ ચાર વસ્તુ વહેવડાવી દીધી.
+</p>
+ <p>
+
+            ભગવાનની ખાનદાની કેવી ! ભગવાન જો અલ્પસંબંધવાળા માટે આવી મહિમાભરી દ્રષ્ટિનું દર્શન કરાવતા હોય તો આપણે સંબંધવાળાને કેવી દ્રષ્ટિથી જોવા જોઈએ ! 
+</p>
+ <p>
+
+           મહારાજના આ પ્રસંગનો સ્વાધ્યાય કરીને ભજન કરીએ તો પ્રભુ આપણને દાસત્વમાં જવાનું બળ આપી દે.
+
+</p>
+
+
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

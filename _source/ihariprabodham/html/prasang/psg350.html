@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સુહૃદભાવથી જીવો એમાં બધું આવી ગયું...
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+વર્ષો પહેલા ગુરુહરિ સ્વામીશ્રી ઉત્તર-ભારતની યાત્રાએ પધારેલા. એ યાત્રા દરમ્યાન સ્વામીશ્રી કુરુક્ષેત્ર પધારેલા. 
+</p>
+<p>
+કુરુક્ષેત્રમાં વિશાળ બ્રહ્મસરોવરમાં સ્નાન કર્યા પછી સંતો કિનારાના પગથિયે બેસી સ્વામીશ્રી સમક્ષ સંકલ્પો અને પ્રાર્થના કરી રહ્યા હતા. દરેક જણ એક સંકલ્પ કરે, સ્વામીશ્રીને પ્રાર્થના સ્વરૂપે સંક૯૫ કહે અને સ્વામીશ્રી તેને માથે પાણી ચઢાવી આશીર્વાદ આપી રહ્યા હતા.
+</p>
+<p>
+જ્યારે એક વડીલ સંતનો સંકલ્પ કરવાનો વારો આવ્યો ત્યારે એમણે પ્રાર્થના કરી, ‘હે સ્વામીજી ! બ્રહ્મરૂપે પરબ્રહ્મની ભક્તિ અખંડિત થયા કરે એ પ્રાર્થના છે.’ 
+</p>
+<p>
+સ્વામીશ્રી એમના સામે ક્ષણ– બે ક્ષણ જોઇ રહ્યા પછી કહે, ‘એવું નહિ ! તમે પાંચ જણ એક થઇને સુહૃદભાવ અને આત્મીયતાથી જીવો એમાં બધું આવી ગયું. આપણે મૂળ આ સંકલ્પ કરવાનો છે.’
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપે આપનો અંતરનો અભિપ્રાય બતાવ્યો કે અમે સહુ સુહૃદભાવે જીવીએ ! તો હે સ્વામીશ્રી સુહૃદભાવે જીવવા માટે ભજન, સ્વાધ્યાય, કથાવાર્તા ને આપના સુહૃદભાવમાં ડૂબેલા રહીએ એ જ પ્રાર્થના !
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

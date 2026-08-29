@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+એલાર્મ મૂકીને સૂઈ જા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+ <p> 
+
+આ પ્રસંગ ઈ.સ. ૨૦૨૦ પહેલાનો છે. 
+</p><p>
+અમેરીકામાં એક યુવક રહે છે. તે યુવકે સભામાં સાંભળ્યું કે, ગુરુહરિ હરિપ્રસાદ સ્વામીશ્રી આપની દરેક પ્રાર્થના સાંભળે છે. ને પ્રાર્થના કરીને સૂઈ જઈએ તો સ્વામીશ્રી આપણને સવારે ઉઠાડી દે.
+</p><p>
+રોજ રાત્રે એ યુવક સ્વામીશ્રીને પ્રાર્થના કરીને સૂઈ જાય કે મને આટલા વાગે ઉઠાડી દેશોજી.
+</p><p>
+હરિપ્રસાદ સ્વામીશ્રી દરરોજ સવારે દિવ્ય દેહે એના રૂમમાં પધારી જાય ને એને ઉઠાડે. રોજ અલગ અલગ સ્મૃતિ આપે. કો'ક વાર એ યુવકને નામ દઈને સાદ પાડીને જગાડે. કો'ક વાર પગે હાથ અડાડીને ઉઠાડે. કો'ક વાર માથે વાત્સલ્યસભર હાથ ફેરવીને ઉઠાડે.
+</p><p>
+આવું ઘણા સમય સુધી ચાલ્યું. એ યુવકને તો સ્વામીશ્રીના આ દિવ્યદર્શનથી ખૂબ જ આનંદ વર્તતો હતો.
+</p><p>
+થોડા દિવસો બાદ એ યુવકને ગુરુહરિ પ્રબોધ સ્વામીજીએ દિવ્ય દેહે દર્શન આપ્યા ને ખખડાવ્યો,  “સ્વામીજી, કઈ એલાર્મ થોડા છે ?  એલાર્મ મૂકીને સૂઈ જવાનું. આપણે જાગ્રતતા વધારવાની, આવી રીતે સ્વામીજીને દરરોજ ભીડો નહીં આપવાનો.”
+</p><p>
+ગુરુહરિ સ્વામીશ્રી અને પ્રબોધસ્વામીજીની  વિશિષ્ટ એકતાનાં અદ્‌ભૂત દર્શનની ધન્યતા સાથે તે યુવક બીજા દિવસથી એલાર્મ મૂકીને સૂવા લાગ્યો.
+</p><p>
+આપણે સહુએ પ્રાર્થના કરીને જ સુવાનું છે, પણ ગુરુહરિ પ્રબોધ સ્વામીજી એ યુવકને વિશેષ જાગ્રતતા આપવા અને સ્વામીશ્રી સાથેના ઐક્યના દર્શન કરાવવા કૃપા કરીને દર્શન આપ્યા.. 
+</p><p>
+વિષય: દિવ્ય દર્શન, જાગ્રતતા
+</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

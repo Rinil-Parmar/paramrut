@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભજન કરજો ને અભાવ નહી લેતા 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+વડોદરાના એક વર્ષો જૂના હરિભક્ત ગુરુહરિ સ્વામીશ્રીના દર્શન અને આશીર્વાદ લેવા હરિધામ આવ્યા હતા. તેઓને કમરના દુખાવાની બીમારી હતી. તેઓ ઊભા રહી શકતા નહોતા. 
+</p>
+<p>
+સ્વામીશ્રીએ પૂછ્યું કે, ‘કાંઈ તકલીફ છે ?’  <br/>
+તેઓ કહે, ‘હાં... કમરમાં થોડો પ્રોબ્લેમ છે. મણકા વચ્ચે ગેપ થઈ ગઈ છે. એને લઈને ઊભા નથી રહેવાતું.’ 
+</p>
+<p>
+પછી સાથે આવેલા હરિભક્તે સ્વામીશ્રીને કહ્યું, ‘સ્વામીજી ! પલાણા ટ્રીટમેન્ટ માટે જઈ આવ્યા.’ <br/>
+સ્વામીશ્રીએ કહ્યું, ‘ફરીથી પલાણાવાળા બોલાવે તો જજો અને ટ્રીટમેન્ટ કરાવજો.’ 
+</p>
+<p>
+એ ભગતે સ્વામીશ્રીને કહ્યું, ‘સ્વામીજી ! 2003માં પણ આવું જ થયું હતું અને આ ફરીથી થયું છે.’ <br/>
+એટલે સ્વામીશ્રી થોડા એમની નજીક ગયા અને કહ્યું, ‘વાત કરો...!’ એટલે ભગતે કહ્યું, ‘2003માં થયું હતું અને આ અત્યારે ફરી થયું છે.’ 
+</p>
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘તમને પચતું નથી લાગતું ! ગેસ થતો હશે.’ પછી કહે કે, ‘તમે શું જમો છો ?’ <br/>
+ભગત કહે, ‘હું તો સાદુ જ જમું છું.’ 
+</p>
+<p>
+સ્વામીશ્રીએ પુછ્યું, ‘શરીરમાં બીજો શું શું પ્રૉબલેમ છે ? તમને બી.પી. છે ? તમે બહું વિચારમાં રહેતા લાગો છો ! બહુ વિચાર કરો છો ? ’ <br/>
+ભગતે કહ્યું, ‘હા.. સ્વામીજી, બહું જ વિચારો આવે છે. વિચારમાંથી બહાર જ નીકળાતું નથી.’ 
+</p>
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘મહારાજે સરસ રોટલાનું તો ગોઠવી દીધું છે. દિકરો કમાય છે ને દિકરીઓનું સરસ ગોઠવાઈ ગયું છે. પછી શેના વિચારોમાં રહો છો ?’ <br/>
+ભગત કહે, ‘સ્વામીજી રોટલાનું તો મહારાજે બધું સરસ ગોઠવી દીધું છે, એનો વિચાર નથી આવતો પણ આ દેહની અંદર રોગ છે એના વિચારમાંથી હું નીકળી નથી શકતો.’ 
+</p>
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘આપણા બાપના વચનની ખબર છે ? ભગવાન સ્વામિનારાયણે શું કહ્યું ? કરોડ વિંછીનું દુ:ખ મને આવો પણ મારા હરિભગતને નહીં. એ વાક્યનો તમે કોઈ દિવસ વિચાર કર્યો છે ? કદાચ તમે વિચારમાંથી ના નીકળી શકતા હોય તો આ રોગ પ્રારબ્ધનો છે એવું માનીને પણ આનંદમાં રહેવું, પણ મહારાજના વચનની ઉપેક્ષા નહીં કરવાની. મહારાજનું વચન નહીં પડવા દેવાનું.’ 
+</p>
+<p>
+પછી આગળ કહ્યું, ‘બીજો નિયમ એક રાખો કે... આપણે ક્યારેય કોઈનો અભાવ નહીં લેવાનો. ઝાડ પાનનો પણ અભાવ નહીં લેવાનો. કદાચ તમે હરિધામ કેમ્પસમાં આવ્યા હોય અને બાવળની શૂળ તમને વાગે તો એવું વિચારવાનું કે એ શૂળ મેં જોઈ નહીં હોય,  મને દેખાઈ નહીં હોય, કાં મારા પ્રારબ્ધમાં હશે એટલે મને વાગી છે પણ એ શૂળનો પણ આપણે અભાવ નહીં લેવાનો.’ 
+</p>
+<p>
+સ્વામીશ્રીની વાત પૂરી થઈ એટલે ભગતે કહ્યું, ‘સ્વામીજી ! હાં મને બે જણનો બહુ જ અભાવ આવતો હતો. એક તો મારા મોટાભાઈ અને મોટીબેનનો. પણ જ્યારથી મને  દેહમાં રોગ આવ્યો ત્યારથી ઘણોખરો અભાવ નીકળી ગયો છે.’
+</p>
+<p>
+છેલ્લે સ્વામીશ્રીએ  કહ્યું, ‘બે જ વસ્તુ કરજો : ભજન કરજો... અને અભાવ નહી લેતા… ડૉક્ટરને બતાવી આવો. પછી આપણે મળીએ…’
+</p>
+<p>
+હે ગુરહરિ સ્વામીશ્રી ! ગુણાતીત બાગનો કાંટો પણ અનંતનું કલ્યાણ કરે એવું આપના અલૌકિક સંબંધયોગનું માહાત્મ્ય છે, તો અમે કેવળ ને કેવળ આપનામાં જ ડૂબેલા રહીએ તેવી કૃપા વરસાવશોજી.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

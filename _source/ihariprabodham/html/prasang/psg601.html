@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      વડીલો પ્રત્યેની ભક્તિ
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_601">
+      July 18, 2023, Charlotte, NC<br/>
+      <p>સાંજના સુમારે ગુરુહરિ પ્રબોધસ્વામીજી યુવક દિપેનભાઈ મિસ્ત્રીના ઘરે પધાર્યા. દિપેનભાઈ થોડા સમય પેહલા જ સત્સંગના યોગમાં આવ્યા છે. એમની ગુરુહરિના સાથેની આ પહેલી મુલાકાત હતી. ગુરુહરિ પધાર્યા એટલે દિપેનભાઈના પિતાશ્રી રાજુભાઈએ શ્રી ઠાકોરજીનું પૂજન કરી ગુરુહરિને ગુલાબનું ફૂલ અર્પણ કર્યું.</p><p>રાજુભાઈની ઉંમર ખુબ મોટી છે, એટલે જયારે એ નીચે બેસવા જતા હતા ત્યારે પૂ. મૈત્રીસ્વામીએ કહ્યું, “આપ અહીંયા સ્વામીજીની બાજુમાં બેસી જાવ.” રાજુભાઈ એ ના પાડી.</p><p>એટલે ગુરુહરિએ ખુબ સહજતાથી કહ્યું, “બેસાય, બેસાય, વાંધો નહીં.” તેમ છતાં રાજુભાઈ એમના દીકરા દીપેનભાઈની સાથે નીચે બેઠા અને ગુરુહરિ સાથે ફોટો સ્મૃતિ પડાવી.</p><p>ત્યારબાદ એમને ઉભા થવામાં તકલીફ પડતી હતી એટલે ગુરુહરિએ એમનો હાથ પડકી સહારો આપ્યો. અને ફરી સોફા પર બેસવાનો મીઠ્ઠો આગ્રહ કરતા કહ્યું, “અહીંયા બેસી જાવ. બેસાય અહીંયા.” એટલે રાજુભાઈએ ખુબ વિનમ્રતા પૂર્વક કહ્યું, “ના, ના. મારી મર્યાદા મને ખબર છે.”</p><p>આ સાંભળી ગુરુહરિ ખુબ સહજતાથી અને ગરીબાઈથી બોલ્યા, “વડીલ માવતરનો વાંધો નહીં. અમે તમારા દીકરા જેવા નાના જ છીએ.” આ મીઠ્ઠી રકઝક આગળ ચાલી, રાજુભાઈ કહે, “તમારી વાત સાચી છે, પણ જ્ઞાન અને ભક્તિમાં ઉંમર ના જોવાય. નાનો છોકરો પણ જ્ઞાન આપતો હોય, તો કબૂલ કરવું પડે કે આપણા કરતા મોટો છે.”</p><p>પછી ગુરુહરિએ કહે કે, “હા એ તો આપણી સંસ્કૃતિ છે. અને વડીલોની મર્યાદા રાખવી એ બી આપણી સંસ્કૃતિમાં છે. અને તમે તો માવતર કહેવાવ એટલે તમે બેસો તો વાંધો ના આવે.”</p><p>ગુરુહરિની હૃદયસ્પર્શી ગરીબાઈ અને વડીલો માટેની મર્યાદા એ આપણા સૌ માટે દર્શનીય અને ખુબ પ્રેરણાદાયક છે!</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: મર્યાદા<br/>
+      ટેગ: વડીલ, સંસ્કૃતિ, ભક્તિ<br/>
+      નંબર: ૩૬૦
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

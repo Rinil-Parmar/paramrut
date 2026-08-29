@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+શાસ્ત્રીજી મહારાજ આત્યંતિક કલ્યાણ કરશે
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એકવાર સારંગપુરમાં યોગીજી મહારાજે પ્રભુદાસભાઈને બોલાવીને કહ્યું, ‘આપણે પરમ દિવસે નારાયણઘાટ પર જલઝીલણી એકાદશીનો ઉત્સવ કરવો છે.’
+</p><p>
+બાપાના વચનને અદ્ધર ઝીલી પ્રભુદાસભાઈ એ જ રાત્રે બેટરી લઈને નારાયણઘાટ પહોંચી ગયા. અંધારી રાત હતી. એકલી વ્યક્તિ ત્યાં જવાની હિંમત જ ન કરે એવી ભેંકાર જગ્યા હતી. ત્યાં જઈને જોયું તો નારાયણઘાટનાં પગથિયાં ઉપર લીલ જામી હતી. પાણીમાં રાડાં, કપાસ, પાંદડાં અને કચરો હતો. આજુબાજુ સાપોલિયાં ફરતાં હતાં. ગંદકીને કારણે ચારેબાજુ દુર્ગધ મારતી હતી. પ્રભુદાસભાઈ એકલા હાથે સાફસૂફી કરવા મંડી પડ્યા. 
+</p><p>
+સેવા કરતાં કરતાં એમના અંતરમાં મહિમાનો ધોધ ઉમટ્યો. વિચાર કરવા લાગ્યા, ‘આ સાધુના ચરણારવિંદ પૃથ્વી પર ન હોય ! એમના માટે જેટલું સારું કરીએ તેટલું ઓછું છે. બાપા અહીં પધારે ત્યારે એમને ચાલવામાં, બેસવામાં તકલીફ ન પડવી જોઈએ. દેહનું જે થવાનું હોય તે થાય. આવા પુરુષ ! એમનું વચન ! એમની સેવા ! આપણા ભાગ્યમાં કયાંથી...! વળી, બાપાએ કેટલી સેવા કરી ! આપણે તો એમના લાખમા ભાગની પણ સેવા કરી શકીએ એમ નથી.’ આવા અપરંપાર મહિમાના વિચારોમાં સેવા કરતાં કરતાં પ્રભુદાસે આખી રાત સેવા કરી.
+</p><p>
+વહેલી સવારે કૂકડાનો અવાજ સંભળાયો ત્યારે એમને ખબર પડી કે આ સવાર પડી ગઈ. તેઓ મંદિરે પાછા આવ્યા. નાહી-ધોઈને પૂજા કરી, બાપાની કેડ દબાવવા પહોંચી ગયા. બાપા ઉકાળો ગ્રહણ કરવા પધાર્યા. પ્રભુદાસભાઈ દસ યુવકોને નારાયણઘાટ ઉપર લઇ ગયા અને બાકીની સાફસૂફી કેવી રીતે કરવી તે સમજાવી કહ્યું કે તમે મંદિરે નહીં આવતા. બપોરનું ભોજન આપણે અહીંયા જ કરવાનું છે.
+</p><p>
+એમના વચને સૌ યુવકો આખો દિવસ સેવામાં મંડી પડ્યા. રાત્રે ફરી તેઓ યુવકો સાથે સેવામાં જોડાયા. આખી રાત યુવકો સાથે સેવા કરી. 
+</p><p>
+સેવા કરતાં કરતાં પ્રભુદાસભાઈનું તો એક જ રટણ હતું કે ‘આ ધરતી પર આ સનાતન પુરુષ આવ્યા છે તો એમને હાશ કરી દેવી. બાપા અહીં પધારે, એમને ચાલવામાં તકલીફ ના પડે, આરામથી બેસે, પ્રસાદ આપે એવી વ્યવસ્થા આપણે કરવી જોઈએ. બાપાએ તો વર્ષો સુધી કેવી અદ્ભુત સેવા કરી છે !’ આ રીતે તેઓ સેવા કરતાં કરતાં બાપાનાં ચરણોમાં પોતાનું અંતર ઓગાળી રહ્યા હતા.  
+</p><p>
+એમને સતત બે રાતના ઉજાગરા થયા. ત્રીજી સવારે બાપાની કેડ દબાવવાની સેવામાં થોડું મોડું થયું. બાપાએ મીઠી ટકોર કરતાં પૂછયું, ‘ક્યાં ગયા હતા, ગુરુ ? ક્યારનોય રાહ જોઉં છું.’
+</p><p>
+પ્રભુદાસભાઈએ કહ્યું, ‘બાપા ! અમે બધા નારાયણઘાટની સાફસૂફીની સેવામાં ગયા હતા તેથી થોડું મોડું થઈ ગયું.’
+</p><p>
+અંતરનો રાજીપો બતાવતાં યોગીબાપાએ પોતાના ખોળામાં પ્રભુદાસભાઈનું મસ્તક મૂક્યું અને એમના મસ્તક પર પોતાનું મસ્તક મૂકીને સાત મિનિટ સુધી હેતની હેલી વરસાવી. બાપા અઢળક ઢળ્યા ! બાપાની એ પ્રસન્નતા આશીર્વાદરૂપે સરી પડીઃ 
+</p><p>
+(૧) અમે જેવું શાસ્ત્રીજી મહારાજનું સેવન કર્યું તેવું તમે અમારું કર્યું છે. <br/>
+(૨) જેટલા જેટલા યુવકો તમારા યોગમાં આવશે એ સર્વેનું શાસ્ત્રીજી મહારાજ
+આત્યંતિક કલ્યાણ કરશે. <br/>
+(૩) જાવ, આજથી બ્રહ્મજ્ઞાન ફૂટશે અને એ ઝરો અખંડિત બનશે !
+</p><p>
+યોગીજી મહારાજની મરજીને આજ્ઞા સમજી પ્રભુદાસભાઈએ ત્રણ દિવસ સુધી સતત ઉજાગરા કરીને કેવી અનુપમ સેવા કરી ! બાપાના વચનને અદ્ધર ઝીલી ગુરુભક્તિનું કેવું અજોડ દર્શન કરાવ્યું !
+</p><p>
+સેવાના અનુસંધાનમાં ગુરુહરિ સ્વામીશ્રીએ એકવાર કહ્યું હતુ, ‘જેમ જેમ ભજન કરતાં કરતાં સેવા કરીએ તેમ તેમ અંતઃકરણ શુદ્ધ થતું જાય, જેમ જેમ અંતઃકરણ શુદ્ધ થાય તેમ તેમ બુદ્ધિયોગ મળે ને જેમ જેમ બુદ્ધિયોગ મળે તેમ તેમ સંબંધ દઢ થાય ને જીવ સુખિયો થઈ જાય.’ 
+</p><p>
+આપણે સહુ ગુરુહરિ સ્વામીશ્રીના આ પ્રસંગને હરહંમેશ નજર સમક્ષ રાખીને ભજન અને સ્મૃતિ કરતાં કરતાં વચનામૃત ગઢડા મધ્ય-૪૧ પ્રમાણે સેવામાં નિમિત્ત બનીએ.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

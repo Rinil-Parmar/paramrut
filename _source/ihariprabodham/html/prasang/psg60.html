@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+જાગૃત, સ્વપ્ન અને સુશુપ્તિના સંકલ્પોના પ્રેરક
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+આત્મીય વિદ્યામંદિર, કોળીભરથાણામાં અભ્યાસ કરતાં દશમાં ધોરણના વિદ્યાર્થી પૂ. સુહૃદસ્વામીને મળવા આવ્યો. તેણે વાત કરતાં કહ્યું, ‘ગઈકાલે મને પ.પૂ. સ્વામીજીએ સ્વપ્નમાં દર્શન આપ્યા ને સુંદર સ્મૃતિનું સુખ આપ્યું. પછી સ્વામિજીએ મને સ્વપ્નમાં બે આજ્ઞા કરી. પહેલી આજ્ઞા એ કરી કે, કરવાનું હોય એટલું જ કરવાનું ને નહીં કરવાનું એ નહીં જ કરવાનું, તારો સંકલ્પ છે કે દસમાં ધોરણમાં મારે બાપાનું શોભાડવું છે એ તારો સંકલ્પ પૂરો થશે. ...પણ મને સ્વામીજીએ કરેલી બીજી આજ્ઞા યાદ નથી રહી. તો આપ એ બીજી આજ્ઞા સ્વામીજીને સાનુકૂળતાએ પૂછીને જણાવશો?’
+</p>
+<p>
+સુહૃદસ્વામીએ તેની ઉત્કૃષ્ટ જાગ્રતતા જોઈ કહ્યું, ‘હા, જરૂર. સ્વામીજીને સાનુકૂળતા હશે ત્યારે ચોક્કસ પૂછી લઈશું.’
+</p>
+
+<p>
+થોડા દિવસો બાદ ગુરુહરિ સ્વામીશ્રી હરિધામ, અનિર્દેશમાં બપોરે થાળ ગ્રહણ કરી રહ્યા હતા. સુહૃદસ્વામી સ્વામીશ્રીના દર્શન કરી રહ્યા હતા. વાત કરવાની સાનુકૂળતા જણાતા તેમણે પ્રાર્થના કરતા કહ્યું, ‘સ્વામિજી! આપે આત્મીય વિદ્યામંદિરના એક યુવકને સ્વપ્નમાં દર્શન આપ્યા ને આપે તેને બે આજ્ઞા કરી હતી. એ યુવકને એક આજ્ઞા યાદ છે, પણ બીજી એનાથી ભૂલાઈ ગઈ છે...’
+</p>
+<p>
+સુહૃદસ્વામી વાત પૂરી કરે ત્યાં તો સ્વામીશ્રી કહે, ‘એના કરતાં ક્લાસમાં જે હોશિયાર વિદ્યાર્થી હોય એની સાથે દોસ્તી રાખે.’
+</p>
+<p>
+જાગૃત, સ્વપ્ન અને સુશુપ્તિના સંકલ્પોના પ્રેરક ગુરુહરિ સ્વામીશ્રીની કરુણાની શી કલ્પના કરી શકીશું ! 
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

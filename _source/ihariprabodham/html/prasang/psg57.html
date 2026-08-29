@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+મહિમાવંતા માતા-પિતા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+    ત્રણ વર્ષની ઉંમરના પરભુ એકવાર ઘરના આગંણામાં રમી રહ્યા હતા. દેવમંદિર પાસે બેઠેલા પિતાશ્રી ગુરુ-આજ્ઞાનુસાર રોજના નિયમ પ્રમાણે શ્લોકનું ગાન કરી રહ્યા હતા. અચાનક જ એક શ્લોકના ઉત્તરાર્ધની વિસ્મૃતિ થઈ જતાં તેઓ અટકી ગયા. ઘણું મંથન કરવા છતાંય શ્લોકનું આગળનું ચરણ યાદ ન આવ્યું. શ્લોકની પાદપૂર્તિ માટે મનોમન મંથન કરવા લાગ્યા અને બરાબર તે જ સમયે બાળ પરભુ રમતા રમતા પિતાશ્રી પાસે આવી પહોંચ્યા. પિતાશ્રીના મુખ ઉપરની ઉદાસીનતા જોઈ પરભુ વાત પામી ગયા હોય તેમ પોતાની કાલીઘેલી ભાષામાં શ્લોકનો ઉત્તરાર્ધ બોલીને હસતાં હસતાં દૂર ભાગી ગયા.
+</p>
+<p>
+    આટલી નાની વયમાં બાળ પરભુની અલૌકિક લીલા નિહાળી પિતાશ્રીને અપાર આશ્ચર્ય થયું. પોતાને ઘરે જન્મ લેનાર આ બાળક એ કોઈ સામાન્ય આત્મા નથી પણ કોઈ અલૌકિક દિવ્ય વિભૂતિ છે એ વાતની તેમને દૃઢ પ્રતીતિ થઈ.
+</p>
+
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

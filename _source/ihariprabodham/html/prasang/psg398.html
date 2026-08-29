@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+વિધાતાના લેખ પર મેખ મારે તે ભગવાનના સાધુ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ઇ.સ. 1985 પહેલાનો આ પ્રસંગ છે. 
+</p>
+<p>
+ગુરુજી જયનારાયણભાઈ પાઠક હરિધામના સંતોને સંસ્કૃત ભણાવતા હતા. તેઓ વ્યાકરણના આચાર્ય હતા. તે સમયે તેઓ બરોડા સંસ્કૃત મહાવિદ્યાલયના ડીન હતા. 
+</p>
+<p>
+થોડા સમય બાદ તેમનું વજન ઓછુ થઈ ગયું, મ્હોં પર તનાવ જેવું જણાવા લાગ્યું તેથી સંતોએ ગુરુજીને કહ્યું કે અમે તમારા દિકરા જેવા છીએ તમને કોઈ મુશ્કેલી હોય તો કહો. સંતો એ ૨-૩ વખત કોશિશ કરી પણ ગુરુજી એ કહ્યું નહિ. પછી સંતોએ ગુરુજીને કહ્યું કે, ‘તમે જો અમને તમારી મુશ્કેલી નહિ જણાવો તો તમને અમારા સમ છે. તમારે અમને તમારી મુશ્કેલી કહેવી જ પડશે.’
+</p>
+<p>
+ત્યારે ગુરુજીએ પોતાની મુશ્કેલી જણાવી,  ‘હું વ્યાકરણની સાથે સાથે જ્યોતિષવિદ્યાનો પણ જાણકાર છું. અમે ચાર મિત્રો છીએ. મેં મારી અને મારા મિત્રોની જન્મકુંડળી જોઈ. તેના આધારે અમે ચારેય મિત્રો એક પછી એક,  એક મહિનાના અંતરે મૃત્યુ પામવાના છીએ.’
+</p>
+<p>
+અને તે જન્મકુંડળીના આધારે મારા ત્રણ મિત્રોનું મૃત્યુ થઈ ગયું છે અને હવે ચોથો હું બચ્યો છું. ને હવે થોડા દિવસોમાં મારું પણ મૃત્યુ થશે. 
+</p>
+<p>
+હવે આ વાત મેં મારા કુટુંબમાં કોઈને જણાવી નથી. મને મરવાની બીક નથી પણ મારા ત્રણ દિકરા હજુ નાના છે. તેમને જો હું આ વાત કરું તો તેઓને પણ ચિંતા થાય. એ  વિચારે મારું વજન ઓછુ થતું જાય છે.’
+</p>
+<p>
+ગુરુજીની વાત સાંભળી સંતોએ કહ્યું, ‘આપણે ગુરુહરિ સ્વામીજી પાસે આશીર્વાદ લઈ લઈએ.’ 
+</p>
+<p>
+ગુરુજીની માન્યતા હતી કે કોઈ પણ વ્યક્તિ બીજા કોઈ પણ વ્યક્તિનું આયુષ્ય વધારી શકે નહિ. 
+</p>
+<p>
+પછી સંતોના આગ્રહથી ગુરુજી સ્વામીજીના દર્શને આવ્યા. સ્વામીજીએ બધી વાત સાંભળી ને કહ્યું, ‘જ્યોતિષ શાસ્ત્રની વાત સાચી છે !!’ તેથી ગુરુજીને પણ થયું કે સ્વામીજી પણ પોતાની જ્યોતિષ શાસ્ત્ર પ્રમાણેની વાતને સમર્થન આપે છે. પછી સંતોએ સ્વામીજીને પ્રાર્થના કરતાં કહ્યું , ‘આપ ગુરુજીને આશીર્વાદ આપો.’
+</p>
+<p>
+ત્યારે સ્વામીજીએ ગુરુજીને વાત કરતાં કહ્યું, ‘ગુરુજી ! તમે ચિંતા ના કરો. તમે સંતોની ખૂબ સરસ સેવા કરો છો અને હજુ તો આપણે બહુ સંતો બનાવવાના છે ને એ બધા સંતોને તમારે સંસ્કૃત ભણાવવાનું છે. તમે ચિંતા નહિ કરતાં.’ 
+</p>
+<p>
+પણ ગુરુજીને હજી સ્વામીજીનો વિશ્વાસ નહોતો આવતો. ગુરુજીએ કહ્યું, ‘સ્વામીજી મને હજી દીકરાઓની ચિંતા છે.’ 
+</p>
+<p>
+પછી સ્વામીજીએ બીજી રીતે સમજાવ્યું કે, ‘બધા જ દીકરો સરસના સેટલ થઈ જશે.’ સંતોએ પણ ગુરુજીને વાત કરી, ‘ગુરુજી, પવિત્ર સાધુ પાસે ગ્રહ, પનોતી, કાળ બધા પાછા પડી જાય.’ છતાં ગુરુજીને વિશ્વાસ ના બેઠો. 
+</p>
+<p>
+
+આગળ સ્વામીજીએ કહ્યું કે, ‘અમે પ્રાર્થના કરીશું કે તમને ભગવાન સ્વામિનારાયણ ધરતી પર રાખે, ચિંતા નહિ કરતાં.’ તોય ગુરુજીને ન મનાયું.
+</p>
+<p>
+છેલ્લે સ્વામીજીએ દિવ્યભાવમાં આવીને કહ્યું, ‘અમારા સંકલ્પે ભગવાન કામ કરશે. અમે આજે સંકલ્પ કરીએ છીએ કે તમારે જ્યારે ધામમાં જવાનું થશે એના પહેલાં અમે તમને લેખિત કાગળ લખીશું. હવે ચિંતા છે ?’ 
+</p>
+<p>
+સ્વામીજીએ આ વાક્ય કહ્યું ત્યારે ગુરુજીને હાશકારો અનુભવાયો. 
+</p>
+<p>
+અને તે પછી વર્ષો બાદ સ્વામીજીએ તેમણે કરેલા વાયદા મુજબ પરદેશથી કાગળ લખ્યો હતો. તે સમયે ગુરુજીના દીકરાઓ સેટલ થઈ ગયાં હતા.
+</p>
+<p>
+31 December 1994 ની સવારે ગુરુજી રાબેતા મુજબ તૈયાર થઈ પૂજા વિધિ પૂરી કરીને બેઠા હતા ત્યાં જ તેમને છાતીમાં દુ:ખાવો શરૂ થયો.  તે  સમયે હરિધામની ધરતી પર આત્મીય મહોત્સવ ઊજવાઈ રહ્યો હતો. 
+</p>
+<p>
+આવા મોટા સમૈયાની વચ્ચે સ્વામીજીએ વહેલી સવારે દાસસ્વામીને બોલાવ્યા અને કહ્યું, ‘તમે હમણાં જ ગાડી લઈને ગુરુજીના ઘરે જાઓ અને તેમને તમારી સાથે અહીં સમૈયાના દર્શન કરવા લઈ આવો.’ 
+</p>
+<p>
+સંતો ગુરુજીને સમૈયામાં લઈને આવ્યાં. સ્વામીજી તેમને મળ્યા, છાતી પર હાથ ફેરવ્યો, હેત કરી આનંદ કરાવી દીધો. 
+</p>
+<p>
+બીજા દિવસે 1 January 1995 ના રોજ સવારે ગુરુહરિ સ્વામીશ્રી તેમને ધામમાં લઇ ગયાં.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

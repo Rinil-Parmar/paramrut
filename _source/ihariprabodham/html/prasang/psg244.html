@@ -1,0 +1,175 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+નિરંતર નિરપેક્ષ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+બન્ને જૂનાગઢી સંતો, ગુણાતીતાનંદસ્વામી અને કેશવચરણસ્વામી વડતાલ દર્શન કરવા ગયા હતા. સાકારબ્રહ્મને એમ કે, હવે દેશ છોડવો છે તો વડતાલ જઈને દર્શન કરી આવીએ. બન્ને સંતો પાછા જૂનાગઢ આવ્યા. ત્યાં સુધીમાં આચાર્ય મહારાજે જૂનાગઢમાં નવા કોઠારીની નિમણૂક કરી દીધી હતી; પરંતુ તેઓ એમને કહી શક્યા નહિ કે, મેં નવા કોઠારીની નિમણૂક કરી દીધી છે. ગામડાં ફરતાં-ફરતાં વડતાલથી જૂનાગઢ તરફ પાછા જતાં ૧૦-૧૫ દિવસ પછી જ્યારે ગુણાતીત જૂનાગઢની ધરતી પર પ્રવેશ કરે છે ત્યારે તેમને ખબર પડે છે કે કોઠારીપદ બીજાને સોંપાઈ ગયું છે.
+</p><p>
+
+ગુણાતીતાનંદસ્વામી સહજતાથી બોલી ઊઠ્યા, ‘ઠાકર ! ઠાકર !’ 
+</p><p>
+મંદિરનો પ્રાણ, હજારોનો પ્રાણ, ઓરિજિનલ સગુણ ને નિર્ગુણ સ્વરૂપ. વેદોમાં જેનું વર્ણન થયું તે
+ઓરિજિનલ મૂળ તત્ત્વ. આ નખના કરોડમા ભાગમાં, મોસ્ટ માઇન્યુટ મોલેક્યુલ્સમાં પણ જે સનાતન બ્રહ્મતત્ત્વ નિર્ગુણસ્વરૂપે વ્યાપક છે. નહિ તો લીલોતરી ન હોઈ શકે. અનાજ પેદા ન થઈ શકે. રચકામાં મીઠાશ ન આવે. ફળફળાદિમાં નીરસતા જ હોય. અણુએ અણુમાં અક્ષરબ્રહ્મનું શરીર વ્યાપક છે. દરેક આત્માને વિશે વ્યાપક છે. જડ અને ચેતનને વિશે વ્યાપક છે. એમણે એકધાર્યો દાખડો કર્યો.
+</p><p>
+બીજી બાજુ ભગવાન સ્વામિનારાયણની આજ્ઞા બધાને જ હતી કે, ‘ગોપાળાનંદસ્વામી આજ્ઞામાં રહેજો ને ગુણાતીતાનંદસ્વામીનો સમાગમ કરજો. ૧૨ મહિને એક મહિનો જૂનાગઢ જજો.’ એ ભગવાન સ્વામિનારાયણનું સનાતન વાક્ય હતું પણ કમનસીબ !
+</p><p>
+ગુણાતીતાનંદસ્વામી તો હસતા હસતા પોતાની રૂમમાં જતા રહ્યા. કેશવચરણસ્વામી વિચારમાં પડી ગયા, ‘સ્વામીજી ! મને ને તમને, કોઈ કાંઈ ન પૂછે એટલે શું ?’ ત્યારે
+ગુણાતીતાનંદસ્વામીએ હસતાં હસતાં એટલું જ કહ્યું કે, ‘હવે મહારાજની ઇચ્છા આપણી પાસે સેવા કરાવવાની નથી. તમે આનંદમાં રહો અને હું ય આનંદમાં રહું.’ પણ કેશવચરણસ્વામીથી, રહેવાયું નહિ તે કહે, ‘ના, હવે તમેય દેહ છોડી દો ને હું ય દેહ છોડી દઉં.’ બેઉ સ્વતંત્ર હતા.
+</p><p>
+
+કેશવચરણસ્વામી સામાન્ય વ્યક્તિ નહોતી; ગુણાતીતનું સેવન કરનાર વ્યક્તિ હતી. બહુ ઉદાસ થઈ ગયા. કેશવચરણસ્વામી કહે, ‘હું જાઉં છું આમ અને તમે તમારી જગ્યા પસંદ કરી લો.’ 
+</p><p>
+ગુણાતીતાનંદસ્વામી કહે, ‘ઉતાવળ ના થાય.’ ગુણાતીત તો રંચમાત્ર, કોઈપણ જાતના સાત્વિક  અહમ્ ના પડછાયામાં આવ્યા સિવાય, એક નેચરલ અવસ્થાથી પોતાની બ્રાહ્મી સ્થિતિનું સહજ દર્શન કરાવતા રહ્યા, ‘તુંહી... તુંહી... તારે લઈને હું’ કેટલી ઊંચી સ્થિતિ હશે !
+</p><p>
+
+સાકાર બ્રહ્મ કોઈ સ્ટેટમેન્ટ નહિ આપ્યું. સરળતાથી જય સ્વામિનારાયણ પોતાના ઓરિજિનલ થાંભલે જઈ ગોષ્ઠિ શરૂ કરી દીધી. આજથી હું મહંત નથી. આજથી હું કોઠારી નથી. એમણે કશું જ જણાવવા ન દીધું. કશું જ નહીં. એમને એની જરૂર નહોતી. એ નારાયણની રસઘનમૂર્તિના સુખે સુખિયા હતા. નારાયણ અખંડિત એમનામાં રહ્યા હતા.
+</p><p>
+
+પુરુષોત્તમ નારાયણને પૃથ્વી પર પ્રગટવું હોય તો અક્ષરબ્રહ્મ અનિવાર્ય. જેમની આટલી અદ્‌ભુત  મોટપ છે છતાંય એમણે નાનામાં નાના સામાન્ય પાર્ષદોની આજ્ઞામાં વર્તવા માટે
+સહજતાથી એ ભાવને સ્વીકારી લીધો, એ એમની ભૂલકુંની કેવી મંગલકારી અવસ્થા હશે !
+</p><p>
+
+સાધકે હરેક સેકન્ડે વચ. ગ.મ.-૨૮ ને ૪૧ પ્રમાણે પોતાના આત્માની સેવા કરવાની છે. એ આપણે ક્યારેય કોઈ સંજોગોમાં ભૂલી જવાનું નથી.
+</p><p>
+
+સાકારબ્રહ્મ, જેઓ  પ્રગટ્યા ત્યારથી ઠેઠ દેહ મૂકવા માટેના સંકલ્પ સહિત ગોંડલની ધરતી પર થાંભલા આગળ બેઠા ત્યાં સુધી નિરંતર જાણપણે જીવ્યા. :
+</p><p>
+
+- તારે લઈને હું. <br/>
+
+- જેમ રાખે તેમ રહેવું છે. <br/>
+
+- તારે મારા આત્મા ઉપર જે લખવું હોય તે લખજે. <br/>
+
+- તું જ મારું સર્વસ્વ, સુખ, શાંતિ ને આનંદ છે. <br/>
+
+- તું જ્યાં મૂકીશ ત્યાં જે રીતે રાખીશ તે રીતે. <br/>
+</p><p>
+
+પણ પછી ગુણાતીતાનંદસ્વામી સંકલ્પ કરે છે કે, ‘હવે દેહ છોડી દેવો છે.’ કેશવચરણસ્વામી તો ઉદાસ થઈ ગયા. ગુણાતીતે સમજાવ્યા, આનંદ કરાવ્યો. ‘ઉતાવળ ન કરો, હું જ્યારે આમ જઉં ત્યારે તમે આમ જજો.’ એ પણ એક સમર્થ સાધુ !
+</p><p>
+
+એક બાજુ ઉનાની ધરતી પર કેશવચરણસ્વામી દેહ મૂકે છે અને બીજી બાજુ ગોંડલની ધરતી પર ગુણાતીતાનંદસ્વામી દેહ મૂકે છે.
+</p><p>
+ જ્યારે ગુણાતીતાનંદસ્વામી જૂનાગઢથી નીકળ્યા ત્યારે પૂરતી કોરી પણ આપી નહોતી. એ સાકારબ્રહ્મ કેવું બધું ભૂલી જતા હશે ! હું તો હજુ એ વિચારમાંથી બહાર નથી નીકળતો કે જેને લઈને, : -
+</p><p>
+- જેની ભૂકુટિ વિલાસના બાણે કરીને જય સ્વામિનારાયણ, અનંત બ્રહ્માંડો  <br/>
+- આ  માઇકથી તમે અવાજ સાંભળી શકો છો, <br/>
+- ફૂલ બિચારાં સુવાસિત બને છે, <br/>
+- ચોખા, ઘઉ કે જીરું કે મરચું એના ટેસ્ટ પકડી શકે છે, <br/>
+- અનંત બ્રહ્માંડની ઉત્પત્તિ, સ્થિતિ ને લય થાય છે, નહિવત્ થઈ જાય છે.
+</p><p>
+ચિદાકાશની દિવ્ય રસઘન નારાયણની મૂર્તિને ધારણ કરનાર, અક્ષરના એ અવતાર, બ્રહ્મના એ અવતાર સમાન પુરુષ કેટલું સહન કરીને ગયા !
+</p>
+ 
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

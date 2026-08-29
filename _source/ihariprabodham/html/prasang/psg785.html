@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સભાના સમયે આવી જજો
+    </div>
+    <div class="vaat_ind" id="vaat_file_785">
+      
+      <p>સરળ સેવક સંતને અને ભગવદીને સહજ અધિકાર આપીને પ્રભુની મસ્તીમાં જ ફરતો હોય.</p><p>ગુરુહરિ હરિપ્રસાદ સ્વામીશ્રીએ પ્રથમ પાંચ સંતોને દીક્ષા આપી ત્યારે આજ્ઞા કરતાં કહ્યું હતું કે, કોઠારીસ્વામીજી અને શાસ્ત્રીજીસ્વામીજી મર્યાદા રાખવાની. પ્રબોધસ્વામીજીએ આ આજ્ઞાનું સારધાર પાલન કર્યું છે.</p><p>એક વખત નાના સંતોને શાસ્ત્રીસ્વામીએ વાત કરતા કહ્યું હતું કે, “પ્રબોધસ્વામીએ ક્યારેય મારી કે કોઠારીસ્વામીની આજ્ઞા લીધા સિવાય મંદિરના ગેઈટની બહાર પગ મૂક્યો નથી. મન-મુખી જીવન જીવ્યા નથી.”  શાસ્ત્રીસ્વામી જેવા વડીલ સંતે કહેલ આ શબ્દો એ ગુરુહરિની સાધુતા પર મારેલી મહોર હતી. પ્રબોધસ્વામીજીનું પળેપળનું જીવન સરળતાભર્યું હતું!</p><p>વર્ષ ર૦૨૦માં પૂ. સુચેતનસ્વામીએ વડોદરામાં સભામાં ગોષ્ટિ કરવા માટે પૂ. પ્રબોધસ્વામીજીને આમંત્રણ આપ્યું.</p><p>પ્રબોધસ્વામીજી વડોદરા જવા માટે શાસ્ત્રીસ્વામીજીની રજા લેવા ગયા. શાસ્ત્રીસ્વામીજીએ કહ્યું, “ભલે, જઈ આવો પણ અહીંની રાત્રિની સભાના સમયે આવી જજો.”</p><p>પ્રબોધસ્વામીજી રવિવારની સભામાં વડોદરા પધાર્યા, ત્યાં લાભ આપ્યો. સભા જેવી પૂરી થઈ કે ભોજન કરવા પણ ન રોકાયા ને સીધા ૮:૩૦ વાગ્યે મંદિરે સભામાં પધારી ગયા. સભા પૂરી થયા બાદ રાત્રે ૧૦ વાગ્યે ભોજન લેવા પધાર્યા.</p><p>પ્રબોધસ્વામીજીનાં જીવનમાં જેવી વડીલ સંતો માટેની મર્યાદાનું દર્શન થાય એવું ને એવું જ પ્રાદેશિક સંતો, પ્રમુખો કે કાર્યકર્તાઓ માટેની મર્યાદાનું દર્શન થાય. જે જે પ્રદેશમાં એમણે પ્રાદેશિક સંત તરીકે સેવા આપી એ તમામ જગ્યાએ ગુરુહરિ સ્વામીજીની રીતેરીત રાખીને સત્સંગ કર્યો અને કરાવ્યો.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: મર્યાદા, સરળતા<br/>
+      ટેગ: <br/>
+      નંબર: ૨૬૩
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

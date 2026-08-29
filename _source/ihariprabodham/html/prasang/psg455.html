@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આપણને માંગતા આવડે નહીં અને એ આપે તે ઝીલી શકાય નહિં
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+ 
+<p>
+આકાશભાઈ કેનેડા ના Etobicoke મંડળના અંબરીષ ભક્તરાજ છે. ૨૦૨૨ માં ભારતની ટ્રીપ દરમિયાન તેઓ ગુરુહરિ પ્રબોધસ્વામીજીનાં દર્શન-સમાગમનો લાભ લેવા હરિધામ મંદિરિ થોડા દિવસો રોકાયા હતા.
+</p> <p>
+એક દિવસ બપોરના સમયે ગુરુહરિ પ્રબોધસ્વામીજી હીંચકા ઉપર બિરાજમાન હતા ત્યારે આકાશભાઈએ પ્રાર્થના કરી, ‘સ્વામી, ૨૦૧૮ માં હું જયારે તમારા ચરણસ્પર્શ કરવા આવ્યો હતો ત્યારે તમે બધા યુવકોને ચોકલેટ આપતા હતા. મારો વારો આવ્યો ત્યારે તમે મને પૂછયું કે, ‘બોલ તારે શું જોઈએ છે ?’ તે સમયે મારે શું માંગવુ એ ખ્યાલ ન હતો પણ આપે ચોકલેટ આપીને સ્મૃતિ આપી આનંદ કરાવ્યો હતો.’
+</p> <p>
+આગળ પ્રાર્થના કરતા આકાશભાઈ કહે, ‘સ્વામી, આજે પણ માંગતા નથી આવડતું પણ તમારે કૃપા કરીને મને જે આપવું હોય તે આપજો.’
+</p> <p>
+આ સાંભળી ગુરુહરિ પ્રબોધસ્વામીજી ખૂબ હસ્યાં અને પછી સૂઝ આપતા કહ્યું, “આપવાવાળા તો સ્વામીજી છે. આપણને (જીવને) તો માંગતા આવડે નહીં, અને એ (સ્વામીજી) આપે તે ઝીલી શકાય નહીં.” એવું ભાર દઈને ૨ વાર બોલ્યા.
+</p> <p>
+એટલે બાજુમાં ઉભેલા સંતે પ્રાર્થના કરી કે, ‘એના માટે શું કરવાનું ?’ ત્યારે ગુરુહરિ પ્રબોધસ્વામીજીએ કહ્યું,”બસ ખાલી સ્લેટ (કોરી પાટી) બનીને રહેવાનું, એણે (સ્વામીજીએ) જે લખવું હોય તે લખે !”
+</p> <p>
+પછી કહે, “ખાલી (સત્સંગમાં) પડયા રહેવાનું, સ્વામીજીના થઈને રહેવાનું એટલે મોટાપુરુષે જે આપવું હોય તે આપી દેશે. એના થઈને રહીએ તો શક્ય છે.”
+</p> 
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

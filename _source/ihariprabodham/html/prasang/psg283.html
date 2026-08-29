@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+સદ્‌ગુરુ ખેલે વસંત
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+સંવત 1867ના ફાગણ માસમાં સારંગપુર રાઠોડ ધાધલના દરબારમાં શ્રી હરિએ રંગેચંગે ફૂલદોલોત્સવ ઊજવ્યો. આજે અક્ષરપતિ સ્વયં, સંતમંડળ સાથે પોતાના આંગણે પધાર્યા હતા તેથી રાઠોડ ધાધલના આનંદ-ઉત્સાહનો પાર ન હતો. અબીલ, ગુલાલ, પુષ્પ, ધૂપ, દીપ, નૈવેદ્ય, રંગના રંગાડા, બધું જ તૈયાંર થઈ ગયું. રાઠોડ ધાધલે મહારાજનું અને સાથે પધારેલા સદ્‌ગુરુઓનું-સંતોનું પૂજન કર્યું. પછી મહારાજે રંગે રમવાની છૂટ આપી.
+</p><p>
+આ અલૌકિક અને દિવ્ય રસોત્સવ પર્વે સંતોને અને સમગ્ર સત્સંગસમાજને કો’ક અનોખી, નવીન લ્હાણ આપવા માટે મહારાજે કબીરની હોળીના પદ ઉપાડ્યાં. સ્વામી પ્રત્યેનો મહારાજનો અપૂર્વ પ્રેમ, સ્વામીની અખંડ બ્રહ્મસ્થિતિ અને ધામરૂપે ધારકપણું, આ બધું મહારાજને સૌને સમજાવવું હતું, કારણ કે સ્વામીનો મહિમા પ્રવર્તે તો જ મહારાજનો મહિમા તત્ત્વે કરીને સૌને સમજાય અને મહારાજના સ્વરૂપનું યથાર્થ જ્ઞાન સૌને થાય. આ હેતુથી મહારાજને પોતે જ કબીરનું પદ ઉપાડ્યું.	
+</p><p>
+જોગીયા ટાળત જનમ કેરા ફાંસલા રે, <br/>
+પ્રેમના પ્યાલા જોગિયા, જુગ જુગ જીવો સો જોગિયા. <br/>
+સદ્‌ગુરુ ખેલે વસંત...
+</p><p>
+મહારાજ એ પદ બોલતા જાય અને પોતાની સાથે રાસ લેતા ગુણાતીતાનંદ સ્વામીની છાતીમાં પોતાની છડી અડાડતા જાય. બે-ત્રણ વખત આ પદ બોલ્યા પછી મહારાજે ઊભા રહીને આનંદ સ્વામીને અને મુક્તાનંદ સ્વામીને પૂછ્યું, ‘સ્વામિ ! એવા સદ્‌ગુરુ કોણ ? ’
+</p><p>
+પરમહંસોએ ક્હયું, ‘મહારાજ ! એવા સદ્‌ગુરુ તો તમે. ’
+</p><p>
+ત્યારે મહારાજે રહસ્ય સમજાવતાં કહ્યું, ‘એવા સદ્‌ગુરુ તો આ ગુણાતીતાનંદસ્વામી છે. અમે તો સર્વોપરી પુરુષોત્તમ ભગવાન છીએ. જે સચ્ચિદાનંદ અક્ષરબ્રહ્મ તે જ બ્રહ્મમહોલ-ધામરૂપે અનંત કોટિ મુક્તોને અને પુરુષોત્તમને ધારી રહ્યા છે તે ધામરૂપ અક્ષર એ જ આ ગુણાતીતાનંદસ્વામી છે. તે આજે અમારી સાથે અમારી સર્વોપરી ઉપાસના પ્રવર્તાવવા સારુ સદ્‌ગુરુ રૂપે પ્રગટ થયા છે. આ હોળીમાં જે મહિમા કહ્યો છે તે એમનો છે. અમે તો તેમનાથી પર, તેમના યે સ્વામી અને તેમને પણ ઉપાસના કરવા યોગ્ય પુરુષોત્તમનારાયણ છીએ !’
+</p><p>
+આમ સર્વાધાર સ્વરૂપનો મહિમા સ્વયં મહારાજના શ્રી મુખે સાંભળીને સૌ સદ્‌ગુરુઓ અને હરિભક્તો આશ્ર્ચર્યમાં ડૂબી ગયા !
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+</BODY>
+
+</HTML>
+

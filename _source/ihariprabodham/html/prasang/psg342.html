@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભગવાનને કર્તાહર્તા માનીને સત્સંગ કરીએ તો સુખ, સુખ ને સુખ જ છે. 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+તા. ૩-૫-૨૦૧૨ના રોજ ગુરુહરિ સ્વામીશ્રી મુંબઈ, જુહુ મંદિરે પૂજામાં બિરાજ્યા હતા. મુંબઈના એક વડીલ હરિભક્ત સ્વામીશ્રીના આશીર્વાદ લેવા આવ્યા હતા. તેમને એક મોટા ઓપરેશન માટે હોસ્પિટલમાં દાખલ થવાના હતું. પૂજા બાદ તેમણે સ્વામીશ્રીનું પૂજન કર્યું અને ઓપરેશન સરસ રીતે પતી જાય તે માટે પ્રાર્થના કરી આશિષ પ્રાપ્ત કર્યા. 
+</p>
+<p>
+સ્વામીશ્રીએ એ હરિભક્તને કહ્યું, ‘થોડીવાર બેસો. પાંચ મિનિટ મારી વાત સાંભળીને પછી જાવ.’ 
+</p>
+<p>
+સ્વામીશ્રીને બેંગ્લોર જવા માટે એરપોર્ટ જવાનું હતું તેથી અશોકભાઈએ પ્રાર્થના કરી.
+</p>
+<p>
+સ્વામીશ્રીએ અશોકભાઈને કહયું, ‘મારે કેટલા વાગે નીકળવાનું છે, એટલું જ તમારે જણાવી દેવાનું. હું સાત મિનિટમાં વાત પૂરી કરી દઈશ.’
+</p>
+<p>
+પછી એ હરિભક્તને ગોષ્ઠિ કરતાં કહ્યું, ‘તમને કોઈનો અભાવ નથી, ઉપેક્ષા નથી એ સારી વાત છે; પણ તમારા બોલવામાં, ચાલવામાં, હસવામાં માનનું પોષણ થતું હોય એની ખબર નથ પડતી એ તમારું કમનસીબ કહેવાય. કોઈકને જ ખબર પડે કે મારાથી હુંહાટાથી બોલાય છે કે દાસભાવે બોલાય છે. ભગવાન કોઈનેય છોડતા નથી. દાસભાવે ગોષ્ઠિ ન થાય, દાસભાવે ન બોલાય તો પ્રભુને એ સેવા પહોંચે નહિ. તમને રાંક બનાવવા, ગરીબ બનાવવા પ્રભુ રોગ મૂકે ને પ્રભુ ભજન કરાવે. એટલે આજે આપણે દૃઢ પાકું કરવાનું છે - વચ. ગ.મ. ૨૮, ૪૧ પ્રમાણેની સેવા કરવાની, વચ. ગ.પ્ર. ૨૭, ૩૭, ૬૨ પ્રમાણે મહારાજને કર્તાહર્તા માનવાના.
+</p>
+<p>
+ભગવાનને કર્તાહર્તા માનીએ તો વાણીમાં વિવેક, વિનમ્રતા, ભક્તિ આવી જાય. ભગવાનને કર્તાહર્તા માનીને સત્સંગ કરીએ તો સુખ, સુખ ને સુખ જ છે. 
+</p>
+<p>
+અહીં બેઠેલા બધાએ નક્કી કરવાનું છે - <br/>
+દાસના દાસ થઈને વળી રહેશે જે સત્સંગમાં, <br/>
+ભક્તિ એની ભલી માનીશ રાચીશ એના રંગમાં. 
+</p>
+<p>
+આ કોનું સૂત્ર છે? ભગવાન સ્વામિનારાયણનું. દાસના દાસ થઈને વર્તનાર વ્યક્તિ ક્યારેય વાણીથી નાપાસ ન થાય.
+</p>
+<p>
+તમાર ઘરના સભ્યો તમારી રીતે ન વર્તે ને બોલી નાખીએ એનું નામ હુંહાટો કહેવાય. એમને ઊંચા સ્વરે બે શબ્દો કહી દઈએ એટલે તમારું પુણ્ય એમને ટ્રાન્સફર થઈ જાય. એવું ના થાય તે માટે તમારે ભક્તિપ્રિયસ્વામીનો સમાગમ કરવાનો. આપણે  સહુએ દાસત્વભક્તિ તરફ જવાનું છે. એ ક્યારેય ભૂલવાનું નથી.’
+</p>
+<p>
+આમ, હુંહાટો કોને કહેવાય અને કેવી રીતે સેવાભક્તિ કરવાની છે તે અંગે સ્વામીશ્રીએ અનુપમ સૂઝ અર્પણ કરી.
+</p>
+<p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

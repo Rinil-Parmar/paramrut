@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+હું આત્મા છું , અક્ષર છું, બ્રહ્મ છું ...
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>૧૯૮૯માં ગુરુહરિ પ.પૂ. સ્વામીશ્રી બોચાસણ પધાર્યા હતા. મહાપ્રસાદીની એ ધરતી પર સવારના પહોરમાં સ્વામીશ્રી પૂજા કરી રહ્યા હતા, ત્યાં એક યુવક આવીને સજળ નેત્રે ખુલ્લો થયો. ‘સ્વામીજી! હું બહુ કામી અને ક્રોધી છું. દોષોની ખાણ જેવો છું. ભજન કરું છું, પણ આમાંથી મુક્તિ મળતી નથી.’ પ.પૂ. સ્વામીશ્રી વત્સલ નજરે કરુણાથી તે યુવક સામું જોઈ રહ્યા. </p>
+
+
+<p>પછી ધીમે રહીને પ્રેરક વચનો બોલ્યા ‘જો, મારી વાત સાંભળ. જે આપણું નથી તેને આપણું માની બેઠા છીએ, એ જ મણમાં આઠ પાંચશેરીની ભૂલ છે. આ શરીર તો એક ઘર છે. આ ઘર તે હું છું એવું કદી આપણે માનીએ છીએ ખરા? મારી વાત બરાબર સમજવાની કોશિષ કરજે. આ ઘર અને આપણે જેમ જુદા છીએ, બરાબર તે જ રીતે આ શરીર અને આપણે પણ જુદા છીએ.’ થોડી વાર આંખો મીંચીને સ્વામીશ્રી મૌન રહ્યા.</p>
+
+
+<p>
+થોડી વાર પછી પ.પૂ. સ્વામીશ્રીએે નેત્રો પૂન:ખોલ્યાં. તે યુવક તરફ અમૃત વરસાવતાં ફરી બોલી રહ્યા, ‘માનો કે આપણે એક નાના સરખા ઝૂપડામાં કોઈ તૃણની કુટિરમાં જંગલમાં રહેતા હોઈએ. પછી એકાએક જોરદાર પવન ફૂંકાય અને ઝૂંપડીની છતમાંથી આપણા પર કચરો ગળવા માંડે, તો તે કચરાને આપણો કચરો માનીએ છીએ ખરા! નીતિ, નિયમ અને ધર્મ પ્રમાણે વર્તન રાખનાર કોઈ પવિત્ર સાધુ કે સંન્યાસી જંગલમાં એક સામાન્ય ગોબરી લાગતી તૃણની કુટિરમાં રહેતા હોય, તેથી પોતાને શું એ ગોબરા માને છે ખરા? એમને સ્પષ્ટપણે ખબર છે કે ગોબરા ઘરમાં રહેવા છતાં પણ હું તો નીતિ-નિયમો પાળી ચોખ્ખો ચંદન જેવો છું. મારે ને કુટિરના ગંદાપણાને કોઈ સંબંધ નથી. આ સમજણને નિત્ય પાકી કરતો રહેજે. બીજું, ગુસ્સો ચડે ત્યાંથી તરત જ દૂર વહ્યો જજે. પછી એક ઠેકાણે બેસીને શાંતિથી વિચારજે કે હું તો શુદ્ધ અને પ્રશાંત આત્મા છું. અને શરીરના અભિમાનથી જુદો છું. બહેનો સાથે ‘લ્યો, લાવો, અને પડતું મૂકો’ એટલો જ જરૂર પૂરતો વ્યવહાર રાખવો. આંખો એક થવા દેવી નહીં, અને સંપર્ક ટાળવો. બ્રહ્મચર્યના નિયમો પરાણે પણ પકડી રાખી, પોતાના આત્માપણાના વિચારોમાં ડૂબ્યો રહેજે. મહારાજ સારૂ કરી દેશે.’ આમ શરણાગતના આત્માની રક્ષા કરી.
+</p>
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

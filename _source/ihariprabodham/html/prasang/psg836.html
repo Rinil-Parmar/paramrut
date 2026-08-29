@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      અંબરીષ દીક્ષા લઈ લેવી
+    </div>
+    <div class="vaat_ind" id="vaat_file_836">
+      
+      <p>અંબરીષ ભક્ત કિશિનભાઈ જયારે કેનેડા નવા નવા આવ્યા હતા ત્યારે તેમનું સ્ટડી વિન્ડસરની યુનિવર્સિટીમાં હતું. ત્યાં ધીરે ધીરે સત્સંગ મંડળની શરુઆત થઈ.</p><p>વર્ષ ૨૦૧૮ માં સ્વામીશ્રી યુએસએ વિચરણમાં પધાર્યા, ત્યારે હ્યુસ્ટન અને એલએ - એસએફના પ્રાદેશિક સંતવર્ય ગુરુહરિ પ્રબોધસ્વામીજીને પણ સાથે લાવ્યા હતા.</p><p>પ્રબોધસ્વામીજી જયારે હ્યુસ્ટનની ધરતી પર હતા ત્યારે રાજુભાઈ (ડેટ્રોઇટ) એમના દર્શને હ્યુસ્ટન ગયા હતા. વિન્ડસરના બધા દીકરાઓને ફોન પર રાજુભાઈએ પ્રબોધસ્વામીજીનાં દર્શન કરાવ્યા.</p><p>ત્યારે પ્રબોધસ્વામીજીએ આજ્ઞા કરતા કહ્યું, “જે નિષ્ઠાવાન યુવકો હોય એમણે અંબરીષ દીક્ષા લઈ લેવી.” એકની એક વાત  પ્રબોધસ્વામીજીએ બે વાર કરી કોલ પૂરો કર્યો.</p><p>થોડીવાર બાદ  પ્રબોધસ્વામીજીએ રાજુભાઈ પાસે ફરીથી કિશનભાઈને કોલ કરાવીને ભાર દઈને દીકરાઓને કહેવડાવ્યું કે, “નિષ્ઠાવાન યુવકો હોય તે અંબરીષ દીક્ષા લઈ લે. સ્વામીજી આવો સમૈયો ફરીવાર કેનેડાની ધરતી પર નહીં કરે. ફરીવાર અંબરીષ દીક્ષા કેનેડાની ધરતી પર નહીં આવે.&#x27;&#x27; જેના ફળસ્વરૂપે કિશનભાઈ સહિત ઘણા નિષ્ઠાવાન  દીકરાઓએ વર્ષ ૨૦૧૮ માં સ્વામીશ્રીના હસ્તે અંબરીષ દીક્ષા લીધી.</p><p>આજે એ વાતનું દર્શન થાય છે કે ૨૦૧૮ ની કેનેડાની શિબિરમાં  સ્વામીશ્રીના હસ્તે છેલ્લી અંબરીશ દીક્ષા અપાઈ. અને સ્વામીશ્રીએ ૨૦૨૧ માં દેહલીલા સંકેલી લીધી.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: અંતર્યામી<br/>
+      ટેગ: <br/>
+      નંબર: ૨૦૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

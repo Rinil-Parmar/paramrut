@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      આપણું હૃદય હળવું ફૂલ બનાવી દે.
+    </div>
+    <div class="vaat_ind" id="vaat_file_783">
+      
+      <p>ગુરુહરિ પ્રબોધસ્વામીજી,  જૂન ર૦રરમાં ઉત્તર ગુજરાતની ધર્મયાત્રાએ પધાર્યા હતા. પાટણની બાજુમાં ઈશ્વરપુરા નામના ગામમાં પધરામણી કરી રહ્યા હતા.</p><p>રસ્તામાં ચાલતા ચાલતા એક યુવકે ગુરુહરિ પ્રબોધસ્વામીજીને રડતા હૃદયે પ્રાર્થના કરી કે “સ્વામીજી મને સભામાં જવાનું કે સત્સંગ કરવાનું મન થતું નથી.”</p><p>તરત જ પ્રબોધસ્વામીજીએ યુવકના ગળામાં હાથ નાખી મિત્રની અદાથી પ્રશ્ન પૂછ્યો, “તારા ઘરે કોઈ સરસ ફિનાઈલવાળુ પોતું મારીને સાફસૂફી કરે તો તને ગમે કે ના ગમે?”</p><p>યુવાને કહ્યું, “હા સ્વામીજી, ખૂબ ગમે.”</p><p>પછી પ્રબોધસ્વામીજીએ રહસ્યની વાત સમજાવતા કહ્યું, “સ્વામીજીએ આપણને આ શરીર, અંતરમાં જમા થયેલો કરોડો જન્મોનો સ્વભાવરૂપી કચરો સાફ કરવા આપ્યું છે. જ્યારે જ્યારે આપણે સત્સંગ કરીએ અથવા સભામાં જઈએ ત્યારે ભગવાન આપણા હૃદયમાંથી કરોડો જન્મના ગંદા સ્વભાવોની સાફસૂફી કરતા હોય ત્યારે સત્સંગ કરવાનું મન ના થાય. પણ આપણે આનંદમાં રહેવાનું કે મારું ઘર સાફ થઈ રહ્યું છે. અને સંતો સાથેની દોસ્તી અને સત્સંગમાં ઓટ નહીં આવવા દેવાની. તો સ્વામીજી રાજી થઈને આપણું હૃદય હળવું ફૂલ બનાવી દે.”</p><p>હે ગુરુહરિ પ્રબોધસ્વામીજી! અમે પણ અમારો આ જન્મારો સંતો સાથે દોસ્તી કરી હરેક પળે સત્સંગના આકારે રહી સફળ કરીએ એ જ પ્રાર્થના.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: સત્સંગ, સભા<br/>
+      ટેગ: <br/>
+      નંબર: ૨૬૫
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

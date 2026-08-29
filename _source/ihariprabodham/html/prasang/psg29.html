@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+ 
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+ભગવાન અને સંતના સંબંધનો મહિમા
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+પ.પૂ.સ્વામીશ્રીની હરેક ક્રિયા, હરેક વિચાર, હરેક શ્વાસ ગુરુમય એટલે યોગીમય-યોગીસ્વરૂપ છે. એટલું જ નહીં યોગીજીમહારાજના અતિઅલ્પસંબંધમાં આવેલી કોઈ પણ વ્યક્તિ કે કોઈપણ વસ્તુમાત્ર એમના માટે યોગીસ્વરૂપ છે.
+</p>
+<p>
+નવેમ્બર ૧૯૮૫ ની આ વાત છે. સ્વામીશ્રી જામકંડોરણા ગામથી રાજકોટ શહેર તરફ જઈ રહ્યા હતા. સ્વામીશ્રીએ વાત વાતમાં અશ્વિનભાઈને પૂછયું, ‘ગોંડલ કઈ દિશામાં છે ?’ અશ્વિનભાઈએ કહ્યું, ‘પૂર્વ દિશામાં.’ સ્વામીશ્રીએ ફરી પૂછ્યું, ‘અને જામકંડોરણા ગામ કઈ દિશામાં છે ?’ અશ્વિનભાઈએ કહ્યું, ‘પશ્વિમદિશામાં.’ તરત જ સ્વામીશ્રીએ કહ્યું, ‘એટલે સૂર્યનાં કિરણો મહાપ્રસાદીના સ્થાન ગોંડલ થઈને જામકંડોરણા ગામમાં આવે છે. એટલે વચ્ચે આવતાં બધાં ગામ આપણા માટે પ્રસાદીનાં છે. દેવતુલ્ય છે. એટલે પ્રસાદીનાં આ ગામોમાં રહેવાવાળા લોકોનો કોઈ દોષ જોવાનો આપણને અધિકાર નથી.’ 
+</p>
+<p>
+ગોંડલ એવું તીર્થસ્થાન છે જ્યાં યોગીજીમહારાજે પોતાનું સમગ્ર જીવન ભક્તોની સેવામાં સમર્પિત કરી દીધું. એ ગોંડલથી આવતાં સૂર્યકિરણોનો આટલો મહિમા ! સ્વામીજીના ગુરુભક્તિથી નિતરતા આ ગુરુમહિમાના શબ્દોનું શું વર્ણન કરીશું!
+<p>
+
+    <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

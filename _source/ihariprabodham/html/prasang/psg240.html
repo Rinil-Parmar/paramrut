@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ભગવદીની અનિવાર્યતા 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+   <p>
+     ભગવાન સ્વામિનારાયણના વખતમાં વ્યાપકાનંદસ્વામી અગ્રગણ્ય સંત હતા. બોટાદમાં એક દરબારની તે જમાનાની બે હજાર રૂપિયાની ઘોડી મરી ગઈ. વ્યાપકાનંદસ્વામી ત્યાંથી પસાર થતા હતા, ત્યારે દરબાર વ્યાપકાનંદસ્વામી પાસે પહોંચી ગયા. રડતાં રડતાં કહે,'સ્વામી !સ્વામી ! તમે મારા પર દયા કરો. મારી ઘોડીને જીવતી કરો.' વ્યાપકાનંદસ્વામી ખૂબ સમર્થ સાધુ ! આકાશમાં ફરતો જીવ પકડીને ઘોડીમાં મૂકી દીધો. ઘોડી જીવતી થઈ ગઈ.
+</p><p>
+     એ જ વ્યાપકાનંદસ્વામી એક દિવસ મંદિરના ઘુમ્મટમાં રાસ રમતી સ્ત્રીઓની ચિતરામણવાળી રંગબેરંગી પૂતળીઓ હતી. તે સુતા સુતા તેના તરફ જોતા હતા. તેનો આકાર બંધાઈ ગયો. તે ધ્યાન કરવા બેસો તો પેલી પૂતળીઓ જ દેખાય, તેથી વ્યાકુળ થઈ ગયા. છ મહિના સુધી આકાર ગયો નહિ.
+</p><p>
+     મહારાજ ગઢડામાં પરમહંસો સાથે બિરાજમાન હતા. ગોપાળાનંદસ્વામી બહાર વિચરણમાંથી પધાર્યા. ગોપાળાનંદસ્વામી તરફ નિર્દેશ કરતાં મહારાજ બોલ્યા,"આ સાધુનાં દર્શન ને સમાગમ કરવા જેવો છે. એ તમને અમારો મહિમા એવો સમજાવશે કે તમે સુખિયા થઈ જશો." મહારાજે સહુ પરમહંસોને સાત દિવસ ગોપળાનંદસ્વામીનો સમાગમ કરવાની આજ્ઞા કરી.
+</p><p>
+     સહુ પરમહંસોએ ગોપાળાનંદસ્વામીના મુખેથી અપરંપાર મહિમાની વાતો સાંભળી. સાત દિવસના સમાગમ પછી વ્યાપકાનંદસ્વામીએ ગોપળાનંદસ્વામીને એટલું જ કહ્યું કે, 'આવા સર્વોપરી ભગવાન મળ્યા છતાંય મારા હૈયાની બળતરા ને ભૂંડા ઘાટ છ મહિનાથી ટળતા નથી.' એમ કહી વ્યાપકાનંદસ્વામીએ નિષ્કપતભાવે પોતાની વાત કહી.
+</p><p>
+     ભગવાન સ્વામિનારાયણ સવારના પહોરમાં જ્યાં પૂજા કરતા હતાં ત્યાં ગોપાળાનંસ્વામી વ્યાપકાનંદસ્વામીને લઈ ગયા. તે વખતે મહારાજ એકદમ હસતાં હસતાં કહે, "કેમ વ્યાપકાનંદસ્વામી, સવારના પહોરમાં વહેલા આવી ગયા?" 'મહારાજ ! મહારાજ ! બહુ દુઃખી છું.' ત્યાં ગોપાળાનંદસ્વામીએ બે હાથ જોડી એટલી જ પ્રાર્થના કરી, 'મહારાજ ! આ તમારો સાધુ છે. તમે કૃપા ન કરો?' તો મહારાજ કહે, "હા, લો ધબ્બો. જાવ, હવે બીજા આકાર ટળી જશે ને અમારી મૂર્તિ દેખાશે."
+</p><p>
+     ભગવદીની ગોદમાં પડ્યા રહીએ તો મોટાપુરુષની નજર આપણા તરફ અખંડ રહે. વ્યાપકાનંદસ્વામી એકલા નહોતા જઇ શકતા; પણ ગોપળાનંદસ્વામીને નિષ્કપ્તપણે વાત કરી, ત્યારે ભગવાન સ્વામિનારાયણે વિચાર્યું કે, એને આવા ખાનદાન સાધુ સાથે હેત છે ! ગોપાળાનંદસ્વામી જેવા પરમ ભગવદીય સાધુ એના માટે મને પ્રાર્થના કરે છે, તો ચાલો આ સાધુનું કામ કરી દઈએ.
+</p><p>
+     વ્યાપકાનંદસ્વામીને સૂચન કરતાં મહારાજ બોલ્યા, "અંતરે કાયમ સુખી અને નિર્વિકારી રહેવું હોય તો ગોપાળાનંદસ્વામી સાથે દોસ્તી રાખજો અને સરળ વર્તજો."
+</p><p>
+     ભગવદીના પ્રસંગથી - <br/>
+        - સરળતા આવે. <br/>
+        - વિવેક આવે. <br/>
+        - ઇન્દ્રિયો અંતઃકરણ સામે લડવાનું બળ મળે. <br/>
+        - નિર્વાસનિક થવાય. <br/>
+        - સત્પુરુષની અંતરની પ્રસન્નતા ૧૦૦ વર્ષે મળવાની હોય તે ત્રણ વર્ષમાં મળી જાય !
+        </p><p>
+            માટે ભગવદીનો પ્રસંગ અનિવાર્ય છે.
+</p>
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

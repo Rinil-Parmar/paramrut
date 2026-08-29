@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સ્વામીજીનાં એ દર્શનની સ્મૃતિ કરવાની.
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_554">
+      તા. ૨ ડિસેમ્બર, ૨૦૨૨, આત્મીય વિદ્યા ધામ<br/>
+      <p>આજે સાંજે ૫:૦૦ વાગ્યે ગુરુહરિ પ.પૂ. પ્રબોધસ્વામીજી ડેન્ટીસ્ટ પાસે ટ્રીટમેન્ટ કરાવીને આત્મીય વિદ્યાધામ પધાર્યા. સંતનિવાસ પાસે બિરાજી વારાફરતી યુવકો અને મહેમાનોને દર્શન આપ્યા, તેમનાં વ્યાવહારિક પ્રશ્નોના સમાધાન આપ્યા. આ બધાની વચ્ચે વડોદરાનો એક ૧૩ વર્ષનો દીકરો પ્રબોધસ્વામીજીના દર્શન માટે આવ્યો.</p><p>દીકરાએ પ્રાર્થના કરતાં કહ્યું, ‘હું દરરોજ ૩૦ મિનિટ ભજન કરું છું પણ મારાથી નિર્વિકલ્પપણે ભજન થતું નથી.’ દીકરાની પ્રાર્થના સાંભળીને પ્રબોધસ્વામીજી તેના તરફ આશ્ચર્યથી જોઈ રહ્યા.</p><p>દીકરાએ કહ્યું, ‘ભજન કરવા બેસું ત્યારે ભજનમાં બહુ વિચારો આવે છે.’</p><p>પ્રબોધસ્વામીજીએ પૂછ્યું, “કેવા વિચારો આવે ?”</p><p>દીકરો કહે, ‘કાલે સવારે શું કરવાનું ને નહીં કરવાનું ? મારાથી ઊઠાશે કે નહીં ? એવા ઘણાં વિચારો આવે.’</p><p>પ્રબોધસ્વામીજી કહે, “ભલેને વિચારો આવે. ...પણ આપણે ભજન કરવાનું ચાલું રાખવાનું.”</p><p>પછી પૂછ્યું, “તમે સ્વામીજીનાં દર્શન કર્યા હતા ?” દીકરો કહે, ‘હા.’</p><p>પ્રબોધસ્વામીજી કહે, “આપણે ભજનમાં સ્વામીજીનાં એ દર્શનની સ્મૃતિ કરવાની. ..પણ આપણે ભજન ચાલું રાખવાનું.”</p><p>ગુરુહરિ સ્વામીજીએ જીવનનાં અંતિમ શ્વાસ સુધી કથાવાર્તા કરીને ૩૦ મિનિટ નિર્વિકલ્પપણે ભજન કરવાનો સંદેશ સમગ્ર સત્સંગમાં વ્યાપક બનાવ્યો! ૧૩ વર્ષની ઉંમરનો દીકરો નિર્વિકલ્પપણે ભજન કરવાની આજ્ઞા પાળવા માટેનો ખટકો રાખે એ જ તો ગુરુહરિ સ્વામીજીની અપ્રતિમ તપશ્ચર્યાનું ફળ કહેવાયને !</p><p>અનાદિ મૂળ અક્ષરમૂર્તિ સદ્. શ્રી ગુણાતીતાનંદસ્વામીએ કહ્યું છે, “શૂરવીર હોય તે યુદ્ધની વાત થાય ત્યારે રાજી થાય તેમ ભગવદી હોય તે ભગવાનની વાત થાય ત્યારે રાજી થાય, પણ જેમ જેતપુરનો ધરો વહ્યા કરે છે તેમ પ્રકૃતિપુરુષ સુધી સર્વે વિષયને માર્ગે દોડ્યા જાય છે; તે આ તો આશરો છે તે કલ્યાણ થાય. ...પણ જગતના ઘાટ ન થાય ને ભગવાનની સ્મૃતિ રહે એ મોટાઈના તો ઢગલા પડ્યા છે, માટે જેને જોઈએ તે લ્યો!...”</p><p>આ વાત પ્રમાણેની મોટાઈ ગુરુહરિ પ્રબોધસ્વામીજી આપવા માંગતા હોય તેવી અનુભૂતિ દીકરા સાથેના સંવાદના માધ્યમથી થઈ .</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: ભજન<br/>
+      ટેગ: નિર્વિકલ્પ ભજન, સ્મૃતિ<br/>
+      નંબર: ૪૪૧
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

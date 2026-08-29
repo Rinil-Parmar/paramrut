@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+ 
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+
+<div class="title_gu">
+યુવકો મારું હૃદય છે
+</div>
+
+
+<div class="vaat_ind" id="vaat1_1">
+<p> 	
+ગમતામાં વર્તવાનું એટલે શું ? બાપાએ કહ્યું, 'યુવકો મારું હૃદય છે.' એમણે બીજું કહ્યું, 'સુહૃદભાવ મારું જીવનું જીવન છે.' કોણે કહ્યું ? યોગીજીમહારાજે. જે વ્યક્તિ ભક્તો સાથે જેટલો સુહૃદ બને એટલું એનું સ્થાન યોગીજીમહારાજના હૃદયમાં. યુવકોની સેવા એ ભગવાનની સેવા છે. તમારા થકી પાંચ-દશ યુવકો થઈ જાય તો બાપાની મોટી સેવા થઈ જાય. 
+</p>
+<p>
+બાપા કોઈપણ યુવકને જુએ એટલે એમનું મોઢું બદલાઈ જાય. એકનો એક દીકરો જાણે પરદેશથી આવ્યો હોય ! એમ લાલચોળ પ્રફુલ્લિત મુખારવિંદ થઈ જાય...! એટલા ભાવથી બાપા ઊભા થાય ને એને ભેટે, જમાડે ને ધબ્બા મારે ને આનંદ કરાવે...! 
+</p>
+<p>
+હું બાપાના યોગમાં આવ્યો ત્યારે ગોંડલમાં કોઈ યુવક સત્સંગી નહિ. સાકારબ્રહ્મે એ ગામને પોતાનું ધામ બનાવ્યું પણ એક યુવક નહિ. પછી અમે જઈએ ત્યારે બાપા અમને એક જ વાત કર્યા કરતા, 'તમે આવ્યા એટલે હવે અમારા યુવકો વધશે.' 
+</p>
+<p>
+આજે હું સ્કોટલેન્ડ ન જાત. જઈને તરત જ પાછા આવવાનું છે, પણ ત્યાં ખાલી 7 યુવકો સરસ છે. એ 70 તો ભેગા કરશે જ. તો બાપાની સેવા તો થઈ ગઈ ! બાપાને થશે 'યુવકો માટે હરિપ્રસાદસ્વામી સ્કોટલેન્ડ સુધી પહોંચી ગયા !' બાપા કેટલા રાજી થઈ જાય ! 
+</p>
+<p>
+આપણે ત્યાગ, વૈરાગ્ય, ધર્મ, ભક્તિ, ધ્યાન કરી શકવાના છીએ નહિ પણ આવા યુવકોની સેવા ભગવદ્‌ભાવથી થઈ જાય એ ધન-સમૃદ્ધિ જુદાં છે. આખી દુનિયાની ધન-લક્ષ્મીની સમૃદ્ધિ એકના વિષે આવે એ કેટલો સુખિયો કહેવાય? કુબેર ભંડારીની સમૃદ્ધિ પણ આ યુવકોની સેવા આગળ સામાન્ય કહેવાય. દુનિયાની કરોડો સેવા કરીએ; અનંત બ્રહ્માંડોની કરીએ પણ સુહૃદભાવ રાખીને બાપાના યુવકોની સેવા થઈ જાય તો કરવાનું કાંઈ બાકી ના રહે !   
+</p>
+<p>
+(તા. 25-5-2007, ગુરુહરિ સ્વામીશ્રીએ લંડનમાં કરેલી ગોષ્ઠિમાંથી સંકલિત)
+</p>
+ 
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

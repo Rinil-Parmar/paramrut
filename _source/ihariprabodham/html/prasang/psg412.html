@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Haridham - Sokhada</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+દિવ્ય દર્શનની ઝાંખી
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ચંદુભાઈ પોતાની જાતને ખૂબ નસીબદાર માનતા કે પ્રભુદાસભાઈ જેવા ભાઈબંધ સાથે રહેવાનું મળ્યું! વળી, પ્રભુદાસભાઈ એમને સામેથી યાદ કરીને પોતાની સાથે રાખતા અને સેવા સોંપતા. તેઓ જ્યાં પણ હોય ત્યાં ચંદુભાઈ પહોંચી જતા.
+</p>
+<p>
+એકવાર બોચાસણ મંદિરે સમૈયો હતો. ‘યોગીજીમહારાજ અને પ્રભુદાસભાઈનાં દર્શન થશે’ એમ વિચારી તેઓ બોચાસણ આવ્યા. એમના ચાર વર્ષના દીકરા ઘનશ્યામને અને ભત્રીજા ભીખાને પણ સાથે લીધા. મંદિરનાં પગથિયાં ચઢીને તેઓ ઉપર દર્શન કરવા ગયા. બંને બાળકો ધમાલ-મસ્તી કરતાં કરતાં પાળી પાસે આવ્યા અને અચાનક જ ઘનશ્યામ વીસ ફૂટની ઊંચાઈએથી નીચે પડ્યો.
+</p>
+<p>
+અવાજ સાંભળી બધા હરિભક્તો આજુબાજુથી દોડી આવ્યા. ઘનશ્યામના માથામાંથી લોહી નીકળતું હતું. હાથ-પગમાં મૂઢ માર વાગ્યો હતો. ચંદુભાઈ જોઈને શૂન્યમનસ્ક થઈ ગયા કે આ શું થયું ? અધૂરામાં પૂરું ઘનશ્યામ રડતો પણ ન હતો. આથી તેમને વધારે ચિંતા થવા લાગી. પરંતુ બીજી જ ક્ષણે ખૂબ જ સમર્થ એવા યોગીજી મહારાજની સ્મૃતિ થતાં ચિંતાનાં વાદળો વિખેરાઈ ગયાં.
+</p>
+<p>
+તરત જ તેઓ ઘનશ્યામને ઊંચકીને બાપા પાસે લઈ આવ્યા. બાજુમાં પ્રભુદાસભાઈ બેઠા હતા. બાપાએ ઘનશ્યામને જોયો. પછી પ્રભુદાસભાઈ તરફ જોઈ કહે, ‘ગુરુ, આને તમારા ખોળામાં બેસાડો. ચેતન થઈ જશે. અમારા આશીર્વાદની જરૂર નથી.’ પ્રભુદાસભાઈ તો દાસત્વનું મૂર્તિમાન સ્વરૂપ હતા. એમણે પહેલાં તો બાળકને ખોળામાં ન લેવા આનાકાની કરી. એમ કે બાપાના આશીર્વાદથી જ સારુ થવાનું છે. આપણે તો બાપાનાં દર્શન જ કરવાનાં હોય ને! પરંતુ બાપાએ આગ્રહ રાખ્યો એટલે તેઓ બાળકને ખોળામાં લઈને બેઠા. પછી યોગીજીમહારાજ બહાર ગોષ્ઠિ કરવા પધાર્યા. રહ્યા ચંદુભાઈ અને બાળકને ખોળામાં લેનાર પ્રભુદાસભાઈ ! બેભાન અવસ્થામાં રહેલા એ બાળકને લઈને ક્યાંય સુધી તેઓ બેસી રહ્યા.
+</p>
+<p>
+ચંદુભાઈ થોડી થોડી વારે ઘનશ્યામને જોયા કરતા હતા. એવામાં એમણે જોયું કે પ્રભુદાસભાઈના શરીરમાંથી દિવ્ય તેજ નીકળી રહ્યું છે. ધીરે ધીરે એ પ્રકાશમાં પ્રભુદાસભાઈ દેખાતા બંધ થઈ ગયા અને એમની જગ્યાએ દિવ્ય પ્રકાશયુક્ત શ્રીજીમહારાજની મૂર્તિનાં દર્શન થયાં. જાણે શ્રીજીમહારાજના ખોળામાં જ ઘનશ્યામ બેઠો છે ! ધીરે ધીરે પ્રકાશ સમાઈ ગયો. થોડીવાર પછી બાપા પધાર્યા. બાપા કહે, ‘ચંદુભાઈ, હવે આ બાળકને કાંઈ ન થાય. તમે કોઈ ચિંતા કરશો નહીં.’ થોડા જ દિવસોમાં ઘનશ્યામ સાજો થઈ ગયો.
+</p>
+<p>
+આમ, આ લોકનાં દુઃખ દૂર કરવા પ્રભુએ કરુણા કરીને વરદાન આપ્યાં છે, ‘કરોડ વીંછીનું દુઃખ મને આવો પણ મારા હરિભગતને નહીં.’ એ કરુણાસભર આશીર્વાદની હેલી તેઓ નિરંતર વરસાવી જ રહ્યા છે. એમના સ્વરૂપમાં અને વચનમાં વિશ્વાસ રાખીએ તો આપણા જીવનમાં પણ એ આશીર્વાદ સાકાર થાય જ.
+</p>
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

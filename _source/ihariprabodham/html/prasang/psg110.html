@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+પ્રભુનો સંબંધ જુઓ સ્વભાવ નહિ
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+તા. ૧૧-૩-૨૦૧૫ (રંગ પંચમી) ના દિવસે પ.પૂ. સ્વામીશ્રી પૂજામાં બિરાજમાન હતા. સામે ૪-૫ સંતો પ.પૂ. સ્વામીશ્રીના દર્શન કરી રહ્યા હતા. પ.પૂ. સ્વામીશ્રી માળા કરી રહ્યા પછી સંતોને કહ્યું, ‘ હું પૂજામાં દરેક ગુણાતીત પુરુષોનાં સુત્રો વાગોળું.’ 
+ </p>
+<p>
+પછી સંતોને પૂછ્યું, ‘ભગવાન સ્વામીનારાયણના સુત્ર કયા?’ સંતો શ્રીજી મહારાજના બે સુત્રો બોલ્યા: 
+</p>
+
+<p>
+૧ - દાસના દાસ થઈને વળી રહે જે સત્સંગમાં, ભક્તિ એની ભલી માનીશ રચીશ તેના રંગમાં.  <br/>
+૨ - નિજાત્માનં બ્રહ્મરૂપં દેહ ત્રય વિલક્ષણમ્‌ ॥ વિભાવ્ય તેન કર્તવ્યા ભક્તિ કૃષ્ણસ્ય સર્વદા ॥
+
+</p>
+
+
+
+<p>
+પછી પ.પૂ. સ્વામીશ્રી એ બે સુત્ર બોલ્યા ને સંતો સામે જોઇને કહ્યું, ‘ભગવાન સ્વામીનારાયણનું ત્રીજું સુત્ર – સંબંધ જુઓ સ્વભાવ નહિ. મહારાજથી માંડીને સહુ ગુણાતીતપુરુષોના જીવન સુત્રો વાગોળીએ તો આપણે ભરપુર થઇ જઇએ.’ એવી અનુપમ સુઝ આપી. પછી શિક્ષાપત્રી ને ધર્માંમૃતનું વાંચન કરી પૂજાની પુર્ણાહુતી કરી.
+<p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      સમૈયો સરસ થશે
+    </div>
+    <div class="vaat_ind" id="vaat_file_723">
+      
+      <p>દરેકનાં મનમાં એવું જ હતું કે આ જગ્યા પર સમૈયો થવાનો જ નથી; કારણકે આગલા દિવસે પણ વરસાદ પડ્યો. પ્રબોધસ્વામીજીનો સંકલ્પ હતો તો અદ્ભુત સમૈયો થઈ ગયો. અમારા સ્વભાવ શું હતા ? થોડો વરસાદ પડે એટલે અમે વિચારમાં જતા રહેતા હતા.</p><p>૩૧ જુલાઈએ કેનેડાની ધરતી ઉપર પ્રબોધસ્વામીજી એક વાક્ય બોલેલા કે “આપણે સમૈયો કરવો છે અને સમૈયો સરસ થશે.” ૬૬ દિવસ પહેલાં આ વાક્ય બોલેલા. “બ્રહ્મવાક્યમ્ સદા નિત્યમ્...”</p><p>પણ એ ૬૦ દિવસ અમારા માટે કસોટીના હતા. સહેજ વરસાદ પડે એટલે અમને વિચાર આવે કે થશે કે નહીં થાય ? થશે કે નહીં થાય ?</p><p>પણ એ વિશ્વાસ અને અવિશ્વાસરૂપી આપણા સ્વભાવની ગતિને સંપૂર્ણ વિશ્વાસ તરફ ગતિ કરવાનું કાર્ય પ્રબોધસ્વામીજી કરી રહ્યા છે.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: વિશ્વાસ<br/>
+      ટેગ: નિષ્ઠા, આશીર્વાદ, બ્રહ્મ<br/>
+      નંબર: ૪૧૯
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+અણખૂટી ધીરજ
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+1995-1996 ના વર્ષની વાત છે. અમેરિકામાં ઓડના પાંચ ભક્તોએ ગુરુહરિ સ્વામીશ્રીની વચને ભેગા મળીને એક મૉટેલ લીધી. શરૂઆતનાં છ મહિનાં મૉટેલ સરસ ચાલી. જેથી બેંકની લોન પણ ભરપાઈ થઈ ગઈ. પરંતુ 6 મહિના પછી મૉટેલ ધીમે ધીમે ખોટમાં જવા લાગી.  એક સમય એવો આવ્યો કે ઘણી મોટી રકમની ખોટ જવા માંડી.
+</p>
+<p>
+મૉટેલ ખોટમાં જતી જોઈને તેમનાં મિત્રોએ આ લોકોને પૂછ્યું કે, ‘આટલી બધી ખોટ જવા છતાં તમને કશું થતું નથી ?’
+</p>
+<p>
+તેઓએ કહ્યું, ‘સ્વામીજીના વચને અમે આ કર્યું છે. તેઓ અમારો કચરો સાફ કરી રહ્યા છે, જન્મો બાળી રહ્યા છે.’ 
+</p>
+<p>
+આ પાંચેય હરિભક્તોની આત્મીયતા એવી હતી જેના ફળસ્વરૂપે જ્યારે ફરી ગુરુહરિ સ્વામીશ્રી અમેરિકા ધર્મયાત્રાએ પધાર્યા તે વખતે તે પાંચેય હરિભક્તોને બોલાવ્યા. સતત પાંચ દિવસ સુધી એમને સાથે રાખીને ગોષ્ઠિ કરીને આનંદ કરાવ્યો. 
+</p>
+<p>
+એ પાંચેય ભક્તોએ કહ્યું, ‘સ્વામીજી ! અમે તો કશુંય નથી કર્યું છતાં આપ અમારી પર આટલા ખુશ કેમ છો ? 
+</p>
+<p>
+સ્વામીશ્રીએ કહ્યું, ‘તમને પાંચેયને મારા પર મન બુદ્ધિથી પારનો વિશ્વાસ છે એટલે ખુશ છુ.’ 
+</p>
+<p>
+સ્વામીશ્રીએ આગળ કહ્યું,  ‘તમે પાંચેય પૂર્વ જન્મમાં ભગવાન સ્વામિનારાયણના યોગમાં આવ્યા હતા. એ વખતે તમે મહારાજની દૃષ્ટિમાં આવી ગયા હતા ને તેમને ખૂબ ગમી ગયા હતા. તે પછીના જન્મે  ગુણાતીતાનંદસ્વામીના યોગમાં આવ્યા હતા. ગુણાતીતાનંદસ્વામીએ તમને ભગતજીમહારાજનો  સમાગમ કરવાની આજ્ઞા કરી હતી. પરંતુ કેટલીક વ્યક્તિઓને લઈને ભગતજીમહારાજ વિશેના અભાવના શબ્દો પડી ગયા હતા.
+</p>
+<p>
+તમે ભગતજીમહારાજનો અભાવ નહોતો લીધો પણ જે કક્ષાએ ભગતજી મહારાજનો સમાગમ કરવો જોઈએ એ કક્ષાએ ના કર્યો. 
+</p>
+<p>
+પછીના જન્મે તમને શાસ્ત્રીજી મહારાજે યોગમાં લીધા. પરંતુ તમારો પટલનો સ્વભાવ. પટલાઈ કરવા જોઈએ. એટલે તે વખતે તમને ફાવ્યું નહીં.  આ જન્મે અહીં યોગમાં છો.  હજુ તમારામાં એ પટલાઇના હેવા છે. આ જન્મે એ હેવાને કોઈપણ ભોગે કાઢવા છે અને તમને પાંચેયને સુખી કરવા છે.’
+</p>
+<p>
+પછી સ્વામીશ્રીએ નિયમ આપતા કહ્યું, ‘હું તમને સાથે રાખીને જે ગોષ્ટિ કરું છું તેનો તમારે સ્વાધ્યાય કરવાનો ને પછી ભજન કરવાનું.’
+</p>
+<p>
+છેલ્લે આશીર્વાદ આપતા સ્વામીશ્રીએ કહ્યું, ‘મારે તમને વિઠ્ઠલદાસ(ફુવા) જેવા કરવા છે. ફુવાની વાણી એવી કે સવારે જાગે અને રાત્રે સૂતા સુધી એકસરખી વાણીની મિઠાશ. ફુવા બેલેન્સ ઓફ માઈન્ડથી સેવા કરે. આપણે એમના જેવી સ્થિરતા અને વાણીની મિઠાશ પ્રગટાવવી છે. જેના ફળસ્વરૂપે જીવનમાં પ્રસંગો આવે ત્યારે ભગવાનનું બળ લેવાય અને પ્રસંગે હાલી ન જવાય, વાણીમાંથી મિઠાશ જાય નહીં.’
+</p>
+<p>
+હે ગુરુહરિ સ્વામીશ્રી ! આપની અમને સુખી કરવાની ગરજ કલ્પનાતીત છે. એક એક ચૈતન્યને વિશે પડેલા ડહાપણ, ભોળપણ, હુંહાટો, પટલાઈ, ડોળ, દંભ, દેખાવ  જેવા અનેક સ્વભાવ ને ટાળવા માટે અણખૂટી ધીરજથી આપ દાખડો કરી રહ્યા છો. 
+</p>
+<p>
+હે સ્વામીજી ! સ્વરૂપનિષ્ઠા અને મહિમામાં ડૂબીને આપને ગમે છે એવું સ્વાધ્યાય ભજન કરીને આપનું ઋણ વાળી શકીએ એવો બુદ્ધિયોગ આપજો.
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

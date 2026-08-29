@@ -1,0 +1,147 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+બ્રહ્મભાવની નજરેથી
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+ગુણાતીતાનંદસ્વામી મહિમાની અદ્‌ભુત દિવ્ય નિર્દોષ મૂર્તિ ! ખૂબ સેવકભાવે વર્ત્યા. ૪૯૯ પરમહંસોને જરાય ખ્યાલ ન આવવા દીધો કે, ‘હું સાકાર બ્રહ્મ છું, હું પ્રભુને રહેવા માટેનું ધામ છું. તમારા કરતાં જુદી વ્યક્તિ છું.’  રાંકભાવથી કોઈને જાણપણું આપ્યા વગર પોતાનું પુણ્ય વધાર્યા જ કરે એવો એનો એ રાંક ભાવ કલ્પનાતિત છે !
+</p><p>
+બન્ને આચાર્યોને અને ૧૨ સદ્‌ગુરુઓને મહારાજનો અંતિમ સંદેશ હતો કે, ‘વર્ષે એક મહિનો ગુણાતીતાનંદ સ્વામીનો સમાગમ કરવા જવું અને ગોપાળાનંદસ્વામીની આજ્ઞામાં સહુએ રહેવું.’ ૪૯ વર્ષની ઉંમરે ભગવાન સ્વામિનારાયણનો આ છેલ્લો આદેશ હતો.
+</p><p> 
+એક વખત ગોપાળાનંદસ્વામી જૂનાગઢની ધરતી પર આવ્યા ત્યારે ગુણાતીતાનંદસ્વામી એમને ભેટી પડ્યા. અને એમના મુખેથી સહજ વાક્ય સરી પડ્યું, ‘સ્વામી, ૪ કલાકથી તમારી રાહ જોઉં છું. હું એક જ વિચારમાં હતો કે, ક્યારે તમારા દર્શન થશે ?’ પછી ગુણાતીતાનંદસ્વામીએ ગોપાળાનંદસ્વામીને કહ્યું, ‘સ્વામી, તમે ત્રણ-ચાર જ સંતોને લઈને કેમ આવ્યા ? મંડળના ૬૦ એ ૬૦ સંતોને લઈને આવ્યા હોત તો અમને કેવો લાભ મળત !’ 
+</p><p>
+ગોપાળાનંદસ્વામી એકદમ બોલી ઊઠ્યા, ‘જોગી ! ૬૦ સંતોમાં અઢી જ સંતો મારા છે. સાડીસત્તાવન મારા નથી. કોઈનામાંય સાધુતાના ગુણ નથી. એ તો ભેખડ છે, મનમુખી જીવન જીવે છે. એ ભેખડો પડે તો કોઈને વાગી જાય.’
+</p><p>
+એટલે ગુણાતીતાનંદસ્વામી દર્દથી બોલ્યા, ‘સાંભળો સ્વામી, એ મહારાજના છે ને, સંતો ગમે તેવું વર્તતા હોય પણ એ મહારાજના છે. પ્રભુએ દીક્ષા આપી છે કે, સાથે લઈને આવ્યા હોત તો અમને કેવી અદભુત સેવા મળત ! ફરી જૂનાગઢ આવો ત્યારે લઈને આવજે.’ મહારાજનો કેવો મહિમા ! 
+</p><p>
+એ ગોપાળાનંદસ્વામી ના દિલમાંથી ઊતરી ગયેલાં સંતો હતા; પણ ગુણાતીતાનંદસ્વામીના દિલમાં એમનો એટલો જ મીઠાશભર્યો વાસ હતો.
+</p><p>
+ગોપાળાનંદસ્વામી વિચારમાં પડી ગયા. દર્દ ભર્યા હૈયે ગોપાળાનંદસ્વામી ગુણાતીતાનંદસ્વામી પાસે એટલું જ માગ્યું, ‘જોગી આવા મહિમા નો સાક્ષાત્કાર કરજો.’
+</p><p>
+ગુણાતીત દરેક સદગુરુને કહેતા કે, ‘મંડળના સહુ સંતોને લઈને આવજો, અમને સેવાનો લાભ મળે ને !’
+</p><p>
+- આ છે ગુણાતીતની ચિદાકાશી દષ્ટિ. <br/>
+- આ છે ગુણાતીતનો નિરપેક્ષ પ્રેમ. <br/>
+- આ છે ગુણાતીતની અતુલનીય આત્મીયતા. <br/>
+- આ છે ગુણાતીતનો પ્રભુ સાથેનો સર્વોપરી સંબંધ. <br/>
+- આ છે ગુણાતીતને પ્રભુનો અપરંપાર મહિમા. <br/>
+</p><p>
+આવા ગુણાતીત તરફ જેની નજર પડી હોય ને પુગી હોય એને કોઈનાય વિશે ક્યારેય ભાવફેર થાય નહિ. સ્વપ્નામાંય કોઈનાય માટે સંકલ્પ ઊઠે જ નહીં. શક્ય જ નથી.
+</p><p>
+પ્રભુના સંબંધવાળો ગમે તેવો અલ્પ જીવ હોય, દુનિયામાત્ર નહિ પણ અનંત બ્રહ્માંડમાત્રનો ઉતાર હોય, એના માટે ગુણાતીત એવું કહેતા, ‘એ મારા માટે મારા પ્રભુનું સ્વરૂપ છે.’ એના માટે યોગીજી મહારાજ એવું કહેતા, ‘એ મારા માથાના મુગટ છે.’ 
+</p><p>
+ગુણાતીતપુરુષો દિલથી એવું માને છે, ગમે તેવો જીવ છે પણ પ્રભુની નિશ્રામાં આવી ગયો છે ને, પ્રભુના એક વાર દર્શન કરી લીધા છે ને, પ્રભુના ઝાડના છાંયડામાં આવી ગયો છે ને બહુ થઈ ગયું. એ સનાતન માવતરનો સંબંધ આપણને ક્યાંથી ! એનો સંબંધ અને એની પ્રાપ્તિ એ આપણી સાચી મૂડી છે.
+</p><p>
+ ગોપાળાનંદસ્વામી મહિના પછી જૂનાગઢ છોડ્યું ત્યારે ગુણાતીતાનંદસ્વામી કહે, ‘ફરી આવો ત્યારે બધાને લઈને આવજો હું.’ ગોપાળાનંદસ્વામી જૂનાગઢની ધરતીને છોડી ત્યારે એના હૈયાને વિશે દર્દ એટલું જ હતું કે, ‘ભગવાનની મૂર્તિનો સાક્ષાત્કાર કરનાર એવો જે હું, તે ગુણાતીતે જે મહિમાનો સાક્ષાત્કાર કર્યો છે એવો હું ક્યારે કરીશ ?’
+</p>
+ 
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

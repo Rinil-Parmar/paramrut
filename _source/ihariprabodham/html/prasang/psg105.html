@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+વિવેક્નીધી સ્વામીશ્રી 
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+ઈ.સ. ૧૯૯૨ માં શ્રી યોગી શતાબ્દી મહોત્સવ નિમિતે એક સુંદર પ્રદર્શનનું આયોજન કરવામાં આવ્યું હતું. પ્રદર્શન હરિભક્તો માટે ખુલ્લું મુકતા પહેલા સુધારા વધારા કરવા માટે વડીલો પ.પૂ. સ્વામીશ્રીને સાંજના સમયે પ્રદર્શન જોવા માટે લાવ્યા. 
+ </p>
+<p>
+પ.પૂ. સ્વામીશ્રીને દરેક પ્રસંગો જોતા જોતા એમના પૂર્વાશ્રમના પ્રસંગ આગળ આવ્યા. એ પ્રસંગ ચિત્રમાં પ્રભુદાસભાઈ (પ.પૂ. સ્વામીશ્રી) વાસણ ઘસતા હતા. ને એમની પાછળ પાણીનો નળ ચાલુ હતો. 
+</p>
+
+<p>
+આ પ્રસંગ જોઈ પ.પૂ. સ્વામીશ્રી વડીલોને પોતાની ભૂલ બતાવતા કહે, ‘મારે પાણીનો નળ બંધ કરી વાસણ ઘસવા જોઈએ.’ 
+</p>
+
+<p>
+વડીલો પ.પૂ. સ્વામીશ્રીને પ્રદર્શનમાં સુધારા વધારા કરવા માટે જોવા લાવેલા, પણ પ.પૂ. સ્વામીશ્રી એ પોતાની જ ભૂલ જોઈ. એ પણ પ્રસંગ ચિત્રમાં. 
+<p>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+તા. ૧૩-૨-૨૦૧૫ ના રોજ પ.પૂ. સ્વામીશ્રી વાસણા ફાર્મ પર બિરાજમાન હતા. બપોરે આરામમાંથી બહાર પધાર્યા બાદ અદાભવનથી મંદિરમાં ધુન્ય કરવા પધાર્યા. પ.પૂ. સ્વામીશ્રી પાટ પર બિરાજમાન હતા. સામે પ.પૂ. સ્વામીશ્રીના દીક્ષા વખતનો ફોટોગ્રાફ હતો. 
+</p>
+
+<p>
+ધુન્ય બાદ પ.પૂ. સ્વામીશ્રીએ એ ફોટોગ્રાફ જોઈ જુના સંસ્મરણો યાદ કર્યા.
+</p>
+<p>
+મુક્તીસ્વામીએ એ ફોટોગ્રાફ નજીકથી પ.પૂ. સ્વામીશ્રીને બતાવ્યો ને કહ્યું કે બાપા આપને જનોઈ પહેરાવી રહ્યા હતા. પ.પૂ. સ્વામીશ્રી એ જોઈને તરત બોલ્યા, ‘મારે વધારે નીચા નમવાની જરૂર હતી, જેથી બાપા ઝડપથી જનોઈ પહેરાવી શકત ને બાપાને સાનુકુળતા રહેત.’ 
+</p>
+<p>
+વચનામૃત ગઢડા પ્રથમ ૧૬ માં કહ્યું છે.. જે ભગવાનના ભક્તને સત્-અસત્‌નો વિવેક હોય તે તો જે જે અવગુણ પોતામાં હોય તેને જાણે અને વિચારીને તેનો ત્યાગ કરી દે.   
+</p>
+<p>
+હે સ્વામીજી ! અમે પણ આપના આ પ્રસંગોને વાગોળી  પોતાનો દોષ જોઈ, બીજાનો ગુણ લઇ શકીએ એ જ પ્રાર્થના. 
+<p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

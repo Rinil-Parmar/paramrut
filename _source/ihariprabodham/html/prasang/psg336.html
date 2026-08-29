@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+તો મોટાપુરુષની દષ્ટિ આપણા ઉપર સહજ રહે
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+એકવખત ગુરુહરિ સ્વામીશ્રી જૂનાગઢ વિચરણમાં પધાર્યા હતા. ત્યાં સામે બેઠેલા જૂનાગઢના એક ભક્તરાજને ઉદ્દેશીને સૌને ગોષ્ટિ કરી. 
+</p>
+<p>
+પછી એ હરિભક્તને  ત્રણ નિયમ આપતા કહે, 
+</p>
+<p>
+‘(૧) ભજન કરવું.  <br/>
+(૨) રવિવારની સભા ભરવી. <br/>
+(૩) પરિવારમાં અને સત્સંગમાં સંપ, સુહૃદભાવ ને એકતાથી ઉઠાવ લેવો. 
+</p>
+<p>
+યોગીજી મહારાજ આ ત્રણ નિયમ આપતા. આ ત્રણ નિયમ પાળીએ તો મોટાપુરુષની દષ્ટિ આપણા ઉપર સહજ રહે. ચોવીસ કલાક યોગીજી મહારાજ અક્ષરધામમાં રહ્યા થકા તે ચૈતન્યની સંભાળ રાખે. એ આત્મા નિરંતર ભગવાન અને સંતની દષ્ટિમાં રહે.’ 
+</p>
+<p>
+
+પછી કરૂણા વહાવતા મંડળના વડીલ ડો. કિકાણીસાહેબને આજ્ઞા કરી કે, ‘એ હરિભક્ત કદાચ સભામાં ન આવે તો તેને સામેથી બોલાવવા એમના ઘરે જવું. અને છતાંય ન આવે તો તેને ઘરે જ સભા ગોઠવવી, પણ એમને પરાણે સુખી કરવો છે. એટલે આપણે ઉમંગ ઓછો નહીં થવા દેવાનો.’
+</p>
+<p>
+ભગવાન અને સંતની કરુણા જીવપ્રાણીમાત્ર પર વહી રહી છે. ભગવાન નિરંતર જીવને સુખી કરવા ઉદ્યમ કરે છે, પણ જીવ અવળો છે કે તેને તે જલ્દી સમજાતું નથી. માટે આપણે નિરંતર પ્રાર્થના કરવી પ્રભુની અપાર કરુણામાં સ્નાન કરતા આવડી જાય.
+</p>
+
+
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

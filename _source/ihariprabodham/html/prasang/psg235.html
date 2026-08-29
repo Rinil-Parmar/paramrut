@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+ગુણાતીત માટે દેહ કુરબાન છે
+</div>
+<div class="vaat_ind" id="vaat1_1">
+ <p>
+    ભગતજીમહારાજ  ગૃહત્યાગ કરીને જૂનાગઢ ગુણાતીતાનંદસ્વામીના સાનિધ્યમાં કાયમી રહેવા આવી ગયા તે વખતનો આ પ્રસંગ છે. જૂનાગઢ મંદિરનું કામ ચાલતું હતું, ભગતજીને અંતરમાં એવો વેગ ઉપડ્યો હતો કે ‘દેહના ચૂરેચૂરા કરીને પણ ગુણાતીતને રાજી કરી લેવા છે.’
+    </p><p>
+   ભગતજીએ ગુણાતીતાનંદસ્વામીના ઈશારે સેવામાં મન, કર્મ, વચને ઝંપલાવ્યું હતું. ચૂનાની ભઠ્ઠીમાં ચૂનો કાલવવાનું કામ કરવા કોઈ તૈયાર નહોતું. એ સેવામાં હાથ પગ ફાટી જાય, આંખોમાં પણ ગરમી આવે અને વળી આંધળા પણ થાય એવી સહુને બીક હતી.
+    </p><p>
+   પછી ગુણાતીતાનંદસ્વામીએ પ્રાગજીભક્તને બોલાવીને કહ્યું, ‘પ્રાગજી ! આ ચૂનાનું કારખાનું ચલાવવા માટે કોઈ તૈયાર નથી. મારી દ્રષ્ટિ તારા તરફ છે. તને મદદમાં પાંચ-સાત સેવકો આપીશું.’
+    </p><p>
+   ગુરુ જે શિષ્ય પર અધિકાર કરે એ શિષ્ય કૃપાનું પાત્ર કહેવાય !
+     </p><p>
+   આ સાંભળી ભગતજી રાજી થઈ ગયા અને બોલ્યા, ‘સ્વામી ! આપની ઈચ્છા હશે તો સર્વ કાંઈ કરીશ ! મને આપની સહાય છે એ જ બસ છે. મારે બીજી મદદની જરૂર નથી.’ એમ કહી ઉમંગથી સેવા માથે લઇ લીધી.
+        </p><p>
+   ભગતજી ને તીવ્ર શ્રદ્ધા અને રાજી કરવાની તાલાવેલી જોઈને દ્વેષી સાધુઓને ઈર્ષા આવવા લાગી. તે મનોમન સંકલ્પ કરવા લાગ્યા કે, ‘આ ભગતજી આંધળો થાય કાં મરે તો સારું.’
+    </p><p>
+   ભગતજીમહારાજ  શરીરે ખૂબ નાજુક હતા અને એવા રૂપાળા હતા કે સૂર્યના કિરણો પણ પાછા પડે. દ્વેષી સંતો એમના ઉમંગ અને શરીરને તોડી નાખવાના ઇરાદાથી, પાંચ-સાત મણના કોથળા શરીર પર ઊંચકીને નાખતા; પણ ભગતજીએ ગુણાતીતને રાજી કરવા પોતાના દેહને ગણ્યો નહીં. વિપરીત પરિસ્થિતિમાં પણ એમની નજર હતી ગુણાતીતાનંદસ્વામી તરફ જ. બસ એક જ ભાવ હતો, ‘તું રાજી થા !’ એટલે ‘સ્વામી ! સ્વામી !’ કરીને હસતા હસતા ચૂનાના કોથળાં કારખાના પાસે લઈ જઈને ઠાલવે. જેમ માટી કચડે તેમ ભગતજી ચૂનાને બે પગે કાલવતા.
+       </p><p>
+   આવી સેવા કરતા જોઈને કેટલાક કહેતા, ‘આ ચૂનાની રજોટીથી તું આંધળો થઈશ, તારા હાથ પગ ફાટી જશે.’ ત્યારે ભગતજી મસ્તીથી જવાબ આપતા, ‘ગુણાતીત માટે આ દેહ કુરબાન છે. ગમે તે થાય પણ મારે એમને રાજી કરી લેવા છે.’
+       </p><p>
+    ગુણાતીતાનંદસ્વામીને રાજી કરવા એક ધાર્યા ઉમંગથી સેવામાં દોડતા હતા ત્યારે એમણે સંકલ્પ નથી ઊઠવા દીધો કે ‘આ લોકો દ્વેષથી, ગરમ થઇને, પાંચ - સાત મણના કોથળા જોરથી શા માટે નાખતા હશે ?’ એ દિલથી માનતા હતા કે – તું નાખું છું, મારે સેવા કરવાની છે,  નિમિત્ત બનવાનું છે.
+    </p><p>
+    ઇન્દ્રિયો-અંત:કરણને બાજુમાં રાખીને સેવા કરે એનું નામ નિમિત્ત સેવક !
+        </p><p>
+    ભગતજીએ સાડા ત્રણ વર્ષ મંદિરનું કામ ચાલ્યું ત્યાં સુધી તીવ્ર શ્રદ્ધાથી અવિરતપણે સેવા કર્યા જ કરી. પોતે દસ સેવકોની સેવા એકલા હાથે કરતા. ગુણાતીતાનંદસ્વામીએ એમને દેહ અને વચનના કઠિન ભીડામાં લીધા છતાંય દેહપર્યંત મુંઝાયા નહિ જાણે કે, મુક્તાનંદસ્વામીનું પદ સાકાર ન કર્યું હોય, ‘શૂળી ઉપર શયન  કરાવે તો  ય સાધુને સંગે રહીએ.’
+    </p><p>
+   એવા ભગતજીમહારાજ ગુણાતીતાનંદસ્વામીજીના હૃદયના પાત્ર બની ગયા.
+    </p>
+
+
+ <div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->       
+ 
+
+</BODY>
+
+</HTML>
+

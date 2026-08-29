@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Hariprabodham Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+				//Added function highlight text
+			function highlight_word(search_text)
+			{
+			 var searchpara=document.getElementById("vaat1_1").innerHTML;
+			 searchpara=searchpara.toString();
+			 var text=search_text;
+			 if(text)
+			 {
+			  var pattern=new RegExp( text , "ugi");
+			  var new_text=searchpara.replace(pattern, "<span class='highlight'>"+text+"</span>");
+			  document.getElementById("vaat1_1").innerHTML=new_text;
+			 }
+			}
+
+
+
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+આ ભાદરાના ગુણાતીત
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+ <p> 
+ગુરુહરિ સ્વામીશ્રીએ અનેક એવા નિષ્ઠાવાન મુક્તોને પોતાની અલૌકિક પારબ્રહ્મી સ્વરૂપની તથા અક્ષરબ્રહ્મના મૂર્તિમાન સ્વરૂપની પ્રતીતિ અને ઓળખાણ કરાવી હતી. એ પૈકીના એક નિષ્ઠાવાન મુક્તરાજ એટલે વડોદરાના સતુભાઈ ડી. પટેલ., વડોદરા. 
+</p><p>
+ગુરુહરિ સ્વામીશ્રીએ તેઓને પ્રગટ ગુણાતીતના સ્વરૂપની પ્રતીતિ કરાવી હતી તે સ્વાનુભવને તેઓના જ શબ્દોમાં નિહાળીએ.
+</p><p>
+યોગીબાપા સ્વધામ ગયા પછી...  ૨૫ જાન્યુઆરી ૧૯૭૧ ના રોજ અમે પુટ્ટપર્થીથી વડોદરા આવ્યા. બીજા દિવસે રાત્રે  હું સોખડા જૂના મંદિરે ગયો. સ્વામીજી શયન આરતી ઉતરતા હતા.
+સ્વામીજીની જોડે જઈને ઊભો રહ્યો. આરતી પૂરી થઈ. 
+</p><p>
+તરત જ મે કહ્યું, 'બાપા ગયા.' સ્વામીજી બોલ્યા,'બાપા ગયા.'
+પછી મેં કહ્યું, 'તમે પૃથ્વી ઉપર છો ને બાપા કેવી રીતે જાય ? મહારાજની જોડે ગુણાતીત હોય હોય ને હોય જ.' એ દિવસોમાં સ્વામીજી મહારાજ છે એવો નિશ્ચય થયેલો.
+</p><p>
+ફરી મેં સ્વામીજીને પૂછ્યું, 'ગુણાતીત તો પૃથ્વી પર જ હોય ને?' <br/>
+સ્વામીજીએ કહ્યું,'એમ જ હોય ને !'<br/>
+મેં પૂછ્યું, 'તો એ અત્યારે ક્યાં છે ? દેહ બદલીને બીજે આવી ગયા છે ?' <br/>
+સ્વામીજીએ કહ્યું, 'હા' <br/>
+મેં પૂછ્યું, 'ક્યાં આગળ ?' <br/>
+સ્વામીજીએ કહ્યું, 'આમ દૂર છે... સૌરાષ્ટ્રમાં..' <br/>
+મેં કહ્યું, 'ગામનું નામ કહો તો ત્યાં જઈને દર્શન કરી આવું.' <br/>
+સ્વામીજીએ કહ્યું, 'આપણે જવાના છીએ ત્યારે તમે મારી જોડે આવજો.'
+</p><p>
+છ - આઠ મહિના પછી સ્વામીજી જોડે સૌરાષ્ટ્રનાં વિચરણમાં જવાનું થયું. માણાવદર રાત રોકાયેલા. મને એકદમ યાદ આવ્યું કે સ્વામીજી કહેલું કે ગુણાતીત સૌરાષ્ટ્રમાં છે.
+</p><p>
+મેં સ્વામીજીને પૂછ્યું,'અહીંયા છે ને ગુણાતીત ? કયા ગામડામાં ? ગાડી લઈને જઈ આવું.' <br/>
+સ્વામીજીએ કહ્યું, 'નજીક જ છે. આટલામાં જ.' <br/>
+મે કહ્યું, 'તમે મને કહો તો ખરા !' <br/>
+સ્વામીજીએ કહ્યું, 'આપણે જઈશું.'
+</p><p>
+પછી અમે વંથલી પ્રબોધસ્વામીના ઘરે ગયા ત્યારે સ્વામીજી ધીમે રહીને બોલેલા કે, 'આ ભાદરાના ગુણાતીત'  
+</p><p>
+અમને ૧૦-૧૨ જણને એ ઘરે પગે લગાવડાવી ચરણરજ માથે ચઢાવડાવી.  એટલે ખ્યાલ આવ્યો કે આ ગુણાતીતનું ઘર છે.  વિઠ્ઠલદાસ પણ હતા સાથે.. 
+</p><p>
+વિષય: ઓળખાણ</p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

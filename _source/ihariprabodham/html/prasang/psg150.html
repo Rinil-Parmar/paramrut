@@ -1,0 +1,90 @@
+<html><head><title>Swaroopyog</title> <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+<TITLE>Swaroopyog</TITLE></head><body><div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        આપણે તો સેવક છીએ.
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+ 
+સ્વામીજી બાથરૂમમાં સ્નાન કરી રહ્યા હતા. બહાર એક હરિભક્ત બીજા હરિભગત સાથે વાત કરતા કહી રહ્યા હતા કે તું સમજે નહીં આમ જ કરવું પડે. અમે કહ્યાં કરીએ છીએ તો પણ તને કેમ ખબર પડતી નથી ? આમ જ કરવાનું છે.
+    <br/><br/>
+     સ્વામીજી આ બધું બાથરૂમમાં સ્નાન કરતાં-કરતાં સાંભળી રહ્યા હતા. વાત કરનાર હરિભક્ત મંડળધારી હતા. સ્વામીજીને ખૂબ દર્દ થયું. 
+              <br /><br />
+    અંતેવાસી સેવકને સ્વામીજીએ કહ્યું, 'જલ્દી જલ્દી તું મને ઠંડા પાણીથી સ્નાન કરાવી દે ગરમ પાણી નથી જોઈતું. બીજાને સમજાવી દેવાનો આગ્રહ રાખનાર મારી વાત ક્યારે સમજશે ? હું સમજું છું. એવા ભાવથી બીજાને સમજાવી દેવાનું તાન કે આગ્રહ એ કેવળ સૂક્ષ્મ માન નથી પણ ભયંકર અજ્ઞાન છે.'
+              <br /><br />
+     જલ્દી જલ્દી સ્નાન કરી સ્વામીજી બહાર પધાર્યા. આસન પર બિરાજ્યા. પછી વિચારમાં બેસી રહ્યા. પછી કહે, 'આપણને દર્દ શા માટે થવું જોઈએ ? આપણે શા માટે કોઈના માલિક થવું જોઈએ ? આપણે તો સેવક છીએ.'
+ 
+
+
+                         <div class="chend">
+                             *****
+                         </div>
+</div></body></html>

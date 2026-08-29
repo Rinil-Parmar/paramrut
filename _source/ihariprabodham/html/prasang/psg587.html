@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સત્સંગ અને ભક્તિનું સિંચન
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_587">
+      July 18, 2023, Charlotte, NC<br/>
+      <p>રાત્રીનો થાળ અંબરીષભક્ત સુભાષભાઈના ઘરે હતો. પરમ ભક્ત નિમેષદાદાએ ગુરુહરિનું સ્વાગત કરતા ફૂલોનો bouquet અર્પણ કર્યો. ગુરુહરિએ તે bouquet સુભાષભાઈના આઠ મહિનાના દીકરા ભૂલકું સમર્પિતભાઈને સૂંઘાડયું. ત્યારબાદ, ભૂલકુંના બંને ગાલ પર bouquet નો સ્પર્શ કરાવી સ્મૃતિ આપી.</p><p>ગુરુહરિ સોફા પર બિરાજમાન થયા પછી સમર્પિતભાઈને કહ્યું કે, “દંડવત કરો (મંદિરમાં ઠાકોરજીને).” એટલે સુભાષભાઈએ ભૂલકુંને દંડવત કરાવ્યા. પછી ગુરુહરિએ સમર્પિતભાઈને કહ્યું કે, “આપણે સેવા કરવાની છે હોં... નિમેષદાદા કરતા હતા એવી...”</p><p>થાળ ગ્રહણ કર્યા બાદ ગુરુહરિએ સમર્પિતભાઈની લટ (વાળ) લીધી. પછી સુભાષભાઈ અને નિમેશદાદાએ ગુરુહરિને હાર પહેરાવ્યો. ગુરુહરિએ પ્રસાદીનો હાર સમર્પિતભાઈને પહેરાવી દીધો અને કહ્યું, “તમે મહંત જેવા લાગો છો...”</p><p>ગુરુહરિ ઘરની બહાર પધાર્યા એટલે સુભાષભાઈ અને સમર્પિતભાઈ એમને ચંપલ પહેરાવતા હતા, ત્યારે ગુરુહરિએ સમર્પિતભાઈ ને કહ્યું, “આવતા વર્ષથી આપણે મૈત્રી સ્વામીને ચંપલ પહેરાવવાનું.”</p><p>આમ બાળપણથી જ આધ્યાત્મિકતા અને ભક્તિના સંસ્કારોનું સિંચન કરી એક આદર્શ માવતર તરીકેનું દર્શન ગુરુહરિએ કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અક્ષર સ્પર્શ<br/>
+      ટેગ: બાળક, બાળ પ્રવૃત્તિ, સંસ્કાર<br/>
+      નંબર: ૩૮૯
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

@@ -1,0 +1,157 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+આ અવસરે વા’લે કરુણા બહુ કીધી
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+ગુરુહરિ પ.પૂ. સ્વામીશ્રીના યોગમાં આવેલા પ.ભ. હસમુખભાઈ વરસો જુના નિષ્ઠાવાન એકાંતિક ભક્ત. જેઓ સ્વામીશ્રીની કૃપાનું પાત્ર બન્યા જેને લઈને મહારાજે દેશકાળ મૂકયા. આ દેશકાળને લઈને અવાર-નવાર કોઈવાર ઊંડા વિચારમાં જતા રહેતા કે મહારાજે આવા દેશકાળમાં મને કેમ રાખ્યો હશે. આ વિચારનું સામધાન આપવા ગુરુહરિ પ.પૂ . સ્વામીશ્રીએ કૃપાએ કરીને એકવાર સ્વપ્નમાં દર્શન આપ્યા. 
+ </p>
+<p>
+ગુરહરિ પ.પૂ. સ્વામીશ્રી અક્ષરપુરૂષોત્તમ મહારાજની આરતી ઉતારે છે અને આ ભક્ત પાછળ ઉભા છે. એવા એમને સ્વપ્નમાં દર્શન થયા. પ.પૂ. સ્વામીશ્રી આરતી ઉતારતા ઉતારતા કોઈવાર એમનામાં શ્રીજીમહારાજના દર્શન થાય અને કોઈવાર પ.પૂ. સ્વામીશ્રી મહારાજની મૂર્તિમાં સમાઇ જાય. એથી વિશેષ પ.પૂ. સ્વામીશ્રીની મૂર્તિમાંથી અદ્‌ભુત પ્રકાશ નિકળે. તે ખુબજ તેજોમય દેખાય. આંખને ખુબ જ શીતળ લાગે. આવી સુખમય મૂર્તિના દર્શન થતા જ આ હસમુખભાઈ વિચારમાં જતા રહ્યા કે, ‘પ.પૂ.સ્વામીશ્રી આટલા સુખમય અને હું આટલો દુ:ખી?’ </p>
+
+<p>
+જેવા પ.પૂ. સ્વામીશ્રી આરતી ઉતારીને જાય એટલે સ્વામીશ્રીનું ગાતરીયું પકડી લઉ કે ને કહું કે, ‘તમે આટલા સુખમય ને હું દુ:ખી કેમ?’ જેવા પ.પૂ. સ્વામીશ્રી આરતી ઉતારીને જતા હતા કે તરત આમને ગાતરીયું પકડયું ને કહયું, ‘તમે આટલા સુખમય ને હું દુ:ખી કેમ?’ પ.પૂ. સ્વામીશ્રીએ કહ્યું, ‘શું દુ:ખ છે?’ 
+</p>
+
+<p>
+ત્યારે હસમુખભાઈ બોલ્યા, ‘૧૮ વર્ષ આપે આર્શિવાદ આપી દીકરો આપ્યો એ પણ ધામમાં લઈ લીધો. ઘરનું પાત્ર મેન્ટલી વીક આપ્યું. શરીરમાં કોઈ સુખ નથી બિમારી રહ્યા કરે અને ધનનાં પણ એટલા જ દેશકાળ... ચારેય રીતે દુ:ખી છું.’
+</p>
+
+
+
+<p>
+પ.પૂ. સ્વામીશ્રીએ હસમુખભાઈની વાત સાંભળી. પછી પ.પૂ. સ્વામીશ્રીએ કૃપાએ કરીને કહ્યું, ‘સાભળ..! હું જયારે જયારે પૃથ્વી પર આવું છું ત્યારે ત્યારે તને સાથે લાવું છું. આપણે નાનાપણમાં સાથે રમ્યા. પછી હું વનવિચરણમાં ગયો. વનવિચરણ બાદ આપણે ફરી કારીયાણીમાં ભેગા થયા. મેં તને સાધુની દીક્ષા આપી પણ તે એક મોટી ભૂલ કરી કે તું આખી જીંદગી ગુણાતીતાનંદસ્વામીની વિરુધ્ધમાં રહ્યો જેના ફળસ્વરૂપે મોટો દ્રોહ થઈ ગયો ને તારા નસીબમાંથી મનુષ્યયોનિ ગઈ ને લક્ષ ચોર્યાસી યોનીમાં   તારો આત્મા જતો રહ્યો. 
+</p>
+
+<p>
+એકવાર શાસ્ત્રીજીમહારાજ અટલાદરાની ધરતી પર ગૌશાળાની સેવામા ગાયોનું છાણ સાફ કરવા ગયા ને ત્યાં શાસ્ત્રીજીમહારાજના બૂટ નીચે તારો આત્મા કીડાની યોનીમાં હતો તે એમનો સ્પર્શ થયો તે તને મનુષ્ય દેહ ફરી મળ્યો. 
+</p>
+
+
+
+<p>
+ને બાપાએ ગોંડલની નજીક ના એક ગામડામાં જન્મ આપ્યો. થોડા સમય થયોને તું યોગીજીમહારાજના યોગમાં આવ્યો ને બાપાએ તને ગૌશાળાની સેવામાં મૂક્યો. થોડા સમય પછી ખેડા જીલ્લાના એક શેઠ આવ્યા ને બાપાને પ્રાર્થના કરવા લાગ્યા કે ‘હે બાપા..! અમારે કોઈ વસ્તાર નથી કોઈ દિકરો આપો.’  જયારે એ શેઠ પ્રાર્થના કરતાં હતા ત્યારે તું બાપાની સામે જ ઉભો હતો. ને બાપાએ તારા આત્મા પર કૃપા કરીને એ શેઠને ઘરે તને ખેડા જીલ્લામાં મનુષ્ય દેહ ફરી આપ્યો.
+</p>
+
+<p>
+ને હવે તું આ કંકોઈ ગામમાં આવ્યો.. બોલ.. હવે..કીડાને કેટલું સુખ હોય? એને કયા સંસારનું સુખ હોય? તે કીડાએ શું આશા રાખવાની? તું કેટલો નશીબદાર કે તને આવી સરસ ઉપાસના મળી! આવા સરસ સંતો-ભક્તોનો સમાજ મળ્યો! હવે તારે કયું સુખ જોઈએ છે?’
+</p>
+<p>
+તરત હસમુખભાઈ હર્ષના આંસુ સાથે સ્વામીશ્રીને હાથ જોડીને એટલું જ બોલ્યા.. ‘સ્વામીજી..! હું બહું સુખી છું મારે કાંઈ જોઈતું નથી. હું ધન્ય થઇ ગયો!’ 
+<p>
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

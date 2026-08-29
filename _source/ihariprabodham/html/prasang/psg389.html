@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>     
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+</HEAD>   
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+
+	
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+<div class="title_gu">
+નિજ પર શાસન ફિર અનુસાશન 
+</div>
+<div class="vaat_ind" id="vaat1_1">
+<p>
+તા. 2-5-2005ના દિવસે બપોરે ગુરુહરિ સ્વામીશ્રી રાજકોટના એક હરિભક્તને ફોન પર વાત કરતાં કહ્યું કે, ‘4 થી મેના સવારે તમારા દર્શન કરવા છે તો તમે આવી જજો.’
+</p>
+<p>
+પછી કહ્યું, ‘ભગત હું તમારી આજ્ઞામાં જ રહું છું. તમને સંભારતાં સંભારતાં સૂઈ જઉં છું.’ 
+</p>
+<p>
+એ હરિભગતને એવું લાગ્યું કે સ્વામીજી મને જાણપણું આપી રહ્યા છે. એટલે એ હરિભક્ત કહે,  ‘સ્વામીજી ! હું સમજી ગયો. તમે એવું કહો છો કે મેં તો આજ્ઞામાં રહેવાનુ ચાલુ કરી દીધું છે. તું આજ્ઞામાં રહેવાનું ક્યારે ચાલું કરે છે ?’ 
+</p>
+<p>
+સ્વામીશ્રીએ કૃપા વરસાવતા તરત જ કહ્યું, ‘મને 72 વર્ષ થયા. એક સેકન્ડ પણ કોઈને જાણપણું આપવા માટે જીવ્યો નથી. મને એટલી જ ખબર છે કે મારે જીવવાનું છે. બીજા વર્તે કે ના વર્તે એ તરફ મારી નજર ક્યારેય જતી નથી.’
+</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div> <!-- vat -->
+</div> <!-- wrap -->
+</div> <!-- first -->     
+ 
+
+
+</BODY>
+
+</HTML>
+

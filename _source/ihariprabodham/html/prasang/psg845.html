@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      અમે ક્યાં એવું કર્યું છે ?
+    </div>
+    <div class="vaat_ind" id="vaat_file_845">
+      
+      <p>કલ્પેશભાઈ (કપિભાઈ) ૨૦૧૩ ના ક્રિસમસની રજાઓ દરમિયાન ભારત ગયા હતા. એમના દીકરા સ્મિતભાઈને સ્કૂલમાં રજાઓ હોવાથી ગુરુહરિ સ્વામીશ્રી અને ગુરુહરિ પ્રબોધસ્વામીજીના દર્શન-સમાગમનો લાભ મળે એ હેતુથી તેઓ હરિધામમાં જ રોકાયા હતા. હરિધામના રોકાણ દરમિયાન સ્વામીશ્રીના નજીકથી દર્શન-સ્પર્શનો ખૂબ લાભ મળતો હતો.</p><p>સાથે સાથે ગુરુહરિ પ્રબોધસ્વામીજીને દિવસ દરમિયાન નજીકથી નિહાળવાની તક મળતી. તેઓ સ્વામીશ્રીની સ્મૃતિમાં એવા ડૂબાડે, એવું હેત કરે, એવો આનંદ કરાવે કે બીજુ બધું જ ભુલાઈ જાય. જેથી કપિભાઈને કે સ્મિતભાઈને પોતાનું ગામ કે સગાસબંધીને ત્યાં જવાનું યાદ જ આવતું ન હતું.</p><p>ઉતરાયણ નજીક આવતા સંતોને ઝોળીની સેવામાં જવાનું હોવાથી કપિભાઈએ ૨-૩ દિવસ ગામડે સગા-સંબંધીને મળી આવવાનું વિચાર્યું. ગુરુહરિ પ્રબોધસ્વામીજીની આજ્ઞા લઈ તેઓ નવસારી બાજુ પોતાના મામાને ત્યાં જવા નીકળ્યા.</p><p>ત્યારે કપિભાઈએ સ્મિતભાઈને કહ્યું, “હરિધામમાં રહેવાની મજા આવતી હતી. ગુરુહરિ પ્રબોધસ્વામીજી સાથે ત્યાં રહેવાનું મળતું, બધા સંતો હોય. અહીંયા ૨-૩ દિવસ કેવી રીતે કાઢીશું?  હું ગુરુહરિ પ્રબોધસ્વામીજીને બહુ મિસ કરુ છું.”</p><p>એટલે સ્મિતભાઈએ પણ કહ્યું, &#x27;હા,I miss PrabodhSwamiji too’</p><p>એ જ સમયે કપિભાઈ પર ગુરુહરિ પ્રબોધસ્વામીજીના સારથી પાર્થભાઈનો કોલ આવ્યો કે, “અમે ગુરુહરિ પ્રબોધસ્વામીજી સાથે કોળીભરથાણા બાજુ છીએ. અષ્ટગામ બાજુ ઝોળીની સેવા માટે આવવાનું થશે.”</p><p>આટલું સાંભળીને જાણે પ્રભુએ જ અંતરની પ્રાર્થના સ્વીકારી હોય એમ કપિભાઈ અને સ્મિતભાઈ ખૂબ ખુશ થઈ ગયા. ગુરુહરિ પ્રબોધસ્વામીજી પધાર્યા પછી બપોરે ૧ વાગ્યે ગામમાં પધરામણી કરતા રસ્તામાં એક સ્કૂલ આવી.</p><p>કપિભાઈએ ગુરુહરિ પ્રબોધસ્વામીજીને નિખાલસ ભાવે કહ્યું કે, “હું ૧ થી ૪ ધોરણ આ સ્કૂલમાં ભણ્યો હતો અને પછી ઇંગ્લિશ મીડીયમ અને પછી કેનેડા આવવાનું થયું હતું.”</p><p>આટલું સાંભળીને ગુરુહરિ પ્રબોધસ્વામીજી એકદમ ભક્તિથી અને મહિમાથી એ સ્કૂલને બે હાથ જોડી, મસ્તક નમાવી પગે લાગ્યાં.</p><p>ગુરુહરિ પ્રબોધસ્વામીજીનું આ દર્શન કરીને કપિભાઈની આંખમાં આંસુ આવી ગયા અને ગુરુહરિ પ્રબોધસ્વામીજીને ભેટી પડ્યા.</p><p>કપિભાઈએ ગુરુહરિ પ્રબોધસ્વામીજીને આજીજી કરતાં રડતાં હૃદયે કહ્યું, “તમારે થોડું આવું કરવાનું હોય ? આ તો ખાલી દોસ્તીના દાવે તમને કહેતો હતો.”</p><p>ત્યારે ગુરુહરિ પ્રબોધસ્વામીજીએ મહિમાસભર હૈયે કહ્યું, “એમાં શું થઈ ગયું ? યોગીજી મહારાજ તો હરિભક્તોને દંડવત કરતા. અમે ક્યાં એવું કર્યું છે ?”</p><p>આમ, ગુરુહરિ પ્રબોધસ્વામીજીએ સંબંધના મહિમાનું અનુપમ દર્શન કરાવ્યું.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: સંબંધનો મહિમા<br/>
+      ટેગ: <br/>
+      નંબર: ૧૯૩
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

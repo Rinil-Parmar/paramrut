@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      મારામાં લખનાર તમે છો
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_543">
+      તા. ૦૦-૦૭-૨૦૨૨, પાટણ<br/>
+      <p>જુલાઈ-૨૦૨૨માં ગુરુહરિ પ્રબોધસ્વામીજી ઉત્તર ગુજરાતમાં વિચરણમાં પધાર્યા હતા.</p><p>ગુરુહરિ પાટણમાં  કુશભાઈના ઘરે બિરાજમાન હતા ત્યારે મૂળ નવસારીનાં અને કેનેડામાં રહીને અભ્યાસ કરતાં બે વિદ્યાર્થી ઓનો સારથિ પાર્થભાઈ પર વીડિયો કોલ આવ્યો.</p><p>બંને દીકરાઓએ પ્રાર્થના કરતાં કહ્યું, ‘પ્રબોધસ્વામીજી! અમે ભણીએ છીએ તો અમને વાંચતા વાંચતા પણ માન આવી જાય છે. અમને અમારી ક્રિયાયોગોનું માન આવી જાય છે. અમે સારું વાંચીએ છીએ, સારું યાદ રાખી શકીએ છીએ તેનું પણ અમને માન આવી જાય છે.’</p><p>પ્રબોધસ્વામીજી તેમની પ્રાર્થના સાંભળીને રાજી થયા. પછી કહ્યું, “આપણને પોતાના દોષનું દર્શન થાય છે તે પણ ભગવાનની આપણા પરની કૃપા છે.”</p><p>પછી કહે, “આપણે દરરોજ પ્રાર્થના કરવાની કે, હે મહારાજ ! હે સ્વામીજી! મારામાં લખનાર તમે છો, મારામાં રહીને વાંચનાર તમે છો, મારામાં જોનાર તમે છો, મારામાં રહીને સાંભળનાર તમે છો, મારામાં રહીને બોલનાર તમે છો, મારામાં રહીને ચાલનાર પણ તમે છો. મારાં શ્વાસોચ્છવાસ પણ આપ જ છો. એવું મને અંતરથી મનાવજો.”</p><p>સદ્. શ્રી નિષ્કુળાનંદસ્વામીએ ભક્તચિંતામણિમાં લખ્યું છે કે,</p><p>“જેના નિરમાની ભગવાન, તેના જનને જોયે કેમ માન.”</p><p>હે ગુરુહરિ સ્વામીજી અને ગુરુહરિ પ્રબોધસ્વામીજી! આપે અમને આટલી નાનીવયે કેવા અદ્ભુત અંતદૃષ્ટિ કરતાં, પોતાનાં દોષનું દર્શન કરતાં સમાજમાં રહેવાની સાનુકૂળતા કરી આપી છે, તો એ સમાજમાંથી દરરોજ કાંઈક સારું લઈને અમારા આત્માની યાત્રા આપના તરફ નિરંતર ચલાવતા રહીએ તેવી કૃપા કરશોજી.</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અક્ષર સૂઝ<br/>
+      ટેગ: કર્તાહર્તા, પ્રાર્થના, પ્રશ્ન ઉત્તર, માન, નિર્માનીપણું<br/>
+      નંબર: ૪૫૨
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

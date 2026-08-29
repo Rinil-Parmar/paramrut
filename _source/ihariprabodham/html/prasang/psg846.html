@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      પ.પૂ. હરિપ્રસાદ સ્વામીશ્રીનું કાર્ય
+    </div>
+    <div class="vaat_ind" id="vaat_file_846">
+      
+      <p>ગુરુહરિ હરિપ્રસાદસ્વામીશ્રીએ અનેક મુમુક્ષુઓને યોગમાં લેવા, એમનું રૂડું કરવા અને દર્શનનું સુખ આપવા દેશ-વિદેશમાં અથાગ વિચરણ કર્યું છે.</p><p>સ્વામીશ્રી પહેલી વિદેશ ધર્મયાત્રાએ ૧૯૮૫ માં યુએસએ - કેનેડાની ધરતી પર પધાર્યા ત્યારથી લઈને વર્ષ ૨૦૧૯ સુધી સતત યુએસએ  - કેનેડાના ભક્તોને પોતાના સુખમાં ઝબોળ્યા છે.</p><p>વર્ષ ૨૦૧૧ ની ધર્મયાત્રા દરમિયાન સ્વામીશ્રી ટોરોન્ટો ની ધરતી પર પધાર્યા હતા. ત્યારે હરિધામ ટોરોન્ટો મંદિરે એક સભાનું આયોજન કરેલુ. સભા બાદ સ્વામીશ્રીને વિદાય આપવા ગુરુહરિ પ્રબોધસ્વામીજી અને ઘણા યુવકો-હરિભક્તો સ્વામીશ્રીની ગાડી પાસે ઊભા હતા. સ્વામીશ્રીની વિદાય બાદ ઘણા યુવકો મંદિરના દરવાજા પાસે ઊભા રહી ગુરુહરિ પ્રબોધસ્વામીજીના દર્શન સમાગમનો લાભ લઈ રહ્યા હતા.</p><p>એક યુવકે ગુરુહરિ પ્રબોધસ્વામીજીને પ્રશ્ન પૂછયો કે સ્વામીજીએ ટોરોન્ટો પધારીને કેટલાય નવા યુવકોને દિવ્ય અનુભૂતિ કરાવી, કેટલાય યુવકોને સ્વપ્નમાં દર્શન આપ્યા, કેટલાક યુવકોના સંકલ્પો દર્શન માત્રથી જ પુરા કર્યા પણ મને સ્વામીશ્રીની કોઈ દિવ્ય અનુભૂતિ હજુ થઈ નથી, તો એવું કેમ થતું હશે ?</p><p>ત્યારે, ગુરુહરિ પ્રબોધસ્વામીજીએ તે દીકરાની મૂંઝવણ દૂર કરતા કહ્યું કે, “સ્વામીજી કોકને દિવ્ય અનુભૂતિ કરાવીને કે સંકલ્પો પુરા કરીને ભગવાનના માર્ગે ચલાવે છે, પણ તમને કોઈ પણ અનુભૂતિ કરાવ્યા વગર ભગવાનના માર્ગે ચલાવે છે. સ્વામીજીનું સામર્થ્ય માત્ર ચમત્કારિક દિવ્ય અનુભૂતિ કરાવવી તેટલું જ નથી પણ યોગમાં આવેલા ચૈતન્યને કોઈ પણ રીતે ભગવાનના માર્ગે ચલાવવો તે છે.”</p><p>આમ, ગુરુહરિ પ્રબોધસ્વામીજીએ અદ્ભુત સૂઝ આપી કે સ્વામીજીનું ધરતી પર પધાર્યાનું સાચું કાર્ય તો કેવળ યોગમાં આવેલા દરેક ચૈતન્યને સુખિયા કરવા અને ભગવાન તરફની યાત્રા કરાવવાનું છે.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: આધ્યાત્મિક સૂઝ<br/>
+      ટેગ: <br/>
+      નંબર: ૧૯૨
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

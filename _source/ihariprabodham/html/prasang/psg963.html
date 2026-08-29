@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      સંસ્કારનું જતન company થી થાય.
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_963">
+      May 27, 2024, Clifton, NJ<br/>
+      <p>સવારે ગુરુહરિ પ્રબોધસ્વામીજી કેતનભાઈ રાણાને ત્યાં પધાર્યા. કેતનભાઈ અને એમના દીકરા ભવ્યભાઈએ શ્રી ઠાકોરજીનું અને ગુરુહરિનું પૂજન કર્યું. કેતનભાઈએ ગુરુહરિને એમના દીકરા માટે પ્રાર્થના કરી, “એ ગેમ બહુ રમે છે, તો ભણવામાં ધ્યાન આપે એવી પ્રાર્થના છે.”</p><p>ગુરુહરિએ ભવ્યભાઈને કહ્યું, “આપણે ફોકસ થઈને સ્ટડી કરી લેવું છે. ગેમ લિમિટેડ રમવાની. સોશિયલ મીડિયામાં ટાઈમ નથી બગાડવો. આપણે આપણું કરિયર બનાવવું છે.”</p><p>ત્યારબાદ ગુરુહરિએ કેતનભાઈને કહ્યું, “તમે ભવ્યને શિબિરમાં મોકલજો અને જોડે તમે પણ આવજો.”</p><p>પછી કેતનભાઈએ ગુરુહરિ હરિપ્રસાદસ્વામીજીની સ્મૃતિ કરાવતા કહ્યું, “મને હરિપ્રસાદસ્વામીજીએ વર્ષો પહેલા સ્વપ્નમાં દર્શન આપેલા અને મને કીધેલું, ‘તમારે સભામાં નિયમિત આવવાનું.’”</p><p>એટલે ગુરુહરિ તરત જ બોલ્યા, “તમારે નિયમિત આવવાનું જ, તો તમારો દીકરો સચવાઈ જશે. સારી company માં મુકશો તો સચવાઈ જશે. સંસ્કારનું જતન company થી થાય. તમે નસીબવાળા છો કે તમને હરિપ્રસાદસ્વામીજીએ દર્શન આપ્યા.”</p><p>ગુરુહરિ સાથે વિતાવેલી એક પળ આખા પરિવારને પ્રભુ તરફ દોડવાની સૂઝ અને બળ આપે છે. ગુરુહરિ દરેકના મિત્ર બનીને સહુને જાગ્રત કરે છે. ગુરુહરિએ એવું ના કહ્યું કે તારે ગેમ્સ નહિ રમવાની, પણ એવું કહ્યું કે ગેમ લિમિટેડ રમવાની. યુવકને થઈ ગયું કે ગુરુહરિ મને સમજે છે, એ મારા છે.</p><p>તો સામે કેતનભાઈને સ્વામીજીની આજ્ઞા પાડવા માટે કટિબદ્ધ કર્યા. પિતા-પુત્ર બંન્નેને શિબિરમાં આવવાનું આમંત્રણ આપીને એમની સુરુચિનું પોષણ પણ કર્યું.</p><p>આમ સમગ્ર પરિવારનું જતન ગુરુહરિએ સ્વયં એમના ઘરે પધારીને કર્યું. ધન્ય હો એ ગુરુહરિની સુખી કરવાની ગરજને અને કરુણાને!</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અક્ષર જતન<br/>
+      ટેગ: યુવા પ્રવૃત્તિ, પરિવારનું જતન, સભા, સત્સંગ, સંગ, કંપની, સંસ્કાર<br/>
+      નંબર: ૬૦૦
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

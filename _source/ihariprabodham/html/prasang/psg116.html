@@ -1,0 +1,105 @@
+<html><head><title>Swaroopyog</title>
+          <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+</script>
+    
+</head>
+<body>
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	<div class="title_gu">
+        જે દાસ થઈને રહે એની ભક્તિ જ પ્રભુ સ્વીકારે
+	</div><div class="vaat_ind" id="vaat1_1">
+		
+              <p>
+                  નડિયાદના સમૈયા પછી એક હરિભગત સ્વામીજીને અનિર્દેશ મળવા ગયા. તેઓ સ્વામીજીના આસન પાસે બેઠા હતા. ઘરે જતા હતા એટલે સ્વામીજીને પ્રાર્થના કરી કે શું આજ્ઞા છે? આશીર્વાદ આપો. સ્વામીજી કહે, 'તું દાસ થયો છે પણ હવે આપણે દાસના દાસ થવાનું છે.' 
+                  <br />પછી કહ્યું,
+                  <br />
+                  દાસના દાસ થવાથી મન-બુદ્ધિ પ્રભુમાન્ય બને. <br />
+                  દાસના દાસ થવાથી મન-બુદ્ધિ પ્રભુમય બને.<br />
+                  દાસના દાસ થવાથી મન-બુદ્ધિ સરળ થઈ જાય.<br />
+                  <br />
+                  હરિભગતે તેમના મધરની વાત કરી કે મધરની આંખોનું vision જતું રહ્યું છે દેખાતું નથી એટલે કા મધરને vision આપો કાં ધામમાં લઈ જાઓ. ત્યારે સ્વામીજીએ કહ્યું, 'મધરને કહેજો કે ઘરના જેટલા સભ્યો છે એ બધાના દાસ થઈને વર્તે તો પોતે પોતાનું કામ કરી શકે એટલું vision મહારાજ પ્રગટાવી દેશે.'
+                  <br />
+                  <br />
+                  દાસત્વની યાત્રા માટેના ત્રણ સુગમ માર્ગ છે:
+                  <br />
+                  ૧. પુરૂષોત્તમ નારાયણના અપરંપાર મહિમામાં ડૂબી જવું.<br />
+                  ૨. ગુણાતીત પુરૂષના દાસત્વના પ્રસંગોમાં ડૂબી જવું.<br />
+                  ૩. પ્રસંગ બને પ્રભુને કર્તાહર્તા માને એના દાસત્વની યાત્રાનું ક્યારેય ખંડન ન થાય.<br />
+                  <br />
+                  ૨૪ કલાકની હરેક સેકન્ડ મારે આ પ્રમાણે જીવવું છે, એવો કોઈ તરવરાટ રાખીને જીવન જીવે તો પ્રભુ એની યાત્રાને પૂરી કરી નાખે.
+                  સત્સંગમાં જે દાસ થઈને રહે એની ભક્તિ જ પ્રભુ સ્વીકારે.
+                  <br />
+              </p>
+	
+
+                         <div class="chend">
+                             *****
+                         </div>
+
+</div></body></html>

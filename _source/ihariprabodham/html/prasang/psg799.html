@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+    var state1 = false
+    var state2 = false
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+<BODY>
+
+<div>
+  <div class="wrap">
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+    <div class="title_gu">
+      એટલે મૂંઝવણ આવી નથી
+    </div>
+    <div class="vaat_ind" id="vaat_file_799">
+      
+      <p>ગુરુહરિ પ્રબોધસ્વામીજી હરિધામ મંદિરમાં પાંચેય આરતીમાં ઠાકોરજીનાં દર્શન કરવા પધારતા. રૂમમાં હોય ત્યારે કથાવાર્તામાં જ ડૂબેલા હોય. સેવાના સમયે સેવામાં અચૂક હાજર હોય.</p><p>વર્ષ-ર૦૦રમાં ગુરુહરિ પ્રબોધસ્વામીજીની દીક્ષાના ૩૦ વર્ષ પૂર્ણ થતા હતા.</p><p>નવા જ સાધુ થયેલા એક સંતે હરિસ્મૃતિ પાસે ગુરુહરિ પ્રબોધસ્વામીજીને પ્રાર્થના કરતાં પૂછ્યું, ‘દીક્ષા લીધાનાં આટલા વર્ષોમાં આપને ક્યારેય મૂંઝવણ આવી છે ?’</p><p>પ્રબોધસ્વામીજી કહે, “સ્વામીજીની કૃપાથી સાધુ થયો ત્યારથી આજદિન સુધી ક્યારેય મૂંઝવણ આવી નથી.”</p><p>સાધકને મનમાં સંકલ્પ ઊઠ્યો, ‘આટલા બધા વર્ષોમાં ક્યારેય મૂંઝવણ ન આવવાનું પાછળનું શું રહસ્ય હશે?’</p><p>ત્યારે પ્રબોધસ્વામીજી જવાબ આપતાં બોલ્યા, “મને મૂંઝવણ નથી આવી એનું કારણ : (૧) હું ક્યારેય નવરો નથી રહ્યો. (૨) હું ક્યારેય કોઈનીય માથાકૂટમાં નથી પડ્યો.”</p><p>સ્વાધ્યાય :</p><p>નવરું મન ચાળાં ચૂંથ્યા કરે. ન વિચારવાનું વિચાર્યા કરે અને સાધકને મૂંઝવણમાં મૂકી દે.</p><p>ગુરુહરિએ ‘નવરા ન રહેવું’ એવો નિર્દેશ કરીને મૂંઝવણરહિત યાત્રા કરવાની જડીબુટ્ટી આપી દીધી.</p><p>પ્રાર્થના:</p><p>હે ગુરુહરિ ! અમારા સમગ્ર તંત્રને આપને ગમતાં એવા કથાવાર્તા, ભજન અને સેવામાં પ્રવૃત્ત રાખીએ એવું કરી આપશોજી.</p>
+      <div class="chend">
+        *****
+      </div>
+      વિષય: ઉચ્ચ આધ્યાત્મિક સ્થિતિ, સાધુતા<br/>
+      ટેગ: <br/>
+      નંબર: ૨૪૮
+    </div><!-- vaat_ind -->
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

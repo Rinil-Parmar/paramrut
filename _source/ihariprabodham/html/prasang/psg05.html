@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+અંતર્યામીપણે પ્રશ્ર્નોનું સમાધાન
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>વડોદરા, નિઝમપુરામાં દક્ષા કોલોનીની પાછળ સર્વોદય સોસાયટીમાં રહેતા કે.બી. પટેલ પ.પૂ. સ્વામીશ્રીના યોગમાં આવ્યા પછી બહુ અભ્યાસુ પ્રકૃતિના હોવાથી વચનામૃત વાંચી સ્વામીશ્રીને પૂછવા માટે આઠ-દશ પ્રશ્ર્નો એક કાગળ પર લખી રાખ્યા હતા. તે પ્રશ્ર્નો બીજા કોઈને ન પૂછતાં તેમણે મનોમન સ્વામીશ્રીને જ પૂછવાનું નક્કી કરી રાખ્યું હતું. તેથી એક દિવસ મિત્રો સાથે તે સોખડા મંદિરે પધાર્યાં. પ્રશ્ર્નોની ચિઠ્ઠી તેમના ગજવામાં જ હતી. પ.પૂ. સ્વામીશ્રી મંદિરે નાનકડી સભામાં ગોષ્ઠિ કરી રહ્યા હતા. એટલે તેમણે વિવેક જાળવી સભામાં બેસી ગયા ને વચ્ચે કાંઈ ન પૂછતાં ચિઠ્ઠી ગજવામાં જ મૂકી રાખી. પ.પૂ. સ્વામીશ્રીની ગોષ્ઠિ ચાલુ રહી. ગોષ્ઠિ પૂરી થતાં જ તેમની સાથે આવેલા મિત્રે તેમને કાનમાં કહ્યું, ‘હવે ચિઠ્ઠી બહાર કાઢી સ્વામીશ્રીને પ્રશ્ર્નો પૂછો.’ કે.બી. પટેલે મિત્રને કાનમાં સમજાવી દીધું, ‘હવે ચિઠ્ઠી બહાર કાઢવાની કોઈ જરૂર નથી. મારા બધા જ પ્રશ્ર્નોના જવાબ પ.પૂ. સ્વામીશ્રીએ ગોષ્ઠિ કરતાં કરતાં અંતર્યામીપણે આપી દીધા છે.’</p>
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+  
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+

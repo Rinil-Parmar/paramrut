@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<HTML lang="gu">
+<HEAD>
+  <TITLE>Hariprabodham Prasang</TITLE>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script>
+    function resizeText(multiplier) {
+      if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+    }
+
+    function invert() {
+      if (document.documentElement.classList.contains('invert_theme')) {
+        document.documentElement.classList.remove('invert_theme');
+      } else {
+        document.documentElement.classList.add('invert_theme');
+      }
+    }
+
+    var state1 = false
+    var state2 = false
+
+    function changeFont(n) {
+      if (n == 1) {
+        state2 = false;
+        if (state1 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_lohit');
+          var el1 = document.querySelector('.change_font.font_ekatra');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state1 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_lohit');
+          if (el2) el2.classList.remove('active');
+          state1 = false;
+        }
+      }
+      if (n == 2) {
+        state1 = false;
+        if (state2 === false) {
+          document.body.removeAttribute('class');
+          document.body.classList.add('font_ekatra');
+          var el1 = document.querySelector('.change_font.font_lohit');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el1) el1.classList.remove('active');
+          if (el2) el2.classList.add('active');
+          state2 = true;
+        } else {
+          document.body.removeAttribute('class');
+          var el2 = document.querySelector('.change_font.font_ekatra');
+          if (el2) el2.classList.remove('active');
+          state2 = false;
+        }
+      }
+    }
+
+    function highlight_word(search_text, id) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      var searchpara = target.innerHTML.toString();
+      var text = search_text;
+      if (text) {
+        var pattern = new RegExp(text, "ugi");
+        var new_text = searchpara.replace(pattern, "<span class='highlight'>" + text + "</span>");
+        target.innerHTML = new_text;
+      }
+    }
+  </script>
+</HEAD>
+
+<BODY>
+
+<div>
+  <div class="wrap">
+
+    <ul class="reader_tools noselect">
+      <li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+      <li><button class="change_font font_lohit" data-btn="1" onclick="changeFont(1);">અ</button></li>
+      <li><button class="change_font font_ekatra" data-btn="2" onclick="changeFont(2);">અ</button></li>
+      <li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+      <li><button class="dec_fontsize" onclick="resizeText(-1)">A-</button></li>
+    </ul>
+
+    <div class="title_gu">
+      તું મને યાદ કરતો હતો ને?
+    </div>
+
+    <div class="vaat_ind" id="vaat_file_616">
+      July 8, 2023, Columbus, OH<br/>
+      <p>ગુરુહરિ પ્રબોધસ્વામીજીના સાનિધ્યમાં કોલંબસની ધરતી પર, ૭ જુલાઈથી ૯ જુલાઈ “સુહૃદમ્ પરિવાર શિબિર” ઉજવવામાં આવી હતી. તેમાં અમેરિકા અને કેનેડાના વિધવિધ રાજ્યોના યુવકો અને પરિવારોએ શિબિરનો લાભ લીધો હતો. શિબિરમાં આવનાર દરેકને ગુરુહરિ પ્રબોધસ્વામીજીની દિવ્યતા સ્પર્શી ગઈ હતી.</p><p>એમાંના એક યુવક એટલે ઓજસભાઈ વૈષ્ણવ. તેઓ શિબિરના થોડા જ મહિનાઓ પહેલા સત્સંગના યોગમાં આવ્યા હતા. એમને digital media માં રુચિ હોવાથી videography ડીપાર્ટમેન્ટમાં સેવારત હતા.</p><p>Videography ની સેવા દરમિયાન ઓજસભાઈને ગુરુહરિનો એક પ્રસંગ સાંભળવા મળ્યો કે એક યુવકનો ગુરુહરિને મળવા માટેનો સંકલ્પ હતો, એ ગુરુહરિએ અંતર્યામીપણે પકડી એને સામે ચાલીને મળ્યા. આ પ્રસંગ સાંભળતા જ ઓજસભાઈને મનમાં વિચારની માત્ર લહેરખી પસાર થઈ કે મને પણ ગુરુહરિ આવો અનુભવ કરાવે તો કેવું સારું! પણ એના પર વધુ ધ્યાન ન આપતા એ ફરીથી સેવામાં લાગી ગયા.</p><p>છતાં અંતર્યામી અને સર્વજ્ઞ પુરુષની જાણ બહાર કોઈ વાત હોય શકે? એના પછીના જ સેશનમાં ગુરુહરિ હોલમાં પધાર્યા, ત્યારે સ્ટેજ પર જતા પહેલા સ્ટેજની બાજુમાં videography ની સેવામાં ઉભેલા ઓજસભાઈ પાસે આવ્યા અને પૂછ્યું, “તું મને યાદ કરતો હતો ને? બધું બરાબર છે?”</p><p>ગુરુહરિ સાથેની એમની આ પ્રથમ જ મુલાકાત હતી, માટે અચંભામાં પડી ગયેલા ઓજસભાઈએ કહ્યું, “હા……બધું બરાબર છે.” ગુરુહરિએ ફરી પૂછ્યું, “એમ નહિ, માનસિક રીતે પૂછુ છું!” થોડી ક્ષણો માટે એમને કાંઈ સુજ્યું નહિ અને પછી બોલ્યા, “હા, બધું બરાબર છે.”</p><p>પરંતુ હકીકતે એમને જોબ નહોતી મળતી તેની અને એમના મમ્મી-પપ્પાની, એમ બે ચિંતા હતી. તે વાત જ યાદ ના આવી. ગુરુહરિ અંતર્યામીપણે એ પણ જાણતા હોય તેમ વાત કરવાની બીજી તક આપી.</p><p>બીજા દિવસે ઓજસભાઈને ગુરુહરિને હાર અર્પણ કરવા જવાની તક મળી. ત્યારે એમના મંડળના કાર્યકર્તાએ એમના વતી ગુરુહરિને પ્રાર્થના કરી, “ઓજસભાઈને જોબ નથી મળતી.”</p><p>ગુરુહરિએ કહ્યું, “આપણે સભા રેગ્યુલર ભરવાની. આપણે પૂરેપૂરો પ્રયત્ન કરવાનો કે સભા ના ચૂકાય.”</p><p>ગુરુહરિએ અંતર્યામીપણે એમનો સંકલ્પ તો પૂરો કર્યો જ પણ સામેથી મૂંઝવણનું નિરાકરણ પણ આપ્યું.</p><p>આભાસસ્વરૂપે ઉઠેલા સંકલ્પ-વિકલ્પો અને અજાણે થયેલી પ્રાર્થનાઓ પણ ગુરુહરિની જાણ બહાર નથી!</p>
+      <div class="chend">
+        *****
+      </div>
+      
+      વિષય: અંતર્યામી<br/>
+      ટેગ: સંકલ્પ, પ્રાર્થના, મૂંઝવણ, સભા<br/>
+      નંબર: ૩૪૩
+    </div><!-- vaat_ind -->
+
+  </div><!-- wrap -->
+</div><!-- first -->
+
+</BODY>
+</HTML>

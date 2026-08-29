@@ -1,0 +1,158 @@
+﻿<!DOCTYPE HTML>
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Prasang</TITLE>   
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+	function resizeText(multiplier) {
+		if (document.body.style.fontSize == "") {
+			document.body.style.fontSize = "1.0em";
+		}
+		document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.1) + "em";
+	}
+
+	
+	function invert() {
+		if (document.documentElement.classList.contains('invert_theme')) {
+			document.documentElement.classList.remove('invert_theme');
+		}else {
+			document.documentElement.classList.add('invert_theme');
+		}
+	}
+
+	
+	var state1 = false
+	var state2 = false
+	
+	function changeFont(n) {
+
+
+		if (n == 1) {
+			state2 = false;
+			if (state1 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_lohit');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				document.querySelector('.change_font.font_lohit').classList.add('active');
+				state1 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				state1 = false;
+			}
+		}
+		if (n == 2) {
+			state1 = false;
+			if (state2 === false) {
+				document.body.removeAttribute('class');
+				document.body.classList.add('font_ekatra');
+				document.querySelector('.change_font.font_lohit').classList.remove('active');
+				document.querySelector('.change_font.font_ekatra').classList.add('active');
+				state2 = true;
+			} else {
+				document.body.removeAttribute('class');
+				document.querySelector('.change_font.font_ekatra').classList.remove('active');
+				state2 = false;
+			}
+		}
+
+	}
+
+	
+</script>
+
+
+
+
+</HEAD>   
+
+
+
+
+
+<BODY >
+
+<div> 
+<div class="wrap">
+<ul class="reader_tools noselect"> 
+			<li><button class="invert_theme_btn" onclick="invert();"><span>invert theme</span></button></li>
+			<li><button class="change_font font_lohit" data-btn='1' onclick="changeFont(1);">અ</button></li>	
+			<li><button class="change_font font_ekatra" data-btn='2' onclick="changeFont(2);">અ</button></li>	
+			<li><button class="inc_fontsize" onclick="resizeText(1)">A+</button></li>
+			<li><button class="dec_fontsize" onClick="resizeText(-1)">A-</button></li> 
+</ul>
+
+	  
+ 
+
+
+<div class="title_gu">
+શાસ્ત્રીજીમહારાજ સૌનું ધ્યાન રાખે છે. 
+
+</div>
+
+<div class="vaat_ind" id="vaat1_1">
+
+<p>
+મૂળ અક્ષરમૂર્તિ સદ્. શ્રી ગુણાતીતાનંદસ્વામીએ કહ્યું છે કે ‘સેવા થાય તો કરવી પણ અસેવા ન કરવી, તે અસેવા એટલે શું ? અવગુણ લેવા.’ શ્રીજીમહારાજે પણ દર પાંચ-દસ વચનામૃતે એક વચનામૃતમાં અભાવ ન લેવો, અવગુણ ન લેવો તે અંગેની ટકોર કરી જાગ્રત કર્યા છે. એવા જ એક યોગીજીમહારાજના પ્રસંગને નિહાળીએ.
+</p>
+<p>
+યોગીજીમહારાજના વખતમાં ગોંડલમાં એક વડીલ સાધક હતા, તેઓ આજુબાજુના ગામના ભક્તો પાસેથી શાકભાજી લાવવાની, સમૈયા-ઉત્સવ પ્રસંગે વાસણો લાવવાની....એવી વિધવિધ પ્રકારની ખૂબ સેવાભક્તિ કરતાં હતા, પણ થોડી એમની ઊતાવળી પ્રકૃતિ... બધીજ ક્રિયા ફાસ્ટ કરવા જોઈએ એટલે ઘણીવખત તેમનાંથી ન બોલવાનું બોલી જવાય, ઉપેક્ષા થઈ જાય !
+</p>
+<p>
+એકદિવસ યોગીબાપા પૂજા કરતા હતા ત્યારે એક હરિભગતે આવીને વડીલ સાધકની વાત કરી. <br/>
+એટલે બાપા તરત જ કહે, ‘ઊભા રહો... ઊભા રહો... કરો ધૂન...!’ 
+</p>
+<p>
+
+
+</p>
+<p>
+પછી બીજા એક પાર્ષદની થોડી અરુચિની વાત શરૂ કરી. <br/>
+ એટલે ફરી બાપા કહે, ‘કરો ધૂન...!’ <br/>
+પછી બાપા એક મહિમાભર્યું વાક્ય બોલ્યા, ‘એમને અક્ષરદેરીની સેવા કરવાનો ઉમંગ કેટલો બધો છે !’
+</p>
+<p>
+
+કરૂણાએ કરીને અમને(પ્રભુદાસભાઇ ને યુવકો)  કોઈ મહિમાભરી દૃષ્ટિ આપવી હશે, અમને કોઈ સૂઝ આપવી હશે જેના ફળસ્વરૂપે બાપાએ આવું દર્શન કરાવ્યું.
+</p>
+<p>
+પછી ધીમે રહીને એક જણનો હાથ પકડીને બાપા કહે, ‘ગુરુ ! શાસ્ત્રીજીમહારાજ સૌનું ધ્યાન રાખે છે. આપણે આપણું ધ્યાન રાખવું.’
+</p>
+<p>
+
+આપણે ખૂબ ખટકો રાખીને જીવીએ અને આપણા પુણ્યને નિરંતર જમા કરતા જ રહીએ ! અભાવ-ભાવફેરની બાદબાકી અને ભાગાકારી કરીએ અને પુણ્યનો જ સરવાળો ને પ્રભુના સંબંધના ગુણોનો ગુણાકાર કરીએ. 
+
+
+</p>
+
+
+
+
+
+<div class="chend"> 
+  *****
+</div>
+
+</div>
+<!--vat_ind-->    
+</div>
+<!--wrap-->      
+
+
+</div>
+<!--main-->      
+ 
+
+</BODY>
+
+</HTML>
+
