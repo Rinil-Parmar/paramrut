@@ -1,0 +1,71 @@
+[
+	 {
+		"pid": "1",
+		"img": "https://akshar.blob.core.windows.net/wall/cal01.jpg",
+		"title": "2007-01-13, After Shangar Aarti",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/01%202007-01-13%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+		"text": "Kartaharata",
+		"album": "Arati Goshti",
+		"year": "2007",
+		"pdate":"2007-01-13",
+		"category" :""
+		},
+	
+ 	{
+		"pid": "2",
+		"img": "https://akshar.blob.core.windows.net/wall/cal03.jpg",
+		"title": "2007-04-03, After Shangar Aarti",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/03%202007-04-03%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+		"text": "Swmini Vat, Bapanu Jivan",
+		"album": "Arati Goshti",
+		"year": "2007",
+		"pdate":"2007-04-03",
+		"category" :""
+	},
+		
+	 {
+		"pid": "3",
+		"img": "https://akshar.blob.core.windows.net/wall/cal03.jpg",
+		"title": "2007-11-30, After Shangar Aarti",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/07%202007-11-30%20(0730)%20Haridham%20After%20Shangar%20Aarti.mp3",
+		"text": "Aksharbrahm Ni Vat",
+		"album": "Arati Goshti",
+		"year": "2007",
+		"pdate":"2007-11-30",
+		"category" :""
+	},
+	{
+		"pid": "6",
+		"img": "https://akshar.blob.core.windows.net/wall/cal06.jpg",
+		"title": "1981-03-02, Gondal Mandire Prarthana",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/1-1981-03-02-GondalMandir-Prarthana.mp3",
+		"text": "Dwisatabdi Mahotsav Prarthana",
+		"album": "Prarthana",
+		"year": "1981",
+		"pdate":"1981-03-02",
+		"category" :""
+	},
+	{
+		"pid": "7",
+		"img": "https://akshar.blob.core.windows.net/wall/cal07.jpg",
+		"title": "1984-01-03, Dhabadungari, Prarthana",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/2-1984-01-03-Dhabadungari-Prarthana.mp3",
+		"text": "Bhagavadi",
+		"album": "Prarthana",
+		"year": "1984",
+		"pdate":"1984-01-03",
+		"category" :""
+	},
+	{
+		"pid": "8",
+		"img": "https://akshar.blob.core.windows.net/wall/cal08.jpg",
+		"title": "1998-02-17, Netrang, Prarthana",
+		"audio": "https:\/\/akshar.blob.core.windows.net\/pravachan\/3-1998-02-17-Netrang-Prarthana.MP3",
+		"text": "Aksharbrahm",
+		"album": "Prarthana",
+		"year": "1998",
+		"pdate":"1998-02-17",
+		"category" :""
+	}
+		 
+]
