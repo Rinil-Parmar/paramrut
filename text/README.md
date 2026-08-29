@@ -17,6 +17,10 @@ Every file opens with its own table of contents.
 | 📇 | **[Parisishth](parisishth.md)** | 83 entries | ગુજરાતી |
 | 🙏 | **[Ashirvad](ashirvad.md)** | 1 | ગુજરાતી |
 
+Beyond the scriptures, the **[HariPrabodham discourse & darshan catalogue](hariprabodham/README.md)**
+indexes 581 discourses — Hari Paramrut, Akshar Vani, Sant Vani, Vicharan and audio pravachan —
+with dates, places and links to watch or listen.
+
 ## How the pages are laid out
 
 Long collections are split so no single file is unwieldy — Swamini Vato by prakaran,

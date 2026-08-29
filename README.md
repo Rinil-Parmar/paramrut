@@ -26,6 +26,24 @@ real headings, footnotes, verse and emphasis — and an index in front of every 
 Start at **[text/](text/README.md)** for the full reading index. Every page opens with its own
 table of contents, so you can jump straight to a vato or a vachanamrut.
 
+## Watch & listen
+
+Alongside the scriptures, the repository carries the **[HariPrabodham discourse & darshan
+catalogue](text/hariprabodham/README.md)** — a structured index of **581 discourses** (Hari
+Paramrut, Akshar Vani, Sant Vani, Vicharan and audio pravachan) with dates, places, speakers and
+direct links to watch or listen. This is a *catalogue*, not a text corpus: the talks live on
+YouTube and the sampraday's servers; captured here is the full listing and every link, read live
+from the app's backend.
+
+| | Series | Records | Contents |
+|---|---|---:|---|
+| 🎙️ | **[Hari Paramrut](text/hariprabodham/hari-paramrut.md)** | 109 | video · date · place · audio |
+| 🔆 | **[Akshar Vani](text/hariprabodham/akshar-vani.md)** | 102 | video · date · place · audio |
+| 🌼 | **[Sant Vani](text/hariprabodham/sant-vani.md)** | 67 | video · date · place · audio |
+| 🧭 | **[Vicharan](text/hariprabodham/vicharan.md)** | 295 | dated darshan · Gujarati description · video |
+| 🎧 | **[Audio Pravachan](text/hariprabodham/audio-pravachan.md)** | 6 | Azure-hosted audio |
+| 📄 | **[Hindi Paravani](text/hariprabodham/hindi-paravani.md)** | 2 | PDF booklets |
+
 ## Query
 
 **[data/](data/README.md)** holds the same corpus as UTF-8 JSON — one flat array per collection.
@@ -39,6 +57,9 @@ table of contents, so you can jump straight to a vato or a vachanamrut.
 | [`quotes.json`](data/quotes.json) | 541 |
 | [`parisishth.json`](data/parisishth.json) | 83 |
 | [`topics.json`](data/topics.json) | 33 themes |
+
+The discourse catalogue is in **[`data/hariprabodham/`](data/hariprabodham/)** — six JSON arrays
+(581 records) plus an `index.json` manifest with fetch date and per-endpoint checksums.
 
 Field-by-field documentation is in **[data/README.md](data/README.md)**.
 
@@ -121,20 +142,33 @@ Two normalisations were applied to inconsistent source fields, both reversible:
 
 Nothing else was edited, reworded or summarised.
 
+### The discourse catalogue
+
+The [HariPrabodham catalogue](text/hariprabodham/README.md) comes from a different place. Its
+records are **not** in any app bundle — the app reads them live from a shared PHP backend,
+`dbphp.prabodhswamiji.in`, over six open (unauthenticated) endpoints. Those responses are fetched
+verbatim into [`_source/hariprabodham/`](_source/hariprabodham/), then cleaned into JSON and
+readable Markdown. The only edits are: repairing double-encoded (cp1252/UTF-8) mojibake in the
+topic lines, flattening the Vicharan date object to its date string, and un-escaping URL
+backslashes. Numeric speaker/category codes are kept as-is — the backend exposes no lookup for
+them. The audio, video and PDF stay where they are; only their links are recorded.
+
 ### Rebuilding
 
 ```bash
 tools/rebuild.sh              # regenerate data/ and text/   (~10s)
 tools/rebuild.sh --source     # also re-mirror _source/ from the APK
 python3 tools/build_nav.py    # rebuild indexes and tables of contents
+python3 tools/fetch_hariprabodham.py   # re-fetch the discourse catalogue from the backend
 ```
 
 | Path | What |
 |---|---|
 | [`tools/extract.py`](tools/extract.py) | asset bundle → `data/` + `text/` |
 | [`tools/build_nav.py`](tools/build_nav.py) | index pages and per-file tables of contents |
-| `_source/` | verbatim assets lifted from the app |
-| `tools/paramrut-5.1.apk` | the app build everything came from |
+| [`tools/fetch_hariprabodham.py`](tools/fetch_hariprabodham.py) | discourse backend → `data/hariprabodham/` + `text/hariprabodham/` |
+| `_source/` | verbatim assets lifted from the app, and verbatim backend responses |
+| `tools/paramrut-5.1.apk` | the app build the scriptures came from |
 
 ---
 
@@ -147,6 +181,11 @@ SHA-256  c14d44e77d8544306684a8b93c92e63afc2736c009b1b8075ab18dfcb9568f10
 ```
 
 Audio and video are streamed by the app and are not part of the bundle, so they are not here.
+
+The discourse catalogue was read from the HariPrabodham backend `dbphp.prabodhswamiji.in`
+(shared by `com.hari.patrika.patrika` and `org.hariprabodham.swaminivato`) on 2026-08-29.
+Per-endpoint record counts and SHA-256 checksums of the raw responses are in
+[`data/hariprabodham/index.json`](data/hariprabodham/index.json).
 
 ## A note on use
 

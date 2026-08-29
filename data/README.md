@@ -16,6 +16,20 @@ each a flat array of records.
 | [`topics.json`](topics.json) | 33 | 8 KB | `id`, `name_gu`, `name_translit`, `vat_ids` |
 | [`index.json`](index.json) | — | 1 KB | provenance and record counts for every collection |
 
+The **[HariPrabodham discourse catalogue](hariprabodham/)** is a separate set of six arrays
+(581 records) under [`hariprabodham/`](hariprabodham/), read live from the app's backend rather
+than the bundle:
+
+| File | Records | Fields |
+|---|---:|---|
+| [`hariprabodham/hari-paramrut.json`](hariprabodham/hari-paramrut.json) | 109 | `id`, `title`, `date`, `year`, `place`, `city`, `pradesh`, `topic`, `video`, `thumb`, `audio`, `speaker_code` |
+| [`hariprabodham/akshar-vani.json`](hariprabodham/akshar-vani.json) | 102 | same as above |
+| [`hariprabodham/sant-vani.json`](hariprabodham/sant-vani.json) | 67 | same as above |
+| [`hariprabodham/vicharan.json`](hariprabodham/vicharan.json) | 295 | `id`, `date`, `year`, `place`, `description`, `video` |
+| [`hariprabodham/audio-pravachan.json`](hariprabodham/audio-pravachan.json) | 6 | `id`, `title`, `date`, `year`, `album`, `text`, `audio`, `image` |
+| [`hariprabodham/hindi-paravani.json`](hariprabodham/hindi-paravani.json) | 2 | `id`, `title`, `pdf`, `image`, `category` |
+| [`hariprabodham/index.json`](hariprabodham/index.json) | — | fetch date, endpoint counts and raw-response checksums |
+
 ## Notes on the fields
 
 - **`text`** is plain text with paragraphs separated by blank lines. On Swamini Vato it is an
