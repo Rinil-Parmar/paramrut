@@ -1,0 +1,625 @@
+[
+ {
+  "slug": "abhav-avagun",
+  "en": "Abhav-Avagun",
+  "gu": "અભાવ-અવગુણ",
+  "from_prasang": [
+   9
+  ],
+  "from_vato": [
+   5
+  ]
+ },
+ {
+  "slug": "abhyas",
+  "en": "Abhyas",
+  "gu": "અભ્યાસ",
+  "from_prasang": [
+   46
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "adhyatmik-suj",
+  "en": "Adhyatmik Suj",
+  "gu": "અધ્યાત્મિક સૂઝ",
+  "from_prasang": [
+   2,
+   16
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "agya-palan",
+  "en": "Agya Palan",
+  "gu": "આજ્ઞા પાલન",
+  "from_prasang": [
+   47
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "akshar-sparsh",
+  "en": "Akshar Sparsh",
+  "gu": "અક્ષર સ્પર્શ",
+  "from_prasang": [
+   23
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "aksharbrahm",
+  "en": "Aksharbrahm",
+  "gu": "અક્ષરબ્રહ્મ",
+  "from_prasang": [
+   41
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "ambrish",
+  "en": "Ambrish",
+  "gu": "અંબરીષ",
+  "from_prasang": [
+   37
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "antardrasti",
+  "en": "Antardrasti",
+  "gu": "અંતરદ્રષ્ટિ",
+  "from_prasang": [],
+  "from_vato": [
+   7
+  ]
+ },
+ {
+  "slug": "antaryami",
+  "en": "Antaryami",
+  "gu": "અંતર્યામી",
+  "from_prasang": [
+   43
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "anusandhan",
+  "en": "Anusandhan",
+  "gu": "અનુસંધાન",
+  "from_prasang": [],
+  "from_vato": [
+   12
+  ]
+ },
+ {
+  "slug": "anuvruti-abhipray",
+  "en": "Anuvruti-Abhipray",
+  "gu": "અનુવૃત્તિ - અભિપ્રાય",
+  "from_prasang": [],
+  "from_vato": [
+   11
+  ]
+ },
+ {
+  "slug": "asharo",
+  "en": "Asharo",
+  "gu": "આશરો",
+  "from_prasang": [],
+  "from_vato": [
+   4
+  ]
+ },
+ {
+  "slug": "ashirvad",
+  "en": "Ashirvad",
+  "gu": "આશીર્વાદ",
+  "from_prasang": [
+   6,
+   20
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "atmanishtha",
+  "en": "Atmanishtha",
+  "gu": "આત્મનિષ્ઠા - બ્રહ્મરૂપ - અક્ષરરૂપ",
+  "from_prasang": [],
+  "from_vato": [
+   10
+  ]
+ },
+ {
+  "slug": "bal-pravruti",
+  "en": "Bal Pravruti",
+  "gu": "બાળ પ્રવૃતિ",
+  "from_prasang": [
+   26
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "bhagavadi",
+  "en": "Bhagavadi",
+  "gu": "ભગવદી",
+  "from_prasang": [
+   53
+  ],
+  "from_vato": [
+   14
+  ]
+ },
+ {
+  "slug": "bhagavanni-karuna",
+  "en": "Bhagavanni Karuna",
+  "gu": "ભગવાનની કરુણા",
+  "from_prasang": [],
+  "from_vato": [
+   32
+  ]
+ },
+ {
+  "slug": "bhajan",
+  "en": "Bhajan",
+  "gu": "ભજન",
+  "from_prasang": [
+   34
+  ],
+  "from_vato": [
+   9
+  ]
+ },
+ {
+  "slug": "bhaktoni-bhakti",
+  "en": "Bhaktoni Bhakti",
+  "gu": "ભક્તોની ભક્તિ",
+  "from_prasang": [
+   11,
+   28
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "dasatva",
+  "en": "Dasatva",
+  "gu": "દાસત્વ",
+  "from_prasang": [
+   24,
+   10
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "dehabhiman",
+  "en": "Dehabhiman",
+  "gu": "દેહાભિમાન",
+  "from_prasang": [],
+  "from_vato": [
+   17
+  ]
+ },
+ {
+  "slug": "divya-anubhav",
+  "en": "Divya Anubhav",
+  "gu": "દિવ્ય અનુભવ",
+  "from_prasang": [
+   3,
+   17
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "divya-darshan",
+  "en": "Divya Darshan",
+  "gu": "દિવ્ય દર્શન",
+  "from_prasang": [
+   4,
+   18
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "divyabhav-manushyabhav",
+  "en": "Divyabhav ne Manushyabhav",
+  "gu": "દિવ્યભાવ ને મનુષ્યભાવ",
+  "from_prasang": [],
+  "from_vato": [
+   8
+  ]
+ },
+ {
+  "slug": "dosh",
+  "en": "Dosh",
+  "gu": "દોષ",
+  "from_prasang": [],
+  "from_vato": [
+   16
+  ]
+ },
+ {
+  "slug": "gunatitanand-vyaktitva",
+  "en": "Gunatitanand Swaminu Vyaktitva",
+  "gu": "ગુણાતીતાનંદ સ્વામીનું વ્યક્તિત્વ",
+  "from_prasang": [],
+  "from_vato": [
+   33
+  ]
+ },
+ {
+  "slug": "gurubhakti",
+  "en": "Gurubhakti",
+  "gu": "ગુરુભક્તિ",
+  "from_prasang": [
+   12,
+   27
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "jiv-jadavo",
+  "en": "Jiv Jadavo",
+  "gu": "સાધુમાં - ભગવાદીમાં જીવ જડવો",
+  "from_prasang": [],
+  "from_vato": [
+   15
+  ]
+ },
+ {
+  "slug": "jivan-darshan",
+  "en": "Jivan Darshan",
+  "gu": "પ.પૂ. સ્વામીશ્રી જીવનદર્શન",
+  "from_prasang": [
+   1,
+   15
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "jivanbhavana",
+  "en": "Jivanbhavana",
+  "gu": "જીવનભાવના",
+  "from_prasang": [
+   8
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "kathavarta",
+  "en": "Kathavarta",
+  "gu": "કથાવાર્તા",
+  "from_prasang": [
+   36
+  ],
+  "from_vato": [
+   6
+  ]
+ },
+ {
+  "slug": "kusang",
+  "en": "Kusang",
+  "gu": "સત્સંગમાં કુસંગ",
+  "from_prasang": [],
+  "from_vato": [
+   26
+  ]
+ },
+ {
+  "slug": "mahima",
+  "en": "Mahima",
+  "gu": "મહિમા",
+  "from_prasang": [
+   14,
+   51
+  ],
+  "from_vato": [
+   2,
+   28
+  ]
+ },
+ {
+  "slug": "maya",
+  "en": "Maya",
+  "gu": "માયા",
+  "from_prasang": [],
+  "from_vato": [
+   18
+  ]
+ },
+ {
+  "slug": "moksh",
+  "en": "Moksh",
+  "gu": "મોક્ષ",
+  "from_prasang": [],
+  "from_vato": [
+   19
+  ]
+ },
+ {
+  "slug": "nimit",
+  "en": "Nimit",
+  "gu": "નિમિત",
+  "from_prasang": [
+   54
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "nirdoshbuddhi",
+  "en": "Nirdoshbuddhi",
+  "gu": "નિર્દોષબુદ્ધિ",
+  "from_prasang": [
+   40
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "nishchay",
+  "en": "Nishchay",
+  "gu": "ભગવાનના સ્વરૂપમાં નિશ્ચય",
+  "from_prasang": [],
+  "from_vato": [
+   3
+  ]
+ },
+ {
+  "slug": "nishtha",
+  "en": "Nishtha",
+  "gu": "નિષ્ઠા",
+  "from_prasang": [
+   52
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "olakhan",
+  "en": "Olakhan",
+  "gu": "ઓળખાણ",
+  "from_prasang": [
+   44
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "prabhu-bhakti",
+  "en": "Prabhu Bhakti",
+  "gu": "પ્રભુ ભક્તિ",
+  "from_prasang": [
+   22
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "pragatya",
+  "en": "Pragatya Harinu",
+  "gu": "પ્રાગટ્ય હરિનુ",
+  "from_prasang": [
+   45
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "prarthana",
+  "en": "Prarthana",
+  "gu": "પ્રાર્થના",
+  "from_prasang": [
+   49
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "raksha",
+  "en": "Raksha",
+  "gu": "રક્ષા",
+  "from_prasang": [
+   5,
+   19
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "ruchi",
+  "en": "Ruchi",
+  "gu": "રૂચિ",
+  "from_prasang": [],
+  "from_vato": [
+   24
+  ]
+ },
+ {
+  "slug": "sabha",
+  "en": "Sabha",
+  "gu": "સભા",
+  "from_prasang": [
+   35
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "sadhu-samagam",
+  "en": "Sadhu Samagam",
+  "gu": "સાધુના સમાગમની અનિવાર્યતા",
+  "from_prasang": [],
+  "from_vato": [
+   13
+  ]
+ },
+ {
+  "slug": "sadhupanu",
+  "en": "Sadhupanu",
+  "gu": "સાધુપણું",
+  "from_prasang": [],
+  "from_vato": [
+   20
+  ]
+ },
+ {
+  "slug": "sambandhno-mahima",
+  "en": "Sambandhno Mahima",
+  "gu": "સંબંધનો મહિમા",
+  "from_prasang": [
+   33
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "sang",
+  "en": "Sang",
+  "gu": "સંગ",
+  "from_prasang": [],
+  "from_vato": [
+   31
+  ]
+ },
+ {
+  "slug": "sankhyagnan",
+  "en": "Sankhyagnan",
+  "gu": "સાંખ્યજ્ઞાન",
+  "from_prasang": [],
+  "from_vato": [
+   29
+  ]
+ },
+ {
+  "slug": "saralata",
+  "en": "Saralata",
+  "gu": "સરળતા",
+  "from_prasang": [
+   39
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "sarvopari-bhagavan",
+  "en": "Sarvopari Bhagavan Swaminarayan",
+  "gu": "સર્વોપરી ભગવાન સ્વામિનારાયણ",
+  "from_prasang": [],
+  "from_vato": [
+   1
+  ]
+ },
+ {
+  "slug": "satsang",
+  "en": "Satsang",
+  "gu": "સત્સંગ",
+  "from_prasang": [],
+  "from_vato": [
+   25
+  ]
+ },
+ {
+  "slug": "satsangi",
+  "en": "Satsangina Satsangi",
+  "gu": "સત્સંગીના સત્સંગી",
+  "from_prasang": [],
+  "from_vato": [
+   27
+  ]
+ },
+ {
+  "slug": "seva",
+  "en": "Seva",
+  "gu": "સેવા",
+  "from_prasang": [
+   29
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "shraddha",
+  "en": "Shraddha",
+  "gu": "શ્રદ્ધા",
+  "from_prasang": [],
+  "from_vato": [
+   23
+  ]
+ },
+ {
+  "slug": "smruti",
+  "en": "Smruti",
+  "gu": "સ્મૃતિ",
+  "from_prasang": [
+   50
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "suhradbhav",
+  "en": "Suhradbhav",
+  "gu": "સુહૃદભાવ",
+  "from_prasang": [
+   13,
+   32
+  ],
+  "from_vato": [
+   21
+  ]
+ },
+ {
+  "slug": "swadharm",
+  "en": "Swadharm",
+  "gu": "સ્વધર્મ",
+  "from_prasang": [
+   38
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "swami-sevak-bhav",
+  "en": "Swami Sevak Bhav",
+  "gu": "સ્વામી સેવક ભાવ",
+  "from_prasang": [
+   30
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "swamini-vato",
+  "en": "Swamini Vato",
+  "gu": "સ્વામીની વાતો",
+  "from_prasang": [
+   31
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "swarupnishtha",
+  "en": "Swarupnishtha",
+  "gu": "સ્વરૂપનિષ્ઠા",
+  "from_prasang": [
+   7,
+   21
+  ],
+  "from_vato": [
+   22
+  ]
+ },
+ {
+  "slug": "upasana",
+  "en": "Upasana",
+  "gu": "ઉપાસના",
+  "from_prasang": [
+   42
+  ],
+  "from_vato": [
+   30
+  ]
+ },
+ {
+  "slug": "vishvas",
+  "en": "Vishvas",
+  "gu": "વિશ્વાસ",
+  "from_prasang": [
+   48
+  ],
+  "from_vato": []
+ },
+ {
+  "slug": "yuva-pravruti",
+  "en": "Yuva Pravruti",
+  "gu": "યુવા પ્રવૃતિ",
+  "from_prasang": [
+   25
+  ],
+  "from_vato": []
+ }
+]
