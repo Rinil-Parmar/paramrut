@@ -21,11 +21,13 @@ headings, footnotes and verse, and an index in front of every page.
 | 📖 | **[Swamini Vato](swamini-vato/README.md)** | 3,825 vato · 16 prakaran | ગુજરાતી |
 | 🪔 | **[Vachanamrut](vachanamrut/README.md)** | 274 vachanamrut · 12 sections | ગુજરાતી |
 | 📿 | **[Prasang](prasang/README.md)** | 965 incident-stories · 54 themes | ગુજરાતી |
+| 💠 | **[Ambrish Upnishad](ambrish-upnishad/README.md)** | 423 passages · 15 prakaran | ગુજરાતી |
+| 💎 | **[Brahm Ratna](brahm-ratna.md)** | 100 curated pravachan · full transcript | ગુજરાતી |
 | 🎼 | **[Kirtan](kirtan/README.md)** | 514 kirtan · shlok · aarti | ગુજરાતી |
 | 🗣️ | **[Pravachan Transcripts](pravachan/README.md)** | 232 daily discourses · 7 years | ગુજરાતી |
 | 💬 | **[Guruhari Paravani](quotes.md)** | 541 quotes | ગુજરાતી |
 | 🧭 | **[Vicharan](vicharan.md)** | 295 dated darshan | ગુજરાતી |
-| 📝 | **[Pravachan Notes](pravachan-notes.md)** | 246 subject / prasang / reference notes | ગુજરાતી |
+| 📝 | **[Hari Amrut](pravachan-notes.md)** | 246 subject / prasang / reference notes | ગુજરાતી |
 | 🎥 | **[Discourse Catalogue](discourses/README.md)** | 2,263 discourses · 28 series | text + YouTube links |
 
 Every page opens with its own table of contents, so you can jump straight to a vato, a prasang or
@@ -41,6 +43,8 @@ flat array per collection, plus an `index.json` manifest.
 | [`swamini-vato.json`](../../data/ihariprabodham/swamini-vato.json) | 3,825 |
 | [`vachanamrut.json`](../../data/ihariprabodham/vachanamrut.json) | 274 |
 | [`prasang.json`](../../data/ihariprabodham/prasang.json) | 965 |
+| [`ambrish-upnishad.json`](../../data/ihariprabodham/ambrish-upnishad.json) | 423 |
+| [`brahm-ratna.json`](../../data/ihariprabodham/brahm-ratna.json) | 100 |
 | [`kirtan.json`](../../data/ihariprabodham/kirtan.json) | 514 |
 | [`pravachan-transcripts.json`](../../data/ihariprabodham/pravachan-transcripts.json) | 232 |
 | [`quotes.json`](../../data/ihariprabodham/quotes.json) | 541 |
