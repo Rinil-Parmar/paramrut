@@ -597,8 +597,104 @@ def do_pravachan_notes():
     return len(data)
 
 
+# ── source: Brahm Ratna (curated pravachan collection) ───────────────────────
+def do_brahmratna(refetch=False):
+    """A curated granth: 100 pravachan of Guruhari Prabodhjivan Swamiji, hand-picked on
+    the site. Metadata is embedded in the web app (mirrored to _source/…/brahmratna.json);
+    the full transcript of each is the reader page under /data/paramrut/."""
+    recs = load("brahmratna.json")
+    files = [r["prvfile"] for r in recs]
+    pages = fetch_html_many("paramrut", files, f"{SITE}/data/paramrut", refetch)
+    data, entries = [], []
+    for i, r in enumerate(recs, 1):
+        f = r["prvfile"]
+        title, body = html_body(pages.get(f, ""))
+        rec = {"seq": i, "id": r.get("prvid"), "title": (r.get("prvtitle") or "").strip() or None,
+               "date": r.get("prvdate"), "year": r.get("prvyear"),
+               "place": (r.get("prvplace") or "").strip() or None,
+               "info": (r.get("prvinfo") or "").strip() or None,
+               "video": (r.get("prvvideourl") or "").strip() or None,
+               "file": f, "text": body}
+        data.append(rec)
+        head = " · ".join(x for x in [r.get("prvdate"), rec["title"]] if x) or f"#{rec['id']}"
+        lines = []
+        meta = " · ".join(x for x in [rec["place"]] if x)
+        if meta:
+            lines += [f"_{meta}_", ""]
+        if rec["info"]:
+            lines += [rec["info"], ""]
+        lines.append(rec["text"] or "_(transcript unavailable)_")
+        if rec["video"]:
+            lines += ["", f"▶ [Watch on YouTube]({rec['video']})"]
+        entries.append((head, lines))
+    wj(DATA / "brahm-ratna.json", data)
+    sub = (f"*Brahm Ratna — {len(data)} curated pravachan of Guruhari Prabodhjivan Swamiji, "
+           f"with full transcript and links.*")
+    (TEXT / "brahm-ratna.md").write_text(
+        build_page(CRUMB_ROOT, "Brahm Ratna", sub, entries), encoding="utf-8")
+    print(f"  brahm-ratna: {len(data)} ({sum(1 for r in data if r['text'])} with transcript)")
+    return len(data)
+
+
+# ── source: Ambrish Upnishad ─────────────────────────────────────────────────
+def _fix_nl(s):
+    if not s:
+        return s
+    return re.sub(r"\\+n", "\n", s).replace("\\", "").strip()
+
+
+def do_ambrish():
+    """Ambrish Upnishad — a granth of Guruhari Hariprasad Swamishri's discourses, full
+    text embedded in the web app (mirrored to _source/…/ambrishupnishad.json), grouped
+    into prakaran (AU1-YYYY-NN)."""
+    recs = load("ambrishupnishad.json")
+    by_p = collections.OrderedDict()
+    data = []
+    for r in recs:
+        pk = r.get("prakaran") or "?"
+        rec = {"srno": r.get("srno"), "prakaran": pk,
+               "title": _fix_nl(r.get("title")), "subtitle": _fix_nl(r.get("subtitle")),
+               "date_gu": _fix_nl(r.get("gujdate")), "date_en": r.get("engdate"),
+               "content": _fix_nl(r.get("content")), "desc": _fix_nl(r.get("desc")),
+               "tags": [t.strip() for t in (r.get("tags") or "").split(",") if t.strip()],
+               "year": r.get("year"), "file": r.get("filename")}
+        data.append(rec); by_p.setdefault(pk, []).append(rec)
+    wj(DATA / "ambrish-upnishad.json", data)
+    d = TEXT / "ambrish-upnishad"; d.mkdir(parents=True, exist_ok=True)
+    idx = [CRUMB_ROOT, "", "# Ambrish Upnishad", "",
+           f"*Ambrish Upnishad — {len(data)} discourse-passages of Guruhari Hariprasad "
+           f"Swamishri, in {len(by_p)} prakaran.*", "", "| Prakaran | Passages | |", "|---|---:|---|"]
+    for pk, grp in by_p.items():
+        slug = pk.lower()
+        desc = (grp[0]["desc"] or "").split("\n")
+        label = desc[-1] if desc else pk
+        idx.append(f"| [{pk}]({slug}.md) | {len(grp)} | {label} |")
+        entries = []
+        for rec in grp:
+            head = f"{rec['srno']}. {rec['title']}" if rec["title"] else f"#{rec['srno']}"
+            lines = []
+            meta = " · ".join(x for x in [rec["date_gu"], (rec["subtitle"] or '').replace('\n', ' — ')] if x)
+            if meta:
+                lines += [f"_{meta}_", ""]
+            # content: numbered items separated by newlines → paragraphs
+            body = "\n\n".join(p.strip() for p in (rec["content"] or "").split("\n") if p.strip())
+            lines.append(body or "_(text unavailable)_")
+            if rec["tags"]:
+                lines += ["", "_" + " · ".join(rec["tags"]) + "_"]
+            entries.append((head, lines))
+        crumb = "[← iHariPrabodham](../../README.md) · [Ambrish Upnishad](README.md)"
+        (d / f"{slug}.md").write_text(
+            build_page(crumb, f"Ambrish Upnishad — {pk}", f"_{len(entries)} passages_", entries),
+            encoding="utf-8")
+    (d / "README.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
+    print(f"  ambrish-upnishad: {len(data)} across {len(by_p)} prakaran")
+    return len(data)
+
+
 # ── main ─────────────────────────────────────────────────────────────────────
 JOBS = collections.OrderedDict([
+    ("brahm-ratna", do_brahmratna),
+    ("ambrish-upnishad", do_ambrish),
     ("quotes", do_quotes), ("vato", do_swamini_vato), ("vachan", do_vachanamrut),
     ("prasang", do_prasang), ("kirtan", do_kirtan), ("transcripts", do_transcripts),
     ("discourses", do_discourses), ("vicharan", do_vicharan),
@@ -617,7 +713,7 @@ def main():
     counts = {}
     for j in run:
         fn = JOBS[j]
-        counts[j] = fn(args.refetch_html) if j in ("prasang", "kirtan", "transcripts") else fn()
+        counts[j] = fn(args.refetch_html) if j in ("prasang", "kirtan", "transcripts", "brahm-ratna") else fn()
     # manifest
     man = {"source": {"site": SITE, "fetched": date.today().isoformat()},
            "counts": counts, "total": sum(counts.values())}
