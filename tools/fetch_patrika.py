@@ -13,7 +13,7 @@ URLs they list — no URL guessing.
 Categories map to Firestore collections; unknown ones are probed from a fixed
 content-collection candidate list and skipped if empty. Audio pravachan is ignored.
 """
-import argparse, hashlib, json, re, sys, urllib.request
+import argparse, hashlib, json, re, sys, urllib.request, urllib.parse
 from datetime import date, datetime
 from pathlib import Path
 
@@ -92,13 +92,18 @@ def clean_pdf_url(u):
     return u.replace("http://", "https://")
 
 
-def fname(cat, rec, fm):
+def fname(cat, rec, fm, url):
     d = rec.get(fm["date"])
     dt = None
     if d:
         m = re.match(r"(\d{4}-\d{2}-\d{2})", str(d))
         dt = m.group(1) if m else None
-    stem = dt or f"{cat}-{rec.get(fm['id'], 'x')}"
+    if cat == "akshardhara":                       # one issue per month → date is unique
+        stem = dt or f"{cat}-{rec.get(fm['id'], 'x')}"
+    else:                                           # multiple per date → use source filename (unique)
+        base = urllib.parse.unquote(url.rsplit("/", 1)[-1]).rsplit(".", 1)[0]
+        base = re.sub(r"[^0-9A-Za-z._-]", "_", base) or f"{cat}-{rec.get(fm['id'], 'x')}"
+        stem = f"{dt}-{base}" if dt else base
     return dt, f"{stem}.pdf"
 
 
@@ -133,7 +138,7 @@ def main():
             url = clean_pdf_url(r.get(fm["pdf"]))
             if not url:
                 continue
-            dt, fn = fname(cat, r, fm)
+            dt, fn = fname(cat, r, fm, url)
             year = (dt or "")[:4] or "undated"
             relpath = f"pdf/{cat}/{year}/{fn}" if cat in ("paravani",) else f"pdf/{cat}/{fn}"
             rec = {"id": r.get(fm["id"]), "date": dt, "title": r.get(fm.get("title")),
