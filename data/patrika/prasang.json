@@ -1,0 +1,102 @@
+[
+ {
+  "id": 1,
+  "date": "2022-11-12",
+  "title": "Prasang 1",
+  "pdf_url": "https://akshar.blob.core.windows.net/prasang/A01_gunatitanandswami.pdf",
+  "path": "pdf/prasang/2022-11-12.pdf",
+  "subject": "Prasang",
+  "detail": "Gunatitanand Swami",
+  "sha256": "9e7a0a5b7042fe0d995f970625a0b51f7492511375e9f9387f2deb7842da6ab7"
+ },
+ {
+  "id": 34,
+  "date": "2023-05-27",
+  "title": "Bhavya Swarup Tu",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A35-OhohoBhavyaSwaroopTu.pdf",
+  "path": "pdf/prasang/2023-05-27.pdf",
+  "subject": "Prasang",
+  "detail": "Gunatit Parmpara",
+  "sha256": "ed10603e00860308c4b895d0637cf3c3deeca310e858f4633b80793cd53b3db4"
+ },
+ {
+  "id": 35,
+  "date": "2023-05-27",
+  "title": "Anchintavyu Sukh",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A36-AapyuAnchintvyuSukh.pdf",
+  "path": "pdf/prasang/2023-05-27.pdf",
+  "subject": "Prasang",
+  "detail": "HDH Hariprasad Swamiji",
+  "sha256": "ed10603e00860308c4b895d0637cf3c3deeca310e858f4633b80793cd53b3db4"
+ },
+ {
+  "id": 36,
+  "date": "2023-05-27",
+  "title": "Bhagya Jagya Re",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A37-BhagyaJagyaRe.pdf",
+  "path": "pdf/prasang/2023-05-27.pdf",
+  "subject": "Prasang",
+  "detail": "Gunatit Parampara",
+  "sha256": "ed10603e00860308c4b895d0637cf3c3deeca310e858f4633b80793cd53b3db4"
+ },
+ {
+  "id": 52,
+  "date": "2023-08-27",
+  "title": "Sant Chhe Sukhnu Dham",
+  "pdf_url": "https://akshar.blob.core.windows.net/prasang/A52-AksharSparsh.pdf",
+  "path": "pdf/prasang/2023-08-27.pdf",
+  "subject": "Guruhari",
+  "detail": "Sant Chhe Sukhnu Dham",
+  "sha256": "607808ad711cf19d8da79814742b5826ed950d5e049336d4e630da79fa046960"
+ },
+ {
+  "id": 37,
+  "date": "2023-09-06",
+  "title": "Ape Akshar Sukh Apar",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A38-ApeAksharSukhApar.pdf",
+  "path": "pdf/prasang/2023-09-06.pdf",
+  "subject": "Prasang",
+  "detail": "Prabodh Swamiji, Bhakti Utsav 2023 Nimite",
+  "sha256": "2070cf574c37184b0e3543faca396735aaf61f6c60fb0356c01335b504cc8ac6"
+ },
+ {
+  "id": 38,
+  "date": "2023-09-08",
+  "title": "Eva Sant Harine Pyara Re",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A39-EvaSantHariNePyaraRe.pdf",
+  "path": "pdf/prasang/2023-09-08.pdf",
+  "subject": "Prasang",
+  "detail": "Prabodh Swamiji, PragatyaDin Nimite, 2023, Surat",
+  "sha256": "c40cd166bfe9675083c1ba36813b2677ce5f063a614174b264e6b0a0a2441efe"
+ },
+ {
+  "id": 49,
+  "date": "2025-01-30",
+  "title": "Rakhe Mane Koi Olakhe",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A50-RakheManeKoiOlakhe.pdf",
+  "path": "pdf/prasang/2025-01-30.pdf",
+  "subject": "Book",
+  "detail": "Rakhe Mane Koi Olakhe",
+  "sha256": "e023516d4d0ca69e0ab1c3221185d4f164e9daf9e5b029ae48e3426b99513a33"
+ },
+ {
+  "id": 50,
+  "date": "2025-01-30",
+  "title": "Vhala Tari Smruti Na Sahare",
+  "pdf_url": "https://hariprabodham.org.in/prasang/A51-2023-USA-VTSH.pdf",
+  "path": "pdf/prasang/2025-01-30.pdf",
+  "subject": "Book",
+  "detail": "Prabodh Swamiji, VTSH 2023",
+  "sha256": "e023516d4d0ca69e0ab1c3221185d4f164e9daf9e5b029ae48e3426b99513a33"
+ },
+ {
+  "id": 53,
+  "date": "2025-12-12",
+  "title": "Vhala Tari Smruti Na Sahare 2024",
+  "pdf_url": "https://akshar.blob.core.windows.net/prasang/A53-2024-USA-VTSH.pdf",
+  "path": "pdf/prasang/2025-12-12.pdf",
+  "subject": "Prabodh Swamiji",
+  "detail": "Vhala Tari Smruti Na Sahare 2024",
+  "sha256": "905c71fbd6c91804e41c09ba490502e623c44c1d07a86bdbbbce9741979ed843"
+ }
+]

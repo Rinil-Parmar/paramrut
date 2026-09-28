@@ -1,0 +1,354 @@
+[
+ {
+  "id": 1,
+  "date": "2023-02-13",
+  "title": "2023-02-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-02-01.pdf",
+  "path": "pdf/akshardhara/2023-02-13.pdf",
+  "sha256": "9ac1e00fc8829800ba7ce8ef909489f0335df68c3f7407938b3ade5a26d95ac6"
+ },
+ {
+  "id": 2,
+  "date": "2023-03-12",
+  "title": "2023-03-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-03-01.pdf",
+  "path": "pdf/akshardhara/2023-03-12.pdf",
+  "sha256": "c357c39ad209a25601b8091ebafb140baeea002cf1b98687a73e9c42baf10b8f"
+ },
+ {
+  "id": 3,
+  "date": "2023-04-04",
+  "title": "2023-04-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-04-01.pdf",
+  "path": "pdf/akshardhara/2023-04-04.pdf",
+  "sha256": "2b735be009e189ed71e437aa6e28a8786d2658746bac8e6e8290adb593d4a336"
+ },
+ {
+  "id": 4,
+  "date": "2023-05-01",
+  "title": "2023-05-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-05-01.pdf",
+  "path": "pdf/akshardhara/2023-05-01.pdf",
+  "sha256": "b55f24279481a2de92d7ba74c7b4122cf30f34d3b25709c27104ce647f22c78e"
+ },
+ {
+  "id": 5,
+  "date": "2023-06-06",
+  "title": "2023-06-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-06-01.pdf",
+  "path": "pdf/akshardhara/2023-06-06.pdf",
+  "sha256": "8be2e0b9cc396107d69150d6b0749929eaf634e9b1b70dd7659db5e5d3eadf86"
+ },
+ {
+  "id": 6,
+  "date": "2023-06-27",
+  "title": "2023-07-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-07-01-B.pdf",
+  "path": "pdf/akshardhara/2023-06-27.pdf",
+  "sha256": "66bad3883a252b1a0aca5e310d2e5650d0b9a9f4b186d993ce03566e638e88b4"
+ },
+ {
+  "id": 7,
+  "date": "2023-07-29",
+  "title": "2023-08-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-08-01-A.pdf",
+  "path": "pdf/akshardhara/2023-07-29.pdf",
+  "sha256": "1ec8586d82e7aaca7de5b63492e360a14d43f250b004684be8078b06aff20611"
+ },
+ {
+  "id": 8,
+  "date": "2023-09-01",
+  "title": "2023-09-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-09-01.pdf",
+  "path": "pdf/akshardhara/2023-09-01.pdf",
+  "sha256": "8eb1ad6df33c44555a537e8b69466929caf89ec8b1c2914d7a5fdf563c1384a6"
+ },
+ {
+  "id": 9,
+  "date": "2023-10-07",
+  "title": "2023-10-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-10-01.pdf",
+  "path": "pdf/akshardhara/2023-10-07.pdf",
+  "sha256": "a5496c6d219b0539b7511d29b6c049d0c034a57d8db5062d8e2c76aad76b69f1"
+ },
+ {
+  "id": 10,
+  "date": "2023-11-05",
+  "title": "2023-11-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-11-01.pdf",
+  "path": "pdf/akshardhara/2023-11-05.pdf",
+  "sha256": "45d95a5969a8f43e329c10ee46cffcb4cebbcfa6ba8d92201df7e4de4bbb4a79"
+ },
+ {
+  "id": 11,
+  "date": "2023-12-05",
+  "title": "2023-12-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2023-12-01.pdf",
+  "path": "pdf/akshardhara/2023-12-05.pdf",
+  "sha256": "b41ce0d7642f32605dcc9f77c5bf7db7f902db837c3fda797cd1f8ed69581258"
+ },
+ {
+  "id": 12,
+  "date": "2024-01-04",
+  "title": "2024-01-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-01-01.pdf",
+  "path": "pdf/akshardhara/2024-01-04.pdf",
+  "sha256": "d1af89bde5c1979bc1440f604cccbb9cb49f1b25e697b77d4cfc226290bd0af2"
+ },
+ {
+  "id": 13,
+  "date": "2024-02-03",
+  "title": "2024-02-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-02-01.pdf",
+  "path": "pdf/akshardhara/2024-02-03.pdf",
+  "sha256": "c2b18eb49e5cbb4fedbdea59b5d3be94676fcfbcfbed4f45ff8d87a1d5c767fe"
+ },
+ {
+  "id": 14,
+  "date": "2024-03-03",
+  "title": "2024-03-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-03-01.pdf",
+  "path": "pdf/akshardhara/2024-03-03.pdf",
+  "sha256": "db7012f53616eb57a055a25f7ef2044d19d98941fddb0cd0306f6d3dfac3d0ae"
+ },
+ {
+  "id": 15,
+  "date": "2024-04-04",
+  "title": "2024-04-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-04-01.pdf",
+  "path": "pdf/akshardhara/2024-04-04.pdf",
+  "sha256": "d89c3c37bbfb97f970b5f9a1b80954210b6eb777533564d83ed4c3429ada152c"
+ },
+ {
+  "id": 16,
+  "date": "2024-05-04",
+  "title": "2024-05-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-05-01.pdf",
+  "path": "pdf/akshardhara/2024-05-04.pdf",
+  "sha256": "a0480981ba0ef9638d84b4174bb3ac59e2a696553147e36d8d6ebd20112d0029"
+ },
+ {
+  "id": 17,
+  "date": "2024-06-01",
+  "title": "2024-06-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-06-01.pdf",
+  "path": "pdf/akshardhara/2024-06-01.pdf",
+  "sha256": "da255be9a92f188b76aca2f912cd3a26745b6b23ae48efc963b97cdb20270822"
+ },
+ {
+  "id": 18,
+  "date": "2024-07-01",
+  "title": "2024-07-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-07-01-A.pdf",
+  "path": "pdf/akshardhara/2024-07-01.pdf",
+  "sha256": "85e5e6effc1f82b650c338ec784731247117d3e3a556bd2a32027a8a2416be7e"
+ },
+ {
+  "id": 15,
+  "date": "2024-07-31",
+  "title": "2024-08-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-08-01.pdf",
+  "path": "pdf/akshardhara/2024-07-31.pdf",
+  "sha256": "6ccb05738b9b512598a06bc5dbf01e8c1981722e2ddd64c1fe64e735df5bccd5"
+ },
+ {
+  "id": 20,
+  "date": "2024-09-01",
+  "title": "2024-09-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-09-01.pdf",
+  "path": "pdf/akshardhara/2024-09-01.pdf",
+  "sha256": "0d43f46a5392918738ad4df43830547aee8d8c63fbe32181bb87804df8195594"
+ },
+ {
+  "id": 21,
+  "date": "2024-10-02",
+  "title": "2024-10-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-10-01.pdf",
+  "path": "pdf/akshardhara/2024-10-02.pdf",
+  "sha256": "fe00ce9fbdc445597f7c10ba148361a94e86996f6740ed78446a4f61e4a622cb"
+ },
+ {
+  "id": 22,
+  "date": "2024-10-31",
+  "title": "2024-11-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-11-01.pdf",
+  "path": "pdf/akshardhara/2024-10-31.pdf",
+  "sha256": "c001ab66cb6b672c7e2fdacafee69c7a7f0992b79ca834d13bece840413e0c68"
+ },
+ {
+  "id": 23,
+  "date": "2024-12-02",
+  "title": "2024-12-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2024-12-01-A.pdf",
+  "path": "pdf/akshardhara/2024-12-02.pdf",
+  "sha256": "2e69bf302befff1b001c44844799c216551d4d02820ce012018cb1cd418e8a73"
+ },
+ {
+  "id": 24,
+  "date": "2025-01-02",
+  "title": "2025-01-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-01-01.pdf",
+  "path": "pdf/akshardhara/2025-01-02.pdf",
+  "sha256": "f621af9b8003c6ed471797559383e7e107c0c6524fbf8df7c8cc952563f3f55c"
+ },
+ {
+  "id": 25,
+  "date": "2025-01-31",
+  "title": "2025-02-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-02-01.pdf",
+  "path": "pdf/akshardhara/2025-01-31.pdf",
+  "sha256": "84832cf45f2754fd7c2cb447fe79416bd1e0ae004f3350aafdcbf1878d3858df"
+ },
+ {
+  "id": 26,
+  "date": "2025-03-03",
+  "title": "2025-03-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-03-01.pdf",
+  "path": "pdf/akshardhara/2025-03-03.pdf",
+  "sha256": "75132685253b38f02916e02b056b7d76e2a5ea6fd49922e46d0c3ea54634231b"
+ },
+ {
+  "id": 27,
+  "date": "2025-04-02",
+  "title": "2025-04-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-04-01.pdf",
+  "path": "pdf/akshardhara/2025-04-02.pdf",
+  "sha256": "b773aff93406631f0bc1328febc3b09ae759236586bd57a27371febf56bd05f3"
+ },
+ {
+  "id": 28,
+  "date": "2025-05-02",
+  "title": "2025-05-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-05-01.pdf",
+  "path": "pdf/akshardhara/2025-05-02.pdf",
+  "sha256": "7c57c63dd35a7b952fd7ab2a646f5004e24750bad2019b1ba63372a447107328"
+ },
+ {
+  "id": 29,
+  "date": "2025-05-31",
+  "title": "2025-06-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-06-01.pdf",
+  "path": "pdf/akshardhara/2025-05-31.pdf",
+  "sha256": "e2669bee229bbc2cb285859d76ea89d89a905db3e95b0d2e0158815103fe224c"
+ },
+ {
+  "id": 30,
+  "date": "2025-07-01",
+  "title": "2025-07-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-07-01.pdf",
+  "path": "pdf/akshardhara/2025-07-01.pdf",
+  "sha256": "0491f890b55043eda777c4c8f3b247bd91afd9ae538730d98b84855c4d1a6dd7"
+ },
+ {
+  "id": 31,
+  "date": "2025-08-01",
+  "title": "2025-08-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-08-01.pdf",
+  "path": "pdf/akshardhara/2025-08-01.pdf",
+  "sha256": "3eb5b0b77dd3f7e6bb61c4acb9cde05e45adc1bf65bc8ca2c08f44f826a11895"
+ },
+ {
+  "id": 32,
+  "date": "2025-08-31",
+  "title": "2025-09-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-09-01.pdf",
+  "path": "pdf/akshardhara/2025-08-31.pdf",
+  "sha256": "181f25adfb6513f6a4e2be30f9fbf4736171d3663f74a573292d2dc39f0c5ed6"
+ },
+ {
+  "id": 33,
+  "date": "2025-10-10",
+  "title": "2025-10-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-10-01.pdf",
+  "path": "pdf/akshardhara/2025-10-10.pdf",
+  "sha256": "7cd9e9528871318e53b702aa621f82971fbb5edc8ac1a023cc1d34a7586044ae"
+ },
+ {
+  "id": 34,
+  "date": "2025-11-09",
+  "title": "2025-11-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-11-01.pdf",
+  "path": "pdf/akshardhara/2025-11-09.pdf",
+  "sha256": "eaa5d1959c27226d22027e56e462339763b0d0641819ad98f6665d5debb448c5"
+ },
+ {
+  "id": 35,
+  "date": "2025-12-03",
+  "title": "2025-12-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2025-12-01-A.pdf",
+  "path": "pdf/akshardhara/2025-12-03.pdf",
+  "sha256": "5147081791a302661d37fa1b8050005dcd55c69ef6adcb5f0007730b07cbe885"
+ },
+ {
+  "id": 36,
+  "date": "2026-01-01",
+  "title": "2026-01-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-01-01.pdf",
+  "path": "pdf/akshardhara/2026-01-01.pdf",
+  "sha256": "8666db6dc9a23cc2d592957bca681a3c2b07f17b94ead4db2303ea852ea0117a"
+ },
+ {
+  "id": 37,
+  "date": "2026-02-03",
+  "title": "2026-02-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-02-01-A.pdf",
+  "path": "pdf/akshardhara/2026-02-03.pdf",
+  "sha256": "1af37846daaa9a31adfb0a55b64f28da0a20beabf6716e5b98f23baedb37d134"
+ },
+ {
+  "id": 41,
+  "date": "2026-03-01",
+  "title": "2026-03-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-03-01.pdf",
+  "path": "pdf/akshardhara/2026-03-01.pdf",
+  "sha256": "97ce6c1ae5b9fd2a68ed8ee96df40e7ff576a211a1d0c872505cabb823c563c5"
+ },
+ {
+  "id": 42,
+  "date": "2026-04-01",
+  "title": "2026-04-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-04-01.pdf",
+  "path": "pdf/akshardhara/2026-04-01.pdf",
+  "sha256": "93a2b6200620a7b351e711026f57d2a24be70b4698c30a7ae5912752fa81b31c"
+ },
+ {
+  "id": 41,
+  "date": "2026-04-30",
+  "title": "2026-05-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-05-01-A.pdf",
+  "path": "pdf/akshardhara/2026-04-30.pdf",
+  "sha256": "e49aaa4cc574d20d05927b67b662fef64497980873e6518a4d5fc5085589f9bc"
+ },
+ {
+  "id": 43,
+  "date": "2026-06-01",
+  "title": "2026-06-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-06-01.pdf",
+  "path": "pdf/akshardhara/2026-06-01.pdf",
+  "sha256": "3a8da24ff4e522d490c2e8944ff55d7caa49e4491b9a30036dedc554ec823d77"
+ },
+ {
+  "id": 44,
+  "date": "2026-07-01",
+  "title": "2026-07-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-07-01.pdf",
+  "path": "pdf/akshardhara/2026-07-01.pdf",
+  "sha256": "09010e20ad9670939b262ae15e455a983f71abca929ce78c233ad558ee351859"
+ },
+ {
+  "id": 45,
+  "date": "2026-08-01",
+  "title": "2026-08-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-08-01-A.pdf",
+  "path": "pdf/akshardhara/2026-08-01.pdf",
+  "sha256": "2ae240328aea937a1149c67424ee412510eca697cb07d23aed316d210999c4bc"
+ },
+ {
+  "id": 46,
+  "date": "2026-09-01",
+  "title": "2026-09-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-09-01.pdf",
+  "path": "pdf/akshardhara/2026-09-01.pdf",
+  "sha256": "7f0e2f1965d45db5f5c620489917065fefe42ef4d4af19aeaf27ed188f9623eb"
+ }
+]

@@ -5,3 +5,6 @@ __pycache__/
 .DS_Store
 tools/probe/
 tools/pm/
+
+# Patrika PDFs kept local (large; re-fetch with tools/fetch_patrika.py)
+pdf/

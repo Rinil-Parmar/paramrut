@@ -1,0 +1,22 @@
+{
+ "source": {
+  "project": "patrika-b00e1",
+  "firestore": "https://firestore.googleapis.com/v1/projects/patrika-b00e1/databases/(default)/documents",
+  "fetched": "2026-09-27"
+ },
+ "collections": {
+  "akshardhara": {
+   "collection": "IssueMaster",
+   "total": 48,
+   "live": 44,
+   "pdfs": 44
+  },
+  "prasang": {
+   "collection": "Prasang",
+   "total": 54,
+   "live": 10,
+   "pdfs": 10
+  }
+ },
+ "total_pdfs": 54
+}
