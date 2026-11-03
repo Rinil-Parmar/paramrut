@@ -2,9 +2,9 @@
 
 PDF archive of the HariPrabodham Patrika publications, fetched from the app's public catalogue. Each links to the local PDF in this repo.
 
-_Fetched 2026-09-27 · 54 PDFs._
+_Fetched 2026-11-03 · 46 PDFs._
 
-## Akshardhara (44)
+## Akshardhara (46)
 
 ### 2026
 
@@ -19,6 +19,8 @@ _Fetched 2026-09-27 · 54 PDFs._
 | 2026-07-01 | 2026-07-01 | [PDF](../../pdf/akshardhara/2026-07-01.pdf) |
 | 2026-08-01 | 2026-08-01 | [PDF](../../pdf/akshardhara/2026-08-01.pdf) |
 | 2026-09-01 | 2026-09-01 | [PDF](../../pdf/akshardhara/2026-09-01.pdf) |
+| 2026-10-01 | 2026-10-01 | [PDF](../../pdf/akshardhara/2026-10-01.pdf) |
+| 2026-11-01 | 2026-11-01 | [PDF](../../pdf/akshardhara/2026-11-01.pdf) |
 
 ### 2025
 
@@ -69,31 +71,4 @@ _Fetched 2026-09-27 · 54 PDFs._
 | 2023-10-07 | 2023-10-01 | [PDF](../../pdf/akshardhara/2023-10-07.pdf) |
 | 2023-11-05 | 2023-11-01 | [PDF](../../pdf/akshardhara/2023-11-05.pdf) |
 | 2023-12-05 | 2023-12-01 | [PDF](../../pdf/akshardhara/2023-12-05.pdf) |
-
-## Prasang (10)
-
-### 2025
-
-| Date | Title | PDF |
-|---|---|---|
-| 2025-01-30 | Rakhe Mane Koi Olakhe | [PDF](../../pdf/prasang/2025-01-30.pdf) |
-| 2025-01-30 | Vhala Tari Smruti Na Sahare | [PDF](../../pdf/prasang/2025-01-30.pdf) |
-| 2025-12-12 | Vhala Tari Smruti Na Sahare 2024 | [PDF](../../pdf/prasang/2025-12-12.pdf) |
-
-### 2023
-
-| Date | Title | PDF |
-|---|---|---|
-| 2023-05-27 | Bhavya Swarup Tu | [PDF](../../pdf/prasang/2023-05-27.pdf) |
-| 2023-05-27 | Anchintavyu Sukh | [PDF](../../pdf/prasang/2023-05-27.pdf) |
-| 2023-05-27 | Bhagya Jagya Re | [PDF](../../pdf/prasang/2023-05-27.pdf) |
-| 2023-08-27 | Sant Chhe Sukhnu Dham | [PDF](../../pdf/prasang/2023-08-27.pdf) |
-| 2023-09-06 | Ape Akshar Sukh Apar | [PDF](../../pdf/prasang/2023-09-06.pdf) |
-| 2023-09-08 | Eva Sant Harine Pyara Re | [PDF](../../pdf/prasang/2023-09-08.pdf) |
-
-### 2022
-
-| Date | Title | PDF |
-|---|---|---|
-| 2022-11-12 | Prasang 1 | [PDF](../../pdf/prasang/2022-11-12.pdf) |
 

@@ -350,5 +350,21 @@
   "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-09-01.pdf",
   "path": "pdf/akshardhara/2026-09-01.pdf",
   "sha256": "7f0e2f1965d45db5f5c620489917065fefe42ef4d4af19aeaf27ed188f9623eb"
+ },
+ {
+  "id": 47,
+  "date": "2026-10-01",
+  "title": "2026-10-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-10-01.pdf",
+  "path": "pdf/akshardhara/2026-10-01.pdf",
+  "sha256": "0f01a584b9291ab0ab2bb240cad9310a54a53a095040a22307ebe9e2e8429919"
+ },
+ {
+  "id": 48,
+  "date": "2026-11-01",
+  "title": "2026-11-01",
+  "pdf_url": "https://akshar.blob.core.windows.net/patrika/2026-11-01.pdf",
+  "path": "pdf/akshardhara/2026-11-01.pdf",
+  "sha256": "81d80cc80928b73cd4b643a9c2ec9517c8dcda9a6756740299942461c4ebf2f2"
  }
 ]
